@@ -1,0 +1,54 @@
+import XCTest
+@testable import AgentMemoryCore
+
+final class AgentMemoryStoreTests: XCTestCase {
+    func testAgentMemorySnapshotRoundTripsThroughJSON() throws {
+        let item = CaptureItem(
+            id: UUID(uuidString: "11111111-1111-1111-1111-111111111111")!,
+            displayName: "Decision note",
+            rawInput: "Decision: keep Memory MCP as source of truth",
+            createdAt: Date(timeIntervalSince1970: 100),
+            sourceType: .text,
+            status: .complete,
+            proposedOutcomes: [.decision, .entity, .reference],
+            confidence: 0.92
+        )
+        let rule = IngestionRule(
+            id: UUID(uuidString: "22222222-2222-2222-2222-222222222222")!,
+            name: "WWDC videos",
+            sourceType: .video,
+            matchText: "developer.apple.com/videos",
+            workspace: "WWDC26",
+            actions: [.autoWriteMemory, .exportToRAG]
+        )
+        let archived = ArchivedSource(
+            itemID: item.id,
+            displayName: item.displayName,
+            archivedPath: "/tmp/source.txt",
+            sourceType: .text,
+            createdAt: Date(timeIntervalSince1970: 101)
+        )
+        let brief = MorningBrief(
+            processedCount: 1,
+            completedCount: 1,
+            needsReviewCount: 0,
+            failedCount: 0,
+            newEntities: ["Decision note"],
+            graphChanges: ["1 completed memory item updated the graph"],
+            exceptions: []
+        )
+
+        let snapshot = AgentMemorySnapshot(
+            version: 1,
+            items: [item],
+            rules: [rule],
+            archivedSources: [archived],
+            morningBriefs: [brief]
+        )
+
+        let data = try JSONEncoder.agentMemory.encode(snapshot)
+        let decoded = try JSONDecoder.agentMemory.decode(AgentMemorySnapshot.self, from: data)
+
+        XCTAssertEqual(decoded, snapshot)
+    }
+}

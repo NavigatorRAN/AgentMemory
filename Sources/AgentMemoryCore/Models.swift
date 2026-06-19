@@ -125,7 +125,7 @@ public struct ArchivedSource: Codable, Equatable, Sendable {
     public var createdAt: Date
 }
 
-public struct MorningBrief: Equatable, Sendable {
+public struct MorningBrief: Codable, Equatable, Sendable {
     public var processedCount: Int
     public var completedCount: Int
     public var needsReviewCount: Int
@@ -133,4 +133,43 @@ public struct MorningBrief: Equatable, Sendable {
     public var newEntities: [String]
     public var graphChanges: [String]
     public var exceptions: [String]
+}
+
+public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
+    public var version: Int
+    public var items: [CaptureItem]
+    public var rules: [IngestionRule]
+    public var archivedSources: [ArchivedSource]
+    public var morningBriefs: [MorningBrief]
+
+    public init(
+        version: Int = 1,
+        items: [CaptureItem] = [],
+        rules: [IngestionRule] = [],
+        archivedSources: [ArchivedSource] = [],
+        morningBriefs: [MorningBrief] = []
+    ) {
+        self.version = version
+        self.items = items
+        self.rules = rules
+        self.archivedSources = archivedSources
+        self.morningBriefs = morningBriefs
+    }
+}
+
+public extension JSONEncoder {
+    static var agentMemory: JSONEncoder {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+        encoder.dateEncodingStrategy = .iso8601
+        return encoder
+    }
+}
+
+public extension JSONDecoder {
+    static var agentMemory: JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
+    }
 }

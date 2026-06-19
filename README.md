@@ -19,3 +19,10 @@ The current design centers on an ingestion hub that can accept mixed source mate
 6. Preserve raw and processed source material locally.
 7. Optionally export selected source chunks to RAG MCP.
 8. Summarize overnight batches in a morning brief.
+
+## Build
+
+```bash
+swift test
+swift run AgentMemory
+```

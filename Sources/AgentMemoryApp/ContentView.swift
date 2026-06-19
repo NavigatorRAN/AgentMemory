@@ -29,6 +29,7 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     header
                     capturePanel
+                    dropZone
                     queueSummary
                     actionBar
                     statusLine
@@ -63,6 +64,28 @@ struct ContentView: View {
                 viewModel.addCapture()
             }
             .keyboardShortcut(.return, modifiers: [.command])
+        }
+    }
+
+    private var dropZone: some View {
+        VStack(spacing: 8) {
+            Image(systemName: "tray.and.arrow.down")
+                .font(.largeTitle)
+            Text("Drop files, URLs, or a stack of text lines")
+                .font(.headline)
+            Text("Each dropped file or non-empty line becomes a queued capture.")
+                .font(.callout)
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, minHeight: 140)
+        .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+        .dropDestination(for: URL.self) { urls, _ in
+            viewModel.addFileURLs(urls)
+            return true
+        }
+        .dropDestination(for: String.self) { strings, _ in
+            viewModel.addTextStack(strings.joined(separator: "\n"))
+            return true
         }
     }
 

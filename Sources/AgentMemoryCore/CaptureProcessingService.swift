@@ -37,6 +37,32 @@ public struct CaptureProcessingService: Sendable {
         return updated
     }
 
+    public func processQueuedBatch(in snapshot: AgentMemorySnapshot, startedAt: Date = Date()) async -> AgentMemorySnapshot {
+        let queuedIDs = Set(snapshot.items.filter { $0.status == .queued }.map(\.id))
+        var updated = await processAllQueued(in: snapshot)
+        let processedBatchItems = updated.items.filter { queuedIDs.contains($0.id) }
+        let completedCount = processedBatchItems.filter { $0.status == .complete }.count
+        let reviewCount = processedBatchItems.filter { $0.status == .needsReview }.count
+        let failedCount = processedBatchItems.filter { $0.status == .failed }.count
+        let status: BatchRunStatus = failedCount > 0 ? .failed : .complete
+        let summary = "Processed \(queuedIDs.count) queued captures: \(completedCount) complete, \(reviewCount) review, \(failedCount) failed."
+
+        updated.batchRuns.append(
+            BatchRun(
+                startedAt: startedAt,
+                completedAt: Date(),
+                status: status,
+                queuedItemCount: queuedIDs.count,
+                completedItemCount: completedCount,
+                reviewItemCount: reviewCount,
+                failedItemCount: failedCount,
+                summary: summary
+            )
+        )
+        updated.morningBriefs.append(MorningBriefBuilder().build(from: updated.items))
+        return updated
+    }
+
     private func makeQueue(from snapshot: AgentMemorySnapshot) -> ProcessingQueue {
         ProcessingQueue(
             items: snapshot.items,

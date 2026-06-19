@@ -155,25 +155,86 @@ public struct MorningBrief: Codable, Equatable, Sendable {
     public var exceptions: [String]
 }
 
+public enum BatchRunStatus: String, Codable, Equatable, Sendable {
+    case complete
+    case failed
+}
+
+public struct BatchRun: Identifiable, Codable, Equatable, Sendable {
+    public var id: UUID
+    public var startedAt: Date
+    public var completedAt: Date
+    public var status: BatchRunStatus
+    public var queuedItemCount: Int
+    public var completedItemCount: Int
+    public var reviewItemCount: Int
+    public var failedItemCount: Int
+    public var summary: String
+
+    public init(
+        id: UUID = UUID(),
+        startedAt: Date,
+        completedAt: Date,
+        status: BatchRunStatus,
+        queuedItemCount: Int,
+        completedItemCount: Int,
+        reviewItemCount: Int,
+        failedItemCount: Int,
+        summary: String
+    ) {
+        self.id = id
+        self.startedAt = startedAt
+        self.completedAt = completedAt
+        self.status = status
+        self.queuedItemCount = queuedItemCount
+        self.completedItemCount = completedItemCount
+        self.reviewItemCount = reviewItemCount
+        self.failedItemCount = failedItemCount
+        self.summary = summary
+    }
+}
+
 public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
     public var version: Int
     public var items: [CaptureItem]
     public var rules: [IngestionRule]
     public var archivedSources: [ArchivedSource]
     public var morningBriefs: [MorningBrief]
+    public var batchRuns: [BatchRun]
 
     public init(
         version: Int = 1,
         items: [CaptureItem] = [],
         rules: [IngestionRule] = [],
         archivedSources: [ArchivedSource] = [],
-        morningBriefs: [MorningBrief] = []
+        morningBriefs: [MorningBrief] = [],
+        batchRuns: [BatchRun] = []
     ) {
         self.version = version
         self.items = items
         self.rules = rules
         self.archivedSources = archivedSources
         self.morningBriefs = morningBriefs
+        self.batchRuns = batchRuns
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case version
+        case items
+        case rules
+        case archivedSources
+        case morningBriefs
+        case batchRuns
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.version = try container.decodeIfPresent(Int.self, forKey: .version) ?? 1
+        self.items = try container.decodeIfPresent([CaptureItem].self, forKey: .items) ?? []
+        self.rules = try container.decodeIfPresent([IngestionRule].self, forKey: .rules) ?? []
+        self.archivedSources = try container.decodeIfPresent([ArchivedSource].self, forKey: .archivedSources) ?? []
+        self.morningBriefs = try container.decodeIfPresent([MorningBrief].self, forKey: .morningBriefs) ?? []
+        self.batchRuns = try container.decodeIfPresent([BatchRun].self, forKey: .batchRuns) ?? []
     }
 }
 

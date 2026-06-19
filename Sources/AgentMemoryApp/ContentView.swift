@@ -145,7 +145,14 @@ struct ContentView: View {
                     GridRow {
                         Text("Title")
                             .foregroundStyle(.secondary)
-                        Text(item.displayName)
+                        TextField(
+                            "Review title",
+                            text: Binding(
+                                get: { viewModel.selectedItemTitleBindingValue() },
+                                set: { viewModel.updateSelectedItemTitle($0) }
+                            )
+                        )
+                        .textFieldStyle(.roundedBorder)
                     }
                     GridRow {
                         Text("Status")
@@ -171,11 +178,16 @@ struct ContentView: View {
 
                 Text("Raw Input")
                     .font(.headline)
-                Text(item.rawInput)
-                    .textSelection(.enabled)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                    .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+                TextField(
+                    "Raw input",
+                    text: Binding(
+                        get: { viewModel.selectedItemRawInputBindingValue() },
+                        set: { viewModel.updateSelectedItemRawInput($0) }
+                    ),
+                    axis: .vertical
+                )
+                .textFieldStyle(.roundedBorder)
+                .lineLimit(4...10)
 
                 Text("Proposed Memory MCP Payload")
                     .font(.headline)
@@ -187,6 +199,10 @@ struct ContentView: View {
                     .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
 
                 HStack {
+                    Button("Save Review Edits") {
+                        viewModel.saveSelectedReviewEdits()
+                    }
+
                     Button("Approve Write") {
                         viewModel.approveSelectedReviewItem()
                     }

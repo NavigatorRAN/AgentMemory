@@ -197,6 +197,44 @@ final class AgentMemoryViewModel {
         persistSnapshot()
     }
 
+    func selectedItemTitleBindingValue() -> String {
+        selectedItem?.displayName ?? ""
+    }
+
+    func updateSelectedItemTitle(_ title: String) {
+        guard let selectedItemID,
+              let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })
+        else {
+            return
+        }
+
+        snapshot.items[index].displayName = title
+    }
+
+    func selectedItemRawInputBindingValue() -> String {
+        selectedItem?.rawInput ?? ""
+    }
+
+    func updateSelectedItemRawInput(_ rawInput: String) {
+        guard let selectedItemID,
+              let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })
+        else {
+            return
+        }
+
+        snapshot.items[index].rawInput = rawInput
+    }
+
+    func saveSelectedReviewEdits() {
+        guard let selectedItem else {
+            statusMessage = "Select a review item first."
+            return
+        }
+
+        statusMessage = "Saved review edits for \(selectedItem.displayName)."
+        persistSnapshot()
+    }
+
     func save() {
         persistSnapshot(successMessage: "Saved local state.")
     }

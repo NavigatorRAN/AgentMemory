@@ -123,6 +123,26 @@ public struct ArchivedSource: Codable, Equatable, Sendable {
     public var archivedPath: String
     public var sourceType: SourceType
     public var createdAt: Date
+    public var originalPath: String?
+    public var byteSize: Int64?
+
+    public init(
+        itemID: UUID,
+        displayName: String,
+        archivedPath: String,
+        sourceType: SourceType,
+        createdAt: Date,
+        originalPath: String? = nil,
+        byteSize: Int64? = nil
+    ) {
+        self.itemID = itemID
+        self.displayName = displayName
+        self.archivedPath = archivedPath
+        self.sourceType = sourceType
+        self.createdAt = createdAt
+        self.originalPath = originalPath
+        self.byteSize = byteSize
+    }
 }
 
 public struct MorningBrief: Codable, Equatable, Sendable {

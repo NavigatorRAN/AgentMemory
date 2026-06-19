@@ -247,6 +247,14 @@ public struct RAGQueueJobStatus: Codable, Equatable, Sendable {
     }
 }
 
+public struct RAGQueueStats: Codable, Equatable, Sendable {
+    public var countsByStatus: [String: Int]
+
+    public init(countsByStatus: [String: Int]) {
+        self.countsByStatus = countsByStatus
+    }
+}
+
 public struct CommandInvocation: Equatable, Sendable {
     public var executable: String
     public var arguments: [String]
@@ -385,6 +393,24 @@ public struct RAGSSHQueueTransport: RAGQueueTransporting {
             [RAGQueueJobStatus].self,
             from: Data(output.trimmingCharacters(in: .whitespacesAndNewlines).utf8)
         )
+    }
+
+    public func fetchQueueStats() async throws -> RAGQueueStats {
+        let output = try await commandRunner.run(
+            CommandInvocation(
+                executable: "/usr/bin/ssh",
+                arguments: sshOptions() + [
+                    "\(config.user)@\(config.host)",
+                    "cd \(shellQuote(config.remoteIngestDirectory)) && ./.venv/bin/python -c \(shellQuote("import json, queue_db; queue_db.init_db(); print(json.dumps(queue_db.stats()))"))"
+                ]
+            )
+        )
+
+        let counts = try JSONDecoder().decode(
+            [String: Int].self,
+            from: Data(output.trimmingCharacters(in: .whitespacesAndNewlines).utf8)
+        )
+        return RAGQueueStats(countsByStatus: counts)
     }
 
     private func writeTemporaryFile(for document: RAGExportDocument) throws -> URL {

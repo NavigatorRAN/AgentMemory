@@ -538,8 +538,25 @@ struct ContentView: View {
 
     private var latestRAGExport: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Latest RAG Export")
-                .font(.title2.bold())
+            HStack {
+                Text("Latest RAG Export")
+                    .font(.title2.bold())
+                Spacer()
+                Button("Refresh Queue Stats") {
+                    viewModel.refreshRAGQueueStats()
+                }
+                .disabled(!viewModel.canRefreshRAGQueueStats)
+            }
+
+            if !ragQueueStatsCounts.isEmpty {
+                Grid(alignment: .leading, horizontalSpacing: 18, verticalSpacing: 8) {
+                    GridRow {
+                        ForEach(ragQueueStatsCounts, id: \.status) { status, count in
+                            metric(status.capitalized, count)
+                        }
+                    }
+                }
+            }
 
             if let run = viewModel.snapshot.ragExportRuns.last {
                 Grid(alignment: .leading, horizontalSpacing: 18, verticalSpacing: 8) {
@@ -572,6 +589,12 @@ struct ContentView: View {
     private var ragStatusCounts: [(status: String, count: Int)] {
         RAGJobStatusSummaryBuilder()
             .counts(in: viewModel.snapshot.items)
+            .sorted { $0.key < $1.key }
+            .map { (status: $0.key, count: $0.value) }
+    }
+
+    private var ragQueueStatsCounts: [(status: String, count: Int)] {
+        (viewModel.ragQueueStats?.countsByStatus ?? [:])
             .sorted { $0.key < $1.key }
             .map { (status: $0.key, count: $0.value) }
     }

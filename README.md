@@ -90,6 +90,7 @@ The first build slice is a local SwiftUI foundation:
 - Bulk RAG export partial-failure reporting that preserves successful job metadata
 - Durable latest RAG export run summary with failure details
 - RAG queue job status refresh for recorded exports
+- Live RAG queue stats refresh from the SSH backend
 - Per-capture persisted RAG queue status, chunks, and document ID
 - Latest RAG export status-count summary from refreshed capture metadata
 

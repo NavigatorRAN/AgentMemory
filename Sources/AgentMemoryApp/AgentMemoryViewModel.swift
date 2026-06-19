@@ -9,6 +9,7 @@ final class AgentMemoryViewModel {
     var config: AgentMemoryConfig
     var captureText: String = ""
     var captureTitle: String = ""
+    var selectedItemID: CaptureItem.ID?
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
@@ -41,6 +42,36 @@ final class AgentMemoryViewModel {
         MorningBriefBuilder().build(from: snapshot.items)
     }
 
+    var reviewItems: [CaptureItem] {
+        snapshot.items.filter { $0.status == .needsReview }
+    }
+
+    var selectedItem: CaptureItem? {
+        guard let selectedItemID else {
+            return snapshot.items.first
+        }
+
+        return snapshot.items.first { $0.id == selectedItemID }
+    }
+
+    var selectedReviewPayloadPreview: String {
+        guard let item = selectedItem else {
+            return "Select a capture to review."
+        }
+
+        let archivedSource = snapshot.archivedSources.first { $0.itemID == item.id }
+        let payload = MemoryMCPPayloadBuilder(agent: config.resolvedAgentName)
+            .recordEventPayload(for: item, archivedSource: archivedSource)
+
+        return [
+            "Agent: \(payload.agent)",
+            "Entities: \(payload.entities.joined(separator: ", "))",
+            "Tags: \(payload.tags.joined(separator: ", "))",
+            "",
+            payload.content
+        ].joined(separator: "\n")
+    }
+
     func addCapture() {
         let rawInput = captureText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !rawInput.isEmpty else {
@@ -54,7 +85,7 @@ final class AgentMemoryViewModel {
         captureText = ""
         captureTitle = ""
         statusMessage = "Added \(displayName)."
-        save()
+        persistSnapshot()
     }
 
     func addTextStack(_ text: String) {
@@ -75,7 +106,7 @@ final class AgentMemoryViewModel {
 
         snapshot.items.append(contentsOf: items)
         statusMessage = "Added \(items.count) captures from \(sourceLabel)."
-        save()
+        persistSnapshot()
     }
 
     func processNext() {
@@ -85,7 +116,7 @@ final class AgentMemoryViewModel {
                 statusMessage = config.liveMemoryWritesEnabled
                     ? "Processed next queued item with live Memory MCP writes enabled."
                     : "Processed next queued item with mock memory writes."
-                save()
+                persistSnapshot()
             } catch {
                 statusMessage = "Processing setup failed: \(error.localizedDescription)"
             }
@@ -99,7 +130,7 @@ final class AgentMemoryViewModel {
                 statusMessage = config.liveMemoryWritesEnabled
                     ? "Processed queued captures with live Memory MCP writes enabled."
                     : "Processed queued captures with mock memory writes."
-                save()
+                persistSnapshot()
             } catch {
                 statusMessage = "Processing setup failed: \(error.localizedDescription)"
             }
@@ -115,17 +146,67 @@ final class AgentMemoryViewModel {
                 } else {
                     statusMessage = "Batch run finished."
                 }
-                save()
+                persistSnapshot()
             } catch {
                 statusMessage = "Batch setup failed: \(error.localizedDescription)"
             }
         }
     }
 
+    func approveSelectedReviewItem() {
+        guard let selectedItemID,
+              let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })
+        else {
+            statusMessage = "Select a review item first."
+            return
+        }
+
+        Task {
+            do {
+                snapshot.items[index].status = .writingMemory
+                persistSnapshot()
+                let writer = try MemoryWriterResolver.writer(
+                    config: config,
+                    archivedSources: snapshot.archivedSources
+                )
+                try await writer.write(item: snapshot.items[index])
+                snapshot.items[index].status = .complete
+                snapshot.items[index].failureReason = nil
+                statusMessage = "Approved and wrote \(snapshot.items[index].displayName)."
+                persistSnapshot()
+            } catch {
+                snapshot.items[index].status = .failed
+                snapshot.items[index].failureReason = "Review write failed: \(error.localizedDescription)"
+                statusMessage = "Review write failed: \(error.localizedDescription)"
+                persistSnapshot()
+            }
+        }
+    }
+
+    func skipSelectedReviewItem() {
+        guard let selectedItemID,
+              let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })
+        else {
+            statusMessage = "Select a review item first."
+            return
+        }
+
+        snapshot.items[index].status = .skipped
+        snapshot.items[index].failureReason = nil
+        statusMessage = "Skipped \(snapshot.items[index].displayName)."
+        persistSnapshot()
+    }
+
     func save() {
+        persistSnapshot(successMessage: "Saved local state.")
+    }
+
+    private func persistSnapshot(successMessage: String? = nil) {
         do {
             try store.save(snapshot)
-            statusMessage = "Saved local state."
+            if let successMessage {
+                statusMessage = successMessage
+            }
         } catch {
             statusMessage = "Save failed: \(error.localizedDescription)"
         }

@@ -6,7 +6,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationSplitView {
-            List {
+            List(selection: $viewModel.selectedItemID) {
                 Section("Capture Inbox") {
                     ForEach(viewModel.snapshot.items) { item in
                         VStack(alignment: .leading, spacing: 5) {
@@ -20,6 +20,7 @@ struct ContentView: View {
                             .foregroundStyle(.secondary)
                         }
                         .padding(.vertical, 4)
+                        .tag(item.id)
                     }
                 }
             }
@@ -33,6 +34,7 @@ struct ContentView: View {
                     queueSummary
                     actionBar
                     statusLine
+                    reviewPanel
                     latestBatchRun
                     morningBrief
                     graphPlaceholder
@@ -125,6 +127,81 @@ struct ContentView: View {
         Text(viewModel.statusMessage)
             .font(.callout)
             .foregroundStyle(.secondary)
+    }
+
+    private var reviewPanel: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Text("Review Capture")
+                    .font(.title2.bold())
+                Spacer()
+                Text("\(viewModel.reviewItems.count) waiting")
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+            }
+
+            if let item = viewModel.selectedItem {
+                Grid(alignment: .leading, horizontalSpacing: 16, verticalSpacing: 8) {
+                    GridRow {
+                        Text("Title")
+                            .foregroundStyle(.secondary)
+                        Text(item.displayName)
+                    }
+                    GridRow {
+                        Text("Status")
+                            .foregroundStyle(.secondary)
+                        Text(item.status.rawValue)
+                    }
+                    GridRow {
+                        Text("Source")
+                            .foregroundStyle(.secondary)
+                        Text(item.sourceType.rawValue)
+                    }
+                    GridRow {
+                        Text("Confidence")
+                            .foregroundStyle(.secondary)
+                        Text(item.confidence.formatted(.number.precision(.fractionLength(2))))
+                    }
+                    GridRow {
+                        Text("Outcomes")
+                            .foregroundStyle(.secondary)
+                        Text(item.proposedOutcomes.map(\.rawValue).joined(separator: ", "))
+                    }
+                }
+
+                Text("Raw Input")
+                    .font(.headline)
+                Text(item.rawInput)
+                    .textSelection(.enabled)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+
+                Text("Proposed Memory MCP Payload")
+                    .font(.headline)
+                Text(viewModel.selectedReviewPayloadPreview)
+                    .font(.system(.body, design: .monospaced))
+                    .textSelection(.enabled)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+
+                HStack {
+                    Button("Approve Write") {
+                        viewModel.approveSelectedReviewItem()
+                    }
+                    .disabled(item.status != .needsReview)
+
+                    Button("Skip") {
+                        viewModel.skipSelectedReviewItem()
+                    }
+                    .disabled(item.status != .needsReview)
+                }
+            } else {
+                Text("Select a capture to review.")
+                    .foregroundStyle(.secondary)
+            }
+        }
     }
 
     private func metric(_ title: String, _ value: Int) -> some View {

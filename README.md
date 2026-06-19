@@ -58,5 +58,6 @@ The first build slice is a local SwiftUI foundation:
 - Deterministic review confidence/status explanations
 - Review source archive provenance preview
 - Bounded archived text source preview in review
+- Web page URL ingestion into archived reviewable text
 
-RAG MCP transport, share extension, watched folders, PDF/image source rendering, retry/backoff controls, transcript/web ingestion adapters, and graph rendering are planned next.
+RAG MCP transport, share extension, watched folders, PDF/image source rendering, retry/backoff controls, YouTube transcript ingestion, and graph rendering are planned next.

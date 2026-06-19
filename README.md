@@ -53,5 +53,6 @@ The first build slice is a local SwiftUI foundation:
 - Durable overnight batch-run history with latest-run summary and morning brief capture
 - Review workflow for `needsReview` captures with proposed Memory MCP payload preview, approve write, and skip
 - Review editing for capture title and raw input before approval
+- Review outcome editing before approval
 
-RAG MCP transport, share extension, watched folders, outcome/tag editing, retry/backoff controls, transcript/web ingestion adapters, and graph rendering are planned next.
+RAG MCP transport, share extension, watched folders, custom tag editing, retry/backoff controls, transcript/web ingestion adapters, and graph rendering are planned next.

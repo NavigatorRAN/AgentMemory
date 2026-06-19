@@ -31,4 +31,59 @@ final class AgentMemoryCoreTests: XCTestCase {
         XCTAssertEqual(classifier.classify(text: "TODO: follow up on RAG export schema"), [.task, .reference])
         XCTAssertEqual(classifier.classify(text: "Memory MCP runs on the local Mac mini"), [.entity, .reference])
     }
+
+    func testRuleEngineRoutesTrustedSource() {
+        let rule = IngestionRule(
+            name: "WWDC videos",
+            sourceType: .video,
+            matchText: "developer.apple.com/videos",
+            workspace: "WWDC26",
+            actions: [.autoWriteMemory, .exportToRAG]
+        )
+        let engine = RuleEngine(rules: [rule])
+
+        let decision = engine.route(
+            item: CaptureItem(displayName: "Session", rawInput: "https://developer.apple.com/videos/play/wwdc2026/101", sourceType: .video)
+        )
+
+        XCTAssertEqual(decision.workspace, "WWDC26")
+        XCTAssertEqual(decision.actions, [.autoWriteMemory, .exportToRAG])
+        XCTAssertEqual(decision.matchedRuleName, "WWDC videos")
+    }
+
+    func testRuleEngineFallsBackToInboxReview() {
+        let engine = RuleEngine(rules: [])
+
+        let decision = engine.route(
+            item: CaptureItem(displayName: "Unknown", rawInput: "mystery", sourceType: .unknown)
+        )
+
+        XCTAssertEqual(decision.workspace, "Inbox")
+        XCTAssertEqual(decision.actions, [.needsReview])
+        XCTAssertNil(decision.matchedRuleName)
+    }
+
+    func testHighConfidenceGroundedItemsCanAutoWrite() {
+        let candidate = CaptureItem(
+            displayName: "Decision",
+            rawInput: "Decision: keep Memory MCP as source of truth",
+            sourceType: .text,
+            proposedOutcomes: [.decision, .reference],
+            confidence: 0.92
+        )
+
+        XCTAssertTrue(candidate.canAutoWrite)
+    }
+
+    func testLowConfidenceItemsNeedReview() {
+        let candidate = CaptureItem(
+            displayName: "Maybe link",
+            rawInput: "This might relate to that",
+            sourceType: .text,
+            proposedOutcomes: [.link],
+            confidence: 0.54
+        )
+
+        XCTAssertFalse(candidate.canAutoWrite)
+    }
 }

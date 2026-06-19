@@ -637,7 +637,7 @@ struct ContentView: View {
                     .font(.callout)
                     .foregroundStyle(.secondary)
 
-                graphCanvas(scene: scene)
+                graphCanvas(scene: scene, selectedNodeID: viewModel.selectedMemoryGraphNodeID)
                     .frame(maxWidth: .infinity, minHeight: 260)
                     .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
 
@@ -671,7 +671,7 @@ struct ContentView: View {
         }
     }
 
-    private func graphCanvas(scene: MemoryMCPGraphScene) -> some View {
+    private func graphCanvas(scene: MemoryMCPGraphScene, selectedNodeID: String?) -> some View {
         GeometryReader { geometry in
             Canvas { context, size in
                 let projection = MemoryMCPGraphViewportProjector().project(
@@ -687,17 +687,35 @@ struct ContentView: View {
                     context.stroke(path, with: .color(.secondary.opacity(0.35)), lineWidth: 1)
                 }
 
-                for node in projection.nodes {
-                    let radius = node.kind == .entity ? 8.0 : 6.0
+                let markers = MemoryMCPGraphViewportNodeMarkerBuilder().markers(
+                    from: projection,
+                    selectedNodeID: selectedNodeID
+                )
+
+                for marker in markers {
+                    if let selectionRingRadius = marker.selectionRingRadius {
+                        let ringRect = CGRect(
+                            x: marker.point.x - selectionRingRadius,
+                            y: marker.point.y - selectionRingRadius,
+                            width: selectionRingRadius * 2,
+                            height: selectionRingRadius * 2
+                        )
+                        context.stroke(
+                            Path(ellipseIn: ringRect),
+                            with: .color(.accentColor.opacity(0.9)),
+                            lineWidth: 2
+                        )
+                    }
+
                     let rect = CGRect(
-                        x: node.point.x - radius,
-                        y: node.point.y - radius,
-                        width: radius * 2,
-                        height: radius * 2
+                        x: marker.point.x - marker.radius,
+                        y: marker.point.y - marker.radius,
+                        width: marker.radius * 2,
+                        height: marker.radius * 2
                     )
                     context.fill(
                         Path(ellipseIn: rect),
-                        with: .color(graphNodeColor(for: node.kind).opacity(0.85))
+                        with: .color(graphNodeColor(for: marker.kind).opacity(0.85))
                     )
                 }
             }

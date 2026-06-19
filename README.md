@@ -44,5 +44,6 @@ The first build slice is a local SwiftUI foundation:
 - Queue restore from persisted capture items
 - Interactive add/process/save/reload UI flow
 - App view model backed by the JSON disk store
+- Drag/drop stack import for files, URLs, and multi-line text
 
 Real Memory MCP/RAG MCP transport, share extension, watched folders, durable overnight queue persistence, and graph rendering are planned next.

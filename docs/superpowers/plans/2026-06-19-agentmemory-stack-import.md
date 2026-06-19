@@ -1,6 +1,6 @@
 # AgentMemory Stack Import Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Add drag/drop and multi-item stack import so AgentMemory can queue several pasted strings or file URLs at once.
 
@@ -26,7 +26,7 @@
 - Create: `Sources/AgentMemoryCore/CaptureStackBuilder.swift`
 - Create: `Tests/AgentMemoryCoreTests/CaptureStackBuilderTests.swift`
 
-- [ ] **Step 1: Add failing tests**
+- [x] **Step 1: Add failing tests**
 
 Create `Tests/AgentMemoryCoreTests/CaptureStackBuilderTests.swift`:
 
@@ -71,7 +71,7 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filt
 
 Expected: FAIL because `CaptureStackBuilder` does not exist.
 
-- [ ] **Step 2: Implement stack builder**
+- [x] **Step 2: Implement stack builder**
 
 Create `Sources/AgentMemoryCore/CaptureStackBuilder.swift`:
 
@@ -107,13 +107,13 @@ public struct CaptureStackBuilder: Sendable {
 }
 ```
 
-- [ ] **Step 3: Verify builder tests**
+- [x] **Step 3: Verify builder tests**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter CaptureStackBuilderTests`
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/CaptureStackBuilder.swift Tests/AgentMemoryCoreTests/CaptureStackBuilderTests.swift
@@ -127,7 +127,7 @@ git commit -m "Add capture stack builder"
 **Files:**
 - Modify: `Sources/AgentMemoryApp/AgentMemoryViewModel.swift`
 
-- [ ] **Step 1: Add batch methods**
+- [x] **Step 1: Add batch methods**
 
 Add these methods to `AgentMemoryViewModel` after `addCapture()`:
 
@@ -154,13 +154,13 @@ Add these methods to `AgentMemoryViewModel` after `addCapture()`:
     }
 ```
 
-- [ ] **Step 2: Verify app builds**
+- [x] **Step 2: Verify app builds**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add Sources/AgentMemoryApp/AgentMemoryViewModel.swift
@@ -174,7 +174,7 @@ git commit -m "Add batch enqueue actions"
 **Files:**
 - Modify: `Sources/AgentMemoryApp/ContentView.swift`
 
-- [ ] **Step 1: Add drop zone to detail stack**
+- [x] **Step 1: Add drop zone to detail stack**
 
 In `ContentView`, insert `dropZone` between `capturePanel` and `queueSummary`.
 
@@ -204,7 +204,7 @@ Add this computed view:
     }
 ```
 
-- [ ] **Step 2: Verify build and tests**
+- [x] **Step 2: Verify build and tests**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
@@ -214,7 +214,7 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
 Expected: all tests pass.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add Sources/AgentMemoryApp/ContentView.swift
@@ -229,7 +229,7 @@ git commit -m "Add stack import drop zone"
 - Modify: `README.md`
 - Modify: `docs/superpowers/plans/2026-06-19-agentmemory-stack-import.md`
 
-- [ ] **Step 1: Update README**
+- [x] **Step 1: Update README**
 
 Add to the current build slice list:
 
@@ -237,11 +237,11 @@ Add to the current build slice list:
 - Drag/drop stack import for files, URLs, and multi-line text
 ```
 
-- [ ] **Step 2: Mark plan complete**
+- [x] **Step 2: Mark plan complete**
 
-Change completed checklist items in this plan from `- [ ]` to `- [x]`.
+Change completed checklist items in this plan from `- [x]` to `- [x]`.
 
-- [ ] **Step 3: Final verification**
+- [x] **Step 3: Final verification**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
@@ -251,14 +251,14 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 4: Commit docs**
+- [x] **Step 4: Commit docs**
 
 ```bash
 git add README.md docs/superpowers/plans/2026-06-19-agentmemory-stack-import.md
 git commit -m "Document stack import flow"
 ```
 
-- [ ] **Step 5: Push and open PR**
+- [x] **Step 5: Push and open PR**
 
 ```bash
 git push -u origin codex/agentmemory-stack-import

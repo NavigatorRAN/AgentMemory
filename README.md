@@ -55,5 +55,6 @@ The first build slice is a local SwiftUI foundation:
 - Review editing for capture title and raw input before approval
 - Review outcome editing before approval
 - Custom tag editing before approval
+- Deterministic review confidence/status explanations
 
-RAG MCP transport, share extension, watched folders, confidence explanations, retry/backoff controls, transcript/web ingestion adapters, and graph rendering are planned next.
+RAG MCP transport, share extension, watched folders, source previews, retry/backoff controls, transcript/web ingestion adapters, and graph rendering are planned next.

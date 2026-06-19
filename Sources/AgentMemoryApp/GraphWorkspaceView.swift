@@ -11,6 +11,11 @@ struct GraphWorkspaceView: View {
             graphInspector
                 .frame(minWidth: 260, idealWidth: 320, maxWidth: 380)
         }
+        .task {
+            if viewModel.canSearchMemoryMCP && !viewModel.hasMemoryGraphData {
+                viewModel.refreshMemoryMCPGraphOverview()
+            }
+        }
     }
 
     private var graphStage: some View {
@@ -34,7 +39,7 @@ struct GraphWorkspaceView: View {
             if viewModel.focusedMemoryGraph.nodes.isEmpty {
                 WorkspaceEmptyState(
                     title: "No graph data loaded",
-                    message: "Run a Memory MCP search, recall, entity detail, or entity browse to populate the graph.",
+                    message: "Refresh the Memory MCP overview, or run a search to narrow the graph.",
                     systemImage: "point.3.connected.trianglepath.dotted"
                 )
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

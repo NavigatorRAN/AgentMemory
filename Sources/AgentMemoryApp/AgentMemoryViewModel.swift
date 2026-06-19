@@ -162,6 +162,10 @@ final class AgentMemoryViewModel {
         config.memoryMCPEndpointURL != nil
     }
 
+    var hasMemoryGraphData: Bool {
+        !memorySearchResults.isEmpty || memoryEntityDetail != nil || !memoryEntityResults.isEmpty
+    }
+
     var memoryGraph: MemoryMCPGraph {
         MemoryMCPGraphBuilder().build(
             events: memorySearchResults,
@@ -683,6 +687,10 @@ final class AgentMemoryViewModel {
     func loadConfig() {
         do {
             config = try store.loadConfig()
+            if config.memoryMCPEndpoint.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                config.memoryMCPEndpoint = AgentMemoryConfig.defaultMemoryMCPEndpoint
+                try store.saveConfig(config)
+            }
         } catch {
             statusMessage = "Settings load failed: \(error.localizedDescription)"
         }
@@ -872,6 +880,52 @@ final class AgentMemoryViewModel {
                 memoryEntityResults = []
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP entity list failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func refreshMemoryMCPGraphOverview() {
+        guard let endpoint = config.memoryMCPEndpointURL else {
+            statusMessage = "Enter a valid http or https Memory MCP endpoint."
+            memorySearchResults = []
+            memoryEntityDetail = nil
+            memoryEntityResults = []
+            selectedMemoryGraphNodeID = nil
+            return
+        }
+
+        Task {
+            do {
+                let transport = MemoryMCPHTTPTransport(endpoint: endpoint)
+                let entities = try await transport.listEntities()
+                let topEntities = entities
+                    .sorted { lhs, rhs in
+                        if lhs.eventCount == rhs.eventCount {
+                            return lhs.name < rhs.name
+                        }
+                        return lhs.eventCount > rhs.eventCount
+                    }
+                    .prefix(24)
+
+                var eventsByID: [String: MemoryMCPSearchEvent] = [:]
+                for entity in topEntities {
+                    let events = try await transport.recallEvents(forEntity: entity.name, limit: 5)
+                    for event in events {
+                        eventsByID[event.id] = event
+                    }
+                }
+
+                memoryEntityResults = entities
+                memorySearchResults = eventsByID.values.sorted { $0.eventDate > $1.eventDate }
+                memoryEntityDetail = nil
+                selectedMemoryGraphNodeID = nil
+                statusMessage = "Loaded Memory MCP graph overview with \(entities.count) entities and \(memorySearchResults.count) recent events."
+            } catch {
+                memorySearchResults = []
+                memoryEntityDetail = nil
+                memoryEntityResults = []
+                selectedMemoryGraphNodeID = nil
+                statusMessage = "Memory MCP graph refresh failed: \(error.localizedDescription)"
             }
         }
     }

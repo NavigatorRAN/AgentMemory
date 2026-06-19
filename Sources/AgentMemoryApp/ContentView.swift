@@ -156,7 +156,7 @@ struct ContentView: View {
                     }
                 }
                 Button("Refresh") {
-                    viewModel.searchMemoryMCP()
+                    viewModel.refreshMemoryMCPGraphOverview()
                 }
                 .disabled(!viewModel.canSearchMemoryMCP)
             case .rag:

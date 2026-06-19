@@ -1,6 +1,8 @@
 import Foundation
 
 public struct AgentMemoryConfig: Codable, Equatable, Sendable {
+    public static let defaultMemoryMCPEndpoint = "http://192.168.1.26:8006/mcp"
+
     public var memoryMCPEndpoint: String
     public var agentName: String
     public var liveMemoryWritesEnabled: Bool
@@ -11,7 +13,7 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
     public var ragExportEnabled: Bool
 
     public init(
-        memoryMCPEndpoint: String = "",
+        memoryMCPEndpoint: String = Self.defaultMemoryMCPEndpoint,
         agentName: String = "CODEX",
         liveMemoryWritesEnabled: Bool = false,
         ragHost: String = "192.168.1.107",
@@ -43,7 +45,7 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.memoryMCPEndpoint = try container.decodeIfPresent(String.self, forKey: .memoryMCPEndpoint) ?? ""
+        self.memoryMCPEndpoint = try container.decodeIfPresent(String.self, forKey: .memoryMCPEndpoint) ?? Self.defaultMemoryMCPEndpoint
         self.agentName = try container.decodeIfPresent(String.self, forKey: .agentName) ?? "CODEX"
         self.liveMemoryWritesEnabled = try container.decodeIfPresent(Bool.self, forKey: .liveMemoryWritesEnabled) ?? false
         self.ragHost = try container.decodeIfPresent(String.self, forKey: .ragHost) ?? "192.168.1.107"

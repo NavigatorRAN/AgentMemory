@@ -5,6 +5,9 @@ public struct AgentMemoryDiskStore: Sendable {
     public var snapshotURL: URL {
         root.appendingPathComponent("agent-memory-state.json")
     }
+    public var configURL: URL {
+        root.appendingPathComponent("agent-memory-config.json")
+    }
     public var sourceArchiveRoot: URL {
         root.appendingPathComponent("Sources", isDirectory: true)
     }
@@ -32,6 +35,28 @@ public struct AgentMemoryDiskStore: Sendable {
             _ = try FileManager.default.replaceItemAt(snapshotURL, withItemAt: temporaryURL)
         } else {
             try FileManager.default.moveItem(at: temporaryURL, to: snapshotURL)
+        }
+    }
+
+    public func loadConfig() throws -> AgentMemoryConfig {
+        guard FileManager.default.fileExists(atPath: configURL.path) else {
+            return AgentMemoryConfig()
+        }
+
+        let data = try Data(contentsOf: configURL)
+        return try JSONDecoder.agentMemory.decode(AgentMemoryConfig.self, from: data)
+    }
+
+    public func saveConfig(_ config: AgentMemoryConfig) throws {
+        try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
+        let data = try JSONEncoder.agentMemory.encode(config)
+        let temporaryURL = root.appendingPathComponent("agent-memory-config.json.tmp")
+        try data.write(to: temporaryURL, options: .atomic)
+
+        if FileManager.default.fileExists(atPath: configURL.path) {
+            _ = try FileManager.default.replaceItemAt(configURL, withItemAt: temporaryURL)
+        } else {
+            try FileManager.default.moveItem(at: temporaryURL, to: configURL)
         }
     }
 }

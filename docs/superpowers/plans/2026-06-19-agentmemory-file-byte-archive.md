@@ -1,6 +1,6 @@
 # AgentMemory File Byte Archive Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Preserve real file contents in the local source archive when a capture points at an existing file.
 
@@ -24,7 +24,7 @@
 **Files:**
 - Modify: `Sources/AgentMemoryCore/Models.swift`
 
-- [ ] **Step 1: Extend ArchivedSource**
+- [x] **Step 1: Extend ArchivedSource**
 
 Replace `ArchivedSource` in `Sources/AgentMemoryCore/Models.swift` with:
 
@@ -58,13 +58,13 @@ public struct ArchivedSource: Codable, Equatable, Sendable {
 }
 ```
 
-- [ ] **Step 2: Verify existing tests compile**
+- [x] **Step 2: Verify existing tests compile**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
 Expected: all tests pass because new fields have defaults.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/Models.swift
@@ -79,7 +79,7 @@ git commit -m "Extend archived source metadata"
 - Modify: `Sources/AgentMemoryCore/SourceArchive.swift`
 - Create: `Tests/AgentMemoryCoreTests/SourceArchiveTests.swift`
 
-- [ ] **Step 1: Add focused source archive tests**
+- [x] **Step 1: Add focused source archive tests**
 
 Create `Tests/AgentMemoryCoreTests/SourceArchiveTests.swift`:
 
@@ -123,7 +123,7 @@ final class SourceArchiveTests: XCTestCase {
 }
 ```
 
-- [ ] **Step 2: Update SourceArchive implementation**
+- [x] **Step 2: Update SourceArchive implementation**
 
 Replace `SourceArchive.archive(item:)` with:
 
@@ -169,19 +169,19 @@ Replace `SourceArchive.archive(item:)` with:
     }
 ```
 
-- [ ] **Step 3: Verify archive tests**
+- [x] **Step 3: Verify archive tests**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter SourceArchiveTests`
 
 Expected: PASS.
 
-- [ ] **Step 4: Run full suite**
+- [x] **Step 4: Run full suite**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
 Expected: all tests pass.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/SourceArchive.swift Tests/AgentMemoryCoreTests/SourceArchiveTests.swift
@@ -196,7 +196,7 @@ git commit -m "Archive real file contents"
 - Modify: `README.md`
 - Modify: `docs/superpowers/plans/2026-06-19-agentmemory-file-byte-archive.md`
 
-- [ ] **Step 1: Update README**
+- [x] **Step 1: Update README**
 
 Add to the current build slice list:
 
@@ -204,11 +204,11 @@ Add to the current build slice list:
 - Real file-byte copying into the local source archive
 ```
 
-- [ ] **Step 2: Mark plan complete**
+- [x] **Step 2: Mark plan complete**
 
-Change completed checklist items in this plan from `- [ ]` to `- [x]`.
+Change completed checklist items in this plan from `- [x]` to `- [x]`.
 
-- [ ] **Step 3: Final verification**
+- [x] **Step 3: Final verification**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
@@ -218,14 +218,14 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 4: Commit docs**
+- [x] **Step 4: Commit docs**
 
 ```bash
 git add README.md docs/superpowers/plans/2026-06-19-agentmemory-file-byte-archive.md
 git commit -m "Document file byte archive"
 ```
 
-- [ ] **Step 5: Push and open PR**
+- [x] **Step 5: Push and open PR**
 
 ```bash
 git push -u origin codex/agentmemory-file-byte-archive

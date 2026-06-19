@@ -2,42 +2,57 @@ import AgentMemoryCore
 import SwiftUI
 
 struct ContentView: View {
-    @State private var items: [CaptureItem] = [
-        CaptureItem(
-            displayName: "WWDC workflow URL",
-            rawInput: "https://developer.apple.com/videos/play/wwdc2026/101",
-            sourceType: .video,
-            status: .complete,
-            proposedOutcomes: [.decision, .reference],
-            confidence: 0.9
-        ),
-        CaptureItem(
-            displayName: "Terminal failure log",
-            rawInput: "fatal error: Memory MCP unreachable",
-            sourceType: .codeOrLog,
-            status: .needsReview,
-            proposedOutcomes: [.gotcha, .reference],
-            confidence: 0.74
-        ),
-        CaptureItem(
-            displayName: "Mixed source stack",
-            rawInput: "/Users/matthewwarren/Desktop/research-stack",
-            sourceType: .mixedBatch,
-            status: .queued,
-            proposedOutcomes: [],
-            confidence: 0
+    @State private var snapshot: AgentMemorySnapshot = ContentView.sampleSnapshot
+
+    private static var sampleSnapshot: AgentMemorySnapshot {
+        AgentMemorySnapshot(
+            items: [
+                CaptureItem(
+                    displayName: "WWDC workflow URL",
+                    rawInput: "https://developer.apple.com/videos/play/wwdc2026/101",
+                    sourceType: .video,
+                    status: .complete,
+                    proposedOutcomes: [.decision, .reference],
+                    confidence: 0.9
+                ),
+                CaptureItem(
+                    displayName: "Terminal failure log",
+                    rawInput: "fatal error: Memory MCP unreachable",
+                    sourceType: .codeOrLog,
+                    status: .needsReview,
+                    proposedOutcomes: [.gotcha, .reference],
+                    confidence: 0.74
+                ),
+                CaptureItem(
+                    displayName: "Mixed source stack",
+                    rawInput: "/Users/matthewwarren/Desktop/research-stack",
+                    sourceType: .mixedBatch,
+                    status: .queued,
+                    proposedOutcomes: [],
+                    confidence: 0
+                )
+            ],
+            rules: [
+                IngestionRule(
+                    name: "WWDC videos",
+                    sourceType: .video,
+                    matchText: "developer.apple.com/videos",
+                    workspace: "WWDC26",
+                    actions: [.autoWriteMemory, .exportToRAG]
+                )
+            ]
         )
-    ]
+    }
 
     private var brief: MorningBrief {
-        MorningBriefBuilder().build(from: items)
+        MorningBriefBuilder().build(from: snapshot.items)
     }
 
     var body: some View {
         NavigationSplitView {
             List {
                 Section("Capture Inbox") {
-                    ForEach(items) { item in
+                    ForEach(snapshot.items) { item in
                         VStack(alignment: .leading, spacing: 5) {
                             Text(item.displayName)
                                 .font(.headline)

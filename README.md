@@ -39,5 +39,8 @@ The first build slice is a local SwiftUI foundation:
 - Local source archive skeleton
 - Morning brief builder
 - Mock Memory MCP writer
+- JSON-backed app snapshot model
+- Disk store for queue, rules, source archive metadata, and morning brief history
+- Queue restore from persisted capture items
 
 Real Memory MCP/RAG MCP transport, share extension, watched folders, durable overnight queue persistence, and graph rendering are planned next.

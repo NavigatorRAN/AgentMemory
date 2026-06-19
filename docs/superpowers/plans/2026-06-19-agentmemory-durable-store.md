@@ -1,6 +1,6 @@
 # AgentMemory Durable Store Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Add a durable local store so AgentMemory can save and reload capture queue state, source archive metadata, rules, and morning briefs across app launches.
 
@@ -27,7 +27,7 @@
 - Modify: `Sources/AgentMemoryCore/Models.swift`
 - Create: `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`
 
-- [ ] **Step 1: Add failing model round-trip test**
+- [x] **Step 1: Add failing model round-trip test**
 
 Create `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`:
 
@@ -92,7 +92,7 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
 Expected: FAIL because `AgentMemorySnapshot` and encoder helpers do not exist.
 
-- [ ] **Step 2: Add persisted snapshot models**
+- [x] **Step 2: Add persisted snapshot models**
 
 Append to `Sources/AgentMemoryCore/Models.swift`:
 
@@ -137,13 +137,13 @@ public extension JSONDecoder {
 }
 ```
 
-- [ ] **Step 3: Verify model test**
+- [x] **Step 3: Verify model test**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter AgentMemoryStoreTests/testAgentMemorySnapshotRoundTripsThroughJSON`
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/Models.swift Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift
@@ -158,7 +158,7 @@ git commit -m "Add persisted AgentMemory snapshot model"
 - Create: `Sources/AgentMemoryCore/AgentMemoryDiskStore.swift`
 - Modify: `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`
 
-- [ ] **Step 1: Add failing save/load test**
+- [x] **Step 1: Add failing save/load test**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`:
 
@@ -188,7 +188,7 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filt
 
 Expected: FAIL because `AgentMemoryDiskStore` does not exist.
 
-- [ ] **Step 2: Implement disk store**
+- [x] **Step 2: Implement disk store**
 
 Create `Sources/AgentMemoryCore/AgentMemoryDiskStore.swift`:
 
@@ -229,7 +229,7 @@ public struct AgentMemoryDiskStore: Sendable {
 }
 ```
 
-- [ ] **Step 3: Add missing-file and corrupted-file tests**
+- [x] **Step 3: Add missing-file and corrupted-file tests**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`:
 
@@ -255,13 +255,13 @@ func testDiskStoreSurfacesCorruptedSnapshot() throws {
 }
 ```
 
-- [ ] **Step 4: Verify disk store tests**
+- [x] **Step 4: Verify disk store tests**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter AgentMemoryStoreTests`
 
 Expected: all store tests pass.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/AgentMemoryDiskStore.swift Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift
@@ -276,7 +276,7 @@ git commit -m "Add JSON disk store"
 - Modify: `Sources/AgentMemoryCore/ProcessingQueue.swift`
 - Modify: `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`
 
-- [ ] **Step 1: Add failing queue restore test**
+- [x] **Step 1: Add failing queue restore test**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`:
 
@@ -307,7 +307,7 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filt
 
 Expected: FAIL because the queue initializer and `snapshotItems` do not exist.
 
-- [ ] **Step 2: Add queue restore APIs**
+- [x] **Step 2: Add queue restore APIs**
 
 Modify `Sources/AgentMemoryCore/ProcessingQueue.swift`:
 
@@ -343,19 +343,19 @@ Add before the final closing brace:
     }
 ```
 
-- [ ] **Step 3: Verify queue restore test**
+- [x] **Step 3: Verify queue restore test**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter AgentMemoryStoreTests/testProcessingQueueRestoresFromSavedItems`
 
 Expected: PASS.
 
-- [ ] **Step 4: Run full test suite**
+- [x] **Step 4: Run full test suite**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
 Expected: all tests pass.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/ProcessingQueue.swift Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift
@@ -370,7 +370,7 @@ git commit -m "Restore processing queue from persisted items"
 - Modify: `Sources/AgentMemoryApp/ContentView.swift`
 - Modify: `README.md`
 
-- [ ] **Step 1: Add sample snapshot factory**
+- [x] **Step 1: Add sample snapshot factory**
 
 Add this private property and helper to `Sources/AgentMemoryApp/ContentView.swift`:
 
@@ -428,13 +428,13 @@ Replace the `brief` property with:
     }
 ```
 
-- [ ] **Step 2: Verify app build**
+- [x] **Step 2: Verify app build**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 3: Update README status**
+- [x] **Step 3: Update README status**
 
 Add to the current build slice list in `README.md`:
 
@@ -444,7 +444,7 @@ Add to the current build slice list in `README.md`:
 - Queue restore from persisted capture items
 ```
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add Sources/AgentMemoryApp/ContentView.swift README.md
@@ -458,11 +458,11 @@ git commit -m "Use persisted snapshot boundary in UI"
 **Files:**
 - Modify: `docs/superpowers/plans/2026-06-19-agentmemory-durable-store.md`
 
-- [ ] **Step 1: Mark completed plan steps**
+- [x] **Step 1: Mark completed plan steps**
 
-Change completed checklist items in this plan from `- [ ]` to `- [x]`.
+Change completed checklist items in this plan from `- [x]` to `- [x]`.
 
-- [ ] **Step 2: Run final checks**
+- [x] **Step 2: Run final checks**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
@@ -472,14 +472,14 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 3: Commit plan completion**
+- [x] **Step 3: Commit plan completion**
 
 ```bash
 git add docs/superpowers/plans/2026-06-19-agentmemory-durable-store.md
 git commit -m "Document durable store implementation plan"
 ```
 
-- [ ] **Step 4: Push branch**
+- [x] **Step 4: Push branch**
 
 ```bash
 git status --short --branch

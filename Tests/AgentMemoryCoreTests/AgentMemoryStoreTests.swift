@@ -51,4 +51,45 @@ final class AgentMemoryStoreTests: XCTestCase {
 
         XCTAssertEqual(decoded, snapshot)
     }
+
+    func testDiskStoreSavesAndLoadsSnapshot() throws {
+        let root = URL(fileURLWithPath: NSTemporaryDirectory())
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        let store = AgentMemoryDiskStore(root: root)
+        let createdAt = Date(timeIntervalSince1970: 200)
+        let snapshot = AgentMemorySnapshot(
+            items: [
+                CaptureItem(displayName: "Note", rawInput: "Decision: persist queue", createdAt: createdAt, sourceType: .text, status: .queued)
+            ],
+            rules: [
+                IngestionRule(name: "Logs", sourceType: .codeOrLog, workspace: "Troubleshooting", actions: [.needsReview])
+            ]
+        )
+
+        try store.save(snapshot)
+        let loaded = try store.load()
+
+        XCTAssertEqual(loaded, snapshot)
+        XCTAssertTrue(FileManager.default.fileExists(atPath: store.snapshotURL.path))
+    }
+
+    func testDiskStoreReturnsEmptySnapshotWhenFileDoesNotExist() throws {
+        let root = URL(fileURLWithPath: NSTemporaryDirectory())
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        let store = AgentMemoryDiskStore(root: root)
+
+        let loaded = try store.load()
+
+        XCTAssertEqual(loaded, AgentMemorySnapshot())
+    }
+
+    func testDiskStoreSurfacesCorruptedSnapshot() throws {
+        let root = URL(fileURLWithPath: NSTemporaryDirectory())
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
+        let store = AgentMemoryDiskStore(root: root)
+        try Data("not-json".utf8).write(to: store.snapshotURL)
+
+        XCTAssertThrowsError(try store.load())
+    }
 }

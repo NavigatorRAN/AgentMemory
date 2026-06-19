@@ -48,7 +48,24 @@ final class AgentMemoryStoreTests: XCTestCase {
             items: [item],
             rules: [rule],
             archivedSources: [archived],
-            morningBriefs: [brief]
+            morningBriefs: [brief],
+            ragExportRuns: [
+                RAGExportRun(
+                    startedAt: Date(timeIntervalSince1970: 130),
+                    completedAt: Date(timeIntervalSince1970: 140),
+                    exportedCount: 1,
+                    skippedCount: 0,
+                    failedCount: 1,
+                    failures: [
+                        RAGBatchExportFailure(
+                            itemID: item.id,
+                            displayName: item.displayName,
+                            reason: "remoteFailed"
+                        )
+                    ],
+                    summary: "Exported 1 completed captures to RAG. 0 skipped, 1 failed."
+                )
+            ]
         )
 
         let data = try JSONEncoder.agentMemory.encode(snapshot)
@@ -97,6 +114,23 @@ final class AgentMemoryStoreTests: XCTestCase {
         XCTAssertEqual(item.attemptCount, 0)
         XCTAssertNil(item.lastAttemptAt)
         XCTAssertNil(item.ragExport)
+    }
+
+    func testSnapshotDecodesOlderJSONWithoutRAGExportRuns() throws {
+        let json = """
+        {
+          "version" : 1,
+          "items" : [],
+          "rules" : [],
+          "archivedSources" : [],
+          "morningBriefs" : [],
+          "batchRuns" : []
+        }
+        """.data(using: .utf8)!
+
+        let snapshot = try JSONDecoder.agentMemory.decode(AgentMemorySnapshot.self, from: json)
+
+        XCTAssertEqual(snapshot.ragExportRuns, [])
     }
 
     func testCaptureItemPersistsRAGExportStatus() throws {

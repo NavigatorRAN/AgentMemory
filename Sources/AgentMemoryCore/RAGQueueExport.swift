@@ -90,7 +90,7 @@ public struct RAGQueueWriter: Sendable {
     }
 }
 
-public struct RAGBatchExportFailure: Equatable, Sendable {
+public struct RAGBatchExportFailure: Codable, Equatable, Sendable {
     public var itemID: CaptureItem.ID
     public var displayName: String
     public var reason: String

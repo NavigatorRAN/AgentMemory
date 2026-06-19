@@ -51,6 +51,7 @@ struct ContentView: View {
                     statusLine
                     reviewPanel
                     latestBatchRun
+                    latestRAGExport
                     morningBrief
                     graphPlaceholder
                 }
@@ -393,6 +394,34 @@ struct ContentView: View {
                     .foregroundStyle(.secondary)
             } else {
                 Text("No batch runs yet.")
+                    .foregroundStyle(.secondary)
+            }
+        }
+    }
+
+    private var latestRAGExport: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Latest RAG Export")
+                .font(.title2.bold())
+
+            if let run = viewModel.snapshot.ragExportRuns.last {
+                Grid(alignment: .leading, horizontalSpacing: 18, verticalSpacing: 8) {
+                    GridRow {
+                        metric("Exported", run.exportedCount)
+                        metric("Skipped", run.skippedCount)
+                        metric("Failed", run.failedCount)
+                    }
+                }
+
+                Text(run.summary)
+                    .foregroundStyle(.secondary)
+
+                ForEach(run.failures, id: \.itemID) { failure in
+                    Label("\(failure.displayName): \(failure.reason)", systemImage: "exclamationmark.triangle")
+                        .foregroundStyle(.secondary)
+                }
+            } else {
+                Text("No RAG export runs yet.")
                     .foregroundStyle(.secondary)
             }
         }

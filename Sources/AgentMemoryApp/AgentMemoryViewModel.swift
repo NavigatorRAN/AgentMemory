@@ -325,14 +325,27 @@ final class AgentMemoryViewModel {
 
         Task {
             do {
+                let startedAt = Date()
                 let exporter = RAGBatchExporter(
                     defaultCollection: config.resolvedRAGCollection,
                     transport: RAGSSHQueueTransport(config: ragConfig)
                 )
                 let result = try await exporter.exportCompletedItems(in: snapshot.items)
+                let summary = "Exported \(result.exportedCount) completed captures to RAG. \(result.skippedCount) skipped, \(result.failedCount) failed."
                 snapshot.items = result.items
+                snapshot.ragExportRuns.append(
+                    RAGExportRun(
+                        startedAt: startedAt,
+                        completedAt: Date(),
+                        exportedCount: result.exportedCount,
+                        skippedCount: result.skippedCount,
+                        failedCount: result.failedCount,
+                        failures: result.failures,
+                        summary: summary
+                    )
+                )
                 persistSnapshot()
-                statusMessage = "Exported \(result.exportedCount) completed captures to RAG. \(result.skippedCount) skipped, \(result.failedCount) failed."
+                statusMessage = summary
                 normalizeSelection(preferReview: sidebarFilter == .review)
             } catch {
                 statusMessage = "RAG batch export failed: \(error.localizedDescription)"

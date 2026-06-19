@@ -256,6 +256,37 @@ public struct BatchRun: Identifiable, Codable, Equatable, Sendable {
     }
 }
 
+public struct RAGExportRun: Identifiable, Codable, Equatable, Sendable {
+    public var id: UUID
+    public var startedAt: Date
+    public var completedAt: Date
+    public var exportedCount: Int
+    public var skippedCount: Int
+    public var failedCount: Int
+    public var failures: [RAGBatchExportFailure]
+    public var summary: String
+
+    public init(
+        id: UUID = UUID(),
+        startedAt: Date,
+        completedAt: Date,
+        exportedCount: Int,
+        skippedCount: Int,
+        failedCount: Int,
+        failures: [RAGBatchExportFailure],
+        summary: String
+    ) {
+        self.id = id
+        self.startedAt = startedAt
+        self.completedAt = completedAt
+        self.exportedCount = exportedCount
+        self.skippedCount = skippedCount
+        self.failedCount = failedCount
+        self.failures = failures
+        self.summary = summary
+    }
+}
+
 public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
     public var version: Int
     public var items: [CaptureItem]
@@ -263,6 +294,7 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
     public var archivedSources: [ArchivedSource]
     public var morningBriefs: [MorningBrief]
     public var batchRuns: [BatchRun]
+    public var ragExportRuns: [RAGExportRun]
 
     public init(
         version: Int = 1,
@@ -270,7 +302,8 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
         rules: [IngestionRule] = [],
         archivedSources: [ArchivedSource] = [],
         morningBriefs: [MorningBrief] = [],
-        batchRuns: [BatchRun] = []
+        batchRuns: [BatchRun] = [],
+        ragExportRuns: [RAGExportRun] = []
     ) {
         self.version = version
         self.items = items
@@ -278,6 +311,7 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
         self.archivedSources = archivedSources
         self.morningBriefs = morningBriefs
         self.batchRuns = batchRuns
+        self.ragExportRuns = ragExportRuns
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -287,6 +321,7 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
         case archivedSources
         case morningBriefs
         case batchRuns
+        case ragExportRuns
     }
 
     public init(from decoder: Decoder) throws {
@@ -297,6 +332,7 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
         self.archivedSources = try container.decodeIfPresent([ArchivedSource].self, forKey: .archivedSources) ?? []
         self.morningBriefs = try container.decodeIfPresent([MorningBrief].self, forKey: .morningBriefs) ?? []
         self.batchRuns = try container.decodeIfPresent([BatchRun].self, forKey: .batchRuns) ?? []
+        self.ragExportRuns = try container.decodeIfPresent([RAGExportRun].self, forKey: .ragExportRuns) ?? []
     }
 }
 

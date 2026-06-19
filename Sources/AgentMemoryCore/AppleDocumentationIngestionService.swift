@@ -199,7 +199,7 @@ public struct AppleDocumentationIngestionService: Sendable {
         var updated = snapshot
         var knownURLs = Set(updated.items.compactMap { Self.appleDocumentationURL(from: $0.rawInput)?.absoluteString })
 
-        for index in updated.items.indices where updated.items[index].status == .queued {
+        for index in updated.items.indices where [.queued, .failed].contains(updated.items[index].status) {
             guard let sourceURL = Self.appleDocumentationURL(from: updated.items[index].rawInput),
                   updated.items[index].customTags.contains("apple-docs")
             else {
@@ -367,7 +367,7 @@ public struct AppleDocumentationPageParser: Sendable {
             throw ParserError.missingMetadata
         }
 
-        let identifier = object["identifier"] as? String
+        let identifier = identifierString(from: object["identifier"])
             ?? metadata["externalID"] as? String
             ?? metadata["title"] as? String
             ?? "apple-documentation"
@@ -458,6 +458,18 @@ public struct AppleDocumentationPageParser: Sendable {
 
     private func referenceURLPath(from value: Any) -> String? {
         (value as? [String: Any])?["url"] as? String
+    }
+
+    private func identifierString(from value: Any?) -> String? {
+        if let string = value as? String {
+            return string
+        }
+
+        if let dict = value as? [String: Any] {
+            return dict["url"] as? String
+        }
+
+        return nil
     }
 
     private func firstText(in value: Any) -> String? {

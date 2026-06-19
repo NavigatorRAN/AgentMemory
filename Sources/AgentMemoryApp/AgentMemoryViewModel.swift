@@ -131,11 +131,15 @@ final class AgentMemoryViewModel {
         }
 
         let title = captureTitle.trimmingCharacters(in: .whitespacesAndNewlines)
-        let displayName = title.isEmpty ? suggestedTitle(for: rawInput) : title
-        snapshot.items.append(CaptureItem(displayName: displayName, rawInput: rawInput))
+        var item = CaptureStackBuilder().items(fromTextStack: rawInput).first ?? CaptureItem(displayName: suggestedTitle(for: rawInput), rawInput: rawInput)
+        if !title.isEmpty {
+            item.displayName = title
+        }
+
+        snapshot.items.append(item)
         captureText = ""
         captureTitle = ""
-        statusMessage = "Added \(displayName)."
+        statusMessage = "Added \(item.displayName)."
         persistSnapshot()
         normalizeSelection(preferReview: false)
     }

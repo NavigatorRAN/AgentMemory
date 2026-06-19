@@ -1,13 +1,17 @@
 import Foundation
 
 public struct SourceClassifier: Sendable {
-    public init() {}
+    private let youtubeParser: YouTubeVideoIDParser
+
+    public init(youtubeParser: YouTubeVideoIDParser = YouTubeVideoIDParser()) {
+        self.youtubeParser = youtubeParser
+    }
 
     public func classify(rawInput: String) -> SourceType {
         let value = rawInput.trimmingCharacters(in: .whitespacesAndNewlines)
         let lowercased = value.lowercased()
 
-        if lowercased.contains("youtube.com/watch") || lowercased.contains("youtu.be/") {
+        if youtubeParser.videoID(from: value) != nil {
             return .video
         }
 

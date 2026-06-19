@@ -13,6 +13,15 @@ final class CaptureStackBuilderTests: XCTestCase {
         XCTAssertEqual(items[1].rawInput, "Decision: keep local source archive")
     }
 
+    func testBuildsYouTubeItemsWithVideoMetadata() {
+        let builder = CaptureStackBuilder()
+
+        let items = builder.items(fromTextStack: "https://youtu.be/dQw4w9WgXcQ")
+
+        XCTAssertEqual(items[0].displayName, "YouTube video dQw4w9WgXcQ")
+        XCTAssertEqual(items[0].sourceType, .video)
+    }
+
     func testBuildsItemsFromFileURLs() {
         let builder = CaptureStackBuilder()
         let urls = [

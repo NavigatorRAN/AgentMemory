@@ -17,6 +17,7 @@ final class AgentMemoryCoreTests: XCTestCase {
 
         XCTAssertEqual(classifier.classify(rawInput: "https://example.com/article"), .url)
         XCTAssertEqual(classifier.classify(rawInput: "https://youtube.com/watch?v=abc123"), .video)
+        XCTAssertEqual(classifier.classify(rawInput: "https://www.youtube.com/shorts/dQw4w9WgXcQ"), .video)
         XCTAssertEqual(classifier.classify(rawInput: "/tmp/report.pdf"), .pdf)
         XCTAssertEqual(classifier.classify(rawInput: "/tmp/screenshot.png"), .image)
         XCTAssertEqual(classifier.classify(rawInput: "fatal error: connection refused"), .codeOrLog)

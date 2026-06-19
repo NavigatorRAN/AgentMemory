@@ -142,6 +142,42 @@ final class RAGQueueExportTests: XCTestCase {
         let staged = await transport.staged
         XCTAssertEqual(staged.map(\.filename), ["agentmemory-completed-note-11111111.md"])
     }
+
+    func testBatchExporterKeepsSuccessfulMetadataWhenLaterItemFails() async throws {
+        let exportDate = Date(timeIntervalSince1970: 600)
+        let first = CaptureItem(
+            id: UUID(uuidString: "11111111-1111-1111-1111-111111111111")!,
+            displayName: "First note",
+            rawInput: "Reference: first",
+            sourceType: .text,
+            status: .complete
+        )
+        let second = CaptureItem(
+            id: UUID(uuidString: "22222222-2222-2222-2222-222222222222")!,
+            displayName: "Second note",
+            rawInput: "Reference: second",
+            sourceType: .text,
+            status: .complete
+        )
+        let transport = ResultRAGQueueTransport(results: [.success(201), .failure(TestRAGExportError.remoteFailed)])
+        let exporter = RAGBatchExporter(
+            defaultCollection: "agentmemory",
+            transport: transport,
+            now: { exportDate }
+        )
+
+        let result = try await exporter.exportCompletedItems(in: [first, second])
+
+        XCTAssertEqual(result.exportedCount, 1)
+        XCTAssertEqual(result.failedCount, 1)
+        XCTAssertEqual(result.items[0].ragExport?.jobID, 201)
+        XCTAssertNil(result.items[1].ragExport)
+        XCTAssertEqual(result.failures.map(\.displayName), ["Second note"])
+    }
+}
+
+private enum TestRAGExportError: Error {
+    case remoteFailed
 }
 
 private actor RecordingRAGQueueTransport: RAGQueueTransporting {
@@ -169,5 +205,22 @@ private actor RecordingCommandRunner: CommandRunning {
     func run(_ invocation: CommandInvocation) async throws -> String {
         commands.append(invocation)
         return outputs.removeFirst()
+    }
+}
+
+private actor ResultRAGQueueTransport: RAGQueueTransporting {
+    private var results: [Result<Int, TestRAGExportError>]
+
+    init(results: [Result<Int, TestRAGExportError>]) {
+        self.results = results
+    }
+
+    func stageAndEnqueue(_ document: RAGExportDocument) async throws -> Int {
+        switch results.removeFirst() {
+        case .success(let jobID):
+            return jobID
+        case .failure(let error):
+            throw error
+        }
     }
 }

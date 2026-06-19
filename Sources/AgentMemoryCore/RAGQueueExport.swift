@@ -90,15 +90,38 @@ public struct RAGQueueWriter: Sendable {
     }
 }
 
+public struct RAGBatchExportFailure: Equatable, Sendable {
+    public var itemID: CaptureItem.ID
+    public var displayName: String
+    public var reason: String
+
+    public init(itemID: CaptureItem.ID, displayName: String, reason: String) {
+        self.itemID = itemID
+        self.displayName = displayName
+        self.reason = reason
+    }
+}
+
 public struct RAGBatchExportResult: Equatable, Sendable {
     public var items: [CaptureItem]
     public var exportedCount: Int
     public var skippedCount: Int
+    public var failures: [RAGBatchExportFailure]
 
-    public init(items: [CaptureItem], exportedCount: Int, skippedCount: Int) {
+    public var failedCount: Int {
+        failures.count
+    }
+
+    public init(
+        items: [CaptureItem],
+        exportedCount: Int,
+        skippedCount: Int,
+        failures: [RAGBatchExportFailure] = []
+    ) {
         self.items = items
         self.exportedCount = exportedCount
         self.skippedCount = skippedCount
+        self.failures = failures
     }
 }
 
@@ -120,26 +143,40 @@ public struct RAGBatchExporter: Sendable {
     public func exportCompletedItems(in items: [CaptureItem]) async throws -> RAGBatchExportResult {
         var updatedItems = items
         var exportedCount = 0
+        var skippedCount = 0
+        var failures: [RAGBatchExportFailure] = []
 
         for index in updatedItems.indices {
             guard updatedItems[index].status == .complete, updatedItems[index].ragExport == nil else {
+                skippedCount += 1
                 continue
             }
 
             let document = RAGQueueExportBuilder(defaultCollection: defaultCollection).document(for: updatedItems[index])
-            let jobID = try await transport.stageAndEnqueue(document)
-            updatedItems[index].ragExport = RAGExportStatus(
-                jobID: jobID,
-                exportedAt: now(),
-                collection: defaultCollection
-            )
-            exportedCount += 1
+            do {
+                let jobID = try await transport.stageAndEnqueue(document)
+                updatedItems[index].ragExport = RAGExportStatus(
+                    jobID: jobID,
+                    exportedAt: now(),
+                    collection: defaultCollection
+                )
+                exportedCount += 1
+            } catch {
+                failures.append(
+                    RAGBatchExportFailure(
+                        itemID: updatedItems[index].id,
+                        displayName: updatedItems[index].displayName,
+                        reason: String(describing: error)
+                    )
+                )
+            }
         }
 
         return RAGBatchExportResult(
             items: updatedItems,
             exportedCount: exportedCount,
-            skippedCount: items.count - exportedCount
+            skippedCount: skippedCount,
+            failures: failures
         )
     }
 }

@@ -332,7 +332,7 @@ final class AgentMemoryViewModel {
                 let result = try await exporter.exportCompletedItems(in: snapshot.items)
                 snapshot.items = result.items
                 persistSnapshot()
-                statusMessage = "Exported \(result.exportedCount) completed captures to RAG. \(result.skippedCount) skipped."
+                statusMessage = "Exported \(result.exportedCount) completed captures to RAG. \(result.skippedCount) skipped, \(result.failedCount) failed."
                 normalizeSelection(preferReview: sidebarFilter == .review)
             } catch {
                 statusMessage = "RAG batch export failed: \(error.localizedDescription)"

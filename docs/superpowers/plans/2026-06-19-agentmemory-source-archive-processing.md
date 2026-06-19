@@ -1,6 +1,6 @@
 # AgentMemory Source Archive Processing Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Archive raw capture source material automatically when queued captures are processed, and persist archive metadata in the snapshot.
 
@@ -26,7 +26,7 @@
 - Modify: `Sources/AgentMemoryCore/AgentMemoryDiskStore.swift`
 - Modify: `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`
 
-- [ ] **Step 1: Add archive root test**
+- [x] **Step 1: Add archive root test**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift`:
 
@@ -39,7 +39,7 @@ func testDiskStoreSourceArchiveRootIsUnderStoreRoot() {
 }
 ```
 
-- [ ] **Step 2: Add archive root helper**
+- [x] **Step 2: Add archive root helper**
 
 Add this computed property to `AgentMemoryDiskStore`:
 
@@ -49,13 +49,13 @@ Add this computed property to `AgentMemoryDiskStore`:
     }
 ```
 
-- [ ] **Step 3: Verify test**
+- [x] **Step 3: Verify test**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter AgentMemoryStoreTests/testDiskStoreSourceArchiveRootIsUnderStoreRoot`
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/AgentMemoryDiskStore.swift Tests/AgentMemoryCoreTests/AgentMemoryStoreTests.swift
@@ -70,7 +70,7 @@ git commit -m "Add source archive root helper"
 - Create: `Sources/AgentMemoryCore/CaptureProcessingService.swift`
 - Create: `Tests/AgentMemoryCoreTests/CaptureProcessingServiceTests.swift`
 
-- [ ] **Step 1: Add processing service tests**
+- [x] **Step 1: Add processing service tests**
 
 Create `Tests/AgentMemoryCoreTests/CaptureProcessingServiceTests.swift`:
 
@@ -128,7 +128,7 @@ final class CaptureProcessingServiceTests: XCTestCase {
 }
 ```
 
-- [ ] **Step 2: Implement processing service**
+- [x] **Step 2: Implement processing service**
 
 Create `Sources/AgentMemoryCore/CaptureProcessingService.swift`:
 
@@ -208,13 +208,13 @@ public struct CaptureProcessingService: Sendable {
 }
 ```
 
-- [ ] **Step 3: Verify service tests**
+- [x] **Step 3: Verify service tests**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter CaptureProcessingServiceTests`
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/CaptureProcessingService.swift Tests/AgentMemoryCoreTests/CaptureProcessingServiceTests.swift
@@ -228,7 +228,7 @@ git commit -m "Archive captures during processing"
 **Files:**
 - Modify: `Sources/AgentMemoryApp/AgentMemoryViewModel.swift`
 
-- [ ] **Step 1: Add processing service to view model**
+- [x] **Step 1: Add processing service to view model**
 
 Add a stored property:
 
@@ -277,7 +277,7 @@ Replace `processAllQueued()` with:
     }
 ```
 
-- [ ] **Step 2: Verify build and tests**
+- [x] **Step 2: Verify build and tests**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
@@ -287,7 +287,7 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add Sources/AgentMemoryApp/AgentMemoryViewModel.swift
@@ -302,7 +302,7 @@ git commit -m "Use archive-aware processing service"
 - Modify: `README.md`
 - Modify: `docs/superpowers/plans/2026-06-19-agentmemory-source-archive-processing.md`
 
-- [ ] **Step 1: Update README**
+- [x] **Step 1: Update README**
 
 Add to the current build slice list:
 
@@ -310,11 +310,11 @@ Add to the current build slice list:
 - Source archive metadata attached during processing
 ```
 
-- [ ] **Step 2: Mark plan complete**
+- [x] **Step 2: Mark plan complete**
 
-Change completed checklist items in this plan from `- [ ]` to `- [x]`.
+Change completed checklist items in this plan from `- [x]` to `- [x]`.
 
-- [ ] **Step 3: Final verification**
+- [x] **Step 3: Final verification**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
@@ -324,14 +324,14 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 4: Commit docs**
+- [x] **Step 4: Commit docs**
 
 ```bash
 git add README.md docs/superpowers/plans/2026-06-19-agentmemory-source-archive-processing.md
 git commit -m "Document source archive processing"
 ```
 
-- [ ] **Step 5: Push and open PR**
+- [x] **Step 5: Push and open PR**
 
 ```bash
 git push -u origin codex/agentmemory-source-archive-processing

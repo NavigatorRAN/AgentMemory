@@ -11,7 +11,12 @@ final class AgentMemoryStoreTests: XCTestCase {
             sourceType: .text,
             status: .complete,
             proposedOutcomes: [.decision, .entity, .reference],
-            confidence: 0.92
+            confidence: 0.92,
+            ragExport: RAGExportStatus(
+                jobID: 42,
+                exportedAt: Date(timeIntervalSince1970: 120),
+                collection: "agentmemory"
+            )
         )
         let rule = IngestionRule(
             id: UUID(uuidString: "22222222-2222-2222-2222-222222222222")!,
@@ -91,6 +96,32 @@ final class AgentMemoryStoreTests: XCTestCase {
 
         XCTAssertEqual(item.attemptCount, 0)
         XCTAssertNil(item.lastAttemptAt)
+        XCTAssertNil(item.ragExport)
+    }
+
+    func testCaptureItemPersistsRAGExportStatus() throws {
+        let item = CaptureItem(
+            id: UUID(uuidString: "11111111-1111-1111-1111-111111111111")!,
+            displayName: "Exported note",
+            rawInput: "Reference: exported to RAG",
+            createdAt: Date(timeIntervalSince1970: 100),
+            sourceType: .text,
+            status: .complete,
+            proposedOutcomes: [.reference],
+            confidence: 0.8,
+            ragExport: RAGExportStatus(
+                jobID: 99,
+                exportedAt: Date(timeIntervalSince1970: 150),
+                collection: "agentmemory"
+            )
+        )
+
+        let data = try JSONEncoder.agentMemory.encode(item)
+        let decoded = try JSONDecoder.agentMemory.decode(CaptureItem.self, from: data)
+
+        XCTAssertEqual(decoded.ragExport?.jobID, 99)
+        XCTAssertEqual(decoded.ragExport?.exportedAt, Date(timeIntervalSince1970: 150))
+        XCTAssertEqual(decoded.ragExport?.collection, "agentmemory")
     }
 
     func testDiskStoreReturnsEmptySnapshotWhenFileDoesNotExist() throws {

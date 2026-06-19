@@ -37,6 +37,18 @@ public enum QueueStatus: String, Codable, CaseIterable, Sendable {
     case paused
 }
 
+public struct RAGExportStatus: Codable, Equatable, Sendable {
+    public var jobID: Int
+    public var exportedAt: Date
+    public var collection: String
+
+    public init(jobID: Int, exportedAt: Date, collection: String) {
+        self.jobID = jobID
+        self.exportedAt = exportedAt
+        self.collection = collection
+    }
+}
+
 public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
     public var id: UUID
     public var displayName: String
@@ -50,6 +62,7 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
     public var customTags: [String]
     public var attemptCount: Int
     public var lastAttemptAt: Date?
+    public var ragExport: RAGExportStatus?
 
     public init(
         id: UUID = UUID(),
@@ -63,7 +76,8 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         failureReason: String? = nil,
         customTags: [String] = [],
         attemptCount: Int = 0,
-        lastAttemptAt: Date? = nil
+        lastAttemptAt: Date? = nil,
+        ragExport: RAGExportStatus? = nil
     ) {
         self.id = id
         self.displayName = displayName
@@ -77,6 +91,7 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         self.customTags = customTags
         self.attemptCount = attemptCount
         self.lastAttemptAt = lastAttemptAt
+        self.ragExport = ragExport
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -92,6 +107,7 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         case customTags
         case attemptCount
         case lastAttemptAt
+        case ragExport
     }
 
     public init(from decoder: Decoder) throws {
@@ -108,6 +124,7 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         self.customTags = try container.decodeIfPresent([String].self, forKey: .customTags) ?? []
         self.attemptCount = try container.decodeIfPresent(Int.self, forKey: .attemptCount) ?? 0
         self.lastAttemptAt = try container.decodeIfPresent(Date.self, forKey: .lastAttemptAt)
+        self.ragExport = try container.decodeIfPresent(RAGExportStatus.self, forKey: .ragExport)
     }
 }
 

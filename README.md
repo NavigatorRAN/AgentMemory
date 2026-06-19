@@ -73,5 +73,6 @@ The first build slice is a local SwiftUI foundation:
 - Selected-capture export into the existing RAG ingestion queue
 - Settings-backed RAG export host, user, SSH identity path, collection, and enable toggle
 - Settings RAG connection test for the configured SSH queue backend
+- Per-capture RAG export job metadata and duplicate-export guard
 
-Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, RAG export status tracking, and graph rendering are planned next.
+Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, RAG queue status polling, and graph rendering are planned next.

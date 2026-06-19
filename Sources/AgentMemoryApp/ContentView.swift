@@ -206,6 +206,11 @@ struct ContentView: View {
                         Text(attemptSummary(for: item))
                     }
                     GridRow {
+                        Text("RAG Export")
+                            .foregroundStyle(.secondary)
+                        Text(ragExportSummary(for: item))
+                    }
+                    GridRow {
                         Text("Outcomes")
                             .foregroundStyle(.secondary)
                         Text(item.proposedOutcomes.map(\.rawValue).joined(separator: ", "))
@@ -355,6 +360,14 @@ struct ContentView: View {
         }
 
         return "\(item.attemptCount) attempts, last \(lastAttemptAt.formatted(date: .abbreviated, time: .shortened))"
+    }
+
+    private func ragExportSummary(for item: CaptureItem) -> String {
+        guard let ragExport = item.ragExport else {
+            return "Not exported"
+        }
+
+        return "Job #\(ragExport.jobID) in \(ragExport.collection), \(ragExport.exportedAt.formatted(date: .abbreviated, time: .shortened))"
     }
 
     private var latestBatchRun: some View {

@@ -132,7 +132,7 @@ final class AgentMemoryViewModel {
     }
 
     var canExportSelectedItemToRAG: Bool {
-        selectedItem != nil && config.ragExportEnabled
+        selectedItem != nil && selectedItem?.ragExport == nil && config.ragExportEnabled
     }
 
     var canTestRAGConnection: Bool {
@@ -262,6 +262,11 @@ final class AgentMemoryViewModel {
             return
         }
 
+        guard selectedItem.ragExport == nil else {
+            statusMessage = "\(selectedItem.displayName) is already exported to RAG."
+            return
+        }
+
         Task {
             do {
                 guard let ragConfig = config.ragSSHQueueConfig() else {
@@ -269,13 +274,22 @@ final class AgentMemoryViewModel {
                     return
                 }
 
-                let document = RAGQueueExportBuilder(defaultCollection: config.resolvedRAGCollection).document(for: selectedItem)
+                let collection = config.resolvedRAGCollection
+                let document = RAGQueueExportBuilder(defaultCollection: collection).document(for: selectedItem)
                 let writer = RAGQueueWriter(
                     transport: RAGSSHQueueTransport(
                         config: ragConfig
                     )
                 )
                 let jobID = try await writer.enqueue(document)
+                if let index = snapshot.items.firstIndex(where: { $0.id == selectedItem.id }) {
+                    snapshot.items[index].ragExport = RAGExportStatus(
+                        jobID: jobID,
+                        exportedAt: Date(),
+                        collection: collection
+                    )
+                    persistSnapshot()
+                }
                 statusMessage = "Exported \(selectedItem.displayName) to RAG queue as job #\(jobID)."
             } catch {
                 statusMessage = "RAG export failed: \(error.localizedDescription)"

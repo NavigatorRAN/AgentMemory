@@ -16,7 +16,10 @@ final class AppleDocumentationIngestionServiceTests: XCTestCase {
 
     func testPageParserExtractsSummaryAndReferences() throws {
         let object: [String: Any] = [
-            "identifier": "doc://com.apple.foundationmodels/documentation/FoundationModels",
+            "identifier": [
+                "interfaceLanguage": "swift",
+                "url": "doc://com.apple.foundationmodels/documentation/FoundationModels"
+            ],
             "metadata": [
                 "title": "Foundation Models"
             ],
@@ -121,6 +124,39 @@ final class AppleDocumentationIngestionServiceTests: XCTestCase {
         XCTAssertEqual(processed.items[1].status, .needsReview)
         XCTAssertTrue(processed.items[1].rawInput.contains("Root: Foundation Models"))
         XCTAssertEqual(processed.archivedSources.count, 2)
+    }
+
+    func testFetchQueuedAppleDocumentationRetriesFailedAppleDocCaptures() async throws {
+        let rootURL = URL(string: "https://developer.apple.com/documentation/foundationmodels")!
+        let rootDataURL = AppleDocumentationIngestionService.dataURL(for: rootURL)
+        let rootPage = AppleDocumentationPage(
+            title: "Foundation Models",
+            identifier: "doc://com.apple.foundationmodels/documentation/FoundationModels",
+            documentationURL: rootURL,
+            abstract: "Perform tasks with language models.",
+            bodyText: "Framework overview.",
+            references: []
+        )
+        let failedItem = CaptureItem(
+            displayName: "Foundation Models",
+            rawInput: rootURL.absoluteString,
+            sourceType: .url,
+            status: .failed,
+            failureReason: "Apple documentation fetch failed",
+            customTags: ["apple-docs"]
+        )
+        let root = URL(fileURLWithPath: NSTemporaryDirectory())
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        let service = AppleDocumentationIngestionService(
+            archive: SourceArchive(root: root),
+            fetcher: StubAppleDocumentationFetcher(pages: [rootDataURL: rootPage])
+        )
+
+        let processed = await service.fetchQueuedAppleDocumentation(in: AgentMemorySnapshot(items: [failedItem]))
+
+        XCTAssertEqual(processed.items[0].status, .needsReview)
+        XCTAssertNil(processed.items[0].failureReason)
+        XCTAssertTrue(processed.items[0].rawInput.contains("Source URL: \(rootURL.absoluteString)"))
     }
 }
 

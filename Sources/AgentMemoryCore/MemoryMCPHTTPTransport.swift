@@ -45,6 +45,14 @@ public struct MemoryMCPHTTPTransport: MemoryMCPTransporting {
         return structured.result
     }
 
+    public func getEntity(named name: String) async throws -> MemoryMCPEntityDetail {
+        try await callTool(
+            name: "get_entity",
+            arguments: GetEntityArguments(name: name),
+            structuredContent: MemoryMCPEntityDetail.self
+        )
+    }
+
     private func callTool<Arguments: Encodable, StructuredContent: Decodable>(
         name: String,
         arguments: Arguments,
@@ -169,6 +177,133 @@ public struct MemoryMCPSearchEvent: Codable, Equatable, Sendable {
     }
 }
 
+public struct MemoryMCPEntityDetail: Codable, Equatable, Sendable {
+    public var name: String
+    public var displayName: String
+    public var frontmatter: [String: MemoryMCPJSONValue]
+    public var content: String
+    public var path: String?
+    public var recentEvents: [MemoryMCPRecentEvent]
+
+    public init(
+        name: String,
+        displayName: String,
+        frontmatter: [String: MemoryMCPJSONValue],
+        content: String,
+        path: String?,
+        recentEvents: [MemoryMCPRecentEvent]
+    ) {
+        self.name = name
+        self.displayName = displayName
+        self.frontmatter = frontmatter
+        self.content = content
+        self.path = path
+        self.recentEvents = recentEvents
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case displayName = "display_name"
+        case frontmatter
+        case content
+        case path
+        case recentEvents = "recent_events"
+    }
+}
+
+public struct MemoryMCPRecentEvent: Codable, Equatable, Sendable {
+    public var id: String
+    public var eventDate: String
+    public var recordedAt: String
+    public var entities: [String]
+    public var tags: [String]
+    public var agent: String?
+    public var content: String?
+    public var path: String
+
+    public init(
+        id: String,
+        eventDate: String,
+        recordedAt: String,
+        entities: [String],
+        tags: [String],
+        agent: String?,
+        content: String?,
+        path: String
+    ) {
+        self.id = id
+        self.eventDate = eventDate
+        self.recordedAt = recordedAt
+        self.entities = entities
+        self.tags = tags
+        self.agent = agent
+        self.content = content
+        self.path = path
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case eventDate = "event_date"
+        case recordedAt = "recorded_at"
+        case entities
+        case tags
+        case agent
+        case content
+        case path
+    }
+}
+
+public enum MemoryMCPJSONValue: Codable, Equatable, Sendable {
+    case string(String)
+    case number(Double)
+    case bool(Bool)
+    case array([MemoryMCPJSONValue])
+    case object([String: MemoryMCPJSONValue])
+    case null
+
+    public var stringValue: String? {
+        if case let .string(value) = self {
+            return value
+        }
+        return nil
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if container.decodeNil() {
+            self = .null
+        } else if let value = try? container.decode(Bool.self) {
+            self = .bool(value)
+        } else if let value = try? container.decode(Double.self) {
+            self = .number(value)
+        } else if let value = try? container.decode(String.self) {
+            self = .string(value)
+        } else if let value = try? container.decode([MemoryMCPJSONValue].self) {
+            self = .array(value)
+        } else {
+            self = .object(try container.decode([String: MemoryMCPJSONValue].self))
+        }
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case let .string(value):
+            try container.encode(value)
+        case let .number(value):
+            try container.encode(value)
+        case let .bool(value):
+            try container.encode(value)
+        case let .array(value):
+            try container.encode(value)
+        case let .object(value):
+            try container.encode(value)
+        case .null:
+            try container.encodeNil()
+        }
+    }
+}
+
 private struct JSONRPCRequest<Params: Encodable>: Encodable {
     var jsonrpc = "2.0"
     var id: Int
@@ -219,6 +354,10 @@ private struct RecallForEntityArguments: Encodable {
         case since
         case until
     }
+}
+
+private struct GetEntityArguments: Encodable {
+    var name: String
 }
 
 private struct ToolCallResponse<StructuredContent: Decodable>: Decodable {

@@ -42,5 +42,7 @@ The first build slice is a local SwiftUI foundation:
 - JSON-backed app snapshot model
 - Disk store for queue, rules, source archive metadata, and morning brief history
 - Queue restore from persisted capture items
+- Interactive add/process/save/reload UI flow
+- App view model backed by the JSON disk store
 
 Real Memory MCP/RAG MCP transport, share extension, watched folders, durable overnight queue persistence, and graph rendering are planned next.

@@ -438,6 +438,11 @@ struct ContentView: View {
                 Text(run.summary)
                     .foregroundStyle(.secondary)
 
+                ForEach(ragStatusCounts, id: \.status) { status, count in
+                    Label("\(status): \(count)", systemImage: "circle.hexagongrid")
+                        .foregroundStyle(.secondary)
+                }
+
                 ForEach(run.failures, id: \.itemID) { failure in
                     Label("\(failure.displayName): \(failure.reason)", systemImage: "exclamationmark.triangle")
                         .foregroundStyle(.secondary)
@@ -447,6 +452,13 @@ struct ContentView: View {
                     .foregroundStyle(.secondary)
             }
         }
+    }
+
+    private var ragStatusCounts: [(status: String, count: Int)] {
+        RAGJobStatusSummaryBuilder()
+            .counts(in: viewModel.snapshot.items)
+            .sorted { $0.key < $1.key }
+            .map { (status: $0.key, count: $0.value) }
     }
 
     private var morningBrief: some View {

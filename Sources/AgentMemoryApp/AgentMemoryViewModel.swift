@@ -11,10 +11,19 @@ final class AgentMemoryViewModel {
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
+    private let processingService: CaptureProcessingService
 
-    init(store: AgentMemoryDiskStore, initialSnapshot: AgentMemorySnapshot = AgentMemorySnapshot()) {
+    init(
+        store: AgentMemoryDiskStore,
+        initialSnapshot: AgentMemorySnapshot = AgentMemorySnapshot(),
+        processingService: CaptureProcessingService? = nil
+    ) {
         self.store = store
         self.snapshot = initialSnapshot
+        self.processingService = processingService ?? CaptureProcessingService(
+            archive: SourceArchive(root: store.sourceArchiveRoot),
+            memoryWriter: MockMemoryWriter()
+        )
     }
 
     convenience init() {
@@ -70,43 +79,16 @@ final class AgentMemoryViewModel {
 
     func processNext() {
         Task {
-            let queue = ProcessingQueue(
-                items: snapshot.items,
-                sourceClassifier: SourceClassifier(),
-                outcomeClassifier: OutcomeClassifier(),
-                ruleEngine: RuleEngine(rules: snapshot.rules),
-                memoryWriter: MockMemoryWriter()
-            )
-
-            await queue.processNext()
-            snapshot.items = await queue.snapshotItems()
-            statusMessage = "Processed next queued item."
+            snapshot = await processingService.processNext(in: snapshot)
+            statusMessage = "Processed next queued item and archived source."
             save()
         }
     }
 
     func processAllQueued() {
         Task {
-            let queue = ProcessingQueue(
-                items: snapshot.items,
-                sourceClassifier: SourceClassifier(),
-                outcomeClassifier: OutcomeClassifier(),
-                ruleEngine: RuleEngine(rules: snapshot.rules),
-                memoryWriter: MockMemoryWriter()
-            )
-
-            var previousItems = await queue.snapshotItems()
-            while previousItems.contains(where: { $0.status == .queued }) {
-                await queue.processNext()
-                let currentItems = await queue.snapshotItems()
-                if currentItems == previousItems {
-                    break
-                }
-                previousItems = currentItems
-            }
-
-            snapshot.items = await queue.snapshotItems()
-            statusMessage = "Processed queued captures."
+            snapshot = await processingService.processAllQueued(in: snapshot)
+            statusMessage = "Processed queued captures and archived sources."
             save()
         }
     }

@@ -82,6 +82,7 @@ The first build slice is a local SwiftUI foundation:
 - Queued YouTube transcript fetching into review
 - Native capture search across inbox and review filters
 - English-preferred YouTube caption selection with fallback
+- Apple Developer Documentation catalog loading and framework/subpage ingestion into review-ready captures
 - Selected-capture export into the existing RAG ingestion queue
 - Settings-backed RAG export host, user, SSH identity path, collection, and enable toggle
 - Settings RAG connection test for the configured SSH queue backend

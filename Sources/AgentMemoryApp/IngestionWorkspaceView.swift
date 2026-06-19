@@ -13,6 +13,7 @@ struct IngestionWorkspaceView: View {
                     newStackPanel
                     queuePanel
                 }
+                appleDocumentationPanel
                 latestBatchRun
                 morningBrief
             }
@@ -141,6 +142,65 @@ struct IngestionWorkspaceView: View {
                             .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
                         }
                         .buttonStyle(.plain)
+                    }
+                }
+            }
+        }
+    }
+
+    private var appleDocumentationPanel: some View {
+        WorkspacePanel(title: "Apple Documentation") {
+            HStack(alignment: .top, spacing: 12) {
+                VStack(alignment: .leading, spacing: 8) {
+                    TextField("Filter frameworks, for example Foundation Models or SwiftUI", text: $viewModel.appleDocumentationFilter)
+                        .textFieldStyle(.roundedBorder)
+                    TextField("Child pages per framework", text: $viewModel.appleDocumentationChildLimitText)
+                        .textFieldStyle(.roundedBorder)
+                        .frame(maxWidth: 220)
+                }
+
+                Spacer()
+
+                VStack(alignment: .trailing, spacing: 8) {
+                    Button("Load Catalog") {
+                        viewModel.loadAppleDocumentationCatalog()
+                    }
+                    Button("Queue Matches") {
+                        viewModel.queueFilteredAppleDocumentation()
+                    }
+                    .disabled(viewModel.filteredAppleDocumentationTechnologies.isEmpty)
+                    Button("Fetch Queued Docs") {
+                        viewModel.fetchQueuedAppleDocumentation()
+                    }
+                }
+            }
+
+            if viewModel.appleDocumentationTechnologies.isEmpty {
+                Text("Load Apple's documentation catalog, filter to a framework, then queue and fetch it into review.")
+                    .foregroundStyle(.secondary)
+            } else {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("\(viewModel.filteredAppleDocumentationTechnologies.count) matching technologies from \(viewModel.appleDocumentationTechnologies.count) loaded.")
+                        .foregroundStyle(.secondary)
+                    ForEach(viewModel.filteredAppleDocumentationTechnologies.prefix(8)) { technology in
+                        HStack(alignment: .firstTextBaseline) {
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text(technology.title)
+                                    .font(.headline)
+                                Text(technology.documentationURL.absoluteString)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(1)
+                            }
+                            Spacer()
+                            if !technology.languages.isEmpty {
+                                Text(technology.languages.joined(separator: ", "))
+                                    .font(.caption)
+                                    .foregroundStyle(.tertiary)
+                            }
+                        }
+                        .padding(8)
+                        .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
                     }
                 }
             }

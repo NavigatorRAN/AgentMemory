@@ -123,6 +123,9 @@ struct ContentView: View {
                     Button("YouTube") {
                         viewModel.fetchQueuedYouTubeTranscripts()
                     }
+                    Button("Apple Docs") {
+                        viewModel.fetchQueuedAppleDocumentation()
+                    }
                 }
             case .review:
                 Button("Next Review") {

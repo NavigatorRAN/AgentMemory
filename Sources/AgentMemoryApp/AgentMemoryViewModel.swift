@@ -24,6 +24,9 @@ final class AgentMemoryViewModel {
         }
     }
     var selectedWorkspace: AgentMemoryWorkspace = .graph
+    var appleDocumentationTechnologies: [AppleDocumentationTechnology] = []
+    var appleDocumentationFilter: String = "Foundation Models"
+    var appleDocumentationChildLimitText: String = "25"
     var memorySearchQuery: String = ""
     var memorySearchResults: [MemoryMCPSearchEvent] = []
     var memoryEntityDetail: MemoryMCPEntityDetail?
@@ -160,6 +163,19 @@ final class AgentMemoryViewModel {
 
     var canSearchMemoryMCP: Bool {
         config.memoryMCPEndpointURL != nil
+    }
+
+    var filteredAppleDocumentationTechnologies: [AppleDocumentationTechnology] {
+        let query = appleDocumentationFilter.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !query.isEmpty else {
+            return appleDocumentationTechnologies
+        }
+
+        return appleDocumentationTechnologies.filter { technology in
+            technology.title.localizedCaseInsensitiveContains(query)
+                || technology.tags.contains { $0.localizedCaseInsensitiveContains(query) }
+                || technology.languages.contains { $0.localizedCaseInsensitiveContains(query) }
+        }
     }
 
     var hasMemoryGraphData: Bool {
@@ -312,6 +328,75 @@ final class AgentMemoryViewModel {
             snapshot = await service.fetchQueuedTranscripts(in: snapshot)
             let reviewCount = snapshot.items.filter { $0.status == .needsReview && $0.customTags.contains("youtube") }.count
             statusMessage = "Fetched YouTube transcripts. \(reviewCount) YouTube captures are ready for review."
+            persistSnapshot()
+            normalizeSelection(preferReview: true)
+        }
+    }
+
+    func loadAppleDocumentationCatalog() {
+        Task {
+            do {
+                appleDocumentationTechnologies = try await URLSessionAppleDocumentationFetcher().fetchTechnologies()
+                statusMessage = "Loaded \(appleDocumentationTechnologies.count) Apple documentation technologies."
+            } catch {
+                appleDocumentationTechnologies = []
+                statusMessage = "Apple documentation catalog load failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func queueFilteredAppleDocumentation() {
+        let matches = filteredAppleDocumentationTechnologies
+        guard !matches.isEmpty else {
+            statusMessage = "Load the Apple documentation catalog or adjust the filter first."
+            return
+        }
+
+        var queuedCount = 0
+        var knownURLs = Set(snapshot.items.compactMap { appleDocumentationSourceURL(in: $0)?.absoluteString })
+        for technology in matches {
+            guard !knownURLs.contains(technology.documentationURL.absoluteString) else {
+                continue
+            }
+
+            knownURLs.insert(technology.documentationURL.absoluteString)
+            snapshot.items.append(
+                CaptureItem(
+                    displayName: technology.title,
+                    rawInput: technology.documentationURL.absoluteString,
+                    sourceType: .url,
+                    customTags: stableUnique([
+                        "apple-docs",
+                        "apple-developer",
+                        "developer-apple-com",
+                        "apple-docs-root",
+                        slug(for: technology.title)
+                    ] + technology.tags.map { slug(for: $0) })
+                )
+            )
+            queuedCount += 1
+        }
+
+        statusMessage = queuedCount == 0
+            ? "Apple documentation queue already contains those technologies."
+            : "Queued \(queuedCount) Apple documentation technologies."
+        persistSnapshot()
+        normalizeSelection(preferReview: false)
+    }
+
+    func fetchQueuedAppleDocumentation() {
+        Task {
+            let childLimit = Int(appleDocumentationChildLimitText.trimmingCharacters(in: .whitespacesAndNewlines)) ?? 25
+            let service = AppleDocumentationIngestionService(
+                archive: SourceArchive(root: store.sourceArchiveRoot),
+                fetcher: URLSessionAppleDocumentationFetcher(),
+                options: AppleDocumentationIngestionOptions(maxChildPagesPerRoot: childLimit)
+            )
+            snapshot = await service.fetchQueuedAppleDocumentation(in: snapshot)
+            let reviewCount = snapshot.items.filter {
+                $0.status == .needsReview && $0.customTags.contains("apple-docs")
+            }.count
+            statusMessage = "Fetched Apple documentation. \(reviewCount) Apple docs captures are ready for review."
             persistSnapshot()
             normalizeSelection(preferReview: true)
         }
@@ -964,6 +1049,50 @@ final class AgentMemoryViewModel {
         }
 
         return String(rawInput.prefix(40))
+    }
+
+    private func appleDocumentationSourceURL(in item: CaptureItem) -> URL? {
+        if let url = AppleDocumentationIngestionService.appleDocumentationURL(from: item.rawInput) {
+            return url
+        }
+
+        for line in item.rawInput.components(separatedBy: .newlines) {
+            let prefix = "Source URL:"
+            guard line.hasPrefix(prefix) else {
+                continue
+            }
+
+            let value = String(line.dropFirst(prefix.count)).trimmingCharacters(in: .whitespacesAndNewlines)
+            if let url = AppleDocumentationIngestionService.appleDocumentationURL(from: value) {
+                return url
+            }
+        }
+
+        return nil
+    }
+
+    private func stableUnique(_ values: [String]) -> [String] {
+        var seen: Set<String> = []
+        var result: [String] = []
+
+        for value in values where !value.isEmpty && !seen.contains(value) {
+            seen.insert(value)
+            result.append(value)
+        }
+
+        return result
+    }
+
+    private func slug(for value: String) -> String {
+        let allowed = CharacterSet.alphanumerics
+        let mapped = value.lowercased().unicodeScalars.map { scalar -> Character in
+            allowed.contains(scalar) ? Character(scalar) : "-"
+        }
+
+        let collapsed = String(mapped)
+            .split(separator: "-")
+            .joined(separator: "-")
+        return collapsed.isEmpty ? "apple-doc" : collapsed
     }
 
     static var sampleSnapshot: AgentMemorySnapshot {

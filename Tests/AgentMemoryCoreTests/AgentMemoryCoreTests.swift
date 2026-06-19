@@ -122,4 +122,35 @@ final class AgentMemoryCoreTests: XCTestCase {
         let resumedItems = await queue.items
         XCTAssertEqual(resumedItems[0].status, .queued)
     }
+
+    func testSourceArchiveCreatesMetadataForItem() throws {
+        let root = URL(fileURLWithPath: NSTemporaryDirectory())
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        let archive = SourceArchive(root: root)
+        let item = CaptureItem(displayName: "Note", rawInput: "Decision: archive locally", sourceType: .text)
+
+        let archived = try archive.archive(item: item)
+
+        XCTAssertEqual(archived.itemID, item.id)
+        XCTAssertEqual(archived.displayName, "Note")
+        XCTAssertEqual(archived.sourceType, .text)
+        XCTAssertTrue(FileManager.default.fileExists(atPath: archived.archivedPath))
+    }
+
+    func testMorningBriefSummarizesBatch() {
+        let items = [
+            CaptureItem(displayName: "Done", rawInput: "Decision: use local archive", sourceType: .text, status: .complete, proposedOutcomes: [.decision, .reference], confidence: 0.9),
+            CaptureItem(displayName: "Review", rawInput: "Possible relationship", sourceType: .text, status: .needsReview, proposedOutcomes: [.link], confidence: 0.5),
+            CaptureItem(displayName: "Failed", rawInput: "force write failure", sourceType: .text, status: .failed, proposedOutcomes: [.reference], confidence: 0.7, failureReason: "Memory write failed")
+        ]
+
+        let brief = MorningBriefBuilder().build(from: items)
+
+        XCTAssertEqual(brief.processedCount, 3)
+        XCTAssertEqual(brief.completedCount, 1)
+        XCTAssertEqual(brief.needsReviewCount, 1)
+        XCTAssertEqual(brief.failedCount, 1)
+        XCTAssertEqual(brief.graphChanges, ["1 completed memory item updated the graph"])
+        XCTAssertEqual(brief.exceptions.count, 2)
+    }
 }

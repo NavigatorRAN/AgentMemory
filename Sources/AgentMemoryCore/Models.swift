@@ -116,3 +116,21 @@ public extension CaptureItem {
             && !proposedOutcomes.contains(.link)
     }
 }
+
+public struct ArchivedSource: Codable, Equatable, Sendable {
+    public var itemID: UUID
+    public var displayName: String
+    public var archivedPath: String
+    public var sourceType: SourceType
+    public var createdAt: Date
+}
+
+public struct MorningBrief: Equatable, Sendable {
+    public var processedCount: Int
+    public var completedCount: Int
+    public var needsReviewCount: Int
+    public var failedCount: Int
+    public var newEntities: [String]
+    public var graphChanges: [String]
+    public var exceptions: [String]
+}

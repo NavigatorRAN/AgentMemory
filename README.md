@@ -56,6 +56,7 @@ The first build slice is a local SwiftUI foundation:
 - Native Memory MCP entity browsing with prefix filter
 - Memory MCP graph projection for events, entities, and mention edges
 - 3D-ready Memory MCP graph scene payload with stable node coordinates
+- Memory MCP graph focus for selected-node neighborhoods
 - Durable overnight batch-run history with latest-run summary and morning brief capture
 - Review workflow for `needsReview` captures with proposed Memory MCP payload preview, approve write, and skip
 - Review editing for capture title and raw input before approval

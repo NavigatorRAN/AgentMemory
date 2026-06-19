@@ -679,6 +679,34 @@ final class AgentMemoryViewModel {
         }
     }
 
+    func recallMemoryMCPEntity() {
+        let entity = memorySearchQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !entity.isEmpty else {
+            statusMessage = "Enter a Memory MCP entity name."
+            memorySearchResults = []
+            return
+        }
+
+        guard let endpoint = config.memoryMCPEndpointURL else {
+            statusMessage = "Enter a valid http or https Memory MCP endpoint."
+            memorySearchResults = []
+            return
+        }
+
+        Task {
+            do {
+                let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).recallEvents(forEntity: entity, limit: 10)
+                memorySearchResults = results
+                statusMessage = results.isEmpty
+                    ? "Memory MCP recall found no events for \(entity)."
+                    : "Memory MCP recall found \(results.count) events for \(entity)."
+            } catch {
+                memorySearchResults = []
+                statusMessage = "Memory MCP recall failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
     private func makeProcessingService() throws -> CaptureProcessingService {
         if let processingServiceOverride {
             return processingServiceOverride

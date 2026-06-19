@@ -20,7 +20,9 @@ final class MemoryMCPGraphViewportProjectorTests: XCTestCase {
                     position: MemoryMCPGraphPoint3D(x: 10, y: 20, z: 4)
                 )
             ],
-            edges: []
+            edges: [
+                MemoryMCPGraphEdge(id: "edge:left:right", sourceID: "left", targetID: "right", label: "mentions")
+            ]
         )
 
         let projection = MemoryMCPGraphViewportProjector().project(
@@ -33,6 +35,16 @@ final class MemoryMCPGraphViewportProjectorTests: XCTestCase {
         XCTAssertEqual(projection.nodes.map(\.id), ["left", "right"])
         XCTAssertEqual(projection.nodes[0].point, MemoryMCPGraphPoint2D(x: 10, y: 90))
         XCTAssertEqual(projection.nodes[1].point, MemoryMCPGraphPoint2D(x: 190, y: 10))
+        XCTAssertEqual(projection.edgeSegments, [
+            MemoryMCPGraphViewportEdgeSegment(
+                id: "edge:left:right",
+                sourceID: "left",
+                targetID: "right",
+                label: "mentions",
+                source: MemoryMCPGraphPoint2D(x: 10, y: 90),
+                target: MemoryMCPGraphPoint2D(x: 190, y: 10)
+            )
+        ])
     }
 
     func testProjectsSingleNodeToViewportCenter() {

@@ -1,10 +1,16 @@
 public struct MemoryMCPGraphViewportProjection: Equatable, Sendable {
     public var nodes: [MemoryMCPGraphViewportNode]
     public var edges: [MemoryMCPGraphEdge]
+    public var edgeSegments: [MemoryMCPGraphViewportEdgeSegment]
 
-    public init(nodes: [MemoryMCPGraphViewportNode], edges: [MemoryMCPGraphEdge]) {
+    public init(
+        nodes: [MemoryMCPGraphViewportNode],
+        edges: [MemoryMCPGraphEdge],
+        edgeSegments: [MemoryMCPGraphViewportEdgeSegment] = []
+    ) {
         self.nodes = nodes
         self.edges = edges
+        self.edgeSegments = edgeSegments
     }
 }
 
@@ -29,6 +35,31 @@ public struct MemoryMCPGraphPoint2D: Equatable, Sendable {
     public init(x: Double, y: Double) {
         self.x = x
         self.y = y
+    }
+}
+
+public struct MemoryMCPGraphViewportEdgeSegment: Equatable, Sendable {
+    public var id: String
+    public var sourceID: String
+    public var targetID: String
+    public var label: String
+    public var source: MemoryMCPGraphPoint2D
+    public var target: MemoryMCPGraphPoint2D
+
+    public init(
+        id: String,
+        sourceID: String,
+        targetID: String,
+        label: String,
+        source: MemoryMCPGraphPoint2D,
+        target: MemoryMCPGraphPoint2D
+    ) {
+        self.id = id
+        self.sourceID = sourceID
+        self.targetID = targetID
+        self.label = label
+        self.source = source
+        self.target = target
     }
 }
 
@@ -75,6 +106,28 @@ public struct MemoryMCPGraphViewportProjector: Sendable {
             )
         }
 
-        return MemoryMCPGraphViewportProjection(nodes: nodes, edges: scene.edges)
+        let nodesByID = Dictionary(uniqueKeysWithValues: nodes.map { ($0.id, $0) })
+        let edgeSegments = scene.edges.compactMap { edge -> MemoryMCPGraphViewportEdgeSegment? in
+            guard let source = nodesByID[edge.sourceID],
+                  let target = nodesByID[edge.targetID]
+            else {
+                return nil
+            }
+
+            return MemoryMCPGraphViewportEdgeSegment(
+                id: edge.id,
+                sourceID: edge.sourceID,
+                targetID: edge.targetID,
+                label: edge.label,
+                source: source.point,
+                target: target.point
+            )
+        }
+
+        return MemoryMCPGraphViewportProjection(
+            nodes: nodes,
+            edges: scene.edges,
+            edgeSegments: edgeSegments
+        )
     }
 }

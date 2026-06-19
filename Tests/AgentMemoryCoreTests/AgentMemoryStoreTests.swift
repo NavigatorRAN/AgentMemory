@@ -146,7 +146,13 @@ final class AgentMemoryStoreTests: XCTestCase {
             ragExport: RAGExportStatus(
                 jobID: 99,
                 exportedAt: Date(timeIntervalSince1970: 150),
-                collection: "agentmemory"
+                collection: "agentmemory",
+                remoteStatus: "done",
+                remoteError: nil,
+                attempts: 1,
+                chunksUpserted: 12,
+                docID: "doc-99",
+                lastStatusRefreshAt: Date(timeIntervalSince1970: 175)
             )
         )
 
@@ -156,6 +162,32 @@ final class AgentMemoryStoreTests: XCTestCase {
         XCTAssertEqual(decoded.ragExport?.jobID, 99)
         XCTAssertEqual(decoded.ragExport?.exportedAt, Date(timeIntervalSince1970: 150))
         XCTAssertEqual(decoded.ragExport?.collection, "agentmemory")
+        XCTAssertEqual(decoded.ragExport?.remoteStatus, "done")
+        XCTAssertEqual(decoded.ragExport?.attempts, 1)
+        XCTAssertEqual(decoded.ragExport?.chunksUpserted, 12)
+        XCTAssertEqual(decoded.ragExport?.docID, "doc-99")
+        XCTAssertEqual(decoded.ragExport?.lastStatusRefreshAt, Date(timeIntervalSince1970: 175))
+    }
+
+    func testRAGExportStatusDecodesOlderJSONWithoutRemoteStatus() throws {
+        let json = """
+        {
+          "jobID" : 99,
+          "exportedAt" : "1970-01-01T00:02:30Z",
+          "collection" : "agentmemory"
+        }
+        """.data(using: .utf8)!
+
+        let status = try JSONDecoder.agentMemory.decode(RAGExportStatus.self, from: json)
+
+        XCTAssertEqual(status.jobID, 99)
+        XCTAssertEqual(status.collection, "agentmemory")
+        XCTAssertNil(status.remoteStatus)
+        XCTAssertNil(status.remoteError)
+        XCTAssertNil(status.attempts)
+        XCTAssertNil(status.chunksUpserted)
+        XCTAssertNil(status.docID)
+        XCTAssertNil(status.lastStatusRefreshAt)
     }
 
     func testDiskStoreReturnsEmptySnapshotWhenFileDoesNotExist() throws {

@@ -41,11 +41,58 @@ public struct RAGExportStatus: Codable, Equatable, Sendable {
     public var jobID: Int
     public var exportedAt: Date
     public var collection: String
+    public var remoteStatus: String?
+    public var remoteError: String?
+    public var attempts: Int?
+    public var chunksUpserted: Int?
+    public var docID: String?
+    public var lastStatusRefreshAt: Date?
 
-    public init(jobID: Int, exportedAt: Date, collection: String) {
+    public init(
+        jobID: Int,
+        exportedAt: Date,
+        collection: String,
+        remoteStatus: String? = nil,
+        remoteError: String? = nil,
+        attempts: Int? = nil,
+        chunksUpserted: Int? = nil,
+        docID: String? = nil,
+        lastStatusRefreshAt: Date? = nil
+    ) {
         self.jobID = jobID
         self.exportedAt = exportedAt
         self.collection = collection
+        self.remoteStatus = remoteStatus
+        self.remoteError = remoteError
+        self.attempts = attempts
+        self.chunksUpserted = chunksUpserted
+        self.docID = docID
+        self.lastStatusRefreshAt = lastStatusRefreshAt
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case jobID
+        case exportedAt
+        case collection
+        case remoteStatus
+        case remoteError
+        case attempts
+        case chunksUpserted
+        case docID
+        case lastStatusRefreshAt
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.jobID = try container.decode(Int.self, forKey: .jobID)
+        self.exportedAt = try container.decode(Date.self, forKey: .exportedAt)
+        self.collection = try container.decode(String.self, forKey: .collection)
+        self.remoteStatus = try container.decodeIfPresent(String.self, forKey: .remoteStatus)
+        self.remoteError = try container.decodeIfPresent(String.self, forKey: .remoteError)
+        self.attempts = try container.decodeIfPresent(Int.self, forKey: .attempts)
+        self.chunksUpserted = try container.decodeIfPresent(Int.self, forKey: .chunksUpserted)
+        self.docID = try container.decodeIfPresent(String.self, forKey: .docID)
+        self.lastStatusRefreshAt = try container.decodeIfPresent(Date.self, forKey: .lastStatusRefreshAt)
     }
 }
 

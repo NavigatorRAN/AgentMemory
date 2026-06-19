@@ -376,7 +376,25 @@ struct ContentView: View {
             return "Not exported"
         }
 
-        return "Job #\(ragExport.jobID) in \(ragExport.collection), \(ragExport.exportedAt.formatted(date: .abbreviated, time: .shortened))"
+        var parts = [
+            "Job #\(ragExport.jobID)",
+            ragExport.collection,
+            ragExport.exportedAt.formatted(date: .abbreviated, time: .shortened)
+        ]
+
+        if let remoteStatus = ragExport.remoteStatus {
+            parts.append(remoteStatus)
+        }
+
+        if let chunksUpserted = ragExport.chunksUpserted {
+            parts.append("\(chunksUpserted) chunks")
+        }
+
+        if let docID = ragExport.docID {
+            parts.append(docID)
+        }
+
+        return parts.joined(separator: " | ")
     }
 
     private var latestBatchRun: some View {

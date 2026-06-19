@@ -78,5 +78,6 @@ The first build slice is a local SwiftUI foundation:
 - Bulk RAG export partial-failure reporting that preserves successful job metadata
 - Durable latest RAG export run summary with failure details
 - RAG queue job status refresh for recorded exports
+- Per-capture persisted RAG queue status, chunks, and document ID
 
-Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, detailed RAG job status display, and graph rendering are planned next.
+Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, expanded RAG job detail views, and graph rendering are planned next.

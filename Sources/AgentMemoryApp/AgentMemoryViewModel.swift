@@ -372,6 +372,23 @@ final class AgentMemoryViewModel {
         Task {
             do {
                 let statuses = try await RAGSSHQueueTransport(config: ragConfig).fetchJobStatuses(jobIDs: jobIDs)
+                let refreshedAt = Date()
+                let statusesByID = Dictionary(uniqueKeysWithValues: statuses.map { ($0.id, $0) })
+                for index in snapshot.items.indices {
+                    guard let jobID = snapshot.items[index].ragExport?.jobID,
+                          let status = statusesByID[jobID]
+                    else {
+                        continue
+                    }
+
+                    snapshot.items[index].ragExport?.remoteStatus = status.status
+                    snapshot.items[index].ragExport?.remoteError = status.error
+                    snapshot.items[index].ragExport?.attempts = status.attempts
+                    snapshot.items[index].ragExport?.chunksUpserted = status.chunksUpserted
+                    snapshot.items[index].ragExport?.docID = status.docID
+                    snapshot.items[index].ragExport?.lastStatusRefreshAt = refreshedAt
+                }
+                persistSnapshot()
                 let counts = Dictionary(grouping: statuses, by: \.status)
                     .mapValues(\.count)
                     .sorted { $0.key < $1.key }

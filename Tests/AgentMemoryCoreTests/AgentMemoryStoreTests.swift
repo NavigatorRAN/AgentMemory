@@ -124,4 +124,11 @@ final class AgentMemoryStoreTests: XCTestCase {
         XCTAssertEqual(root.lastPathComponent, "AgentMemory")
         XCTAssertTrue(root.path.contains("Application Support"))
     }
+
+    func testDiskStoreSourceArchiveRootIsUnderStoreRoot() {
+        let root = URL(fileURLWithPath: "/tmp/AgentMemoryTest", isDirectory: true)
+        let store = AgentMemoryDiskStore(root: root)
+
+        XCTAssertEqual(store.sourceArchiveRoot.path, "/tmp/AgentMemoryTest/Sources")
+    }
 }

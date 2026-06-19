@@ -5,6 +5,9 @@ public struct AgentMemoryDiskStore: Sendable {
     public var snapshotURL: URL {
         root.appendingPathComponent("agent-memory-state.json")
     }
+    public var sourceArchiveRoot: URL {
+        root.appendingPathComponent("Sources", isDirectory: true)
+    }
 
     public init(root: URL) {
         self.root = root

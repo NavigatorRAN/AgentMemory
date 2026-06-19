@@ -6,7 +6,8 @@ final class AgentMemoryConfigTests: XCTestCase {
         let config = AgentMemoryConfig()
 
         XCTAssertEqual(config.agentName, "CODEX")
-        XCTAssertEqual(config.memoryMCPEndpoint, "")
+        XCTAssertEqual(config.memoryMCPEndpoint, AgentMemoryConfig.defaultMemoryMCPEndpoint)
+        XCTAssertEqual(config.memoryMCPEndpointURL?.absoluteString, AgentMemoryConfig.defaultMemoryMCPEndpoint)
         XCTAssertFalse(config.liveMemoryWritesEnabled)
         XCTAssertEqual(config.ragHost, "192.168.1.107")
         XCTAssertEqual(config.ragUser, "veronika")

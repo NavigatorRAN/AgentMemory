@@ -40,19 +40,22 @@ public struct YouTubeTranscriptIngestionService: Sendable {
     private let videoIDParser: YouTubeVideoIDParser
     private let manifestParser: YouTubeCaptionManifestParser
     private let transcriptParser: YouTubeTranscriptParser
+    private let preferredLanguageCode: String?
 
     public init(
         archive: SourceArchive,
         fetcher: YouTubeTranscriptFetching,
         videoIDParser: YouTubeVideoIDParser = YouTubeVideoIDParser(),
         manifestParser: YouTubeCaptionManifestParser = YouTubeCaptionManifestParser(),
-        transcriptParser: YouTubeTranscriptParser = YouTubeTranscriptParser()
+        transcriptParser: YouTubeTranscriptParser = YouTubeTranscriptParser(),
+        preferredLanguageCode: String? = "en"
     ) {
         self.archive = archive
         self.fetcher = fetcher
         self.videoIDParser = videoIDParser
         self.manifestParser = manifestParser
         self.transcriptParser = transcriptParser
+        self.preferredLanguageCode = preferredLanguageCode
     }
 
     public func fetchQueuedTranscripts(in snapshot: AgentMemorySnapshot) async -> AgentMemorySnapshot {
@@ -69,7 +72,8 @@ public struct YouTubeTranscriptIngestionService: Sendable {
                 let watchURL = URL(string: "https://www.youtube.com/watch?v=\(videoID)")!
                 let html = try await fetcher.fetchWatchHTML(url: watchURL)
                 let tracks = try manifestParser.captionTracks(from: html)
-                let transcriptData = try await fetcher.fetchTranscriptData(url: tracks[0].baseURL)
+                let selectedTrack = preferredTrack(from: tracks)
+                let transcriptData = try await fetcher.fetchTranscriptData(url: selectedTrack.baseURL)
                 let transcript = try transcriptParser.transcript(from: transcriptData)
 
                 updated.items[index].displayName = "YouTube video \(videoID) transcript"
@@ -103,5 +107,13 @@ public struct YouTubeTranscriptIngestionService: Sendable {
         }
 
         return result
+    }
+
+    private func preferredTrack(from tracks: [YouTubeCaptionTrack]) -> YouTubeCaptionTrack {
+        guard let preferredLanguageCode else {
+            return tracks[0]
+        }
+
+        return tracks.first { $0.languageCode.localizedCaseInsensitiveCompare(preferredLanguageCode) == .orderedSame } ?? tracks[0]
     }
 }

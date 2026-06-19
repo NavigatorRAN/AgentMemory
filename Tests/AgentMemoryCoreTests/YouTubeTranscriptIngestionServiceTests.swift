@@ -63,10 +63,47 @@ final class YouTubeTranscriptIngestionServiceTests: XCTestCase {
         XCTAssertEqual(processed.items[0], item)
     }
 
+    func testPrefersEnglishCaptionTrackWhenAvailable() async {
+        let item = CaptureItem(displayName: "Video", rawInput: "https://youtu.be/dQw4w9WgXcQ", sourceType: .video)
+        let germanURL = URL(string: "https://www.youtube.com/api/timedtext?v=dQw4w9WgXcQ&lang=de")!
+        let englishURL = URL(string: "https://www.youtube.com/api/timedtext?v=dQw4w9WgXcQ&lang=en")!
+        let root = URL(fileURLWithPath: NSTemporaryDirectory())
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        let service = YouTubeTranscriptIngestionService(
+            archive: SourceArchive(root: root),
+            fetcher: StubYouTubeTranscriptFetcher(
+                watchHTML: [
+                    URL(string: "https://www.youtube.com/watch?v=dQw4w9WgXcQ")!: watchHTML(captionURLs: [germanURL, englishURL])
+                ],
+                transcriptData: [
+                    englishURL: Data("<transcript><text>English transcript</text></transcript>".utf8)
+                ]
+            )
+        )
+
+        let processed = await service.fetchQueuedTranscripts(in: AgentMemorySnapshot(items: [item]))
+
+        XCTAssertTrue(processed.items[0].rawInput.contains("English transcript"))
+    }
+
     private func watchHTML(captionURL: URL) -> String {
         """
         <script>
         {"captionTracks":[{"baseUrl":"\(captionURL.absoluteString.replacingOccurrences(of: "&", with: "\\u0026"))","name":{"simpleText":"English"},"languageCode":"en"}]}
+        </script>
+        """
+    }
+
+    private func watchHTML(captionURLs: [URL]) -> String {
+        let tracks = captionURLs.map { url in
+            let escaped = url.absoluteString.replacingOccurrences(of: "&", with: "\\u0026")
+            let languageCode = url.absoluteString.contains("lang=de") ? "de" : "en"
+            return #"{"baseUrl":"\#(escaped)","name":{"simpleText":"\#(languageCode)"},"languageCode":"\#(languageCode)"}"#
+        }.joined(separator: ",")
+
+        return """
+        <script>
+        {"captionTracks":[\(tracks)]}
         </script>
         """
     }

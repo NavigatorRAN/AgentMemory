@@ -618,10 +618,19 @@ struct ContentView: View {
                 Text("Run a Memory MCP search, recall, entity detail, or entity browse to populate the graph projection.")
                     .foregroundStyle(.secondary)
             } else {
-                if let selectedNodeID = viewModel.selectedMemoryGraphNodeID {
-                    Text("Focused on \(selectedNodeID). Showing immediate neighbors.")
-                        .font(.callout)
-                        .foregroundStyle(.secondary)
+                if let summary = viewModel.selectedMemoryGraphSummary {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Label(summary.label, systemImage: graphNodeIcon(for: summary.kind))
+                            .font(.headline)
+                        if let subtitle = summary.subtitle {
+                            Text(subtitle)
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        Text("Showing immediate neighbors across \(relationshipCountText(summary.connectedEdgeCount)).")
+                            .font(.callout)
+                            .foregroundStyle(.secondary)
+                    }
                 }
 
                 Text("3D scene payload ready: entities sit at depth 0, events sit forward at depth 4. Select a node card to focus its neighborhood.")
@@ -737,6 +746,10 @@ struct ContentView: View {
         case .event:
             return "clock"
         }
+    }
+
+    private func relationshipCountText(_ count: Int) -> String {
+        count == 1 ? "1 relationship" : "\(count) relationships"
     }
 
     private func graphNodeColor(for kind: MemoryMCPGraphNode.Kind) -> Color {

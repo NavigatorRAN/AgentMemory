@@ -50,5 +50,6 @@ The first build slice is a local SwiftUI foundation:
 - Memory MCP `record_event` payload builder and writer adapter
 - Memory MCP endpoint settings and HTTP transport skeleton
 - Toggle-controlled live Memory MCP write path with Settings test write
+- Durable overnight batch-run history with latest-run summary and morning brief capture
 
-RAG MCP transport, share extension, watched folders, durable overnight queue persistence, transcript/web ingestion adapters, and graph rendering are planned next.
+RAG MCP transport, share extension, watched folders, retry/backoff controls, transcript/web ingestion adapters, and graph rendering are planned next.

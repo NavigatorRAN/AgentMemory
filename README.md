@@ -59,6 +59,7 @@ The first build slice is a local SwiftUI foundation:
 - Memory MCP graph focus for selected-node neighborhoods
 - Native graph viewport projection and Canvas preview
 - Ready-to-draw graph viewport edge segments
+- Selectable graph Canvas nodes with hit-tested focus
 - Durable overnight batch-run history with latest-run summary and morning brief capture
 - Review workflow for `needsReview` captures with proposed Memory MCP payload preview, approve write, and skip
 - Review editing for capture title and raw input before approval

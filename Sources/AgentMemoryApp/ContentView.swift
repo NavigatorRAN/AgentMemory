@@ -693,6 +693,33 @@ struct ContentView: View {
                 }
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
+            .contentShape(Rectangle())
+            .gesture(
+                SpatialTapGesture()
+                    .onEnded { value in
+                        let projection = MemoryMCPGraphViewportProjector().project(
+                            scene,
+                            width: geometry.size.width,
+                            height: geometry.size.height,
+                            padding: 28
+                        )
+                        let tapPoint = MemoryMCPGraphPoint2D(
+                            x: value.location.x,
+                            y: value.location.y
+                        )
+                        let hit = MemoryMCPGraphViewportHitTester().hitNode(
+                            in: projection,
+                            point: tapPoint,
+                            radius: 14
+                        )
+
+                        if let nodeID = hit?.nodeID {
+                            viewModel.focusMemoryGraphNode(nodeID)
+                        } else {
+                            viewModel.clearMemoryGraphFocus()
+                        }
+                    }
+            )
         }
     }
 

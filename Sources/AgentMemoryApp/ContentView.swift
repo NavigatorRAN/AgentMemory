@@ -128,6 +128,9 @@ struct ContentView: View {
             Button("Fetch Web Pages") {
                 viewModel.fetchQueuedWebPages()
             }
+            Button("Fetch YouTube") {
+                viewModel.fetchQueuedYouTubeTranscripts()
+            }
             Button("Retry Failed") {
                 viewModel.retryAllFailedItems()
             }

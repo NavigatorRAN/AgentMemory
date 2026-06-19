@@ -226,6 +226,20 @@ final class AgentMemoryViewModel {
         }
     }
 
+    func fetchQueuedYouTubeTranscripts() {
+        Task {
+            let service = YouTubeTranscriptIngestionService(
+                archive: SourceArchive(root: store.sourceArchiveRoot),
+                fetcher: URLSessionYouTubeTranscriptFetcher()
+            )
+            snapshot = await service.fetchQueuedTranscripts(in: snapshot)
+            let reviewCount = snapshot.items.filter { $0.status == .needsReview && $0.customTags.contains("youtube") }.count
+            statusMessage = "Fetched YouTube transcripts. \(reviewCount) YouTube captures are ready for review."
+            persistSnapshot()
+            normalizeSelection(preferReview: true)
+        }
+    }
+
     func approveSelectedReviewItem() {
         guard let selectedItemID,
               let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })

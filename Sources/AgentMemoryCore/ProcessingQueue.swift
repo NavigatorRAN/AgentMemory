@@ -1,7 +1,7 @@
 import Foundation
 
 public actor ProcessingQueue {
-    public private(set) var items: [CaptureItem] = []
+    public private(set) var items: [CaptureItem]
 
     private let sourceClassifier: SourceClassifier
     private let outcomeClassifier: OutcomeClassifier
@@ -9,11 +9,13 @@ public actor ProcessingQueue {
     private let memoryWriter: MemoryWriting
 
     public init(
+        items: [CaptureItem] = [],
         sourceClassifier: SourceClassifier,
         outcomeClassifier: OutcomeClassifier,
         ruleEngine: RuleEngine,
         memoryWriter: MemoryWriting
     ) {
+        self.items = items
         self.sourceClassifier = sourceClassifier
         self.outcomeClassifier = outcomeClassifier
         self.ruleEngine = ruleEngine
@@ -62,6 +64,10 @@ public actor ProcessingQueue {
         for index in items.indices where items[index].status == .paused {
             items[index].status = .queued
         }
+    }
+
+    public func snapshotItems() -> [CaptureItem] {
+        items
     }
 
     private func confidence(for item: CaptureItem) -> Double {

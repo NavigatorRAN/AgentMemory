@@ -92,4 +92,26 @@ final class AgentMemoryStoreTests: XCTestCase {
 
         XCTAssertThrowsError(try store.load())
     }
+
+    func testProcessingQueueRestoresFromSavedItems() async {
+        let savedItems = [
+            CaptureItem(displayName: "Queued", rawInput: "Decision: saved queue", sourceType: .text, status: .queued),
+            CaptureItem(displayName: "Review", rawInput: "Possible inferred link", sourceType: .text, status: .needsReview)
+        ]
+        let queue = ProcessingQueue(
+            items: savedItems,
+            sourceClassifier: SourceClassifier(),
+            outcomeClassifier: OutcomeClassifier(),
+            ruleEngine: RuleEngine(rules: []),
+            memoryWriter: MockMemoryWriter()
+        )
+
+        let restored = await queue.snapshotItems()
+        XCTAssertEqual(restored, savedItems)
+
+        await queue.processNext()
+        let processed = await queue.snapshotItems()
+        XCTAssertEqual(processed[0].status, .complete)
+        XCTAssertEqual(processed[1].status, .needsReview)
+    }
 }

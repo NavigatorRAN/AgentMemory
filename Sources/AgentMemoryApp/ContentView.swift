@@ -628,6 +628,10 @@ struct ContentView: View {
                     .font(.callout)
                     .foregroundStyle(.secondary)
 
+                graphCanvas(scene: scene)
+                    .frame(maxWidth: .infinity, minHeight: 260)
+                    .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 220), spacing: 10)], alignment: .leading, spacing: 10) {
                     ForEach(scene.nodes, id: \.id) { node in
                         Button {
@@ -658,6 +662,48 @@ struct ContentView: View {
         }
     }
 
+    private func graphCanvas(scene: MemoryMCPGraphScene) -> some View {
+        GeometryReader { geometry in
+            Canvas { context, size in
+                let projection = MemoryMCPGraphViewportProjector().project(
+                    scene,
+                    width: size.width,
+                    height: size.height,
+                    padding: 28
+                )
+                let nodesByID = Dictionary(uniqueKeysWithValues: projection.nodes.map { ($0.id, $0) })
+
+                for edge in projection.edges {
+                    guard let source = nodesByID[edge.sourceID],
+                          let target = nodesByID[edge.targetID]
+                    else {
+                        continue
+                    }
+
+                    var path = Path()
+                    path.move(to: CGPoint(x: source.point.x, y: source.point.y))
+                    path.addLine(to: CGPoint(x: target.point.x, y: target.point.y))
+                    context.stroke(path, with: .color(.secondary.opacity(0.35)), lineWidth: 1)
+                }
+
+                for node in projection.nodes {
+                    let radius = node.kind == .entity ? 8.0 : 6.0
+                    let rect = CGRect(
+                        x: node.point.x - radius,
+                        y: node.point.y - radius,
+                        width: radius * 2,
+                        height: radius * 2
+                    )
+                    context.fill(
+                        Path(ellipseIn: rect),
+                        with: .color(graphNodeColor(for: node.kind).opacity(0.85))
+                    )
+                }
+            }
+            .frame(width: geometry.size.width, height: geometry.size.height)
+        }
+    }
+
     private func scenePositionSummary(for point: MemoryMCPGraphPoint3D) -> String {
         let x = point.x.formatted(.number.precision(.fractionLength(1)))
         let y = point.y.formatted(.number.precision(.fractionLength(1)))
@@ -671,6 +717,15 @@ struct ContentView: View {
             return "circle.hexagongrid"
         case .event:
             return "clock"
+        }
+    }
+
+    private func graphNodeColor(for kind: MemoryMCPGraphNode.Kind) -> Color {
+        switch kind {
+        case .entity:
+            return .blue
+        case .event:
+            return .orange
         }
     }
 }

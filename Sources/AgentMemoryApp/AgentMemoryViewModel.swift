@@ -22,6 +22,7 @@ final class AgentMemoryViewModel {
 
     private let store: AgentMemoryDiskStore
     private let processingServiceOverride: CaptureProcessingService?
+    private let retryPolicy = RetryPolicy()
 
     init(
         store: AgentMemoryDiskStore,
@@ -112,6 +113,14 @@ final class AgentMemoryViewModel {
         }
 
         return ReviewExplanationBuilder().explanations(for: selectedItem)
+    }
+
+    var canRetrySelectedItem: Bool {
+        guard let selectedItem else {
+            return false
+        }
+
+        return retryPolicy.canRetry(selectedItem)
     }
 
     func addCapture() {
@@ -267,6 +276,11 @@ final class AgentMemoryViewModel {
             return
         }
 
+        guard retryPolicy.canRetry(snapshot.items[index]) else {
+            statusMessage = retryPolicy.exhaustedReason(for: snapshot.items[index]) ?? "\(snapshot.items[index].displayName) is not retryable."
+            return
+        }
+
         snapshot.items[index].status = .queued
         snapshot.items[index].failureReason = nil
         statusMessage = "Queued \(snapshot.items[index].displayName) for retry."
@@ -276,13 +290,25 @@ final class AgentMemoryViewModel {
 
     func retryAllFailedItems() {
         var retryCount = 0
+        var exhaustedCount = 0
         for index in snapshot.items.indices where snapshot.items[index].status == .failed {
-            snapshot.items[index].status = .queued
-            snapshot.items[index].failureReason = nil
-            retryCount += 1
+            if retryPolicy.canRetry(snapshot.items[index]) {
+                snapshot.items[index].status = .queued
+                snapshot.items[index].failureReason = nil
+                retryCount += 1
+            } else {
+                exhaustedCount += 1
+            }
         }
 
-        statusMessage = retryCount == 0 ? "No failed captures to retry." : "Queued \(retryCount) failed captures for retry."
+        if retryCount == 0 && exhaustedCount == 0 {
+            statusMessage = "No failed captures to retry."
+        } else if exhaustedCount > 0 {
+            statusMessage = "Queued \(retryCount) failed captures for retry. \(exhaustedCount) reached the retry limit."
+        } else {
+            statusMessage = "Queued \(retryCount) failed captures for retry."
+        }
+
         persistSnapshot()
         normalizeSelection(preferReview: true)
     }

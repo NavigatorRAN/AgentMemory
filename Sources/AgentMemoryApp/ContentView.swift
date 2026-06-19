@@ -316,7 +316,7 @@ struct ContentView: View {
                     Button("Retry Selected") {
                         viewModel.retrySelectedItem()
                     }
-                    .disabled(![QueueStatus.failed, .skipped, .paused].contains(item.status))
+                    .disabled(!viewModel.canRetrySelectedItem)
                 }
             } else {
                 Text("Select a capture to review.")

@@ -36,6 +36,7 @@ final class AgentMemoryViewModel {
             snapshot = AgentMemoryViewModel.sampleSnapshot
             save()
         }
+        normalizeSelection(preferReview: true)
     }
 
     var brief: MorningBrief {
@@ -110,6 +111,7 @@ final class AgentMemoryViewModel {
         captureTitle = ""
         statusMessage = "Added \(displayName)."
         persistSnapshot()
+        normalizeSelection(preferReview: false)
     }
 
     func addTextStack(_ text: String) {
@@ -131,6 +133,7 @@ final class AgentMemoryViewModel {
         snapshot.items.append(contentsOf: items)
         statusMessage = "Added \(items.count) captures from \(sourceLabel)."
         persistSnapshot()
+        normalizeSelection(preferReview: false)
     }
 
     func processNext() {
@@ -141,6 +144,7 @@ final class AgentMemoryViewModel {
                     ? "Processed next queued item with live Memory MCP writes enabled."
                     : "Processed next queued item with mock memory writes."
                 persistSnapshot()
+                normalizeSelection(preferReview: true)
             } catch {
                 statusMessage = "Processing setup failed: \(error.localizedDescription)"
             }
@@ -171,6 +175,7 @@ final class AgentMemoryViewModel {
                     statusMessage = "Batch run finished."
                 }
                 persistSnapshot()
+                normalizeSelection(preferReview: true)
             } catch {
                 statusMessage = "Batch setup failed: \(error.localizedDescription)"
             }
@@ -187,6 +192,7 @@ final class AgentMemoryViewModel {
             let reviewCount = snapshot.items.filter { $0.status == .needsReview && $0.customTags.contains("web") }.count
             statusMessage = "Fetched web pages. \(reviewCount) web captures are ready for review."
             persistSnapshot()
+            normalizeSelection(preferReview: true)
         }
     }
 
@@ -211,6 +217,7 @@ final class AgentMemoryViewModel {
                 snapshot.items[index].failureReason = nil
                 statusMessage = "Approved and wrote \(snapshot.items[index].displayName)."
                 persistSnapshot()
+                selectNextReviewItem()
             } catch {
                 snapshot.items[index].status = .failed
                 snapshot.items[index].failureReason = "Review write failed: \(error.localizedDescription)"
@@ -232,6 +239,7 @@ final class AgentMemoryViewModel {
         snapshot.items[index].failureReason = nil
         statusMessage = "Skipped \(snapshot.items[index].displayName)."
         persistSnapshot()
+        selectNextReviewItem()
     }
 
     func retrySelectedItem() {
@@ -246,6 +254,7 @@ final class AgentMemoryViewModel {
         snapshot.items[index].failureReason = nil
         statusMessage = "Queued \(snapshot.items[index].displayName) for retry."
         persistSnapshot()
+        normalizeSelection(preferReview: true)
     }
 
     func retryAllFailedItems() {
@@ -258,6 +267,11 @@ final class AgentMemoryViewModel {
 
         statusMessage = retryCount == 0 ? "No failed captures to retry." : "Queued \(retryCount) failed captures for retry."
         persistSnapshot()
+        normalizeSelection(preferReview: true)
+    }
+
+    func selectNextReviewItem() {
+        selectedItemID = reviewItems.first?.id ?? snapshot.items.first?.id
     }
 
     func selectedItemTitleBindingValue() -> String {
@@ -354,6 +368,7 @@ final class AgentMemoryViewModel {
         do {
             snapshot = try store.load()
             statusMessage = "Loaded local state."
+            normalizeSelection(preferReview: true)
         } catch {
             statusMessage = "Load failed: \(error.localizedDescription)"
         }
@@ -415,6 +430,20 @@ final class AgentMemoryViewModel {
                 archivedSources: snapshot.archivedSources
             )
         )
+    }
+
+    private func normalizeSelection(preferReview: Bool) {
+        if preferReview, let reviewItem = reviewItems.first {
+            selectedItemID = reviewItem.id
+            return
+        }
+
+        if let selectedItemID,
+           snapshot.items.contains(where: { $0.id == selectedItemID }) {
+            return
+        }
+
+        selectedItemID = snapshot.items.first?.id
     }
 
     private func suggestedTitle(for rawInput: String) -> String {

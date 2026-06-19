@@ -120,6 +120,9 @@ struct ContentView: View {
             Button("Retry Failed") {
                 viewModel.retryAllFailedItems()
             }
+            Button("Next Review") {
+                viewModel.selectNextReviewItem()
+            }
             Button("Save") {
                 viewModel.save()
             }

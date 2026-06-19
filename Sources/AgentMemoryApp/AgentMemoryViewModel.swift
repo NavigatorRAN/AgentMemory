@@ -47,6 +47,27 @@ final class AgentMemoryViewModel {
         save()
     }
 
+    func addTextStack(_ text: String) {
+        let items = CaptureStackBuilder().items(fromTextStack: text)
+        addBatch(items, sourceLabel: "text stack")
+    }
+
+    func addFileURLs(_ urls: [URL]) {
+        let items = CaptureStackBuilder().items(fromFileURLs: urls)
+        addBatch(items, sourceLabel: "file stack")
+    }
+
+    private func addBatch(_ items: [CaptureItem], sourceLabel: String) {
+        guard !items.isEmpty else {
+            statusMessage = "No captures found in \(sourceLabel)."
+            return
+        }
+
+        snapshot.items.append(contentsOf: items)
+        statusMessage = "Added \(items.count) captures from \(sourceLabel)."
+        save()
+    }
+
     func processNext() {
         Task {
             let queue = ProcessingQueue(

@@ -26,6 +26,7 @@ public struct MemoryMCPPayloadBuilder: Sendable {
         let tags = ["agentmemory", "capture"]
             + item.proposedOutcomes.map(\.rawValue)
             + [item.sourceType.rawValue]
+            + item.customTags
 
         return MemoryMCPRecordEventPayload(
             agent: agent,

@@ -47,6 +47,7 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
     public var proposedOutcomes: [MemoryOutcome]
     public var confidence: Double
     public var failureReason: String?
+    public var customTags: [String]
 
     public init(
         id: UUID = UUID(),
@@ -57,7 +58,8 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         status: QueueStatus = .queued,
         proposedOutcomes: [MemoryOutcome] = [],
         confidence: Double = 0,
-        failureReason: String? = nil
+        failureReason: String? = nil,
+        customTags: [String] = []
     ) {
         self.id = id
         self.displayName = displayName
@@ -68,6 +70,34 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         self.proposedOutcomes = proposedOutcomes
         self.confidence = confidence
         self.failureReason = failureReason
+        self.customTags = customTags
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case displayName
+        case rawInput
+        case createdAt
+        case sourceType
+        case status
+        case proposedOutcomes
+        case confidence
+        case failureReason
+        case customTags
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.displayName = try container.decode(String.self, forKey: .displayName)
+        self.rawInput = try container.decode(String.self, forKey: .rawInput)
+        self.createdAt = try container.decode(Date.self, forKey: .createdAt)
+        self.sourceType = try container.decode(SourceType.self, forKey: .sourceType)
+        self.status = try container.decode(QueueStatus.self, forKey: .status)
+        self.proposedOutcomes = try container.decode([MemoryOutcome].self, forKey: .proposedOutcomes)
+        self.confidence = try container.decode(Double.self, forKey: .confidence)
+        self.failureReason = try container.decodeIfPresent(String.self, forKey: .failureReason)
+        self.customTags = try container.decodeIfPresent([String].self, forKey: .customTags) ?? []
     }
 }
 

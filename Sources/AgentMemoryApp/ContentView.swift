@@ -185,6 +185,38 @@ struct ContentView: View {
                     }
                 }
 
+                Text("Source Archive")
+                    .font(.headline)
+                if let archivedSource = viewModel.selectedArchivedSource {
+                    Grid(alignment: .leading, horizontalSpacing: 16, verticalSpacing: 8) {
+                        GridRow {
+                            Text("Archived")
+                                .foregroundStyle(.secondary)
+                            Text(archivedSource.archivedPath)
+                                .textSelection(.enabled)
+                        }
+                        GridRow {
+                            Text("Original")
+                                .foregroundStyle(.secondary)
+                            Text(archivedSource.originalPath ?? "Not available")
+                                .textSelection(.enabled)
+                        }
+                        GridRow {
+                            Text("Type")
+                                .foregroundStyle(.secondary)
+                            Text(archivedSource.sourceType.rawValue)
+                        }
+                        GridRow {
+                            Text("Bytes")
+                                .foregroundStyle(.secondary)
+                            Text(archivedSource.byteSize.map(String.init) ?? "Not available")
+                        }
+                    }
+                } else {
+                    Text("Source archive metadata is not available for this capture yet.")
+                        .foregroundStyle(.secondary)
+                }
+
                 Text("Raw Input")
                     .font(.headline)
                 TextField(

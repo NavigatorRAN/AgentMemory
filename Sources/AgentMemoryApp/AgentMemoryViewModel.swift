@@ -54,6 +54,14 @@ final class AgentMemoryViewModel {
         return snapshot.items.first { $0.id == selectedItemID }
     }
 
+    var selectedArchivedSource: ArchivedSource? {
+        guard let selectedItem else {
+            return nil
+        }
+
+        return snapshot.archivedSources.first { $0.itemID == selectedItem.id }
+    }
+
     var selectedReviewPayloadPreview: String {
         guard let item = selectedItem else {
             return "Select a capture to review."

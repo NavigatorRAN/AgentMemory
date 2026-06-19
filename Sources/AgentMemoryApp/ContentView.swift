@@ -184,6 +184,10 @@ struct ContentView: View {
                     viewModel.recallMemoryMCPEntity()
                 }
                 .disabled(!viewModel.canSearchMemoryMCP)
+                Button("Entity Detail") {
+                    viewModel.loadMemoryMCPEntityDetail()
+                }
+                .disabled(!viewModel.canSearchMemoryMCP)
             }
 
             TextField("Search saved memory or enter an entity name", text: $viewModel.memorySearchQuery)
@@ -192,10 +196,33 @@ struct ContentView: View {
                     viewModel.searchMemoryMCP()
                 }
 
-            if viewModel.memorySearchResults.isEmpty {
+            if viewModel.memorySearchResults.isEmpty && viewModel.memoryEntityDetail == nil {
                 Text("No Memory MCP search results loaded.")
                     .foregroundStyle(.secondary)
             } else {
+                if let entity = viewModel.memoryEntityDetail {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(entity.displayName)
+                            .font(.headline)
+                        Text(entity.content.isEmpty ? "No canonical entity notes yet." : entity.content)
+                            .textSelection(.enabled)
+                        if let type = entity.frontmatter["type"]?.stringValue {
+                            Text(type)
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        if let path = entity.path {
+                            Text(path)
+                                .font(.caption)
+                                .foregroundStyle(.tertiary)
+                                .textSelection(.enabled)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+                }
+
                 VStack(alignment: .leading, spacing: 10) {
                     ForEach(viewModel.memorySearchResults, id: \.id) { event in
                         VStack(alignment: .leading, spacing: 6) {

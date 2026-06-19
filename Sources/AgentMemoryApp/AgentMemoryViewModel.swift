@@ -25,6 +25,7 @@ final class AgentMemoryViewModel {
     }
     var memorySearchQuery: String = ""
     var memorySearchResults: [MemoryMCPSearchEvent] = []
+    var memoryEntityDetail: MemoryMCPEntityDetail?
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
@@ -656,12 +657,14 @@ final class AgentMemoryViewModel {
         guard !query.isEmpty else {
             statusMessage = "Enter a Memory MCP search query."
             memorySearchResults = []
+            memoryEntityDetail = nil
             return
         }
 
         guard let endpoint = config.memoryMCPEndpointURL else {
             statusMessage = "Enter a valid http or https Memory MCP endpoint."
             memorySearchResults = []
+            memoryEntityDetail = nil
             return
         }
 
@@ -669,11 +672,13 @@ final class AgentMemoryViewModel {
             do {
                 let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).searchEvents(query: query, limit: 10)
                 memorySearchResults = results
+                memoryEntityDetail = nil
                 statusMessage = results.isEmpty
                     ? "Memory MCP search found no events."
                     : "Memory MCP search found \(results.count) events."
             } catch {
                 memorySearchResults = []
+                memoryEntityDetail = nil
                 statusMessage = "Memory MCP search failed: \(error.localizedDescription)"
             }
         }
@@ -684,12 +689,14 @@ final class AgentMemoryViewModel {
         guard !entity.isEmpty else {
             statusMessage = "Enter a Memory MCP entity name."
             memorySearchResults = []
+            memoryEntityDetail = nil
             return
         }
 
         guard let endpoint = config.memoryMCPEndpointURL else {
             statusMessage = "Enter a valid http or https Memory MCP endpoint."
             memorySearchResults = []
+            memoryEntityDetail = nil
             return
         }
 
@@ -697,12 +704,55 @@ final class AgentMemoryViewModel {
             do {
                 let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).recallEvents(forEntity: entity, limit: 10)
                 memorySearchResults = results
+                memoryEntityDetail = nil
                 statusMessage = results.isEmpty
                     ? "Memory MCP recall found no events for \(entity)."
                     : "Memory MCP recall found \(results.count) events for \(entity)."
             } catch {
                 memorySearchResults = []
+                memoryEntityDetail = nil
                 statusMessage = "Memory MCP recall failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func loadMemoryMCPEntityDetail() {
+        let entity = memorySearchQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !entity.isEmpty else {
+            statusMessage = "Enter a Memory MCP entity name."
+            memorySearchResults = []
+            memoryEntityDetail = nil
+            return
+        }
+
+        guard let endpoint = config.memoryMCPEndpointURL else {
+            statusMessage = "Enter a valid http or https Memory MCP endpoint."
+            memorySearchResults = []
+            memoryEntityDetail = nil
+            return
+        }
+
+        Task {
+            do {
+                let detail = try await MemoryMCPHTTPTransport(endpoint: endpoint).getEntity(named: entity)
+                memoryEntityDetail = detail
+                memorySearchResults = detail.recentEvents.map {
+                    MemoryMCPSearchEvent(
+                        id: $0.id,
+                        eventDate: $0.eventDate,
+                        recordedAt: $0.recordedAt,
+                        entities: $0.entities,
+                        tags: $0.tags,
+                        agent: $0.agent,
+                        content: $0.content ?? "Metadata-only recent event.",
+                        path: $0.path
+                    )
+                }
+                statusMessage = "Loaded Memory MCP entity \(detail.displayName)."
+            } catch {
+                memorySearchResults = []
+                memoryEntityDetail = nil
+                statusMessage = "Memory MCP entity load failed: \(error.localizedDescription)"
             }
         }
     }

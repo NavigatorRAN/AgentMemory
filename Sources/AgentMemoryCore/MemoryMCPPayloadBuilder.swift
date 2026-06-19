@@ -5,6 +5,13 @@ public struct MemoryMCPRecordEventPayload: Codable, Equatable, Sendable {
     public var content: String
     public var entities: [String]
     public var tags: [String]
+
+    public init(agent: String, content: String, entities: [String], tags: [String]) {
+        self.agent = agent
+        self.content = content
+        self.entities = entities
+        self.tags = tags
+    }
 }
 
 public struct MemoryMCPPayloadBuilder: Sendable {

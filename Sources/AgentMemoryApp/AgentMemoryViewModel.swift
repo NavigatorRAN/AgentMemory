@@ -12,7 +12,7 @@ final class AgentMemoryViewModel {
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
-    private let processingService: CaptureProcessingService
+    private let processingServiceOverride: CaptureProcessingService?
 
     init(
         store: AgentMemoryDiskStore,
@@ -23,10 +23,7 @@ final class AgentMemoryViewModel {
         self.store = store
         self.snapshot = initialSnapshot
         self.config = initialConfig
-        self.processingService = processingService ?? CaptureProcessingService(
-            archive: SourceArchive(root: store.sourceArchiveRoot),
-            memoryWriter: MockMemoryWriter()
-        )
+        self.processingServiceOverride = processingService
     }
 
     convenience init() {
@@ -83,17 +80,29 @@ final class AgentMemoryViewModel {
 
     func processNext() {
         Task {
-            snapshot = await processingService.processNext(in: snapshot)
-            statusMessage = "Processed next queued item and archived source."
-            save()
+            do {
+                snapshot = try await makeProcessingService().processNext(in: snapshot)
+                statusMessage = config.liveMemoryWritesEnabled
+                    ? "Processed next queued item with live Memory MCP writes enabled."
+                    : "Processed next queued item with mock memory writes."
+                save()
+            } catch {
+                statusMessage = "Processing setup failed: \(error.localizedDescription)"
+            }
         }
     }
 
     func processAllQueued() {
         Task {
-            snapshot = await processingService.processAllQueued(in: snapshot)
-            statusMessage = "Processed queued captures and archived sources."
-            save()
+            do {
+                snapshot = try await makeProcessingService().processAllQueued(in: snapshot)
+                statusMessage = config.liveMemoryWritesEnabled
+                    ? "Processed queued captures with live Memory MCP writes enabled."
+                    : "Processed queued captures with mock memory writes."
+                save()
+            } catch {
+                statusMessage = "Processing setup failed: \(error.localizedDescription)"
+            }
         }
     }
 
@@ -130,6 +139,47 @@ final class AgentMemoryViewModel {
         } catch {
             statusMessage = "Settings load failed: \(error.localizedDescription)"
         }
+    }
+
+    func testMemoryMCPConnection() {
+        Task {
+            do {
+                guard config.liveMemoryWritesEnabled else {
+                    statusMessage = "Enable live Memory MCP writes before sending a test event."
+                    return
+                }
+
+                guard let endpoint = config.memoryMCPEndpointURL else {
+                    statusMessage = "Enter a valid http or https Memory MCP endpoint."
+                    return
+                }
+
+                let payload = MemoryMCPRecordEventPayload(
+                    agent: config.resolvedAgentName,
+                    content: "AgentMemory settings test write from macOS app.",
+                    entities: ["agentmemory", "memory-mcp-desktop-app"],
+                    tags: ["agentmemory", "settings", "test-write"]
+                )
+                try await MemoryMCPHTTPTransport(endpoint: endpoint).recordEvent(payload)
+                statusMessage = "Memory MCP test write sent."
+            } catch {
+                statusMessage = "Memory MCP test write failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    private func makeProcessingService() throws -> CaptureProcessingService {
+        if let processingServiceOverride {
+            return processingServiceOverride
+        }
+
+        return CaptureProcessingService(
+            archive: SourceArchive(root: store.sourceArchiveRoot),
+            memoryWriter: try MemoryWriterResolver.writer(
+                config: config,
+                archivedSources: snapshot.archivedSources
+            )
+        )
     }
 
     private func suggestedTitle(for rawInput: String) -> String {

@@ -14,10 +14,16 @@ struct AgentMemorySettingsView: View {
                 Button("Save Settings") {
                     viewModel.saveConfig()
                 }
+                Button("Send Test Write") {
+                    viewModel.testMemoryMCPConnection()
+                }
+                .disabled(!viewModel.config.liveMemoryWritesEnabled)
             }
 
             Section("Status") {
                 Text(viewModel.config.liveMemoryWritesEnabled ? "Live writes enabled" : "Live writes disabled")
+                    .foregroundStyle(.secondary)
+                Text(viewModel.statusMessage)
                     .foregroundStyle(.secondary)
             }
         }

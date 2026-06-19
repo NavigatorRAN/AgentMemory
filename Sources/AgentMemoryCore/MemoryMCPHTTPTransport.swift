@@ -53,6 +53,15 @@ public struct MemoryMCPHTTPTransport: MemoryMCPTransporting {
         )
     }
 
+    public func listEntities(prefix: String? = nil, type: String? = nil) async throws -> [MemoryMCPEntitySummary] {
+        let structured = try await callTool(
+            name: "list_entities",
+            arguments: ListEntitiesArguments(prefix: prefix, type: type),
+            structuredContent: ListEntitiesStructuredContent.self
+        )
+        return structured.result
+    }
+
     private func callTool<Arguments: Encodable, StructuredContent: Decodable>(
         name: String,
         arguments: Arguments,
@@ -211,6 +220,30 @@ public struct MemoryMCPEntityDetail: Codable, Equatable, Sendable {
     }
 }
 
+public struct MemoryMCPEntitySummary: Codable, Equatable, Sendable {
+    public var name: String
+    public var displayName: String
+    public var type: String
+    public var eventCount: Int
+    public var lastEventDate: String?
+
+    public init(name: String, displayName: String, type: String, eventCount: Int, lastEventDate: String?) {
+        self.name = name
+        self.displayName = displayName
+        self.type = type
+        self.eventCount = eventCount
+        self.lastEventDate = lastEventDate
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case displayName = "display_name"
+        case type
+        case eventCount = "event_count"
+        case lastEventDate = "last_event_date"
+    }
+}
+
 public struct MemoryMCPRecentEvent: Codable, Equatable, Sendable {
     public var id: String
     public var eventDate: String
@@ -358,6 +391,15 @@ private struct RecallForEntityArguments: Encodable {
 
 private struct GetEntityArguments: Encodable {
     var name: String
+}
+
+private struct ListEntitiesArguments: Encodable {
+    var prefix: String?
+    var type: String?
+}
+
+private struct ListEntitiesStructuredContent: Decodable {
+    var result: [MemoryMCPEntitySummary]
 }
 
 private struct ToolCallResponse<StructuredContent: Decodable>: Decodable {

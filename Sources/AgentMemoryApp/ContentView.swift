@@ -188,18 +188,46 @@ struct ContentView: View {
                     viewModel.loadMemoryMCPEntityDetail()
                 }
                 .disabled(!viewModel.canSearchMemoryMCP)
+                Button("Browse Entities") {
+                    viewModel.listMemoryMCPEntities()
+                }
+                .disabled(!viewModel.canSearchMemoryMCP)
             }
 
-            TextField("Search saved memory or enter an entity name", text: $viewModel.memorySearchQuery)
+            TextField("Search saved memory, enter an entity name, or filter entities", text: $viewModel.memorySearchQuery)
                 .textFieldStyle(.roundedBorder)
                 .onSubmit {
                     viewModel.searchMemoryMCP()
                 }
 
-            if viewModel.memorySearchResults.isEmpty && viewModel.memoryEntityDetail == nil {
+            if viewModel.memorySearchResults.isEmpty && viewModel.memoryEntityDetail == nil && viewModel.memoryEntityResults.isEmpty {
                 Text("No Memory MCP search results loaded.")
                     .foregroundStyle(.secondary)
             } else {
+                if !viewModel.memoryEntityResults.isEmpty {
+                    VStack(alignment: .leading, spacing: 10) {
+                        ForEach(viewModel.memoryEntityResults, id: \.name) { entity in
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(entity.displayName)
+                                    .font(.headline)
+                                HStack {
+                                    Text(entity.name)
+                                    Text(entity.type)
+                                    Text("\(entity.eventCount) events")
+                                    if let lastEventDate = entity.lastEventDate {
+                                        Text(lastEventDate)
+                                    }
+                                }
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding()
+                            .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+                        }
+                    }
+                }
+
                 if let entity = viewModel.memoryEntityDetail {
                     VStack(alignment: .leading, spacing: 6) {
                         Text(entity.displayName)

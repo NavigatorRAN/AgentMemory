@@ -23,6 +23,8 @@ final class AgentMemoryViewModel {
             normalizeSelection(preferReview: sidebarFilter == .review)
         }
     }
+    var memorySearchQuery: String = ""
+    var memorySearchResults: [MemoryMCPSearchEvent] = []
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
@@ -145,6 +147,10 @@ final class AgentMemoryViewModel {
 
     var canRefreshRAGJobStatuses: Bool {
         config.ragSSHQueueConfig() != nil && snapshot.items.contains { $0.ragExport?.jobID != nil }
+    }
+
+    var canSearchMemoryMCP: Bool {
+        config.memoryMCPEndpointURL != nil
     }
 
     func addCapture() {
@@ -641,6 +647,34 @@ final class AgentMemoryViewModel {
                 statusMessage = "Memory MCP test write sent."
             } catch {
                 statusMessage = "Memory MCP test write failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func searchMemoryMCP() {
+        let query = memorySearchQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !query.isEmpty else {
+            statusMessage = "Enter a Memory MCP search query."
+            memorySearchResults = []
+            return
+        }
+
+        guard let endpoint = config.memoryMCPEndpointURL else {
+            statusMessage = "Enter a valid http or https Memory MCP endpoint."
+            memorySearchResults = []
+            return
+        }
+
+        Task {
+            do {
+                let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).searchEvents(query: query, limit: 10)
+                memorySearchResults = results
+                statusMessage = results.isEmpty
+                    ? "Memory MCP search found no events."
+                    : "Memory MCP search found \(results.count) events."
+            } catch {
+                memorySearchResults = []
+                statusMessage = "Memory MCP search failed: \(error.localizedDescription)"
             }
         }
     }

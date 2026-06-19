@@ -49,6 +49,7 @@ struct ContentView: View {
                     queueSummary
                     actionBar
                     statusLine
+                    memorySearchPanel
                     reviewPanel
                     latestBatchRun
                     latestRAGExport
@@ -167,6 +168,61 @@ struct ContentView: View {
         Text(viewModel.statusMessage)
             .font(.callout)
             .foregroundStyle(.secondary)
+    }
+
+    private var memorySearchPanel: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Text("Memory MCP Search")
+                    .font(.title2.bold())
+                Spacer()
+                Button("Search") {
+                    viewModel.searchMemoryMCP()
+                }
+                .disabled(!viewModel.canSearchMemoryMCP)
+            }
+
+            TextField("Search saved agent memory", text: $viewModel.memorySearchQuery)
+                .textFieldStyle(.roundedBorder)
+                .onSubmit {
+                    viewModel.searchMemoryMCP()
+                }
+
+            if viewModel.memorySearchResults.isEmpty {
+                Text("No Memory MCP search results loaded.")
+                    .foregroundStyle(.secondary)
+            } else {
+                VStack(alignment: .leading, spacing: 10) {
+                    ForEach(viewModel.memorySearchResults, id: \.id) { event in
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(event.content)
+                                .lineLimit(4)
+                                .textSelection(.enabled)
+                            HStack {
+                                Text(event.eventDate)
+                                if let agent = event.agent {
+                                    Text(agent)
+                                }
+                                if !event.entities.isEmpty {
+                                    Text(event.entities.joined(separator: ", "))
+                                }
+                            }
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                            if !event.path.isEmpty {
+                                Text(event.path)
+                                    .font(.caption)
+                                    .foregroundStyle(.tertiary)
+                                    .textSelection(.enabled)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                        .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+                    }
+                }
+            }
+        }
     }
 
     private var reviewPanel: some View {

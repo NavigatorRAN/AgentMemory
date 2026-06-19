@@ -48,8 +48,9 @@ The first build slice is a local SwiftUI foundation:
 - Source archive metadata attached during processing
 - Real file-byte copying into the local source archive
 - Memory MCP `record_event` payload builder and writer adapter
-- Memory MCP endpoint settings and HTTP transport skeleton
+- Memory MCP endpoint settings and JSON-RPC HTTP transport
 - Toggle-controlled live Memory MCP write path with Settings test write
+- Native Memory MCP event search panel
 - Durable overnight batch-run history with latest-run summary and morning brief capture
 - Review workflow for `needsReview` captures with proposed Memory MCP payload preview, approve write, and skip
 - Review editing for capture title and raw input before approval
@@ -81,4 +82,4 @@ The first build slice is a local SwiftUI foundation:
 - Per-capture persisted RAG queue status, chunks, and document ID
 - Latest RAG export status-count summary from refreshed capture metadata
 
-Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, expanded RAG job detail views, and graph rendering are planned next.
+Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, expanded Memory MCP recall/entity views, expanded RAG job detail views, and graph rendering are planned next.

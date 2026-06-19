@@ -18,6 +18,10 @@ struct ContentView: View {
                 .pickerStyle(.segmented)
                 .padding(.vertical, 6)
 
+                TextField("Search captures", text: $viewModel.sidebarSearchQuery)
+                    .textFieldStyle(.roundedBorder)
+                    .padding(.bottom, 6)
+
                 Section("Capture Inbox") {
                     ForEach(viewModel.sidebarItems) { item in
                         VStack(alignment: .leading, spacing: 5) {

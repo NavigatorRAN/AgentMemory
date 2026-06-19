@@ -68,5 +68,6 @@ The first build slice is a local SwiftUI foundation:
 - YouTube caption manifest parsing foundation
 - YouTube timedtext transcript parsing foundation
 - Queued YouTube transcript fetching into review
+- Native capture search across inbox and review filters
 
 RAG MCP transport, share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, and graph rendering are planned next.

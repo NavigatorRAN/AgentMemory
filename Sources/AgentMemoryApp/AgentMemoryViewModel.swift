@@ -18,6 +18,11 @@ final class AgentMemoryViewModel {
     var captureTitle: String = ""
     var selectedItemID: CaptureItem.ID?
     var sidebarFilter: CaptureSidebarFilter = .all
+    var sidebarSearchQuery: String = "" {
+        didSet {
+            normalizeSelection(preferReview: sidebarFilter == .review)
+        }
+    }
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
@@ -57,12 +62,15 @@ final class AgentMemoryViewModel {
     }
 
     var sidebarItems: [CaptureItem] {
+        let filteredItems: [CaptureItem]
         switch sidebarFilter {
         case .all:
-            return snapshot.items
+            filteredItems = snapshot.items
         case .review:
-            return reviewItems
+            filteredItems = reviewItems
         }
+
+        return CaptureSearch().filter(filteredItems, query: sidebarSearchQuery)
     }
 
     var selectedItem: CaptureItem? {

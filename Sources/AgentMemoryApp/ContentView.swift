@@ -114,6 +114,9 @@ struct ContentView: View {
             Button("Run Overnight Batch") {
                 viewModel.runQueuedBatch()
             }
+            Button("Fetch Web Pages") {
+                viewModel.fetchQueuedWebPages()
+            }
             Button("Save") {
                 viewModel.save()
             }

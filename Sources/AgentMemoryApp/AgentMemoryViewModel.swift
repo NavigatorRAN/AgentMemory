@@ -177,6 +177,19 @@ final class AgentMemoryViewModel {
         }
     }
 
+    func fetchQueuedWebPages() {
+        Task {
+            let service = WebPageIngestionService(
+                archive: SourceArchive(root: store.sourceArchiveRoot),
+                fetcher: URLSessionWebPageFetcher()
+            )
+            snapshot = await service.fetchQueuedWebPages(in: snapshot)
+            let reviewCount = snapshot.items.filter { $0.status == .needsReview && $0.customTags.contains("web") }.count
+            statusMessage = "Fetched web pages. \(reviewCount) web captures are ready for review."
+            persistSnapshot()
+        }
+    }
+
     func approveSelectedReviewItem() {
         guard let selectedItemID,
               let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })

@@ -144,6 +144,10 @@ struct ContentView: View {
                 viewModel.exportCompletedItemsToRAG()
             }
             .disabled(!viewModel.canExportCompletedItemsToRAG)
+            Button("Refresh RAG Status") {
+                viewModel.refreshRAGJobStatuses()
+            }
+            .disabled(!viewModel.canRefreshRAGJobStatuses)
             Button("Retry Failed") {
                 viewModel.retryAllFailedItems()
             }

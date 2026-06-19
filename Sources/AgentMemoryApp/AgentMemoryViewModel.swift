@@ -143,6 +143,10 @@ final class AgentMemoryViewModel {
         config.ragSSHQueueConfig() != nil
     }
 
+    var canRefreshRAGJobStatuses: Bool {
+        config.ragSSHQueueConfig() != nil && snapshot.items.contains { $0.ragExport?.jobID != nil }
+    }
+
     func addCapture() {
         let rawInput = captureText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !rawInput.isEmpty else {
@@ -349,6 +353,33 @@ final class AgentMemoryViewModel {
                 normalizeSelection(preferReview: sidebarFilter == .review)
             } catch {
                 statusMessage = "RAG batch export failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func refreshRAGJobStatuses() {
+        guard let ragConfig = config.ragSSHQueueConfig() else {
+            statusMessage = "RAG export settings are incomplete."
+            return
+        }
+
+        let jobIDs = snapshot.items.compactMap { $0.ragExport?.jobID }
+        guard !jobIDs.isEmpty else {
+            statusMessage = "No RAG jobs recorded yet."
+            return
+        }
+
+        Task {
+            do {
+                let statuses = try await RAGSSHQueueTransport(config: ragConfig).fetchJobStatuses(jobIDs: jobIDs)
+                let counts = Dictionary(grouping: statuses, by: \.status)
+                    .mapValues(\.count)
+                    .sorted { $0.key < $1.key }
+                    .map { "\($0.key): \($0.value)" }
+                    .joined(separator: ", ")
+                statusMessage = counts.isEmpty ? "No matching RAG jobs found." : "RAG queue status: \(counts)."
+            } catch {
+                statusMessage = "RAG status refresh failed: \(error.localizedDescription)"
             }
         }
     }

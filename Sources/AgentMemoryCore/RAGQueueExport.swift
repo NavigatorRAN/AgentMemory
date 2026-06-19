@@ -213,6 +213,40 @@ public struct RAGQueueConnectionCheck: Equatable, Sendable {
     }
 }
 
+public struct RAGQueueJobStatus: Codable, Equatable, Sendable {
+    public var id: Int
+    public var status: String
+    public var error: String?
+    public var attempts: Int
+    public var chunksUpserted: Int?
+    public var docID: String?
+
+    public init(
+        id: Int,
+        status: String,
+        error: String?,
+        attempts: Int,
+        chunksUpserted: Int?,
+        docID: String?
+    ) {
+        self.id = id
+        self.status = status
+        self.error = error
+        self.attempts = attempts
+        self.chunksUpserted = chunksUpserted
+        self.docID = docID
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case status
+        case error
+        case attempts
+        case chunksUpserted = "chunks_upserted"
+        case docID = "doc_id"
+    }
+}
+
 public struct CommandInvocation: Equatable, Sendable {
     public var executable: String
     public var arguments: [String]
@@ -332,6 +366,27 @@ public struct RAGSSHQueueTransport: RAGQueueTransporting {
         )
     }
 
+    public func fetchJobStatuses(jobIDs: [Int]) async throws -> [RAGQueueJobStatus] {
+        guard !jobIDs.isEmpty else {
+            return []
+        }
+
+        let output = try await commandRunner.run(
+            CommandInvocation(
+                executable: "/usr/bin/ssh",
+                arguments: sshOptions() + [
+                    "\(config.user)@\(config.host)",
+                    "cd \(shellQuote(config.remoteIngestDirectory)) && ./.venv/bin/python -c \(shellQuote(remoteJobStatusScript(jobIDs: jobIDs)))"
+                ]
+            )
+        )
+
+        return try JSONDecoder().decode(
+            [RAGQueueJobStatus].self,
+            from: Data(output.trimmingCharacters(in: .whitespacesAndNewlines).utf8)
+        )
+    }
+
     private func writeTemporaryFile(for document: RAGExportDocument) throws -> URL {
         let directory = FileManager.default.temporaryDirectory
             .appendingPathComponent("AgentMemoryRAGExport-\(UUID().uuidString)", isDirectory: true)
@@ -353,6 +408,28 @@ public struct RAGSSHQueueTransport: RAGQueueTransporting {
         let tagsJSON = (try? String(data: JSONEncoder().encode(document.tags), encoding: .utf8)) ?? "[]"
         return """
         cd \(shellQuote(config.remoteIngestDirectory)) && ./.venv/bin/python -c \(shellQuote("import queue_db; print(queue_db.enqueue(\(pythonString(remotePath)), \(pythonString(document.collection)), \(tagsJSON)))"))
+        """
+    }
+
+    private func remoteJobStatusScript(jobIDs: [Int]) -> String {
+        let idsJSON = (try? String(data: JSONEncoder().encode(jobIDs), encoding: .utf8)) ?? "[]"
+        return """
+        import json, sqlite3
+        ids = \(idsJSON)
+        conn = sqlite3.connect("queue.db")
+        placeholders = ",".join("?" for _ in ids)
+        rows = conn.execute(f"select id, status, error, attempts, chunks_upserted, doc_id from jobs where id in ({placeholders})", ids).fetchall()
+        print(json.dumps([
+            {
+                "id": row[0],
+                "status": row[1],
+                "error": row[2],
+                "attempts": row[3],
+                "chunks_upserted": row[4],
+                "doc_id": row[5]
+            }
+            for row in rows
+        ]))
         """
     }
 

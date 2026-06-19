@@ -6,6 +6,7 @@ import Observation
 @Observable
 final class AgentMemoryViewModel {
     var snapshot: AgentMemorySnapshot
+    var config: AgentMemoryConfig
     var captureText: String = ""
     var captureTitle: String = ""
     var statusMessage: String = "Ready"
@@ -16,10 +17,12 @@ final class AgentMemoryViewModel {
     init(
         store: AgentMemoryDiskStore,
         initialSnapshot: AgentMemorySnapshot = AgentMemorySnapshot(),
+        initialConfig: AgentMemoryConfig = AgentMemoryConfig(),
         processingService: CaptureProcessingService? = nil
     ) {
         self.store = store
         self.snapshot = initialSnapshot
+        self.config = initialConfig
         self.processingService = processingService ?? CaptureProcessingService(
             archive: SourceArchive(root: store.sourceArchiveRoot),
             memoryWriter: MockMemoryWriter()
@@ -30,6 +33,7 @@ final class AgentMemoryViewModel {
         let root = (try? AgentMemoryDiskStore.defaultAppSupportRoot()) ?? FileManager.default.temporaryDirectory.appendingPathComponent("AgentMemory", isDirectory: true)
         self.init(store: AgentMemoryDiskStore(root: root), initialSnapshot: AgentMemoryViewModel.sampleSnapshot)
         load()
+        loadConfig()
         if snapshot.items.isEmpty {
             snapshot = AgentMemoryViewModel.sampleSnapshot
             save()
@@ -108,6 +112,23 @@ final class AgentMemoryViewModel {
             statusMessage = "Loaded local state."
         } catch {
             statusMessage = "Load failed: \(error.localizedDescription)"
+        }
+    }
+
+    func saveConfig() {
+        do {
+            try store.saveConfig(config)
+            statusMessage = "Saved Memory MCP settings."
+        } catch {
+            statusMessage = "Settings save failed: \(error.localizedDescription)"
+        }
+    }
+
+    func loadConfig() {
+        do {
+            config = try store.loadConfig()
+        } catch {
+            statusMessage = "Settings load failed: \(error.localizedDescription)"
         }
     }
 

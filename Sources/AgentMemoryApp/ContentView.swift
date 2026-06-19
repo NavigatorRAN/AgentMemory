@@ -2,7 +2,7 @@ import AgentMemoryCore
 import SwiftUI
 
 struct ContentView: View {
-    @State private var viewModel = AgentMemoryViewModel()
+    @Bindable var viewModel: AgentMemoryViewModel
 
     var body: some View {
         NavigationSplitView {

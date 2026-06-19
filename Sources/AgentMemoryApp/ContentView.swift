@@ -180,9 +180,13 @@ struct ContentView: View {
                     viewModel.searchMemoryMCP()
                 }
                 .disabled(!viewModel.canSearchMemoryMCP)
+                Button("Recall Entity") {
+                    viewModel.recallMemoryMCPEntity()
+                }
+                .disabled(!viewModel.canSearchMemoryMCP)
             }
 
-            TextField("Search saved agent memory", text: $viewModel.memorySearchQuery)
+            TextField("Search saved memory or enter an entity name", text: $viewModel.memorySearchQuery)
                 .textFieldStyle(.roundedBorder)
                 .onSubmit {
                     viewModel.searchMemoryMCP()

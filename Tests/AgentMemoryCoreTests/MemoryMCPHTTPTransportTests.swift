@@ -127,6 +127,65 @@ final class MemoryMCPHTTPTransportTests: XCTestCase {
         ])
     }
 
+    func testTransportRecallsEventsForEntity() async throws {
+        let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [RecordingURLProtocol.self]
+        let session = URLSession(configuration: configuration)
+        let transport = MemoryMCPHTTPTransport(endpoint: endpoint, session: session)
+        var requestIndex = 0
+
+        RecordingURLProtocol.requestHandler = { request in
+            let body = try XCTUnwrap(request.httpBodyStreamData)
+            let decoded = try JSONSerialization.jsonObject(with: body) as? [String: Any]
+            requestIndex += 1
+
+            switch requestIndex {
+            case 1:
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-3"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2024-11-05","capabilities":{},"serverInfo":{"name":"memory","version":"3.2.4"}}}
+                    """.utf8)
+                )
+            case 2:
+                return (HTTPURLResponse(url: endpoint, statusCode: 202, httpVersion: nil, headerFields: ["mcp-session-id": "session-3"])!, Data())
+            case 3:
+                XCTAssertEqual(decoded?["method"] as? String, "tools/call")
+                let params = try XCTUnwrap(decoded?["params"] as? [String: Any])
+                XCTAssertEqual(params["name"] as? String, "recall_for_entity")
+                let arguments = try XCTUnwrap(params["arguments"] as? [String: Any])
+                XCTAssertEqual(arguments["entity"] as? String, "agentmemory")
+                XCTAssertEqual(arguments["limit"] as? Int, 3)
+                XCTAssertEqual(arguments["include_content"] as? Bool, true)
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-3"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":3,"result":{"structuredContent":{"result":[{"id":"event-2","event_date":"2026-06-19T22:50:00+10:00","recorded_at":"2026-06-19T12:50:00Z","entities":["agentmemory"],"tags":["project"],"agent":"CODEX","content":"Entity recall event","path":"events/entity.md"}]}}}
+                    """.utf8)
+                )
+            default:
+                XCTFail("Unexpected request \(requestIndex)")
+                return (HTTPURLResponse(url: endpoint, statusCode: 500, httpVersion: nil, headerFields: nil)!, Data())
+            }
+        }
+
+        let results = try await transport.recallEvents(forEntity: "agentmemory", limit: 3)
+
+        XCTAssertEqual(results, [
+            MemoryMCPSearchEvent(
+                id: "event-2",
+                eventDate: "2026-06-19T22:50:00+10:00",
+                recordedAt: "2026-06-19T12:50:00Z",
+                entities: ["agentmemory"],
+                tags: ["project"],
+                agent: "CODEX",
+                content: "Entity recall event",
+                path: "events/entity.md"
+            )
+        ])
+    }
+
     func testTransportThrowsForNonSuccessStatus() async {
         let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
         let configuration = URLSessionConfiguration.ephemeral

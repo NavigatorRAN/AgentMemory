@@ -36,6 +36,15 @@ public struct MemoryMCPHTTPTransport: MemoryMCPTransporting {
         return structured.result
     }
 
+    public func recallEvents(forEntity entity: String, limit: Int = 10, includeContent: Bool = true, since: String? = nil, until: String? = nil) async throws -> [MemoryMCPSearchEvent] {
+        let structured = try await callTool(
+            name: "recall_for_entity",
+            arguments: RecallForEntityArguments(entity: entity, includeContent: includeContent, limit: limit, since: since, until: until),
+            structuredContent: SearchEventsStructuredContent.self
+        )
+        return structured.result
+    }
+
     private func callTool<Arguments: Encodable, StructuredContent: Decodable>(
         name: String,
         arguments: Arguments,
@@ -194,6 +203,22 @@ private struct SearchEventsArguments: Encodable {
     var entities: [String]?
     var since: String?
     var limit: Int
+}
+
+private struct RecallForEntityArguments: Encodable {
+    var entity: String
+    var includeContent: Bool
+    var limit: Int
+    var since: String?
+    var until: String?
+
+    private enum CodingKeys: String, CodingKey {
+        case entity
+        case includeContent = "include_content"
+        case limit
+        case since
+        case until
+    }
 }
 
 private struct ToolCallResponse<StructuredContent: Decodable>: Decodable {

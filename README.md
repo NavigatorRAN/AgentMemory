@@ -93,5 +93,8 @@ The first build slice is a local SwiftUI foundation:
 - Live RAG queue stats refresh from the SSH backend
 - Per-capture persisted RAG queue status, chunks, and document ID
 - Latest RAG export status-count summary from refreshed capture metadata
+- Workspace-based UI with dedicated Ingestion, Review, Search, Memory Graph, and RAG Queue pages
+- Graph-first workspace inspired by GraphRAG community and evidence maps
+- Contextual action groups that replace the overflowing global button strip
 
-Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, expanded Memory MCP recall/entity views, expanded RAG job detail views, and graph rendering are planned next.
+Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, expanded Memory MCP recall/entity views, expanded RAG job detail views, and production-scale graph layout are planned next.

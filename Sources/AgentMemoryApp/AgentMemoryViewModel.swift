@@ -23,6 +23,7 @@ final class AgentMemoryViewModel {
             normalizeSelection(preferReview: sidebarFilter == .review)
         }
     }
+    var selectedWorkspace: AgentMemoryWorkspace = .graph
     var memorySearchQuery: String = ""
     var memorySearchResults: [MemoryMCPSearchEvent] = []
     var memoryEntityDetail: MemoryMCPEntityDetail?

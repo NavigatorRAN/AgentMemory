@@ -47,5 +47,6 @@ The first build slice is a local SwiftUI foundation:
 - Drag/drop stack import for files, URLs, and multi-line text
 - Source archive metadata attached during processing
 - Real file-byte copying into the local source archive
+- Memory MCP `record_event` payload builder and writer adapter
 
 Real Memory MCP/RAG MCP transport, share extension, watched folders, durable overnight queue persistence, and graph rendering are planned next.

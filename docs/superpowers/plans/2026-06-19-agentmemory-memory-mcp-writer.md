@@ -1,6 +1,6 @@
 # AgentMemory Memory MCP Writer Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Add a real Memory MCP writer boundary that maps high-confidence captures into `record_event` tool payloads with local source archive provenance.
 
@@ -25,7 +25,7 @@
 - Create: `Sources/AgentMemoryCore/MemoryMCPPayloadBuilder.swift`
 - Create: `Tests/AgentMemoryCoreTests/MemoryMCPWriterTests.swift`
 
-- [ ] **Step 1: Add payload builder tests**
+- [x] **Step 1: Add payload builder tests**
 
 Create `Tests/AgentMemoryCoreTests/MemoryMCPWriterTests.swift`:
 
@@ -86,7 +86,7 @@ final class MemoryMCPWriterTests: XCTestCase {
 }
 ```
 
-- [ ] **Step 2: Implement payload builder**
+- [x] **Step 2: Implement payload builder**
 
 Create `Sources/AgentMemoryCore/MemoryMCPPayloadBuilder.swift`:
 
@@ -173,13 +173,13 @@ public struct MemoryMCPPayloadBuilder: Sendable {
 }
 ```
 
-- [ ] **Step 3: Verify payload tests**
+- [x] **Step 3: Verify payload tests**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter MemoryMCPWriterTests`
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/MemoryMCPPayloadBuilder.swift Tests/AgentMemoryCoreTests/MemoryMCPWriterTests.swift
@@ -194,7 +194,7 @@ git commit -m "Build Memory MCP record event payloads"
 - Create: `Sources/AgentMemoryCore/MemoryMCPWriter.swift`
 - Modify: `Tests/AgentMemoryCoreTests/MemoryMCPWriterTests.swift`
 
-- [ ] **Step 1: Add writer transport test**
+- [x] **Step 1: Add writer transport test**
 
 Append to `Tests/AgentMemoryCoreTests/MemoryMCPWriterTests.swift`:
 
@@ -231,7 +231,7 @@ private actor RecordingMemoryMCPTransport: MemoryMCPTransporting {
 }
 ```
 
-- [ ] **Step 2: Implement writer**
+- [x] **Step 2: Implement writer**
 
 Create `Sources/AgentMemoryCore/MemoryMCPWriter.swift`:
 
@@ -267,13 +267,13 @@ public struct MemoryMCPWriter: MemoryWriting {
 }
 ```
 
-- [ ] **Step 3: Verify writer tests**
+- [x] **Step 3: Verify writer tests**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test --filter MemoryMCPWriterTests`
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/MemoryMCPWriter.swift Tests/AgentMemoryCoreTests/MemoryMCPWriterTests.swift
@@ -288,7 +288,7 @@ git commit -m "Add Memory MCP writer adapter"
 - Modify: `README.md`
 - Modify: `docs/superpowers/plans/2026-06-19-agentmemory-memory-mcp-writer.md`
 
-- [ ] **Step 1: Update README**
+- [x] **Step 1: Update README**
 
 Add to the current build slice list:
 
@@ -296,11 +296,11 @@ Add to the current build slice list:
 - Memory MCP `record_event` payload builder and writer adapter
 ```
 
-- [ ] **Step 2: Mark plan complete**
+- [x] **Step 2: Mark plan complete**
 
-Change completed checklist items in this plan from `- [ ]` to `- [x]`.
+Change completed checklist items in this plan from `- [x]` to `- [x]`.
 
-- [ ] **Step 3: Final verification**
+- [x] **Step 3: Final verification**
 
 Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test`
 
@@ -310,14 +310,14 @@ Run: `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 4: Commit docs**
+- [x] **Step 4: Commit docs**
 
 ```bash
 git add README.md docs/superpowers/plans/2026-06-19-agentmemory-memory-mcp-writer.md
 git commit -m "Document Memory MCP writer boundary"
 ```
 
-- [ ] **Step 5: Push and open PR**
+- [x] **Step 5: Push and open PR**
 
 ```bash
 git push -u origin codex/agentmemory-memory-mcp-writer

@@ -62,6 +62,14 @@ final class AgentMemoryViewModel {
         return snapshot.archivedSources.first { $0.itemID == selectedItem.id }
     }
 
+    var selectedArchivedSourcePreview: String {
+        guard let selectedArchivedSource else {
+            return "No archived source preview available."
+        }
+
+        return ArchivedSourcePreviewReader().preview(for: selectedArchivedSource)
+    }
+
     var selectedReviewPayloadPreview: String {
         guard let item = selectedItem else {
             return "Select a capture to review."

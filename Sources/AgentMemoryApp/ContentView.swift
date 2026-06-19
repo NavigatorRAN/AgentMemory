@@ -217,6 +217,15 @@ struct ContentView: View {
                         .foregroundStyle(.secondary)
                 }
 
+                Text("Archived Text Preview")
+                    .font(.headline)
+                Text(viewModel.selectedArchivedSourcePreview)
+                    .font(.system(.body, design: .monospaced))
+                    .textSelection(.enabled)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding()
+                    .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+
                 Text("Raw Input")
                     .font(.headline)
                 TextField(

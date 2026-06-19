@@ -72,6 +72,14 @@ final class AgentMemoryViewModel {
         ].joined(separator: "\n")
     }
 
+    var selectedReviewExplanations: [String] {
+        guard let selectedItem else {
+            return []
+        }
+
+        return ReviewExplanationBuilder().explanations(for: selectedItem)
+    }
+
     func addCapture() {
         let rawInput = captureText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !rawInput.isEmpty else {

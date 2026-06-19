@@ -176,6 +176,15 @@ struct ContentView: View {
                     }
                 }
 
+                Text("Review Reasons")
+                    .font(.headline)
+                VStack(alignment: .leading, spacing: 6) {
+                    ForEach(viewModel.selectedReviewExplanations, id: \.self) { explanation in
+                        Label(explanation, systemImage: "info.circle")
+                            .foregroundStyle(.secondary)
+                    }
+                }
+
                 Text("Raw Input")
                     .font(.headline)
                 TextField(

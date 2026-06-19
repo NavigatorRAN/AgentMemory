@@ -671,18 +671,10 @@ struct ContentView: View {
                     height: size.height,
                     padding: 28
                 )
-                let nodesByID = Dictionary(uniqueKeysWithValues: projection.nodes.map { ($0.id, $0) })
-
-                for edge in projection.edges {
-                    guard let source = nodesByID[edge.sourceID],
-                          let target = nodesByID[edge.targetID]
-                    else {
-                        continue
-                    }
-
+                for segment in projection.edgeSegments {
                     var path = Path()
-                    path.move(to: CGPoint(x: source.point.x, y: source.point.y))
-                    path.addLine(to: CGPoint(x: target.point.x, y: target.point.y))
+                    path.move(to: CGPoint(x: segment.source.x, y: segment.source.y))
+                    path.addLine(to: CGPoint(x: segment.target.x, y: segment.target.y))
                     context.stroke(path, with: .color(.secondary.opacity(0.35)), lineWidth: 1)
                 }
 

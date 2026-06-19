@@ -2,57 +2,13 @@ import AgentMemoryCore
 import SwiftUI
 
 struct ContentView: View {
-    @State private var snapshot: AgentMemorySnapshot = ContentView.sampleSnapshot
-
-    private static var sampleSnapshot: AgentMemorySnapshot {
-        AgentMemorySnapshot(
-            items: [
-                CaptureItem(
-                    displayName: "WWDC workflow URL",
-                    rawInput: "https://developer.apple.com/videos/play/wwdc2026/101",
-                    sourceType: .video,
-                    status: .complete,
-                    proposedOutcomes: [.decision, .reference],
-                    confidence: 0.9
-                ),
-                CaptureItem(
-                    displayName: "Terminal failure log",
-                    rawInput: "fatal error: Memory MCP unreachable",
-                    sourceType: .codeOrLog,
-                    status: .needsReview,
-                    proposedOutcomes: [.gotcha, .reference],
-                    confidence: 0.74
-                ),
-                CaptureItem(
-                    displayName: "Mixed source stack",
-                    rawInput: "/Users/matthewwarren/Desktop/research-stack",
-                    sourceType: .mixedBatch,
-                    status: .queued,
-                    proposedOutcomes: [],
-                    confidence: 0
-                )
-            ],
-            rules: [
-                IngestionRule(
-                    name: "WWDC videos",
-                    sourceType: .video,
-                    matchText: "developer.apple.com/videos",
-                    workspace: "WWDC26",
-                    actions: [.autoWriteMemory, .exportToRAG]
-                )
-            ]
-        )
-    }
-
-    private var brief: MorningBrief {
-        MorningBriefBuilder().build(from: snapshot.items)
-    }
+    @State private var viewModel = AgentMemoryViewModel()
 
     var body: some View {
         NavigationSplitView {
             List {
                 Section("Capture Inbox") {
-                    ForEach(snapshot.items) { item in
+                    ForEach(viewModel.snapshot.items) { item in
                         VStack(alignment: .leading, spacing: 5) {
                             Text(item.displayName)
                                 .font(.headline)
@@ -72,7 +28,10 @@ struct ContentView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     header
+                    capturePanel
                     queueSummary
+                    actionBar
+                    statusLine
                     morningBrief
                     graphPlaceholder
                 }
@@ -91,15 +50,54 @@ struct ContentView: View {
         }
     }
 
+    private var capturePanel: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Add Capture")
+                .font(.title2.bold())
+            TextField("Optional title", text: $viewModel.captureTitle)
+                .textFieldStyle(.roundedBorder)
+            TextField("Paste text, URL, path, or log snippet", text: $viewModel.captureText, axis: .vertical)
+                .textFieldStyle(.roundedBorder)
+                .lineLimit(3...6)
+            Button("Add to Queue") {
+                viewModel.addCapture()
+            }
+            .keyboardShortcut(.return, modifiers: [.command])
+        }
+    }
+
     private var queueSummary: some View {
         Grid(alignment: .leading, horizontalSpacing: 18, verticalSpacing: 10) {
             GridRow {
-                metric("Processed", brief.processedCount)
-                metric("Completed", brief.completedCount)
-                metric("Review", brief.needsReviewCount)
-                metric("Failed", brief.failedCount)
+                metric("Processed", viewModel.brief.processedCount)
+                metric("Completed", viewModel.brief.completedCount)
+                metric("Review", viewModel.brief.needsReviewCount)
+                metric("Failed", viewModel.brief.failedCount)
             }
         }
+    }
+
+    private var actionBar: some View {
+        HStack {
+            Button("Process Next") {
+                viewModel.processNext()
+            }
+            Button("Process All Queued") {
+                viewModel.processAllQueued()
+            }
+            Button("Save") {
+                viewModel.save()
+            }
+            Button("Reload") {
+                viewModel.load()
+            }
+        }
+    }
+
+    private var statusLine: some View {
+        Text(viewModel.statusMessage)
+            .font(.callout)
+            .foregroundStyle(.secondary)
     }
 
     private func metric(_ title: String, _ value: Int) -> some View {
@@ -120,11 +118,11 @@ struct ContentView: View {
             Text("Morning Brief")
                 .font(.title2.bold())
 
-            ForEach(brief.exceptions, id: \.self) { exception in
+            ForEach(viewModel.brief.exceptions, id: \.self) { exception in
                 Label(exception, systemImage: "exclamationmark.triangle")
             }
 
-            ForEach(brief.graphChanges, id: \.self) { change in
+            ForEach(viewModel.brief.graphChanges, id: \.self) { change in
                 Label(change, systemImage: "point.3.connected.trianglepath.dotted")
             }
         }

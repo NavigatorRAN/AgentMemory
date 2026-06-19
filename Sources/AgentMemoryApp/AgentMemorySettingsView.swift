@@ -20,8 +20,25 @@ struct AgentMemorySettingsView: View {
                 .disabled(!viewModel.config.liveMemoryWritesEnabled)
             }
 
+            Section("RAG Export") {
+                Toggle("Enable RAG export", isOn: $viewModel.config.ragExportEnabled)
+                TextField("Host", text: $viewModel.config.ragHost)
+                    .textFieldStyle(.roundedBorder)
+                TextField("User", text: $viewModel.config.ragUser)
+                    .textFieldStyle(.roundedBorder)
+                TextField("SSH identity path", text: $viewModel.config.ragIdentityPath)
+                    .textFieldStyle(.roundedBorder)
+                TextField("Collection", text: $viewModel.config.ragCollection)
+                    .textFieldStyle(.roundedBorder)
+                Button("Save Settings") {
+                    viewModel.saveConfig()
+                }
+            }
+
             Section("Status") {
                 Text(viewModel.config.liveMemoryWritesEnabled ? "Live writes enabled" : "Live writes disabled")
+                    .foregroundStyle(.secondary)
+                Text(viewModel.config.ragExportEnabled ? "RAG export enabled" : "RAG export disabled")
                     .foregroundStyle(.secondary)
                 Text(viewModel.statusMessage)
                     .foregroundStyle(.secondary)

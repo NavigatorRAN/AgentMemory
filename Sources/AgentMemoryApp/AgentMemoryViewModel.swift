@@ -132,7 +132,7 @@ final class AgentMemoryViewModel {
     }
 
     var canExportSelectedItemToRAG: Bool {
-        selectedItem != nil
+        selectedItem != nil && config.ragExportEnabled
     }
 
     func addCapture() {
@@ -260,14 +260,15 @@ final class AgentMemoryViewModel {
 
         Task {
             do {
-                let document = RAGQueueExportBuilder().document(for: selectedItem)
+                guard let ragConfig = config.ragSSHQueueConfig() else {
+                    statusMessage = "RAG export settings are incomplete."
+                    return
+                }
+
+                let document = RAGQueueExportBuilder(defaultCollection: config.resolvedRAGCollection).document(for: selectedItem)
                 let writer = RAGQueueWriter(
                     transport: RAGSSHQueueTransport(
-                        config: RAGSSHQueueConfig(
-                            host: "192.168.1.107",
-                            user: "veronika",
-                            identityPath: "\(NSHomeDirectory())/.ssh/id_rsa_hermes"
-                        )
+                        config: ragConfig
                     )
                 )
                 let jobID = try await writer.enqueue(document)

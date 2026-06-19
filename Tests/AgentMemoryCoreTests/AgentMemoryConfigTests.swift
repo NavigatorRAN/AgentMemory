@@ -8,6 +8,11 @@ final class AgentMemoryConfigTests: XCTestCase {
         XCTAssertEqual(config.agentName, "CODEX")
         XCTAssertEqual(config.memoryMCPEndpoint, "")
         XCTAssertFalse(config.liveMemoryWritesEnabled)
+        XCTAssertEqual(config.ragHost, "192.168.1.107")
+        XCTAssertEqual(config.ragUser, "veronika")
+        XCTAssertEqual(config.ragIdentityPath, "~/.ssh/id_rsa_hermes")
+        XCTAssertEqual(config.ragCollection, "agentmemory")
+        XCTAssertFalse(config.ragExportEnabled)
     }
 
     func testDiskStoreSavesAndLoadsConfig() throws {
@@ -25,6 +30,28 @@ final class AgentMemoryConfigTests: XCTestCase {
 
         XCTAssertEqual(loaded, config)
         XCTAssertTrue(FileManager.default.fileExists(atPath: store.configURL.path))
+    }
+
+    func testConfigBuildsRAGSSHQueueConfig() {
+        let config = AgentMemoryConfig(
+            ragHost: "192.168.1.107",
+            ragUser: "veronika",
+            ragIdentityPath: "~/.ssh/id_rsa_hermes",
+            ragCollection: "agentmemory",
+            ragExportEnabled: true
+        )
+
+        let ragConfig = config.ragSSHQueueConfig(homeDirectory: "/Users/matt")
+
+        XCTAssertEqual(ragConfig?.host, "192.168.1.107")
+        XCTAssertEqual(ragConfig?.user, "veronika")
+        XCTAssertEqual(ragConfig?.identityPath, "/Users/matt/.ssh/id_rsa_hermes")
+    }
+
+    func testConfigRejectsIncompleteRAGSettings() {
+        let config = AgentMemoryConfig(ragHost: "", ragExportEnabled: true)
+
+        XCTAssertNil(config.ragSSHQueueConfig(homeDirectory: "/Users/matt"))
     }
 
     func testDiskStoreReturnsDefaultConfigWhenMissing() throws {

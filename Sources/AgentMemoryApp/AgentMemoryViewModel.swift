@@ -245,6 +245,23 @@ final class AgentMemoryViewModel {
         }
     }
 
+    func selectedItemCustomTagsBindingValue() -> String {
+        selectedItem?.customTags.joined(separator: ", ") ?? ""
+    }
+
+    func updateSelectedItemCustomTags(_ tagsText: String) {
+        guard let selectedItemID,
+              let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })
+        else {
+            return
+        }
+
+        snapshot.items[index].customTags = tagsText
+            .split(separator: ",")
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
+    }
+
     func saveSelectedReviewEdits() {
         guard let selectedItem else {
             statusMessage = "Select a review item first."

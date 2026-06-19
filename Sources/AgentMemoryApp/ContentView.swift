@@ -203,6 +203,17 @@ struct ContentView: View {
                     }
                 }
 
+                Text("Custom Tags")
+                    .font(.headline)
+                TextField(
+                    "Comma-separated tags",
+                    text: Binding(
+                        get: { viewModel.selectedItemCustomTagsBindingValue() },
+                        set: { viewModel.updateSelectedItemCustomTags($0) }
+                    )
+                )
+                .textFieldStyle(.roundedBorder)
+
                 Text("Proposed Memory MCP Payload")
                     .font(.headline)
                 Text(viewModel.selectedReviewPayloadPreview)

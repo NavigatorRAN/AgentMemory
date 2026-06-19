@@ -7,8 +7,19 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             List(selection: $viewModel.selectedItemID) {
+                Picker("Filter", selection: Binding(
+                    get: { viewModel.sidebarFilter },
+                    set: { viewModel.setSidebarFilter($0) }
+                )) {
+                    ForEach(CaptureSidebarFilter.allCases) { filter in
+                        Text(filter.rawValue).tag(filter)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .padding(.vertical, 6)
+
                 Section("Capture Inbox") {
-                    ForEach(viewModel.snapshot.items) { item in
+                    ForEach(viewModel.sidebarItems) { item in
                         VStack(alignment: .leading, spacing: 5) {
                             Text(item.displayName)
                                 .font(.headline)

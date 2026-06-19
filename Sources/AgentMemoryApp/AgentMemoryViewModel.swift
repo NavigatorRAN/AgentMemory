@@ -2,6 +2,13 @@ import AgentMemoryCore
 import Foundation
 import Observation
 
+enum CaptureSidebarFilter: String, CaseIterable, Identifiable {
+    case all = "All"
+    case review = "Review"
+
+    var id: String { rawValue }
+}
+
 @MainActor
 @Observable
 final class AgentMemoryViewModel {
@@ -10,6 +17,7 @@ final class AgentMemoryViewModel {
     var captureText: String = ""
     var captureTitle: String = ""
     var selectedItemID: CaptureItem.ID?
+    var sidebarFilter: CaptureSidebarFilter = .all
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
@@ -45,6 +53,15 @@ final class AgentMemoryViewModel {
 
     var reviewItems: [CaptureItem] {
         snapshot.items.filter { $0.status == .needsReview }
+    }
+
+    var sidebarItems: [CaptureItem] {
+        switch sidebarFilter {
+        case .all:
+            return snapshot.items
+        case .review:
+            return reviewItems
+        }
     }
 
     var selectedItem: CaptureItem? {
@@ -272,6 +289,11 @@ final class AgentMemoryViewModel {
 
     func selectNextReviewItem() {
         selectedItemID = reviewItems.first?.id ?? snapshot.items.first?.id
+    }
+
+    func setSidebarFilter(_ filter: CaptureSidebarFilter) {
+        sidebarFilter = filter
+        normalizeSelection(preferReview: filter == .review)
     }
 
     func selectedItemTitleBindingValue() -> String {

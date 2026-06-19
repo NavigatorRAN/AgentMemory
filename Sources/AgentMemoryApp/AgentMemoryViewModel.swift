@@ -106,6 +106,22 @@ final class AgentMemoryViewModel {
         }
     }
 
+    func runQueuedBatch() {
+        Task {
+            do {
+                snapshot = try await makeProcessingService().processQueuedBatch(in: snapshot)
+                if let latestRun = snapshot.batchRuns.last {
+                    statusMessage = "Batch run finished: \(latestRun.summary)"
+                } else {
+                    statusMessage = "Batch run finished."
+                }
+                save()
+            } catch {
+                statusMessage = "Batch setup failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
     func save() {
         do {
             try store.save(snapshot)

@@ -33,6 +33,7 @@ struct ContentView: View {
                     queueSummary
                     actionBar
                     statusLine
+                    latestBatchRun
                     morningBrief
                     graphPlaceholder
                 }
@@ -108,6 +109,9 @@ struct ContentView: View {
             Button("Process All Queued") {
                 viewModel.processAllQueued()
             }
+            Button("Run Overnight Batch") {
+                viewModel.runQueuedBatch()
+            }
             Button("Save") {
                 viewModel.save()
             }
@@ -134,6 +138,30 @@ struct ContentView: View {
         .frame(minWidth: 110, alignment: .leading)
         .padding()
         .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+    }
+
+    private var latestBatchRun: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Latest Batch Run")
+                .font(.title2.bold())
+
+            if let run = viewModel.snapshot.batchRuns.last {
+                Grid(alignment: .leading, horizontalSpacing: 18, verticalSpacing: 8) {
+                    GridRow {
+                        metric("Queued", run.queuedItemCount)
+                        metric("Complete", run.completedItemCount)
+                        metric("Review", run.reviewItemCount)
+                        metric("Failed", run.failedItemCount)
+                    }
+                }
+
+                Text(run.summary)
+                    .foregroundStyle(.secondary)
+            } else {
+                Text("No batch runs yet.")
+                    .foregroundStyle(.secondary)
+            }
+        }
     }
 
     private var morningBrief: some View {

@@ -49,5 +49,6 @@ The first build slice is a local SwiftUI foundation:
 - Real file-byte copying into the local source archive
 - Memory MCP `record_event` payload builder and writer adapter
 - Memory MCP endpoint settings and HTTP transport skeleton
+- Toggle-controlled live Memory MCP write path with Settings test write
 
-Real Memory MCP/RAG MCP transport, share extension, watched folders, durable overnight queue persistence, and graph rendering are planned next.
+RAG MCP transport, share extension, watched folders, durable overnight queue persistence, transcript/web ingestion adapters, and graph rendering are planned next.

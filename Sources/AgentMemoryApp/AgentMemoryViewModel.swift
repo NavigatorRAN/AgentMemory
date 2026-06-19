@@ -131,6 +131,10 @@ final class AgentMemoryViewModel {
         return retryPolicy.canRetry(selectedItem)
     }
 
+    var canExportSelectedItemToRAG: Bool {
+        selectedItem != nil
+    }
+
     func addCapture() {
         let rawInput = captureText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !rawInput.isEmpty else {
@@ -245,6 +249,32 @@ final class AgentMemoryViewModel {
             statusMessage = "Fetched YouTube transcripts. \(reviewCount) YouTube captures are ready for review."
             persistSnapshot()
             normalizeSelection(preferReview: true)
+        }
+    }
+
+    func exportSelectedItemToRAG() {
+        guard let selectedItem else {
+            statusMessage = "Select a capture to export to RAG."
+            return
+        }
+
+        Task {
+            do {
+                let document = RAGQueueExportBuilder().document(for: selectedItem)
+                let writer = RAGQueueWriter(
+                    transport: RAGSSHQueueTransport(
+                        config: RAGSSHQueueConfig(
+                            host: "192.168.1.107",
+                            user: "veronika",
+                            identityPath: "\(NSHomeDirectory())/.ssh/id_rsa_hermes"
+                        )
+                    )
+                )
+                let jobID = try await writer.enqueue(document)
+                statusMessage = "Exported \(selectedItem.displayName) to RAG queue as job #\(jobID)."
+            } catch {
+                statusMessage = "RAG export failed: \(error.localizedDescription)"
+            }
         }
     }
 

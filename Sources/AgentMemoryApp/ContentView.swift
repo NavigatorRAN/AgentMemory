@@ -135,6 +135,10 @@ struct ContentView: View {
             Button("Fetch YouTube") {
                 viewModel.fetchQueuedYouTubeTranscripts()
             }
+            Button("Export RAG") {
+                viewModel.exportSelectedItemToRAG()
+            }
+            .disabled(!viewModel.canExportSelectedItemToRAG)
             Button("Retry Failed") {
                 viewModel.retryAllFailedItems()
             }

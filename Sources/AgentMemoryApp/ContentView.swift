@@ -597,10 +597,12 @@ struct ContentView: View {
                 .font(.title2.bold())
 
             let graph = viewModel.memoryGraph
+            let scene = viewModel.memoryGraphScene
             Grid(alignment: .leading, horizontalSpacing: 18, verticalSpacing: 8) {
                 GridRow {
                     metric("Nodes", graph.nodes.count)
                     metric("Edges", graph.edges.count)
+                    metric("Scene", scene.nodes.count)
                 }
             }
 
@@ -608,8 +610,12 @@ struct ContentView: View {
                 Text("Run a Memory MCP search, recall, entity detail, or entity browse to populate the graph projection.")
                     .foregroundStyle(.secondary)
             } else {
+                Text("3D scene payload ready: entities sit at depth 0, events sit forward at depth 4.")
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 220), spacing: 10)], alignment: .leading, spacing: 10) {
-                    ForEach(graph.nodes, id: \.id) { node in
+                    ForEach(scene.nodes, id: \.id) { node in
                         VStack(alignment: .leading, spacing: 4) {
                             Label(node.label, systemImage: graphNodeIcon(for: node.kind))
                                 .font(.headline)
@@ -620,6 +626,9 @@ struct ContentView: View {
                                     .foregroundStyle(.secondary)
                                     .lineLimit(2)
                             }
+                            Text(scenePositionSummary(for: node.position))
+                                .font(.caption2)
+                                .foregroundStyle(.tertiary)
                         }
                         .frame(maxWidth: .infinity, minHeight: 64, alignment: .leading)
                         .padding()
@@ -628,6 +637,13 @@ struct ContentView: View {
                 }
             }
         }
+    }
+
+    private func scenePositionSummary(for point: MemoryMCPGraphPoint3D) -> String {
+        let x = point.x.formatted(.number.precision(.fractionLength(1)))
+        let y = point.y.formatted(.number.precision(.fractionLength(1)))
+        let z = point.z.formatted(.number.precision(.fractionLength(1)))
+        return "x \(x), y \(y), z \(z)"
     }
 
     private func graphNodeIcon(for kind: MemoryMCPGraphNode.Kind) -> String {

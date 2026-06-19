@@ -71,6 +71,27 @@ final class RAGQueueExportTests: XCTestCase {
         XCTAssertTrue(commands[1].arguments.last?.contains("uploads-staging") == true)
         XCTAssertTrue(commands[1].arguments.last?.contains("agentmemory-note.md") == true)
     }
+
+    func testSSHTransportChecksRemoteRAGQueueConnection() async throws {
+        let runner = RecordingCommandRunner(outputs: ["staging-ok\n", "queue-ok\n"])
+        let transport = RAGSSHQueueTransport(
+            config: RAGSSHQueueConfig(
+                host: "192.168.1.107",
+                user: "veronika",
+                identityPath: "/Users/matt/.ssh/id_rsa_hermes"
+            ),
+            commandRunner: runner
+        )
+
+        let result = try await transport.checkConnection()
+
+        XCTAssertEqual(result, RAGQueueConnectionCheck(stagingDirectory: "/opt/rag/uploads-staging", ingestDirectory: "/opt/rag/ingest"))
+        let commands = await runner.commands
+        XCTAssertEqual(commands.count, 2)
+        XCTAssertEqual(commands[0].executable, "/usr/bin/ssh")
+        XCTAssertTrue(commands[0].arguments.last?.contains("test -d '/opt/rag/uploads-staging'") == true)
+        XCTAssertTrue(commands[1].arguments.last?.contains("import queue_db") == true)
+    }
 }
 
 private actor RecordingRAGQueueTransport: RAGQueueTransporting {

@@ -72,5 +72,6 @@ The first build slice is a local SwiftUI foundation:
 - English-preferred YouTube caption selection with fallback
 - Selected-capture export into the existing RAG ingestion queue
 - Settings-backed RAG export host, user, SSH identity path, collection, and enable toggle
+- Settings RAG connection test for the configured SSH queue backend
 
-RAG connection testing, share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, and graph rendering are planned next.
+Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, RAG export status tracking, and graph rendering are planned next.

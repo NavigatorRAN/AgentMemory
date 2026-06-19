@@ -135,6 +135,10 @@ final class AgentMemoryViewModel {
         selectedItem != nil && config.ragExportEnabled
     }
 
+    var canTestRAGConnection: Bool {
+        config.ragSSHQueueConfig() != nil
+    }
+
     func addCapture() {
         let rawInput = captureText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !rawInput.isEmpty else {
@@ -275,6 +279,22 @@ final class AgentMemoryViewModel {
                 statusMessage = "Exported \(selectedItem.displayName) to RAG queue as job #\(jobID)."
             } catch {
                 statusMessage = "RAG export failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func testRAGConnection() {
+        guard let ragConfig = config.ragSSHQueueConfig() else {
+            statusMessage = "RAG export settings are incomplete."
+            return
+        }
+
+        Task {
+            do {
+                let check = try await RAGSSHQueueTransport(config: ragConfig).checkConnection()
+                statusMessage = "RAG connection OK: staging \(check.stagingDirectory), ingest \(check.ingestDirectory)."
+            } catch {
+                statusMessage = "RAG connection failed: \(error.localizedDescription)"
             }
         }
     }

@@ -33,6 +33,10 @@ struct AgentMemorySettingsView: View {
                 Button("Save Settings") {
                     viewModel.saveConfig()
                 }
+                Button("Test RAG Connection") {
+                    viewModel.testRAGConnection()
+                }
+                .disabled(!viewModel.canTestRAGConnection)
             }
 
             Section("Status") {

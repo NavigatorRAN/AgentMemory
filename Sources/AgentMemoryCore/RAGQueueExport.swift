@@ -112,6 +112,16 @@ public struct RAGSSHQueueConfig: Equatable, Sendable {
     }
 }
 
+public struct RAGQueueConnectionCheck: Equatable, Sendable {
+    public var stagingDirectory: String
+    public var ingestDirectory: String
+
+    public init(stagingDirectory: String, ingestDirectory: String) {
+        self.stagingDirectory = stagingDirectory
+        self.ingestDirectory = ingestDirectory
+    }
+}
+
 public struct CommandInvocation: Equatable, Sendable {
     public var executable: String
     public var arguments: [String]
@@ -202,6 +212,33 @@ public struct RAGSSHQueueTransport: RAGQueueTransporting {
         }
 
         return jobID
+    }
+
+    public func checkConnection() async throws -> RAGQueueConnectionCheck {
+        _ = try await commandRunner.run(
+            CommandInvocation(
+                executable: "/usr/bin/ssh",
+                arguments: sshOptions() + [
+                    "\(config.user)@\(config.host)",
+                    "test -d \(shellQuote(config.remoteStagingDirectory)) && echo staging-ok"
+                ]
+            )
+        )
+
+        _ = try await commandRunner.run(
+            CommandInvocation(
+                executable: "/usr/bin/ssh",
+                arguments: sshOptions() + [
+                    "\(config.user)@\(config.host)",
+                    "cd \(shellQuote(config.remoteIngestDirectory)) && ./.venv/bin/python -c \(shellQuote("import queue_db; print(\"queue-ok\")"))"
+                ]
+            )
+        )
+
+        return RAGQueueConnectionCheck(
+            stagingDirectory: config.remoteStagingDirectory,
+            ingestDirectory: config.remoteIngestDirectory
+        )
     }
 
     private func writeTemporaryFile(for document: RAGExportDocument) throws -> URL {

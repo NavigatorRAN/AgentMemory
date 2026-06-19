@@ -135,6 +135,10 @@ final class AgentMemoryViewModel {
         selectedItem != nil && selectedItem?.ragExport == nil && config.ragExportEnabled
     }
 
+    var canExportCompletedItemsToRAG: Bool {
+        config.ragExportEnabled && snapshot.items.contains { $0.status == .complete && $0.ragExport == nil }
+    }
+
     var canTestRAGConnection: Bool {
         config.ragSSHQueueConfig() != nil
     }
@@ -309,6 +313,29 @@ final class AgentMemoryViewModel {
                 statusMessage = "RAG connection OK: staging \(check.stagingDirectory), ingest \(check.ingestDirectory)."
             } catch {
                 statusMessage = "RAG connection failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func exportCompletedItemsToRAG() {
+        guard let ragConfig = config.ragSSHQueueConfig() else {
+            statusMessage = "RAG export settings are incomplete."
+            return
+        }
+
+        Task {
+            do {
+                let exporter = RAGBatchExporter(
+                    defaultCollection: config.resolvedRAGCollection,
+                    transport: RAGSSHQueueTransport(config: ragConfig)
+                )
+                let result = try await exporter.exportCompletedItems(in: snapshot.items)
+                snapshot.items = result.items
+                persistSnapshot()
+                statusMessage = "Exported \(result.exportedCount) completed captures to RAG. \(result.skippedCount) skipped."
+                normalizeSelection(preferReview: sidebarFilter == .review)
+            } catch {
+                statusMessage = "RAG batch export failed: \(error.localizedDescription)"
             }
         }
     }

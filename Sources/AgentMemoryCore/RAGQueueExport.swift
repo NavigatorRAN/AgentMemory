@@ -90,6 +90,60 @@ public struct RAGQueueWriter: Sendable {
     }
 }
 
+public struct RAGBatchExportResult: Equatable, Sendable {
+    public var items: [CaptureItem]
+    public var exportedCount: Int
+    public var skippedCount: Int
+
+    public init(items: [CaptureItem], exportedCount: Int, skippedCount: Int) {
+        self.items = items
+        self.exportedCount = exportedCount
+        self.skippedCount = skippedCount
+    }
+}
+
+public struct RAGBatchExporter: Sendable {
+    private let defaultCollection: String
+    private let transport: RAGQueueTransporting
+    private let now: @Sendable () -> Date
+
+    public init(
+        defaultCollection: String = "agentmemory",
+        transport: RAGQueueTransporting,
+        now: @escaping @Sendable () -> Date = Date.init
+    ) {
+        self.defaultCollection = defaultCollection
+        self.transport = transport
+        self.now = now
+    }
+
+    public func exportCompletedItems(in items: [CaptureItem]) async throws -> RAGBatchExportResult {
+        var updatedItems = items
+        var exportedCount = 0
+
+        for index in updatedItems.indices {
+            guard updatedItems[index].status == .complete, updatedItems[index].ragExport == nil else {
+                continue
+            }
+
+            let document = RAGQueueExportBuilder(defaultCollection: defaultCollection).document(for: updatedItems[index])
+            let jobID = try await transport.stageAndEnqueue(document)
+            updatedItems[index].ragExport = RAGExportStatus(
+                jobID: jobID,
+                exportedAt: now(),
+                collection: defaultCollection
+            )
+            exportedCount += 1
+        }
+
+        return RAGBatchExportResult(
+            items: updatedItems,
+            exportedCount: exportedCount,
+            skippedCount: items.count - exportedCount
+        )
+    }
+}
+
 public struct RAGSSHQueueConfig: Equatable, Sendable {
     public var host: String
     public var user: String

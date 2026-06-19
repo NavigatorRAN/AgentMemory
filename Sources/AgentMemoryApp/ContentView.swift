@@ -139,6 +139,10 @@ struct ContentView: View {
                 viewModel.exportSelectedItemToRAG()
             }
             .disabled(!viewModel.canExportSelectedItemToRAG)
+            Button("Export Completed RAG") {
+                viewModel.exportCompletedItemsToRAG()
+            }
+            .disabled(!viewModel.canExportCompletedItemsToRAG)
             Button("Retry Failed") {
                 viewModel.retryAllFailedItems()
             }

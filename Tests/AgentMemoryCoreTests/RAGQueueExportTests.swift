@@ -92,14 +92,69 @@ final class RAGQueueExportTests: XCTestCase {
         XCTAssertTrue(commands[0].arguments.last?.contains("test -d '/opt/rag/uploads-staging'") == true)
         XCTAssertTrue(commands[1].arguments.last?.contains("import queue_db") == true)
     }
+
+    func testBatchExporterExportsOnlyCompletedUnexportedCaptures() async throws {
+        let exportDate = Date(timeIntervalSince1970: 500)
+        let completed = CaptureItem(
+            id: UUID(uuidString: "11111111-1111-1111-1111-111111111111")!,
+            displayName: "Completed note",
+            rawInput: "Reference: ready",
+            sourceType: .text,
+            status: .complete
+        )
+        let needsReview = CaptureItem(
+            id: UUID(uuidString: "22222222-2222-2222-2222-222222222222")!,
+            displayName: "Review note",
+            rawInput: "Maybe later",
+            sourceType: .text,
+            status: .needsReview
+        )
+        let alreadyExported = CaptureItem(
+            id: UUID(uuidString: "33333333-3333-3333-3333-333333333333")!,
+            displayName: "Exported note",
+            rawInput: "Already queued",
+            sourceType: .text,
+            status: .complete,
+            ragExport: RAGExportStatus(jobID: 7, exportedAt: Date(timeIntervalSince1970: 300), collection: "agentmemory")
+        )
+        let failed = CaptureItem(
+            id: UUID(uuidString: "44444444-4444-4444-4444-444444444444")!,
+            displayName: "Failed note",
+            rawInput: "Broken",
+            sourceType: .text,
+            status: .failed
+        )
+        let transport = RecordingRAGQueueTransport(jobIDs: [101])
+        let exporter = RAGBatchExporter(
+            defaultCollection: "agentmemory",
+            transport: transport,
+            now: { exportDate }
+        )
+
+        let result = try await exporter.exportCompletedItems(in: [completed, needsReview, alreadyExported, failed])
+
+        XCTAssertEqual(result.exportedCount, 1)
+        XCTAssertEqual(result.skippedCount, 3)
+        XCTAssertEqual(result.items[0].ragExport, RAGExportStatus(jobID: 101, exportedAt: exportDate, collection: "agentmemory"))
+        XCTAssertNil(result.items[1].ragExport)
+        XCTAssertEqual(result.items[2].ragExport?.jobID, 7)
+        XCTAssertNil(result.items[3].ragExport)
+        let staged = await transport.staged
+        XCTAssertEqual(staged.map(\.filename), ["agentmemory-completed-note-11111111.md"])
+    }
 }
 
 private actor RecordingRAGQueueTransport: RAGQueueTransporting {
     private(set) var staged: [RAGExportDocument] = []
+    private var jobIDs: [Int]
+
+    init(jobIDs: [Int] = [42]) {
+        self.jobIDs = jobIDs
+    }
 
     func stageAndEnqueue(_ document: RAGExportDocument) async throws -> Int {
         staged.append(document)
-        return 42
+        return jobIDs.isEmpty ? 42 : jobIDs.removeFirst()
     }
 }
 

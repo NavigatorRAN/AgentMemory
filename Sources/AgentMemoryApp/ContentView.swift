@@ -117,6 +117,9 @@ struct ContentView: View {
             Button("Fetch Web Pages") {
                 viewModel.fetchQueuedWebPages()
             }
+            Button("Retry Failed") {
+                viewModel.retryAllFailedItems()
+            }
             Button("Save") {
                 viewModel.save()
             }
@@ -290,6 +293,11 @@ struct ContentView: View {
                         viewModel.skipSelectedReviewItem()
                     }
                     .disabled(item.status != .needsReview)
+
+                    Button("Retry Selected") {
+                        viewModel.retrySelectedItem()
+                    }
+                    .disabled(![QueueStatus.failed, .skipped, .paused].contains(item.status))
                 }
             } else {
                 Text("Select a capture to review.")

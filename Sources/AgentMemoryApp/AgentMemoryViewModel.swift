@@ -234,6 +234,32 @@ final class AgentMemoryViewModel {
         persistSnapshot()
     }
 
+    func retrySelectedItem() {
+        guard let selectedItemID,
+              let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })
+        else {
+            statusMessage = "Select an item to retry."
+            return
+        }
+
+        snapshot.items[index].status = .queued
+        snapshot.items[index].failureReason = nil
+        statusMessage = "Queued \(snapshot.items[index].displayName) for retry."
+        persistSnapshot()
+    }
+
+    func retryAllFailedItems() {
+        var retryCount = 0
+        for index in snapshot.items.indices where snapshot.items[index].status == .failed {
+            snapshot.items[index].status = .queued
+            snapshot.items[index].failureReason = nil
+            retryCount += 1
+        }
+
+        statusMessage = retryCount == 0 ? "No failed captures to retry." : "Queued \(retryCount) failed captures for retry."
+        persistSnapshot()
+    }
+
     func selectedItemTitleBindingValue() -> String {
         selectedItem?.displayName ?? ""
     }

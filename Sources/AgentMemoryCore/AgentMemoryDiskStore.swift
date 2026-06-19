@@ -32,3 +32,20 @@ public struct AgentMemoryDiskStore: Sendable {
         }
     }
 }
+
+public extension AgentMemoryDiskStore {
+    static func defaultAppSupportRoot(
+        fileManager: FileManager = .default,
+        bundleIdentifier: String? = Bundle.main.bundleIdentifier
+    ) throws -> URL {
+        let base = try fileManager.url(
+            for: .applicationSupportDirectory,
+            in: .userDomainMask,
+            appropriateFor: nil,
+            create: true
+        )
+
+        let folderName = bundleIdentifier?.split(separator: ".").last.map(String.init) ?? "AgentMemory"
+        return base.appendingPathComponent(folderName, isDirectory: true)
+    }
+}

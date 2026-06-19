@@ -114,4 +114,14 @@ final class AgentMemoryStoreTests: XCTestCase {
         XCTAssertEqual(processed[0].status, .complete)
         XCTAssertEqual(processed[1].status, .needsReview)
     }
+
+    func testDefaultAppSupportRootUsesAgentMemoryDirectory() throws {
+        let root = try AgentMemoryDiskStore.defaultAppSupportRoot(
+            fileManager: .default,
+            bundleIdentifier: "dev.navigatorran.AgentMemory"
+        )
+
+        XCTAssertEqual(root.lastPathComponent, "AgentMemory")
+        XCTAssertTrue(root.path.contains("Application Support"))
+    }
 }

@@ -248,6 +248,54 @@ final class MemoryMCPHTTPTransportTests: XCTestCase {
         ])
     }
 
+    func testTransportListsEntities() async throws {
+        let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [RecordingURLProtocol.self]
+        let session = URLSession(configuration: configuration)
+        let transport = MemoryMCPHTTPTransport(endpoint: endpoint, session: session)
+        var requestIndex = 0
+
+        RecordingURLProtocol.requestHandler = { request in
+            let body = try XCTUnwrap(request.httpBodyStreamData)
+            let decoded = try JSONSerialization.jsonObject(with: body) as? [String: Any]
+            requestIndex += 1
+
+            switch requestIndex {
+            case 1:
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-5"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2024-11-05","capabilities":{},"serverInfo":{"name":"memory","version":"3.2.4"}}}
+                    """.utf8)
+                )
+            case 2:
+                return (HTTPURLResponse(url: endpoint, statusCode: 202, httpVersion: nil, headerFields: ["mcp-session-id": "session-5"])!, Data())
+            case 3:
+                let params = try XCTUnwrap(decoded?["params"] as? [String: Any])
+                XCTAssertEqual(params["name"] as? String, "list_entities")
+                let arguments = try XCTUnwrap(params["arguments"] as? [String: Any])
+                XCTAssertEqual(arguments["prefix"] as? String, "agent")
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-5"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":3,"result":{"structuredContent":{"result":[{"name":"agentmemory","display_name":"AgentMemory","type":"unknown","event_count":50,"last_event_date":"2026-06-19T22:45:00+10:00"},{"name":"agent-chat","display_name":"Agent Chat","type":"service","event_count":0,"last_event_date":null}]}}}
+                    """.utf8)
+                )
+            default:
+                XCTFail("Unexpected request \(requestIndex)")
+                return (HTTPURLResponse(url: endpoint, statusCode: 500, httpVersion: nil, headerFields: nil)!, Data())
+            }
+        }
+
+        let entities = try await transport.listEntities(prefix: "agent")
+
+        XCTAssertEqual(entities, [
+            MemoryMCPEntitySummary(name: "agentmemory", displayName: "AgentMemory", type: "unknown", eventCount: 50, lastEventDate: "2026-06-19T22:45:00+10:00"),
+            MemoryMCPEntitySummary(name: "agent-chat", displayName: "Agent Chat", type: "service", eventCount: 0, lastEventDate: nil)
+        ])
+    }
+
     func testTransportThrowsForNonSuccessStatus() async {
         let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
         let configuration = URLSessionConfiguration.ephemeral

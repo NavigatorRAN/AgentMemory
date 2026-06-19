@@ -26,6 +26,7 @@ final class AgentMemoryViewModel {
     var memorySearchQuery: String = ""
     var memorySearchResults: [MemoryMCPSearchEvent] = []
     var memoryEntityDetail: MemoryMCPEntityDetail?
+    var memoryEntityResults: [MemoryMCPEntitySummary] = []
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
@@ -658,6 +659,7 @@ final class AgentMemoryViewModel {
             statusMessage = "Enter a Memory MCP search query."
             memorySearchResults = []
             memoryEntityDetail = nil
+            memoryEntityResults = []
             return
         }
 
@@ -665,6 +667,7 @@ final class AgentMemoryViewModel {
             statusMessage = "Enter a valid http or https Memory MCP endpoint."
             memorySearchResults = []
             memoryEntityDetail = nil
+            memoryEntityResults = []
             return
         }
 
@@ -673,12 +676,14 @@ final class AgentMemoryViewModel {
                 let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).searchEvents(query: query, limit: 10)
                 memorySearchResults = results
                 memoryEntityDetail = nil
+                memoryEntityResults = []
                 statusMessage = results.isEmpty
                     ? "Memory MCP search found no events."
                     : "Memory MCP search found \(results.count) events."
             } catch {
                 memorySearchResults = []
                 memoryEntityDetail = nil
+                memoryEntityResults = []
                 statusMessage = "Memory MCP search failed: \(error.localizedDescription)"
             }
         }
@@ -690,6 +695,7 @@ final class AgentMemoryViewModel {
             statusMessage = "Enter a Memory MCP entity name."
             memorySearchResults = []
             memoryEntityDetail = nil
+            memoryEntityResults = []
             return
         }
 
@@ -697,6 +703,7 @@ final class AgentMemoryViewModel {
             statusMessage = "Enter a valid http or https Memory MCP endpoint."
             memorySearchResults = []
             memoryEntityDetail = nil
+            memoryEntityResults = []
             return
         }
 
@@ -705,12 +712,14 @@ final class AgentMemoryViewModel {
                 let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).recallEvents(forEntity: entity, limit: 10)
                 memorySearchResults = results
                 memoryEntityDetail = nil
+                memoryEntityResults = []
                 statusMessage = results.isEmpty
                     ? "Memory MCP recall found no events for \(entity)."
                     : "Memory MCP recall found \(results.count) events for \(entity)."
             } catch {
                 memorySearchResults = []
                 memoryEntityDetail = nil
+                memoryEntityResults = []
                 statusMessage = "Memory MCP recall failed: \(error.localizedDescription)"
             }
         }
@@ -722,6 +731,7 @@ final class AgentMemoryViewModel {
             statusMessage = "Enter a Memory MCP entity name."
             memorySearchResults = []
             memoryEntityDetail = nil
+            memoryEntityResults = []
             return
         }
 
@@ -729,6 +739,7 @@ final class AgentMemoryViewModel {
             statusMessage = "Enter a valid http or https Memory MCP endpoint."
             memorySearchResults = []
             memoryEntityDetail = nil
+            memoryEntityResults = []
             return
         }
 
@@ -736,6 +747,7 @@ final class AgentMemoryViewModel {
             do {
                 let detail = try await MemoryMCPHTTPTransport(endpoint: endpoint).getEntity(named: entity)
                 memoryEntityDetail = detail
+                memoryEntityResults = []
                 memorySearchResults = detail.recentEvents.map {
                     MemoryMCPSearchEvent(
                         id: $0.id,
@@ -752,7 +764,37 @@ final class AgentMemoryViewModel {
             } catch {
                 memorySearchResults = []
                 memoryEntityDetail = nil
+                memoryEntityResults = []
                 statusMessage = "Memory MCP entity load failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func listMemoryMCPEntities() {
+        let prefix = memorySearchQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        guard let endpoint = config.memoryMCPEndpointURL else {
+            statusMessage = "Enter a valid http or https Memory MCP endpoint."
+            memorySearchResults = []
+            memoryEntityDetail = nil
+            memoryEntityResults = []
+            return
+        }
+
+        Task {
+            do {
+                let entities = try await MemoryMCPHTTPTransport(endpoint: endpoint).listEntities(prefix: prefix.isEmpty ? nil : prefix)
+                memoryEntityResults = entities
+                memoryEntityDetail = nil
+                memorySearchResults = []
+                statusMessage = entities.isEmpty
+                    ? "Memory MCP entity list found no matches."
+                    : "Memory MCP entity list found \(entities.count) matches."
+            } catch {
+                memorySearchResults = []
+                memoryEntityDetail = nil
+                memoryEntityResults = []
+                statusMessage = "Memory MCP entity list failed: \(error.localizedDescription)"
             }
         }
     }

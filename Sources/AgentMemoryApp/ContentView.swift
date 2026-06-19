@@ -593,15 +593,49 @@ struct ContentView: View {
 
     private var graphPlaceholder: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Graph Changes")
+            Text("Memory Graph")
                 .font(.title2.bold())
-            ZStack {
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(.quaternary)
-                    .frame(height: 220)
-                Text("3D graph renderer lands after the core queue and memory-write path.")
-                    .foregroundStyle(.secondary)
+
+            let graph = viewModel.memoryGraph
+            Grid(alignment: .leading, horizontalSpacing: 18, verticalSpacing: 8) {
+                GridRow {
+                    metric("Nodes", graph.nodes.count)
+                    metric("Edges", graph.edges.count)
+                }
             }
+
+            if graph.nodes.isEmpty {
+                Text("Run a Memory MCP search, recall, entity detail, or entity browse to populate the graph projection.")
+                    .foregroundStyle(.secondary)
+            } else {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 220), spacing: 10)], alignment: .leading, spacing: 10) {
+                    ForEach(graph.nodes, id: \.id) { node in
+                        VStack(alignment: .leading, spacing: 4) {
+                            Label(node.label, systemImage: graphNodeIcon(for: node.kind))
+                                .font(.headline)
+                                .lineLimit(2)
+                            if let subtitle = node.subtitle {
+                                Text(subtitle)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(2)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, minHeight: 64, alignment: .leading)
+                        .padding()
+                        .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+                    }
+                }
+            }
+        }
+    }
+
+    private func graphNodeIcon(for kind: MemoryMCPGraphNode.Kind) -> String {
+        switch kind {
+        case .entity:
+            return "circle.hexagongrid"
+        case .event:
+            return "clock"
         }
     }
 }

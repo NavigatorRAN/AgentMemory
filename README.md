@@ -54,6 +54,7 @@ The first build slice is a local SwiftUI foundation:
 - Native Memory MCP entity recall action
 - Native Memory MCP entity detail lookup
 - Native Memory MCP entity browsing with prefix filter
+- Memory MCP graph projection for events, entities, and mention edges
 - Durable overnight batch-run history with latest-run summary and morning brief capture
 - Review workflow for `needsReview` captures with proposed Memory MCP payload preview, approve write, and skip
 - Review editing for capture title and raw input before approval

@@ -155,6 +155,14 @@ final class AgentMemoryViewModel {
         config.memoryMCPEndpointURL != nil
     }
 
+    var memoryGraph: MemoryMCPGraph {
+        MemoryMCPGraphBuilder().build(
+            events: memorySearchResults,
+            entityDetail: memoryEntityDetail,
+            entitySummaries: memoryEntityResults
+        )
+    }
+
     func addCapture() {
         let rawInput = captureText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !rawInput.isEmpty else {

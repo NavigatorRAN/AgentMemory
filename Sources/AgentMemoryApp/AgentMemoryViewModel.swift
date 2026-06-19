@@ -163,6 +163,10 @@ final class AgentMemoryViewModel {
         )
     }
 
+    var memoryGraphScene: MemoryMCPGraphScene {
+        MemoryMCPGraphSceneBuilder().build(from: memoryGraph)
+    }
+
     func addCapture() {
         let rawInput = captureText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !rawInput.isEmpty else {

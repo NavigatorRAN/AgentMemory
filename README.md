@@ -51,5 +51,6 @@ The first build slice is a local SwiftUI foundation:
 - Memory MCP endpoint settings and HTTP transport skeleton
 - Toggle-controlled live Memory MCP write path with Settings test write
 - Durable overnight batch-run history with latest-run summary and morning brief capture
+- Review workflow for `needsReview` captures with proposed Memory MCP payload preview, approve write, and skip
 
-RAG MCP transport, share extension, watched folders, retry/backoff controls, transcript/web ingestion adapters, and graph rendering are planned next.
+RAG MCP transport, share extension, watched folders, richer review editing, retry/backoff controls, transcript/web ingestion adapters, and graph rendering are planned next.

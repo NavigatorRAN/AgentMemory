@@ -175,6 +175,13 @@ final class AgentMemoryViewModel {
         )
     }
 
+    var selectedMemoryGraphSummary: MemoryMCPGraphSelectionSummary? {
+        MemoryMCPGraphSelectionSummaryBuilder().summary(
+            from: memoryGraph,
+            selectedNodeID: selectedMemoryGraphNodeID
+        )
+    }
+
     func focusMemoryGraphNode(_ nodeID: String) {
         selectedMemoryGraphNodeID = nodeID
     }

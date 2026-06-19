@@ -86,4 +86,40 @@ final class AgentMemoryCoreTests: XCTestCase {
 
         XCTAssertFalse(candidate.canAutoWrite)
     }
+
+    func testProcessingQueueClassifiesAndCompletesHighConfidenceItem() async {
+        let queue = ProcessingQueue(
+            sourceClassifier: SourceClassifier(),
+            outcomeClassifier: OutcomeClassifier(),
+            ruleEngine: RuleEngine(rules: []),
+            memoryWriter: MockMemoryWriter()
+        )
+
+        await queue.enqueue(rawInput: "Decision: keep Memory MCP as source of truth", displayName: "Decision note")
+        await queue.processNext()
+
+        let items = await queue.items
+        XCTAssertEqual(items.count, 1)
+        XCTAssertEqual(items[0].sourceType, .text)
+        XCTAssertEqual(items[0].proposedOutcomes, [.decision, .entity, .reference])
+        XCTAssertEqual(items[0].status, .complete)
+    }
+
+    func testProcessingQueueCanPauseAndResumeQueuedItems() async {
+        let queue = ProcessingQueue(
+            sourceClassifier: SourceClassifier(),
+            outcomeClassifier: OutcomeClassifier(),
+            ruleEngine: RuleEngine(rules: []),
+            memoryWriter: MockMemoryWriter()
+        )
+
+        await queue.enqueue(rawInput: "Plain note", displayName: "Note")
+        await queue.pauseAll()
+        let pausedItems = await queue.items
+        XCTAssertEqual(pausedItems[0].status, .paused)
+
+        await queue.resumePaused()
+        let resumedItems = await queue.items
+        XCTAssertEqual(resumedItems[0].status, .queued)
+    }
 }

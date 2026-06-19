@@ -23,6 +23,21 @@ The current design centers on an ingestion hub that can accept mixed source mate
 ## Build
 
 ```bash
-swift test
-swift run AgentMemory
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift run AgentMemory
 ```
+
+## Current Build Slice
+
+The first build slice is a local SwiftUI foundation:
+
+- Capture inbox preview
+- Two-stage source and outcome classification
+- Rule routing model
+- Confidence gate model
+- Processing queue actor
+- Local source archive skeleton
+- Morning brief builder
+- Mock Memory MCP writer
+
+Real Memory MCP/RAG MCP transport, share extension, watched folders, durable overnight queue persistence, and graph rendering are planned next.

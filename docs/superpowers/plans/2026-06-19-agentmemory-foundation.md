@@ -1,6 +1,6 @@
 # AgentMemory Foundation Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Build the first runnable macOS foundation for AgentMemory: a native SwiftUI app with a capture inbox, processing queue model, two-stage classification, source archive skeleton, rules/confidence gates, and a morning brief preview.
 
@@ -38,7 +38,7 @@
 - Create: `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`
 - Modify: `README.md`
 
-- [ ] **Step 1: Create the package manifest**
+- [x] **Step 1: Create the package manifest**
 
 Create `Package.swift`:
 
@@ -69,7 +69,7 @@ let package = Package(
 )
 ```
 
-- [ ] **Step 2: Add minimal core models**
+- [x] **Step 2: Add minimal core models**
 
 Create `Sources/AgentMemoryCore/Models.swift`:
 
@@ -148,7 +148,7 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
 }
 ```
 
-- [ ] **Step 3: Add a minimal SwiftUI app**
+- [x] **Step 3: Add a minimal SwiftUI app**
 
 Create `Sources/AgentMemoryApp/AgentMemoryApp.swift`:
 
@@ -213,7 +213,7 @@ struct ContentView: View {
 }
 ```
 
-- [ ] **Step 4: Add a smoke test**
+- [x] **Step 4: Add a smoke test**
 
 Create `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -234,7 +234,7 @@ final class AgentMemoryCoreTests: XCTestCase {
 }
 ```
 
-- [ ] **Step 5: Update README commands**
+- [x] **Step 5: Update README commands**
 
 Append to `README.md`:
 
@@ -248,13 +248,13 @@ swift run AgentMemory
 ```
 ```
 
-- [ ] **Step 6: Verify the scaffold**
+- [x] **Step 6: Verify the scaffold**
 
 Run: `swift test`
 
 Expected: build succeeds and `AgentMemoryCoreTests.testCaptureItemDefaultsToQueuedUnknownSource` passes.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add Package.swift Sources Tests README.md
@@ -270,7 +270,7 @@ git commit -m "Scaffold SwiftUI AgentMemory app"
 - Create: `Sources/AgentMemoryCore/OutcomeClassifier.swift`
 - Modify: `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`
 
-- [ ] **Step 1: Add failing source-classifier tests**
+- [x] **Step 1: Add failing source-classifier tests**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -291,7 +291,7 @@ Run: `swift test`
 
 Expected: FAIL because `SourceClassifier` does not exist.
 
-- [ ] **Step 2: Implement source classifier**
+- [x] **Step 2: Implement source classifier**
 
 Create `Sources/AgentMemoryCore/SourceClassifier.swift`:
 
@@ -333,7 +333,7 @@ public struct SourceClassifier: Sendable {
 }
 ```
 
-- [ ] **Step 3: Add failing outcome-classifier tests**
+- [x] **Step 3: Add failing outcome-classifier tests**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -352,7 +352,7 @@ Run: `swift test`
 
 Expected: FAIL because `OutcomeClassifier` does not exist.
 
-- [ ] **Step 4: Implement outcome classifier**
+- [x] **Step 4: Implement outcome classifier**
 
 Create `Sources/AgentMemoryCore/OutcomeClassifier.swift`:
 
@@ -395,13 +395,13 @@ public struct OutcomeClassifier: Sendable {
 }
 ```
 
-- [ ] **Step 5: Verify classification tests**
+- [x] **Step 5: Verify classification tests**
 
 Run: `swift test`
 
 Expected: all tests pass.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/SourceClassifier.swift Sources/AgentMemoryCore/OutcomeClassifier.swift Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift
@@ -417,7 +417,7 @@ git commit -m "Add two-stage capture classification"
 - Create: `Sources/AgentMemoryCore/RuleEngine.swift`
 - Modify: `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`
 
-- [ ] **Step 1: Extend models**
+- [x] **Step 1: Extend models**
 
 Append to `Sources/AgentMemoryCore/Models.swift`:
 
@@ -461,7 +461,7 @@ public struct RoutingDecision: Equatable, Sendable {
 }
 ```
 
-- [ ] **Step 2: Add failing rule-engine tests**
+- [x] **Step 2: Add failing rule-engine tests**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -502,7 +502,7 @@ Run: `swift test`
 
 Expected: FAIL because `RuleEngine` does not exist.
 
-- [ ] **Step 3: Implement rule engine**
+- [x] **Step 3: Implement rule engine**
 
 Create `Sources/AgentMemoryCore/RuleEngine.swift`:
 
@@ -540,7 +540,7 @@ public struct RuleEngine: Sendable {
 }
 ```
 
-- [ ] **Step 4: Add confidence gate test**
+- [x] **Step 4: Add confidence gate test**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -574,7 +574,7 @@ Run: `swift test`
 
 Expected: FAIL because `canAutoWrite` does not exist.
 
-- [ ] **Step 5: Implement confidence gate**
+- [x] **Step 5: Implement confidence gate**
 
 Append to `Sources/AgentMemoryCore/Models.swift`:
 
@@ -588,13 +588,13 @@ public extension CaptureItem {
 }
 ```
 
-- [ ] **Step 6: Verify rules and confidence gates**
+- [x] **Step 6: Verify rules and confidence gates**
 
 Run: `swift test`
 
 Expected: all tests pass.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/Models.swift Sources/AgentMemoryCore/RuleEngine.swift Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift
@@ -610,7 +610,7 @@ git commit -m "Add routing rules and confidence gates"
 - Create: `Sources/AgentMemoryCore/ProcessingQueue.swift`
 - Modify: `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`
 
-- [ ] **Step 1: Add failing queue processing test**
+- [x] **Step 1: Add failing queue processing test**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -638,7 +638,7 @@ Run: `swift test`
 
 Expected: FAIL because `ProcessingQueue` and `MockMemoryWriter` do not exist.
 
-- [ ] **Step 2: Implement mock writer**
+- [x] **Step 2: Implement mock writer**
 
 Create `Sources/AgentMemoryCore/MockMemoryWriter.swift`:
 
@@ -664,7 +664,7 @@ public enum MemoryWriterError: Error, Equatable {
 }
 ```
 
-- [ ] **Step 3: Implement processing queue**
+- [x] **Step 3: Implement processing queue**
 
 Create `Sources/AgentMemoryCore/ProcessingQueue.swift`:
 
@@ -749,7 +749,7 @@ public actor ProcessingQueue {
 }
 ```
 
-- [ ] **Step 4: Add pause/resume test**
+- [x] **Step 4: Add pause/resume test**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -771,13 +771,13 @@ func testProcessingQueueCanPauseAndResumeQueuedItems() async {
 }
 ```
 
-- [ ] **Step 5: Verify queue behavior**
+- [x] **Step 5: Verify queue behavior**
 
 Run: `swift test`
 
 Expected: all tests pass.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/MockMemoryWriter.swift Sources/AgentMemoryCore/ProcessingQueue.swift Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift
@@ -794,7 +794,7 @@ git commit -m "Add processing queue foundation"
 - Modify: `Sources/AgentMemoryCore/Models.swift`
 - Modify: `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`
 
-- [ ] **Step 1: Add archive and brief models**
+- [x] **Step 1: Add archive and brief models**
 
 Append to `Sources/AgentMemoryCore/Models.swift`:
 
@@ -818,7 +818,7 @@ public struct MorningBrief: Equatable, Sendable {
 }
 ```
 
-- [ ] **Step 2: Add failing source archive test**
+- [x] **Step 2: Add failing source archive test**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -842,7 +842,7 @@ Run: `swift test`
 
 Expected: FAIL because `SourceArchive` does not exist.
 
-- [ ] **Step 3: Implement source archive**
+- [x] **Step 3: Implement source archive**
 
 Create `Sources/AgentMemoryCore/SourceArchive.swift`:
 
@@ -875,7 +875,7 @@ public struct SourceArchive: Sendable {
 }
 ```
 
-- [ ] **Step 4: Add failing morning brief test**
+- [x] **Step 4: Add failing morning brief test**
 
 Append to `Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift`:
 
@@ -902,7 +902,7 @@ Run: `swift test`
 
 Expected: FAIL because `MorningBriefBuilder` does not exist.
 
-- [ ] **Step 5: Implement morning brief builder**
+- [x] **Step 5: Implement morning brief builder**
 
 Create `Sources/AgentMemoryCore/MorningBriefBuilder.swift`:
 
@@ -940,13 +940,13 @@ public struct MorningBriefBuilder: Sendable {
 }
 ```
 
-- [ ] **Step 6: Verify archive and brief behavior**
+- [x] **Step 6: Verify archive and brief behavior**
 
 Run: `swift test`
 
 Expected: all tests pass.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add Sources/AgentMemoryCore/Models.swift Sources/AgentMemoryCore/SourceArchive.swift Sources/AgentMemoryCore/MorningBriefBuilder.swift Tests/AgentMemoryCoreTests/AgentMemoryCoreTests.swift
@@ -960,7 +960,7 @@ git commit -m "Add source archive and morning brief"
 **Files:**
 - Modify: `Sources/AgentMemoryApp/ContentView.swift`
 
-- [ ] **Step 1: Replace placeholder UI with queue dashboard**
+- [x] **Step 1: Replace placeholder UI with queue dashboard**
 
 Replace `Sources/AgentMemoryApp/ContentView.swift` with:
 
@@ -1098,19 +1098,19 @@ struct ContentView: View {
 }
 ```
 
-- [ ] **Step 2: Verify app target builds**
+- [x] **Step 2: Verify app target builds**
 
 Run: `swift build`
 
 Expected: `Build complete!`
 
-- [ ] **Step 3: Verify tests still pass**
+- [x] **Step 3: Verify tests still pass**
 
 Run: `swift test`
 
 Expected: all tests pass.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add Sources/AgentMemoryApp/ContentView.swift
@@ -1125,7 +1125,7 @@ git commit -m "Wire SwiftUI dashboard preview"
 - Modify: `README.md`
 - Modify: `docs/superpowers/plans/2026-06-19-agentmemory-foundation.md`
 
-- [ ] **Step 1: Update README with current status**
+- [x] **Step 1: Update README with current status**
 
 Add this section to `README.md`:
 
@@ -1147,11 +1147,11 @@ The first build slice is a local SwiftUI foundation:
 Real Memory MCP/RAG MCP transport, share extension, watched folders, and graph rendering are planned next.
 ```
 
-- [ ] **Step 2: Mark plan checkboxes complete as implemented**
+- [x] **Step 2: Mark plan checkboxes complete as implemented**
 
 Edit `docs/superpowers/plans/2026-06-19-agentmemory-foundation.md` so completed steps are checked.
 
-- [ ] **Step 3: Run final verification**
+- [x] **Step 3: Run final verification**
 
 Run: `swift test`
 
@@ -1161,7 +1161,7 @@ Run: `swift build`
 
 Expected: build succeeds.
 
-- [ ] **Step 4: Push branch**
+- [x] **Step 4: Push branch**
 
 ```bash
 git status --short

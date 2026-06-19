@@ -593,10 +593,18 @@ struct ContentView: View {
 
     private var graphPlaceholder: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Memory Graph")
-                .font(.title2.bold())
+            HStack {
+                Text("Memory Graph")
+                    .font(.title2.bold())
+                Spacer()
+                if viewModel.selectedMemoryGraphNodeID != nil {
+                    Button("Clear Focus") {
+                        viewModel.clearMemoryGraphFocus()
+                    }
+                }
+            }
 
-            let graph = viewModel.memoryGraph
+            let graph = viewModel.focusedMemoryGraph
             let scene = viewModel.memoryGraphScene
             Grid(alignment: .leading, horizontalSpacing: 18, verticalSpacing: 8) {
                 GridRow {
@@ -610,29 +618,40 @@ struct ContentView: View {
                 Text("Run a Memory MCP search, recall, entity detail, or entity browse to populate the graph projection.")
                     .foregroundStyle(.secondary)
             } else {
-                Text("3D scene payload ready: entities sit at depth 0, events sit forward at depth 4.")
+                if let selectedNodeID = viewModel.selectedMemoryGraphNodeID {
+                    Text("Focused on \(selectedNodeID). Showing immediate neighbors.")
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                }
+
+                Text("3D scene payload ready: entities sit at depth 0, events sit forward at depth 4. Select a node card to focus its neighborhood.")
                     .font(.callout)
                     .foregroundStyle(.secondary)
 
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 220), spacing: 10)], alignment: .leading, spacing: 10) {
                     ForEach(scene.nodes, id: \.id) { node in
-                        VStack(alignment: .leading, spacing: 4) {
-                            Label(node.label, systemImage: graphNodeIcon(for: node.kind))
-                                .font(.headline)
-                                .lineLimit(2)
-                            if let subtitle = node.subtitle {
-                                Text(subtitle)
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
+                        Button {
+                            viewModel.focusMemoryGraphNode(node.id)
+                        } label: {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Label(node.label, systemImage: graphNodeIcon(for: node.kind))
+                                    .font(.headline)
                                     .lineLimit(2)
+                                if let subtitle = node.subtitle {
+                                    Text(subtitle)
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                        .lineLimit(2)
+                                }
+                                Text(scenePositionSummary(for: node.position))
+                                    .font(.caption2)
+                                    .foregroundStyle(.tertiary)
                             }
-                            Text(scenePositionSummary(for: node.position))
-                                .font(.caption2)
-                                .foregroundStyle(.tertiary)
+                            .frame(maxWidth: .infinity, minHeight: 64, alignment: .leading)
+                            .padding()
+                            .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
                         }
-                        .frame(maxWidth: .infinity, minHeight: 64, alignment: .leading)
-                        .padding()
-                        .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+                        .buttonStyle(.plain)
                     }
                 }
             }

@@ -27,6 +27,7 @@ final class AgentMemoryViewModel {
     var memorySearchResults: [MemoryMCPSearchEvent] = []
     var memoryEntityDetail: MemoryMCPEntityDetail?
     var memoryEntityResults: [MemoryMCPEntitySummary] = []
+    var selectedMemoryGraphNodeID: String?
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
@@ -164,7 +165,22 @@ final class AgentMemoryViewModel {
     }
 
     var memoryGraphScene: MemoryMCPGraphScene {
-        MemoryMCPGraphSceneBuilder().build(from: memoryGraph)
+        MemoryMCPGraphSceneBuilder().build(from: focusedMemoryGraph)
+    }
+
+    var focusedMemoryGraph: MemoryMCPGraph {
+        MemoryMCPGraphFocusBuilder().focusedGraph(
+            from: memoryGraph,
+            selectedNodeID: selectedMemoryGraphNodeID
+        )
+    }
+
+    func focusMemoryGraphNode(_ nodeID: String) {
+        selectedMemoryGraphNodeID = nodeID
+    }
+
+    func clearMemoryGraphFocus() {
+        selectedMemoryGraphNodeID = nil
     }
 
     func addCapture() {
@@ -672,6 +688,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            selectedMemoryGraphNodeID = nil
             return
         }
 
@@ -680,6 +697,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            selectedMemoryGraphNodeID = nil
             return
         }
 
@@ -687,6 +705,7 @@ final class AgentMemoryViewModel {
             do {
                 let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).searchEvents(query: query, limit: 10)
                 memorySearchResults = results
+                selectedMemoryGraphNodeID = nil
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 statusMessage = results.isEmpty
@@ -696,6 +715,7 @@ final class AgentMemoryViewModel {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP search failed: \(error.localizedDescription)"
             }
         }
@@ -708,6 +728,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            selectedMemoryGraphNodeID = nil
             return
         }
 
@@ -716,6 +737,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            selectedMemoryGraphNodeID = nil
             return
         }
 
@@ -723,6 +745,7 @@ final class AgentMemoryViewModel {
             do {
                 let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).recallEvents(forEntity: entity, limit: 10)
                 memorySearchResults = results
+                selectedMemoryGraphNodeID = nil
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 statusMessage = results.isEmpty
@@ -732,6 +755,7 @@ final class AgentMemoryViewModel {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP recall failed: \(error.localizedDescription)"
             }
         }
@@ -744,6 +768,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            selectedMemoryGraphNodeID = nil
             return
         }
 
@@ -752,6 +777,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            selectedMemoryGraphNodeID = nil
             return
         }
 
@@ -759,6 +785,7 @@ final class AgentMemoryViewModel {
             do {
                 let detail = try await MemoryMCPHTTPTransport(endpoint: endpoint).getEntity(named: entity)
                 memoryEntityDetail = detail
+                selectedMemoryGraphNodeID = nil
                 memoryEntityResults = []
                 memorySearchResults = detail.recentEvents.map {
                     MemoryMCPSearchEvent(
@@ -777,6 +804,7 @@ final class AgentMemoryViewModel {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP entity load failed: \(error.localizedDescription)"
             }
         }
@@ -790,6 +818,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            selectedMemoryGraphNodeID = nil
             return
         }
 
@@ -797,6 +826,7 @@ final class AgentMemoryViewModel {
             do {
                 let entities = try await MemoryMCPHTTPTransport(endpoint: endpoint).listEntities(prefix: prefix.isEmpty ? nil : prefix)
                 memoryEntityResults = entities
+                selectedMemoryGraphNodeID = nil
                 memoryEntityDetail = nil
                 memorySearchResults = []
                 statusMessage = entities.isEmpty
@@ -806,6 +836,7 @@ final class AgentMemoryViewModel {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP entity list failed: \(error.localizedDescription)"
             }
         }

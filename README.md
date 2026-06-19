@@ -65,5 +65,6 @@ The first build slice is a local SwiftUI foundation:
 - Per-capture processing attempt history
 - Retry budget for exhausted failed captures
 - YouTube URL recognition and video metadata for stacked captures
+- YouTube caption manifest parsing foundation
 
 RAG MCP transport, share extension, watched folders, PDF/image source rendering, automatic retry scheduling, YouTube transcript fetching, and graph rendering are planned next.

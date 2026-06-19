@@ -225,6 +225,26 @@ final class AgentMemoryViewModel {
         snapshot.items[index].rawInput = rawInput
     }
 
+    func selectedItemHasOutcome(_ outcome: MemoryOutcome) -> Bool {
+        selectedItem?.proposedOutcomes.contains(outcome) ?? false
+    }
+
+    func setSelectedItemOutcome(_ outcome: MemoryOutcome, isEnabled: Bool) {
+        guard let selectedItemID,
+              let index = snapshot.items.firstIndex(where: { $0.id == selectedItemID })
+        else {
+            return
+        }
+
+        if isEnabled {
+            if !snapshot.items[index].proposedOutcomes.contains(outcome) {
+                snapshot.items[index].proposedOutcomes.append(outcome)
+            }
+        } else {
+            snapshot.items[index].proposedOutcomes.removeAll { $0 == outcome }
+        }
+    }
+
     func saveSelectedReviewEdits() {
         guard let selectedItem else {
             statusMessage = "Select a review item first."

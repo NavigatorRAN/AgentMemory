@@ -189,6 +189,20 @@ struct ContentView: View {
                 .textFieldStyle(.roundedBorder)
                 .lineLimit(4...10)
 
+                Text("Memory Outcomes")
+                    .font(.headline)
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 140), spacing: 10)], alignment: .leading, spacing: 10) {
+                    ForEach(MemoryOutcome.allCases, id: \.self) { outcome in
+                        Toggle(
+                            outcome.rawValue,
+                            isOn: Binding(
+                                get: { viewModel.selectedItemHasOutcome(outcome) },
+                                set: { viewModel.setSelectedItemOutcome(outcome, isEnabled: $0) }
+                            )
+                        )
+                    }
+                }
+
                 Text("Proposed Memory MCP Payload")
                     .font(.headline)
                 Text(viewModel.selectedReviewPayloadPreview)

@@ -127,6 +127,31 @@ final class RAGQueueExportTests: XCTestCase {
         XCTAssertTrue(commands[0].arguments.last?.contains("chunks_upserted") == true)
     }
 
+    func testSSHTransportFetchesRAGQueueStats() async throws {
+        let runner = RecordingCommandRunner(outputs: [
+            """
+            {"pending":2,"running":1,"done":635,"failed":2}
+
+            """
+        ])
+        let transport = RAGSSHQueueTransport(
+            config: RAGSSHQueueConfig(
+                host: "192.168.1.107",
+                user: "veronika",
+                identityPath: "/Users/matt/.ssh/id_rsa_hermes"
+            ),
+            commandRunner: runner
+        )
+
+        let stats = try await transport.fetchQueueStats()
+
+        XCTAssertEqual(stats, RAGQueueStats(countsByStatus: ["pending": 2, "running": 1, "done": 635, "failed": 2]))
+        let commands = await runner.commands
+        XCTAssertEqual(commands.count, 1)
+        XCTAssertTrue(commands[0].arguments.last?.contains("queue_db.stats") == true)
+        XCTAssertTrue(commands[0].arguments.last?.contains("json.dumps") == true)
+    }
+
     func testBatchExporterExportsOnlyCompletedUnexportedCaptures() async throws {
         let exportDate = Date(timeIntervalSince1970: 500)
         let completed = CaptureItem(

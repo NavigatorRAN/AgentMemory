@@ -28,6 +28,7 @@ final class AgentMemoryViewModel {
     var memoryEntityDetail: MemoryMCPEntityDetail?
     var memoryEntityResults: [MemoryMCPEntitySummary] = []
     var selectedMemoryGraphNodeID: String?
+    var ragQueueStats: RAGQueueStats?
     var statusMessage: String = "Ready"
 
     private let store: AgentMemoryDiskStore
@@ -150,6 +151,10 @@ final class AgentMemoryViewModel {
 
     var canRefreshRAGJobStatuses: Bool {
         config.ragSSHQueueConfig() != nil && snapshot.items.contains { $0.ragExport?.jobID != nil }
+    }
+
+    var canRefreshRAGQueueStats: Bool {
+        config.ragSSHQueueConfig() != nil
     }
 
     var canSearchMemoryMCP: Bool {
@@ -440,6 +445,27 @@ final class AgentMemoryViewModel {
                 statusMessage = counts.isEmpty ? "No matching RAG jobs found." : "RAG queue status: \(counts)."
             } catch {
                 statusMessage = "RAG status refresh failed: \(error.localizedDescription)"
+            }
+        }
+    }
+
+    func refreshRAGQueueStats() {
+        guard let ragConfig = config.ragSSHQueueConfig() else {
+            statusMessage = "RAG export settings are incomplete."
+            return
+        }
+
+        Task {
+            do {
+                let stats = try await RAGSSHQueueTransport(config: ragConfig).fetchQueueStats()
+                ragQueueStats = stats
+                let counts = stats.countsByStatus
+                    .sorted { $0.key < $1.key }
+                    .map { "\($0.key): \($0.value)" }
+                    .joined(separator: ", ")
+                statusMessage = counts.isEmpty ? "RAG queue has no jobs." : "RAG queue stats: \(counts)."
+            } catch {
+                statusMessage = "RAG queue stats failed: \(error.localizedDescription)"
             }
         }
     }

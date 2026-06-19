@@ -62,5 +62,6 @@ The first build slice is a local SwiftUI foundation:
 - Manual retry controls for failed/skipped/paused captures
 - Review-first selection and next-review navigation
 - Sidebar filter for all captures vs review queue
+- Per-capture processing attempt history
 
-RAG MCP transport, share extension, watched folders, PDF/image source rendering, automatic retry/backoff controls, YouTube transcript ingestion, and graph rendering are planned next.
+RAG MCP transport, share extension, watched folders, PDF/image source rendering, automatic retry/backoff scheduling, YouTube transcript ingestion, and graph rendering are planned next.

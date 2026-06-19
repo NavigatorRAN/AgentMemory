@@ -73,6 +73,26 @@ final class AgentMemoryStoreTests: XCTestCase {
         XCTAssertTrue(FileManager.default.fileExists(atPath: store.snapshotURL.path))
     }
 
+    func testCaptureItemDecodesOlderJSONWithoutAttemptMetadata() throws {
+        let json = """
+        {
+          "id" : "11111111-1111-1111-1111-111111111111",
+          "displayName" : "Legacy note",
+          "rawInput" : "Decision: old capture",
+          "createdAt" : "1970-01-01T00:03:20Z",
+          "sourceType" : "text",
+          "status" : "queued",
+          "proposedOutcomes" : [],
+          "confidence" : 0
+        }
+        """.data(using: .utf8)!
+
+        let item = try JSONDecoder.agentMemory.decode(CaptureItem.self, from: json)
+
+        XCTAssertEqual(item.attemptCount, 0)
+        XCTAssertNil(item.lastAttemptAt)
+    }
+
     func testDiskStoreReturnsEmptySnapshotWhenFileDoesNotExist() throws {
         let root = URL(fileURLWithPath: NSTemporaryDirectory())
             .appendingPathComponent(UUID().uuidString, isDirectory: true)

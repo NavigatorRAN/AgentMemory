@@ -190,6 +190,11 @@ struct ContentView: View {
                         Text(item.confidence.formatted(.number.precision(.fractionLength(2))))
                     }
                     GridRow {
+                        Text("Attempts")
+                            .foregroundStyle(.secondary)
+                        Text(attemptSummary(for: item))
+                    }
+                    GridRow {
                         Text("Outcomes")
                             .foregroundStyle(.secondary)
                         Text(item.proposedOutcomes.map(\.rawValue).joined(separator: ", "))
@@ -331,6 +336,14 @@ struct ContentView: View {
         .frame(minWidth: 110, alignment: .leading)
         .padding()
         .background(.quaternary, in: RoundedRectangle(cornerRadius: 8))
+    }
+
+    private func attemptSummary(for item: CaptureItem) -> String {
+        guard let lastAttemptAt = item.lastAttemptAt else {
+            return "\(item.attemptCount) attempts"
+        }
+
+        return "\(item.attemptCount) attempts, last \(lastAttemptAt.formatted(date: .abbreviated, time: .shortened))"
     }
 
     private var latestBatchRun: some View {

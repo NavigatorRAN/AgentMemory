@@ -105,6 +105,22 @@ final class AgentMemoryCoreTests: XCTestCase {
         XCTAssertEqual(items[0].status, .complete)
     }
 
+    func testProcessingQueueRecordsAttemptMetadata() async {
+        let queue = ProcessingQueue(
+            sourceClassifier: SourceClassifier(),
+            outcomeClassifier: OutcomeClassifier(),
+            ruleEngine: RuleEngine(rules: []),
+            memoryWriter: MockMemoryWriter()
+        )
+
+        await queue.enqueue(rawInput: "Decision: keep Memory MCP as source of truth", displayName: "Decision note")
+        await queue.processNext()
+
+        let items = await queue.items
+        XCTAssertEqual(items[0].attemptCount, 1)
+        XCTAssertNotNil(items[0].lastAttemptAt)
+    }
+
     func testProcessingQueueCanPauseAndResumeQueuedItems() async {
         let queue = ProcessingQueue(
             sourceClassifier: SourceClassifier(),

@@ -31,6 +31,7 @@ public actor ProcessingQueue {
             return
         }
 
+        items[index].markProcessingAttempt()
         items[index].status = .classifying
         items[index].sourceType = sourceClassifier.classify(rawInput: items[index].rawInput)
 

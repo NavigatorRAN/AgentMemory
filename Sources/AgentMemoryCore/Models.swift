@@ -48,6 +48,8 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
     public var confidence: Double
     public var failureReason: String?
     public var customTags: [String]
+    public var attemptCount: Int
+    public var lastAttemptAt: Date?
 
     public init(
         id: UUID = UUID(),
@@ -59,7 +61,9 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         proposedOutcomes: [MemoryOutcome] = [],
         confidence: Double = 0,
         failureReason: String? = nil,
-        customTags: [String] = []
+        customTags: [String] = [],
+        attemptCount: Int = 0,
+        lastAttemptAt: Date? = nil
     ) {
         self.id = id
         self.displayName = displayName
@@ -71,6 +75,8 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         self.confidence = confidence
         self.failureReason = failureReason
         self.customTags = customTags
+        self.attemptCount = attemptCount
+        self.lastAttemptAt = lastAttemptAt
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -84,6 +90,8 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         case confidence
         case failureReason
         case customTags
+        case attemptCount
+        case lastAttemptAt
     }
 
     public init(from decoder: Decoder) throws {
@@ -98,6 +106,8 @@ public struct CaptureItem: Identifiable, Codable, Equatable, Sendable {
         self.confidence = try container.decode(Double.self, forKey: .confidence)
         self.failureReason = try container.decodeIfPresent(String.self, forKey: .failureReason)
         self.customTags = try container.decodeIfPresent([String].self, forKey: .customTags) ?? []
+        self.attemptCount = try container.decodeIfPresent(Int.self, forKey: .attemptCount) ?? 0
+        self.lastAttemptAt = try container.decodeIfPresent(Date.self, forKey: .lastAttemptAt)
     }
 }
 
@@ -144,6 +154,11 @@ public extension CaptureItem {
         confidence >= 0.85
             && !proposedOutcomes.isEmpty
             && !proposedOutcomes.contains(.link)
+    }
+
+    mutating func markProcessingAttempt(at date: Date = Date()) {
+        attemptCount += 1
+        lastAttemptAt = date
     }
 }
 

@@ -39,10 +39,22 @@ struct AgentMemorySettingsView: View {
                 .disabled(!viewModel.canTestRAGConnection)
             }
 
+            Section("Wiki") {
+                Toggle("Refresh wiki automatically", isOn: $viewModel.config.automaticWikiRefreshEnabled)
+                Toggle("Sync wiki summaries to Memory MCP", isOn: $viewModel.config.wikiMemorySyncEnabled)
+                Button("Save Settings") {
+                    viewModel.saveConfig()
+                }
+            }
+
             Section("Status") {
                 Text(viewModel.config.liveMemoryWritesEnabled ? "Live writes enabled" : "Live writes disabled")
                     .foregroundStyle(.secondary)
                 Text(viewModel.config.ragExportEnabled ? "RAG export enabled" : "RAG export disabled")
+                    .foregroundStyle(.secondary)
+                Text(viewModel.config.automaticWikiRefreshEnabled ? "Automatic wiki refresh enabled" : "Automatic wiki refresh disabled")
+                    .foregroundStyle(.secondary)
+                Text(viewModel.config.wikiMemorySyncEnabled ? "Wiki Memory MCP sync enabled" : "Wiki Memory MCP sync disabled")
                     .foregroundStyle(.secondary)
                 Text(viewModel.statusMessage)
                     .foregroundStyle(.secondary)

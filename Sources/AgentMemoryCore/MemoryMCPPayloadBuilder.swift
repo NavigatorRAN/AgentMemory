@@ -36,6 +36,21 @@ public struct MemoryMCPPayloadBuilder: Sendable {
         )
     }
 
+    public func recordEventPayload(for page: AgentMemoryWikiPage) -> MemoryMCPRecordEventPayload {
+        var tags = page.tags
+        if !page.ragCollections.isEmpty {
+            tags.append("rag-backed")
+        }
+        tags.append("wiki-refresh")
+
+        return MemoryMCPRecordEventPayload(
+            agent: agent,
+            content: content(for: page),
+            entities: stableUnique(["agentmemory", "agentmemory-wiki", "wiki:\(page.slug)"] + page.entities),
+            tags: stableUnique(tags)
+        )
+    }
+
     private func content(for item: CaptureItem, archivedSource: ArchivedSource?) -> String {
         var lines = [
             "AgentMemory capture processed: \(item.displayName)",
@@ -59,6 +74,34 @@ public struct MemoryMCPPayloadBuilder: Sendable {
         } else {
             lines.append("Source archive: not available")
         }
+
+        return lines.joined(separator: "\n")
+    }
+
+    private func content(for page: AgentMemoryWikiPage) -> String {
+        var lines = [
+            "Wiki page refreshed: \(page.title)",
+            "",
+            page.summary,
+            "",
+            "Local wiki page: \(page.filePath ?? "\(page.slug).md")",
+            "Refresh reason: \(page.refreshReason.rawValue)",
+            "Entities: \(page.entities.joined(separator: ", "))",
+            "Tags: \(page.tags.joined(separator: ", "))"
+        ]
+
+        if !page.ragCollections.isEmpty {
+            lines.append("RAG collections: \(page.ragCollections.joined(separator: ", "))")
+        }
+
+        if !page.sourceURLs.isEmpty {
+            lines.append("Source URLs: \(page.sourceURLs.joined(separator: ", "))")
+        }
+
+        lines += [
+            "",
+            page.body
+        ]
 
         return lines.joined(separator: "\n")
     }

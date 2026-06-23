@@ -32,6 +32,7 @@ final class AgentMemoryViewModel {
     var memoryEntityDetail: MemoryMCPEntityDetail?
     var memoryEntityResults: [MemoryMCPEntitySummary] = []
     var selectedMemoryGraphNodeID: String?
+    var selectedWikiPageSlug: String?
     var ragQueueStats: RAGQueueStats?
     var statusMessage: String = "Ready"
 
@@ -208,6 +209,23 @@ final class AgentMemoryViewModel {
         )
     }
 
+    var selectedWikiPage: AgentMemoryWikiPage? {
+        if let selectedWikiPageSlug,
+           let selected = snapshot.wikiPages.first(where: { $0.slug == selectedWikiPageSlug }) {
+            return selected
+        }
+
+        return snapshot.wikiPages.first
+    }
+
+    var latestWikiRefreshRun: AgentMemoryWikiRefreshRun? {
+        snapshot.wikiRefreshRuns.last
+    }
+
+    var canRefreshWiki: Bool {
+        !snapshot.items.isEmpty
+    }
+
     func focusMemoryGraphNode(_ nodeID: String) {
         selectedMemoryGraphNodeID = nodeID
     }
@@ -263,6 +281,7 @@ final class AgentMemoryViewModel {
         Task {
             do {
                 snapshot = try await makeProcessingService().processNext(in: snapshot)
+                await refreshWikiIfNeeded(reason: .memoryWrite, statusPrefix: nil)
                 statusMessage = config.liveMemoryWritesEnabled
                     ? "Processed next queued item with live Memory MCP writes enabled."
                     : "Processed next queued item with mock memory writes."
@@ -278,6 +297,7 @@ final class AgentMemoryViewModel {
         Task {
             do {
                 snapshot = try await makeProcessingService().processAllQueued(in: snapshot)
+                await refreshWikiIfNeeded(reason: .memoryWrite, statusPrefix: nil)
                 statusMessage = config.liveMemoryWritesEnabled
                     ? "Processed queued captures with live Memory MCP writes enabled."
                     : "Processed queued captures with mock memory writes."
@@ -292,6 +312,7 @@ final class AgentMemoryViewModel {
         Task {
             do {
                 snapshot = try await makeProcessingService().processQueuedBatch(in: snapshot)
+                await refreshWikiIfNeeded(reason: .batchRun, statusPrefix: nil)
                 if let latestRun = snapshot.batchRuns.last {
                     statusMessage = "Batch run finished: \(latestRun.summary)"
                 } else {
@@ -315,6 +336,7 @@ final class AgentMemoryViewModel {
             let reviewCount = snapshot.items.filter { $0.status == .needsReview && $0.customTags.contains("web") }.count
             statusMessage = "Fetched web pages. \(reviewCount) web captures are ready for review."
             persistSnapshot()
+            await refreshWikiIfNeeded(reason: .sourceIngestion, statusPrefix: nil)
             normalizeSelection(preferReview: true)
         }
     }
@@ -329,6 +351,7 @@ final class AgentMemoryViewModel {
             let reviewCount = snapshot.items.filter { $0.status == .needsReview && $0.customTags.contains("youtube") }.count
             statusMessage = "Fetched YouTube transcripts. \(reviewCount) YouTube captures are ready for review."
             persistSnapshot()
+            await refreshWikiIfNeeded(reason: .sourceIngestion, statusPrefix: nil)
             normalizeSelection(preferReview: true)
         }
     }
@@ -398,6 +421,7 @@ final class AgentMemoryViewModel {
             }.count
             statusMessage = "Fetched Apple documentation. \(reviewCount) Apple docs captures are ready for review."
             persistSnapshot()
+            await refreshWikiIfNeeded(reason: .sourceIngestion, statusPrefix: nil)
             normalizeSelection(preferReview: true)
         }
     }
@@ -436,6 +460,7 @@ final class AgentMemoryViewModel {
                     )
                     persistSnapshot()
                 }
+                await refreshWikiIfNeeded(reason: .ragExport, statusPrefix: nil)
                 statusMessage = "Exported \(selectedItem.displayName) to RAG queue as job #\(jobID)."
             } catch {
                 statusMessage = "RAG export failed: \(error.localizedDescription)"
@@ -487,6 +512,7 @@ final class AgentMemoryViewModel {
                     )
                 )
                 persistSnapshot()
+                await refreshWikiIfNeeded(reason: .ragExport, statusPrefix: nil)
                 statusMessage = summary
                 normalizeSelection(preferReview: sidebarFilter == .review)
             } catch {
@@ -579,6 +605,7 @@ final class AgentMemoryViewModel {
                 try await writer.write(item: snapshot.items[index])
                 snapshot.items[index].status = .complete
                 snapshot.items[index].failureReason = nil
+                await refreshWikiIfNeeded(reason: .memoryWrite, statusPrefix: nil)
                 statusMessage = "Approved and wrote \(snapshot.items[index].displayName)."
                 persistSnapshot()
                 selectNextReviewItem()
@@ -739,6 +766,16 @@ final class AgentMemoryViewModel {
         persistSnapshot(successMessage: "Saved local state.")
     }
 
+    func rebuildWiki() {
+        Task {
+            await refreshWikiIfNeeded(reason: .manual, statusPrefix: "Wiki")
+        }
+    }
+
+    func selectWikiPage(_ page: AgentMemoryWikiPage) {
+        selectedWikiPageSlug = page.slug
+    }
+
     private func persistSnapshot(successMessage: String? = nil) {
         do {
             try store.save(snapshot)
@@ -747,6 +784,55 @@ final class AgentMemoryViewModel {
             }
         } catch {
             statusMessage = "Save failed: \(error.localizedDescription)"
+        }
+    }
+
+    private func refreshWikiIfNeeded(reason: AgentMemoryWikiRefreshReason, statusPrefix: String?) async {
+        guard config.automaticWikiRefreshEnabled || reason == .manual else {
+            return
+        }
+
+        let startedAt = Date()
+        var pages = AgentMemoryWikiPageBuilder().pages(from: snapshot, reason: reason)
+        var syncedCount = 0
+        var failedSyncCount = 0
+
+        if config.wikiMemorySyncEnabled, let endpoint = config.memoryMCPEndpointURL, !pages.isEmpty {
+            let syncer = AgentMemoryWikiMemorySyncer(
+                payloadBuilder: MemoryMCPPayloadBuilder(agent: config.resolvedAgentName),
+                transport: MemoryMCPHTTPTransport(endpoint: endpoint)
+            )
+            let result = await syncer.sync(pages: pages)
+            pages = result.pages
+            syncedCount = result.syncedPages.count
+            failedSyncCount = result.failedPages.count
+        }
+
+        let summary = "Refreshed \(pages.count) wiki pages. \(syncedCount) synced to Memory MCP, \(failedSyncCount) sync failures."
+        let run = AgentMemoryWikiRefreshRun(
+            startedAt: startedAt,
+            completedAt: Date(),
+            reason: reason,
+            pageCount: pages.count,
+            syncedPageCount: syncedCount,
+            failedSyncCount: failedSyncCount,
+            summary: summary
+        )
+        snapshot.wikiPages = pages
+        snapshot.wikiRefreshRuns.append(run)
+
+        do {
+            try AgentMemoryWikiFileStore(root: store.wikiRoot).write(pages: pages, latestRun: run)
+            persistSnapshot()
+            if selectedWikiPageSlug == nil || !pages.contains(where: { $0.slug == selectedWikiPageSlug }) {
+                selectedWikiPageSlug = pages.first?.slug
+            }
+            if let statusPrefix {
+                statusMessage = "\(statusPrefix): \(summary)"
+            }
+        } catch {
+            persistSnapshot()
+            statusMessage = "Wiki refresh wrote state but markdown export failed: \(error.localizedDescription)"
         }
     }
 

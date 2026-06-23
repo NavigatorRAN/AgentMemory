@@ -101,6 +101,8 @@ struct ContentView: View {
             ReviewWorkspaceView(viewModel: viewModel)
         case .search:
             SearchWorkspaceView(viewModel: viewModel)
+        case .wiki:
+            WikiWorkspaceView(viewModel: viewModel)
         case .graph:
             GraphWorkspaceView(viewModel: viewModel)
         case .rag:
@@ -152,6 +154,11 @@ struct ContentView: View {
                     }
                 }
                 .disabled(!viewModel.canSearchMemoryMCP)
+            case .wiki:
+                Button("Rebuild Wiki") {
+                    viewModel.rebuildWiki()
+                }
+                .disabled(!viewModel.canRefreshWiki)
             case .graph:
                 if viewModel.selectedMemoryGraphNodeID != nil {
                     Button("Clear Focus") {
@@ -202,6 +209,8 @@ struct ContentView: View {
             "\(viewModel.reviewItems.count) waiting"
         case .search:
             "\(viewModel.memorySearchResults.count + viewModel.memoryEntityResults.count) loaded"
+        case .wiki:
+            "\(viewModel.snapshot.wikiPages.count) pages"
         case .graph:
             "\(viewModel.memoryGraph.nodes.count) nodes"
         case .rag:

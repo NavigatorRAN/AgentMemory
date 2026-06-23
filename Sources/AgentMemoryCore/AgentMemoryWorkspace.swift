@@ -2,6 +2,7 @@ public enum AgentMemoryWorkspace: String, CaseIterable, Identifiable, Codable, S
     case ingestion
     case review
     case search
+    case wiki
     case graph
     case rag
 
@@ -15,6 +16,8 @@ public enum AgentMemoryWorkspace: String, CaseIterable, Identifiable, Codable, S
             "Review"
         case .search:
             "Search"
+        case .wiki:
+            "Wiki"
         case .graph:
             "Memory Graph"
         case .rag:
@@ -30,6 +33,8 @@ public enum AgentMemoryWorkspace: String, CaseIterable, Identifiable, Codable, S
             "Approve, edit, skip, retry, and export uncertain captures."
         case .search:
             "Find saved memory, entities, and source-backed context."
+        case .wiki:
+            "Read compiled knowledge pages refreshed from Memory MCP, RAG, and source captures."
         case .graph:
             "Explore Memory MCP entities, events, communities, and evidence paths."
         case .rag:
@@ -45,6 +50,8 @@ public enum AgentMemoryWorkspace: String, CaseIterable, Identifiable, Codable, S
             "checklist"
         case .search:
             "magnifyingglass"
+        case .wiki:
+            "book.pages"
         case .graph:
             "point.3.connected.trianglepath.dotted"
         case .rag:

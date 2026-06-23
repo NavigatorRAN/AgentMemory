@@ -8,6 +8,8 @@ final class AgentMemoryConfigTests: XCTestCase {
         XCTAssertEqual(config.agentName, "CODEX")
         XCTAssertEqual(config.memoryMCPEndpoint, AgentMemoryConfig.defaultMemoryMCPEndpoint)
         XCTAssertEqual(config.memoryMCPEndpointURL?.absoluteString, AgentMemoryConfig.defaultMemoryMCPEndpoint)
+        XCTAssertTrue(config.automaticWikiRefreshEnabled)
+        XCTAssertTrue(config.wikiMemorySyncEnabled)
         XCTAssertFalse(config.liveMemoryWritesEnabled)
         XCTAssertEqual(config.ragHost, "192.168.1.107")
         XCTAssertEqual(config.ragUser, "veronika")
@@ -61,5 +63,25 @@ final class AgentMemoryConfigTests: XCTestCase {
         let store = AgentMemoryDiskStore(root: root)
 
         XCTAssertEqual(try store.loadConfig(), AgentMemoryConfig())
+    }
+
+    func testConfigDecodesOlderJSONWithWikiDefaultsEnabled() throws {
+        let json = """
+        {
+          "memoryMCPEndpoint" : "http://127.0.0.1:8006/mcp",
+          "agentName" : "CODEX",
+          "liveMemoryWritesEnabled" : false,
+          "ragHost" : "192.168.1.107",
+          "ragUser" : "veronika",
+          "ragIdentityPath" : "~/.ssh/id_rsa_hermes",
+          "ragCollection" : "agentmemory",
+          "ragExportEnabled" : false
+        }
+        """.data(using: .utf8)!
+
+        let config = try JSONDecoder.agentMemory.decode(AgentMemoryConfig.self, from: json)
+
+        XCTAssertTrue(config.automaticWikiRefreshEnabled)
+        XCTAssertTrue(config.wikiMemorySyncEnabled)
     }
 }

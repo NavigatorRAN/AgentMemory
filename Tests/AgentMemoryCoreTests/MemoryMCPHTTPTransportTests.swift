@@ -296,6 +296,109 @@ final class MemoryMCPHTTPTransportTests: XCTestCase {
         ])
     }
 
+    func testTransportSearchesNativeWikiToolWhenServerSupportsIt() async throws {
+        let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [RecordingURLProtocol.self]
+        let session = URLSession(configuration: configuration)
+        let transport = MemoryMCPHTTPTransport(endpoint: endpoint, session: session)
+        var requestIndex = 0
+
+        RecordingURLProtocol.requestHandler = { request in
+            let body = try XCTUnwrap(request.httpBodyStreamData)
+            let decoded = try JSONSerialization.jsonObject(with: body) as? [String: Any]
+            requestIndex += 1
+
+            switch requestIndex {
+            case 1:
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-6"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2024-11-05","capabilities":{},"serverInfo":{"name":"memory","version":"3.2.4"}}}
+                    """.utf8)
+                )
+            case 2:
+                return (HTTPURLResponse(url: endpoint, statusCode: 202, httpVersion: nil, headerFields: ["mcp-session-id": "session-6"])!, Data())
+            case 3:
+                let params = try XCTUnwrap(decoded?["params"] as? [String: Any])
+                XCTAssertEqual(params["name"] as? String, "search_wiki")
+                let arguments = try XCTUnwrap(params["arguments"] as? [String: Any])
+                XCTAssertEqual(arguments["query"] as? String, "Foundation Models")
+                XCTAssertEqual(arguments["limit"] as? Int, 5)
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-6"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":3,"result":{"structuredContent":{"result":[{"slug":"foundation-models","title":"Foundation Models","summary":"Compiled notes.","path":"Wiki/foundation-models.md","tags":["agentmemory-wiki"],"rag_collections":["apple-developer-docs"],"updated_at":"2026-06-23T12:00:00Z"}]}}}
+                    """.utf8)
+                )
+            default:
+                XCTFail("Unexpected request \(requestIndex)")
+                return (HTTPURLResponse(url: endpoint, statusCode: 500, httpVersion: nil, headerFields: nil)!, Data())
+            }
+        }
+
+        let pages = try await transport.searchWiki(query: "Foundation Models", limit: 5)
+
+        XCTAssertEqual(pages, [
+            MemoryMCPWikiSearchResult(
+                slug: "foundation-models",
+                title: "Foundation Models",
+                summary: "Compiled notes.",
+                path: "Wiki/foundation-models.md",
+                tags: ["agentmemory-wiki"],
+                ragCollections: ["apple-developer-docs"],
+                updatedAt: "2026-06-23T12:00:00Z"
+            )
+        ])
+    }
+
+    func testTransportGetsNativeWikiPageWhenServerSupportsIt() async throws {
+        let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [RecordingURLProtocol.self]
+        let session = URLSession(configuration: configuration)
+        let transport = MemoryMCPHTTPTransport(endpoint: endpoint, session: session)
+        var requestIndex = 0
+
+        RecordingURLProtocol.requestHandler = { request in
+            let body = try XCTUnwrap(request.httpBodyStreamData)
+            let decoded = try JSONSerialization.jsonObject(with: body) as? [String: Any]
+            requestIndex += 1
+
+            switch requestIndex {
+            case 1:
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-7"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2024-11-05","capabilities":{},"serverInfo":{"name":"memory","version":"3.2.4"}}}
+                    """.utf8)
+                )
+            case 2:
+                return (HTTPURLResponse(url: endpoint, statusCode: 202, httpVersion: nil, headerFields: ["mcp-session-id": "session-7"])!, Data())
+            case 3:
+                let params = try XCTUnwrap(decoded?["params"] as? [String: Any])
+                XCTAssertEqual(params["name"] as? String, "get_wiki_page")
+                let arguments = try XCTUnwrap(params["arguments"] as? [String: Any])
+                XCTAssertEqual(arguments["slug"] as? String, "foundation-models")
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-7"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":3,"result":{"structuredContent":{"slug":"foundation-models","title":"Foundation Models","summary":"Compiled notes.","body":"# Foundation Models","path":"Wiki/foundation-models.md","tags":["agentmemory-wiki"],"rag_collections":["apple-developer-docs"],"source_urls":["https://developer.apple.com/documentation/foundationmodels"],"updated_at":"2026-06-23T12:00:00Z"}}}
+                    """.utf8)
+                )
+            default:
+                XCTFail("Unexpected request \(requestIndex)")
+                return (HTTPURLResponse(url: endpoint, statusCode: 500, httpVersion: nil, headerFields: nil)!, Data())
+            }
+        }
+
+        let page = try await transport.getWikiPage(slug: "foundation-models")
+
+        XCTAssertEqual(page.slug, "foundation-models")
+        XCTAssertEqual(page.body, "# Foundation Models")
+        XCTAssertEqual(page.sourceURLs, ["https://developer.apple.com/documentation/foundationmodels"])
+    }
+
     func testTransportThrowsForNonSuccessStatus() async {
         let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
         let configuration = URLSessionConfiguration.ephemeral

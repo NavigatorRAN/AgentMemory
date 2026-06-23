@@ -11,6 +11,8 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
     public var ragIdentityPath: String
     public var ragCollection: String
     public var ragExportEnabled: Bool
+    public var automaticWikiRefreshEnabled: Bool
+    public var wikiMemorySyncEnabled: Bool
 
     public init(
         memoryMCPEndpoint: String = Self.defaultMemoryMCPEndpoint,
@@ -20,7 +22,9 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
         ragUser: String = "veronika",
         ragIdentityPath: String = "~/.ssh/id_rsa_hermes",
         ragCollection: String = "agentmemory",
-        ragExportEnabled: Bool = false
+        ragExportEnabled: Bool = false,
+        automaticWikiRefreshEnabled: Bool = true,
+        wikiMemorySyncEnabled: Bool = true
     ) {
         self.memoryMCPEndpoint = memoryMCPEndpoint
         self.agentName = agentName
@@ -30,6 +34,8 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
         self.ragIdentityPath = ragIdentityPath
         self.ragCollection = ragCollection
         self.ragExportEnabled = ragExportEnabled
+        self.automaticWikiRefreshEnabled = automaticWikiRefreshEnabled
+        self.wikiMemorySyncEnabled = wikiMemorySyncEnabled
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -41,6 +47,8 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
         case ragIdentityPath
         case ragCollection
         case ragExportEnabled
+        case automaticWikiRefreshEnabled
+        case wikiMemorySyncEnabled
     }
 
     public init(from decoder: Decoder) throws {
@@ -53,6 +61,8 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
         self.ragIdentityPath = try container.decodeIfPresent(String.self, forKey: .ragIdentityPath) ?? "~/.ssh/id_rsa_hermes"
         self.ragCollection = try container.decodeIfPresent(String.self, forKey: .ragCollection) ?? "agentmemory"
         self.ragExportEnabled = try container.decodeIfPresent(Bool.self, forKey: .ragExportEnabled) ?? false
+        self.automaticWikiRefreshEnabled = try container.decodeIfPresent(Bool.self, forKey: .automaticWikiRefreshEnabled) ?? true
+        self.wikiMemorySyncEnabled = try container.decodeIfPresent(Bool.self, forKey: .wikiMemorySyncEnabled) ?? true
     }
 }
 

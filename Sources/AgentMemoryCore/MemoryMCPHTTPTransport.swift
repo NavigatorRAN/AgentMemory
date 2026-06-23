@@ -62,6 +62,23 @@ public struct MemoryMCPHTTPTransport: MemoryMCPTransporting {
         return structured.result
     }
 
+    public func searchWiki(query: String, limit: Int = 20) async throws -> [MemoryMCPWikiSearchResult] {
+        let structured = try await callTool(
+            name: "search_wiki",
+            arguments: SearchWikiArguments(query: query, limit: limit),
+            structuredContent: SearchWikiStructuredContent.self
+        )
+        return structured.result
+    }
+
+    public func getWikiPage(slug: String) async throws -> MemoryMCPWikiPageDetail {
+        try await callTool(
+            name: "get_wiki_page",
+            arguments: GetWikiPageArguments(slug: slug),
+            structuredContent: MemoryMCPWikiPageDetail.self
+        )
+    }
+
     private func callTool<Arguments: Encodable, StructuredContent: Decodable>(
         name: String,
         arguments: Arguments,
@@ -286,6 +303,90 @@ public struct MemoryMCPRecentEvent: Codable, Equatable, Sendable {
     }
 }
 
+public struct MemoryMCPWikiSearchResult: Codable, Equatable, Sendable {
+    public var slug: String
+    public var title: String
+    public var summary: String
+    public var path: String?
+    public var tags: [String]
+    public var ragCollections: [String]
+    public var updatedAt: String?
+
+    public init(
+        slug: String,
+        title: String,
+        summary: String,
+        path: String?,
+        tags: [String],
+        ragCollections: [String],
+        updatedAt: String?
+    ) {
+        self.slug = slug
+        self.title = title
+        self.summary = summary
+        self.path = path
+        self.tags = tags
+        self.ragCollections = ragCollections
+        self.updatedAt = updatedAt
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case slug
+        case title
+        case summary
+        case path
+        case tags
+        case ragCollections = "rag_collections"
+        case updatedAt = "updated_at"
+    }
+}
+
+public struct MemoryMCPWikiPageDetail: Codable, Equatable, Sendable {
+    public var slug: String
+    public var title: String
+    public var summary: String
+    public var body: String
+    public var path: String?
+    public var tags: [String]
+    public var ragCollections: [String]
+    public var sourceURLs: [String]
+    public var updatedAt: String?
+
+    public init(
+        slug: String,
+        title: String,
+        summary: String,
+        body: String,
+        path: String?,
+        tags: [String],
+        ragCollections: [String],
+        sourceURLs: [String],
+        updatedAt: String?
+    ) {
+        self.slug = slug
+        self.title = title
+        self.summary = summary
+        self.body = body
+        self.path = path
+        self.tags = tags
+        self.ragCollections = ragCollections
+        self.sourceURLs = sourceURLs
+        self.updatedAt = updatedAt
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case slug
+        case title
+        case summary
+        case body
+        case path
+        case tags
+        case ragCollections = "rag_collections"
+        case sourceURLs = "source_urls"
+        case updatedAt = "updated_at"
+    }
+}
+
 public enum MemoryMCPJSONValue: Codable, Equatable, Sendable {
     case string(String)
     case number(Double)
@@ -398,8 +499,21 @@ private struct ListEntitiesArguments: Encodable {
     var type: String?
 }
 
+private struct SearchWikiArguments: Encodable {
+    var query: String
+    var limit: Int
+}
+
+private struct GetWikiPageArguments: Encodable {
+    var slug: String
+}
+
 private struct ListEntitiesStructuredContent: Decodable {
     var result: [MemoryMCPEntitySummary]
+}
+
+private struct SearchWikiStructuredContent: Decodable {
+    var result: [MemoryMCPWikiSearchResult]
 }
 
 private struct ToolCallResponse<StructuredContent: Decodable>: Decodable {

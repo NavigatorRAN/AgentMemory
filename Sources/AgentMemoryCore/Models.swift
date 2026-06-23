@@ -334,6 +334,95 @@ public struct RAGExportRun: Identifiable, Codable, Equatable, Sendable {
     }
 }
 
+public enum AgentMemoryWikiRefreshReason: String, Codable, Equatable, Sendable {
+    case memoryWrite
+    case ragExport
+    case batchRun
+    case sourceIngestion
+    case manual
+}
+
+public struct AgentMemoryWikiPage: Identifiable, Codable, Equatable, Sendable {
+    public var id: String { slug }
+    public var slug: String
+    public var title: String
+    public var summary: String
+    public var body: String
+    public var entities: [String]
+    public var tags: [String]
+    public var sourceItemIDs: [UUID]
+    public var ragCollections: [String]
+    public var sourceURLs: [String]
+    public var refreshedAt: Date
+    public var refreshReason: AgentMemoryWikiRefreshReason
+    public var filePath: String?
+    public var lastMemoryMCPSyncAt: Date?
+    public var memoryMCPSyncError: String?
+
+    public init(
+        slug: String,
+        title: String,
+        summary: String,
+        body: String,
+        entities: [String],
+        tags: [String],
+        sourceItemIDs: [UUID],
+        ragCollections: [String],
+        sourceURLs: [String],
+        refreshedAt: Date,
+        refreshReason: AgentMemoryWikiRefreshReason,
+        filePath: String? = nil,
+        lastMemoryMCPSyncAt: Date? = nil,
+        memoryMCPSyncError: String? = nil
+    ) {
+        self.slug = slug
+        self.title = title
+        self.summary = summary
+        self.body = body
+        self.entities = entities
+        self.tags = tags
+        self.sourceItemIDs = sourceItemIDs
+        self.ragCollections = ragCollections
+        self.sourceURLs = sourceURLs
+        self.refreshedAt = refreshedAt
+        self.refreshReason = refreshReason
+        self.filePath = filePath
+        self.lastMemoryMCPSyncAt = lastMemoryMCPSyncAt
+        self.memoryMCPSyncError = memoryMCPSyncError
+    }
+}
+
+public struct AgentMemoryWikiRefreshRun: Identifiable, Codable, Equatable, Sendable {
+    public var id: UUID
+    public var startedAt: Date
+    public var completedAt: Date
+    public var reason: AgentMemoryWikiRefreshReason
+    public var pageCount: Int
+    public var syncedPageCount: Int
+    public var failedSyncCount: Int
+    public var summary: String
+
+    public init(
+        id: UUID = UUID(),
+        startedAt: Date,
+        completedAt: Date,
+        reason: AgentMemoryWikiRefreshReason,
+        pageCount: Int,
+        syncedPageCount: Int,
+        failedSyncCount: Int,
+        summary: String
+    ) {
+        self.id = id
+        self.startedAt = startedAt
+        self.completedAt = completedAt
+        self.reason = reason
+        self.pageCount = pageCount
+        self.syncedPageCount = syncedPageCount
+        self.failedSyncCount = failedSyncCount
+        self.summary = summary
+    }
+}
+
 public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
     public var version: Int
     public var items: [CaptureItem]
@@ -342,6 +431,8 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
     public var morningBriefs: [MorningBrief]
     public var batchRuns: [BatchRun]
     public var ragExportRuns: [RAGExportRun]
+    public var wikiPages: [AgentMemoryWikiPage]
+    public var wikiRefreshRuns: [AgentMemoryWikiRefreshRun]
 
     public init(
         version: Int = 1,
@@ -350,7 +441,9 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
         archivedSources: [ArchivedSource] = [],
         morningBriefs: [MorningBrief] = [],
         batchRuns: [BatchRun] = [],
-        ragExportRuns: [RAGExportRun] = []
+        ragExportRuns: [RAGExportRun] = [],
+        wikiPages: [AgentMemoryWikiPage] = [],
+        wikiRefreshRuns: [AgentMemoryWikiRefreshRun] = []
     ) {
         self.version = version
         self.items = items
@@ -359,6 +452,8 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
         self.morningBriefs = morningBriefs
         self.batchRuns = batchRuns
         self.ragExportRuns = ragExportRuns
+        self.wikiPages = wikiPages
+        self.wikiRefreshRuns = wikiRefreshRuns
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -369,6 +464,8 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
         case morningBriefs
         case batchRuns
         case ragExportRuns
+        case wikiPages
+        case wikiRefreshRuns
     }
 
     public init(from decoder: Decoder) throws {
@@ -380,6 +477,8 @@ public struct AgentMemorySnapshot: Codable, Equatable, Sendable {
         self.morningBriefs = try container.decodeIfPresent([MorningBrief].self, forKey: .morningBriefs) ?? []
         self.batchRuns = try container.decodeIfPresent([BatchRun].self, forKey: .batchRuns) ?? []
         self.ragExportRuns = try container.decodeIfPresent([RAGExportRun].self, forKey: .ragExportRuns) ?? []
+        self.wikiPages = try container.decodeIfPresent([AgentMemoryWikiPage].self, forKey: .wikiPages) ?? []
+        self.wikiRefreshRuns = try container.decodeIfPresent([AgentMemoryWikiRefreshRun].self, forKey: .wikiRefreshRuns) ?? []
     }
 }
 

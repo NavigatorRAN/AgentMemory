@@ -3,3 +3,4 @@ dist/
 .superpowers/
 .DS_Store
 .apple-docs-memory-import*.json
+.apple-docs-rag-deep-import*.json

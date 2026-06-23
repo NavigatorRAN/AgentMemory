@@ -772,6 +772,12 @@ final class AgentMemoryViewModel {
         }
     }
 
+    func buildCodeGraphRAGIndex() {
+        Task {
+            await buildCodeGraphRAGIndexInBackground()
+        }
+    }
+
     func selectWikiPage(_ page: AgentMemoryWikiPage) {
         selectedWikiPageSlug = page.slug
     }
@@ -833,6 +839,50 @@ final class AgentMemoryViewModel {
         } catch {
             persistSnapshot()
             statusMessage = "Wiki refresh wrote state but markdown export failed: \(error.localizedDescription)"
+        }
+    }
+
+    private func buildCodeGraphRAGIndexInBackground() async {
+        let startedAt = Date()
+        let repositoryURL = URL(fileURLWithPath: config.resolvedCodeGraphRAGRepositoryPath, isDirectory: true)
+
+        do {
+            let index = try CodeGraphRAGIndexer().indexRepository(at: repositoryURL)
+            let reports = CodeGraphRAGCommunityBuilder().reports(from: index)
+            var pages = CodeGraphRAGWikiPageBuilder().pages(from: index, reports: reports)
+            var syncedCount = 0
+            var failedSyncCount = 0
+
+            if config.wikiMemorySyncEnabled, let endpoint = config.memoryMCPEndpointURL {
+                let syncer = AgentMemoryWikiMemorySyncer(
+                    payloadBuilder: MemoryMCPPayloadBuilder(agent: config.resolvedAgentName),
+                    transport: MemoryMCPHTTPTransport(endpoint: endpoint)
+                )
+                let result = await syncer.sync(pages: pages)
+                pages = result.pages
+                syncedCount = result.syncedPages.count
+                failedSyncCount = result.failedPages.count
+            }
+
+            let existingPages = snapshot.wikiPages.filter { !$0.slug.hasPrefix("codegraphrag-") }
+            snapshot.wikiPages = (existingPages + pages).sorted { $0.title < $1.title }
+            let summary = "Built CodeGraphRAG for \(index.repositoryName): \(index.textUnits.count) files, \(index.symbols.count) symbols, \(reports.count) communities. \(syncedCount) synced to Memory MCP, \(failedSyncCount) sync failures."
+            let run = AgentMemoryWikiRefreshRun(
+                startedAt: startedAt,
+                completedAt: Date(),
+                reason: .manual,
+                pageCount: pages.count,
+                syncedPageCount: syncedCount,
+                failedSyncCount: failedSyncCount,
+                summary: summary
+            )
+            snapshot.wikiRefreshRuns.append(run)
+            try AgentMemoryWikiFileStore(root: store.wikiRoot).write(pages: snapshot.wikiPages, latestRun: run)
+            persistSnapshot()
+            selectedWikiPageSlug = pages.first { $0.slug.hasSuffix("-overview") }?.slug ?? pages.first?.slug
+            statusMessage = summary
+        } catch {
+            statusMessage = "CodeGraphRAG build failed: \(error.localizedDescription)"
         }
     }
 

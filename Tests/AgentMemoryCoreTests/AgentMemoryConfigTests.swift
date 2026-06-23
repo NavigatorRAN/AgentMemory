@@ -10,6 +10,7 @@ final class AgentMemoryConfigTests: XCTestCase {
         XCTAssertEqual(config.memoryMCPEndpointURL?.absoluteString, AgentMemoryConfig.defaultMemoryMCPEndpoint)
         XCTAssertTrue(config.automaticWikiRefreshEnabled)
         XCTAssertTrue(config.wikiMemorySyncEnabled)
+        XCTAssertEqual(config.codeGraphRAGRepositoryPath, "")
         XCTAssertFalse(config.liveMemoryWritesEnabled)
         XCTAssertEqual(config.ragHost, "192.168.1.107")
         XCTAssertEqual(config.ragUser, "veronika")
@@ -83,5 +84,6 @@ final class AgentMemoryConfigTests: XCTestCase {
 
         XCTAssertTrue(config.automaticWikiRefreshEnabled)
         XCTAssertTrue(config.wikiMemorySyncEnabled)
+        XCTAssertEqual(config.codeGraphRAGRepositoryPath, "")
     }
 }

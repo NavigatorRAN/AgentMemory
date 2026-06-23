@@ -39,6 +39,20 @@ struct WikiWorkspaceView: View {
                     .onChange(of: viewModel.config.wikiMemorySyncEnabled) {
                         viewModel.saveConfig()
                     }
+                TextField("CodeGraphRAG repo path", text: $viewModel.config.codeGraphRAGRepositoryPath)
+                    .textFieldStyle(.roundedBorder)
+                    .onSubmit {
+                        viewModel.saveConfig()
+                    }
+
+                HStack {
+                    Button("Build CodeGraphRAG") {
+                        viewModel.buildCodeGraphRAGIndex()
+                    }
+                    Button("Save Path") {
+                        viewModel.saveConfig()
+                    }
+                }
 
                 if let run = viewModel.latestWikiRefreshRun {
                     HStack(spacing: 10) {

@@ -42,6 +42,8 @@ struct AgentMemorySettingsView: View {
             Section("Wiki") {
                 Toggle("Refresh wiki automatically", isOn: $viewModel.config.automaticWikiRefreshEnabled)
                 Toggle("Sync wiki summaries to Memory MCP", isOn: $viewModel.config.wikiMemorySyncEnabled)
+                TextField("CodeGraphRAG repo path", text: $viewModel.config.codeGraphRAGRepositoryPath)
+                    .textFieldStyle(.roundedBorder)
                 Button("Save Settings") {
                     viewModel.saveConfig()
                 }

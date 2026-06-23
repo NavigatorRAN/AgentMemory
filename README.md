@@ -97,5 +97,11 @@ The first build slice is a local SwiftUI foundation:
 - Workspace-based UI with dedicated Ingestion, Review, Search, Memory Graph, and RAG Queue pages
 - Graph-first workspace inspired by GraphRAG community and evidence maps
 - Contextual action groups that replace the overflowing global button strip
+- Automatic wiki layer for compiled knowledge pages and Memory MCP-discoverable summaries
+- Local CodeGraphRAG indexing for codebase understanding, conceptually inspired by Microsoft GraphRAG
+
+## GraphRAG Attribution
+
+AgentMemory's CodeGraphRAG layer is conceptually inspired by [Microsoft GraphRAG](https://microsoft.github.io/graphrag/) and its knowledge-graph/community-summary retrieval process. This repository does not vendor Microsoft GraphRAG code in the current slice; see [CodeGraphRAG Attribution](docs/code-graphrag-attribution.md) for details and credit.
 
 Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, expanded Memory MCP recall/entity views, expanded RAG job detail views, and production-scale graph layout are planned next.

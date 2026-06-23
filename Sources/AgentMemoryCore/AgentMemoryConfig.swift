@@ -13,6 +13,7 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
     public var ragExportEnabled: Bool
     public var automaticWikiRefreshEnabled: Bool
     public var wikiMemorySyncEnabled: Bool
+    public var codeGraphRAGRepositoryPath: String
 
     public init(
         memoryMCPEndpoint: String = Self.defaultMemoryMCPEndpoint,
@@ -24,7 +25,8 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
         ragCollection: String = "agentmemory",
         ragExportEnabled: Bool = false,
         automaticWikiRefreshEnabled: Bool = true,
-        wikiMemorySyncEnabled: Bool = true
+        wikiMemorySyncEnabled: Bool = true,
+        codeGraphRAGRepositoryPath: String = ""
     ) {
         self.memoryMCPEndpoint = memoryMCPEndpoint
         self.agentName = agentName
@@ -36,6 +38,7 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
         self.ragExportEnabled = ragExportEnabled
         self.automaticWikiRefreshEnabled = automaticWikiRefreshEnabled
         self.wikiMemorySyncEnabled = wikiMemorySyncEnabled
+        self.codeGraphRAGRepositoryPath = codeGraphRAGRepositoryPath
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -49,6 +52,7 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
         case ragExportEnabled
         case automaticWikiRefreshEnabled
         case wikiMemorySyncEnabled
+        case codeGraphRAGRepositoryPath
     }
 
     public init(from decoder: Decoder) throws {
@@ -63,6 +67,7 @@ public struct AgentMemoryConfig: Codable, Equatable, Sendable {
         self.ragExportEnabled = try container.decodeIfPresent(Bool.self, forKey: .ragExportEnabled) ?? false
         self.automaticWikiRefreshEnabled = try container.decodeIfPresent(Bool.self, forKey: .automaticWikiRefreshEnabled) ?? true
         self.wikiMemorySyncEnabled = try container.decodeIfPresent(Bool.self, forKey: .wikiMemorySyncEnabled) ?? true
+        self.codeGraphRAGRepositoryPath = try container.decodeIfPresent(String.self, forKey: .codeGraphRAGRepositoryPath) ?? ""
     }
 }
 
@@ -88,6 +93,11 @@ public extension AgentMemoryConfig {
     var resolvedRAGCollection: String {
         let trimmed = ragCollection.trimmingCharacters(in: .whitespacesAndNewlines)
         return trimmed.isEmpty ? "agentmemory" : trimmed
+    }
+
+    var resolvedCodeGraphRAGRepositoryPath: String {
+        let trimmed = codeGraphRAGRepositoryPath.trimmingCharacters(in: .whitespacesAndNewlines)
+        return trimmed.isEmpty ? FileManager.default.currentDirectoryPath : expandedHomePath(trimmed, homeDirectory: NSHomeDirectory())
     }
 
     func ragSSHQueueConfig(homeDirectory: String = NSHomeDirectory()) -> RAGSSHQueueConfig? {

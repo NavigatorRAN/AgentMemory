@@ -1,0 +1,863 @@
+{
+  "completed": [
+    "https://docs.pi-hole.net",
+    "https://docs.pi-hole.net/abbreviations",
+    "https://docs.pi-hole.net/api",
+    "https://docs.pi-hole.net/api/auth",
+    "https://docs.pi-hole.net/api/tls",
+    "https://docs.pi-hole.net/database",
+    "https://docs.pi-hole.net/database/domain-database",
+    "https://docs.pi-hole.net/database/domain-database/groups",
+    "https://docs.pi-hole.net/database/domain-database/recovery",
+    "https://docs.pi-hole.net/database/query-database",
+    "https://docs.pi-hole.net/docker",
+    "https://docs.pi-hole.net/docker/DHCP",
+    "https://docs.pi-hole.net/docker/build-image",
+    "https://docs.pi-hole.net/docker/configuration",
+    "https://docs.pi-hole.net/docker/tips-and-tricks",
+    "https://docs.pi-hole.net/docker/upgrading",
+    "https://docs.pi-hole.net/docker/upgrading/v5-v6",
+    "https://docs.pi-hole.net/ftldns",
+    "https://docs.pi-hole.net/ftldns/blockingmode",
+    "https://docs.pi-hole.net/ftldns/cache_dump",
+    "https://docs.pi-hole.net/ftldns/compile",
+    "https://docs.pi-hole.net/ftldns/configfile",
+    "https://docs.pi-hole.net/ftldns/dns-cache",
+    "https://docs.pi-hole.net/ftldns/dns-resolver",
+    "https://docs.pi-hole.net/ftldns/dnsmasq_warn",
+    "https://docs.pi-hole.net/ftldns/gdb",
+    "https://docs.pi-hole.net/ftldns/interfaces",
+    "https://docs.pi-hole.net/ftldns/package_dump",
+    "https://docs.pi-hole.net/ftldns/privacylevels",
+    "https://docs.pi-hole.net/ftldns/signals",
+    "https://docs.pi-hole.net/ftldns/valgrind",
+    "https://docs.pi-hole.net/ftldns/webserver",
+    "https://docs.pi-hole.net/group_management",
+    "https://docs.pi-hole.net/group_management/example",
+    "https://docs.pi-hole.net/guides/dns/cloudflared",
+    "https://docs.pi-hole.net/guides/dns/dnscrypt-proxy",
+    "https://docs.pi-hole.net/guides/dns/unbound",
+    "https://docs.pi-hole.net/guides/dns/upstream-dns-providers",
+    "https://docs.pi-hole.net/guides/github",
+    "https://docs.pi-hole.net/guides/github/dco",
+    "https://docs.pi-hole.net/guides/github/how-to-fork-rebase",
+    "https://docs.pi-hole.net/guides/github/how-to-signoff",
+    "https://docs.pi-hole.net/guides/github/sign",
+    "https://docs.pi-hole.net/guides/misc/allowlist-denylist",
+    "https://docs.pi-hole.net/guides/misc/benchmark",
+    "https://docs.pi-hole.net/guides/misc/homeassistant",
+    "https://docs.pi-hole.net/guides/misc/ntp",
+    "https://docs.pi-hole.net/guides/misc/tor",
+    "https://docs.pi-hole.net/guides/misc/tor/dnssec",
+    "https://docs.pi-hole.net/guides/misc/tor/performance-issues",
+    "https://docs.pi-hole.net/guides/misc/tor/setup",
+    "https://docs.pi-hole.net/guides/misc/tor/using-tor",
+    "https://docs.pi-hole.net/guides/vpn/openvpn",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/android-client",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/clients",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/deprecation_notice",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/dual-VPN",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/dual-operation",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/dynDNS",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/firewall",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/installation",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/only-dns-via-vpn",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/setup-openvpn-server",
+    "https://docs.pi-hole.net/guides/vpn/openvpn/troubleshooting",
+    "https://docs.pi-hole.net/guides/vpn/wireguard",
+    "https://docs.pi-hole.net/guides/vpn/wireguard/client",
+    "https://docs.pi-hole.net/guides/vpn/wireguard/concept",
+    "https://docs.pi-hole.net/guides/vpn/wireguard/faq",
+    "https://docs.pi-hole.net/guides/vpn/wireguard/internal",
+    "https://docs.pi-hole.net/guides/vpn/wireguard/route-everything",
+    "https://docs.pi-hole.net/guides/vpn/wireguard/server",
+    "https://docs.pi-hole.net/main",
+    "https://docs.pi-hole.net/main/basic-install",
+    "https://docs.pi-hole.net/main/contact",
+    "https://docs.pi-hole.net/main/coverage",
+    "https://docs.pi-hole.net/main/faq",
+    "https://docs.pi-hole.net/main/origins",
+    "https://docs.pi-hole.net/main/pihole-command",
+    "https://docs.pi-hole.net/main/post-install",
+    "https://docs.pi-hole.net/main/prerequisites",
+    "https://docs.pi-hole.net/main/projects",
+    "https://docs.pi-hole.net/main/uninstall",
+    "https://docs.pi-hole.net/main/update",
+    "https://docs.pi-hole.net/regex",
+    "https://docs.pi-hole.net/regex/approximate",
+    "https://docs.pi-hole.net/regex/pi-hole",
+    "https://docs.pi-hole.net/regex/testmode",
+    "https://docs.pi-hole.net/regex/tutorial",
+    "https://docs.pi-hole.net/routers/OPNsense",
+    "https://docs.pi-hole.net/routers/asus",
+    "https://docs.pi-hole.net/routers/fritzbox",
+    "https://docs.pi-hole.net/routers/fritzbox-de",
+    "https://docs.pi-hole.net/routers/nokia-G240WB",
+    "https://docs.pi-hole.net/routers/tp-link",
+    "https://docs.pi-hole.net/routers/ubiquiti-usg"
+  ],
+  "failed": {},
+  "records": {
+    "https://docs.pi-hole.net": {
+      "canonical_url": "https://docs.pi-hole.net/",
+      "fetched_at": "2026-06-23T13:41:15Z",
+      "final_url": "https://docs.pi-hole.net",
+      "rag_job_id": 1045,
+      "rag_path": ".web-pages-pihole-rag/web-page-pi-hole-docs-pi-hole-net-b3a6805395.md",
+      "title": "Pi-hole"
+    },
+    "https://docs.pi-hole.net/abbreviations": {
+      "canonical_url": "https://docs.pi-hole.net/abbreviations/",
+      "fetched_at": "2026-06-23T13:41:17Z",
+      "final_url": "https://docs.pi-hole.net/abbreviations/",
+      "rag_job_id": 1046,
+      "rag_path": ".web-pages-pihole-rag/web-page-abbreviations-pi-hole-documentation-docs-pi-hole-net-af81e5935a.md",
+      "title": "Abbreviations - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/api": {
+      "canonical_url": "https://docs.pi-hole.net/api/",
+      "fetched_at": "2026-06-23T13:41:19Z",
+      "final_url": "https://docs.pi-hole.net/api/",
+      "rag_job_id": 1047,
+      "rag_path": ".web-pages-pihole-rag/web-page-pi-hole-api-pi-hole-documentation-docs-pi-hole-net-9d79160946.md",
+      "title": "Pi-hole API - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/api/auth": {
+      "canonical_url": "https://docs.pi-hole.net/api/auth/",
+      "fetched_at": "2026-06-23T13:41:20Z",
+      "final_url": "https://docs.pi-hole.net/api/auth/",
+      "rag_job_id": 1048,
+      "rag_path": ".web-pages-pihole-rag/web-page-authentication-pi-hole-documentation-docs-pi-hole-net-b249094d34.md",
+      "title": "Authentication - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/api/tls": {
+      "canonical_url": "https://docs.pi-hole.net/api/tls/",
+      "fetched_at": "2026-06-23T13:41:22Z",
+      "final_url": "https://docs.pi-hole.net/api/tls/",
+      "rag_job_id": 1049,
+      "rag_path": ".web-pages-pihole-rag/web-page-tls-ssl-pi-hole-documentation-docs-pi-hole-net-19fd51c86a.md",
+      "title": "TLS/SSL - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/database": {
+      "canonical_url": "https://docs.pi-hole.net/database/",
+      "fetched_at": "2026-06-23T13:41:24Z",
+      "final_url": "https://docs.pi-hole.net/database/",
+      "rag_job_id": 1050,
+      "rag_path": ".web-pages-pihole-rag/web-page-databases-pi-hole-documentation-docs-pi-hole-net-1e7a1bbab1.md",
+      "title": "Databases - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/database/domain-database": {
+      "canonical_url": "https://docs.pi-hole.net/database/domain-database/",
+      "fetched_at": "2026-06-23T13:41:25Z",
+      "final_url": "https://docs.pi-hole.net/database/domain-database/",
+      "rag_job_id": 1051,
+      "rag_path": ".web-pages-pihole-rag/web-page-domain-database-pi-hole-documentation-docs-pi-hole-net-81776aad2c.md",
+      "title": "Domain Database - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/database/domain-database/groups": {
+      "canonical_url": "https://docs.pi-hole.net/database/domain-database/groups/",
+      "fetched_at": "2026-06-23T13:41:27Z",
+      "final_url": "https://docs.pi-hole.net/database/domain-database/groups/",
+      "rag_job_id": 1052,
+      "rag_path": ".web-pages-pihole-rag/web-page-group-management-pi-hole-documentation-docs-pi-hole-net-314b93df47.md",
+      "title": "Group Management - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/database/domain-database/recovery": {
+      "canonical_url": "https://docs.pi-hole.net/database/domain-database/recovery/",
+      "fetched_at": "2026-06-23T13:41:29Z",
+      "final_url": "https://docs.pi-hole.net/database/domain-database/recovery/",
+      "rag_job_id": 1053,
+      "rag_path": ".web-pages-pihole-rag/web-page-database-recovery-pi-hole-documentation-docs-pi-hole-net-3744df89a4.md",
+      "title": "Database Recovery - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/database/query-database": {
+      "canonical_url": "https://docs.pi-hole.net/database/query-database/",
+      "fetched_at": "2026-06-23T13:41:31Z",
+      "final_url": "https://docs.pi-hole.net/database/query-database/",
+      "rag_job_id": 1054,
+      "rag_path": ".web-pages-pihole-rag/web-page-query-database-pi-hole-documentation-docs-pi-hole-net-c886eb84a0.md",
+      "title": "Query Database - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/docker": {
+      "canonical_url": "https://docs.pi-hole.net/docker/",
+      "fetched_at": "2026-06-23T13:41:32Z",
+      "final_url": "https://docs.pi-hole.net/docker/",
+      "rag_job_id": 1055,
+      "rag_path": ".web-pages-pihole-rag/web-page-docker-pi-hole-documentation-docs-pi-hole-net-fa21218064.md",
+      "title": "Docker - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/docker/DHCP": {
+      "canonical_url": "https://docs.pi-hole.net/docker/DHCP/",
+      "fetched_at": "2026-06-23T13:41:34Z",
+      "final_url": "https://docs.pi-hole.net/docker/dhcp/",
+      "rag_job_id": 1056,
+      "rag_path": ".web-pages-pihole-rag/web-page-docker-dhcp-and-network-modes-pi-hole-documentation-docs-pi-hole-net-fb066d7760.md",
+      "title": "Docker DHCP and Network Modes - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/docker/build-image": {
+      "canonical_url": "https://docs.pi-hole.net/docker/build-image/",
+      "fetched_at": "2026-06-23T13:41:35Z",
+      "final_url": "https://docs.pi-hole.net/docker/build-image/",
+      "rag_job_id": 1057,
+      "rag_path": ".web-pages-pihole-rag/web-page-building-pi-hole-documentation-docs-pi-hole-net-9a326e27d2.md",
+      "title": "Building - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/docker/configuration": {
+      "canonical_url": "https://docs.pi-hole.net/docker/configuration/",
+      "fetched_at": "2026-06-23T13:41:38Z",
+      "final_url": "https://docs.pi-hole.net/docker/configuration/",
+      "rag_job_id": 1058,
+      "rag_path": ".web-pages-pihole-rag/web-page-configuration-pi-hole-documentation-docs-pi-hole-net-3e3fbd82d7.md",
+      "title": "Configuration - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/docker/tips-and-tricks": {
+      "canonical_url": "https://docs.pi-hole.net/docker/tips-and-tricks/",
+      "fetched_at": "2026-06-23T13:41:39Z",
+      "final_url": "https://docs.pi-hole.net/docker/tips-and-tricks/",
+      "rag_job_id": 1059,
+      "rag_path": ".web-pages-pihole-rag/web-page-tips-and-tricks-pi-hole-documentation-docs-pi-hole-net-fc0febd78e.md",
+      "title": "Tips and Tricks - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/docker/upgrading": {
+      "canonical_url": "https://docs.pi-hole.net/docker/upgrading/",
+      "fetched_at": "2026-06-23T13:41:42Z",
+      "final_url": "https://docs.pi-hole.net/docker/upgrading/",
+      "rag_job_id": 1060,
+      "rag_path": ".web-pages-pihole-rag/web-page-upgrading-pi-hole-documentation-docs-pi-hole-net-2911a11c52.md",
+      "title": "Upgrading - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/docker/upgrading/v5-v6": {
+      "canonical_url": "https://docs.pi-hole.net/docker/upgrading/v5-v6/",
+      "fetched_at": "2026-06-23T13:41:43Z",
+      "final_url": "https://docs.pi-hole.net/docker/upgrading/v5-v6/",
+      "rag_job_id": 1061,
+      "rag_path": ".web-pages-pihole-rag/web-page-upgrading-from-v5-x-pi-hole-documentation-docs-pi-hole-net-5835a4b2b6.md",
+      "title": "Upgrading from v5.x - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/",
+      "fetched_at": "2026-06-23T13:41:45Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/",
+      "rag_job_id": 1062,
+      "rag_path": ".web-pages-pihole-rag/web-page-ftldns-pi-hole-documentation-docs-pi-hole-net-28af4ba255.md",
+      "title": "FTLDNS - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/blockingmode": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/blockingmode/",
+      "fetched_at": "2026-06-23T13:41:47Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/blockingmode/",
+      "rag_job_id": 1063,
+      "rag_path": ".web-pages-pihole-rag/web-page-blocking-mode-pi-hole-documentation-docs-pi-hole-net-f6a2b983c9.md",
+      "title": "Blocking mode - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/cache_dump": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/cache_dump/",
+      "fetched_at": "2026-06-23T13:41:50Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/cache_dump/",
+      "rag_job_id": 1064,
+      "rag_path": ".web-pages-pihole-rag/web-page-cache-dump-pi-hole-documentation-docs-pi-hole-net-15981434c5.md",
+      "title": "Cache dump - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/compile": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/compile/",
+      "fetched_at": "2026-06-23T13:41:51Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/compile/",
+      "rag_job_id": 1065,
+      "rag_path": ".web-pages-pihole-rag/web-page-install-from-source-pi-hole-documentation-docs-pi-hole-net-f4bd6a715e.md",
+      "title": "Install from source - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/configfile": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/configfile/",
+      "fetched_at": "2026-06-23T13:41:53Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/configfile/",
+      "rag_job_id": 1066,
+      "rag_path": ".web-pages-pihole-rag/web-page-configuration-pi-hole-documentation-docs-pi-hole-net-491cae1186.md",
+      "title": "Configuration - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/dns-cache": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/dns-cache/",
+      "fetched_at": "2026-06-23T13:41:54Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/dns-cache/",
+      "rag_job_id": 1067,
+      "rag_path": ".web-pages-pihole-rag/web-page-dns-cache-pi-hole-documentation-docs-pi-hole-net-601f6229b0.md",
+      "title": "DNS cache - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/dns-resolver": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/dns-resolver/",
+      "fetched_at": "2026-06-23T13:41:56Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/dns-resolver/",
+      "rag_job_id": 1068,
+      "rag_path": ".web-pages-pihole-rag/web-page-dns-resolver-pi-hole-documentation-docs-pi-hole-net-2ffaaf6f3d.md",
+      "title": "DNS resolver - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/dnsmasq_warn": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/dnsmasq_warn/",
+      "fetched_at": "2026-06-23T13:41:57Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/dnsmasq_warn/",
+      "rag_job_id": 1069,
+      "rag_path": ".web-pages-pihole-rag/web-page-dnsmasq-warnings-pi-hole-documentation-docs-pi-hole-net-27821de556.md",
+      "title": "dnsmasq warnings - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/gdb": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/gdb/",
+      "fetched_at": "2026-06-23T13:41:59Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/gdb/",
+      "rag_job_id": 1070,
+      "rag_path": ".web-pages-pihole-rag/web-page-gdb-pi-hole-documentation-docs-pi-hole-net-4ce1bc8ae9.md",
+      "title": "gdb - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/interfaces": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/interfaces/",
+      "fetched_at": "2026-06-23T13:42:01Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/interfaces/",
+      "rag_job_id": 1071,
+      "rag_path": ".web-pages-pihole-rag/web-page-interfaces-pi-hole-documentation-docs-pi-hole-net-b919328e9b.md",
+      "title": "Interfaces - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/package_dump": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/package_dump/",
+      "fetched_at": "2026-06-23T13:42:02Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/package_dump/",
+      "rag_job_id": 1072,
+      "rag_path": ".web-pages-pihole-rag/web-page-packet-dump-pi-hole-documentation-docs-pi-hole-net-4d2f3a2c8d.md",
+      "title": "Packet dump - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/privacylevels": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/privacylevels/",
+      "fetched_at": "2026-06-23T13:42:04Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/privacylevels/",
+      "rag_job_id": 1073,
+      "rag_path": ".web-pages-pihole-rag/web-page-privacy-levels-pi-hole-documentation-docs-pi-hole-net-44c8df8599.md",
+      "title": "Privacy levels - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/signals": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/signals/",
+      "fetched_at": "2026-06-23T13:42:07Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/signals/",
+      "rag_job_id": 1074,
+      "rag_path": ".web-pages-pihole-rag/web-page-signals-pi-hole-documentation-docs-pi-hole-net-220f1e3218.md",
+      "title": "Signals - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/valgrind": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/valgrind/",
+      "fetched_at": "2026-06-23T13:42:08Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/valgrind/",
+      "rag_job_id": 1075,
+      "rag_path": ".web-pages-pihole-rag/web-page-valgrind-pi-hole-documentation-docs-pi-hole-net-ff8ac8bbda.md",
+      "title": "valgrind - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/ftldns/webserver": {
+      "canonical_url": "https://docs.pi-hole.net/ftldns/webserver/",
+      "fetched_at": "2026-06-23T13:42:11Z",
+      "final_url": "https://docs.pi-hole.net/ftldns/webserver/",
+      "rag_job_id": 1076,
+      "rag_path": ".web-pages-pihole-rag/web-page-webserver-pi-hole-documentation-docs-pi-hole-net-cfc31aba55.md",
+      "title": "Webserver - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/group_management": {
+      "canonical_url": "https://docs.pi-hole.net/group_management/",
+      "fetched_at": "2026-06-23T13:42:13Z",
+      "final_url": "https://docs.pi-hole.net/group_management/",
+      "rag_job_id": 1077,
+      "rag_path": ".web-pages-pihole-rag/web-page-group-management-pi-hole-documentation-docs-pi-hole-net-917748ece3.md",
+      "title": "Group Management - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/group_management/example": {
+      "canonical_url": "https://docs.pi-hole.net/group_management/example/",
+      "fetched_at": "2026-06-23T13:42:15Z",
+      "final_url": "https://docs.pi-hole.net/group_management/example/",
+      "rag_job_id": 1078,
+      "rag_path": ".web-pages-pihole-rag/web-page-examples-pi-hole-documentation-docs-pi-hole-net-a15882c061.md",
+      "title": "Examples - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/dns/cloudflared": {
+      "canonical_url": "https://docs.pi-hole.net/guides/dns/cloudflared/",
+      "fetched_at": "2026-06-23T13:42:17Z",
+      "final_url": "https://docs.pi-hole.net/guides/dns/cloudflared/",
+      "rag_job_id": 1079,
+      "rag_path": ".web-pages-pihole-rag/web-page-cloudflared-doh-pi-hole-documentation-docs-pi-hole-net-f24f9a8bdd.md",
+      "title": "cloudflared (DoH) - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/dns/dnscrypt-proxy": {
+      "canonical_url": "https://docs.pi-hole.net/guides/dns/dnscrypt-proxy/",
+      "fetched_at": "2026-06-23T13:42:18Z",
+      "final_url": "https://docs.pi-hole.net/guides/dns/dnscrypt-proxy/",
+      "rag_job_id": 1080,
+      "rag_path": ".web-pages-pihole-rag/web-page-dnscrypt-proxy-doh-pi-hole-documentation-docs-pi-hole-net-722ec635c0.md",
+      "title": "dnscrypt-proxy (DoH) - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/dns/unbound": {
+      "canonical_url": "https://docs.pi-hole.net/guides/dns/unbound/",
+      "fetched_at": "2026-06-23T13:42:20Z",
+      "final_url": "https://docs.pi-hole.net/guides/dns/unbound/",
+      "rag_job_id": 1081,
+      "rag_path": ".web-pages-pihole-rag/web-page-unbound-pi-hole-documentation-docs-pi-hole-net-8119f28b71.md",
+      "title": "unbound - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/dns/upstream-dns-providers": {
+      "canonical_url": "https://docs.pi-hole.net/guides/dns/upstream-dns-providers/",
+      "fetched_at": "2026-06-23T13:42:21Z",
+      "final_url": "https://docs.pi-hole.net/guides/dns/upstream-dns-providers/",
+      "rag_job_id": 1082,
+      "rag_path": ".web-pages-pihole-rag/web-page-upstream-dns-providers-pi-hole-documentation-docs-pi-hole-net-18ed238ecb.md",
+      "title": "Upstream DNS Providers - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/github": {
+      "canonical_url": "https://docs.pi-hole.net/guides/github/",
+      "fetched_at": "2026-06-23T13:42:23Z",
+      "final_url": "https://docs.pi-hole.net/guides/github/",
+      "rag_job_id": 1083,
+      "rag_path": ".web-pages-pihole-rag/web-page-contributing-pi-hole-documentation-docs-pi-hole-net-a59011fd8c.md",
+      "title": "Contributing - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/github/dco": {
+      "canonical_url": "https://docs.pi-hole.net/guides/github/dco/",
+      "fetched_at": "2026-06-23T13:42:24Z",
+      "final_url": "https://docs.pi-hole.net/guides/github/dco/",
+      "rag_job_id": 1084,
+      "rag_path": ".web-pages-pihole-rag/web-page-developer-certificate-of-origin-dco-pi-hole-documentation-docs-pi-hole-net-a4012d301b.md",
+      "title": "Developer Certificate of Origin (DCO) - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/github/how-to-fork-rebase": {
+      "canonical_url": "https://docs.pi-hole.net/guides/github/how-to-fork-rebase/",
+      "fetched_at": "2026-06-23T13:42:26Z",
+      "final_url": "https://docs.pi-hole.net/guides/github/how-to-fork-rebase/",
+      "rag_job_id": 1085,
+      "rag_path": ".web-pages-pihole-rag/web-page-how-to-fork-and-rebase-pi-hole-documentation-docs-pi-hole-net-e6c59db90a.md",
+      "title": "How to fork and rebase - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/github/how-to-signoff": {
+      "canonical_url": "https://docs.pi-hole.net/guides/github/how-to-signoff/",
+      "fetched_at": "2026-06-23T13:42:28Z",
+      "final_url": "https://docs.pi-hole.net/guides/github/how-to-signoff/",
+      "rag_job_id": 1086,
+      "rag_path": ".web-pages-pihole-rag/web-page-how-to-sign-off-commits-pi-hole-documentation-docs-pi-hole-net-b69f8a058e.md",
+      "title": "How to sign-off commits - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/github/sign": {
+      "canonical_url": "https://docs.pi-hole.net/guides/github/sign/",
+      "fetched_at": "2026-06-23T13:42:29Z",
+      "final_url": "https://docs.pi-hole.net/guides/github/sign/",
+      "rag_job_id": 1087,
+      "rag_path": ".web-pages-pihole-rag/web-page-how-to-sign-commits-pi-hole-documentation-docs-pi-hole-net-ea764a1453.md",
+      "title": "How to sign commits - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/allowlist-denylist": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/allowlist-denylist/",
+      "fetched_at": "2026-06-23T13:42:31Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/allowlist-denylist/",
+      "rag_job_id": 1088,
+      "rag_path": ".web-pages-pihole-rag/web-page-allowlist-and-denylist-editing-pi-hole-documentation-docs-pi-hole-net-c42bc8d333.md",
+      "title": "Allowlist and Denylist editing - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/benchmark": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/benchmark/",
+      "fetched_at": "2026-06-23T13:42:32Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/benchmark/",
+      "rag_job_id": 1089,
+      "rag_path": ".web-pages-pihole-rag/web-page-benchmarking-pi-hole-documentation-docs-pi-hole-net-51f847cfaf.md",
+      "title": "Benchmarking - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/homeassistant": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/homeassistant/",
+      "fetched_at": "2026-06-23T13:42:35Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/homeassistant/",
+      "rag_job_id": 1090,
+      "rag_path": ".web-pages-pihole-rag/web-page-home-assistant-pi-hole-documentation-docs-pi-hole-net-229e2e29a1.md",
+      "title": "Home Assistant - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/ntp": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/ntp/",
+      "fetched_at": "2026-06-23T13:42:36Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/ntp/",
+      "rag_job_id": 1091,
+      "rag_path": ".web-pages-pihole-rag/web-page-network-time-protocol-pi-hole-documentation-docs-pi-hole-net-6d27af648a.md",
+      "title": "Network Time Protocol - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/tor": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/tor/",
+      "fetched_at": "2026-06-23T13:42:37Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/tor/",
+      "rag_job_id": 1092,
+      "rag_path": ".web-pages-pihole-rag/web-page-tor-pi-hole-pi-hole-documentation-docs-pi-hole-net-d2ed7ddc22.md",
+      "title": "Tor & Pi-hole - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/tor/dnssec": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/tor/dnssec/",
+      "fetched_at": "2026-06-23T13:42:39Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/tor/dnssec/",
+      "rag_job_id": 1093,
+      "rag_path": ".web-pages-pihole-rag/web-page-using-dnssec-pi-hole-documentation-docs-pi-hole-net-a9bb1d6aef.md",
+      "title": "Using DNSSEC - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/tor/performance-issues": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/tor/performance-issues/",
+      "fetched_at": "2026-06-23T13:42:40Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/tor/performance-issues/",
+      "rag_job_id": 1094,
+      "rag_path": ".web-pages-pihole-rag/web-page-performance-and-other-issues-pi-hole-documentation-docs-pi-hole-net-0b3e07534d.md",
+      "title": "Performance and other issues - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/tor/setup": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/tor/setup/",
+      "fetched_at": "2026-06-23T13:42:43Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/tor/setup/",
+      "rag_job_id": 1095,
+      "rag_path": ".web-pages-pihole-rag/web-page-basic-setup-pi-hole-documentation-docs-pi-hole-net-a03428f43b.md",
+      "title": "Basic Setup - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/misc/tor/using-tor": {
+      "canonical_url": "https://docs.pi-hole.net/guides/misc/tor/using-tor/",
+      "fetched_at": "2026-06-23T13:42:44Z",
+      "final_url": "https://docs.pi-hole.net/guides/misc/tor/using-tor/",
+      "rag_job_id": 1096,
+      "rag_path": ".web-pages-pihole-rag/web-page-using-tor-pi-hole-documentation-docs-pi-hole-net-9c96ea80f1.md",
+      "title": "Using Tor - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/",
+      "fetched_at": "2026-06-23T13:42:46Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/",
+      "rag_job_id": 1097,
+      "rag_path": ".web-pages-pihole-rag/web-page-openvpn-pi-hole-documentation-docs-pi-hole-net-3e6f2cd511.md",
+      "title": "OpenVPN - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/android-client": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/android-client/",
+      "fetched_at": "2026-06-23T13:42:48Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/android-client/",
+      "rag_job_id": 1098,
+      "rag_path": ".web-pages-pihole-rag/web-page-android-pi-hole-documentation-docs-pi-hole-net-29066e4034.md",
+      "title": "Android - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/clients": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/clients/",
+      "fetched_at": "2026-06-23T13:42:50Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/clients/",
+      "rag_job_id": 1099,
+      "rag_path": ".web-pages-pihole-rag/web-page-general-pi-hole-documentation-docs-pi-hole-net-beedfead24.md",
+      "title": "General - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/deprecation_notice": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/deprecation_notice/",
+      "fetched_at": "2026-06-23T13:42:52Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/deprecation_notice/",
+      "rag_job_id": 1100,
+      "rag_path": ".web-pages-pihole-rag/web-page-deprecation-notice-pi-hole-documentation-docs-pi-hole-net-1a19536f6e.md",
+      "title": "Deprecation notice - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/dual-VPN": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/dual-VPN/",
+      "fetched_at": "2026-06-23T13:42:54Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/dual-vpn/",
+      "rag_job_id": 1101,
+      "rag_path": ".web-pages-pihole-rag/web-page-optional-full-and-dns-only-pi-hole-documentation-docs-pi-hole-net-256339af7e.md",
+      "title": "Optional: Full and DNS-only - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/dual-operation": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/dual-operation/",
+      "fetched_at": "2026-06-23T13:42:56Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/dual-operation/",
+      "rag_job_id": 1102,
+      "rag_path": ".web-pages-pihole-rag/web-page-optional-dual-operation-lan-vpn-at-the-same-time-pi-hole-documentation-docs-pi-hole-net-848af0bacb.md",
+      "title": "Optional: Dual operation: LAN & VPN at the same time - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/dynDNS": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/dynDNS/",
+      "fetched_at": "2026-06-23T13:42:58Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/dyndns/",
+      "rag_job_id": 1103,
+      "rag_path": ".web-pages-pihole-rag/web-page-optional-dynamic-dns-pi-hole-documentation-docs-pi-hole-net-274aaf8482.md",
+      "title": "Optional: Dynamic DNS - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/firewall": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/firewall/",
+      "fetched_at": "2026-06-23T13:43:00Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/firewall/",
+      "rag_job_id": 1104,
+      "rag_path": ".web-pages-pihole-rag/web-page-firewall-configuration-pi-hole-documentation-docs-pi-hole-net-ce58f0ed9f.md",
+      "title": "Firewall Configuration - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/installation": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/installation/",
+      "fetched_at": "2026-06-23T13:43:01Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/installation/",
+      "rag_job_id": 1105,
+      "rag_path": ".web-pages-pihole-rag/web-page-installation-pi-hole-documentation-docs-pi-hole-net-94a959858d.md",
+      "title": "Installation - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/only-dns-via-vpn": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/only-dns-via-vpn/",
+      "fetched_at": "2026-06-23T13:43:03Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/only-dns-via-vpn/",
+      "rag_job_id": 1106,
+      "rag_path": ".web-pages-pihole-rag/web-page-optional-only-route-dns-via-vpn-pi-hole-documentation-docs-pi-hole-net-677c801505.md",
+      "title": "Optional: Only route DNS via VPN - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/setup-openvpn-server": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/setup-openvpn-server/",
+      "fetched_at": "2026-06-23T13:43:05Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/setup-openvpn-server/",
+      "rag_job_id": 1107,
+      "rag_path": ".web-pages-pihole-rag/web-page-setup-openvpn-server-pi-hole-documentation-docs-pi-hole-net-da9d5be37b.md",
+      "title": "Setup OpenVPN Server - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/openvpn/troubleshooting": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/openvpn/troubleshooting/",
+      "fetched_at": "2026-06-23T13:43:07Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/openvpn/troubleshooting/",
+      "rag_job_id": 1108,
+      "rag_path": ".web-pages-pihole-rag/web-page-troubleshooting-pi-hole-documentation-docs-pi-hole-net-7a55c5d944.md",
+      "title": "Troubleshooting - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/wireguard": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/wireguard/",
+      "fetched_at": "2026-06-23T13:43:09Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/wireguard/",
+      "rag_job_id": 1109,
+      "rag_path": ".web-pages-pihole-rag/web-page-wireguard-pi-hole-documentation-docs-pi-hole-net-f1428dc2f7.md",
+      "title": "Wireguard - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/wireguard/client": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/wireguard/client/",
+      "fetched_at": "2026-06-23T13:43:11Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/wireguard/client/",
+      "rag_job_id": 1110,
+      "rag_path": ".web-pages-pihole-rag/web-page-add-client-s-pi-hole-documentation-docs-pi-hole-net-138d7a0da8.md",
+      "title": "Add client(s) - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/wireguard/concept": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/wireguard/concept/",
+      "fetched_at": "2026-06-23T13:43:13Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/wireguard/concept/",
+      "rag_job_id": 1111,
+      "rag_path": ".web-pages-pihole-rag/web-page-concept-pi-hole-documentation-docs-pi-hole-net-2aaffa0278.md",
+      "title": "Concept - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/wireguard/faq": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/wireguard/faq/",
+      "fetched_at": "2026-06-23T13:43:14Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/wireguard/faq/",
+      "rag_job_id": 1112,
+      "rag_path": ".web-pages-pihole-rag/web-page-troubleshooting-pi-hole-documentation-docs-pi-hole-net-acc1f71ef6.md",
+      "title": "Troubleshooting - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/wireguard/internal": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/wireguard/internal/",
+      "fetched_at": "2026-06-23T13:43:16Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/wireguard/internal/",
+      "rag_job_id": 1113,
+      "rag_path": ".web-pages-pihole-rag/web-page-make-local-devices-accessible-pi-hole-documentation-docs-pi-hole-net-719d76dd58.md",
+      "title": "Make local devices accessible - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/wireguard/route-everything": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/wireguard/route-everything/",
+      "fetched_at": "2026-06-23T13:43:18Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/wireguard/route-everything/",
+      "rag_job_id": 1114,
+      "rag_path": ".web-pages-pihole-rag/web-page-tunnel-all-internet-traffic-pi-hole-documentation-docs-pi-hole-net-885ede432d.md",
+      "title": "Tunnel all Internet traffic - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/guides/vpn/wireguard/server": {
+      "canonical_url": "https://docs.pi-hole.net/guides/vpn/wireguard/server/",
+      "fetched_at": "2026-06-23T13:43:20Z",
+      "final_url": "https://docs.pi-hole.net/guides/vpn/wireguard/server/",
+      "rag_job_id": 1115,
+      "rag_path": ".web-pages-pihole-rag/web-page-install-server-pi-hole-documentation-docs-pi-hole-net-c596803ddf.md",
+      "title": "Install server - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main": {
+      "canonical_url": "https://docs.pi-hole.net/main/",
+      "fetched_at": "2026-06-23T13:43:22Z",
+      "final_url": "https://docs.pi-hole.net/main/",
+      "rag_job_id": 1116,
+      "rag_path": ".web-pages-pihole-rag/web-page-getting-started-pi-hole-documentation-docs-pi-hole-net-be0abb1719.md",
+      "title": "Getting Started - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/basic-install": {
+      "canonical_url": "https://docs.pi-hole.net/main/basic-install/",
+      "fetched_at": "2026-06-23T13:43:24Z",
+      "final_url": "https://docs.pi-hole.net/main/basic-install/",
+      "rag_job_id": 1117,
+      "rag_path": ".web-pages-pihole-rag/web-page-installation-pi-hole-documentation-docs-pi-hole-net-4abbe8205b.md",
+      "title": "Installation - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/contact": {
+      "canonical_url": "https://docs.pi-hole.net/main/contact/",
+      "fetched_at": "2026-06-23T13:43:25Z",
+      "final_url": "https://docs.pi-hole.net/main/contact/",
+      "rag_job_id": 1118,
+      "rag_path": ".web-pages-pihole-rag/web-page-getting-in-touch-pi-hole-documentation-docs-pi-hole-net-253da6a413.md",
+      "title": "Getting in touch - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/coverage": {
+      "canonical_url": "https://docs.pi-hole.net/main/coverage/",
+      "fetched_at": "2026-06-23T13:43:27Z",
+      "final_url": "https://docs.pi-hole.net/main/coverage/",
+      "rag_job_id": 1119,
+      "rag_path": ".web-pages-pihole-rag/web-page-pi-hole-news-and-blogs-pi-hole-documentation-docs-pi-hole-net-fd74b2704f.md",
+      "title": "Pi-hole News and Blogs - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/faq": {
+      "canonical_url": "https://docs.pi-hole.net/main/faq/",
+      "fetched_at": "2026-06-23T13:43:28Z",
+      "final_url": "https://docs.pi-hole.net/main/faq/",
+      "rag_job_id": 1120,
+      "rag_path": ".web-pages-pihole-rag/web-page-faq-pi-hole-documentation-docs-pi-hole-net-09b44162d0.md",
+      "title": "FAQ - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/origins": {
+      "canonical_url": "https://docs.pi-hole.net/main/origins/",
+      "fetched_at": "2026-06-23T13:43:31Z",
+      "final_url": "https://docs.pi-hole.net/main/origins/",
+      "rag_job_id": 1121,
+      "rag_path": ".web-pages-pihole-rag/web-page-pi-hole-origins-pi-hole-documentation-docs-pi-hole-net-b3dac64aa9.md",
+      "title": "Pi-hole Origins - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/pihole-command": {
+      "canonical_url": "https://docs.pi-hole.net/main/pihole-command/",
+      "fetched_at": "2026-06-23T13:43:32Z",
+      "final_url": "https://docs.pi-hole.net/main/pihole-command/",
+      "rag_job_id": 1122,
+      "rag_path": ".web-pages-pihole-rag/web-page-the-pihole-command-pi-hole-documentation-docs-pi-hole-net-fa229dfe02.md",
+      "title": "The pihole Command - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/post-install": {
+      "canonical_url": "https://docs.pi-hole.net/main/post-install/",
+      "fetched_at": "2026-06-23T13:43:34Z",
+      "final_url": "https://docs.pi-hole.net/main/post-install/",
+      "rag_job_id": 1123,
+      "rag_path": ".web-pages-pihole-rag/web-page-post-install-pi-hole-documentation-docs-pi-hole-net-3b89d61b32.md",
+      "title": "Post-Install - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/prerequisites": {
+      "canonical_url": "https://docs.pi-hole.net/main/prerequisites/",
+      "fetched_at": "2026-06-23T13:43:35Z",
+      "final_url": "https://docs.pi-hole.net/main/prerequisites/",
+      "rag_job_id": 1124,
+      "rag_path": ".web-pages-pihole-rag/web-page-prerequisites-pi-hole-documentation-docs-pi-hole-net-1062312b4b.md",
+      "title": "Prerequisites - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/projects": {
+      "canonical_url": "https://docs.pi-hole.net/main/projects/",
+      "fetched_at": "2026-06-23T13:43:37Z",
+      "final_url": "https://docs.pi-hole.net/main/projects/",
+      "rag_job_id": 1125,
+      "rag_path": ".web-pages-pihole-rag/web-page-community-projects-pi-hole-documentation-docs-pi-hole-net-f9d5426683.md",
+      "title": "Community Projects - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/uninstall": {
+      "canonical_url": "https://docs.pi-hole.net/main/uninstall/",
+      "fetched_at": "2026-06-23T13:43:38Z",
+      "final_url": "https://docs.pi-hole.net/main/uninstall/",
+      "rag_job_id": 1126,
+      "rag_path": ".web-pages-pihole-rag/web-page-uninstalling-pi-hole-documentation-docs-pi-hole-net-74938373dd.md",
+      "title": "Uninstalling - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/main/update": {
+      "canonical_url": "https://docs.pi-hole.net/main/update/",
+      "fetched_at": "2026-06-23T13:43:40Z",
+      "final_url": "https://docs.pi-hole.net/main/update/",
+      "rag_job_id": 1127,
+      "rag_path": ".web-pages-pihole-rag/web-page-updating-pi-hole-documentation-docs-pi-hole-net-5033e2d499.md",
+      "title": "Updating - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/regex": {
+      "canonical_url": "https://docs.pi-hole.net/regex/",
+      "fetched_at": "2026-06-23T13:43:42Z",
+      "final_url": "https://docs.pi-hole.net/regex/",
+      "rag_job_id": 1128,
+      "rag_path": ".web-pages-pihole-rag/web-page-regex-blocking-pi-hole-documentation-docs-pi-hole-net-dddd439bea.md",
+      "title": "Regex Blocking - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/regex/approximate": {
+      "canonical_url": "https://docs.pi-hole.net/regex/approximate/",
+      "fetched_at": "2026-06-23T13:43:43Z",
+      "final_url": "https://docs.pi-hole.net/regex/approximate/",
+      "rag_job_id": 1129,
+      "rag_path": ".web-pages-pihole-rag/web-page-approximate-matching-pi-hole-documentation-docs-pi-hole-net-af39dce139.md",
+      "title": "Approximate matching - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/regex/pi-hole": {
+      "canonical_url": "https://docs.pi-hole.net/regex/pi-hole/",
+      "fetched_at": "2026-06-23T13:43:45Z",
+      "final_url": "https://docs.pi-hole.net/regex/pi-hole/",
+      "rag_job_id": 1130,
+      "rag_path": ".web-pages-pihole-rag/web-page-pi-hole-extensions-pi-hole-documentation-docs-pi-hole-net-11f51aa524.md",
+      "title": "Pi-hole extensions - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/regex/testmode": {
+      "canonical_url": "https://docs.pi-hole.net/regex/testmode/",
+      "fetched_at": "2026-06-23T13:43:47Z",
+      "final_url": "https://docs.pi-hole.net/regex/testmode/",
+      "rag_job_id": 1131,
+      "rag_path": ".web-pages-pihole-rag/web-page-testing-pi-hole-documentation-docs-pi-hole-net-3f3a7f8cf0.md",
+      "title": "Testing - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/regex/tutorial": {
+      "canonical_url": "https://docs.pi-hole.net/regex/tutorial/",
+      "fetched_at": "2026-06-23T13:43:48Z",
+      "final_url": "https://docs.pi-hole.net/regex/tutorial/",
+      "rag_job_id": 1132,
+      "rag_path": ".web-pages-pihole-rag/web-page-tutorial-pi-hole-documentation-docs-pi-hole-net-1aff44f6a8.md",
+      "title": "Tutorial - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/routers/OPNsense": {
+      "canonical_url": "https://docs.pi-hole.net/routers/OPNsense/",
+      "fetched_at": "2026-06-23T13:43:51Z",
+      "final_url": "https://docs.pi-hole.net/routers/opnsense/",
+      "rag_job_id": 1133,
+      "rag_path": ".web-pages-pihole-rag/web-page-opnsense-pi-hole-documentation-docs-pi-hole-net-760147b4d8.md",
+      "title": "OPNsense - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/routers/asus": {
+      "canonical_url": "https://docs.pi-hole.net/routers/asus/",
+      "fetched_at": "2026-06-23T13:43:52Z",
+      "final_url": "https://docs.pi-hole.net/routers/asus/",
+      "rag_job_id": 1134,
+      "rag_path": ".web-pages-pihole-rag/web-page-asus-router-pi-hole-documentation-docs-pi-hole-net-6f535e5194.md",
+      "title": "ASUS router - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/routers/fritzbox": {
+      "canonical_url": "https://docs.pi-hole.net/routers/fritzbox/",
+      "fetched_at": "2026-06-23T13:43:54Z",
+      "final_url": "https://docs.pi-hole.net/routers/fritzbox/",
+      "rag_job_id": 1135,
+      "rag_path": ".web-pages-pihole-rag/web-page-fritz-box-en-pi-hole-documentation-docs-pi-hole-net-ad3efb65c6.md",
+      "title": "Fritz!Box (EN) - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/routers/fritzbox-de": {
+      "canonical_url": "https://docs.pi-hole.net/routers/fritzbox-de/",
+      "fetched_at": "2026-06-23T13:43:56Z",
+      "final_url": "https://docs.pi-hole.net/routers/fritzbox-de/",
+      "rag_job_id": 1136,
+      "rag_path": ".web-pages-pihole-rag/web-page-fritz-box-de-pi-hole-documentation-docs-pi-hole-net-590a143ed3.md",
+      "title": "Fritz!Box (DE) - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/routers/nokia-G240WB": {
+      "canonical_url": "https://docs.pi-hole.net/routers/nokia-G240WB/",
+      "fetched_at": "2026-06-23T13:43:58Z",
+      "final_url": "https://docs.pi-hole.net/routers/nokia-g240wb/",
+      "rag_job_id": 1137,
+      "rag_path": ".web-pages-pihole-rag/web-page-nokia-g-240w-b-pi-hole-documentation-docs-pi-hole-net-d1ab880c08.md",
+      "title": "Nokia G-240W-B - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/routers/tp-link": {
+      "canonical_url": "https://docs.pi-hole.net/routers/tp-link/",
+      "fetched_at": "2026-06-23T13:43:59Z",
+      "final_url": "https://docs.pi-hole.net/routers/tp-link/",
+      "rag_job_id": 1138,
+      "rag_path": ".web-pages-pihole-rag/web-page-tp-link-pi-hole-documentation-docs-pi-hole-net-7b8e74e9d3.md",
+      "title": "TP-Link - Pi-hole documentation"
+    },
+    "https://docs.pi-hole.net/routers/ubiquiti-usg": {
+      "canonical_url": "https://docs.pi-hole.net/routers/ubiquiti-usg/",
+      "fetched_at": "2026-06-23T13:44:01Z",
+      "final_url": "https://docs.pi-hole.net/routers/ubiquiti-usg/",
+      "rag_job_id": 1139,
+      "rag_path": ".web-pages-pihole-rag/web-page-ubiquiti-usg-pi-hole-documentation-docs-pi-hole-net-0f3c17674f.md",
+      "title": "Ubiquiti USG - Pi-hole documentation"
+    }
+  },
+  "skipped": {}
+}

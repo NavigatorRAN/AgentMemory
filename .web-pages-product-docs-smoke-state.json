@@ -1,0 +1,17 @@
+{
+  "completed": [
+    "https://docs.paperclip.ing"
+  ],
+  "failed": {},
+  "records": {
+    "https://docs.paperclip.ing": {
+      "canonical_url": "",
+      "fetched_at": "2026-06-23T13:28:04Z",
+      "final_url": "https://docs.paperclip.ing",
+      "rag_job_id": 916,
+      "rag_path": ".web-pages-product-docs-smoke-rag/web-page-paperclip-docs-docs-paperclip-ing-4767c5c079.md",
+      "title": "Paperclip Docs"
+    }
+  },
+  "skipped": {}
+}

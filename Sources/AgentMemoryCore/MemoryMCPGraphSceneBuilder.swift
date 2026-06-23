@@ -86,6 +86,10 @@ public struct MemoryMCPGraphSceneBuilder: Sendable {
             return 0
         case .event:
             return eventDepth
+        case .wiki:
+            return eventDepth / 2
+        case .unknown:
+            return 0
         }
     }
 }

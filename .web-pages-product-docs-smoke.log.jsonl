@@ -1,0 +1,2 @@
+{"event": "dry-run", "message": "processed", "rag_job_id": null, "rag_path": ".web-pages-product-docs-smoke-rag/web-page-paperclip-docs-docs-paperclip-ing-4767c5c079.md", "title": "Paperclip Docs", "ts": "2026-06-23T13:27:53Z", "url": "https://docs.paperclip.ing"}
+{"event": "completed", "message": "processed", "rag_job_id": 916, "rag_path": ".web-pages-product-docs-smoke-rag/web-page-paperclip-docs-docs-paperclip-ing-4767c5c079.md", "title": "Paperclip Docs", "ts": "2026-06-23T13:28:05Z", "url": "https://docs.paperclip.ing"}

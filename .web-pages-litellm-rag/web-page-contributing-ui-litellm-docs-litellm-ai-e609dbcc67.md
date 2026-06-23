@@ -1,0 +1,85 @@
+# Contributing - UI | liteLLM
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.litellm.ai/docs/contributing
+- Final URL: https://docs.litellm.ai/docs/contributing
+- Canonical URL: https://docs.litellm.ai/docs/contributing
+- Fetched at: 2026-06-23T14:23:40Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Thanks for contributing to the LiteLLM UI! This guide will help you set up your local development environment.
+
+## Extracted Text
+
+Skip to main content
+On this page
+Copy as Markdown
+Thanks for contributing to the LiteLLM UI! This guide will help you set up your local development environment.
+1. Clone the repo ​
+git clone https://github.com/BerriAI/litellm.git
+cd litellm
+2. Start the Proxy ​
+Create a config file (e.g., config.yaml ):
+model_list :
+- model_name : gpt - 4o
+litellm_params :
+model : openai/gpt - 4o
+general_settings :
+master_key : sk - 1234
+database_url : postgresql : //<user > : <password > @<host > : <port > /<dbname >
+store_model_in_db : true
+Start the proxy on port 4000:
+uv run litellm --config config.yaml --port 4000
+The UI comes pre-built in the repo. Access it at http://localhost:4000/ui
+3. UI Development ​
+There are two options for UI development:
+Option A: Development Mode (Hot Reload) ​
+This runs the UI on port 3000 with hot reload. The proxy runs on port 4000.
+cd ui/litellm-dashboard
+npm install
+npm run dev
+Login flow:
+Go to http://localhost:3000
+You'll be redirected to http://localhost:4000/ui for login
+After logging in, manually navigate back to http://localhost:3000/
+You're now authenticated and can develop with hot reload
+note
+If you experience redirect loops or authentication issues, clear your browser cookies for localhost or use Build Mode instead.
+Option B: Build Mode ​
+This builds the UI and copies it to the proxy. Changes require rebuilding.
+Make your code changes in ui/litellm-dashboard/src/
+Build the UI
+npm run build
+After building, copy the output to the proxy:
+cp -r out/* ../../litellm/proxy/_experimental/out/
+Then restart the proxy and access the UI at http://localhost:4000/ui
+4. Pre-PR Checklist ​
+Before submitting your pull request, make sure the following pass locally from ui/litellm-dashboard/ :
+Run tests related to your changes:
+npx vitest run src/components/path/to/YourComponent.test.tsx
+Tests are co-located with components (e.g., TeamInfo.tsx → TeamInfo.test.tsx ). If you add a new component, add a corresponding .test.tsx file next to it.
+Run the build:
+These map to the ui_tests and ui_build CI checks.
+5. Submitting a PR ​
+Create a new branch for your changes:
+git checkout -b feat/your-feature-name
+Stage and commit your changes:
+git add .
+git commit -m "feat: description of your changes"
+Push to your fork:
+git push origin feat/your-feature-name
+Create a Pull Request on GitHub following the PR template
+1. Clone the repo
+2. Start the Proxy
+3. UI Development
+Option A: Development Mode (Hot Reload)
+Option B: Build Mode
+4. Pre-PR Checklist
+5. Submitting a PR
+🚅
+LiteLLM Enterprise
+SSO/SAML, audit logs, spend tracking, multi-team management, and guardrails — built for production.
+Learn more →

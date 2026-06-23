@@ -1,0 +1,105 @@
+# Migrating from Hermes - OpenClaw
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.openclaw.ai/install/migrating-hermes
+- Final URL: https://docs.openclaw.ai/install/migrating-hermes
+- Canonical URL: https://docs.openclaw.ai/install/migrating-hermes
+- Fetched at: 2026-06-23T14:44:53Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Move from Hermes to OpenClaw with a previewed, reversible import
+
+## Extracted Text
+
+Close
+Install Maintenance
+OpenClaw imports Hermes state through a bundled migration provider. The provider previews everything before changing state, redacts secrets in plans and reports, and creates a verified backup before apply.
+Note
+Imports require a fresh OpenClaw setup. If you already have local OpenClaw state, reset config, credentials, sessions, and the workspace first, or use openclaw migrate directly with --overwrite after reviewing the plan.
+Two ways to import
+Onboarding wizard
+The fastest path. The wizard detects Hermes at ~/.hermes and shows a preview before applying.
+bash Copy code openclaw onboard --flow import
+Or point at a specific source:
+bash Copy code openclaw onboard --import-from hermes --import-source ~/.hermes
+CLI
+Use openclaw migrate for scripted or repeatable runs. See openclaw migrate for the full reference.
+bash Copy code openclaw migrate hermes --dry-run # preview only openclaw migrate apply hermes -- yes # apply with confirmation skipped
+Add --from <path> when Hermes lives outside ~/.hermes .
+What gets imported
+Model configuration
+Default model selection from Hermes config.yaml .
+Configured model providers and custom OpenAI-compatible endpoints from providers and custom_providers .
+MCP servers
+MCP server definitions from mcp_servers or mcp.servers .
+Workspace files
+SOUL.md and AGENTS.md are copied into the OpenClaw agent workspace.
+memories/MEMORY.md and memories/USER.md are appended to the matching OpenClaw memory files instead of overwriting them.
+Memory configuration
+Memory config defaults for OpenClaw file memory. External memory providers such as Honcho are recorded as archive or manual-review items so you can move them deliberately.
+Skills
+Skills with a SKILL.md file under skills/<name>/ are copied, along with per-skill config values from skills.config .
+Auth credentials
+Interactive openclaw migrate asks before importing auth credentials, with yes selected by default. Accepted imports include OpenCode OpenAI OAuth credentials from OpenCode auth.json , OpenCode and GitHub Copilot entries from OpenCode auth.json , and the supported .env keys . Hermes auth.json OAuth entries are legacy state and are surfaced as manual reauth/doctor work instead of imported into live auth. Use --include-secrets for non-interactive openclaw migrate credential import, --no-auth-credentials to skip it, or onboarding --import-secrets when importing from the onboarding wizard.
+What stays archive-only
+The provider copies these into the migration report directory for manual review, but does not load them into live OpenClaw config or credentials:
+plugins/
+sessions/
+logs/
+cron/
+mcp-tokens/
+state.db
+OpenClaw refuses to execute or trust this state automatically because the formats and trust assumptions can drift between systems. Move what you need by hand after reviewing the archive.
+Recommended flow
+Preview the plan
+bash Copy code openclaw migrate hermes --dry-run
+The plan lists everything that will change, including conflicts, skipped items, and any sensitive items. Plan output redacts nested secret-looking keys.
+Apply with backup
+bash Copy code openclaw migrate apply hermes -- yes
+OpenClaw creates and verifies a backup before applying. This non-interactive example imports non-secret state. Run without --yes to answer the credential prompt, or add --include-secrets to include supported credentials in unattended runs.
+Run doctor
+bash Copy code openclaw doctor
+Doctor reapplies any pending config migrations and checks for issues introduced during the import.
+Restart and verify
+bash Copy code openclaw gateway restart openclaw status
+Confirm the gateway is healthy and your imported model, memory, and skills are loaded.
+Conflict handling
+Apply refuses to continue when the plan reports conflicts (a file or config value already exists at the target).
+Warning
+Rerun with --overwrite only when replacing the existing target is intentional. Providers may still write item-level backups for overwritten files in the migration report directory.
+For a fresh OpenClaw install, conflicts are unusual. They typically appear when you re-run the import on a setup that already has user edits.
+If a conflict surfaces mid-apply (for example, an unexpected race on a config file), Hermes marks remaining dependent config items as skipped with reason blocked by earlier apply conflict instead of writing them partially. The migration report records each blocked item so you can resolve the original conflict and rerun the import.
+Secrets
+Interactive openclaw migrate asks whether to import detected auth credentials, with yes selected by default.
+Accepting the prompt imports OpenCode OpenAI OAuth credentials from OpenCode auth.json , OpenCode and GitHub Copilot entries from OpenCode auth.json , and the supported .env keys . Hermes auth.json OAuth entries are reported for manual OpenAI reauth or doctor repair.
+Use --no-auth-credentials or choose no at the prompt to import non-secret state only.
+Use --include-secrets when running unattended with --yes .
+Use onboarding --import-secrets when importing credentials from the onboarding wizard.
+For SecretRef-managed credentials, configure the SecretRef source after the import completes.
+JSON output for automation
+bash Copy code openclaw migrate hermes --dry-run --json openclaw migrate apply hermes --json -- yes
+With --json and no --yes , apply prints the plan and does not mutate state. This is the safest mode for CI and shared scripts.
+Troubleshooting
+Apply refuses with conflicts
+Inspect the plan output. Each conflict identifies the source path and the existing target. Decide per item whether to skip, edit the target, or rerun with --overwrite .
+Hermes lives outside ~/.hermes
+Pass --from /actual/path (CLI) or --import-source /actual/path (onboarding).
+Onboarding refuses to import on an existing setup
+Onboarding imports require a fresh setup. Either reset state and re-onboard, or use openclaw migrate apply hermes directly, which supports --overwrite and explicit backup control.
+API keys did not import
+Interactive openclaw migrate imports API keys only when you accept the credential prompt. Non-interactive --yes runs require --include-secrets ; onboarding imports require --import-secrets . Only the supported .env keys are recognized; other variables in .env are ignored.
+Related
+openclaw migrate : full CLI reference, plugin contract, and JSON shapes.
+Onboarding : wizard flow and non-interactive flags.
+Migrating : move an OpenClaw install between machines.
+Doctor : post-migration health check.
+Agent workspace : where SOUL.md , AGENTS.md , and memory files live.
+Was this useful? Yes No
+Open issue
+On this page
+Install OpenClaw Set up Telegram Fix Gateway Build a plugin
+Ask Molty
+Responses are generated using AI and may contain mistakes.

@@ -1,0 +1,121 @@
+# Install - OpenClaw
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.openclaw.ai/install
+- Final URL: https://docs.openclaw.ai/install
+- Canonical URL: https://docs.openclaw.ai/install
+- Fetched at: 2026-06-23T14:44:30Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Install OpenClaw - installer script, npm/pnpm/bun, from source, Docker, and more
+
+## Extracted Text
+
+Close
+Install Install overview
+System requirements
+Node 24 (recommended) or Node 22.19+ - the installer script handles this automatically
+macOS, Linux, or Windows - Windows users can start with the native Windows Hub app, the PowerShell CLI installer, or a WSL2 Gateway. See Windows .
+pnpm is only needed if you build from source
+Recommended: installer script
+The fastest way to install. It detects your OS, installs Node if needed, installs OpenClaw, and launches onboarding.
+Note
+Windows desktop users can also install the native Windows Hub companion app, which includes setup, tray status, chat, node mode, and local MCP mode.
+macOS / Linux / WSL2
+bash Copy code curl -fsSL https://openclaw.ai/install.sh | bash
+Windows (PowerShell)
+powershell Copy code iwr -useb https://openclaw.ai/install.ps1 | iex
+To install without running onboarding:
+bash Copy code curl -fsSL https://openclaw.ai/install.sh | bash -s -- --no-onboard
+powershell Copy code & ([ scriptblock ]::Create(( iwr -useb https://openclaw.ai/install.ps1))) -NoOnboard
+For all flags and CI/automation options, see Installer internals .
+Alternative install methods
+Local prefix installer ( install-cli.sh )
+Use this when you want OpenClaw and Node kept under a local prefix such as
+~/.openclaw , without depending on a system-wide Node install:
+bash Copy code curl -fsSL https://openclaw.ai/install-cli.sh | bash
+It supports npm installs by default, plus git-checkout installs under the same
+prefix flow. Full reference: Installer internals .
+Already installed? Switch between package and git installs with
+openclaw update --channel dev and openclaw update --channel stable . See
+Updating .
+npm, pnpm, or bun
+If you already manage Node yourself:
+npm
+bash Copy code npm install -g openclaw@latest openclaw onboard --install-daemon Note
+The hosted installer clears npm freshness filters such as min-release-age
+for the OpenClaw package install. If you install manually with npm, your own
+npm policy still applies.
+pnpm
+bash Copy code pnpm add -g openclaw@latest pnpm approve-builds -g openclaw onboard --install-daemon Note
+pnpm requires explicit approval for packages with build scripts. Run pnpm approve-builds -g after the first install.
+bun
+bash Copy code bun add -g openclaw@latest openclaw onboard --install-daemon Note
+Bun is supported for the global CLI install path. For the Gateway runtime, Node remains the recommended daemon runtime.
+From source
+For contributors or anyone who wants to run from a local checkout:
+bash Copy code git clone https://github.com/openclaw/openclaw.git cd openclaw pnpm install && pnpm build && pnpm ui:build pnpm link --global openclaw onboard --install-daemon
+Or skip the link and use pnpm openclaw ... from inside the repo. See Setup for full development workflows.
+Install from the GitHub main checkout
+bash Copy code curl -fsSL --proto '=https' --tlsv1.2 https://openclaw.ai/install.sh | bash -s -- --install-method git --version main
+Containers and package managers
+Docker
+Containerized or headless deployments.
+Podman
+Rootless container alternative to Docker.
+Nix
+Declarative install via Nix flake.
+Ansible
+Automated fleet provisioning.
+Bun
+CLI-only usage via the Bun runtime.
+Verify the install
+bash Copy code openclaw --version # confirm the CLI is available openclaw doctor # check for config issues openclaw gateway status # verify the Gateway is running
+If you want managed startup after install:
+macOS: LaunchAgent via openclaw onboard --install-daemon or openclaw gateway install
+Linux/WSL2: systemd user service via the same commands
+Native Windows: Scheduled Task first, with a per-user Startup-folder login item fallback if task creation is denied
+Hosting and deployment
+Deploy OpenClaw on a cloud server or VPS:
+VPS
+Any Linux VPS.
+Docker VM
+Shared Docker steps.
+Kubernetes
+K8s deployment.
+Fly.io
+Deploy on Fly.io.
+Hetzner
+Hetzner deployment.
+GCP
+Google Cloud deployment.
+Azure
+Azure deployment.
+Railway
+Railway deployment.
+Render
+Render deployment.
+Northflank
+Northflank deployment.
+Update, migrate, or uninstall
+Updating
+Keep OpenClaw up to date.
+Migrating
+Move to a new machine.
+Uninstall
+Remove OpenClaw completely.
+Troubleshooting: openclaw not found
+If the install succeeded but openclaw is not found in your terminal:
+bash Copy code node -v # Node installed? npm prefix -g # Where are global packages? echo " $PATH " # Is the global bin dir in PATH?
+If $(npm prefix -g)/bin is not in your $PATH , add it to your shell startup file ( ~/.zshrc or ~/.bashrc ):
+bash Copy code export PATH= " $(npm prefix -g) /bin: $PATH "
+Then open a new terminal. See Node setup for more details.
+Was this useful? Yes No
+Open issue
+On this page
+Install OpenClaw Set up Telegram Fix Gateway Build a plugin
+Ask Molty
+Responses are generated using AI and may contain mistakes.

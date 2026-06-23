@@ -1,0 +1,67 @@
+# Docker | Paperclip Docs
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.paperclip.ing/reference/deploy/docker
+- Final URL: https://docs.paperclip.ing/reference/deploy/docker/
+- Canonical URL: https://docs.paperclip.ing/reference/deploy/docker
+- Fetched at: 2026-06-23T13:40:00Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Use Docker when you want a self-contained Paperclip instance without installing Node or pnpm on the host machine.
+
+## Extracted Text
+
+esc
+Documentation
+All docs
+Everything you need to run Paperclip.
+Guides, references, and walkthroughs for the people running AI agents at work. Start at the quickstart, or jump anywhere below.
+Loading…
+Could not load this guide.
+Docker
+Use Docker when you want a self-contained Paperclip instance without installing Node or pnpm on the host machine.
+This page covers the quickstart image, the manual image build, and what persists between container restarts.
+Compose Quickstart
+The recommended path is the compose-based quickstart:
+docker compose -f docker/docker-compose.quickstart.yml up --build
+Open the app at:
+http://localhost:3100
+Defaults:
+host port 3100
+data directory ./data/docker-paperclip
+Override them with environment variables:
+PAPERCLIP_PORT=3200 PAPERCLIP_DATA_DIR=../data/pc \
+Note: PAPERCLIP_DATA_DIR is resolved relative to the compose file in docker/ , so ../data/pc maps to data/pc in the repository root.
+Manual Image Build
+If you want a plain container run instead of compose, build and start the image manually:
+docker build -t paperclip-local .
+docker run --name paperclip \
+-p 3100:3100 \
+-e HOST=0.0.0.0 \
+-e PAPERCLIP_HOME=/paperclip \
+-v "$(pwd)/data/docker-paperclip:/paperclip" \
+paperclip-local
+Use this when you want tight control over the container lifecycle or are embedding Paperclip into a larger Docker workflow.
+What Persists
+All persistent data lives under the bind mount:
+embedded PostgreSQL data
+uploaded assets
+the local secrets key
+agent workspace data
+If the bind mount is removed, the instance starts fresh on the next run.
+LLM Adapter Support
+The Docker image pre-installs the local CLI tools used by the built-in local adapters, so they work inside the container out of the box:
+claude for claude_local
+codex for codex_local
+opencode for opencode_local
+gemini for gemini_local
+The image sets GEMINI_SANDBOX=false so the Gemini CLI runs safely inside the container without its own sandbox layer.
+If you want those adapters to run inside the container, pass the relevant API keys:
+-e OPENAI_API_KEY=sk-... \
+-e ANTHROPIC_API_KEY=sk-... \
+-e GEMINI_API_KEY=... \
+Without those keys, the app still runs. The adapter environment test will simply report missing prerequisites for the relevant adapter.
+Tip: If you are testing adapter behavior inside Docker, verify the bind mount first. Most surprising failures come from lost state, not the container image itself.

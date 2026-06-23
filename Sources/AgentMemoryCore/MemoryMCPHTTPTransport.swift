@@ -79,6 +79,15 @@ public struct MemoryMCPHTTPTransport: MemoryMCPTransporting {
         )
     }
 
+    public func memoryGraph(query: String? = nil, limit: Int = 5000) async throws -> MemoryMCPGraph {
+        let structured = try await callTool(
+            name: "memory_graph",
+            arguments: MemoryGraphArguments(query: query, limit: limit),
+            structuredContent: MemoryGraphStructuredContent.self
+        )
+        return structured.graph
+    }
+
     private func callTool<Arguments: Encodable, StructuredContent: Decodable>(
         name: String,
         arguments: Arguments,
@@ -508,12 +517,96 @@ private struct GetWikiPageArguments: Encodable {
     var slug: String
 }
 
+private struct MemoryGraphArguments: Encodable {
+    var query: String?
+    var limit: Int
+}
+
 private struct ListEntitiesStructuredContent: Decodable {
     var result: [MemoryMCPEntitySummary]
 }
 
 private struct SearchWikiStructuredContent: Decodable {
     var result: [MemoryMCPWikiSearchResult]
+}
+
+private struct MemoryGraphStructuredContent: Decodable {
+    var nodes: [ServerMemoryGraphNode]
+    var edges: [ServerMemoryGraphEdge]
+
+    var graph: MemoryMCPGraph {
+        MemoryMCPGraph(
+            nodes: nodes.map(\.graphNode).sorted { $0.id < $1.id },
+            edges: edges.map(\.graphEdge).sorted { $0.id < $1.id }
+        )
+    }
+}
+
+private struct ServerMemoryGraphNode: Decodable {
+    var id: String
+    var label: String
+    var kind: String
+    var type: String?
+    var eventCount: Int?
+
+    var graphNode: MemoryMCPGraphNode {
+        MemoryMCPGraphNode(
+            id: id,
+            label: label,
+            kind: graphNodeKind(from: kind),
+            subtitle: subtitle
+        )
+    }
+
+    private var subtitle: String? {
+        switch (type, eventCount) {
+        case let (.some(type), .some(eventCount)):
+            return "\(type) | \(eventCount) events"
+        case let (.some(type), .none):
+            return type
+        case let (.none, .some(eventCount)):
+            return "\(eventCount) events"
+        case (.none, .none):
+            return nil
+        }
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case label
+        case kind
+        case type
+        case eventCount = "event_count"
+    }
+}
+
+private struct ServerMemoryGraphEdge: Decodable {
+    var source: String
+    var target: String
+    var relation: String
+    var weight: Double?
+
+    var graphEdge: MemoryMCPGraphEdge {
+        MemoryMCPGraphEdge(
+            id: "edge:\(source):\(target):\(relation)",
+            sourceID: source,
+            targetID: target,
+            label: relation
+        )
+    }
+}
+
+private func graphNodeKind(from rawKind: String) -> MemoryMCPGraphNode.Kind {
+    switch rawKind.lowercased() {
+    case "entity":
+        return .entity
+    case "event":
+        return .event
+    case "wiki":
+        return .wiki
+    default:
+        return .unknown
+    }
 }
 
 private struct ToolCallResponse<StructuredContent: Decodable>: Decodable {

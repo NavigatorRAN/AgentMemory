@@ -1,0 +1,89 @@
+# OpenAI Passthrough | liteLLM
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.litellm.ai/docs/pass_through/openai_passthrough
+- Final URL: https://docs.litellm.ai/docs/pass_through/openai_passthrough
+- Canonical URL: https://docs.litellm.ai/docs/pass_through/openai_passthrough
+- Fetched at: 2026-06-23T14:25:56Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Pass-through endpoints for direct OpenAI API access
+
+## Extracted Text
+
+Skip to main content
+On this page
+Copy as Markdown
+Pass-through endpoints for direct OpenAI API access
+Overview ​
+Feature Supported Notes Cost Tracking ❌ Not supported Logging ✅ Works across all integrations Streaming ✅ Fully supported
+Available Endpoints ​
+/openai_passthrough - Recommended ​
+Dedicated passthrough endpoint that guarantees direct routing to OpenAI without conflicts.
+Use this for:
+OpenAI Responses API ( /v1/responses )
+Any endpoint where you need guaranteed passthrough
+When /openai routes are conflicting with LiteLLM's native implementations
+/openai - Legacy ​
+Standard passthrough endpoint that may conflict with LiteLLM's native implementations.
+Note: Some endpoints like /openai/v1/responses will be routed to LiteLLM's native implementation instead of OpenAI.
+When to use this? ​
+For 90% of your use cases, you should use the native LiteLLM OpenAI Integration ( /chat/completions , /embeddings , /completions , /images , /batches , etc.)
+Use /openai_passthrough to call less popular or newer OpenAI endpoints that LiteLLM doesn't fully support yet, such as /assistants , /threads , /vector_stores , /responses
+Simply replace https://api.openai.com with LITELLM_PROXY_BASE_URL/openai_passthrough
+Usage Examples ​
+Requirements:
+Set OPENAI_API_KEY in your environment variables.
+Assistants API ​
+Create OpenAI Client ​
+Make sure you do the following:
+Point base_url to your LITELLM_PROXY_BASE_URL/openai
+Use your LITELLM_API_KEY as the api_key
+import openai
+client = openai . OpenAI (
+base_url = "http://0.0.0.0:4000/openai_passthrough" , # <your-proxy-url>/openai_passthrough
+api_key = "sk-anything" # <your-proxy-api-key>
+)
+Create an Assistant ​
+# Create an assistant
+assistant = client . beta . assistants . create (
+name = "Math Tutor" ,
+instructions = "You are a math tutor. Help solve equations." ,
+model = "gpt-4o" ,
+Create a Thread ​
+# Create a thread
+thread = client . beta . threads . create ( )
+Add a Message to the Thread ​
+# Add a message
+message = client . beta . threads . messages . create (
+thread_id = thread . id ,
+role = "user" ,
+content = "Solve 3x + 11 = 14" ,
+Run the Assistant ​
+# Create a run to get the assistant's response
+run = client . beta . threads . runs . create (
+assistant_id = assistant . id ,
+# Check run status
+run_status = client . beta . threads . runs . retrieve (
+run_id = run . id
+Retrieve Messages ​
+# List messages after the run completes
+messages = client . beta . threads . messages . list (
+thread_id = thread . id
+Delete the Assistant ​
+# Delete the assistant when done
+client . beta . assistants . delete ( assistant . id )
+Overview
+Available Endpoints
+/openai_passthrough - Recommended
+/openai - Legacy
+When to use this?
+Usage Examples
+Assistants API
+🚅
+LiteLLM Enterprise
+SSO/SAML, audit logs, spend tracking, multi-team management, and guardrails — built for production.
+Learn more →

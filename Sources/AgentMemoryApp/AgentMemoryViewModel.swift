@@ -31,6 +31,7 @@ final class AgentMemoryViewModel {
     var memorySearchResults: [MemoryMCPSearchEvent] = []
     var memoryEntityDetail: MemoryMCPEntityDetail?
     var memoryEntityResults: [MemoryMCPEntitySummary] = []
+    var memoryServerGraph: MemoryMCPGraph?
     var selectedMemoryGraphNodeID: String?
     var selectedWikiPageSlug: String?
     var ragQueueStats: RAGQueueStats?
@@ -180,11 +181,15 @@ final class AgentMemoryViewModel {
     }
 
     var hasMemoryGraphData: Bool {
-        !memorySearchResults.isEmpty || memoryEntityDetail != nil || !memoryEntityResults.isEmpty
+        memoryServerGraph != nil || !memorySearchResults.isEmpty || memoryEntityDetail != nil || !memoryEntityResults.isEmpty
     }
 
     var memoryGraph: MemoryMCPGraph {
-        MemoryMCPGraphBuilder().build(
+        if let memoryServerGraph {
+            return memoryServerGraph
+        }
+
+        return MemoryMCPGraphBuilder().build(
             events: memorySearchResults,
             entityDetail: memoryEntityDetail,
             entitySummaries: memoryEntityResults
@@ -951,6 +956,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            memoryServerGraph = nil
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -960,6 +966,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            memoryServerGraph = nil
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -971,6 +978,7 @@ final class AgentMemoryViewModel {
                 selectedMemoryGraphNodeID = nil
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                memoryServerGraph = nil
                 statusMessage = results.isEmpty
                     ? "Memory MCP search found no events."
                     : "Memory MCP search found \(results.count) events."
@@ -978,6 +986,7 @@ final class AgentMemoryViewModel {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                memoryServerGraph = nil
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP search failed: \(error.localizedDescription)"
             }
@@ -991,6 +1000,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            memoryServerGraph = nil
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1000,6 +1010,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            memoryServerGraph = nil
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1011,6 +1022,7 @@ final class AgentMemoryViewModel {
                 selectedMemoryGraphNodeID = nil
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                memoryServerGraph = nil
                 statusMessage = results.isEmpty
                     ? "Memory MCP recall found no events for \(entity)."
                     : "Memory MCP recall found \(results.count) events for \(entity)."
@@ -1018,6 +1030,7 @@ final class AgentMemoryViewModel {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                memoryServerGraph = nil
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP recall failed: \(error.localizedDescription)"
             }
@@ -1031,6 +1044,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            memoryServerGraph = nil
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1040,6 +1054,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            memoryServerGraph = nil
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1050,6 +1065,7 @@ final class AgentMemoryViewModel {
                 memoryEntityDetail = detail
                 selectedMemoryGraphNodeID = nil
                 memoryEntityResults = []
+                memoryServerGraph = nil
                 memorySearchResults = detail.recentEvents.map {
                     MemoryMCPSearchEvent(
                         id: $0.id,
@@ -1067,6 +1083,7 @@ final class AgentMemoryViewModel {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                memoryServerGraph = nil
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP entity load failed: \(error.localizedDescription)"
             }
@@ -1081,6 +1098,7 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            memoryServerGraph = nil
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1092,6 +1110,7 @@ final class AgentMemoryViewModel {
                 selectedMemoryGraphNodeID = nil
                 memoryEntityDetail = nil
                 memorySearchResults = []
+                memoryServerGraph = nil
                 statusMessage = entities.isEmpty
                     ? "Memory MCP entity list found no matches."
                     : "Memory MCP entity list found \(entities.count) matches."
@@ -1099,6 +1118,7 @@ final class AgentMemoryViewModel {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                memoryServerGraph = nil
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP entity list failed: \(error.localizedDescription)"
             }
@@ -1111,40 +1131,25 @@ final class AgentMemoryViewModel {
             memorySearchResults = []
             memoryEntityDetail = nil
             memoryEntityResults = []
+            memoryServerGraph = nil
             selectedMemoryGraphNodeID = nil
             return
         }
 
         Task {
             do {
-                let transport = MemoryMCPHTTPTransport(endpoint: endpoint)
-                let entities = try await transport.listEntities()
-                let topEntities = entities
-                    .sorted { lhs, rhs in
-                        if lhs.eventCount == rhs.eventCount {
-                            return lhs.name < rhs.name
-                        }
-                        return lhs.eventCount > rhs.eventCount
-                    }
-                    .prefix(24)
-
-                var eventsByID: [String: MemoryMCPSearchEvent] = [:]
-                for entity in topEntities {
-                    let events = try await transport.recallEvents(forEntity: entity.name, limit: 5)
-                    for event in events {
-                        eventsByID[event.id] = event
-                    }
-                }
-
-                memoryEntityResults = entities
-                memorySearchResults = eventsByID.values.sorted { $0.eventDate > $1.eventDate }
+                let graph = try await MemoryMCPHTTPTransport(endpoint: endpoint).memoryGraph(limit: 5_000)
+                memoryServerGraph = graph
+                memorySearchResults = []
                 memoryEntityDetail = nil
+                memoryEntityResults = []
                 selectedMemoryGraphNodeID = nil
-                statusMessage = "Loaded Memory MCP graph overview with \(entities.count) entities and \(memorySearchResults.count) recent events."
+                statusMessage = "Loaded Memory MCP graph overview with \(graph.nodes.count) nodes and \(graph.edges.count) edges."
             } catch {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
+                memoryServerGraph = nil
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP graph refresh failed: \(error.localizedDescription)"
             }

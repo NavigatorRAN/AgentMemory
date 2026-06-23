@@ -399,6 +399,57 @@ final class MemoryMCPHTTPTransportTests: XCTestCase {
         XCTAssertEqual(page.sourceURLs, ["https://developer.apple.com/documentation/foundationmodels"])
     }
 
+    func testTransportGetsNativeMemoryGraphWhenServerSupportsIt() async throws {
+        let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [RecordingURLProtocol.self]
+        let session = URLSession(configuration: configuration)
+        let transport = MemoryMCPHTTPTransport(endpoint: endpoint, session: session)
+        var requestIndex = 0
+
+        RecordingURLProtocol.requestHandler = { request in
+            let body = try XCTUnwrap(request.httpBodyStreamData)
+            let decoded = try JSONSerialization.jsonObject(with: body) as? [String: Any]
+            requestIndex += 1
+
+            switch requestIndex {
+            case 1:
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-8"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2024-11-05","capabilities":{},"serverInfo":{"name":"memory","version":"3.2.4"}}}
+                    """.utf8)
+                )
+            case 2:
+                return (HTTPURLResponse(url: endpoint, statusCode: 202, httpVersion: nil, headerFields: ["mcp-session-id": "session-8"])!, Data())
+            case 3:
+                let params = try XCTUnwrap(decoded?["params"] as? [String: Any])
+                XCTAssertEqual(params["name"] as? String, "memory_graph")
+                let arguments = try XCTUnwrap(params["arguments"] as? [String: Any])
+                XCTAssertEqual(arguments["limit"] as? Int, 5000)
+                return (
+                    HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-8"])!,
+                    Data("""
+                    {"jsonrpc":"2.0","id":3,"result":{"structuredContent":{"nodes":[{"id":"entity:agentmemory","label":"agentmemory","kind":"entity","entity":"agentmemory","event_count":50,"type":"project"},{"id":"wiki:overview","label":"Overview","kind":"wiki"}],"edges":[{"source":"entity:agentmemory","target":"wiki:overview","relation":"documents","weight":1}],"summary":{"node_count":2,"edge_count":1,"query":null}}}}
+                    """.utf8)
+                )
+            default:
+                XCTFail("Unexpected request \(requestIndex)")
+                return (HTTPURLResponse(url: endpoint, statusCode: 500, httpVersion: nil, headerFields: nil)!, Data())
+            }
+        }
+
+        let graph = try await transport.memoryGraph(limit: 5000)
+
+        XCTAssertEqual(graph.nodes, [
+            MemoryMCPGraphNode(id: "entity:agentmemory", label: "agentmemory", kind: .entity, subtitle: "project | 50 events"),
+            MemoryMCPGraphNode(id: "wiki:overview", label: "Overview", kind: .wiki, subtitle: nil)
+        ])
+        XCTAssertEqual(graph.edges, [
+            MemoryMCPGraphEdge(id: "edge:entity:agentmemory:wiki:overview:documents", sourceID: "entity:agentmemory", targetID: "wiki:overview", label: "documents")
+        ])
+    }
+
     func testTransportThrowsForNonSuccessStatus() async {
         let endpoint = URL(string: "http://127.0.0.1:8006/mcp")!
         let configuration = URLSessionConfiguration.ephemeral

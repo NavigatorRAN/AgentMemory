@@ -1,0 +1,72 @@
+# Agent send - OpenClaw
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.openclaw.ai/tools/agent-send
+- Final URL: https://docs.openclaw.ai/tools/agent-send
+- Canonical URL: https://docs.openclaw.ai/tools/agent-send
+- Fetched at: 2026-06-23T14:57:23Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Run agent turns from the CLI and optionally deliver replies to channels
+
+## Extracted Text
+
+Close
+Capabilities Agent coordination
+openclaw agent runs a single agent turn from the command line without needing
+an inbound chat message. Use it for scripted workflows, testing, and
+programmatic delivery.
+Quick start
+Run a simple agent turn
+bash Copy code openclaw agent --agent main --message "What is the weather today?"
+This sends the message through the Gateway and prints the reply.
+Send a multiline prompt from a file
+bash Copy code openclaw agent --agent ops --message-file ./task.md
+This reads a valid UTF-8 file as the agent message body.
+Target a specific agent or session
+bash Copy code # Target a specific agent openclaw agent --agent ops --message "Summarize logs" # Target a phone number (derives session key) openclaw agent --to +15555550123 --message "Status update" # Reuse an existing session openclaw agent --session-id abc123 --message "Continue the task" # Target an exact session key openclaw agent --session-key agent:ops:incident-42 --message "Summarize status"
+Deliver the reply to a channel
+bash Copy code # Deliver to WhatsApp (default channel) openclaw agent --to +15555550123 --message "Report ready" --deliver # Deliver to Slack openclaw agent --agent ops --message "Generate report" \ --deliver --reply-channel slack --reply-to "#reports"
+Flags
+Flag Description --message \<text\> Inline message to send --message-file \<path\> Read the message from a valid UTF-8 file --to \<dest\> Derive session key from a target (phone, chat id) --session-key \<key\> Use an explicit session key --agent \<id\> Target a configured agent (uses its main session) --session-id \<id\> Reuse an existing session by id --local Force local embedded runtime (skip Gateway) --deliver Send the reply to a chat channel --channel \<name\> Delivery channel (whatsapp, telegram, discord, slack, etc.) --reply-to \<target\> Delivery target override --reply-channel \<name\> Delivery channel override --reply-account \<id\> Delivery account id override --thinking \<level\> Set thinking level for the selected model profile --verbose \<on|full|off\> Set verbose level --timeout \<seconds\> Override agent timeout --json Output structured JSON
+Behavior
+By default, the CLI goes through the Gateway . Add --local to force the
+embedded runtime on the current machine.
+Pass exactly one of --message or --message-file . File messages preserve
+multiline content after removing an optional UTF-8 BOM.
+If the Gateway is unreachable, the CLI falls back to the local embedded run.
+Session selection: --to derives the session key (group/channel targets
+preserve isolation; direct chats collapse to main ).
+--session-key selects an explicit key. Agent-prefixed keys must use
+agent:<agent-id>:<session-key> , and --agent must match that agent id when
+both are supplied. Bare non-sentinel keys are scoped to --agent when
+supplied; for example, --agent ops --session-key incident-42 routes to
+agent:ops:incident-42 . Without --agent , bare non-sentinel keys are scoped
+to the configured default agent. Literal global and unknown remain
+unscoped only when no --agent is supplied; in that case, embedded fallback
+and store ownership use the configured default agent.
+Thinking and verbose flags persist into the session store.
+Output: plain text by default, or --json for structured payload + metadata.
+With --json --deliver , the JSON includes delivery status for sent,
+suppressed, partial, and failed sends. See
+JSON delivery status .
+Examples
+bash Copy code # Simple turn with JSON output openclaw agent --to +15555550123 --message "Trace logs" --verbose on --json # Turn with thinking level openclaw agent --session-id 1234 --message "Summarize inbox" --thinking medium # Multiline prompt from a file openclaw agent --agent ops --message-file ./task.md # Exact session key openclaw agent --session-key agent:ops:incident-42 --message "Summarize status" # Legacy key scoped to an agent openclaw agent --agent ops --session-key incident-42 --message "Summarize status" # Deliver to a different channel than the session openclaw agent --agent ops --message "Alert" --deliver --reply-channel telegram --reply-to "@admin"
+Related
+Agent CLI reference
+Full openclaw agent flag and option reference.
+Sub-agents
+Background sub-agent spawning.
+Sessions
+How session keys work and how --to , --agent , and --session-id resolve them.
+Slash commands
+Native command catalog used inside agent sessions.
+Was this useful? Yes No
+Open issue
+On this page
+Install OpenClaw Set up Telegram Fix Gateway Build a plugin
+Ask Molty
+Responses are generated using AI and may contain mistakes.

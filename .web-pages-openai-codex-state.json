@@ -1,0 +1,755 @@
+{
+  "completed": [
+    "https://developers.openai.com/codex",
+    "https://developers.openai.com/codex/agent-approvals-security",
+    "https://developers.openai.com/codex/amazon-bedrock",
+    "https://developers.openai.com/codex/app",
+    "https://developers.openai.com/codex/app-server",
+    "https://developers.openai.com/codex/app/automations",
+    "https://developers.openai.com/codex/app/browser",
+    "https://developers.openai.com/codex/app/chrome-extension",
+    "https://developers.openai.com/codex/app/commands",
+    "https://developers.openai.com/codex/app/computer-use",
+    "https://developers.openai.com/codex/app/features",
+    "https://developers.openai.com/codex/app/local-environments",
+    "https://developers.openai.com/codex/app/review",
+    "https://developers.openai.com/codex/app/settings",
+    "https://developers.openai.com/codex/app/troubleshooting",
+    "https://developers.openai.com/codex/app/windows",
+    "https://developers.openai.com/codex/app/worktrees",
+    "https://developers.openai.com/codex/appshots",
+    "https://developers.openai.com/codex/auth",
+    "https://developers.openai.com/codex/changelog",
+    "https://developers.openai.com/codex/cli",
+    "https://developers.openai.com/codex/cli/features",
+    "https://developers.openai.com/codex/cli/reference",
+    "https://developers.openai.com/codex/cli/slash-commands",
+    "https://developers.openai.com/codex/cloud",
+    "https://developers.openai.com/codex/cloud/environments",
+    "https://developers.openai.com/codex/cloud/internet-access",
+    "https://developers.openai.com/codex/concepts/customization",
+    "https://developers.openai.com/codex/concepts/cyber-safety",
+    "https://developers.openai.com/codex/concepts/sandboxing",
+    "https://developers.openai.com/codex/concepts/sandboxing/auto-review",
+    "https://developers.openai.com/codex/concepts/subagents",
+    "https://developers.openai.com/codex/config-advanced",
+    "https://developers.openai.com/codex/config-basic",
+    "https://developers.openai.com/codex/config-reference",
+    "https://developers.openai.com/codex/config-sample",
+    "https://developers.openai.com/codex/enterprise/access-tokens",
+    "https://developers.openai.com/codex/enterprise/admin-setup",
+    "https://developers.openai.com/codex/enterprise/governance",
+    "https://developers.openai.com/codex/enterprise/managed-configuration",
+    "https://developers.openai.com/codex/environment-variables",
+    "https://developers.openai.com/codex/feature-maturity",
+    "https://developers.openai.com/codex/github-action",
+    "https://developers.openai.com/codex/glossary",
+    "https://developers.openai.com/codex/guides/agents-md",
+    "https://developers.openai.com/codex/guides/agents-sdk",
+    "https://developers.openai.com/codex/guides/build-ai-native-engineering-team",
+    "https://developers.openai.com/codex/hooks",
+    "https://developers.openai.com/codex/ide",
+    "https://developers.openai.com/codex/ide/commands",
+    "https://developers.openai.com/codex/ide/features",
+    "https://developers.openai.com/codex/ide/settings",
+    "https://developers.openai.com/codex/ide/slash-commands",
+    "https://developers.openai.com/codex/import",
+    "https://developers.openai.com/codex/integrations/github",
+    "https://developers.openai.com/codex/integrations/linear",
+    "https://developers.openai.com/codex/integrations/slack",
+    "https://developers.openai.com/codex/learn/best-practices",
+    "https://developers.openai.com/codex/mcp",
+    "https://developers.openai.com/codex/memories",
+    "https://developers.openai.com/codex/memories/chronicle",
+    "https://developers.openai.com/codex/models",
+    "https://developers.openai.com/codex/noninteractive",
+    "https://developers.openai.com/codex/open-source",
+    "https://developers.openai.com/codex/permissions",
+    "https://developers.openai.com/codex/plugins",
+    "https://developers.openai.com/codex/plugins/build",
+    "https://developers.openai.com/codex/pricing",
+    "https://developers.openai.com/codex/prompting",
+    "https://developers.openai.com/codex/quickstart",
+    "https://developers.openai.com/codex/record-and-replay",
+    "https://developers.openai.com/codex/remote-connections",
+    "https://developers.openai.com/codex/rules",
+    "https://developers.openai.com/codex/sdk",
+    "https://developers.openai.com/codex/sites",
+    "https://developers.openai.com/codex/skills",
+    "https://developers.openai.com/codex/speed",
+    "https://developers.openai.com/codex/subagents",
+    "https://developers.openai.com/codex/use-cases",
+    "https://developers.openai.com/codex/use-cases/collections",
+    "https://developers.openai.com/codex/videos",
+    "https://developers.openai.com/codex/windows",
+    "https://developers.openai.com/codex/workflows"
+  ],
+  "failed": {},
+  "records": {
+    "https://developers.openai.com/codex": {
+      "canonical_url": "https://developers.openai.com/codex",
+      "fetched_at": "2026-06-23T14:11:24Z",
+      "final_url": "https://developers.openai.com/codex",
+      "rag_job_id": null,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-openai-codex-developers-openai-com-da15743d70.md",
+      "title": "OpenAI Codex"
+    },
+    "https://developers.openai.com/codex/agent-approvals-security": {
+      "canonical_url": "https://developers.openai.com/codex/agent-approvals-security",
+      "fetched_at": "2026-06-23T14:11:24Z",
+      "final_url": "https://developers.openai.com/codex/agent-approvals-security",
+      "rag_job_id": null,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-agent-approvals-security-developers-openai-com-ed3b262d33.md",
+      "title": "Agent approvals & security"
+    },
+    "https://developers.openai.com/codex/amazon-bedrock": {
+      "canonical_url": "https://developers.openai.com/codex/amazon-bedrock",
+      "fetched_at": "2026-06-23T14:11:38Z",
+      "final_url": "https://developers.openai.com/codex/amazon-bedrock",
+      "rag_job_id": 1270,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-use-codex-with-amazon-bedrock-openai-developers-developers-openai-com-9f88eebd99.md",
+      "title": "Use Codex with Amazon Bedrock | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app": {
+      "canonical_url": "https://developers.openai.com/codex/app",
+      "fetched_at": "2026-06-23T14:11:39Z",
+      "final_url": "https://developers.openai.com/codex/app",
+      "rag_job_id": 1271,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-app-codex-openai-developers-developers-openai-com-93dfa6a38a.md",
+      "title": "App \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app-server": {
+      "canonical_url": "https://developers.openai.com/codex/app-server",
+      "fetched_at": "2026-06-23T14:11:40Z",
+      "final_url": "https://developers.openai.com/codex/app-server",
+      "rag_job_id": 1272,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-app-server-codex-openai-developers-developers-openai-com-7e7f1fa22a.md",
+      "title": "App Server \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/automations": {
+      "canonical_url": "https://developers.openai.com/codex/app/automations",
+      "fetched_at": "2026-06-23T14:11:41Z",
+      "final_url": "https://developers.openai.com/codex/app/automations",
+      "rag_job_id": 1273,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-automations-codex-app-openai-developers-developers-openai-com-1ed4669141.md",
+      "title": "Automations \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/browser": {
+      "canonical_url": "https://developers.openai.com/codex/app/browser",
+      "fetched_at": "2026-06-23T14:11:42Z",
+      "final_url": "https://developers.openai.com/codex/app/browser",
+      "rag_job_id": 1274,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-in-app-browser-codex-app-openai-developers-developers-openai-com-1fa0894068.md",
+      "title": "In-app browser \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/chrome-extension": {
+      "canonical_url": "https://developers.openai.com/codex/app/chrome-extension",
+      "fetched_at": "2026-06-23T14:11:43Z",
+      "final_url": "https://developers.openai.com/codex/app/chrome-extension",
+      "rag_job_id": 1275,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-codex-chrome-extension-codex-app-openai-developers-developers-openai-com-a0c9ae11f2.md",
+      "title": "Codex Chrome extension \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/commands": {
+      "canonical_url": "https://developers.openai.com/codex/app/commands",
+      "fetched_at": "2026-06-23T14:11:44Z",
+      "final_url": "https://developers.openai.com/codex/app/commands",
+      "rag_job_id": 1276,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-commands-codex-app-openai-developers-developers-openai-com-d48a67449f.md",
+      "title": "Commands \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/computer-use": {
+      "canonical_url": "https://developers.openai.com/codex/app/computer-use",
+      "fetched_at": "2026-06-23T14:11:45Z",
+      "final_url": "https://developers.openai.com/codex/app/computer-use",
+      "rag_job_id": 1277,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-computer-use-codex-app-openai-developers-developers-openai-com-5a3a3b5746.md",
+      "title": "Computer Use \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/features": {
+      "canonical_url": "https://developers.openai.com/codex/app/features",
+      "fetched_at": "2026-06-23T14:11:46Z",
+      "final_url": "https://developers.openai.com/codex/app/features",
+      "rag_job_id": 1278,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-features-codex-app-openai-developers-developers-openai-com-2dfac23b64.md",
+      "title": "Features \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/local-environments": {
+      "canonical_url": "https://developers.openai.com/codex/app/local-environments",
+      "fetched_at": "2026-06-23T14:11:47Z",
+      "final_url": "https://developers.openai.com/codex/app/local-environments",
+      "rag_job_id": 1279,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-local-environments-codex-app-openai-developers-developers-openai-com-543c33cc33.md",
+      "title": "Local environments \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/review": {
+      "canonical_url": "https://developers.openai.com/codex/app/review",
+      "fetched_at": "2026-06-23T14:11:48Z",
+      "final_url": "https://developers.openai.com/codex/app/review",
+      "rag_job_id": 1280,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-review-codex-app-openai-developers-developers-openai-com-f770eb4975.md",
+      "title": "Review \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/settings": {
+      "canonical_url": "https://developers.openai.com/codex/app/settings",
+      "fetched_at": "2026-06-23T14:11:50Z",
+      "final_url": "https://developers.openai.com/codex/app/settings",
+      "rag_job_id": 1281,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-settings-codex-app-openai-developers-developers-openai-com-d13a44fa21.md",
+      "title": "Settings \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/troubleshooting": {
+      "canonical_url": "https://developers.openai.com/codex/app/troubleshooting",
+      "fetched_at": "2026-06-23T14:11:51Z",
+      "final_url": "https://developers.openai.com/codex/app/troubleshooting",
+      "rag_job_id": 1282,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-troubleshooting-codex-app-openai-developers-developers-openai-com-e6db4328c4.md",
+      "title": "Troubleshooting \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/windows": {
+      "canonical_url": "https://developers.openai.com/codex/app/windows",
+      "fetched_at": "2026-06-23T14:11:52Z",
+      "final_url": "https://developers.openai.com/codex/app/windows",
+      "rag_job_id": 1283,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-windows-codex-app-openai-developers-developers-openai-com-cb0c110f77.md",
+      "title": "Windows \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/app/worktrees": {
+      "canonical_url": "https://developers.openai.com/codex/app/worktrees",
+      "fetched_at": "2026-06-23T14:11:53Z",
+      "final_url": "https://developers.openai.com/codex/app/worktrees",
+      "rag_job_id": 1284,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-worktrees-codex-app-openai-developers-developers-openai-com-d58e10c738.md",
+      "title": "Worktrees \u2013 Codex app | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/appshots": {
+      "canonical_url": "https://developers.openai.com/codex/appshots",
+      "fetched_at": "2026-06-23T14:11:54Z",
+      "final_url": "https://developers.openai.com/codex/appshots",
+      "rag_job_id": 1285,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-appshots-codex-openai-developers-developers-openai-com-54da5ed704.md",
+      "title": "Appshots \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/auth": {
+      "canonical_url": "https://developers.openai.com/codex/auth",
+      "fetched_at": "2026-06-23T14:11:55Z",
+      "final_url": "https://developers.openai.com/codex/auth",
+      "rag_job_id": 1286,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-authentication-codex-openai-developers-developers-openai-com-36fbea1527.md",
+      "title": "Authentication \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/changelog": {
+      "canonical_url": "https://developers.openai.com/codex/changelog",
+      "fetched_at": "2026-06-23T14:11:58Z",
+      "final_url": "https://developers.openai.com/codex/changelog",
+      "rag_job_id": 1287,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-changelog-codex-openai-developers-developers-openai-com-91992ed9f8.md",
+      "title": "Changelog \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/cli": {
+      "canonical_url": "https://developers.openai.com/codex/cli",
+      "fetched_at": "2026-06-23T14:11:59Z",
+      "final_url": "https://developers.openai.com/codex/cli",
+      "rag_job_id": 1288,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-cli-codex-openai-developers-developers-openai-com-2c5be6185d.md",
+      "title": "CLI \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/cli/features": {
+      "canonical_url": "https://developers.openai.com/codex/cli/features",
+      "fetched_at": "2026-06-23T14:12:00Z",
+      "final_url": "https://developers.openai.com/codex/cli/features",
+      "rag_job_id": 1289,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-features-codex-cli-openai-developers-developers-openai-com-a76a8aaf0c.md",
+      "title": "Features \u2013 Codex CLI | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/cli/reference": {
+      "canonical_url": "https://developers.openai.com/codex/cli/reference",
+      "fetched_at": "2026-06-23T14:12:01Z",
+      "final_url": "https://developers.openai.com/codex/cli/reference",
+      "rag_job_id": 1290,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-command-line-options-codex-cli-openai-developers-developers-openai-com-ebe826bc92.md",
+      "title": "Command line options \u2013 Codex CLI | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/cli/slash-commands": {
+      "canonical_url": "https://developers.openai.com/codex/cli/slash-commands",
+      "fetched_at": "2026-06-23T14:12:02Z",
+      "final_url": "https://developers.openai.com/codex/cli/slash-commands",
+      "rag_job_id": 1291,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-slash-commands-in-codex-cli-openai-developers-developers-openai-com-92df0a0222.md",
+      "title": "Slash commands in Codex CLI | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/cloud": {
+      "canonical_url": "https://developers.openai.com/codex/cloud",
+      "fetched_at": "2026-06-23T14:12:03Z",
+      "final_url": "https://developers.openai.com/codex/cloud",
+      "rag_job_id": 1292,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-web-codex-openai-developers-developers-openai-com-8c2aaa7304.md",
+      "title": "Web \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/cloud/environments": {
+      "canonical_url": "https://developers.openai.com/codex/cloud/environments",
+      "fetched_at": "2026-06-23T14:12:04Z",
+      "final_url": "https://developers.openai.com/codex/cloud/environments",
+      "rag_job_id": 1293,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-cloud-environments-codex-web-openai-developers-developers-openai-com-bf11b65a14.md",
+      "title": "Cloud environments \u2013 Codex web | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/cloud/internet-access": {
+      "canonical_url": "https://developers.openai.com/codex/cloud/internet-access",
+      "fetched_at": "2026-06-23T14:12:05Z",
+      "final_url": "https://developers.openai.com/codex/cloud/internet-access",
+      "rag_job_id": 1294,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-agent-internet-access-codex-web-openai-developers-developers-openai-com-76f2910473.md",
+      "title": "Agent internet access \u2013 Codex web | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/concepts/customization": {
+      "canonical_url": "https://developers.openai.com/codex/concepts/customization",
+      "fetched_at": "2026-06-23T14:12:06Z",
+      "final_url": "https://developers.openai.com/codex/concepts/customization",
+      "rag_job_id": 1295,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-customization-codex-openai-developers-developers-openai-com-25c53fbd8b.md",
+      "title": "Customization \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/concepts/cyber-safety": {
+      "canonical_url": "https://developers.openai.com/codex/concepts/cyber-safety",
+      "fetched_at": "2026-06-23T14:12:07Z",
+      "final_url": "https://developers.openai.com/codex/concepts/cyber-safety",
+      "rag_job_id": 1296,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-cyber-safety-codex-openai-developers-developers-openai-com-e918405809.md",
+      "title": "Cyber Safety \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/concepts/sandboxing": {
+      "canonical_url": "https://developers.openai.com/codex/concepts/sandboxing",
+      "fetched_at": "2026-06-23T14:12:08Z",
+      "final_url": "https://developers.openai.com/codex/concepts/sandboxing",
+      "rag_job_id": 1297,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-sandbox-codex-openai-developers-developers-openai-com-b27e61d5e1.md",
+      "title": "Sandbox \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/concepts/sandboxing/auto-review": {
+      "canonical_url": "https://developers.openai.com/codex/concepts/sandboxing/auto-review",
+      "fetched_at": "2026-06-23T14:12:09Z",
+      "final_url": "https://developers.openai.com/codex/concepts/sandboxing/auto-review",
+      "rag_job_id": 1298,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-auto-review-codex-openai-developers-developers-openai-com-15c630c142.md",
+      "title": "Auto-review \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/concepts/subagents": {
+      "canonical_url": "https://developers.openai.com/codex/concepts/subagents",
+      "fetched_at": "2026-06-23T14:12:10Z",
+      "final_url": "https://developers.openai.com/codex/concepts/subagents",
+      "rag_job_id": 1299,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-subagents-codex-openai-developers-developers-openai-com-2f95002ed7.md",
+      "title": "Subagents \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/config-advanced": {
+      "canonical_url": "https://developers.openai.com/codex/config-advanced",
+      "fetched_at": "2026-06-23T14:12:11Z",
+      "final_url": "https://developers.openai.com/codex/config-advanced",
+      "rag_job_id": 1300,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-advanced-configuration-codex-openai-developers-developers-openai-com-b19ce20e59.md",
+      "title": "Advanced Configuration \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/config-basic": {
+      "canonical_url": "https://developers.openai.com/codex/config-basic",
+      "fetched_at": "2026-06-23T14:12:12Z",
+      "final_url": "https://developers.openai.com/codex/config-basic",
+      "rag_job_id": 1301,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-config-basics-codex-openai-developers-developers-openai-com-291dfe61d3.md",
+      "title": "Config basics \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/config-reference": {
+      "canonical_url": "https://developers.openai.com/codex/config-reference",
+      "fetched_at": "2026-06-23T14:12:14Z",
+      "final_url": "https://developers.openai.com/codex/config-reference",
+      "rag_job_id": 1302,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-configuration-reference-codex-openai-developers-developers-openai-com-2efc6f8bf0.md",
+      "title": "Configuration Reference \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/config-sample": {
+      "canonical_url": "https://developers.openai.com/codex/config-sample",
+      "fetched_at": "2026-06-23T14:12:15Z",
+      "final_url": "https://developers.openai.com/codex/config-sample",
+      "rag_job_id": 1303,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-sample-configuration-codex-openai-developers-developers-openai-com-ef9ce290de.md",
+      "title": "Sample Configuration \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/enterprise/access-tokens": {
+      "canonical_url": "https://developers.openai.com/codex/enterprise/access-tokens",
+      "fetched_at": "2026-06-23T14:12:16Z",
+      "final_url": "https://developers.openai.com/codex/enterprise/access-tokens",
+      "rag_job_id": 1304,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-access-tokens-codex-openai-developers-developers-openai-com-634bacf2e8.md",
+      "title": "Access tokens \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/enterprise/admin-setup": {
+      "canonical_url": "https://developers.openai.com/codex/enterprise/admin-setup",
+      "fetched_at": "2026-06-23T14:12:17Z",
+      "final_url": "https://developers.openai.com/codex/enterprise/admin-setup",
+      "rag_job_id": 1305,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-admin-setup-codex-openai-developers-developers-openai-com-e612bb38c1.md",
+      "title": "Admin Setup \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/enterprise/governance": {
+      "canonical_url": "https://developers.openai.com/codex/enterprise/governance",
+      "fetched_at": "2026-06-23T14:12:18Z",
+      "final_url": "https://developers.openai.com/codex/enterprise/governance",
+      "rag_job_id": 1306,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-governance-codex-openai-developers-developers-openai-com-9bb9df1896.md",
+      "title": "Governance \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/enterprise/managed-configuration": {
+      "canonical_url": "https://developers.openai.com/codex/enterprise/managed-configuration",
+      "fetched_at": "2026-06-23T14:12:19Z",
+      "final_url": "https://developers.openai.com/codex/enterprise/managed-configuration",
+      "rag_job_id": 1307,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-managed-configuration-codex-openai-developers-developers-openai-com-254b10a22f.md",
+      "title": "Managed configuration \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/environment-variables": {
+      "canonical_url": "https://developers.openai.com/codex/environment-variables",
+      "fetched_at": "2026-06-23T14:12:20Z",
+      "final_url": "https://developers.openai.com/codex/environment-variables",
+      "rag_job_id": 1308,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-environment-variables-codex-openai-developers-developers-openai-com-51b2878ebc.md",
+      "title": "Environment variables \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/feature-maturity": {
+      "canonical_url": "https://developers.openai.com/codex/feature-maturity",
+      "fetched_at": "2026-06-23T14:12:21Z",
+      "final_url": "https://developers.openai.com/codex/feature-maturity",
+      "rag_job_id": 1309,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-feature-maturity-codex-openai-developers-developers-openai-com-3c3c6d7353.md",
+      "title": "Feature Maturity \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/github-action": {
+      "canonical_url": "https://developers.openai.com/codex/github-action",
+      "fetched_at": "2026-06-23T14:12:22Z",
+      "final_url": "https://developers.openai.com/codex/github-action",
+      "rag_job_id": 1310,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-github-action-codex-openai-developers-developers-openai-com-56570a0afe.md",
+      "title": "GitHub Action \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/glossary": {
+      "canonical_url": "https://developers.openai.com/codex/glossary",
+      "fetched_at": "2026-06-23T14:12:23Z",
+      "final_url": "https://developers.openai.com/codex/glossary",
+      "rag_job_id": 1311,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-glossary-codex-openai-developers-developers-openai-com-721d97e40d.md",
+      "title": "Glossary \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/guides/agents-md": {
+      "canonical_url": "https://developers.openai.com/codex/guides/agents-md",
+      "fetched_at": "2026-06-23T14:12:24Z",
+      "final_url": "https://developers.openai.com/codex/guides/agents-md",
+      "rag_job_id": 1312,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-custom-instructions-with-agents-md-codex-openai-developers-developers-openai-com-77457a7169.md",
+      "title": "Custom instructions with AGENTS.md \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/guides/agents-sdk": {
+      "canonical_url": "https://developers.openai.com/codex/guides/agents-sdk",
+      "fetched_at": "2026-06-23T14:12:25Z",
+      "final_url": "https://developers.openai.com/codex/guides/agents-sdk",
+      "rag_job_id": 1313,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-use-codex-with-the-agents-sdk-openai-developers-developers-openai-com-4de6905d67.md",
+      "title": "Use Codex with the Agents SDK | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/guides/build-ai-native-engineering-team": {
+      "canonical_url": "https://developers.openai.com/codex/guides/build-ai-native-engineering-team",
+      "fetched_at": "2026-06-23T14:12:26Z",
+      "final_url": "https://developers.openai.com/codex/guides/build-ai-native-engineering-team",
+      "rag_job_id": 1314,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-building-an-ai-native-engineering-team-codex-openai-developers-developers-openai-com-5b1a2e7a24.md",
+      "title": "Building an AI-Native Engineering Team \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/hooks": {
+      "canonical_url": "https://developers.openai.com/codex/hooks",
+      "fetched_at": "2026-06-23T14:12:27Z",
+      "final_url": "https://developers.openai.com/codex/hooks",
+      "rag_job_id": 1315,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-hooks-codex-openai-developers-developers-openai-com-e2cf23eddd.md",
+      "title": "Hooks \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/ide": {
+      "canonical_url": "https://developers.openai.com/codex/ide",
+      "fetched_at": "2026-06-23T14:12:28Z",
+      "final_url": "https://developers.openai.com/codex/ide",
+      "rag_job_id": 1316,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-ide-extension-codex-openai-developers-developers-openai-com-6001153ab8.md",
+      "title": "IDE extension \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/ide/commands": {
+      "canonical_url": "https://developers.openai.com/codex/ide/commands",
+      "fetched_at": "2026-06-23T14:12:29Z",
+      "final_url": "https://developers.openai.com/codex/ide/commands",
+      "rag_job_id": 1317,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-commands-codex-ide-openai-developers-developers-openai-com-e31966660e.md",
+      "title": "Commands \u2013 Codex IDE | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/ide/features": {
+      "canonical_url": "https://developers.openai.com/codex/ide/features",
+      "fetched_at": "2026-06-23T14:12:30Z",
+      "final_url": "https://developers.openai.com/codex/ide/features",
+      "rag_job_id": 1318,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-features-codex-ide-openai-developers-developers-openai-com-2131e4f705.md",
+      "title": "Features \u2013 Codex IDE | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/ide/settings": {
+      "canonical_url": "https://developers.openai.com/codex/ide/settings",
+      "fetched_at": "2026-06-23T14:12:31Z",
+      "final_url": "https://developers.openai.com/codex/ide/settings",
+      "rag_job_id": 1319,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-settings-codex-ide-openai-developers-developers-openai-com-70fbf4fa79.md",
+      "title": "Settings \u2013 Codex IDE | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/ide/slash-commands": {
+      "canonical_url": "https://developers.openai.com/codex/ide/slash-commands",
+      "fetched_at": "2026-06-23T14:12:32Z",
+      "final_url": "https://developers.openai.com/codex/ide/slash-commands",
+      "rag_job_id": 1320,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-slash-commands-codex-ide-openai-developers-developers-openai-com-91f31ec4fe.md",
+      "title": "Slash commands \u2013 Codex IDE | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/import": {
+      "canonical_url": "https://developers.openai.com/codex/import",
+      "fetched_at": "2026-06-23T14:12:33Z",
+      "final_url": "https://developers.openai.com/codex/import",
+      "rag_job_id": 1321,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-import-to-codex-openai-developers-developers-openai-com-1d21444937.md",
+      "title": "Import to Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/integrations/github": {
+      "canonical_url": "https://developers.openai.com/codex/integrations/github",
+      "fetched_at": "2026-06-23T14:12:34Z",
+      "final_url": "https://developers.openai.com/codex/integrations/github",
+      "rag_job_id": 1322,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-code-review-in-github-codex-openai-developers-developers-openai-com-0d99ea2d69.md",
+      "title": "Code review in GitHub \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/integrations/linear": {
+      "canonical_url": "https://developers.openai.com/codex/integrations/linear",
+      "fetched_at": "2026-06-23T14:12:35Z",
+      "final_url": "https://developers.openai.com/codex/integrations/linear",
+      "rag_job_id": 1323,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-use-codex-in-linear-openai-developers-developers-openai-com-81741ade54.md",
+      "title": "Use Codex in Linear | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/integrations/slack": {
+      "canonical_url": "https://developers.openai.com/codex/integrations/slack",
+      "fetched_at": "2026-06-23T14:12:36Z",
+      "final_url": "https://developers.openai.com/codex/integrations/slack",
+      "rag_job_id": 1324,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-use-codex-in-slack-openai-developers-developers-openai-com-0e4ee705b3.md",
+      "title": "Use Codex in Slack | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/learn/best-practices": {
+      "canonical_url": "https://developers.openai.com/codex/learn/best-practices",
+      "fetched_at": "2026-06-23T14:12:37Z",
+      "final_url": "https://developers.openai.com/codex/learn/best-practices",
+      "rag_job_id": 1325,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-best-practices-codex-openai-developers-developers-openai-com-a5a7afce38.md",
+      "title": "Best practices \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/mcp": {
+      "canonical_url": "https://developers.openai.com/codex/mcp",
+      "fetched_at": "2026-06-23T14:12:38Z",
+      "final_url": "https://developers.openai.com/codex/mcp",
+      "rag_job_id": 1326,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-model-context-protocol-codex-openai-developers-developers-openai-com-1f0f8bd5a3.md",
+      "title": "Model Context Protocol \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/memories": {
+      "canonical_url": "https://developers.openai.com/codex/memories",
+      "fetched_at": "2026-06-23T14:12:39Z",
+      "final_url": "https://developers.openai.com/codex/memories",
+      "rag_job_id": 1327,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-memories-codex-openai-developers-developers-openai-com-d9cf520627.md",
+      "title": "Memories \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/memories/chronicle": {
+      "canonical_url": "https://developers.openai.com/codex/memories/chronicle",
+      "fetched_at": "2026-06-23T14:12:40Z",
+      "final_url": "https://developers.openai.com/codex/memories/chronicle",
+      "rag_job_id": 1328,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-chronicle-codex-openai-developers-developers-openai-com-fedceb75d3.md",
+      "title": "Chronicle \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/models": {
+      "canonical_url": "https://developers.openai.com/codex/models",
+      "fetched_at": "2026-06-23T14:12:41Z",
+      "final_url": "https://developers.openai.com/codex/models",
+      "rag_job_id": 1329,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-models-codex-openai-developers-developers-openai-com-93c7872621.md",
+      "title": "Models \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/noninteractive": {
+      "canonical_url": "https://developers.openai.com/codex/noninteractive",
+      "fetched_at": "2026-06-23T14:12:42Z",
+      "final_url": "https://developers.openai.com/codex/noninteractive",
+      "rag_job_id": 1330,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-non-interactive-mode-codex-openai-developers-developers-openai-com-d9dae6e262.md",
+      "title": "Non-interactive mode \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/open-source": {
+      "canonical_url": "https://developers.openai.com/codex/open-source",
+      "fetched_at": "2026-06-23T14:12:43Z",
+      "final_url": "https://developers.openai.com/codex/open-source",
+      "rag_job_id": 1331,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-open-source-codex-openai-developers-developers-openai-com-801915d386.md",
+      "title": "Open Source \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/permissions": {
+      "canonical_url": "https://developers.openai.com/codex/permissions",
+      "fetched_at": "2026-06-23T14:12:44Z",
+      "final_url": "https://developers.openai.com/codex/permissions",
+      "rag_job_id": 1332,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-permissions-codex-openai-developers-developers-openai-com-f4f8e075c1.md",
+      "title": "Permissions \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/plugins": {
+      "canonical_url": "https://developers.openai.com/codex/plugins",
+      "fetched_at": "2026-06-23T14:12:45Z",
+      "final_url": "https://developers.openai.com/codex/plugins",
+      "rag_job_id": 1333,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-plugins-codex-openai-developers-developers-openai-com-7a52fee1f6.md",
+      "title": "Plugins \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/plugins/build": {
+      "canonical_url": "https://developers.openai.com/codex/plugins/build",
+      "fetched_at": "2026-06-23T14:12:46Z",
+      "final_url": "https://developers.openai.com/codex/plugins/build",
+      "rag_job_id": 1334,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-build-plugins-codex-openai-developers-developers-openai-com-1b6c31db97.md",
+      "title": "Build plugins \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/pricing": {
+      "canonical_url": "https://developers.openai.com/codex/pricing",
+      "fetched_at": "2026-06-23T14:12:48Z",
+      "final_url": "https://developers.openai.com/codex/pricing",
+      "rag_job_id": 1335,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-pricing-codex-openai-developers-developers-openai-com-915661219d.md",
+      "title": "Pricing \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/prompting": {
+      "canonical_url": "https://developers.openai.com/codex/prompting",
+      "fetched_at": "2026-06-23T14:12:49Z",
+      "final_url": "https://developers.openai.com/codex/prompting",
+      "rag_job_id": 1336,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-prompting-codex-openai-developers-developers-openai-com-61a0b7b135.md",
+      "title": "Prompting \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/quickstart": {
+      "canonical_url": "https://developers.openai.com/codex/quickstart",
+      "fetched_at": "2026-06-23T14:12:50Z",
+      "final_url": "https://developers.openai.com/codex/quickstart",
+      "rag_job_id": 1337,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-quickstart-codex-openai-developers-developers-openai-com-ee4983b9e9.md",
+      "title": "Quickstart \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/record-and-replay": {
+      "canonical_url": "https://developers.openai.com/codex/record-and-replay",
+      "fetched_at": "2026-06-23T14:12:51Z",
+      "final_url": "https://developers.openai.com/codex/record-and-replay",
+      "rag_job_id": 1338,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-record-replay-codex-openai-developers-developers-openai-com-a18809e761.md",
+      "title": "Record & Replay \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/remote-connections": {
+      "canonical_url": "https://developers.openai.com/codex/remote-connections",
+      "fetched_at": "2026-06-23T14:12:52Z",
+      "final_url": "https://developers.openai.com/codex/remote-connections",
+      "rag_job_id": 1339,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-remote-connections-codex-openai-developers-developers-openai-com-1293fad460.md",
+      "title": "Remote connections \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/rules": {
+      "canonical_url": "https://developers.openai.com/codex/rules",
+      "fetched_at": "2026-06-23T14:12:53Z",
+      "final_url": "https://developers.openai.com/codex/rules",
+      "rag_job_id": 1340,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-rules-codex-openai-developers-developers-openai-com-0663734fcc.md",
+      "title": "Rules \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/sdk": {
+      "canonical_url": "https://developers.openai.com/codex/sdk",
+      "fetched_at": "2026-06-23T14:12:54Z",
+      "final_url": "https://developers.openai.com/codex/sdk",
+      "rag_job_id": 1341,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-sdk-codex-openai-developers-developers-openai-com-34781e0147.md",
+      "title": "SDK \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/sites": {
+      "canonical_url": "https://developers.openai.com/codex/sites",
+      "fetched_at": "2026-06-23T14:12:55Z",
+      "final_url": "https://developers.openai.com/codex/sites",
+      "rag_job_id": 1342,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-sites-codex-openai-developers-developers-openai-com-e6a37bdfcb.md",
+      "title": "Sites \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/skills": {
+      "canonical_url": "https://developers.openai.com/codex/skills",
+      "fetched_at": "2026-06-23T14:12:56Z",
+      "final_url": "https://developers.openai.com/codex/skills",
+      "rag_job_id": 1343,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-agent-skills-codex-openai-developers-developers-openai-com-cb69c97fa1.md",
+      "title": "Agent Skills \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/speed": {
+      "canonical_url": "https://developers.openai.com/codex/speed",
+      "fetched_at": "2026-06-23T14:12:57Z",
+      "final_url": "https://developers.openai.com/codex/speed",
+      "rag_job_id": 1344,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-speed-codex-openai-developers-developers-openai-com-afaff5649f.md",
+      "title": "Speed \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/subagents": {
+      "canonical_url": "https://developers.openai.com/codex/subagents",
+      "fetched_at": "2026-06-23T14:12:58Z",
+      "final_url": "https://developers.openai.com/codex/subagents",
+      "rag_job_id": 1345,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-subagents-codex-openai-developers-developers-openai-com-d179e7b09d.md",
+      "title": "Subagents \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/use-cases": {
+      "canonical_url": "https://developers.openai.com/codex/use-cases",
+      "fetched_at": "2026-06-23T14:13:00Z",
+      "final_url": "https://developers.openai.com/codex/use-cases",
+      "rag_job_id": 1346,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-codex-use-cases-developers-openai-com-38e4cc7a6a.md",
+      "title": "Codex use cases"
+    },
+    "https://developers.openai.com/codex/use-cases/collections": {
+      "canonical_url": "https://developers.openai.com/codex/use-cases/collections",
+      "fetched_at": "2026-06-23T14:13:01Z",
+      "final_url": "https://developers.openai.com/codex/use-cases/collections",
+      "rag_job_id": 1347,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-use-case-collections-developers-openai-com-c923274674.md",
+      "title": "Use case collections"
+    },
+    "https://developers.openai.com/codex/videos": {
+      "canonical_url": "https://developers.openai.com/codex/videos",
+      "fetched_at": "2026-06-23T14:13:02Z",
+      "final_url": "https://developers.openai.com/codex/videos",
+      "rag_job_id": 1348,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-videos-codex-openai-developers-developers-openai-com-d7b856b07d.md",
+      "title": "Videos \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/windows": {
+      "canonical_url": "https://developers.openai.com/codex/windows",
+      "fetched_at": "2026-06-23T14:13:03Z",
+      "final_url": "https://developers.openai.com/codex/windows",
+      "rag_job_id": 1349,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-windows-codex-openai-developers-developers-openai-com-6634ab5b23.md",
+      "title": "Windows \u2013 Codex | OpenAI Developers"
+    },
+    "https://developers.openai.com/codex/workflows": {
+      "canonical_url": "https://developers.openai.com/codex/workflows",
+      "fetched_at": "2026-06-23T14:13:04Z",
+      "final_url": "https://developers.openai.com/codex/workflows",
+      "rag_job_id": 1350,
+      "rag_path": ".web-pages-openai-codex-rag/web-page-workflows-codex-openai-developers-developers-openai-com-231433d8c7.md",
+      "title": "Workflows \u2013 Codex | OpenAI Developers"
+    }
+  },
+  "skipped": {}
+}

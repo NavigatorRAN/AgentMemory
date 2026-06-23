@@ -1,0 +1,53 @@
+# Browser login - OpenClaw
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.openclaw.ai/tools/browser-login
+- Final URL: https://docs.openclaw.ai/tools/browser-login
+- Canonical URL: https://docs.openclaw.ai/tools/browser-login
+- Fetched at: 2026-06-23T14:57:30Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Manual logins for browser automation + X/Twitter posting
+
+## Extracted Text
+
+Close
+Capabilities Tools
+Manual login (recommended)
+When a site requires login, sign in manually in the host browser profile (the openclaw browser).
+Do not give the model your credentials. Automated logins often trigger anti-bot defenses and can lock the account.
+Back to the main browser docs: Browser .
+Which Chrome profile is used?
+OpenClaw controls a dedicated Chrome profile (named openclaw , orange-tinted UI). This is separate from your daily browser profile.
+For agent browser tool calls:
+Default choice: the agent should use its isolated openclaw browser.
+Use profile="user" only when existing logged-in sessions matter and the user is at the computer to click/approve any attach prompt.
+If you have multiple user-browser profiles, specify the profile explicitly instead of guessing.
+Two easy ways to access it:
+Ask the agent to open the browser and then log in yourself.
+Open it via CLI :
+bash Copy code openclaw browser start openclaw browser open https://x.com
+If you have multiple profiles, pass --browser-profile <name> (the default is openclaw ).
+X/Twitter: recommended flow
+Read/search/threads: use the host browser (manual login).
+Post updates: use the host browser (manual login).
+Sandboxing + host browser access
+Sandboxed browser sessions are more likely to trigger bot detection. For X/Twitter (and other strict sites), prefer the host browser.
+If the agent is sandboxed, the browser tool defaults to the sandbox. To allow host control:
+json5 Copy code { agents : { defaults : { sandbox : { mode : "non-main" , browser : { allowHostControl : true , }, }, }, }, }
+Then open the host browser yourself (CLI invocations always run against the host browser):
+bash Copy code openclaw browser open https://x.com --browser-profile openclaw
+The agent's browser tool calls can then target the host once sandbox.browser.allowHostControl: true is set. Alternatively, disable sandboxing for the agent that posts updates.
+Related
+Browser
+Browser Linux troubleshooting
+Browser WSL2 troubleshooting
+Was this useful? Yes No
+Open issue
+On this page
+Install OpenClaw Set up Telegram Fix Gateway Build a plugin
+Ask Molty
+Responses are generated using AI and may contain mistakes.

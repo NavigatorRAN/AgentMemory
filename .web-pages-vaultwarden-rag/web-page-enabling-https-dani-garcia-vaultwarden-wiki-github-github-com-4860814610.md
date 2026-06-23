@@ -1,0 +1,193 @@
+# Enabling HTTPS · dani-garcia/vaultwarden Wiki · GitHub
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://github.com/dani-garcia/vaultwarden/wiki/Enabling-HTTPS
+- Final URL: https://github.com/dani-garcia/vaultwarden/wiki/Enabling-HTTPS
+- Fetched at: 2026-06-23T13:49:15Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs - dani-garcia/vaultwarden
+
+## Extracted Text
+
+Skip to content
+You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert
+{{ message }}
+dani-garcia
+/ vaultwarden Public
+Uh oh!
+There was an error while loading. Please reload this page .
+Notifications
+You must be signed in to change notification settings
+Fork
+2.9k
+Star
+62.8k
+Enabling HTTPS
+Jump to bottom Edit New page
+fourteentrees edited this page Aug 12, 2025
+·
+23 revisions
+For proper operation of vaultwarden, enabling HTTPS is pretty much required nowadays, since the Bitwarden web vault uses web crypto APIs that most browsers only make available in HTTPS contexts.
+There are a few ways you can enable HTTPS:
+(Recommended) Put vaultwarden behind a reverse proxy that handles HTTPS connections on behalf of vaultwarden.
+(Not recommended) Enable the HTTPS functionality built into vaultwarden (via the Rocket web framework). Rocket's HTTPS implementation is relatively immature and limited.
+Refer to the Enabling HTTPS section for more details on these options.
+For an HTTPS server to work, it also needs an SSL/TLS certificate, so you'll need to decide how to obtain this. Again, there are a few options:
+(Recommended) Get Let's Encrypt certificates using an ACME client . Some reverse proxies (e.g., Caddy ) also have built-in support for obtaining certs using the ACME protocol.
+(Recommended) If you trust Cloudflare to proxy your traffic, you can let them handle issuance of your SSL/TLS certs. Note that the upstream Bitwarden web vault ( https://vault.bitwarden.com/ ) runs behind Cloudflare.
+(Not recommended) Set up a private CA and issue your own (self-signed) certificates. There are various pitfalls and inconveniences associated with this, so consider yourself warned.
+Refer to the Getting SSL/TLS certificates section for more details on these options. For the mobile app to work, you must have properly configured OCSP stapling set up.
+Via a reverse proxy
+There are quite a few reverse proxies in common use; some example configurations can be found at Proxy examples . If you aren't familiar with reverse proxies and have no preference, consider Caddy first, since it has built-in support for obtaining Let's Encrypt certs. The Using Docker Compose article has a good example using Caddy.
+Via Rocket
+Warning
+This method is not recommended.
+To enable HTTPS in vaultwarden itself, set the ROCKET_TLS environment variable, which has the following format:
+ROCKET_TLS={certs="/path/to/certs.pem",key="/path/to/key.pem"}
+where:
+certs is the path to the SSL/TLS certificate chain in PEM format.
+key is the path to the SSL/TLS certificate's corresponding private key file (in PEM format).
+Notes:
+The file name extensions used in the ROCKET_TLS line do not necessarily have to be .pem as in the example, and some places may issue certificates using other extension like .crt for the certificate and .key for the private key. It's the file format that must be PEM, i.e. base64-encoded. Since the PEM format is openssl's default you can therefore simply rename .cert, .cer, .crt and .key files to .pem and vice versa or - as an alternative - use .crt or .key as file extensions in the ROCKET_TLS line.
+Use an RSA cert/key. Rocket is currently unable to handle an ECC cert/key, and outputs a misleading error message like
+[ERROR] environment variable ROCKET_TLS={certs="/ssl/ecdsa.crt",key="/ssl/ecdsa.key"} could not be parsed
+(There's nothing wrong with the format of the environment variable itself; it's the cert/key contents that Rocket can't parse.)
+If running under Docker, remember that vaultwarden will be parsing the ROCKET_TLS value when running inside the container, so make sure the certs and key paths are how they would appear inside the container (which may be different from the paths on the Docker host system).
+docker run -d --name vaultwarden \
+-e ROCKET_TLS= ' {certs="/ssl/certs.pem",key="/ssl/key.pem"} ' \
+-v /ssl/keys/:/ssl/ \
+-v /vw-data/:/data/ \
+-p 443:80 \
+vaultwarden/server:latest
+You need to mount ssl files (-v argument) and you need to forward appropriate port (-p argument), usually port 443 for HTTPS connections. If you choose a different port number than 443 like for example 3456, remember to explicitly provide that port number when you connect to the service, example: https://bitwarden.local:3456 .
+Make sure that your certificate file includes the full chain of trust. In the case of certbot, this means using fullchain.pem instead of cert.pem .
+The full chain should include two certs: the leaf cert (same as what's in cert.pem ), followed by an R3 or E1 intermediate cert .
+For example, Android by default does not include any Let's Encrypt intermediate certs in their system trust store, so the Android client will likely fail to connect if you don't provide the full chain.
+Software used for getting certs often use symlinks. If that is the case, both locations need to be accessible to the docker container.
+Example: certbot will create a folder that contains the needed fullchain.pem and privkey.pem files in /etc/letsencrypt/live/mydomain/
+These files are symlinked to ../../archive/mydomain/privkey.pem
+So to use from bitwarden container:
+-e ROCKET_TLS= ' {certs="/ssl/live/mydomain/fullchain.pem",key="/ssl/live/mydomain/privkey.pem"} ' \
+-v /etc/letsencrypt/:/ssl/ \
+-v /bw-data/:/data/ \
+Check if certificate is valid
+When your vaultwarden server is available to the outside world you can use Comodo SSL Checker , Qualys' SSL Labs or Digicert SSL Certficate Checker to check if your SSL certificate is valid including the chain. Without the chain Android devices will fail to connect.
+You can also use Qualys' SSL Labs to check, but that one does not support custom ports. Also please remember to check the "Do not show the results on the boards" checkbox, else your system will be visible in the "Recently Seen" list.
+If you run a local server which does not have a connection to the public internet you could use the openssl command, testssl.sh , or SSLScan to verify your certificate's validity.
+Execute the following to verify if the certificate is installed with the chains.
+Change vault.domain.com to your own domain name.
+openssl s_client -showcerts -connect vault.domain.com:443 -servername vault.domain.com
+# or with a different port
+openssl s_client -showcerts -connect vault.domain.com:7070 -servername vault.domain.com
+The start of the output should look something like this (when using a Let's Encrypt cert):
+CONNECTED(00000003)
+depth=2 O = Digital Signature Trust Co., CN = DST Root CA X3
+verify return:1
+depth=1 C = US, O = Let's Encrypt, CN = R3
+depth=0 CN = vault.domain.com
+Verify that there are 3 different depths (notice it starts at 0).
+A bit further in the output you should see the base64-encoded certificates from Let's Encrypt itself.
+Check OCSP validity
+Connecting a mobile app will fail with message Chain validation failed if OCSP Stapling isn't working properly.
+Digicert SSL Certficate Checker 's revocation check section contains 'OCSP Staple: Good' once OCSP stapling is setup properly. Your webserver must be able to connect to the 'Authority Information Access' URLs that are part of your certificate's X509v3 extensions for OCSP stapling to work.
+You can also check the OCSP status from the command-line
+openssl s_client -showcerts -connect vault.domain.com:443 -servername vault.domain.com -status
+must contain in its output:
+OCSP Response Status: successful (0x0)
+Getting SSL/TLS certificates
+Via Let's Encrypt
+Let's Encrypt issues SSL/TLS certificates for free.
+For this to work, your vaultwarden instance must have a DNS name (i.e., you can't simply use an IP address). Let's Encrypt is easier to set up if your vaultwarden is reachable on the public Internet, but even if your instance is private (i.e., only reachable on your LAN), it's still possible to get Let's Encrypt certs via DNS challenge .
+If you already own or control a domain, then just add a DNS name for the IP address of your vaultwarden instance. If you don't, you can either buy a domain name, try getting one for free at Freenom , or use a service like Duck DNS to get a name under an existing domain (e.g., my-bitwarden.duckdns.org ).
+Once you have a DNS name for your instance, use an ACME client to get certs for your DNS name. Certbot and acme.sh are two of the most popular standalone clients. Some reverse proxies like Caddy also have built-in ACME clients.
+Via Cloudflare
+Cloudflare provides free service for individuals. If you trust them to proxy your traffic and serve as your DNS provider, you can let them handle issuance of your SSL/TLS certs as well.
+Once you've enrolled your domain and added a DNS record for your vaultwarden instance, log into the Cloudflare dashboard and select SSL/TLS , then Origin Server . Generate an origin certificate (you can select a validity period up to 15 years) and configure vaultwarden to use it. If you've selected the 15-year validity period, you won't have to renew this origin certificate for the foreseeable future.
+Note that the origin certificate is used only to secure communications between Cloudflare and vaultwarden. Cloudflare will automatically handle issuance and renewal of the certificate used for communicating between clients and Cloudflare.
+Also, if you're using the Rocket HTTPS server built into vaultwarden, make sure to select RSA as the private key type for the origin certificate, as Rocket doesn't currently support ECC/ECDSA certs.
+🛡️ Vaultwarden — A Bitwarden server, reimagined in Rust
+🏠 Wiki Home ·
+📖 FAQs ·
+⚙️ Configuration ·
+🔒 Hardening Guide ·
+🐳 Docker
+💬 Get in touch
+❤️ Love Vaultwarden? Consider supporting upstream Bitwarden — without their work, this project wouldn't exist.
+Vaultwarden is an unofficial , community-driven Bitwarden-compatible server. It is not associated with, endorsed by, or affiliated with Bitwarden, Inc. — "Bitwarden" is a trademark of Bitwarden, Inc.
+Maintained with care by @dani-garcia and contributors · Wiki content licensed under the project's terms
+FAQs
+Audits
+Supporting upstream development
+Troubleshooting
+Logging
+Bitwarden Android troubleshooting
+Bitwarden clients troubleshooting
+Container Image Usage
+Which container image to use
+Starting a container
+Using Docker Compose
+Using Podman
+Updating the vaultwarden image
+Reverse Proxy
+Proxy examples
+Using an alternate base dir (subdir/subpath)
+HTTPS
+Running a private vaultwarden instance with Let's Encrypt certs
+Configuration
+Overview
+Enabling admin page
+SMTP configuration
+Disable registration of new users
+Disable invitations
+Enabling WebSocket notifications
+Enabling Mobile Client push notification
+Enabling SSO support using OpenId Connect
+Allow icon fetching from internal services
+Other configuration
+Database
+Using the MariaDB (MySQL) Backend
+Using the PostgreSQL Backend
+Running without WAL enabled
+Migrating from MariaDB (MySQL) to SQLite
+Security
+Hardening Guide
+Password hint display
+Enabling U2F and FIDO2 WebAuthn authentication
+Enabling YubiKey OTP authentication
+Fail2Ban Setup
+Fail2Ban + ModSecurity + Traefik + Docker
+Performance
+Changing the API request size limit
+Changing the number of workers
+Customization
+Translating the email templates
+Translating admin page
+Customize Vaultwarden CSS
+Using custom website icons
+Disabling or overriding the Vault interface hosting
+Backup
+General (not docker)
+Backing up your vault
+Development
+Building binary
+Building your own docker image
+Git hooks
+Differences from the upstream API implementation
+Alternative deployments
+Pre-built binaries
+Creating a systemd service
+Third-party packages
+Deployment examples
+Disable the admin token
+Other Information
+Importing data from Keepass or KeepassX
+Changing persistent data location
+Syncing users from LDAP
+Caddy 2.x with Cloudflare DNS
+Logrotate example
+Clone this wiki locally
+You can’t perform that action at this time.

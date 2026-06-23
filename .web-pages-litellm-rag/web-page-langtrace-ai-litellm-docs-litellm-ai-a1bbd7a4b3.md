@@ -1,0 +1,62 @@
+# Langtrace AI | liteLLM
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.litellm.ai/docs/observability/langtrace_integration
+- Final URL: https://docs.litellm.ai/docs/observability/langtrace_integration
+- Canonical URL: https://docs.litellm.ai/docs/observability/langtrace_integration
+- Fetched at: 2026-06-23T14:25:14Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Monitor, evaluate & improve your LLM apps
+
+## Extracted Text
+
+Skip to main content
+On this page
+Copy as Markdown
+Monitor, evaluate & improve your LLM apps
+Pre-Requisites ​
+Make an account on Langtrace AI
+Quick Start ​
+Use just 2 lines of code, to instantly log your responses across all providers with langtrace
+litellm . callbacks = [ "langtrace" ]
+langtrace . init ( )
+import litellm
+import os
+from langtrace_python_sdk import langtrace
+# Langtrace API Keys
+os . environ [ "LANGTRACE_API_KEY" ] = "<your-api-key>"
+# LLM API Keys
+os . environ [ 'OPENAI_API_KEY' ] = "<openai-api-key>"
+# set langtrace as a callback, litellm will send the data to langtrace
+# init langtrace
+# openai call
+response = completion (
+model = "gpt-4o" ,
+messages = [
+{ "content" : "respond only in Yoda speak." , "role" : "system" } ,
+{ "content" : "Hello, how are you?" , "role" : "user" } ,
+] ,
+)
+print ( response )
+Using with LiteLLM Proxy ​
+model_list :
+- model_name : gpt - 4
+litellm_params :
+model : openai/fake
+api_key : fake - key
+api_base : https : //exampleopenaiendpoint - production.up.railway.app/
+litellm_settings :
+callbacks : [ "langtrace" ]
+environment_variables :
+LANGTRACE_API_KEY : "141a****"
+Pre-Requisites
+Quick Start
+Using with LiteLLM Proxy
+🚅
+LiteLLM Enterprise
+SSO/SAML, audit logs, spend tracking, multi-team management, and guardrails — built for production.
+Learn more →

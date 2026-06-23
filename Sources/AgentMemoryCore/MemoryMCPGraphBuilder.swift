@@ -14,6 +14,8 @@ public struct MemoryMCPGraphNode: Equatable, Sendable {
     public enum Kind: String, Equatable, Sendable {
         case entity
         case event
+        case wiki
+        case unknown
     }
 
     public var id: String

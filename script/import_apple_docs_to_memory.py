@@ -97,7 +97,7 @@ class MemoryMCPClient:
             headers=headers,
             method="POST",
         )
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(request, timeout=120) as response:
             return response.read(), {key.lower(): value for key, value in response.headers.items()}
 
 

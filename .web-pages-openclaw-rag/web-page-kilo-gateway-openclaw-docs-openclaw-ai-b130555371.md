@@ -1,0 +1,84 @@
+# Kilo Gateway - OpenClaw
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.openclaw.ai/providers/kilocode
+- Final URL: https://docs.openclaw.ai/providers/kilocode
+- Canonical URL: https://docs.openclaw.ai/providers/kilocode
+- Fetched at: 2026-06-23T14:55:29Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Use Kilo Gateway's unified API to access many models in OpenClaw
+
+## Extracted Text
+
+Close
+Models Providers
+Kilo Gateway provides a unified API that routes requests to many models behind a single
+endpoint and API key. It is OpenAI-compatible, so most OpenAI SDKs work by switching the base URL.
+Property Value Provider kilocode Auth KILOCODE_API_KEY API OpenAI-compatible Base URL https://api.kilo.ai/api/gateway/
+Install plugin
+Install the official plugin, then restart Gateway:
+bash Copy code openclaw plugins install @openclaw/kilocode-provider openclaw gateway restart
+Getting started
+Create an account
+Go to app.kilo.ai , sign in or create an account, then navigate to API Keys and generate a new key.
+Run onboarding
+bash Copy code openclaw onboard --auth-choice kilocode-api-key
+Or set the environment variable directly:
+bash Copy code export KILOCODE_API_KEY= "<your-kilocode-api-key>" # pragma: allowlist secret
+Verify the model is available
+bash Copy code openclaw models list --provider kilocode
+Default model
+The default model is kilocode/kilo/auto , a provider-owned smart-routing
+model managed by Kilo Gateway.
+Note
+OpenClaw treats kilocode/kilo/auto as the stable default ref, but does not
+publish a source-backed task-to-upstream-model mapping for that route. Exact
+upstream routing behind kilocode/kilo/auto is owned by Kilo Gateway, not
+hard-coded in OpenClaw.
+Built-in catalog
+OpenClaw dynamically discovers available models from the Kilo Gateway at startup. Use
+/models kilocode to see the full list of models available with your account.
+Any model available on the gateway can be used with the kilocode/ prefix:
+Model ref Notes kilocode/kilo/auto Default — smart routing kilocode/anthropic/claude-sonnet-4 Anthropic via Kilo kilocode/openai/gpt-5.5 OpenAI via Kilo kilocode/google/gemini-3.1-pro-preview Google via Kilo ...and many more Use /models kilocode to list all
+Tip
+At startup, OpenClaw queries GET https://api.kilo.ai/api/gateway/models and merges
+discovered models ahead of the static fallback catalog. The static fallback always
+includes kilocode/kilo/auto ( Kilo Auto ) with input: ["text", "image"] ,
+reasoning: true , contextWindow: 1000000 , and maxTokens: 128000 .
+Config example
+json5 Copy code { env : { KILOCODE_API_KEY : "<your-kilocode-api-key>" }, // pragma: allowlist secret agents : { defaults : { model : { primary : "kilocode/kilo/auto" }, }, }, }
+Transport and compatibility
+Kilo Gateway is documented in source as OpenRouter-compatible, so it stays on
+the proxy-style OpenAI-compatible path rather than native OpenAI request shaping.
+Gemini-backed Kilo refs stay on the proxy-Gemini path, so OpenClaw keeps
+Gemini thought-signature sanitation there without enabling native Gemini
+replay validation or bootstrap rewrites.
+Kilo Gateway uses a Bearer token with your API key under the hood.
+Stream wrapper and reasoning
+Kilo's shared stream wrapper adds the provider app header and normalizes
+proxy reasoning payloads for supported concrete model refs.
+Warning
+kilocode/kilo/auto and other proxy-reasoning-unsupported hints skip reasoning
+injection. If you need reasoning support, use a concrete model ref such as
+kilocode/anthropic/claude-sonnet-4 .
+Troubleshooting
+If model discovery fails at startup, OpenClaw falls back to the static catalog containing kilocode/kilo/auto .
+Confirm your API key is valid and that your Kilo account has the desired models enabled.
+When the Gateway runs as a daemon, ensure KILOCODE_API_KEY is available to that process (for example in ~/.openclaw/.env or via env.shellEnv ).
+Related
+Model selection
+Choosing providers, model refs, and failover behavior.
+Configuration reference
+Full OpenClaw configuration reference.
+Kilo Gateway
+Kilo Gateway dashboard, API keys, and account management.
+Was this useful? Yes No
+Open issue
+On this page
+Install OpenClaw Set up Telegram Fix Gateway Build a plugin
+Ask Molty
+Responses are generated using AI and may contain mistakes.

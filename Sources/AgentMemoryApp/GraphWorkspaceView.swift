@@ -62,7 +62,7 @@ struct GraphWorkspaceView: View {
                     }
                     HStack(spacing: 10) {
                         WorkspaceMetric(title: "Scene", value: viewModel.memoryGraphScene.nodes.count)
-                        WorkspaceMetric(title: "Results", value: viewModel.memorySearchResults.count)
+                        WorkspaceMetric(title: "Search", value: viewModel.memorySearchResults.count)
                     }
                 }
 
@@ -204,6 +204,10 @@ struct GraphWorkspaceView: View {
             return "circle.hexagongrid"
         case .event:
             return "clock"
+        case .wiki:
+            return "doc.text"
+        case .unknown:
+            return "questionmark.circle"
         }
     }
 
@@ -217,6 +221,10 @@ struct GraphWorkspaceView: View {
             return .blue
         case .event:
             return .orange
+        case .wiki:
+            return .green
+        case .unknown:
+            return .secondary
         }
     }
 }

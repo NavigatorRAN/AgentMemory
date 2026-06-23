@@ -1,0 +1,1585 @@
+# Configuration - Pi-hole documentation
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.pi-hole.net/ftldns/configfile
+- Final URL: https://docs.pi-hole.net/ftldns/configfile/
+- Canonical URL: https://docs.pi-hole.net/ftldns/configfile/
+- Fetched at: 2026-06-23T13:41:53Z
+- Content type: text/html; charset=UTF-8
+
+## Extracted Text
+
+Skip to content
+Pi-hole FTL Configuration Reference ¶
+This page documents the available options of pihole-FTL . They are typically managed via the TOML -formatted configuration file /etc/pihole/pihole.toml . This file may be edited directly or you can use the command line ( CLI ) option, the web interface, the application programming interface ( API ) or environment variables.
+Using the web interface, the API or the CLI is preferred as they can do error checking for you, trying to prevent any incompatible options which could prevent FTL from starting on a severely broken configuration.
+To edit with the command line, use the format --config key.name value , e.g:
+sudo pihole-FTL --config dns.dnssec true
+Environment Variables
+⚙️ Configuration Precedence
+Every Pi-hole setting in this file can be overridden using an environment variable.
+This is especially common in Docker deployments.
+Environment variable names follow the format:
+FTLCONF_<section>_<key>
+For example:
+FTLCONF_dns_upstreams
+FTLCONF_database_DBimport
+⚠️ If a setting is defined via an environment variable, it becomes read-only.
+You will not be able to override it through the TOML file, the command line, or the web interface until the variable is removed from the environment.
+[dns] ¶
+upstreams ¶
+Upstream DNS Servers to be used by Pi-hole. If this is not set, Pi-hole will not
+resolve any non-local queries.
+Example: [ "8.8.8.8", "127.0.0.1#5335", "docker-resolver" ]
+Allowed values are:
+Array of IP addresses and/or hostnames, optionally with a port (#...)
+Default value: []
+TOML CLI Environment (Docker Compose)
+[dns] upstreams = [ "8.8.8.8" , "127.0.0.1#5335" , "docker-resolver" ]
+sudo pihole-FTL --config dns.upstreams '[ "8.8.8.8", "127.0.0.1#5335", "docker-resolver" ]'
+environment : FTLCONF_dns_upstreams : |- 8.8.8.8 127.0.0.1#5335 docker-resolver
+CNAMEdeepInspect ¶
+Use this option to control deep CNAME inspection. Disabling it might be beneficial
+for very low-end devices
+true or false
+Default value: true
+[dns] CNAMEdeepInspect = true
+sudo pihole-FTL --config dns.CNAMEdeepInspect true
+environment : FTLCONF_dns_CNAMEdeepInspect : true
+blockESNI ¶
+Should _esni. subdomains of blocked domains also be blocked by default? Encrypted
+Server Name Indication (ESNI) is certainly a good step into the right direction to
+enhance privacy on the web. It prevents on-path observers, including ISPs, coffee
+shop owners and firewalls, from intercepting the TLS Server Name Indication (SNI)
+extension by encrypting it. This prevents the SNI from being used to determine which
+websites users are visiting.
+ESNI will obviously cause issues for pixelserv-tls which will be unable to generate
+matching certificates on-the-fly when it cannot read the SNI. According to the IETF
+draft (link above), we can easily restore pixelserv-tls's operation by replying
+NXDOMAIN to _esni. subdomains of blocked domains as this mimics a "not configured
+for this domain" behavior.
+ESNI is mostly obsolete. It was previously rolled out by Cloudflare and Firefox, but
+they, as well as almost every client and server, are now using Encrypted Client
+Hello (ECH) instead of ESNI. ECH is served via the HTTPS record on the same RRname,
+so it will automatically be blocked.
+[dns] blockESNI = true
+sudo pihole-FTL --config dns.blockESNI true
+environment : FTLCONF_dns_blockESNI : true
+EDNS0ECS ¶
+Should we overwrite the query source when client information is provided through
+EDNS0 client subnet (ECS) information? This allows Pi-hole to obtain client IPs even
+if they are hidden behind the NAT of a router. This feature has been requested and
+discussed on Discourse where further information how to use it can be found:
+https://discourse.pi-hole.net/t/support-for-add-subnet-option-from-dnsmasq-ecs-edns0-client-subnet/35940
+[dns] EDNS0ECS = true
+sudo pihole-FTL --config dns.EDNS0ECS true
+environment : FTLCONF_dns_EDNS0ECS : true
+ignoreLocalhost ¶
+Should FTL hide queries made by localhost?
+Default value: false
+[dns] ignoreLocalhost = false
+sudo pihole-FTL --config dns.ignoreLocalhost false
+environment : FTLCONF_dns_ignoreLocalhost : false
+showDNSSEC ¶
+Should FTL analyze and show internally generated DNSSEC queries?
+[dns] showDNSSEC = true
+sudo pihole-FTL --config dns.showDNSSEC true
+environment : FTLCONF_dns_showDNSSEC : true
+analyzeOnlyAandAAAA ¶
+Should FTL analyze only A and AAAA queries?
+[dns] analyzeOnlyAandAAAA = false
+sudo pihole-FTL --config dns.analyzeOnlyAandAAAA false
+environment : FTLCONF_dns_analyzeOnlyAandAAAA : false
+piholePTR ¶
+Controls whether and how FTL will reply with for address for which a local interface
+exists. Changing this setting causes FTL to restart.
+"NONE"
+Pi-hole will not respond automatically on PTR requests to local interface
+addresses. Ensure pi.hole and/or hostname records exist elsewhere.
+"HOSTNAME"
+Serve the machine's hostname. The hostname is queried from the kernel through
+uname(2)->nodename. If the machine has multiple network interfaces, it can
+also have multiple nodenames. In this case, it is unspecified and up to the
+kernel which one will be returned. On Linux, the returned string is what has
+been set using sethostname(2) which is typically what has been set in
+/etc/hostname.
+"HOSTNAMEFQDN"
+Serve the machine's hostname (see limitations above) as fully qualified domain
+by adding the local domain. If no local domain has been defined (config option
+dns.domain.name), FTL tries to query the domain name from the kernel using
+getdomainname(2). If this fails, FTL appends ".no_fqdn_available" to the
+hostname.
+"PI.HOLE"
+Respond with "pi.hole" .
+Default value: "PI.HOLE"
+[dns] piholePTR = "PI.HOLE"
+sudo pihole-FTL --config dns.piholePTR "PI.HOLE"
+environment : FTLCONF_dns_piholePTR : 'PI.HOLE'
+replyWhenBusy ¶
+How should FTL handle queries when the gravity database is not available?
+"BLOCK"
+Block all queries when the database is busy.
+"ALLOW"
+Allow all queries when the database is busy.
+"REFUSE"
+Refuse all queries which arrive while the database is busy.
+"DROP"
+Just drop the queries, i.e., never reply to them at all. Despite "REFUSE"
+sounding similar to "DROP" , it turned out that many clients will just
+immediately retry, causing up to several thousands of queries per second. This
+does not happen in "DROP" mode.
+Default value: "ALLOW"
+[dns] replyWhenBusy = "ALLOW"
+sudo pihole-FTL --config dns.replyWhenBusy "ALLOW"
+environment : FTLCONF_dns_replyWhenBusy : 'ALLOW'
+blockTTL ¶
+FTL 's internal TTL to be handed out for blocked queries in seconds. This settings
+allows users to select a value different from the dnsmasq config option local-ttl.
+This is useful in context of locally used hostnames that are known to stay constant
+over long times (printers, etc.).
+Note that large values may render whitelisting ineffective due to client-side
+caching of blocked queries.
+A positive integer value in seconds
+Default value: 2
+[dns] blockTTL = 2
+sudo pihole-FTL --config dns.blockTTL 2
+environment : FTLCONF_dns_blockTTL : 2
+hosts ¶
+Array of custom DNS records
+Example: [ "127.0.0.1 mylocal", "192.168.0.1 therouter" ]
+Array of custom DNS records each one in HOSTS form: "IP HOSTNAME [HOSTNAME ...]"
+[dns] hosts = [ "127.0.0.1 mylocal" , "192.168.0.1 therouter" ]
+sudo pihole-FTL --config dns.hosts '[ "127.0.0.1 mylocal", "192.168.0.1 therouter" ]'
+environment : FTLCONF_dns_hosts : |- 127.0.0.1 mylocal 192.168.0.1 therouter
+domainNeeded ¶
+If set, queries for plain names, without dots or domain parts, are never forwarded to
+upstream nameservers
+[dns] domainNeeded = false
+sudo pihole-FTL --config dns.domainNeeded false
+environment : FTLCONF_dns_domainNeeded : false
+expandHosts ¶
+If set, the domain is added to simple names (without a period) in /etc/hosts in the
+same way as for DHCP -derived names
+[dns] expandHosts = false
+sudo pihole-FTL --config dns.expandHosts false
+environment : FTLCONF_dns_expandHosts : false
+bogusPriv ¶
+Should all reverse lookups for private IP ranges (i.e., 192.168.x.y, etc) which are
+not found in /etc/hosts or the DHCP leases file be answered with "no such domain"
+rather than being forwarded upstream?
+[dns] bogusPriv = true
+sudo pihole-FTL --config dns.bogusPriv true
+environment : FTLCONF_dns_bogusPriv : true
+dnssec ¶
+Validate DNS replies using DNSSEC?
+[dns] dnssec = false
+sudo pihole-FTL --config dns.dnssec false
+environment : FTLCONF_dns_dnssec : false
+interface ¶
+Interface to use for DNS (see also dns.listeningMode) and DHCP (if enabled). Leave
+empty for auto-detection.
+a valid interface name
+Default value: ""
+[dns] interface = ""
+sudo pihole-FTL --config dns.interface ""
+environment : FTLCONF_dns_interface : ''
+hostRecord ¶
+Add an A, AAAA and PTR record to the DNS . This adds a singular name to the DNS with
+associated IPv4 (A) and IPv6 (AAAA) records
+Example: "laptop,laptop.lan,192.168.0.1,1234::100"
+A string in the format
+"<name>[,<name>....],[<IPv4-address>],[<IPv6-address>][,<TTL>]"
+[dns] hostRecord = "laptop,laptop.lan,192.168.0.1,1234::100"
+sudo pihole-FTL --config dns.hostRecord "laptop,laptop.lan,192.168.0.1,1234::100"
+environment : FTLCONF_dns_hostRecord : 'laptop,laptop.lan,192.168.0.1,1234::100'
+listeningMode ¶
+Pi-hole interface listening modes
+"LOCAL"
+Allow only local requests. This setting accepts DNS queries only from hosts
+whose address is on a local subnet, i.e., a subnet for which an interface
+exists on the server. It is intended to be set as a default on installation,
+to allow unconfigured installations to be useful but also safe from being used
+for DNS amplification attacks if (accidentally) running public.
+"SINGLE"
+Permit all origins, accept only on the specified interface. Respond only to
+queries arriving on the specified interface. The loopback (lo) interface is
+automatically added to the list of interfaces to use when this option is used.
+Make sure your Pi-hole is properly firewalled!
+"BIND"
+By default, FTL binds the wildcard address. If this is not what you want, you
+can use this option as it forces FTL to really bind only the interfaces it is
+listening on. Note that this may result in issues when the interface may go
+down (cable unplugged, etc.). About the only time when this is useful is when
+running another nameserver on the same port on the same machine. This may also
+happen if you run a virtualization API such as libvirt. When this option is
+used, IP alias interface labels (e.g. enp2s0:0) are checked rather than
+interface names.
+"ALL"
+Permit all origins, accept on all interfaces. Make sure your Pi-hole is
+properly firewalled! This truly allows any traffic to be replied to and is a
+dangerous thing to do as your Pi-hole could become an open resolver. You
+should always ask yourself if the first option doesn't work for you as well.
+Do not add any configuration concerning the listening mode to the dnsmasq
+configuration file. This is useful if you want to manually configure the
+listening mode in auxiliary configuration files. This option is really meant
+for advanced users only, support for this option may be limited.
+Default value: "LOCAL"
+[dns] listeningMode = "LOCAL"
+sudo pihole-FTL --config dns.listeningMode "LOCAL"
+environment : FTLCONF_dns_listeningMode : 'LOCAL'
+queryLogging ¶
+Log DNS queries and replies to pihole.log
+[dns] queryLogging = true
+sudo pihole-FTL --config dns.queryLogging true
+environment : FTLCONF_dns_queryLogging : true
+cnameRecords ¶
+List of CNAME records which indicate that <cname> is really <target> . If the <TTL> is
+given, it overwrites the value of local-ttl
+Array of CNAMEs, each one in the following form: "<cname>,<target>[,<TTL>]"
+[dns] cnameRecords = []
+sudo pihole-FTL --config dns.cnameRecords '[]'
+environment : FTLCONF_dns_cnameRecords : []
+port ¶
+Port used by the DNS server
+Any available valid (1 - 65535) port number
+Default value: 53
+[dns] port = 53
+sudo pihole-FTL --config dns.port 53
+environment : FTLCONF_dns_port : 53
+localise ¶
+Enable/Disable the localise-queries option of dnsmasq. When this setting is disabled
+dnsmasq will return all possible values for local DNS Records. Enabled by default
+[dns] localise = true
+sudo pihole-FTL --config dns.localise true
+environment : FTLCONF_dns_localise : true
+revServers ¶
+Reverse server (formerly called "conditional forwarding" )
+If not configured as your DHCP server, Pi-hole typically won't be able to determine
+the names of devices on your local network. As a result, tables such as Top Clients
+will only show IP addresses.
+One solution for this is to configure Pi-hole to forward these requests to your DHCP
+server (most likely your router), but only for devices on your home network. To
+configure this we will need to know the IP address of your DHCP server and which
+addresses belong to your local network.
+Example: [ "true,192.168.0.0/24,192.168.0.1,fritz.box" ]
+Array of reverse servers each one in the following form:
+"<enabled>,<ip-address>[/<prefix-len>],<server>[#<port>][,<domain>]"
+Explanation of individual components:
+"<enabled>" : either "true" or "false"
+"<ip-address>[/<prefix-len>]" : Address range for the reverse server feature in
+CIDR notation. If the prefix length is omitted, either 32 ( IPv4 ) or 128 ( IPv6 )
+are substituted (exact address match). This is almost certainly not what you
+want here.
+Example: "192.168.0.0/24" for the range 192.168.0.1 - 192.168.0.255
+"<server>[#<port>]" : Target server to be used for the reverse server feature
+Example: "192.168.0.1#53"
+"<domain>" : Domain used for the reverse server feature (e.g., "fritz.box" )
+Example: "fritz.box"
+[dns] revServers = [ "true,192.168.0.0/24,192.168.0.1,fritz.box" ]
+sudo pihole-FTL --config dns.revServers '[ "true,192.168.0.0/24,192.168.0.1,fritz.box" ]'
+environment : FTLCONF_dns_revServers : |- true,192.168.0.0/24,192.168.0.1,fritz.box
+[dns.domain] ¶
+name ¶
+The DNS domain used by your Pi-hole.
+This DNS domain is purely local. FTL may answer queries from its local cache and
+configuration but never forwards any requests upstream unless you have
+configured a dns.revServer exactly for this domain. In the latter case, all queries
+for this domain are sent exclusively to this server (including reverse lookups).
+For DHCP , this has two effects; firstly it causes the DHCP server to return the
+domain to any hosts which request it, and secondly it sets the domain which it is
+legal for DHCP -configured hosts to claim. The intention is to constrain hostnames so
+that an untrusted host on the LAN cannot advertise its name via DHCP as e.g.
+"google.com" and capture traffic not meant for it. If no domain suffix is specified,
+then any DHCP hostname with a domain part (ie with a period) will be disallowed and
+logged. If a domain is specified, then hostnames with a domain part are allowed,
+provided the domain part matches the suffix. In addition, when a suffix is set then
+hostnames without a domain part have the suffix added as an optional domain part.
+For instance, we can set domain=mylab.com and have a machine whose DHCP hostname is
+"laptop" . The IP address for that machine is available both as "laptop" and
+"laptop.mylab.com" .
+You can disable setting a domain by setting this option to an empty string.
+Any valid domain
+Default value: "lan"
+[dns.domain] name = "lan"
+sudo pihole-FTL --config dns.domain.name "lan"
+environment : FTLCONF_dns_domain_name : 'lan'
+local ¶
+If set, the domain configured by dns.domain.name is considered local and queries for
+this domain are never forwarded upstream unless a dns.revServer is configured for
+this domain.
+If unset, queries for this domain are forwarded upstream to (possibly public) server
+which is probably not what you want unless you have added extra configuration for
+this domain or your upstream servers are able to handle local domains (e.g.,
+router).
+[dns.domain] local = true
+sudo pihole-FTL --config dns.domain.local true
+environment : FTLCONF_dns_domain_local : true
+[dns.cache] ¶
+size ¶
+Cache size of the DNS server. Note that expiring cache entries naturally make room
+for new insertions over time.
+Setting this number too high will have an adverse effect as not only more space is
+needed, but also lookup speed gets degraded in the 10,000+ range. dnsmasq may issue
+a warning when you go beyond 10,000+ cache entries.
+A positive integer value
+Default value: 10000
+[dns.cache] size = 10000
+sudo pihole-FTL --config dns.cache.size 10000
+environment : FTLCONF_dns_cache_size : 10000
+optimizer ¶
+Query cache optimizer: If a DNS name exists in the cache, but its time-to-live has
+expired only recently, the data will be used anyway (a refreshing from upstream is
+triggered). This can improve DNS query delays especially over unreliable Internet
+connections. This feature comes at the expense of possibly sometimes returning
+out-of-date data and less efficient cache utilization, since old data cannot be
+flushed when its TTL expires, so the cache becomes mostly least-recently-used. To
+mitigate issues caused by massively outdated DNS replies, the maximum overaging of
+cached records is limited. We strongly recommend staying below 86400 (1 day) with
+this option.
+Setting the TTL excess time to zero will serve stale cache data regardless how long
+it has expired. This is not recommended as it may lead to stale data being served
+for a long time. Setting this option to any negative value will disable this feature
+altogether.
+A positive integer value in seconds, or any negative to disable this feature
+Default value: 3600
+[dns.cache] optimizer = 3600
+sudo pihole-FTL --config dns.cache.optimizer 3600
+environment : FTLCONF_dns_cache_optimizer : 3600
+upstreamBlockedTTL ¶
+This setting allows you to specify the TTL used for queries blocked upstream. Once
+the TTL expires, the query will be forwarded to the upstream server again to check
+if the block is still valid. Defaults to caching for one day (86400 seconds).
+Setting this value to zero disables caching of queries blocked upstream.
+A positive integer value in seconds, or zero to disable caching of upstream
+blocked queries
+Default value: 86400
+[dns.cache] upstreamBlockedTTL = 86400
+sudo pihole-FTL --config dns.cache.upstreamBlockedTTL 86400
+environment : FTLCONF_dns_cache_upstreamBlockedTTL : 86400
+rrtype ¶
+This is dnsmasq's --cache-rr option, which allows you to define which DNS record
+types should be cached by PiHole. This option can take a comma-separated list of
+RR-types as input. The default value ANY caches all record types.
+Valid DNS record types in the following form: <rrtype>``[,<rrtype>...]
+Default value: "ANY"
+[dns.cache] rrtype = "ANY"
+sudo pihole-FTL --config dns.cache.rrtype "ANY"
+environment : FTLCONF_dns_cache_rrtype : 'ANY'
+[dns.blocking] ¶
+active ¶
+Should FTL block queries?
+[dns.blocking] active = true
+sudo pihole-FTL --config dns.blocking.active true
+environment : FTLCONF_dns_blocking_active : true
+mode ¶
+How should FTL reply to blocked queries?
+"NULL"
+In NULL mode, which is both the default and recommended mode for Pi-hole
+FTLDNS, blocked queries will be answered with the "unspecified address"
+(0.0.0.0 or ::). The "unspecified address" is a reserved IP address specified
+by RFC 3513 - Internet Protocol Version 6 ( IPv6 ) Addressing Architecture,
+section 2.5.2.
+"IP_NODATA_AAAA"
+In IP -NODATA-AAAA mode, blocked queries will be answered with the local IPv4
+addresses of your Pi-hole. Blocked AAAA queries will be answered with
+NODATA-IPV6 and clients will only try to reach your Pi-hole over its static
+IPv4 address.
+"IP"
+In IP mode, blocked queries will be answered with the local IP addresses of
+your Pi-hole.
+"NX"
+In NXDOMAIN mode, blocked queries will be answered with an empty response
+(i.e., there won't be an answer section) and status NXDOMAIN. A NXDOMAIN
+response should indicate that there is no such domain to the client making the
+query.
+"NODATA"
+In NODATA mode, blocked queries will be answered with an empty response (no
+answer section) and status NODATA. A NODATA response indicates that the domain
+exists, but there is no record for the requested query type.
+Default value: "NULL"
+[dns.blocking] mode = "NULL"
+sudo pihole-FTL --config dns.blocking.mode "NULL"
+environment : FTLCONF_dns_blocking_mode : 'NULL'
+edns ¶
+Should FTL enrich blocked replies with EDNS0 information?
+In NONE mode, no additional EDNS information is added to blocked queries
+"CODE"
+In CODE mode, blocked queries will be enriched with EDNS info-code BLOCKED (15)
+"TEXT"
+In TEXT mode, blocked queries will be enriched with EDNS info-code BLOCKED (15)
+and a text message describing the reason for the block
+Default value: "TEXT"
+[dns.blocking] edns = "TEXT"
+sudo pihole-FTL --config dns.blocking.edns "TEXT"
+environment : FTLCONF_dns_blocking_edns : 'TEXT'
+[dns.specialDomains] ¶
+mozillaCanary ¶
+Should Pi-hole always reply with NXDOMAIN to A and AAAA queries of
+use-application-dns.net to disable Firefox automatic DNS -over- HTTP ?
+This follows the recommendation on
+https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https
+[dns.specialDomains] mozillaCanary = true
+sudo pihole-FTL --config dns.specialDomains.mozillaCanary true
+environment : FTLCONF_dns_specialDomains_mozillaCanary : true
+iCloudPrivateRelay ¶
+Should Pi-hole always reply with NXDOMAIN to A and AAAA queries of mask.icloud.com
+and mask-h2.icloud.com to disable Apple's iCloud Private Relay to prevent Apple
+devices from bypassing Pi-hole?
+https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay
+[dns.specialDomains] iCloudPrivateRelay = true
+sudo pihole-FTL --config dns.specialDomains.iCloudPrivateRelay true
+environment : FTLCONF_dns_specialDomains_iCloudPrivateRelay : true
+designatedResolver ¶
+Should Pi-hole always reply with NODATA to all queries to zone resolver.arpa to
+prevent devices from bypassing Pi-hole using Discovery of Designated Resolvers?
+This is based on recommendations at the end of RFC 9462, section 4.
+[dns.specialDomains] designatedResolver = true
+sudo pihole-FTL --config dns.specialDomains.designatedResolver true
+environment : FTLCONF_dns_specialDomains_designatedResolver : true
+[dns.reply.host] ¶
+force4 ¶
+Use a specific IPv4 address for the Pi-hole host? By default, FTL determines the
+address of the interface a query arrived on and uses this address for replying to A
+queries with the most suitable address for the requesting client.
+This setting can be used to use a fixed, rather than the dynamically obtained,
+address when Pi-hole responds to the following names:
+"pi.hole"
+"<the device's hostname>"
+"pi.hole.<local domain>"
+"<the device's hostname>.<local domain>"
+[dns.reply.host] force4 = false
+sudo pihole-FTL --config dns.reply.host.force4 false
+environment : FTLCONF_dns_reply_host_force4 : false
+IPv4 ¶
+Custom IPv4 address for the Pi-hole host
+A valid IPv4 address or empty string ( "" )
+[dns.reply.host] IPv4 = ""
+sudo pihole-FTL --config dns.reply.host.IPv4 ""
+environment : FTLCONF_dns_reply_host_IPv4 : ''
+force6 ¶
+Use a specific IPv6 address for the Pi-hole host? See description for the IPv4
+variant above for further details.
+[dns.reply.host] force6 = false
+sudo pihole-FTL --config dns.reply.host.force6 false
+environment : FTLCONF_dns_reply_host_force6 : false
+IPv6 ¶
+Custom IPv6 address for the Pi-hole host
+A valid IPv6 address or empty string ( "" )
+[dns.reply.host] IPv6 = ""
+sudo pihole-FTL --config dns.reply.host.IPv6 ""
+environment : FTLCONF_dns_reply_host_IPv6 : ''
+[dns.reply.blocking] ¶
+Use a specific IPv4 address in IP blocking mode? By default, FTL determines the
+address when Pi-hole responds in the following cases:
+IP blocking mode is used and this query is to be blocked
+regular expressions with the ;reply= IP regex extension.
+[dns.reply.blocking] force4 = false
+sudo pihole-FTL --config dns.reply.blocking.force4 false
+environment : FTLCONF_dns_reply_blocking_force4 : false
+Custom IPv4 address for IP blocking mode
+[dns.reply.blocking] IPv4 = ""
+sudo pihole-FTL --config dns.reply.blocking.IPv4 ""
+environment : FTLCONF_dns_reply_blocking_IPv4 : ''
+Use a specific IPv6 address in IP blocking mode? See description for the IPv4 variant
+above for further details.
+[dns.reply.blocking] force6 = false
+sudo pihole-FTL --config dns.reply.blocking.force6 false
+environment : FTLCONF_dns_reply_blocking_force6 : false
+Custom IPv6 address for IP blocking mode
+[dns.reply.blocking] IPv6 = ""
+sudo pihole-FTL --config dns.reply.blocking.IPv6 ""
+environment : FTLCONF_dns_reply_blocking_IPv6 : ''
+[dns.rateLimit] ¶
+count ¶
+Rate-limited queries are answered with a REFUSED reply and not further processed by
+FTL .
+The default settings for FTL 's rate-limiting are to permit no more than 1000 queries
+in 60 seconds. Both numbers can be customized independently. It is important to note
+that rate-limiting is happening on a per-client basis. Other clients can continue to
+use FTL while rate-limited clients are short-circuited at the same time.
+For this setting, both numbers, the maximum number of queries within a given time,
+and the length of the time interval (seconds) have to be specified. For instance, if
+you want to set a rate limit of 1 query per hour, the option should look like
+dns.rateLimit.count=1 and dns.rateLimit.interval=3600. The time interval is relative
+to when FTL has finished starting (start of the daemon + possible delay by
+DELAY_STARTUP) then it will advance in steps of the rate-limiting interval. If a
+client reaches the maximum number of queries it will be blocked until the end of the
+current interval. This will be logged to /var/log/pihole/ FTL .log, e.g. Rate-limiting
+10.0.1.39 for at least 44 seconds. If the client continues to send queries while
+being blocked already and this number of queries during the blocking exceeds the
+limit the client will continue to be blocked until the end of the next interval
+( FTL .log will contain lines like Still rate-limiting 10.0.1.39 as it made additional
+5007 queries). As soon as the client requests less than the set limit, it will be
+unblocked (Ending rate-limitation of 10.0.1.39).
+Rate-limiting may be disabled altogether by setting both values to zero (this
+results in the same behavior as before FTL v5.7).
+How many queries are permitted...
+Default value: 1000
+[dns.rateLimit] count = 1000
+sudo pihole-FTL --config dns.rateLimit.count 1000
+environment : FTLCONF_dns_rateLimit_count : 1000
+interval ¶
+... in the set interval before rate-limiting?
+Default value: 60
+[dns.rateLimit] interval = 60
+sudo pihole-FTL --config dns.rateLimit.interval 60
+environment : FTLCONF_dns_rateLimit_interval : 60
+[dhcp] ¶
+Is the embedded DHCP server enabled?
+[dhcp] active = false
+sudo pihole-FTL --config dhcp.active false
+environment : FTLCONF_dhcp_active : false
+start ¶
+Start address of the DHCP address pool
+Example: "192.168.0.10"
+A valid IPv4 address, or empty string ( "" )
+[dhcp] start = "192.168.0.10"
+sudo pihole-FTL --config dhcp.start "192.168.0.10"
+environment : FTLCONF_dhcp_start : '192.168.0.10'
+end ¶
+End address of the DHCP address pool
+Example: "192.168.0.250"
+[dhcp] end = "192.168.0.250"
+sudo pihole-FTL --config dhcp.end "192.168.0.250"
+environment : FTLCONF_dhcp_end : '192.168.0.250'
+router ¶
+Address of the gateway to be used (typically the address of your router in a home
+installation)
+Example: "192.168.0.1"
+[dhcp] router = "192.168.0.1"
+sudo pihole-FTL --config dhcp.router "192.168.0.1"
+environment : FTLCONF_dhcp_router : '192.168.0.1'
+netmask ¶
+The netmask used by your Pi-hole. For directly connected networks (i.e., networks on
+which the machine running Pi-hole has an interface) the netmask is optional and may
+be set to an empty string ( "" ): it will then be determined from the interface
+configuration itself.
+For networks which receive DHCP service via a relay agent, we cannot determine the
+netmask itself, so it should explicitly be specified, otherwise Pi-hole guesses
+based on the class (A, B or C) of the network address.
+Example: "255.255.255.0"
+Any valid netmask, or an empty string ( "" ) for auto-discovery
+[dhcp] netmask = "255.255.255.0"
+sudo pihole-FTL --config dhcp.netmask "255.255.255.0"
+environment : FTLCONF_dhcp_netmask : '255.255.255.0'
+leaseTime ¶
+If the lease time is given, then leases will be given for that length of time. If not
+given, the default lease time is one hour for IPv4 and one day for IPv6 .
+The lease time can be in seconds, or minutes (e.g., "45m" ) or hours (e.g., "1h" )
+or days (like "2d" ) or even weeks ( "1w" ). You may also use "infinite" as string
+but be aware of the drawbacks
+[dhcp] leaseTime = ""
+sudo pihole-FTL --config dhcp.leaseTime ""
+environment : FTLCONF_dhcp_leaseTime : ''
+ipv6 ¶
+Should Pi-hole make an attempt to also satisfy IPv6 address requests (be aware that
+IPv6 works a whole lot different than IPv4 )
+[dhcp] ipv6 = false
+sudo pihole-FTL --config dhcp.ipv6 false
+environment : FTLCONF_dhcp_ipv6 : false
+rapidCommit ¶
+Enable DHCPv4 Rapid Commit Option specified in RFC 4039. Should only be enabled if
+either the server is the only server for the subnet to avoid conflicts
+[dhcp] rapidCommit = false
+sudo pihole-FTL --config dhcp.rapidCommit false
+environment : FTLCONF_dhcp_rapidCommit : false
+multiDNS ¶
+Advertise DNS server multiple times to clients. Some devices will add their own
+proprietary DNS servers to the list of DNS servers, which can cause issues with
+Pi-hole. This option will advertise the Pi-hole DNS server multiple times to
+clients, which should prevent this from happening.
+[dhcp] multiDNS = false
+sudo pihole-FTL --config dhcp.multiDNS false
+environment : FTLCONF_dhcp_multiDNS : false
+logging ¶
+Enable logging for DHCP . This will log all relevant DHCP -related activity, including,
+e.g., all the options sent to DHCP clients and the tags used to determine them (if
+any). This can be useful for debugging DHCP issues. The generated output is saved to
+the file specified by files.log.dnsmasq below.
+[dhcp] logging = false
+sudo pihole-FTL --config dhcp.logging false
+environment : FTLCONF_dhcp_logging : false
+ignoreUnknownClients ¶
+Ignore unknown DHCP clients.
+If this option is set, Pi-hole ignores all clients which are not explicitly
+configured through dhcp.hosts. This can be useful to prevent unauthorized clients
+from getting an IP address from the DHCP server.
+It should be noted that this option is not a security feature, as clients can still
+assign themselves an IP address and use the network. It is merely a convenience
+feature to prevent unknown clients from getting a valid IP configuration assigned
+automatically.
+Note that you will need to configure new clients manually in dhcp.hosts before they
+can use the network when this feature is enabled.
+[dhcp] ignoreUnknownClients = false
+sudo pihole-FTL --config dhcp.ignoreUnknownClients false
+environment : FTLCONF_dhcp_ignoreUnknownClients : false
+Per host parameters for the DHCP server. This allows a machine with a particular
+hardware address to be always allocated the same hostname, IP address and lease time
+or to specify static DHCP leases
+Example: [ "00:20:e0:3b:13:af,192.168.0.123,laptop,24h",
+"00:20:e0:ab:cd:ef,192.168.0.124,desktop,24h"]
+Array of static leases each one in the following form:
+"[<hwaddr>][,id:<client_id>|*][,set:<tag>][,tag:<tag>][,<ipaddr>][,<hostname>][,<lease_time>][,ignore]"
+[dhcp] hosts = [ "00:20:e0:3b:13:af,192.168.0.123,laptop,24h" , "00:20:e0:ab:cd:ef,192.168.0.124,desktop,24h" ]
+sudo pihole-FTL --config dhcp.hosts '["00:20:e0:3b:13:af,192.168.0.123,laptop,24h","00:20:e0:ab:cd:ef,192.168.0.124,desktop,24h"]'
+environment : FTLCONF_dhcp_hosts : |- 00:20:e0:3b:13:af,192.168.0.123,laptop,24h 00:20:e0:ab:cd:ef,192.168.0.124,desktop,24h
+[ntp.ipv4] ¶
+Should FTL act as network time protocol ( NTP ) server ( IPv4 )?
+[ntp.ipv4] active = true
+sudo pihole-FTL --config ntp.ipv4.active true
+environment : FTLCONF_ntp_ipv4_active : true
+address ¶
+IPv4 address to listen on for NTP requests
+A valid IPv4 address, or empty string ( "" ). For wildcard (0.0.0.0)
+[ntp.ipv4] address = ""
+sudo pihole-FTL --config ntp.ipv4.address ""
+environment : FTLCONF_ntp_ipv4_address : ''
+[ntp.ipv6] ¶
+Should FTL act as network time protocol ( NTP ) server ( IPv6 )?
+[ntp.ipv6] active = true
+sudo pihole-FTL --config ntp.ipv6.active true
+environment : FTLCONF_ntp_ipv6_active : true
+IPv6 address to listen on for NTP requests
+A valid IPv6 address, or empty string ( "" ). For wildcard (::)
+[ntp.ipv6] address = ""
+sudo pihole-FTL --config ntp.ipv6.address ""
+environment : FTLCONF_ntp_ipv6_address : ''
+[ntp.sync] ¶
+Should FTL try to synchronize the system time with an upstream NTP server?
+[ntp.sync] active = true
+sudo pihole-FTL --config ntp.sync.active true
+environment : FTLCONF_ntp_sync_active : true
+server ¶
+NTP upstream server to sync with, e.g., "pool.ntp.org" . Note that the NTP server
+should be located as close as possible to you in order to minimize the time offset
+possibly introduced by different routing paths.
+A valid NTP upstream server
+Default value: "pool.ntp.org"
+[ntp.sync] server = "pool.ntp.org"
+sudo pihole-FTL --config ntp.sync.server "pool.ntp.org"
+environment : FTLCONF_ntp_sync_server : 'pool.ntp.org'
+Interval in seconds between successive synchronization attempts with the NTP server
+[ntp.sync] interval = 3600
+sudo pihole-FTL --config ntp.sync.interval 3600
+environment : FTLCONF_ntp_sync_interval : 3600
+Number of NTP syncs to perform and average before updating the system time
+Default value: 8
+[ntp.sync] count = 8
+sudo pihole-FTL --config ntp.sync.count 8
+environment : FTLCONF_ntp_sync_count : 8
+[ntp.sync.rtc] ¶
+set ¶
+Should FTL update a real-time clock (RTC) if available?
+[ntp.sync.rtc] set = false
+sudo pihole-FTL --config ntp.sync.rtc.set false
+environment : FTLCONF_ntp_sync_rtc_set : false
+device ¶
+Path to the RTC device to update.
+Example: "/dev/rtc0"
+A valid RTC device path, or empty string ( "" ) for auto-discovery
+[ntp.sync.rtc] device = "/dev/rtc0"
+sudo pihole-FTL --config ntp.sync.rtc.device "/dev/rtc0"
+environment : FTLCONF_ntp_sync_rtc_device : '/dev/rtc0'
+utc ¶
+Should the RTC be set to UTC?
+[ntp.sync.rtc] utc = true
+sudo pihole-FTL --config ntp.sync.rtc.utc true
+environment : FTLCONF_ntp_sync_rtc_utc : true
+[resolver] ¶
+resolveIPv4 ¶
+Should FTL try to resolve IPv4 addresses to hostnames?
+[resolver] resolveIPv4 = true
+sudo pihole-FTL --config resolver.resolveIPv4 true
+environment : FTLCONF_resolver_resolveIPv4 : true
+resolveIPv6 ¶
+Should FTL try to resolve IPv6 addresses to hostnames?
+[resolver] resolveIPv6 = true
+sudo pihole-FTL --config resolver.resolveIPv6 true
+environment : FTLCONF_resolver_resolveIPv6 : true
+macNames ¶
+Control whether FTL should attempt to obtain client names from the network table by
+MAC address.
+This can provide hostnames for devices that do not have a hostname or have multiple
+IP addresses (e.g. IPv4 and IPv6 ).
+However, MAC-derived names can be ambiguous (e.g., when a MAC appears for multiple
+IPs due to a router/ NAT or MAC reuse), which may lead to incorrect hostnames being
+shown. Disabling this option can prevent such issues but may lead to more clients
+without hostnames.
+[resolver] macNames = true
+sudo pihole-FTL --config resolver.macNames true
+environment : FTLCONF_resolver_macNames : true
+networkNames ¶
+Control whether FTL should use the fallback option to try to obtain client names from
+checking the network table. This behavior can be disabled with this option.
+Assume an IPv6 client without a host names. However, the network table knows -
+though the client's MAC address - that this is the same device where we have a host
+name for another IP address (e.g., a DHCP server managed IPv4 address). In this
+case, we use the host name associated to the other address as this is the same
+device.
+[resolver] networkNames = true
+sudo pihole-FTL --config resolver.networkNames true
+environment : FTLCONF_resolver_networkNames : true
+refreshNames ¶
+With this option, you can change how (and if) hourly PTR requests are made to check
+for changes in client and upstream server hostnames.
+"IPV4_ONLY"
+Do hourly PTR lookups only for IPv4 addresses. This is the new default since
+Pi-hole FTL v5.3.2. It should resolve issues with more and more very
+short-lived PE IPv6 addresses coming up in a lot of networks.
+Do hourly PTR lookups for all addresses. This was the default until FTL
+v5.3(.1). It has been replaced as it can create a lot of PTR queries for those
+with many IPv6 addresses in their networks.
+"UNKNOWN"
+Only resolve unknown hostnames. Already existing hostnames are never refreshed,
+i.e., there will be no PTR queries made for clients where hostnames are known.
+This also means that known hostnames will not be updated once known.
+Don't do any hourly PTR lookups. This means we look host names up exactly once
+(when we first see a client) and never again. You may miss future changes of
+host names.
+Default value: "IPV4_ONLY"
+[resolver] refreshNames = "IPV4_ONLY"
+sudo pihole-FTL --config resolver.refreshNames "IPV4_ONLY"
+environment : FTLCONF_resolver_refreshNames : 'IPV4_ONLY'
+[database] ¶
+DBimport ¶
+Should FTL load information from the database on startup to be aware of the most
+recent history?
+[database] DBimport = true
+sudo pihole-FTL --config database.DBimport true
+environment : FTLCONF_database_DBimport : true
+maxDBdays ¶
+How long should queries be stored in the database [days] ?
+A positive integer value in days, or 0 to disable the database
+Default value: 91
+[database] maxDBdays = 91
+sudo pihole-FTL --config database.maxDBdays 91
+environment : FTLCONF_database_maxDBdays : 91
+DBinterval ¶
+How often do we store queries in FTL 's database [seconds] ?
+[database] DBinterval = 60
+sudo pihole-FTL --config database.DBinterval 60
+environment : FTLCONF_database_DBinterval : 60
+useWAL ¶
+Should FTL enable Write-Ahead Log (WAL) mode for the on-disk query database
+(configured via files.database)?
+It is recommended to leave this setting enabled for performance reasons. About the
+only reason to disable WAL mode is if you are experiencing specific issues with it,
+e.g., when using a database that is accessed from multiple hosts via a network
+share. When this setting is disabled, FTL will use SQLite3 's default journal mode
+(rollback journal in DELETE mode).
+[database] useWAL = true
+sudo pihole-FTL --config database.useWAL true
+environment : FTLCONF_database_useWAL : true
+forceDisk ¶
+Should FTL force the use of disk storage for the history database? By default, FTL
+uses an in-memory database for much improved performance when browsing the history
+from the dashboard. However, on systems with very limited RAM and only occasional
+usage of the web interface, it may be useful to force the use of disk storage
+instead of holding everything in memory.
+Note that using disk storage will reduce performance, especially on systems with
+slow storage media (e.g., SD cards).
+[database] forceDisk = false
+sudo pihole-FTL --config database.forceDisk false
+environment : FTLCONF_database_forceDisk : false
+[database.network] ¶
+parseARPcache ¶
+Should FTL analyze the local ARP cache? When disabled, client identification and the
+network table will stop working reliably.
+[database.network] parseARPcache = true
+sudo pihole-FTL --config database.network.parseARPcache true
+environment : FTLCONF_database_network_parseARPcache : true
+expire ¶
+How long should IP addresses be kept in the network_addresses table [days] ? IP
+addresses (and associated host names) older than the specified number of days are
+removed to avoid dead entries in the network overview table.
+A positive integer value in days
+[database.network] expire = 91
+sudo pihole-FTL --config database.network.expire 91
+environment : FTLCONF_database_network_expire : 91
+[webserver] ¶
+domain ¶
+On which domain is the web interface served?
+A valid domain
+Default value: "pi.hole"
+[webserver] domain = "pi.hole"
+sudo pihole-FTL --config webserver.domain "pi.hole"
+environment : FTLCONF_webserver_domain : 'pi.hole'
+acl ¶
+Webserver access control list (ACL) allowing for restrictions to be put on the list
+of IP addresses which have access to the web server. The ACL is a comma separated
+list of IP subnets, where each subnet is prepended by either a - or a + sign. A plus
+sign means allow, where a minus sign means deny.
+If a subnet mask is omitted, such as -1.2.3.4, this means to deny only that single
+IP address. If this value is not set (empty string), all accesses are allowed.
+Otherwise, the default setting is to deny all accesses. On each request the full
+list is traversed, and the last (!) match wins. IPv6 addresses may be specified in
+CIDR-form [a:b::c] /64.
+Example 1: "+127.0.0.1,+[::1]" ---> deny all access, except from 127.0.0.1 and ::1
+Example 2: "+192.168.0.0/16" ---> deny all accesses, except from the 192.168.0.0/16
+subnet
+Example 3: "+[::]/0" ---> allow only IPv6 access.
+A valid ACL
+[webserver] acl = ""
+sudo pihole-FTL --config webserver.acl ""
+environment : FTLCONF_webserver_acl : ''
+Ports to be used by the webserver.
+Comma-separated list of ports to listen on. It is possible to specify an IP address
+to bind to. In this case, an IP address and a colon must be prepended to the port
+number. For example, to bind to the loopback interface on port 80 ( IPv4 ) and to all
+interfaces port 8080 ( IPv4 ), use "127.0.0.1:80,8080" . "[::]:80" can be used to
+listen to IPv6 connections to port 80. IPv6 addresses of network interfaces can be
+specified as well, e.g. "[::1]:80" for the IPv6 loopback interface. "[::]:80" will
+bind to port 80 IPv6 only.
+In order to use port 80 for all interfaces, both IPv4 and IPv6 , use either the
+configuration "80,[::]:80" (create one socket for IPv4 and one for IPv6 only), or
+"+80" (create one socket for both, IPv4 and IPv6 ). The '+' notation to use IPv4 and
+IPv6 will only work if no network interface is specified. Depending on your
+operating system version and IPv6 network environment, some configurations might not
+work as expected, so you have to test to find the configuration most suitable for
+your needs. In case "+80" does not work for your environment, you need to use
+"80,[::]:80" .
+If the port is TLS/SSL, a letter 's' (secure) must be appended, for example,
+"80,443s" will open port 80 and port 443, and connections on port 443 will be
+encrypted. For non-encrypted ports, it is allowed to append letter 'r' (as in
+redirect). Redirected ports will redirect all their traffic to the first configured
+SSL port. For example, if webserver.port is "80r,443s" , then all HTTP traffic coming
+at port 80 will be redirected to HTTPS port 443.
+When specifying 'o' (optional) behind a port, inability to use this port is not
+considered an error. For instance, specifying "80o,8080o" will allow the webserver
+to listen on either 80, 8080, both or even none of the two ports. This flag may be
+combined with 'r' and 's' like "80or,443os,8080,4443s" (80 redirecting to SSL if
+available, 443 encrypted if available, 8080 mandatory and unencrypted, 4443
+mandatory and encrypted).
+If this value is not set (empty string), the web server will not be started and,
+hence, the API will not be available.
+A comma-separated list of <[ip_address:]port>
+Default value: "80o,443os,[::]:80o,[::]:443os"
+[webserver] port = "80o,443os,[::]:80o,[::]:443os"
+sudo pihole-FTL --config webserver.port "80o,443os,[::]:80o,[::]:443os"
+environment : FTLCONF_webserver_port : '80o,443os,[::]:80o,[::]:443os'
+threads ¶
+Maximum number of worker threads allowed.
+The Pi-hole web server handles each incoming connection in a separate thread.
+Therefore, the value of this option is effectively the number of concurrent HTTP
+connections that can be handled. Any other connections are queued until they can be
+processed by a unoccupied thread.
+The total number of threads you see may be lower than the configured value as
+threads are only created when needed due to incoming connections.
+The value 0 means the number of threads is 50 (as per default settings of CivetWeb)
+for backwards-compatible behavior.
+A positive integer value, or 0 for default (50)
+Default value: 50
+[webserver] threads = 50
+sudo pihole-FTL --config webserver.threads 50
+environment : FTLCONF_webserver_threads : 50
+headers ¶
+Additional HTTP headers added to the web server responses.
+The headers are added to all responses, including those for the API .
+Note about the default additional headers:
+X- DNS -Prefetch-Control: off: Usually browsers proactively perform domain name
+resolution on links that the user may choose to follow. We disable DNS prefetching
+here.
+Content-Security-Policy: [...] 'unsafe-inline' is both required by Chart.js
+styling some elements directly, and index.html containing some inlined Javascript
+code.
+X-Frame-Options: DENY: The page can not be displayed in a frame, regardless of the
+site attempting to do so.
+X-Xss-Protection: 0: Disables XSS filtering in browsers that support it. This
+header is usually enabled by default in browsers, and is not recommended as it can
+hurt the security of the site.
+( https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection ).
+X-Content-Type-Options: nosniff: Marker used by the server to indicate that the
+MIME types advertised in the Content-Type headers should not be changed and be
+followed. This allows to opt-out of MIME type sniffing, or, in other words, it is a
+way to say that the webmasters knew what they were doing. Site security testers
+usually expect this header to be set.
+Referrer-Policy: strict-origin-when-cross-origin: A referrer will be sent for
+same-site origins, but cross-origin requests will send no referrer information.
+The latter four headers are set as expected by https://securityheaders.io
+An array of HTTP headers
+Default value:
+[ "X-DNS-Prefetch-Control: off" , "Content-Security-Policy: default-src 'none'; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; img-src 'self'; manifest-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; form-action 'self'" , "X-Frame-Options: DENY" , "X-XSS-Protection: 0" , "X-Content-Type-Options: nosniff" , "Referrer-Policy: strict-origin-when-cross-origin" ]
+[webserver] headers = [ "X-DNS-Prefetch-Control: off" , "Content-Security-Policy: default-src 'none'; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; img-src 'self'; manifest-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; form-action 'self'" , "X-Frame-Options: DENY" , "X-XSS-Protection: 0" , "X-Content-Type-Options: nosniff" , "Referrer-Policy: strict-origin-when-cross-origin" ]
+sudo pihole-FTL --config webserver.headers '["X-DNS-Prefetch-Control:off","Content-Security-Policy:default-src' none ';connect-src' self ';font-src' self ';frame-ancestors' none ';img-src' self ';manifest-src' self ';script-src' self ';style-src' self '' unsafe-inline ';form-action' self '","X-Frame-Options:DENY","X-XSS-Protection:0","X-Content-Type-Options:nosniff","Referrer-Policy:strict-origin-when-cross-origin"]'
+environment : FTLCONF_webserver_headers : |- X-DNS-Prefetch-Control: off Content-Security-Policy: default-src 'none'; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; img-src 'self'; manifest-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; form-action 'self X-Frame-Options: DENY X-XSS-Protection: 0 X-Content-Type-Options: nosniff Referrer-Policy: strict-origin-when-cross-origin
+serve_all ¶
+Should the web server serve all files in webserver.paths.webroot directory?
+If disabled, only files within the path defined through webserver.paths.webhome and
+/api will be served.
+[webserver] serve_all = false
+sudo pihole-FTL --config webserver.serve_all false
+environment : FTLCONF_webserver_serve_all : false
+advancedOpts ¶
+Additional options passed directly to the web server.
+This can be used to set any option supported by the underlying web server
+(CivetWeb). See the CivetWeb documentation for a list of supported options. The
+options are passed as an array of strings, where each string is an option in the
+form "<option>=<value>" . Be aware that this is an advanced option and that setting
+options here may break the web server if invalid or conflicting with other settings
+applied based on other settings in this file. The config options specified here are
+added to the end of the passed options. This makes it possible to overwrite settings
+set by Pi-hole (only the last values is used when a config option is specified
+multiple times). Use with caution.
+Example: [ "ssl_protocol_version=4", "ssl_cipher_list=AES128:!MD5" ]
+An array of valid CivetWeb options
+[webserver] advancedOpts = [ "ssl_protocol_version=4" , "ssl_cipher_list=AES128:!MD5" ]
+sudo pihole-FTL --config webserver.advancedOpts '[ "ssl_protocol_version=4", "ssl_cipher_list=AES128:!MD5" ]'
+environment : FTLCONF_webserver_advancedOpts : |- ssl_protocol_version=4 ssl_cipher_list=AES128:!MD5
+[webserver.session] ¶
+timeout ¶
+Session timeout in seconds.
+If a session is inactive for more than this time, it will be terminated. Sessions
+are continuously refreshed by the web interface, preventing sessions from timing out
+while the web interface is open.
+This option may also be used to make logins persistent for long times, e.g. 86400
+seconds (24 hours), 604800 seconds (7 days) or 2592000 seconds (30 days). Note that
+the total number of concurrent sessions is limited so setting this value too high
+may result in users being rejected and unable to log in if there are already too
+many sessions active.
+Default value: 1800
+[webserver.session] timeout = 1800
+sudo pihole-FTL --config webserver.session.timeout 1800
+environment : FTLCONF_webserver_session_timeout : 1800
+restore ¶
+Should Pi-hole backup and restore sessions from the database?
+This is useful if you want to keep your sessions after a restart of the web
+interface.
+[webserver.session] restore = true
+sudo pihole-FTL --config webserver.session.restore true
+environment : FTLCONF_webserver_session_restore : true
+[webserver.tls] ¶
+cert ¶
+Path to the TLS (SSL) certificate file.
+All directories along the path must be readable and accessible by the user running
+FTL (typically 'pihole'). This option is only required when at least one of
+webserver.port is TLS. The file must be in PEM format, and it must have both,
+private key and certificate (the *.pem file created must contain a 'CERTIFICATE'
+section as well as a 'RSA PRIVATE KEY' section).
+The *.pem file can be created using cp server.crt server.pem && cat server.key >>
+server.pem if you have these files instead
+A valid TLS certificate file ( *.pem )
+Default value: "/etc/pihole/tls.pem"
+[webserver.tls] cert = "/etc/pihole/tls.pem"
+sudo pihole-FTL --config webserver.tls.cert "/etc/pihole/tls.pem"
+environment : FTLCONF_webserver_tls_cert : '/etc/pihole/tls.pem'
+validity ¶
+Number of days the automatically generated self-signed TLS/SSL certificate will be
+valid for.
+Defaults to 47 days. A minimum of 7 days is enforced.
+Some devices may enforce shorter validity ranges. Note that defining a lower
+validity range may require you to accept the self-signed certificate more often in
+your browser.
+Pi-hole will regenerate certificates it created itself two days prior to expiration.
+If you are using your own certificate, you need to regenerate it yourself. In this
+case, it is advised to set the validity range to 0 days, so that Pi-hole does not
+try to regenerate your certificate. If you set the validity range to 0 days and
+still try to generate a certificate, Pi-hole will set a fixed validity range of
+roughly 30 years for the certificate.
+Default value: 47
+[webserver.tls] validity = 47
+sudo pihole-FTL --config webserver.tls.validity 47
+environment : FTLCONF_webserver_tls_validity : 47
+[webserver.paths] ¶
+webroot ¶
+Server root on the host
+A valid path
+Default value: "/var/www/html"
+[webserver.paths] webroot = "/var/www/html"
+sudo pihole-FTL --config webserver.paths.webroot "/var/www/html"
+environment : FTLCONF_webserver_paths_webroot : '/var/www/html'
+webhome ¶
+Sub-directory of the root containing the web interface
+A valid subpath, both slashes are needed!
+Default value: "/admin/"
+[webserver.paths] webhome = "/admin/"
+sudo pihole-FTL --config webserver.paths.webhome "/admin/"
+environment : FTLCONF_webserver_paths_webhome : '/admin/'
+prefix ¶
+Prefix where the web interface is served
+This is useful when you are using a reverse proxy serving the web interface, e.g.,
+at http:// <ip> /pihole/admin/ instead of http:// <ip> /admin/. In this example, the
+prefix would be "/pihole" . Note that the prefix has to be stripped away by the
+reverse proxy, e.g., for traefik:
+traefik.http.routers.pihole.rule=PathPrefix( /pihole )
+traefik.http.middlewares.piholehttp.stripprefix.prefixes=/pihole
+The prefix should start with a slash. If you don't use a prefix, leave this field
+empty. Setting this field to an incorrect value may result in the web interface not
+being accessible.
+Don't use this setting if you are not using a reverse proxy!
+A valid URL prefix or empty
+[webserver.paths] prefix = ""
+sudo pihole-FTL --config webserver.paths.prefix ""
+environment : FTLCONF_webserver_paths_prefix : ''
+[webserver.interface] ¶
+boxed ¶
+Should the web interface use the boxed layout?
+[webserver.interface] boxed = true
+sudo pihole-FTL --config webserver.interface.boxed true
+environment : FTLCONF_webserver_interface_boxed : true
+theme ¶
+Theme used by the Pi-hole web interface
+"default-auto"
+Pi-hole auto
+"default-light"
+Pi-hole day
+"default-dark"
+Pi-hole midnight
+"default-darker"
+Pi-hole deep-midnight
+"high-contrast"
+High-contrast light
+"high-contrast-dark"
+High-contrast dark
+"lcars"
+Star Trek LCARS
+Default value: "default-auto"
+[webserver.interface] theme = "default-auto"
+sudo pihole-FTL --config webserver.interface.theme "default-auto"
+environment : FTLCONF_webserver_interface_theme : 'default-auto'
+[webserver.api] ¶
+max_sessions ¶
+Number of concurrent sessions allowed for the API . If the number of sessions exceeds
+this value, no new sessions will be allowed until the number of sessions drops due
+to session expiration or logout.
+Note that the number of concurrent sessions is irrelevant if authentication is
+disabled as no sessions are used in this case.
+Default value: 16
+[webserver.api] max_sessions = 16
+sudo pihole-FTL --config webserver.api.max_sessions 16
+environment : FTLCONF_webserver_api_max_sessions : 16
+prettyJSON ¶
+Should FTL prettify the API output (add extra spaces, newlines and indentation)?
+[webserver.api] prettyJSON = false
+sudo pihole-FTL --config webserver.api.prettyJSON false
+environment : FTLCONF_webserver_api_prettyJSON : false
+pwhash ¶
+API password hash
+A valid Pi-hole password hash
+[webserver.api] pwhash = ""
+sudo pihole-FTL --config webserver.api.pwhash ""
+environment : FTLCONF_webserver_api_pwhash : ''
+totp_secret ¶
+Pi-hole 2FA TOTP secret. When set to something different than an empty string, 2FA
+authentication will be enforced for the API and the web interface. This setting is
+write-only, the secret itself cannot be read back, but the CLI will show "********"
+to indicate that 2FA is configured.
+A valid TOTP secret (20 Bytes in Base32 encoding)
+[webserver.api] totp_secret = ""
+sudo pihole-FTL --config webserver.api.totp_secret ""
+environment : FTLCONF_webserver_api_totp_secret : ''
+app_pwhash ¶
+Pi-hole application password.
+After you turn on two-factor ( 2FA ) verification and set up an Authenticator app, you
+may run into issues if you use apps or other services that don't support two-step
+verification. In this case, you can create and use an app password to sign in.
+An app password is a long, randomly generated password that can be used instead of
+your regular password + TOTP token when signing in to the API . The app password can
+be generated through the API and will be shown only once.
+You can revoke the app password at any time. If you revoke the app password, be sure
+to generate a new one and update your app with the new password.
+[webserver.api] app_pwhash = ""
+sudo pihole-FTL --config webserver.api.app_pwhash ""
+environment : FTLCONF_webserver_api_app_pwhash : ''
+app_sudo ¶
+Should application password API sessions be allowed to modify config settings?
+Setting this to true allows third-party applications using the application password
+to modify settings, e.g., the upstream DNS servers, DHCP server settings, or
+changing passwords. This setting should only be enabled if really needed and only if
+you trust the applications using the application password.
+[webserver.api] app_sudo = false
+sudo pihole-FTL --config webserver.api.app_sudo false
+environment : FTLCONF_webserver_api_app_sudo : false
+cli_pw ¶
+Should FTL create a temporary CLI password?
+This password is stored in clear in /etc/pihole and can be used by the CLI (pihole
+... commands) to authenticate against the API . Note that the password is only valid
+for the current session and regenerated on each FTL restart. Sessions initiated with
+this password cannot modify the Pi-hole configuration (change passwords, etc.) for
+security reasons but can still use the API to query data and manage lists.
+[webserver.api] cli_pw = true
+sudo pihole-FTL --config webserver.api.cli_pw true
+environment : FTLCONF_webserver_api_cli_pw : true
+excludeClients ¶
+Array of clients to be excluded from certain API responses ( regex ):
+Query Log (/api/queries)
+Top Clients (/api/stats/top_clients)
+This setting accepts both IP addresses ( IPv4 and IPv6 ) as well as hostnames.
+Note that backslashes "\" need to be escaped, i.e. "\\" in this setting
+Example: [ "^192\\.168\\.2\\.56$", "^fe80::341:[0-9a-f]*$", "^localhost$" ]
+An array of regular expressions describing clients
+[webserver.api] excludeClients = [ "^192 \\ .168 \\ .2 \\ .56$" , "^fe80::341:[0-9a-f]*$" , "^localhost$" ]
+sudo pihole-FTL --config webserver.api.excludeClients '[ "^192\\.168\\.2\\.56$", "^fe80::341:[0-9a-f]*$", "^localhost$" ]'
+environment : FTLCONF_webserver_api_excludeClients : |- ^192\\.168\\.2\\.56$ ^fe80::341:[0-9a-f]*$ ^localhost$
+excludeDomains ¶
+Array of domains to be excluded from certain API responses ( regex ):
+Top Clients (/api/stats/top_domains)
+Example: [ "(^|\\.)\\.google\\.de$", "\\.pi-hole\\.net$" ]
+An array of regular expressions describing domains
+[webserver.api] excludeDomains = [ "(^| \\ .) \\ .google \\ .de$" , " \\ .pi-hole \\ .net$" ]
+sudo pihole-FTL --config webserver.api.excludeDomains '[ "(^|\\.)\\.google\\.de$", "\\.pi-hole\\.net$" ]'
+environment : FTLCONF_webserver_api_excludeDomains : |- (^|\\.)\\.google\\.de$ \\.pi-hole\\.net$
+maxHistory ¶
+How much history should be imported from the database and returned by the API [seconds] ? (max 24hrs = 86400)
+A positive integer value in seconds up to 86400
+[webserver.api] maxHistory = 86400
+sudo pihole-FTL --config webserver.api.maxHistory 86400
+environment : FTLCONF_webserver_api_maxHistory : 86400
+maxClients ¶
+Up to how many clients should be returned in the activity graph endpoint
+(/api/history/clients)?
+This setting can be overwritten at run-time using the parameter N. Setting this to 0
+will always send all clients. Be aware that this may be challenging for the GUI if
+you have many (think > 1.000 clients) in your network
+Default value: 10
+[webserver.api] maxClients = 10
+sudo pihole-FTL --config webserver.api.maxClients 10
+environment : FTLCONF_webserver_api_maxClients : 10
+client_history_global_max ¶
+How should the API compute the most active clients? If set to true, the API will
+return the clients with the most queries globally (within 24 hours). If set to
+false, the API will return the clients with the most queries per time slot
+individually.
+[webserver.api] client_history_global_max = true
+sudo pihole-FTL --config webserver.api.client_history_global_max true
+environment : FTLCONF_webserver_api_client_history_global_max : true
+allow_destructive ¶
+Allow destructive API calls (e.g. restart DNS server, flush logs, ...)
+[webserver.api] allow_destructive = true
+sudo pihole-FTL --config webserver.api.allow_destructive true
+environment : FTLCONF_webserver_api_allow_destructive : true
+[webserver.api.temp] ¶
+limit ¶
+Which upper temperature limit should be used by Pi-hole? Temperatures above this
+limit will be shown as "hot" . The number specified here is in the unit defined below
+A positive floating point value in the unit defined below
+Default value: 60.000000
+[webserver.api.temp] limit = 60.000000
+sudo pihole-FTL --config webserver.api.temp.limit 60 .000000
+environment : FTLCONF_webserver_api_temp_limit : 60.000000
+unit ¶
+Which temperature unit should be used for temperatures processed by FTL ?
+"C"
+Celsius
+"F"
+Fahrenheit
+"K"
+Kelvin
+Default value: "C"
+[webserver.api.temp] unit = "C"
+sudo pihole-FTL --config webserver.api.temp.unit "C"
+environment : FTLCONF_webserver_api_temp_unit : 'C'
+[files] ¶
+database ¶
+The location of FTL 's long-term database
+Any FTL database
+Default value: "/etc/pihole/pihole-FTL.db"
+[files] database = "/etc/pihole/pihole-FTL.db"
+sudo pihole-FTL --config files.database "/etc/pihole/pihole-FTL.db"
+environment : FTLCONF_files_database : '/etc/pihole/pihole-FTL.db'
+tmp_db ¶
+The location of FTL 's short-term temporary database (only used when
+database.forceDisk is true)
+Default value: "/etc/pihole/pihole-tmp.db"
+[files] tmp_db = "/etc/pihole/pihole-tmp.db"
+sudo pihole-FTL --config files.tmp_db "/etc/pihole/pihole-tmp.db"
+environment : FTLCONF_files_tmp_db : '/etc/pihole/pihole-tmp.db'
+gravity ¶
+The location of Pi-hole's gravity database
+Any Pi-hole gravity database
+Default value: "/etc/pihole/gravity.db"
+[files] gravity = "/etc/pihole/gravity.db"
+sudo pihole-FTL --config files.gravity "/etc/pihole/gravity.db"
+environment : FTLCONF_files_gravity : '/etc/pihole/gravity.db'
+gravity_tmp ¶
+A temporary directory where Pi-hole can store files during gravity updates. This
+directory must be writable by the user running gravity (typically pihole).
+Any existing world-writable writable directory
+Default value: "/tmp"
+[files] gravity_tmp = "/tmp"
+sudo pihole-FTL --config files.gravity_tmp "/tmp"
+environment : FTLCONF_files_gravity_tmp : '/tmp'
+macvendor ¶
+The database containing MAC -> Vendor information for the network table
+Any Pi-hole macvendor database
+Default value: "/etc/pihole/macvendor.db"
+[files] macvendor = "/etc/pihole/macvendor.db"
+sudo pihole-FTL --config files.macvendor "/etc/pihole/macvendor.db"
+environment : FTLCONF_files_macvendor : '/etc/pihole/macvendor.db'
+pcap ¶
+An optional file containing a pcap capture of the network traffic. This file is used
+for debugging purposes only. If you don't know what this is, you don't need it.
+Setting this to an empty string disables pcap recording. The file must be writable
+by the user running FTL (typically pihole). Failure to write to this file will
+prevent the DNS resolver from starting. The file is appended to if it already
+exists.
+Any writable pcap file
+[files] pcap = ""
+sudo pihole-FTL --config files.pcap ""
+environment : FTLCONF_files_pcap : ''
+[files.log] ¶
+ftl ¶
+The location of FTL 's log file
+any writable file
+Default value: "/var/log/pihole/FTL.log"
+[files.log] ftl = "/var/log/pihole/FTL.log"
+sudo pihole-FTL --config files.log.ftl "/var/log/pihole/FTL.log"
+environment : FTLCONF_files_log_ftl : '/var/log/pihole/FTL.log'
+dnsmasq ¶
+The log file used by the embedded dnsmasq DNS server
+Any writable file
+Default value: "/var/log/pihole/pihole.log"
+[files.log] dnsmasq = "/var/log/pihole/pihole.log"
+sudo pihole-FTL --config files.log.dnsmasq "/var/log/pihole/pihole.log"
+environment : FTLCONF_files_log_dnsmasq : '/var/log/pihole/pihole.log'
+webserver ¶
+The log file used by the webserver
+Default value: "/var/log/pihole/webserver.log"
+[files.log] webserver = "/var/log/pihole/webserver.log"
+sudo pihole-FTL --config files.log.webserver "/var/log/pihole/webserver.log"
+environment : FTLCONF_files_log_webserver : '/var/log/pihole/webserver.log'
+[misc] ¶
+privacylevel ¶
+Using privacy levels you can specify which level of detail you want to see in your
+Pi-hole statistics. Changing this setting will trigger a restart of FTL
+0
+Don't hide anything, all statistics are available.
+1
+Hide domains. This setting disables Top Domains and Top Ads
+2
+Hide domains and clients. This setting disables Top Domains, Top Ads, Top
+Clients and Clients over time.
+3
+Anonymize everything. This setting disables almost any statistics and query
+analysis. There will be no long-term database logging and no Query Log. You
+will also lose most regex features.
+Default value: 0
+[misc] privacylevel = 0
+sudo pihole-FTL --config misc.privacylevel 0
+environment : FTLCONF_misc_privacylevel : 0
+delay_startup ¶
+During startup, in some configurations, network interfaces appear only late during
+system startup and are not ready when FTL tries to bind to them. Therefore, you may
+want FTL to wait a given amount of time before trying to start the DNS resolver.
+This setting takes any integer value between 0 and 300 seconds. To prevent delayed
+startup while the system is already running and FTL is restarted, the delay only
+takes place within the first 180 seconds (hard-coded) after booting.
+A positive integer value between 0 and 300
+[misc] delay_startup = 0
+sudo pihole-FTL --config misc.delay_startup 0
+environment : FTLCONF_misc_delay_startup : 0
+nice ¶
+Set niceness of pihole- FTL . Defaults to -10 and can be disabled altogether by setting
+a value of -999. The nice value is an attribute that can be used to influence the
+CPU scheduler to favor or disfavor a process in scheduling decisions.
+The range of the nice value varies across UNIX systems. On modern Linux, the range
+is -20 (high priority = not very nice to other processes) to +19 (low priority).
+A signed integer value between -20 and 19, or -999 to disable niceness
+Default value: -10
+[misc] nice = -10
+sudo pihole-FTL --config misc.nice -10
+environment : FTLCONF_misc_nice : -10
+addr2line ¶
+Should FTL translate its own stack addresses into code lines during the bug
+backtrace? This improves the analysis of crashed significantly. It is recommended to
+leave the option enabled.
+This option should only be disabled when addr2line is known to not be working
+correctly on the machine because, in this case, the malfunctioning addr2line can
+prevent from generating any backtrace at all.
+[misc] addr2line = true
+sudo pihole-FTL --config misc.addr2line true
+environment : FTLCONF_misc_addr2line : true
+etc_dnsmasq_d ¶
+Should FTL load additional dnsmasq configuration files from /etc/dnsmasq.d/?
+Warning: This is an advanced setting and should only be used with care.
+Incorrectly formatted or config files specifying options which can only be defined
+once can result in conflicts with the automatic configuration of Pi-hole (see
+/etc/pihole/dnsmasq.conf) and may stop DNS resolution from working.
+[misc] etc_dnsmasq_d = false
+sudo pihole-FTL --config misc.etc_dnsmasq_d false
+environment : FTLCONF_misc_etc_dnsmasq_d : false
+dnsmasq_lines ¶
+Additional lines to inject into the generated dnsmasq configuration.
+Warning: This is an advanced setting and should only be used with care. Incorrectly
+formatted or duplicated lines as well as lines conflicting with the automatic
+configuration of Pi-hole can break the embedded dnsmasq and will stop DNS resolution
+from working.
+Use this option with extra care.
+Example: [ "address=/example.com/192.168.0.1", "address=/example.org/192.168.0.2",
+"address=/example.net/192.168.0.3" ]
+Array of valid dnsmasq config line options
+[misc] dnsmasq_lines = [ "address=/example.com/192.168.0.1" , "address=/example.org/192.168.0.2" , "address=/example.net/192.168.0.3" ]
+sudo pihole-FTL --config misc.dnsmasq_lines '["address=/example.com/192.168.0.1","address=/example.org/192.168.0.2","address=/example.net/192.168.0.3"]'
+environment : FTLCONF_misc_dnsmasq_lines : |- address=/example.com/192.168.0.1 address=/example.org/192.168.0.2 address=/example.net/192.168.0.3
+extraLogging ¶
+Log additional information about queries and replies to pihole.log
+When this setting is enabled, the log has extra information at the start of each
+line. This consists of a serial number which ties together the log lines associated
+with an individual query, and the IP address of the requestor. This setting is only
+effective if dns.queryLogging is enabled, too. This option is only useful for
+debugging and is not recommended for normal use.
+[misc] extraLogging = false
+sudo pihole-FTL --config misc.extraLogging false
+environment : FTLCONF_misc_extraLogging : false
+readOnly ¶
+Put configuration into read-only mode. This will prevent any changes to the
+configuration file via the API or CLI . This setting useful when a configuration is
+to be forced/modified by some third-party application (like infrastructure-as-code
+providers) and should not be changed by any means.
+[misc] readOnly = false
+sudo pihole-FTL --config misc.readOnly false
+environment : FTLCONF_misc_readOnly : false
+normalizeCPU ¶
+Should FTL normalize reported CPU usage?
+On multi-core systems, a high workload can lead to CPU usage numbers exceeding 100%
+(e.g., 200% on a quad-core system if two out of four cores are fully utilized). This
+may look alarming at first glance even though the system is not actually overloaded.
+Enabling this setting will divide the CPU usage by the number of cores, leading to
+more intuitive numbers (e.g., 50% for the same load on a quad-core system).
+Note that this setting only affects how CPU usage is reported , it does not change
+the actual CPU usage.
+[misc] normalizeCPU = true
+sudo pihole-FTL --config misc.normalizeCPU true
+environment : FTLCONF_misc_normalizeCPU : true
+hide_dnsmasq_warn ¶
+Should FTL hide warnings coming from dnsmasq?
+By default, FTL reports warnings coming from the embedded dnsmasq DNS server to the
+FTL log file. These warnings can be useful to identify misconfigurations or problems
+with the DNS server. However, some warnings may be harmless and can be ignored in
+certain setups. Enabling this setting will hide all dnsmasq warnings.
+[misc] hide_dnsmasq_warn = false
+sudo pihole-FTL --config misc.hide_dnsmasq_warn false
+environment : FTLCONF_misc_hide_dnsmasq_warn : false
+hide_connection_error ¶
+Should FTL hide network connection errors?
+By default, FTL reports network connection errors (e.g., Connection prematurely
+closed by remote server) to the FTL log file. These warnings can be useful to
+identify intermittent network problems or general problem with upstream servers.
+However, in some setups, these warnings may be expected (e.g. due to low-quality
+Internet connectivity) and cannot be fixed. Enabling this setting will hide all
+connection warnings.
+[misc] hide_connection_error = false
+sudo pihole-FTL --config misc.hide_connection_error false
+environment : FTLCONF_misc_hide_connection_error : false
+[misc.check] ¶
+load ¶
+Pi-hole is very lightweight on resources. Nevertheless, this does not mean that you
+should run Pi-hole on a server that is otherwise extremely busy as queuing on the
+system can lead to unnecessary delays in DNS operation as the system becomes less
+and less usable as the system load increases because all resources are permanently
+in use. To account for this, FTL regularly checks the system load. To bring this to
+your attention, FTL warns about excessive load when the 15 minute system load
+average exceeds the number of cores.
+This check can be disabled with this setting.
+[misc.check] load = true
+sudo pihole-FTL --config misc.check.load true
+environment : FTLCONF_misc_check_load : true
+shmem ¶
+FTL stores history in shared memory to allow inter-process communication with forked
+dedicated TCP workers. If FTL runs out of memory, it cannot continue to work as
+queries cannot be analyzed any further. Hence, FTL checks if enough shared memory is
+available on your system and warns you if this is not the case.
+By default, FTL warns if the shared-memory usage exceeds 90%. You can set any
+integer limit between 0 to 100 (interpreted as percentages) where 0 means that
+checking of shared-memory usage is disabled.
+A positive integer value between 0 and 100
+Default value: 90
+[misc.check] shmem = 90
+sudo pihole-FTL --config misc.check.shmem 90
+environment : FTLCONF_misc_check_shmem : 90
+disk ¶
+FTL stores its long-term history in a database file on disk. Furthermore, FTL stores
+log files. By default, FTL warns if usage of the disk holding any crucial file
+exceeds 90%. You can set any integer limit between 0 to 100 (interpreted as
+percentages) where 0 means that checking of disk usage is disabled.
+[misc.check] disk = 90
+sudo pihole-FTL --config misc.check.disk 90
+environment : FTLCONF_misc_check_disk : 90
+[debug] ¶
+Print debugging information about database actions. This prints performed SQL
+statements as well as some general information such as the time it took to store the
+queries and how many have been saved to the database.
+[debug] database = false
+sudo pihole-FTL --config debug.database false
+environment : FTLCONF_debug_database : false
+networking ¶
+Prints a list of the detected interfaces on the startup of pihole- FTL . Also, prints
+whether these interfaces are IPv4 or IPv6 interfaces.
+[debug] networking = false
+sudo pihole-FTL --config debug.networking false
+environment : FTLCONF_debug_networking : false
+locks ¶
+Print information about shared memory locks. Messages will be generated when waiting,
+obtaining, and releasing a lock.
+[debug] locks = false
+sudo pihole-FTL --config debug.locks false
+environment : FTLCONF_debug_locks : false
+queries ¶
+Print extensive query information (domains, types, replies, etc.). This has always
+been part of the legacy debug mode of pihole- FTL .
+[debug] queries = false
+sudo pihole-FTL --config debug.queries false
+environment : FTLCONF_debug_queries : false
+flags ¶
+Print flags of queries received by the DNS hooks. Only effective when DEBUG_QUERIES
+is enabled as well.
+[debug] flags = false
+sudo pihole-FTL --config debug.flags false
+environment : FTLCONF_debug_flags : false
+Print information about shared memory buffers. Messages are either about creating or
+enlarging shmem objects or string injections.
+[debug] shmem = false
+sudo pihole-FTL --config debug.shmem false
+environment : FTLCONF_debug_shmem : false
+gc ¶
+Print information about garbage collection (GC): What is to be removed, how many have
+been removed and how long did GC take.
+[debug] gc = false
+sudo pihole-FTL --config debug.gc false
+environment : FTLCONF_debug_gc : false
+arp ¶
+Print information about ARP table processing: How long did parsing take, whether read
+MAC addresses are valid, and if the macvendor.db file exists.
+[debug] arp = false
+sudo pihole-FTL --config debug.arp false
+environment : FTLCONF_debug_arp : false
+regex ¶
+Controls if FTLDNS should print extended details about regex matching into FTL .log.
+[debug] regex = false
+sudo pihole-FTL --config debug.regex false
+environment : FTLCONF_debug_regex : false
+api ¶
+Print extra debugging information concerning API calls. This includes the request,
+the request parameters, and the internal details about how the algorithms decide
+which data to present and in what form. This very verbose output should only be used
+when debugging specific API issues and can be helpful, e.g., when a client cannot
+connect due to an obscure API error. Furthermore, this setting enables logging of
+all API requests (auth log) and details about user authentication attempts.
+[debug] api = false
+sudo pihole-FTL --config debug.api false
+environment : FTLCONF_debug_api : false
+tls ¶
+Print extra debugging information about TLS connections. This includes the TLS
+version, the cipher suite, the certificate chain and much more. This very verbose
+output should only be used when debugging specific TLS issues and can be helpful,
+e.g., when a client cannot connect due to an obscure TLS error as modern browsers do
+not provide much information about the underlying TLS connection and most often give
+only very generic error messages without much/any underlying technical information.
+[debug] tls = false
+sudo pihole-FTL --config debug.tls false
+environment : FTLCONF_debug_tls : false
+overtime ¶
+Print information about overTime memory operations, such as initializing or moving
+overTime slots.
+[debug] overtime = false
+sudo pihole-FTL --config debug.overtime false
+environment : FTLCONF_debug_overtime : false
+status ¶
+Print information about status changes for individual queries. This can be useful to
+identify unexpected unknown queries.
+[debug] status = false
+sudo pihole-FTL --config debug.status false
+environment : FTLCONF_debug_status : false
+caps ¶
+Print information about capabilities granted to the pihole- FTL process. The current
+capabilities are printed on receipt of SIGHUP, i.e., the current set of capabilities
+can be queried without restarting pihole- FTL (by setting DEBUG_CAPS=true and
+thereafter sending killall -HUP pihole- FTL ).
+[debug] caps = false
+sudo pihole-FTL --config debug.caps false
+environment : FTLCONF_debug_caps : false
+Print information about DNSSEC activity
+[debug] dnssec = false
+sudo pihole-FTL --config debug.dnssec false
+environment : FTLCONF_debug_dnssec : false
+vectors ¶
+FTL uses dynamically allocated vectors for various tasks. This config option enables
+extensive debugging information such as information about allocation, referencing,
+deletion, and appending.
+[debug] vectors = false
+sudo pihole-FTL --config debug.vectors false
+environment : FTLCONF_debug_vectors : false
+resolver ¶
+Extensive information about hostname resolution like which DNS servers are used in
+the first and second hostname resolving tries (only affecting internally generated
+PTR queries).
+[debug] resolver = false
+sudo pihole-FTL --config debug.resolver false
+environment : FTLCONF_debug_resolver : false
+edns0 ¶
+Print debugging information about received EDNS(0) data.
+[debug] edns0 = false
+sudo pihole-FTL --config debug.edns0 false
+environment : FTLCONF_debug_edns0 : false
+clients ¶
+Log various important client events such as change of interface (e.g., client
+switching from WiFi to wired or VPN connection), as well as extensive reporting
+about how clients were assigned to its groups.
+[debug] clients = false
+sudo pihole-FTL --config debug.clients false
+environment : FTLCONF_debug_clients : false
+aliasclients ¶
+Log information related to alias-client processing.
+[debug] aliasclients = false
+sudo pihole-FTL --config debug.aliasclients false
+environment : FTLCONF_debug_aliasclients : false
+events ¶
+Log information regarding FTL 's embedded event handling queue.
+[debug] events = false
+sudo pihole-FTL --config debug.events false
+environment : FTLCONF_debug_events : false
+helper ¶
+Log information about script helpers, e.g., due to dhcp-script.
+[debug] helper = false
+sudo pihole-FTL --config debug.helper false
+environment : FTLCONF_debug_helper : false
+config ¶
+Print config parsing details
+[debug] config = false
+sudo pihole-FTL --config debug.config false
+environment : FTLCONF_debug_config : false
+inotify ¶
+Debug monitoring of /etc/pihole filesystem events
+[debug] inotify = false
+sudo pihole-FTL --config debug.inotify false
+environment : FTLCONF_debug_inotify : false
+Debug monitoring of the webserver (CivetWeb) events
+[debug] webserver = false
+sudo pihole-FTL --config debug.webserver false
+environment : FTLCONF_debug_webserver : false
+extra ¶
+Temporary flag that may print additional information. This debug flag is meant to be
+used whenever needed for temporary investigations. The logged content may change
+without further notice at any time.
+[debug] extra = false
+sudo pihole-FTL --config debug.extra false
+environment : FTLCONF_debug_extra : false
+reserved ¶
+Reserved debug flag
+[debug] reserved = false
+sudo pihole-FTL --config debug.reserved false
+environment : FTLCONF_debug_reserved : false
+ntp ¶
+Print information about NTP synchronization
+[debug] ntp = false
+sudo pihole-FTL --config debug.ntp false
+environment : FTLCONF_debug_ntp : false
+netlink ¶
+Print information about netlink communication and parsing
+[debug] netlink = false
+sudo pihole-FTL --config debug.netlink false
+environment : FTLCONF_debug_netlink : false
+timing ¶
+Print timing information from various parts of FTL
+[debug] timing = false
+sudo pihole-FTL --config debug.timing false
+environment : FTLCONF_debug_timing : false
+all ¶
+Set all debug flags at once. This is a convenience option to enable all debug flags
+at once. Note that this option is not persistent, setting it to true will enable all
+remaining debug flags but unsetting it will disable all debug flags.
+[debug] all = false
+sudo pihole-FTL --config debug.all false
+environment : FTLCONF_debug_all : false
+April 24, 2026
+Back to top

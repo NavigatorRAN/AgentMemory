@@ -1,0 +1,84 @@
+# ChatGPT Subscription | liteLLM
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.litellm.ai/docs/providers/chatgpt
+- Final URL: https://docs.litellm.ai/docs/providers/chatgpt
+- Canonical URL: https://docs.litellm.ai/docs/providers/chatgpt
+- Fetched at: 2026-06-23T14:27:25Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Use ChatGPT Pro/Max subscription models through LiteLLM with OAuth device flow authentication.
+
+## Extracted Text
+
+Skip to main content
+On this page
+Copy as Markdown
+Use ChatGPT Pro/Max subscription models through LiteLLM with OAuth device flow authentication.
+Property Details Description ChatGPT subscription access (Codex + GPT-5.3/5.4 family) via ChatGPT backend API Provider Route on LiteLLM chatgpt/ Supported Endpoints /responses , /chat/completions (bridged to Responses for supported models) API Reference https://chatgpt.com
+ChatGPT subscription access is native to the Responses API. Chat Completions requests are bridged to Responses for supported models (for example chatgpt/gpt-5.4 ).
+Notes:
+The ChatGPT subscription backend rejects token limit fields ( max_tokens , max_output_tokens , max_completion_tokens ) and metadata . LiteLLM strips these fields for this provider.
+/v1/chat/completions honors stream . When stream is false (default), LiteLLM aggregates the Responses stream into a single JSON response.
+Authentication ​
+ChatGPT subscription access uses an OAuth device code flow:
+LiteLLM prints a device code and verification URL
+Open the URL, sign in, and enter the code
+Tokens are stored locally for reuse
+Usage - LiteLLM Python SDK ​
+Responses (recommended for Codex models) ​
+ChatGPT Responses
+import litellm
+response = litellm . responses (
+model = "chatgpt/gpt-5.3-codex" ,
+input = "Write a Python hello world"
+)
+print ( response )
+Chat Completions (bridged to Responses) ​
+ChatGPT Chat Completions
+response = litellm . completion (
+model = "chatgpt/gpt-5.4" ,
+messages = [ { "role" : "user" , "content" : "Write a Python hello world" } ]
+Usage - LiteLLM Proxy ​
+config.yaml
+model_list :
+- model_name : chatgpt/gpt - 5.4
+model_info :
+mode : responses
+litellm_params :
+model : chatgpt/gpt - 5.4
+- model_name : chatgpt/gpt - 5.4 - pro
+model : chatgpt/gpt - 5.4 - pro
+- model_name : chatgpt/gpt - 5.3 - codex
+model : chatgpt/gpt - 5.3 - codex
+- model_name : chatgpt/gpt - 5.3 - codex - spark
+model : chatgpt/gpt - 5.3 - codex - spark
+- model_name : chatgpt/gpt - 5.3 - instant
+model : chatgpt/gpt - 5.3 - instant
+- model_name : chatgpt/gpt - 5.3 - chat - latest
+model : chatgpt/gpt - 5.3 - chat - latest
+Start LiteLLM Proxy
+litellm --config config.yaml
+Configuration ​
+Environment Variables ​
+CHATGPT_TOKEN_DIR : Custom token storage directory
+CHATGPT_AUTH_FILE : Auth file name (default: auth.json )
+CHATGPT_API_BASE : Override API base (default: https://chatgpt.com/backend-api/codex )
+OPENAI_CHATGPT_API_BASE : Alias for CHATGPT_API_BASE
+CHATGPT_ORIGINATOR : Override the originator header value
+CHATGPT_USER_AGENT : Override the User-Agent header value
+CHATGPT_USER_AGENT_SUFFIX : Optional suffix appended to the User-Agent header
+Authentication
+Usage - LiteLLM Python SDK
+Responses (recommended for Codex models)
+Chat Completions (bridged to Responses)
+Usage - LiteLLM Proxy
+Configuration
+Environment Variables
+🚅
+LiteLLM Enterprise
+SSO/SAML, audit logs, spend tracking, multi-team management, and guardrails — built for production.
+Learn more →

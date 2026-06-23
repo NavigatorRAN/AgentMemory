@@ -1,0 +1,93 @@
+# Prerequisites - Pi-hole documentation
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.pi-hole.net/main/prerequisites
+- Final URL: https://docs.pi-hole.net/main/prerequisites/
+- Canonical URL: https://docs.pi-hole.net/main/prerequisites/
+- Fetched at: 2026-06-23T13:43:35Z
+- Content type: text/html; charset=UTF-8
+
+## Description
+
+Operating system and network requirements
+
+## Extracted Text
+
+Skip to content
+Prerequisites
+Hardware ¶
+Pi-hole is very lightweight and does not require much processing power
+Min. 2GB free space, 4GB recommended
+512MB RAM
+Info
+A Pi-hole branded kit, including everything you need to get started, can be purchased from The Pi Hut, here .
+Despite the name, you are not limited to running Pi-hole on a Raspberry Pi.
+Any hardware that runs one of the supported operating systems will do!
+Software ¶
+Pi-hole is supported on distributions utilizing systemd or sysvinit !
+Supported Operating Systems ¶
+The following operating systems are officially supported:
+Alpine
+Armbian OS
+Debian
+CentOS Stream
+Fedora
+Raspberry Pi OS (formerly Raspbian)
+Ubuntu
+Pi-hole only supports actively maintained versions of these systems.
+Pi-hole may be able to install and run on variants of the above, but we cannot test all of them.
+It's possible that the installation may still fail due to an unsupported configuration or specific OS version.
+Also, if you are using an operating system not on this list Pi-hole may not work.
+Binary architecture ¶
+The binary pihole-FTL , which is the resolver at the heart of Pi-hole, is pre-built for the following architectures:
+x86_64 (amd64 and i686)
+armv6
+armv7
+armv8 (aarch64)
+riscv64
+For other architectures, you will need to compile FTL from source yourself.
+IP Addressing ¶
+Pi-hole needs a static IP address to properly function (a DHCP reservation is just fine).
+Ports ¶
+Service Port Protocol Notes pihole- FTL 53 ( DNS ) TCP / UDP If you happen to have another DNS server running, such as BIND, you will need to turn it off in order for Pi-hole to respond to DNS queries. pihole- FTL 67 ( DHCP ) IPv4 UDP The DHCP server is an optional feature that requires additional ports. pihole- FTL 547 ( DHCPv6 ) IPv6 UDP The DHCP server is an optional feature that requires additional ports. pihole- FTL 80 ( HTTP )
+443 ( HTTPS ) TCP If you have another webserver already listening on port 80 / 443 , then pihole-FTL will attempt to bind to 8080 / 8443 instead. If neither of these ports are available, pihole-FTL 's webserver will be unavailable until ports are configured manually (see configuration option webserver.port ) pihole- FTL 123 ( NTP ) UDP The NTP server is an optional feature that requires an additional port.
+The use of pihole- FTL on ports 67 or 547 is optional, but required if you use the DHCP functions of Pi-hole.
+The use of port 123 is required when using pihole- FTL as NTP -Server.
+Firewalls ¶
+Below are some examples of firewall rules that will need to be set on your Pi-hole server in order to use the functions available. These are only shown as guides, the actual commands used will be found with your distribution's documentation.
+Because Pi-hole was designed to work inside a local network, the following rules will block the traffic from the Internet for security reasons. 192.168.0.0/16 is the most common local network IP range for home users but it can be different in your case, for example other common local network IPs are 10.0.0.0/8 and 172.16.0.0/12 .
+Check your local network settings before applying these rules.
+IPTables ¶
+IPTables uses two sets of tables. One set is for IPv4 chains, and the second is for IPv6 chains. If only IPv4 blocking is used for the Pi-hole installation, only apply the rules for IP4Tables. Full Stack ( IPv4 and IPv6 ) require both sets of rules to be applied. Note: These examples insert the rules at the front of the chain. Please see your distribution's documentation for the exact proper command to use.
+IPTables ( IPv4 )
+iptables -I INPUT 1 -s 192 .168.0.0/16 -p tcp -m tcp --dport 80 -j ACCEPT
+iptables -I INPUT 1 -s 192 .168.0.0/16 -p tcp -m tcp --dport 443 -j ACCEPT
+iptables -I INPUT 1 -s 127 .0.0.0/8 -p tcp -m tcp --dport 53 -j ACCEPT
+iptables -I INPUT 1 -s 127 .0.0.0/8 -p udp -m udp --dport 53 -j ACCEPT
+iptables -I INPUT 1 -s 192 .168.0.0/16 -p tcp -m tcp --dport 53 -j ACCEPT
+iptables -I INPUT 1 -s 192 .168.0.0/16 -p udp -m udp --dport 53 -j ACCEPT
+iptables -I INPUT 1 -p udp --dport 67 :68 --sport 67 :68 -j ACCEPT
+iptables -I INPUT 1 -p udp --dport 123 -j ACCEPT
+iptables -I INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+IP6Tables ( IPv6 )
+ip6tables -I INPUT -p udp -m udp --sport 546 :547 --dport 546 :547 -j ACCEPT
+ip6tables -I INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+FirewallD ¶
+Using the --permanent argument will ensure the firewall rules persist reboots. If only IPv4 blocking is used for the Pi-hole installation, the dhcpv6 service can be removed from the commands below. Finally --reload to have the new firewall configuration take effect immediately.
+firewall-cmd --permanent --add-service = http --add-service = https --add-service = dns --add-service = dhcp --add-service = dhcpv6 --add-service = ntp
+firewall-cmd --reload
+ufw ¶
+ufw stores all rules persistently, so you just need to execute the commands below.
+IPv4 :
+ufw allow 80 /tcp
+ufw allow 443 /tcp
+ufw allow 53 /tcp
+ufw allow 53 /udp
+ufw allow 67 /tcp
+ufw allow 67 /udp
+ufw allow 123 /udp
+IPv6 (include above IPv4 rules):
+ufw allow 546 :547/udp
+November 21, 2025
+Back to top

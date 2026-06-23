@@ -1,0 +1,1160 @@
+{
+  "completed": [
+    "https://docs.paperclip.ing",
+    "https://docs.paperclip.ing/administration/cli-auth",
+    "https://docs.paperclip.ing/administration/company",
+    "https://docs.paperclip.ing/administration/plugins",
+    "https://docs.paperclip.ing/administration/settings",
+    "https://docs.paperclip.ing/administration/trust-and-low-trust-review",
+    "https://docs.paperclip.ing/guides/day-to-day/approvals",
+    "https://docs.paperclip.ing/guides/day-to-day/artifacts",
+    "https://docs.paperclip.ing/guides/day-to-day/blocked-inbox",
+    "https://docs.paperclip.ing/guides/day-to-day/costs",
+    "https://docs.paperclip.ing/guides/day-to-day/dashboard",
+    "https://docs.paperclip.ing/guides/day-to-day/feedback-voting",
+    "https://docs.paperclip.ing/guides/getting-started/five-minute-path",
+    "https://docs.paperclip.ing/guides/getting-started/installation",
+    "https://docs.paperclip.ing/guides/getting-started/watching-agents-work",
+    "https://docs.paperclip.ing/guides/getting-started/your-first-agent",
+    "https://docs.paperclip.ing/guides/getting-started/your-first-company",
+    "https://docs.paperclip.ing/guides/org/adapters",
+    "https://docs.paperclip.ing/guides/org/agent-adapters",
+    "https://docs.paperclip.ing/guides/org/agents",
+    "https://docs.paperclip.ing/guides/org/delegation",
+    "https://docs.paperclip.ing/guides/org/org-structure",
+    "https://docs.paperclip.ing/guides/org/skills",
+    "https://docs.paperclip.ing/guides/org/team-catalog",
+    "https://docs.paperclip.ing/guides/power/execution-policy",
+    "https://docs.paperclip.ing/guides/power/export-import",
+    "https://docs.paperclip.ing/guides/power/terminal-setup",
+    "https://docs.paperclip.ing/guides/projects-workflow/goals",
+    "https://docs.paperclip.ing/guides/projects-workflow/projects",
+    "https://docs.paperclip.ing/guides/projects-workflow/routines",
+    "https://docs.paperclip.ing/guides/projects-workflow/workspaces",
+    "https://docs.paperclip.ing/guides/welcome/glossary",
+    "https://docs.paperclip.ing/guides/welcome/key-concepts",
+    "https://docs.paperclip.ing/guides/welcome/what-is-paperclip",
+    "https://docs.paperclip.ing/how-to/add-mcp-server-to-agent",
+    "https://docs.paperclip.ing/how-to/back-up-and-restore-a-company",
+    "https://docs.paperclip.ing/how-to/bring-your-own-agent",
+    "https://docs.paperclip.ing/how-to/connect-agent-to-github",
+    "https://docs.paperclip.ing/how-to/connect-aws-secrets-vault",
+    "https://docs.paperclip.ing/how-to/create-a-daily-routine",
+    "https://docs.paperclip.ing/how-to/debug-stuck-heartbeat",
+    "https://docs.paperclip.ing/how-to/deploy-to-vps-or-fly",
+    "https://docs.paperclip.ing/how-to/develop-a-plugin-locally",
+    "https://docs.paperclip.ing/how-to/handle-board-approvals-for-hires",
+    "https://docs.paperclip.ing/how-to/require-board-approval-before-spend",
+    "https://docs.paperclip.ing/how-to/rotate-provider-api-key",
+    "https://docs.paperclip.ing/how-to/set-monthly-budget",
+    "https://docs.paperclip.ing/how-to/sync-to-cloud-upstream",
+    "https://docs.paperclip.ing/how-to/update-paperclip",
+    "https://docs.paperclip.ing/how-to/wire-slack-discord-notifications",
+    "https://docs.paperclip.ing/how-to/write-a-company-skill",
+    "https://docs.paperclip.ing/reference/adapters/acpx-local",
+    "https://docs.paperclip.ing/reference/adapters/adapter-ui-parser",
+    "https://docs.paperclip.ing/reference/adapters/claude-local",
+    "https://docs.paperclip.ing/reference/adapters/codex-local",
+    "https://docs.paperclip.ing/reference/adapters/creating-an-adapter",
+    "https://docs.paperclip.ing/reference/adapters/cursor-cloud",
+    "https://docs.paperclip.ing/reference/adapters/cursor-local",
+    "https://docs.paperclip.ing/reference/adapters/external-adapters",
+    "https://docs.paperclip.ing/reference/adapters/gemini-local",
+    "https://docs.paperclip.ing/reference/adapters/grok-local",
+    "https://docs.paperclip.ing/reference/adapters/hermes-local",
+    "https://docs.paperclip.ing/reference/adapters/http",
+    "https://docs.paperclip.ing/reference/adapters/modal",
+    "https://docs.paperclip.ing/reference/adapters/openclaw-gateway",
+    "https://docs.paperclip.ing/reference/adapters/opencode-local",
+    "https://docs.paperclip.ing/reference/adapters/overview",
+    "https://docs.paperclip.ing/reference/adapters/pi-local",
+    "https://docs.paperclip.ing/reference/adapters/process",
+    "https://docs.paperclip.ing/reference/adapters/sandbox-providers",
+    "https://docs.paperclip.ing/reference/api/adapters",
+    "https://docs.paperclip.ing/reference/api/agents",
+    "https://docs.paperclip.ing/reference/api/approvals",
+    "https://docs.paperclip.ing/reference/api/authentication",
+    "https://docs.paperclip.ing/reference/api/companies",
+    "https://docs.paperclip.ing/reference/api/costs",
+    "https://docs.paperclip.ing/reference/api/dashboard",
+    "https://docs.paperclip.ing/reference/api/goals-and-projects",
+    "https://docs.paperclip.ing/reference/api/instance-admin",
+    "https://docs.paperclip.ing/reference/api/overview",
+    "https://docs.paperclip.ing/reference/api/plugins",
+    "https://docs.paperclip.ing/reference/api/resource-memberships",
+    "https://docs.paperclip.ing/reference/api/routines",
+    "https://docs.paperclip.ing/reference/api/secrets",
+    "https://docs.paperclip.ing/reference/api/teams-catalog",
+    "https://docs.paperclip.ing/reference/cli/access",
+    "https://docs.paperclip.ing/reference/cli/adapter",
+    "https://docs.paperclip.ing/reference/cli/agent",
+    "https://docs.paperclip.ing/reference/cli/approval",
+    "https://docs.paperclip.ing/reference/cli/asset",
+    "https://docs.paperclip.ing/reference/cli/authentication",
+    "https://docs.paperclip.ing/reference/cli/cloud",
+    "https://docs.paperclip.ing/reference/cli/common-options",
+    "https://docs.paperclip.ing/reference/cli/company",
+    "https://docs.paperclip.ing/reference/cli/connect",
+    "https://docs.paperclip.ing/reference/cli/cost",
+    "https://docs.paperclip.ing/reference/cli/dashboard",
+    "https://docs.paperclip.ing/reference/cli/dev-environments",
+    "https://docs.paperclip.ing/reference/cli/feedback",
+    "https://docs.paperclip.ing/reference/cli/goal",
+    "https://docs.paperclip.ing/reference/cli/installation",
+    "https://docs.paperclip.ing/reference/cli/issue",
+    "https://docs.paperclip.ing/reference/cli/output-and-scripting",
+    "https://docs.paperclip.ing/reference/cli/overview",
+    "https://docs.paperclip.ing/reference/cli/plugin",
+    "https://docs.paperclip.ing/reference/cli/project",
+    "https://docs.paperclip.ing/reference/cli/prompt",
+    "https://docs.paperclip.ing/reference/cli/routine",
+    "https://docs.paperclip.ing/reference/cli/run",
+    "https://docs.paperclip.ing/reference/cli/secrets",
+    "https://docs.paperclip.ing/reference/cli/setup-commands",
+    "https://docs.paperclip.ing/reference/cli/skills",
+    "https://docs.paperclip.ing/reference/cli/teams",
+    "https://docs.paperclip.ing/reference/cli/token",
+    "https://docs.paperclip.ing/reference/cli/workspace",
+    "https://docs.paperclip.ing/reference/deploy/database",
+    "https://docs.paperclip.ing/reference/deploy/deployment-modes",
+    "https://docs.paperclip.ing/reference/deploy/docker",
+    "https://docs.paperclip.ing/reference/deploy/environment-variables",
+    "https://docs.paperclip.ing/reference/deploy/local-development",
+    "https://docs.paperclip.ing/reference/deploy/overview",
+    "https://docs.paperclip.ing/reference/deploy/secrets",
+    "https://docs.paperclip.ing/reference/deploy/storage",
+    "https://docs.paperclip.ing/reference/deploy/tailscale-private-access",
+    "https://docs.paperclip.ing/reference/plugins/llm-wiki",
+    "https://docs.paperclip.ing/reference/plugins/sdk",
+    "https://docs.paperclip.ing/reference/plugins/workspace-diff",
+    "https://docs.paperclip.ing/reference/skills"
+  ],
+  "failed": {},
+  "records": {
+    "https://docs.paperclip.ing": {
+      "canonical_url": "",
+      "fetched_at": "2026-06-23T13:35:53Z",
+      "final_url": "https://docs.paperclip.ing",
+      "rag_job_id": 917,
+      "rag_path": ".web-pages-paperclip-rag/web-page-paperclip-docs-paperclip-ing-4767c5c079.md",
+      "title": "Paperclip"
+    },
+    "https://docs.paperclip.ing/administration/cli-auth": {
+      "canonical_url": "https://docs.paperclip.ing/administration/cli-auth",
+      "fetched_at": "2026-06-23T13:37:34Z",
+      "final_url": "https://docs.paperclip.ing/administration/cli-auth/",
+      "rag_job_id": 918,
+      "rag_path": ".web-pages-paperclip-rag/web-page-cli-auth-board-claim-paperclip-docs-docs-paperclip-ing-7f05b0aeaf.md",
+      "title": "CLI Auth & Board Claim | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/administration/company": {
+      "canonical_url": "https://docs.paperclip.ing/administration/company",
+      "fetched_at": "2026-06-23T13:37:35Z",
+      "final_url": "https://docs.paperclip.ing/administration/company/",
+      "rag_job_id": 919,
+      "rag_path": ".web-pages-paperclip-rag/web-page-company-administration-paperclip-docs-docs-paperclip-ing-e113a58fc4.md",
+      "title": "Company Administration | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/administration/plugins": {
+      "canonical_url": "https://docs.paperclip.ing/administration/plugins",
+      "fetched_at": "2026-06-23T13:37:36Z",
+      "final_url": "https://docs.paperclip.ing/administration/plugins/",
+      "rag_job_id": 920,
+      "rag_path": ".web-pages-paperclip-rag/web-page-plugins-paperclip-docs-docs-paperclip-ing-4dd5d6ced7.md",
+      "title": "Plugins | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/administration/settings": {
+      "canonical_url": "https://docs.paperclip.ing/administration/settings",
+      "fetched_at": "2026-06-23T13:37:38Z",
+      "final_url": "https://docs.paperclip.ing/administration/settings/",
+      "rag_job_id": 921,
+      "rag_path": ".web-pages-paperclip-rag/web-page-settings-paperclip-docs-docs-paperclip-ing-26e62281a3.md",
+      "title": "Settings | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/administration/trust-and-low-trust-review": {
+      "canonical_url": "https://docs.paperclip.ing/administration/trust-and-low-trust-review",
+      "fetched_at": "2026-06-23T13:37:39Z",
+      "final_url": "https://docs.paperclip.ing/administration/trust-and-low-trust-review/",
+      "rag_job_id": 922,
+      "rag_path": ".web-pages-paperclip-rag/web-page-trust-low-trust-review-paperclip-docs-docs-paperclip-ing-33c7191d89.md",
+      "title": "Trust & Low-Trust Review | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/day-to-day/approvals": {
+      "canonical_url": "https://docs.paperclip.ing/guides/day-to-day/approvals",
+      "fetched_at": "2026-06-23T13:37:40Z",
+      "final_url": "https://docs.paperclip.ing/guides/day-to-day/approvals/",
+      "rag_job_id": 923,
+      "rag_path": ".web-pages-paperclip-rag/web-page-approvals-paperclip-docs-docs-paperclip-ing-f69031e82e.md",
+      "title": "Approvals | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/day-to-day/artifacts": {
+      "canonical_url": "https://docs.paperclip.ing/guides/day-to-day/artifacts",
+      "fetched_at": "2026-06-23T13:37:41Z",
+      "final_url": "https://docs.paperclip.ing/guides/day-to-day/artifacts/",
+      "rag_job_id": 924,
+      "rag_path": ".web-pages-paperclip-rag/web-page-artifacts-paperclip-docs-docs-paperclip-ing-be2f501778.md",
+      "title": "Artifacts | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/day-to-day/blocked-inbox": {
+      "canonical_url": "https://docs.paperclip.ing/guides/day-to-day/blocked-inbox",
+      "fetched_at": "2026-06-23T13:37:43Z",
+      "final_url": "https://docs.paperclip.ing/guides/day-to-day/blocked-inbox/",
+      "rag_job_id": 925,
+      "rag_path": ".web-pages-paperclip-rag/web-page-blocked-inbox-paperclip-docs-docs-paperclip-ing-9aed5fcc42.md",
+      "title": "Blocked Inbox | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/day-to-day/costs": {
+      "canonical_url": "https://docs.paperclip.ing/guides/day-to-day/costs",
+      "fetched_at": "2026-06-23T13:37:44Z",
+      "final_url": "https://docs.paperclip.ing/guides/day-to-day/costs/",
+      "rag_job_id": 926,
+      "rag_path": ".web-pages-paperclip-rag/web-page-costs-paperclip-docs-docs-paperclip-ing-8b745f9072.md",
+      "title": "Costs | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/day-to-day/dashboard": {
+      "canonical_url": "https://docs.paperclip.ing/guides/day-to-day/dashboard",
+      "fetched_at": "2026-06-23T13:37:45Z",
+      "final_url": "https://docs.paperclip.ing/guides/day-to-day/dashboard/",
+      "rag_job_id": 927,
+      "rag_path": ".web-pages-paperclip-rag/web-page-the-dashboard-paperclip-docs-docs-paperclip-ing-d8f624b45c.md",
+      "title": "The Dashboard | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/day-to-day/feedback-voting": {
+      "canonical_url": "https://docs.paperclip.ing/guides/day-to-day/feedback-voting",
+      "fetched_at": "2026-06-23T13:37:46Z",
+      "final_url": "https://docs.paperclip.ing/guides/day-to-day/feedback-voting/",
+      "rag_job_id": 928,
+      "rag_path": ".web-pages-paperclip-rag/web-page-feedback-voting-paperclip-docs-docs-paperclip-ing-32baca7ef6.md",
+      "title": "Feedback & Voting | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/getting-started/five-minute-path": {
+      "canonical_url": "https://docs.paperclip.ing/guides/getting-started/five-minute-path",
+      "fetched_at": "2026-06-23T13:37:48Z",
+      "final_url": "https://docs.paperclip.ing/guides/getting-started/five-minute-path/",
+      "rag_job_id": 929,
+      "rag_path": ".web-pages-paperclip-rag/web-page-quickstart-path-paperclip-docs-docs-paperclip-ing-fc509695d1.md",
+      "title": "Quickstart Path | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/getting-started/installation": {
+      "canonical_url": "https://docs.paperclip.ing/guides/getting-started/installation",
+      "fetched_at": "2026-06-23T13:37:49Z",
+      "final_url": "https://docs.paperclip.ing/guides/getting-started/installation/",
+      "rag_job_id": 930,
+      "rag_path": ".web-pages-paperclip-rag/web-page-installation-paperclip-docs-docs-paperclip-ing-d528403a9f.md",
+      "title": "Installation | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/getting-started/watching-agents-work": {
+      "canonical_url": "https://docs.paperclip.ing/guides/getting-started/watching-agents-work",
+      "fetched_at": "2026-06-23T13:37:50Z",
+      "final_url": "https://docs.paperclip.ing/guides/getting-started/watching-agents-work/",
+      "rag_job_id": 931,
+      "rag_path": ".web-pages-paperclip-rag/web-page-watching-agents-work-paperclip-docs-docs-paperclip-ing-566c3e6266.md",
+      "title": "Watching Agents Work | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/getting-started/your-first-agent": {
+      "canonical_url": "https://docs.paperclip.ing/guides/getting-started/your-first-agent",
+      "fetched_at": "2026-06-23T13:37:52Z",
+      "final_url": "https://docs.paperclip.ing/guides/getting-started/your-first-agent/",
+      "rag_job_id": 932,
+      "rag_path": ".web-pages-paperclip-rag/web-page-hire-your-first-agent-paperclip-docs-docs-paperclip-ing-323379146f.md",
+      "title": "Hire Your First Agent | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/getting-started/your-first-company": {
+      "canonical_url": "https://docs.paperclip.ing/guides/getting-started/your-first-company",
+      "fetched_at": "2026-06-23T13:37:53Z",
+      "final_url": "https://docs.paperclip.ing/guides/getting-started/your-first-company/",
+      "rag_job_id": 933,
+      "rag_path": ".web-pages-paperclip-rag/web-page-create-your-first-company-paperclip-docs-docs-paperclip-ing-31d7f3b59c.md",
+      "title": "Create Your First Company | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/org/adapters": {
+      "canonical_url": "https://docs.paperclip.ing/guides/org/adapters",
+      "fetched_at": "2026-06-23T13:37:54Z",
+      "final_url": "https://docs.paperclip.ing/guides/org/adapters/",
+      "rag_job_id": 934,
+      "rag_path": ".web-pages-paperclip-rag/web-page-the-adapter-manager-paperclip-docs-docs-paperclip-ing-f81195d4d2.md",
+      "title": "The Adapter Manager | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/org/agent-adapters": {
+      "canonical_url": "https://docs.paperclip.ing/guides/org/agent-adapters",
+      "fetched_at": "2026-06-23T13:37:55Z",
+      "final_url": "https://docs.paperclip.ing/guides/org/agent-adapters/",
+      "rag_job_id": 935,
+      "rag_path": ".web-pages-paperclip-rag/web-page-agent-adapters-paperclip-docs-docs-paperclip-ing-90ecfcad58.md",
+      "title": "Agent Adapters | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/org/agents": {
+      "canonical_url": "https://docs.paperclip.ing/guides/org/agents",
+      "fetched_at": "2026-06-23T13:37:56Z",
+      "final_url": "https://docs.paperclip.ing/guides/org/agents/",
+      "rag_job_id": 936,
+      "rag_path": ".web-pages-paperclip-rag/web-page-agents-paperclip-docs-docs-paperclip-ing-ee24277076.md",
+      "title": "Agents | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/org/delegation": {
+      "canonical_url": "https://docs.paperclip.ing/guides/org/delegation",
+      "fetched_at": "2026-06-23T13:37:58Z",
+      "final_url": "https://docs.paperclip.ing/guides/org/delegation/",
+      "rag_job_id": 937,
+      "rag_path": ".web-pages-paperclip-rag/web-page-delegation-paperclip-docs-docs-paperclip-ing-19b00cb764.md",
+      "title": "Delegation | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/org/org-structure": {
+      "canonical_url": "https://docs.paperclip.ing/guides/org/org-structure",
+      "fetched_at": "2026-06-23T13:37:59Z",
+      "final_url": "https://docs.paperclip.ing/guides/org/org-structure/",
+      "rag_job_id": 938,
+      "rag_path": ".web-pages-paperclip-rag/web-page-building-your-org-structure-paperclip-docs-docs-paperclip-ing-01b1e7e9c2.md",
+      "title": "Building Your Org Structure | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/org/skills": {
+      "canonical_url": "https://docs.paperclip.ing/guides/org/skills",
+      "fetched_at": "2026-06-23T13:38:00Z",
+      "final_url": "https://docs.paperclip.ing/guides/org/skills/",
+      "rag_job_id": 939,
+      "rag_path": ".web-pages-paperclip-rag/web-page-skills-paperclip-docs-docs-paperclip-ing-cb89c0f102.md",
+      "title": "Skills | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/org/team-catalog": {
+      "canonical_url": "https://docs.paperclip.ing/guides/org/team-catalog",
+      "fetched_at": "2026-06-23T13:38:01Z",
+      "final_url": "https://docs.paperclip.ing/guides/org/team-catalog/",
+      "rag_job_id": 940,
+      "rag_path": ".web-pages-paperclip-rag/web-page-team-catalog-paperclip-docs-docs-paperclip-ing-ca85ca04c4.md",
+      "title": "Team Catalog | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/power/execution-policy": {
+      "canonical_url": "https://docs.paperclip.ing/guides/power/execution-policy",
+      "fetched_at": "2026-06-23T13:38:03Z",
+      "final_url": "https://docs.paperclip.ing/guides/power/execution-policy/",
+      "rag_job_id": 941,
+      "rag_path": ".web-pages-paperclip-rag/web-page-execution-policy-paperclip-docs-docs-paperclip-ing-a635554e42.md",
+      "title": "Execution Policy | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/power/export-import": {
+      "canonical_url": "https://docs.paperclip.ing/guides/power/export-import",
+      "fetched_at": "2026-06-23T13:38:04Z",
+      "final_url": "https://docs.paperclip.ing/guides/power/export-import/",
+      "rag_job_id": 942,
+      "rag_path": ".web-pages-paperclip-rag/web-page-export-import-paperclip-docs-docs-paperclip-ing-a834876c2e.md",
+      "title": "Export & Import | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/power/terminal-setup": {
+      "canonical_url": "https://docs.paperclip.ing/guides/power/terminal-setup",
+      "fetched_at": "2026-06-23T13:38:05Z",
+      "final_url": "https://docs.paperclip.ing/guides/power/terminal-setup/",
+      "rag_job_id": 943,
+      "rag_path": ".web-pages-paperclip-rag/web-page-terminal-setup-paperclip-docs-docs-paperclip-ing-2906de9328.md",
+      "title": "Terminal Setup | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/projects-workflow/goals": {
+      "canonical_url": "https://docs.paperclip.ing/guides/projects-workflow/goals",
+      "fetched_at": "2026-06-23T13:38:06Z",
+      "final_url": "https://docs.paperclip.ing/guides/projects-workflow/goals/",
+      "rag_job_id": 944,
+      "rag_path": ".web-pages-paperclip-rag/web-page-goals-paperclip-docs-docs-paperclip-ing-2b79d9ade7.md",
+      "title": "Goals | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/projects-workflow/projects": {
+      "canonical_url": "https://docs.paperclip.ing/guides/projects-workflow/projects",
+      "fetched_at": "2026-06-23T13:38:08Z",
+      "final_url": "https://docs.paperclip.ing/guides/projects-workflow/projects/",
+      "rag_job_id": 945,
+      "rag_path": ".web-pages-paperclip-rag/web-page-projects-paperclip-docs-docs-paperclip-ing-175a43499f.md",
+      "title": "Projects | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/projects-workflow/routines": {
+      "canonical_url": "https://docs.paperclip.ing/guides/projects-workflow/routines",
+      "fetched_at": "2026-06-23T13:38:09Z",
+      "final_url": "https://docs.paperclip.ing/guides/projects-workflow/routines/",
+      "rag_job_id": 946,
+      "rag_path": ".web-pages-paperclip-rag/web-page-heartbeats-routines-paperclip-docs-docs-paperclip-ing-26071f1971.md",
+      "title": "Heartbeats & Routines | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/projects-workflow/workspaces": {
+      "canonical_url": "https://docs.paperclip.ing/guides/projects-workflow/workspaces",
+      "fetched_at": "2026-06-23T13:38:10Z",
+      "final_url": "https://docs.paperclip.ing/guides/projects-workflow/workspaces/",
+      "rag_job_id": 947,
+      "rag_path": ".web-pages-paperclip-rag/web-page-workspaces-paperclip-docs-docs-paperclip-ing-702075ef19.md",
+      "title": "Workspaces | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/welcome/glossary": {
+      "canonical_url": "https://docs.paperclip.ing/guides/welcome/glossary",
+      "fetched_at": "2026-06-23T13:38:11Z",
+      "final_url": "https://docs.paperclip.ing/guides/welcome/glossary/",
+      "rag_job_id": 948,
+      "rag_path": ".web-pages-paperclip-rag/web-page-glossary-paperclip-docs-docs-paperclip-ing-28675f07da.md",
+      "title": "Glossary | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/welcome/key-concepts": {
+      "canonical_url": "https://docs.paperclip.ing/guides/welcome/key-concepts",
+      "fetched_at": "2026-06-23T13:38:13Z",
+      "final_url": "https://docs.paperclip.ing/guides/welcome/key-concepts/",
+      "rag_job_id": 949,
+      "rag_path": ".web-pages-paperclip-rag/web-page-key-concepts-paperclip-docs-docs-paperclip-ing-f06fe1ce30.md",
+      "title": "Key Concepts | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/guides/welcome/what-is-paperclip": {
+      "canonical_url": "https://docs.paperclip.ing/guides/welcome/what-is-paperclip",
+      "fetched_at": "2026-06-23T13:38:14Z",
+      "final_url": "https://docs.paperclip.ing/guides/welcome/what-is-paperclip/",
+      "rag_job_id": 950,
+      "rag_path": ".web-pages-paperclip-rag/web-page-what-is-paperclip-paperclip-docs-docs-paperclip-ing-cbf001d80a.md",
+      "title": "What is Paperclip? | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/add-mcp-server-to-agent": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/add-mcp-server-to-agent",
+      "fetched_at": "2026-06-23T13:38:16Z",
+      "final_url": "https://docs.paperclip.ing/how-to/add-mcp-server-to-agent/",
+      "rag_job_id": 951,
+      "rag_path": ".web-pages-paperclip-rag/web-page-add-an-mcp-server-to-an-agent-s-toolkit-paperclip-docs-docs-paperclip-ing-959d5ae9fa.md",
+      "title": "Add an MCP server to an agent's toolkit | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/back-up-and-restore-a-company": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/back-up-and-restore-a-company",
+      "fetched_at": "2026-06-23T13:38:17Z",
+      "final_url": "https://docs.paperclip.ing/how-to/back-up-and-restore-a-company/",
+      "rag_job_id": 952,
+      "rag_path": ".web-pages-paperclip-rag/web-page-back-up-and-restore-a-company-paperclip-docs-docs-paperclip-ing-8f0e6065b2.md",
+      "title": "Back up and restore a company | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/bring-your-own-agent": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/bring-your-own-agent",
+      "fetched_at": "2026-06-23T13:38:18Z",
+      "final_url": "https://docs.paperclip.ing/how-to/bring-your-own-agent/",
+      "rag_job_id": 953,
+      "rag_path": ".web-pages-paperclip-rag/web-page-bring-your-own-agent-openclaw-http-webhook-custom-script-paperclip-docs-docs-paperclip-ing-53a6163786.md",
+      "title": "Bring your own agent (OpenClaw, HTTP webhook, custom script) | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/connect-agent-to-github": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/connect-agent-to-github",
+      "fetched_at": "2026-06-23T13:38:19Z",
+      "final_url": "https://docs.paperclip.ing/how-to/connect-agent-to-github/",
+      "rag_job_id": 954,
+      "rag_path": ".web-pages-paperclip-rag/web-page-connect-an-agent-to-a-github-repo-and-have-it-open-prs-paperclip-docs-docs-paperclip-ing-62c731bcb7.md",
+      "title": "Connect an agent to a GitHub repo and have it open PRs | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/connect-aws-secrets-vault": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/connect-aws-secrets-vault",
+      "fetched_at": "2026-06-23T13:38:21Z",
+      "final_url": "https://docs.paperclip.ing/how-to/connect-aws-secrets-vault/",
+      "rag_job_id": 955,
+      "rag_path": ".web-pages-paperclip-rag/web-page-connect-an-aws-secrets-manager-vault-paperclip-docs-docs-paperclip-ing-7dc207e30f.md",
+      "title": "Connect an AWS Secrets Manager vault | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/create-a-daily-routine": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/create-a-daily-routine",
+      "fetched_at": "2026-06-23T13:38:22Z",
+      "final_url": "https://docs.paperclip.ing/how-to/create-a-daily-routine/",
+      "rag_job_id": 956,
+      "rag_path": ".web-pages-paperclip-rag/web-page-create-a-routine-that-runs-daily-paperclip-docs-docs-paperclip-ing-4a7513ba0d.md",
+      "title": "Create a routine that runs daily | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/debug-stuck-heartbeat": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/debug-stuck-heartbeat",
+      "fetched_at": "2026-06-23T13:38:23Z",
+      "final_url": "https://docs.paperclip.ing/how-to/debug-stuck-heartbeat/",
+      "rag_job_id": 957,
+      "rag_path": ".web-pages-paperclip-rag/web-page-debug-a-stuck-heartbeat-paperclip-docs-docs-paperclip-ing-1fcd66af56.md",
+      "title": "Debug a stuck heartbeat | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/deploy-to-vps-or-fly": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/deploy-to-vps-or-fly",
+      "fetched_at": "2026-06-23T13:38:24Z",
+      "final_url": "https://docs.paperclip.ing/how-to/deploy-to-vps-or-fly/",
+      "rag_job_id": 958,
+      "rag_path": ".web-pages-paperclip-rag/web-page-deploy-paperclip-to-a-vps-or-fly-io-paperclip-docs-docs-paperclip-ing-88348c943d.md",
+      "title": "Deploy Paperclip to a VPS or Fly.io | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/develop-a-plugin-locally": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/develop-a-plugin-locally",
+      "fetched_at": "2026-06-23T13:38:26Z",
+      "final_url": "https://docs.paperclip.ing/how-to/develop-a-plugin-locally/",
+      "rag_job_id": 959,
+      "rag_path": ".web-pages-paperclip-rag/web-page-develop-a-plugin-locally-paperclip-docs-docs-paperclip-ing-0c9ebc108f.md",
+      "title": "Develop a plugin locally | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/handle-board-approvals-for-hires": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/handle-board-approvals-for-hires",
+      "fetched_at": "2026-06-23T13:38:27Z",
+      "final_url": "https://docs.paperclip.ing/how-to/handle-board-approvals-for-hires/",
+      "rag_job_id": 960,
+      "rag_path": ".web-pages-paperclip-rag/web-page-handle-board-approvals-for-hires-paperclip-docs-docs-paperclip-ing-1e1a4c82c0.md",
+      "title": "Handle board approvals for hires | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/require-board-approval-before-spend": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/require-board-approval-before-spend",
+      "fetched_at": "2026-06-23T13:38:28Z",
+      "final_url": "https://docs.paperclip.ing/how-to/require-board-approval-before-spend/",
+      "rag_job_id": 961,
+      "rag_path": ".web-pages-paperclip-rag/web-page-require-board-approval-before-an-agent-spends-money-paperclip-docs-docs-paperclip-ing-f1312fc780.md",
+      "title": "Require board approval before an agent spends money | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/rotate-provider-api-key": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/rotate-provider-api-key",
+      "fetched_at": "2026-06-23T13:38:29Z",
+      "final_url": "https://docs.paperclip.ing/how-to/rotate-provider-api-key/",
+      "rag_job_id": 962,
+      "rag_path": ".web-pages-paperclip-rag/web-page-update-or-rotate-a-provider-api-key-paperclip-docs-docs-paperclip-ing-a871577d22.md",
+      "title": "Update or rotate a provider API key | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/set-monthly-budget": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/set-monthly-budget",
+      "fetched_at": "2026-06-23T13:38:31Z",
+      "final_url": "https://docs.paperclip.ing/how-to/set-monthly-budget/",
+      "rag_job_id": 963,
+      "rag_path": ".web-pages-paperclip-rag/web-page-set-a-monthly-budget-and-enforce-it-paperclip-docs-docs-paperclip-ing-e3ab76e11d.md",
+      "title": "Set a monthly budget and enforce it | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/sync-to-cloud-upstream": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/sync-to-cloud-upstream",
+      "fetched_at": "2026-06-23T13:38:32Z",
+      "final_url": "https://docs.paperclip.ing/how-to/sync-to-cloud-upstream/",
+      "rag_job_id": 964,
+      "rag_path": ".web-pages-paperclip-rag/web-page-sync-a-local-company-to-a-paperclip-cloud-upstream-paperclip-docs-docs-paperclip-ing-6897dbb5cc.md",
+      "title": "Sync a local company to a Paperclip Cloud upstream | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/update-paperclip": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/update-paperclip",
+      "fetched_at": "2026-06-23T13:38:34Z",
+      "final_url": "https://docs.paperclip.ing/how-to/update-paperclip/",
+      "rag_job_id": 965,
+      "rag_path": ".web-pages-paperclip-rag/web-page-update-paperclip-to-the-latest-version-paperclip-docs-docs-paperclip-ing-5259a348ac.md",
+      "title": "Update Paperclip to the latest version | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/wire-slack-discord-notifications": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/wire-slack-discord-notifications",
+      "fetched_at": "2026-06-23T13:38:36Z",
+      "final_url": "https://docs.paperclip.ing/how-to/wire-slack-discord-notifications/",
+      "rag_job_id": 966,
+      "rag_path": ".web-pages-paperclip-rag/web-page-wire-slack-discord-notifications-for-approvals-paperclip-docs-docs-paperclip-ing-46e28e6ba0.md",
+      "title": "Wire Slack/Discord notifications for approvals | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/how-to/write-a-company-skill": {
+      "canonical_url": "https://docs.paperclip.ing/how-to/write-a-company-skill",
+      "fetched_at": "2026-06-23T13:38:38Z",
+      "final_url": "https://docs.paperclip.ing/how-to/write-a-company-skill/",
+      "rag_job_id": 967,
+      "rag_path": ".web-pages-paperclip-rag/web-page-write-a-company-skill-and-assign-it-to-specific-agents-paperclip-docs-docs-paperclip-ing-220f647ee1.md",
+      "title": "Write a company skill and assign it to specific agents | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/acpx-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/acpx-local",
+      "fetched_at": "2026-06-23T13:38:39Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/acpx-local/",
+      "rag_job_id": 968,
+      "rag_path": ".web-pages-paperclip-rag/web-page-acpx-local-paperclip-docs-docs-paperclip-ing-8c79ca0caa.md",
+      "title": "ACPX Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/adapter-ui-parser": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/adapter-ui-parser",
+      "fetched_at": "2026-06-23T13:38:40Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/adapter-ui-parser/",
+      "rag_job_id": 969,
+      "rag_path": ".web-pages-paperclip-rag/web-page-adapter-ui-parser-contract-paperclip-docs-docs-paperclip-ing-b19dfff0ad.md",
+      "title": "Adapter UI Parser Contract | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/claude-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/claude-local",
+      "fetched_at": "2026-06-23T13:38:42Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/claude-local/",
+      "rag_job_id": 970,
+      "rag_path": ".web-pages-paperclip-rag/web-page-claude-local-paperclip-docs-docs-paperclip-ing-0a7ce7d301.md",
+      "title": "Claude Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/codex-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/codex-local",
+      "fetched_at": "2026-06-23T13:38:43Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/codex-local/",
+      "rag_job_id": 971,
+      "rag_path": ".web-pages-paperclip-rag/web-page-codex-local-paperclip-docs-docs-paperclip-ing-a0381616d9.md",
+      "title": "Codex Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/creating-an-adapter": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/creating-an-adapter",
+      "fetched_at": "2026-06-23T13:38:44Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/creating-an-adapter/",
+      "rag_job_id": 972,
+      "rag_path": ".web-pages-paperclip-rag/web-page-creating-an-adapter-paperclip-docs-docs-paperclip-ing-365f9cbcef.md",
+      "title": "Creating an Adapter | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/cursor-cloud": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/cursor-cloud",
+      "fetched_at": "2026-06-23T13:38:45Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/cursor-cloud/",
+      "rag_job_id": 973,
+      "rag_path": ".web-pages-paperclip-rag/web-page-cursor-cloud-paperclip-docs-docs-paperclip-ing-02e049df60.md",
+      "title": "Cursor Cloud | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/cursor-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/cursor-local",
+      "fetched_at": "2026-06-23T13:38:47Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/cursor-local/",
+      "rag_job_id": 974,
+      "rag_path": ".web-pages-paperclip-rag/web-page-cursor-local-paperclip-docs-docs-paperclip-ing-e993abbf44.md",
+      "title": "Cursor Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/external-adapters": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/external-adapters",
+      "fetched_at": "2026-06-23T13:38:48Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/external-adapters/",
+      "rag_job_id": 975,
+      "rag_path": ".web-pages-paperclip-rag/web-page-external-adapters-paperclip-docs-docs-paperclip-ing-08d3146cd3.md",
+      "title": "External Adapters | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/gemini-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/gemini-local",
+      "fetched_at": "2026-06-23T13:38:49Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/gemini-local/",
+      "rag_job_id": 976,
+      "rag_path": ".web-pages-paperclip-rag/web-page-gemini-local-paperclip-docs-docs-paperclip-ing-6f14ed99f7.md",
+      "title": "Gemini Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/grok-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/grok-local",
+      "fetched_at": "2026-06-23T13:38:51Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/grok-local/",
+      "rag_job_id": 977,
+      "rag_path": ".web-pages-paperclip-rag/web-page-grok-local-paperclip-docs-docs-paperclip-ing-5b4a676dfb.md",
+      "title": "Grok Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/hermes-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/hermes-local",
+      "fetched_at": "2026-06-23T13:38:52Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/hermes-local/",
+      "rag_job_id": 978,
+      "rag_path": ".web-pages-paperclip-rag/web-page-hermes-local-paperclip-docs-docs-paperclip-ing-d483b2f224.md",
+      "title": "Hermes Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/http": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/http",
+      "fetched_at": "2026-06-23T13:38:53Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/http/",
+      "rag_job_id": 979,
+      "rag_path": ".web-pages-paperclip-rag/web-page-http-paperclip-docs-docs-paperclip-ing-81ff7a453a.md",
+      "title": "HTTP | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/modal": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/modal",
+      "fetched_at": "2026-06-23T13:38:54Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/modal/",
+      "rag_job_id": 980,
+      "rag_path": ".web-pages-paperclip-rag/web-page-modal-paperclip-docs-docs-paperclip-ing-e1aa2ac477.md",
+      "title": "Modal | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/openclaw-gateway": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/openclaw-gateway",
+      "fetched_at": "2026-06-23T13:38:56Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/openclaw-gateway/",
+      "rag_job_id": 981,
+      "rag_path": ".web-pages-paperclip-rag/web-page-openclaw-gateway-paperclip-docs-docs-paperclip-ing-42a4b10a38.md",
+      "title": "OpenClaw Gateway | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/opencode-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/opencode-local",
+      "fetched_at": "2026-06-23T13:38:57Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/opencode-local/",
+      "rag_job_id": 982,
+      "rag_path": ".web-pages-paperclip-rag/web-page-opencode-local-paperclip-docs-docs-paperclip-ing-9860497559.md",
+      "title": "OpenCode Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/overview": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/overview",
+      "fetched_at": "2026-06-23T13:38:59Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/overview/",
+      "rag_job_id": 983,
+      "rag_path": ".web-pages-paperclip-rag/web-page-adapters-overview-paperclip-docs-docs-paperclip-ing-571d52ef6e.md",
+      "title": "Adapters Overview | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/pi-local": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/pi-local",
+      "fetched_at": "2026-06-23T13:39:00Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/pi-local/",
+      "rag_job_id": 984,
+      "rag_path": ".web-pages-paperclip-rag/web-page-pi-local-paperclip-docs-docs-paperclip-ing-64e023368e.md",
+      "title": "Pi Local | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/process": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/process",
+      "fetched_at": "2026-06-23T13:39:01Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/process/",
+      "rag_job_id": 985,
+      "rag_path": ".web-pages-paperclip-rag/web-page-process-paperclip-docs-docs-paperclip-ing-634bd9581d.md",
+      "title": "Process | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/adapters/sandbox-providers": {
+      "canonical_url": "https://docs.paperclip.ing/reference/adapters/sandbox-providers",
+      "fetched_at": "2026-06-23T13:39:02Z",
+      "final_url": "https://docs.paperclip.ing/reference/adapters/sandbox-providers/",
+      "rag_job_id": 986,
+      "rag_path": ".web-pages-paperclip-rag/web-page-sandbox-providers-paperclip-docs-docs-paperclip-ing-1114de3f1b.md",
+      "title": "Sandbox Providers | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/adapters": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/adapters",
+      "fetched_at": "2026-06-23T13:39:04Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/adapters/",
+      "rag_job_id": 987,
+      "rag_path": ".web-pages-paperclip-rag/web-page-adapters-api-paperclip-docs-docs-paperclip-ing-000f07d717.md",
+      "title": "Adapters API | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/agents": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/agents",
+      "fetched_at": "2026-06-23T13:39:05Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/agents/",
+      "rag_job_id": 988,
+      "rag_path": ".web-pages-paperclip-rag/web-page-agents-paperclip-docs-docs-paperclip-ing-f8377e42da.md",
+      "title": "Agents | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/approvals": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/approvals",
+      "fetched_at": "2026-06-23T13:39:06Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/approvals/",
+      "rag_job_id": 989,
+      "rag_path": ".web-pages-paperclip-rag/web-page-approvals-paperclip-docs-docs-paperclip-ing-e53a8b2d5b.md",
+      "title": "Approvals | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/authentication": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/authentication",
+      "fetched_at": "2026-06-23T13:39:07Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/authentication/",
+      "rag_job_id": 990,
+      "rag_path": ".web-pages-paperclip-rag/web-page-authentication-paperclip-docs-docs-paperclip-ing-1160292a5b.md",
+      "title": "Authentication | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/companies": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/companies",
+      "fetched_at": "2026-06-23T13:39:09Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/companies/",
+      "rag_job_id": 991,
+      "rag_path": ".web-pages-paperclip-rag/web-page-companies-paperclip-docs-docs-paperclip-ing-56fd9c83d7.md",
+      "title": "Companies | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/costs": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/costs",
+      "fetched_at": "2026-06-23T13:39:10Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/costs/",
+      "rag_job_id": 992,
+      "rag_path": ".web-pages-paperclip-rag/web-page-costs-paperclip-docs-docs-paperclip-ing-39a0453ca6.md",
+      "title": "Costs | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/dashboard": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/dashboard",
+      "fetched_at": "2026-06-23T13:39:11Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/dashboard/",
+      "rag_job_id": 993,
+      "rag_path": ".web-pages-paperclip-rag/web-page-dashboard-paperclip-docs-docs-paperclip-ing-109a8dd5ab.md",
+      "title": "Dashboard | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/goals-and-projects": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/goals-and-projects",
+      "fetched_at": "2026-06-23T13:39:13Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/goals-and-projects/",
+      "rag_job_id": 994,
+      "rag_path": ".web-pages-paperclip-rag/web-page-goals-and-projects-paperclip-docs-docs-paperclip-ing-2295485e0b.md",
+      "title": "Goals and Projects | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/instance-admin": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/instance-admin",
+      "fetched_at": "2026-06-23T13:39:14Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/instance-admin/",
+      "rag_job_id": 995,
+      "rag_path": ".web-pages-paperclip-rag/web-page-instance-admin-api-paperclip-docs-docs-paperclip-ing-862ed2fc21.md",
+      "title": "Instance Admin API | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/overview": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/overview",
+      "fetched_at": "2026-06-23T13:39:15Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/overview/",
+      "rag_job_id": 996,
+      "rag_path": ".web-pages-paperclip-rag/web-page-api-overview-paperclip-docs-docs-paperclip-ing-202f60e2ea.md",
+      "title": "API Overview | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/plugins": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/plugins",
+      "fetched_at": "2026-06-23T13:39:16Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/plugins/",
+      "rag_job_id": 997,
+      "rag_path": ".web-pages-paperclip-rag/web-page-plugins-api-paperclip-docs-docs-paperclip-ing-b56cc56021.md",
+      "title": "Plugins API | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/resource-memberships": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/resource-memberships",
+      "fetched_at": "2026-06-23T13:39:17Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/resource-memberships/",
+      "rag_job_id": 998,
+      "rag_path": ".web-pages-paperclip-rag/web-page-resource-memberships-paperclip-docs-docs-paperclip-ing-d574a99cba.md",
+      "title": "Resource Memberships | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/routines": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/routines",
+      "fetched_at": "2026-06-23T13:39:19Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/routines/",
+      "rag_job_id": 999,
+      "rag_path": ".web-pages-paperclip-rag/web-page-routines-paperclip-docs-docs-paperclip-ing-2b5cc0d076.md",
+      "title": "Routines | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/secrets": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/secrets",
+      "fetched_at": "2026-06-23T13:39:20Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/secrets/",
+      "rag_job_id": 1000,
+      "rag_path": ".web-pages-paperclip-rag/web-page-secrets-paperclip-docs-docs-paperclip-ing-954b3f32f9.md",
+      "title": "Secrets | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/api/teams-catalog": {
+      "canonical_url": "https://docs.paperclip.ing/reference/api/teams-catalog",
+      "fetched_at": "2026-06-23T13:39:21Z",
+      "final_url": "https://docs.paperclip.ing/reference/api/teams-catalog/",
+      "rag_job_id": 1001,
+      "rag_path": ".web-pages-paperclip-rag/web-page-teams-catalog-api-paperclip-docs-docs-paperclip-ing-54ffd198cf.md",
+      "title": "Teams Catalog API | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/access": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/access",
+      "fetched_at": "2026-06-23T13:39:22Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/access/",
+      "rag_job_id": 1002,
+      "rag_path": ".web-pages-paperclip-rag/web-page-access-profile-instance-admin-paperclip-docs-docs-paperclip-ing-58ca688512.md",
+      "title": "Access, Profile & Instance Admin | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/adapter": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/adapter",
+      "fetched_at": "2026-06-23T13:39:23Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/adapter/",
+      "rag_job_id": 1003,
+      "rag_path": ".web-pages-paperclip-rag/web-page-adapter-commands-paperclip-docs-docs-paperclip-ing-807f058863.md",
+      "title": "Adapter Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/agent": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/agent",
+      "fetched_at": "2026-06-23T13:39:24Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/agent/",
+      "rag_job_id": 1004,
+      "rag_path": ".web-pages-paperclip-rag/web-page-agent-commands-paperclip-docs-docs-paperclip-ing-9e33f108ad.md",
+      "title": "Agent Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/approval": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/approval",
+      "fetched_at": "2026-06-23T13:39:25Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/approval/",
+      "rag_job_id": 1005,
+      "rag_path": ".web-pages-paperclip-rag/web-page-approval-commands-paperclip-docs-docs-paperclip-ing-001c277cae.md",
+      "title": "Approval Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/asset": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/asset",
+      "fetched_at": "2026-06-23T13:39:27Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/asset/",
+      "rag_job_id": 1006,
+      "rag_path": ".web-pages-paperclip-rag/web-page-asset-commands-paperclip-docs-docs-paperclip-ing-5a69e74c91.md",
+      "title": "Asset Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/authentication": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/authentication",
+      "fetched_at": "2026-06-23T13:39:28Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/authentication/",
+      "rag_job_id": 1007,
+      "rag_path": ".web-pages-paperclip-rag/web-page-authentication-tokens-paperclip-docs-docs-paperclip-ing-3bed3f1c4f.md",
+      "title": "Authentication & Tokens | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/cloud": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/cloud",
+      "fetched_at": "2026-06-23T13:39:29Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/cloud/",
+      "rag_job_id": 1008,
+      "rag_path": ".web-pages-paperclip-rag/web-page-cloud-sync-commands-paperclip-docs-docs-paperclip-ing-8a90a618c7.md",
+      "title": "Cloud Sync Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/common-options": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/common-options",
+      "fetched_at": "2026-06-23T13:39:30Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/common-options/",
+      "rag_job_id": 1009,
+      "rag_path": ".web-pages-paperclip-rag/web-page-common-options-connection-paperclip-docs-docs-paperclip-ing-847abc2ef3.md",
+      "title": "Common Options & Connection | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/company": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/company",
+      "fetched_at": "2026-06-23T13:39:32Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/company/",
+      "rag_job_id": 1010,
+      "rag_path": ".web-pages-paperclip-rag/web-page-company-commands-paperclip-docs-docs-paperclip-ing-622af66b4b.md",
+      "title": "Company Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/connect": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/connect",
+      "fetched_at": "2026-06-23T13:39:33Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/connect/",
+      "rag_job_id": 1011,
+      "rag_path": ".web-pages-paperclip-rag/web-page-connect-command-paperclip-docs-docs-paperclip-ing-162581a835.md",
+      "title": "Connect Command | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/cost": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/cost",
+      "fetched_at": "2026-06-23T13:39:34Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/cost/",
+      "rag_job_id": 1012,
+      "rag_path": ".web-pages-paperclip-rag/web-page-cost-finance-budget-commands-paperclip-docs-docs-paperclip-ing-f8d1f2d06d.md",
+      "title": "Cost, Finance & Budget Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/dashboard": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/dashboard",
+      "fetched_at": "2026-06-23T13:39:35Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/dashboard/",
+      "rag_job_id": 1013,
+      "rag_path": ".web-pages-paperclip-rag/web-page-dashboard-commands-paperclip-docs-docs-paperclip-ing-2fb7f469ce.md",
+      "title": "Dashboard Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/dev-environments": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/dev-environments",
+      "fetched_at": "2026-06-23T13:39:37Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/dev-environments/",
+      "rag_job_id": 1014,
+      "rag_path": ".web-pages-paperclip-rag/web-page-worktree-environment-lab-paperclip-docs-docs-paperclip-ing-e878488bf8.md",
+      "title": "Worktree & Environment Lab | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/feedback": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/feedback",
+      "fetched_at": "2026-06-23T13:39:38Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/feedback/",
+      "rag_job_id": 1015,
+      "rag_path": ".web-pages-paperclip-rag/web-page-feedback-commands-paperclip-docs-docs-paperclip-ing-770507c516.md",
+      "title": "Feedback Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/goal": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/goal",
+      "fetched_at": "2026-06-23T13:39:39Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/goal/",
+      "rag_job_id": 1016,
+      "rag_path": ".web-pages-paperclip-rag/web-page-goal-commands-paperclip-docs-docs-paperclip-ing-fa1522fd22.md",
+      "title": "Goal Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/installation": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/installation",
+      "fetched_at": "2026-06-23T13:39:40Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/installation/",
+      "rag_job_id": 1017,
+      "rag_path": ".web-pages-paperclip-rag/web-page-installing-the-cli-paperclip-docs-docs-paperclip-ing-a30253beb3.md",
+      "title": "Installing the CLI | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/issue": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/issue",
+      "fetched_at": "2026-06-23T13:39:41Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/issue/",
+      "rag_job_id": 1018,
+      "rag_path": ".web-pages-paperclip-rag/web-page-issue-commands-paperclip-docs-docs-paperclip-ing-9aa2ea8270.md",
+      "title": "Issue Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/output-and-scripting": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/output-and-scripting",
+      "fetched_at": "2026-06-23T13:39:43Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/output-and-scripting/",
+      "rag_job_id": 1019,
+      "rag_path": ".web-pages-paperclip-rag/web-page-output-scripting-paperclip-docs-docs-paperclip-ing-b7b1d33488.md",
+      "title": "Output & Scripting | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/overview": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/overview",
+      "fetched_at": "2026-06-23T13:39:44Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/overview/",
+      "rag_job_id": 1020,
+      "rag_path": ".web-pages-paperclip-rag/web-page-cli-overview-paperclip-docs-docs-paperclip-ing-3bfc237d65.md",
+      "title": "CLI Overview | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/plugin": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/plugin",
+      "fetched_at": "2026-06-23T13:39:45Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/plugin/",
+      "rag_job_id": 1021,
+      "rag_path": ".web-pages-paperclip-rag/web-page-plugin-commands-paperclip-docs-docs-paperclip-ing-05bd1ce4f4.md",
+      "title": "Plugin Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/project": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/project",
+      "fetched_at": "2026-06-23T13:39:46Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/project/",
+      "rag_job_id": 1022,
+      "rag_path": ".web-pages-paperclip-rag/web-page-project-commands-paperclip-docs-docs-paperclip-ing-58f17236d1.md",
+      "title": "Project Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/prompt": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/prompt",
+      "fetched_at": "2026-06-23T13:39:47Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/prompt/",
+      "rag_job_id": 1023,
+      "rag_path": ".web-pages-paperclip-rag/web-page-prompt-handoff-paperclip-docs-docs-paperclip-ing-e62add1ad9.md",
+      "title": "Prompt Handoff | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/routine": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/routine",
+      "fetched_at": "2026-06-23T13:39:49Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/routine/",
+      "rag_job_id": 1024,
+      "rag_path": ".web-pages-paperclip-rag/web-page-routine-commands-paperclip-docs-docs-paperclip-ing-b6a7b22004.md",
+      "title": "Routine Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/run": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/run",
+      "fetched_at": "2026-06-23T13:39:50Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/run/",
+      "rag_job_id": 1025,
+      "rag_path": ".web-pages-paperclip-rag/web-page-run-heartbeat-commands-paperclip-docs-docs-paperclip-ing-ced436a9b8.md",
+      "title": "Run (Heartbeat) Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/secrets": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/secrets",
+      "fetched_at": "2026-06-23T13:39:51Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/secrets/",
+      "rag_job_id": 1026,
+      "rag_path": ".web-pages-paperclip-rag/web-page-secrets-commands-paperclip-docs-docs-paperclip-ing-a7e517589d.md",
+      "title": "Secrets Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/setup-commands": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/setup-commands",
+      "fetched_at": "2026-06-23T13:39:52Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/setup-commands/",
+      "rag_job_id": 1027,
+      "rag_path": ".web-pages-paperclip-rag/web-page-setup-commands-paperclip-docs-docs-paperclip-ing-151feb6950.md",
+      "title": "Setup Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/skills": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/skills",
+      "fetched_at": "2026-06-23T13:39:53Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/skills/",
+      "rag_job_id": 1028,
+      "rag_path": ".web-pages-paperclip-rag/web-page-skills-commands-paperclip-docs-docs-paperclip-ing-c886f2ca9b.md",
+      "title": "Skills Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/teams": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/teams",
+      "fetched_at": "2026-06-23T13:39:55Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/teams/",
+      "rag_job_id": 1029,
+      "rag_path": ".web-pages-paperclip-rag/web-page-teams-commands-paperclip-docs-docs-paperclip-ing-1040b69ac1.md",
+      "title": "Teams Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/token": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/token",
+      "fetched_at": "2026-06-23T13:39:56Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/token/",
+      "rag_job_id": 1030,
+      "rag_path": ".web-pages-paperclip-rag/web-page-token-commands-paperclip-docs-docs-paperclip-ing-decd9a0d43.md",
+      "title": "Token Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/cli/workspace": {
+      "canonical_url": "https://docs.paperclip.ing/reference/cli/workspace",
+      "fetched_at": "2026-06-23T13:39:57Z",
+      "final_url": "https://docs.paperclip.ing/reference/cli/workspace/",
+      "rag_job_id": 1031,
+      "rag_path": ".web-pages-paperclip-rag/web-page-workspace-org-environment-commands-paperclip-docs-docs-paperclip-ing-8f5d744b90.md",
+      "title": "Workspace, Org & Environment Commands | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/database": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/database",
+      "fetched_at": "2026-06-23T13:39:58Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/database/",
+      "rag_job_id": 1032,
+      "rag_path": ".web-pages-paperclip-rag/web-page-database-paperclip-docs-docs-paperclip-ing-3ee48a187e.md",
+      "title": "Database | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/deployment-modes": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/deployment-modes",
+      "fetched_at": "2026-06-23T13:39:59Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/deployment-modes/",
+      "rag_job_id": 1033,
+      "rag_path": ".web-pages-paperclip-rag/web-page-deployment-modes-paperclip-docs-docs-paperclip-ing-7dbb63bd41.md",
+      "title": "Deployment Modes | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/docker": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/docker",
+      "fetched_at": "2026-06-23T13:40:00Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/docker/",
+      "rag_job_id": 1034,
+      "rag_path": ".web-pages-paperclip-rag/web-page-docker-paperclip-docs-docs-paperclip-ing-ffef43ceed.md",
+      "title": "Docker | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/environment-variables": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/environment-variables",
+      "fetched_at": "2026-06-23T13:40:02Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/environment-variables/",
+      "rag_job_id": 1035,
+      "rag_path": ".web-pages-paperclip-rag/web-page-environment-variables-paperclip-docs-docs-paperclip-ing-c26c556ee6.md",
+      "title": "Environment Variables | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/local-development": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/local-development",
+      "fetched_at": "2026-06-23T13:40:03Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/local-development/",
+      "rag_job_id": 1036,
+      "rag_path": ".web-pages-paperclip-rag/web-page-local-development-paperclip-docs-docs-paperclip-ing-3456145fac.md",
+      "title": "Local Development | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/overview": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/overview",
+      "fetched_at": "2026-06-23T13:40:04Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/overview/",
+      "rag_job_id": 1037,
+      "rag_path": ".web-pages-paperclip-rag/web-page-deployment-overview-paperclip-docs-docs-paperclip-ing-d3412a15b0.md",
+      "title": "Deployment Overview | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/secrets": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/secrets",
+      "fetched_at": "2026-06-23T13:40:05Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/secrets/",
+      "rag_job_id": 1038,
+      "rag_path": ".web-pages-paperclip-rag/web-page-secrets-paperclip-docs-docs-paperclip-ing-99e3d220ad.md",
+      "title": "Secrets | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/storage": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/storage",
+      "fetched_at": "2026-06-23T13:40:07Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/storage/",
+      "rag_job_id": 1039,
+      "rag_path": ".web-pages-paperclip-rag/web-page-storage-paperclip-docs-docs-paperclip-ing-76011dae47.md",
+      "title": "Storage | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/deploy/tailscale-private-access": {
+      "canonical_url": "https://docs.paperclip.ing/reference/deploy/tailscale-private-access",
+      "fetched_at": "2026-06-23T13:40:08Z",
+      "final_url": "https://docs.paperclip.ing/reference/deploy/tailscale-private-access/",
+      "rag_job_id": 1040,
+      "rag_path": ".web-pages-paperclip-rag/web-page-tailscale-private-access-paperclip-docs-docs-paperclip-ing-b38f4b38e9.md",
+      "title": "Tailscale Private Access | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/plugins/llm-wiki": {
+      "canonical_url": "https://docs.paperclip.ing/reference/plugins/llm-wiki",
+      "fetched_at": "2026-06-23T13:40:09Z",
+      "final_url": "https://docs.paperclip.ing/reference/plugins/llm-wiki/",
+      "rag_job_id": 1041,
+      "rag_path": ".web-pages-paperclip-rag/web-page-llm-wiki-paperclip-docs-docs-paperclip-ing-9750f62835.md",
+      "title": "LLM Wiki | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/plugins/sdk": {
+      "canonical_url": "https://docs.paperclip.ing/reference/plugins/sdk",
+      "fetched_at": "2026-06-23T13:40:10Z",
+      "final_url": "https://docs.paperclip.ing/reference/plugins/sdk/",
+      "rag_job_id": 1042,
+      "rag_path": ".web-pages-paperclip-rag/web-page-plugin-sdk-paperclip-docs-docs-paperclip-ing-b22a639773.md",
+      "title": "Plugin SDK | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/plugins/workspace-diff": {
+      "canonical_url": "https://docs.paperclip.ing/reference/plugins/workspace-diff",
+      "fetched_at": "2026-06-23T13:40:12Z",
+      "final_url": "https://docs.paperclip.ing/reference/plugins/workspace-diff/",
+      "rag_job_id": 1043,
+      "rag_path": ".web-pages-paperclip-rag/web-page-workspace-diff-viewer-paperclip-docs-docs-paperclip-ing-4f83037488.md",
+      "title": "Workspace diff viewer | Paperclip Docs"
+    },
+    "https://docs.paperclip.ing/reference/skills": {
+      "canonical_url": "https://docs.paperclip.ing/reference/skills",
+      "fetched_at": "2026-06-23T13:40:13Z",
+      "final_url": "https://docs.paperclip.ing/reference/skills/",
+      "rag_job_id": 1044,
+      "rag_path": ".web-pages-paperclip-rag/web-page-skills-reference-paperclip-docs-docs-paperclip-ing-50baac50d0.md",
+      "title": "Skills Reference | Paperclip Docs"
+    }
+  },
+  "skipped": {}
+}

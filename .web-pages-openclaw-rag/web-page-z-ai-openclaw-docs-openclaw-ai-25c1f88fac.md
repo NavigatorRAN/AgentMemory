@@ -1,0 +1,99 @@
+# Z.AI - OpenClaw
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://docs.openclaw.ai/providers/zai
+- Final URL: https://docs.openclaw.ai/providers/zai
+- Canonical URL: https://docs.openclaw.ai/providers/zai
+- Fetched at: 2026-06-23T14:56:10Z
+- Content type: text/html; charset=utf-8
+
+## Description
+
+Use Z.AI (GLM models) with OpenClaw
+
+## Extracted Text
+
+Close
+Models Providers
+Z.AI is the API platform for GLM models. It provides REST APIs for GLM and
+uses API keys for authentication. Create your API key in the Z.AI console.
+OpenClaw uses the zai provider with a Z.AI API key.
+Property Value Provider zai Package @openclaw/zai-provider Auth ZAI_API_KEY (legacy alias: Z_AI_API_KEY ) API Z.AI Chat Completions (Bearer auth)
+GLM models
+GLM is a model family, not a separate provider. In OpenClaw, GLM models use
+refs such as zai/glm-5.2 : provider zai , model id glm-5.2 .
+Getting started
+Install the provider plugin first:
+bash Copy code openclaw plugins install @openclaw/zai-provider
+Auto-detect endpoint
+Best for: most users. OpenClaw probes supported Z.AI endpoints with your API key and applies the correct base URL automatically.
+Run onboarding
+bash Copy code openclaw onboard --auth-choice zai-api-key
+Verify the model is listed
+bash Copy code openclaw models list --all --provider zai
+Explicit regional endpoint
+Best for: users who want to force a specific Coding Plan or general API surface.
+Pick the right onboarding choice
+bash Copy code # Coding Plan Global (recommended for Coding Plan users) openclaw onboard --auth-choice zai-coding-global # Coding Plan CN (China region) openclaw onboard --auth-choice zai-coding-cn # General API openclaw onboard --auth-choice zai-global # General API CN (China region) openclaw onboard --auth-choice zai-cn
+Config example
+Tip
+zai-api-key lets OpenClaw detect the matching Z.AI endpoint from the key and
+apply the correct base URL automatically. Use the explicit regional choices when
+you want to force a specific Coding Plan or general API surface.
+json5 Copy code { env : { ZAI_API_KEY : "sk-..." }, models : { providers : { zai : { // GLM-5.2 uses the Coding Plan endpoint. baseUrl : "https://api.z.ai/api/coding/paas/v4" , }, }, }, agents : { defaults : { model : { primary : "zai/glm-5.2" } } }, }
+Built-in catalog
+The zai provider plugin ships its catalog in the plugin manifest, so read-only
+listing can show known GLM rows without loading provider runtime:
+The manifest-backed catalog currently includes:
+Model ref Notes zai/glm-5.2 Coding Plan default; 1M context zai/glm-5.1 General API default zai/glm-5 zai/glm-5-turbo zai/glm-5v-turbo zai/glm-4.7 zai/glm-4.7-flash zai/glm-4.7-flashx zai/glm-4.6 zai/glm-4.6v zai/glm-4.5 zai/glm-4.5-air zai/glm-4.5-flash zai/glm-4.5v
+GLM models are available as zai/<model> (example: zai/glm-5 ).
+GLM-5.2 supports off , low , high , and max thinking levels. OpenClaw maps
+low and high to Z.AI high reasoning effort, and max to max effort.
+Note
+Coding Plan setup defaults to zai/glm-5.2 ; general API setup keeps
+zai/glm-5.1 . Endpoint auto-detection falls back to glm-5.1 or glm-4.7
+when the selected plan does not expose GLM-5.2. GLM versions and availability
+can change; run openclaw models list --all --provider zai to see the catalog
+known to your installed version.
+Advanced configuration
+Forward-resolving unknown GLM-5 models
+Unknown glm-5* ids still forward-resolve on the provider path by
+synthesizing provider-owned metadata from the glm-4.7 template when the id
+matches the current GLM-5 family shape.
+Tool-call streaming
+tool_stream is enabled by default for Z.AI tool-call streaming. To disable it:
+json5 Copy code { agents : { defaults : { models : { "zai/<model>" : { params : { tool_stream : false }, }, }, }, }, } Thinking and preserved thinking
+Z.AI thinking follows OpenClaw's /think controls. With thinking off,
+OpenClaw sends thinking: { type: "disabled" } to avoid responses that
+spend the output budget on reasoning_content before visible text.
+Preserved thinking is opt-in because Z.AI requires the full historical
+reasoning_content to be replayed, which increases prompt tokens. Enable it
+per model:
+json5 Copy code { agents : { defaults : { models : { "zai/glm-5.2" : { params : { preserveThinking : true }, }, }, }, }, }
+When enabled and thinking is on, OpenClaw sends
+thinking: { type: "enabled", clear_thinking: false } and replays prior
+reasoning_content for the same OpenAI-compatible transcript.
+Advanced users can still override the exact provider payload with
+params.extra_body.thinking .
+Image understanding
+The Z.AI plugin registers image understanding.
+Property Value Model glm-4.6v
+Image understanding is auto-resolved from the configured Z.AI auth — no
+additional config is needed.
+Auth details
+Z.AI uses Bearer auth with your API key.
+The zai-api-key onboarding choice auto-detects the matching Z.AI endpoint by probing supported endpoints with your key.
+Use the explicit regional choices ( zai-coding-global , zai-coding-cn , zai-global , zai-cn ) when you want to force a specific API surface.
+The legacy env var Z_AI_API_KEY is still accepted; OpenClaw copies it to ZAI_API_KEY at startup if ZAI_API_KEY is unset.
+Related
+Model selection
+Choosing providers, model refs, and failover behavior.
+Configuration reference
+Full OpenClaw config schema, including provider and model settings.
+Was this useful? Yes No
+Open issue
+On this page
+Install OpenClaw Set up Telegram Fix Gateway Build a plugin
+Ask Molty
+Responses are generated using AI and may contain mistakes.

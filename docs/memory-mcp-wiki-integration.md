@@ -75,4 +75,45 @@ Structured content:
 }
 ```
 
-The current app does not require these native tools to exist. They are the cleaner future Memory MCP server API once the server source is available for extension.
+The current app does not require these native tools to exist, but the live Memory MCP server on `192.168.1.26:8006` now exposes them. Existing agents can keep using the compatibility path, while newer clients should prefer `search_wiki` and `get_wiki_page` for compiled knowledge retrieval.
+
+### `memory_graph`
+
+Arguments:
+
+```json
+{
+  "query": "agentmemory",
+  "limit": 200
+}
+```
+
+Structured content:
+
+```json
+{
+  "nodes": [
+    {
+      "id": "entity:agentmemory",
+      "label": "agentmemory",
+      "kind": "entity",
+      "event_count": 123
+    }
+  ],
+  "edges": [
+    {
+      "source": "entity:agentmemory",
+      "target": "wiki:codegraphrag-agentmemory-overview",
+      "relation": "documents",
+      "weight": 1
+    }
+  ],
+  "summary": {
+    "node_count": 25,
+    "edge_count": 65,
+    "query": "agentmemory"
+  }
+}
+```
+
+With no query, `memory_graph` returns a capped overview graph. With a query, it returns matching nodes plus immediate neighbors for focused graph exploration.

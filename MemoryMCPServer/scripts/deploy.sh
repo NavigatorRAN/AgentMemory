@@ -37,7 +37,7 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
     echo 'Restarted memory-mcp.service through systemd.'
   else
     echo 'sudo restart unavailable; signaling user-owned memory-mcp process.'
-    pid=\"\$(pgrep -u \"\$(id -u)\" -f '${REMOTE_DIR}/.venv/bin/memory-mcp' | head -n 1)\"
+    pid=\"\$(pgrep -u \"\$(id -u)\" -x memory-mcp | head -n 1)\"
     if [ -z \"\${pid}\" ]; then
       echo 'No user-owned memory-mcp process found to restart.' >&2
       exit 1
@@ -53,7 +53,7 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
       sleep 2
     fi
   fi
-  systemctl is-active memory-mcp.service || pgrep -u \"\$(id -u)\" -f '${REMOTE_DIR}/.venv/bin/memory-mcp' >/dev/null
+  systemctl is-active memory-mcp.service || pgrep -u \"\$(id -u)\" -x memory-mcp >/dev/null
 "
 
 echo "Running endpoint smoke checks at ${ENDPOINT}"

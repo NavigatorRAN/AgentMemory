@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/device_automation"
+final_url: "https://www.home-assistant.io/integrations/device_automation"
+canonical_url: "https://www.home-assistant.io/integrations/device_automation/"
+source_handle: "web:www-home-assistant-io:d53d69083a67"
+source_section: "integrations-device-automation"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "80c6c6d49b22f082e2e62ca65e6aecf11412eb4c82c2e22d48c828b1f417ba3f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Device automation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

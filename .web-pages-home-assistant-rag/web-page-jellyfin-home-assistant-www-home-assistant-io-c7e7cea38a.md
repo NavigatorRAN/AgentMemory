@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/jellyfin"
+final_url: "https://www.home-assistant.io/integrations/jellyfin"
+canonical_url: "https://www.home-assistant.io/integrations/jellyfin/"
+source_handle: "web:www-home-assistant-io:c7e7cea38a79"
+source_section: "integrations-jellyfin"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aabb05284f99ade782216b04d837fa9058a9fc191d6107738717d5591878849a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Jellyfin - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

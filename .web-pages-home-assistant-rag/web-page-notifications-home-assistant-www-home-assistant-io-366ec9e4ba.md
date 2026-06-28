@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/notify"
+final_url: "https://www.home-assistant.io/integrations/notify"
+canonical_url: "https://www.home-assistant.io/integrations/notify/"
+source_handle: "web:www-home-assistant-io:366ec9e4ba75"
+source_section: "integrations-notify"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1a507ea44180374e8f4448d58075e2a27335f81074c793931a1a78f747c98395"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Notifications - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rest_command"
+final_url: "https://www.home-assistant.io/integrations/rest_command"
+canonical_url: "https://www.home-assistant.io/integrations/rest_command/"
+source_handle: "web:www-home-assistant-io:a636fed61e9d"
+source_section: "integrations-rest-command"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8dfaab85d62cc5cb1bc31367b4282144bd36956589a4fe74a24c3396796a01d9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RESTful Command - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hisense_aehw4a1"
+final_url: "https://www.home-assistant.io/integrations/hisense_aehw4a1"
+canonical_url: "https://www.home-assistant.io/integrations/hisense_aehw4a1/"
+source_handle: "web:www-home-assistant-io:091c2309f772"
+source_section: "integrations-hisense-aehw4a1"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4287118ebf37dcd3ec2789eecac08bd5dd877051dc49ecbd8741699ff86486b6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hisense AEH-W4A1 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

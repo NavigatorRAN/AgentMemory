@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/monoprice"
+final_url: "https://www.home-assistant.io/integrations/monoprice"
+canonical_url: "https://www.home-assistant.io/integrations/monoprice/"
+source_handle: "web:www-home-assistant-io:01e4d177f43d"
+source_section: "integrations-monoprice"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "706dc2957a3a2725e3c772167ce9f774ebfff0e425d160720cc4df926affe6c7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Monoprice 6-Zone Amplifier - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

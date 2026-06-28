@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pvoutput"
+final_url: "https://www.home-assistant.io/integrations/pvoutput"
+canonical_url: "https://www.home-assistant.io/integrations/pvoutput/"
+source_handle: "web:www-home-assistant-io:8aef2705933c"
+source_section: "integrations-pvoutput"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "123cfe75f3b27e742c0670bfe2282e313b6becdb29aad6ec72b676dd9f86e858"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PVOutput - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

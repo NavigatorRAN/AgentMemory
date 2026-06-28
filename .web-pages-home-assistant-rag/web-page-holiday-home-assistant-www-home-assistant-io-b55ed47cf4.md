@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/holiday"
+final_url: "https://www.home-assistant.io/integrations/holiday"
+canonical_url: "https://www.home-assistant.io/integrations/holiday/"
+source_handle: "web:www-home-assistant-io:b55ed47cf429"
+source_section: "integrations-holiday"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "eadeeadd195bcf3c2e630313f37693dcc76f002ed0dfa972494a4ace519beca7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Holiday - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

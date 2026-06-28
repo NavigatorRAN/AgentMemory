@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iammeter"
+final_url: "https://www.home-assistant.io/integrations/iammeter"
+canonical_url: "https://www.home-assistant.io/integrations/iammeter/"
+source_handle: "web:www-home-assistant-io:3707d1ba1770"
+source_section: "integrations-iammeter"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "481ff8fd4f011968603580c4a57f42e346eee194c9b70a166d28cd5a0e087ec4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IamMeter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

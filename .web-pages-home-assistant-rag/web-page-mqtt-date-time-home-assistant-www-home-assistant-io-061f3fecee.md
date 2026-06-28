@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/datetime.mqtt"
+final_url: "https://www.home-assistant.io/integrations/datetime.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/datetime.mqtt/"
+source_handle: "web:www-home-assistant-io:061f3fecee84"
+source_section: "integrations-datetime-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2afa99840d3a266050481cd4ec4da96cf03d41342bff89e2fd255976cf1731c7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Date/Time - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/date"
+final_url: "https://www.home-assistant.io/integrations/date"
+canonical_url: "https://www.home-assistant.io/integrations/date/"
+source_handle: "web:www-home-assistant-io:733c30df92dc"
+source_section: "integrations-date"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d149a5d7aa70dd77c5953ffdb5994d428e1953d0ba0f3a6530d068dd10d2a9ea"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Date - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iss"
+final_url: "https://www.home-assistant.io/integrations/iss"
+canonical_url: "https://www.home-assistant.io/integrations/iss/"
+source_handle: "web:www-home-assistant-io:c5a2a82c5d92"
+source_section: "integrations-iss"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "19443647f7406d1ec89cb76e95ac1a2e40e56d6b3ca876f81aaa718a6c51ca1c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # International Space Station (ISS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

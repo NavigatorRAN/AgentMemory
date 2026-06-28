@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/schluter"
+final_url: "https://www.home-assistant.io/integrations/schluter"
+canonical_url: "https://www.home-assistant.io/integrations/schluter/"
+source_handle: "web:www-home-assistant-io:85439a1b1a0c"
+source_section: "integrations-schluter"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "00a298b20a4ef946d5129977d74707bca373650711515adfb0131007e48f793e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Schluter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

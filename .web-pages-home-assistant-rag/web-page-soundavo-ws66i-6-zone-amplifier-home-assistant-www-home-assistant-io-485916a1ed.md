@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ws66i"
+final_url: "https://www.home-assistant.io/integrations/ws66i"
+canonical_url: "https://www.home-assistant.io/integrations/ws66i/"
+source_handle: "web:www-home-assistant-io:485916a1edfa"
+source_section: "integrations-ws66i"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "672c70b5977a914d67e585bb01b7e711d1aa09d8c80368e7470ea6085d8f9eff"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Soundavo WS66i 6-Zone Amplifier - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

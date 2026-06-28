@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/linux"
+final_url: "https://www.home-assistant.io/installation/linux"
+canonical_url: "https://www.home-assistant.io/installation/linux/"
+source_handle: "web:www-home-assistant-io:c9f72b79e9ec"
+source_section: "installation-linux"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a44ea1d617f915f7be2ff452449dd14dd6fb8464fcc568d554b87dd0f87f712"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Linux - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

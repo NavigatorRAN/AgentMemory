@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/energy/gas"
+final_url: "https://www.home-assistant.io/docs/energy/gas"
+canonical_url: "https://www.home-assistant.io/docs/energy/gas/"
+source_handle: "web:www-home-assistant-io:5fe559806534"
+source_section: "docs-energy"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7631e9a81dcf948bdc1de7890f98793540e269c25077c41a4cb75d6ae3abb0ca"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Integrating your gas usage - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

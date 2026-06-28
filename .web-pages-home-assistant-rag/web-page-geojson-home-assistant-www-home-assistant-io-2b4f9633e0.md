@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/geo_json_events"
+final_url: "https://www.home-assistant.io/integrations/geo_json_events"
+canonical_url: "https://www.home-assistant.io/integrations/geo_json_events/"
+source_handle: "web:www-home-assistant-io:2b4f9633e0a4"
+source_section: "integrations-geo-json-events"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "851094246e0bb4ed9dc665f9ee88600ebb84f468833b862964bf98c4162b369a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GeoJSON - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

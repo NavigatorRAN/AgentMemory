@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/browser"
+final_url: "https://www.home-assistant.io/integrations/browser"
+canonical_url: "https://www.home-assistant.io/integrations/browser/"
+source_handle: "web:www-home-assistant-io:da5bc15df8eb"
+source_section: "integrations-browser"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cfe4236008d48f19e7dea4fab36238dd9ca969c5457f5311bbda5a82e96d2a58"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Browser - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

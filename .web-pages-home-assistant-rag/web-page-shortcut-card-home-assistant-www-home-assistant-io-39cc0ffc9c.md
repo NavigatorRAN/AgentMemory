@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/shortcut"
+final_url: "https://www.home-assistant.io/dashboards/shortcut"
+canonical_url: "https://www.home-assistant.io/dashboards/shortcut/"
+source_handle: "web:www-home-assistant-io:39cc0ffc9c30"
+source_section: "dashboards-shortcut"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3e41a2d2c6eb5ad177ad927667953edf6ba6f044fe013855b48f8d721e052a62"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Shortcut card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

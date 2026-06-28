@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/schlage"
+final_url: "https://www.home-assistant.io/integrations/schlage"
+canonical_url: "https://www.home-assistant.io/integrations/schlage/"
+source_handle: "web:www-home-assistant-io:b883704b2a66"
+source_section: "integrations-schlage"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2285ad9c764a8271b978e76830f8aceea5c6645236ebc46864203e1483af5983"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Schlage - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

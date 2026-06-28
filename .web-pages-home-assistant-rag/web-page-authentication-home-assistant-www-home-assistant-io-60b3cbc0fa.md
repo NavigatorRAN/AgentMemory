@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/authentication"
+final_url: "https://www.home-assistant.io/docs/authentication"
+canonical_url: "https://www.home-assistant.io/docs/authentication/"
+source_handle: "web:www-home-assistant-io:60b3cbc0fae4"
+source_section: "docs-authentication"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f2139fc75ec7fa55738be5238bd7359960fa93d7c66a96988e1b2a1b5fe2e4ec"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Authentication - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

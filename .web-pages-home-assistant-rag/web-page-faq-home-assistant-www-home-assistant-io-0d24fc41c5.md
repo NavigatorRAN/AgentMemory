@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq"
+final_url: "https://www.home-assistant.io/faq"
+canonical_url: "https://www.home-assistant.io/faq/"
+source_handle: "web:www-home-assistant-io:0d24fc41c577"
+source_section: "faq"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2dba427112b294a1d4aea2d43b8c9d8f4f63a1f6cc58fbbdbbc29c1562825696"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # FAQ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/spc"
+final_url: "https://www.home-assistant.io/integrations/spc"
+canonical_url: "https://www.home-assistant.io/integrations/spc/"
+source_handle: "web:www-home-assistant-io:447706326a58"
+source_section: "integrations-spc"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3a863e68e55e6f80e19ed8554ff779577f02039db80fe6a74b4e06f4f55d3206"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Vanderbilt SPC - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

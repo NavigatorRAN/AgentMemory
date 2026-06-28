@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/artsound"
+final_url: "https://www.home-assistant.io/integrations/artsound"
+canonical_url: "https://www.home-assistant.io/integrations/artsound/"
+source_handle: "web:www-home-assistant-io:ea30c8bdf322"
+source_section: "integrations-artsound"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b73f266126722068cec822013ab7f19f8a0ca50fcf2e1c562589cb7f56770a2a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ArtSound - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

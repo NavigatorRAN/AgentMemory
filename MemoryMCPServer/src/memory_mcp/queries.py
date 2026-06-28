@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from typing import Any
 
 from .dates import parse_when
+from . import metrics
 from .storage import Storage, normalize_entity, slugify_title
 
 
@@ -194,8 +195,8 @@ def recall_for_entity(
             limit=limit,
             include_content=include_content,
         )
-    except Exception:
-        pass
+    except Exception as error:
+        metrics.record_index_fallback("recall_for_entity", error)
 
     matches: list[dict[str, Any]] = []
     for ev in storage.iter_events():
@@ -233,8 +234,8 @@ def search_events(
             since=_iso_when(since),
             limit=limit,
         )
-    except Exception:
-        pass
+    except Exception as error:
+        metrics.record_index_fallback("search_events", error)
 
     matches: list[dict[str, Any]] = []
     for ev in storage.iter_events():
@@ -269,8 +270,8 @@ def timeline(
             since=_iso_when(since),
             granularity=granularity,
         )
-    except Exception:
-        pass
+    except Exception as error:
+        metrics.record_index_fallback("timeline", error)
 
     buckets: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for ev in storage.iter_events():
@@ -338,8 +339,8 @@ def list_entities(
             prefix=normalize_entity(prefix) if prefix else None,
             type_filter=type_filter,
         )
-    except Exception:
-        pass
+    except Exception as error:
+        metrics.record_index_fallback("list_entities", error)
 
     index = storage.get_entity_index()
     out = []
@@ -358,8 +359,8 @@ def search_wiki(storage: Storage, query: str, limit: int = 20) -> list[dict[str,
     try:
         storage.ensure_query_index()
         return storage.query_index.search_wiki(query=query, limit=limit)
-    except Exception:
-        pass
+    except Exception as error:
+        metrics.record_index_fallback("search_wiki", error)
 
     needle = query.lower().strip()
     matches = [
@@ -381,8 +382,8 @@ def get_wiki_page(storage: Storage, slug: str) -> dict[str, Any]:
         page = storage.query_index.get_wiki_page(slug=target)
         if page:
             return page
-    except Exception:
-        pass
+    except Exception as error:
+        metrics.record_index_fallback("get_wiki_page", error)
 
     for page in _iter_wiki_pages(storage):
         if normalize_entity(page.get("slug") or "") == target:
@@ -399,8 +400,8 @@ def memory_graph(
     try:
         storage.ensure_query_index()
         return storage.query_index.memory_graph(query=query, limit=limit)
-    except Exception:
-        pass
+    except Exception as error:
+        metrics.record_index_fallback("memory_graph", error)
 
     nodes: dict[str, dict[str, Any]] = {}
     edges: dict[tuple[str, str, str], dict[str, Any]] = {}

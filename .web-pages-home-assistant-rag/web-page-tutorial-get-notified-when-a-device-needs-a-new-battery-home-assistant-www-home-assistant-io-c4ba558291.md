@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/tutorial-battery-alerts"
+final_url: "https://www.home-assistant.io/docs/templating/tutorial-battery-alerts"
+canonical_url: "https://www.home-assistant.io/docs/templating/tutorial-battery-alerts/"
+source_handle: "web:www-home-assistant-io:c4ba558291f1"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7bcc4031d29ffb52105cbfe344cc9746e6c5a266a77bcaa43c513e18b1c1adf6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Tutorial: Get notified when a device needs a new battery - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

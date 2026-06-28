@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/local_todo"
+final_url: "https://www.home-assistant.io/integrations/local_todo"
+canonical_url: "https://www.home-assistant.io/integrations/local_todo/"
+source_handle: "web:www-home-assistant-io:567ac7f058d3"
+source_section: "integrations-local-todo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0e03e02ed3abbceaa31d1049939d5c1e8c38f0a4035ecac47da4d235eb9f2f66"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Local to-do - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

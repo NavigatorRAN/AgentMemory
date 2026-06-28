@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/uptime"
+final_url: "https://www.home-assistant.io/integrations/uptime"
+canonical_url: "https://www.home-assistant.io/integrations/uptime/"
+source_handle: "web:www-home-assistant-io:ba89da741f48"
+source_section: "integrations-uptime"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "933d432d4a8157b81bb80a28167d1e055268e72863464c528c3e40c1e8808220"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Uptime - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/asuswrt"
+final_url: "https://www.home-assistant.io/integrations/asuswrt"
+canonical_url: "https://www.home-assistant.io/integrations/asuswrt/"
+source_handle: "web:www-home-assistant-io:5ebdada409d0"
+source_section: "integrations-asuswrt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b6ebb1493be9bbeae2a6bde184b981d728a4e0ad2bc16b3020f5e23696ab684a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # ASUSWRT - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

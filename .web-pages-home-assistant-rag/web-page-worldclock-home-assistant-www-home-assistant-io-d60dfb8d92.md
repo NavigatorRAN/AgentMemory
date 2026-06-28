@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/worldclock"
+final_url: "https://www.home-assistant.io/integrations/worldclock"
+canonical_url: "https://www.home-assistant.io/integrations/worldclock/"
+source_handle: "web:www-home-assistant-io:d60dfb8d924b"
+source_section: "integrations-worldclock"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b043e167bd90b379a8ed8c65c82fa7f62c6430ee93da4a87bcba18958ad187f0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Worldclock - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

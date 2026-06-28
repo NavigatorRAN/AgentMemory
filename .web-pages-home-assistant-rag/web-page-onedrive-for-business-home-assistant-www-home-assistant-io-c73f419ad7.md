@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/onedrive_for_business"
+final_url: "https://www.home-assistant.io/integrations/onedrive_for_business"
+canonical_url: "https://www.home-assistant.io/integrations/onedrive_for_business/"
+source_handle: "web:www-home-assistant-io:c73f419ad75c"
+source_section: "integrations-onedrive-for-business"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f0ec3d557befb778d895d1f8b42ba240bb5110b00833942d1ca1e3cf02a2952e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OneDrive for Business - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

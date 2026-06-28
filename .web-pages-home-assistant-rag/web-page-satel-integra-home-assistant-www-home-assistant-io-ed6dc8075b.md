@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/satel_integra"
+final_url: "https://www.home-assistant.io/integrations/satel_integra"
+canonical_url: "https://www.home-assistant.io/integrations/satel_integra/"
+source_handle: "web:www-home-assistant-io:ed6dc8075bd4"
+source_section: "integrations-satel-integra"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "22d7fb94397f5c762e3112fb3bf09585f4728f8c2ed460d0f9c50101ef33d507"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Satel Integra - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

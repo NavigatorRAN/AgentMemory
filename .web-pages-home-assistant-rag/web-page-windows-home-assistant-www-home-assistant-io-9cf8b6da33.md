@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/windows"
+final_url: "https://www.home-assistant.io/installation/windows"
+canonical_url: "https://www.home-assistant.io/installation/windows/"
+source_handle: "web:www-home-assistant-io:9cf8b6da3384"
+source_section: "installation-windows"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7ba6f91b868da0995a6e09adbc0c395c0d4329d1a6d7b8532749e8c17f02c974"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Windows - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

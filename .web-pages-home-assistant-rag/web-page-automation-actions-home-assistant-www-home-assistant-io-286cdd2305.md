@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/services"
+final_url: "https://www.home-assistant.io/docs/automation/services"
+canonical_url: "https://www.home-assistant.io/docs/automation/services/"
+source_handle: "web:www-home-assistant-io:286cdd2305ec"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4e864d531a4acf2bb0e73602bd771cfaa98890e56da500efd7f45422a95aeb4c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Automation actions - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

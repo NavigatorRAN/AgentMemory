@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/azure_event_hub"
+final_url: "https://www.home-assistant.io/integrations/azure_event_hub"
+canonical_url: "https://www.home-assistant.io/integrations/azure_event_hub/"
+source_handle: "web:www-home-assistant-io:0061213748d6"
+source_section: "integrations-azure-event-hub"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fa754f08e021ef7a966288268a8979bb3da0e66e18ca3754aba03f66f1a1aadc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Azure Event Hub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

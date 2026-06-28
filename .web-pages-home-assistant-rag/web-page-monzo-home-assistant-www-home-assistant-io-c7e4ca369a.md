@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/monzo"
+final_url: "https://www.home-assistant.io/integrations/monzo"
+canonical_url: "https://www.home-assistant.io/integrations/monzo/"
+source_handle: "web:www-home-assistant-io:c7e4ca369aa4"
+source_section: "integrations-monzo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cb9e9be769409411c5ac3bcc45e8b2944f01829f9bb605ca7c39d7088c4f7097"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Monzo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

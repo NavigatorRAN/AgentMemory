@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/plaato"
+final_url: "https://www.home-assistant.io/integrations/plaato"
+canonical_url: "https://www.home-assistant.io/integrations/plaato/"
+source_handle: "web:www-home-assistant-io:2f8e4f2ad848"
+source_section: "integrations-plaato"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "117985723d3d6ce4bbd934abd6bf59d0f10687b5be375c261879f107d7f67352"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Plaato - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

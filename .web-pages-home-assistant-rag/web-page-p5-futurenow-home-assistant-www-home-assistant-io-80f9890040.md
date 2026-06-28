@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/futurenow"
+final_url: "https://www.home-assistant.io/integrations/futurenow"
+canonical_url: "https://www.home-assistant.io/integrations/futurenow/"
+source_handle: "web:www-home-assistant-io:80f9890040ed"
+source_section: "integrations-futurenow"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1946aa829103d80d22825778e003de8aae54e39653eaf92961fd8d2109171a4f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # P5 FutureNow - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

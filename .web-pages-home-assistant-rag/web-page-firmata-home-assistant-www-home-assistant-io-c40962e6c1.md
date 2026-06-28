@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/firmata"
+final_url: "https://www.home-assistant.io/integrations/firmata"
+canonical_url: "https://www.home-assistant.io/integrations/firmata/"
+source_handle: "web:www-home-assistant-io:c40962e6c1a8"
+source_section: "integrations-firmata"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e40b4dd604f13110d399e4f1fb67f70d97e12f61d5b2350d340406d3d440bd2a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Firmata - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

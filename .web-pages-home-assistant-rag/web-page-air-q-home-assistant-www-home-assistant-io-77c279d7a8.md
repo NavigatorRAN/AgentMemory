@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airq"
+final_url: "https://www.home-assistant.io/integrations/airq"
+canonical_url: "https://www.home-assistant.io/integrations/airq/"
+source_handle: "web:www-home-assistant-io:77c279d7a880"
+source_section: "integrations-airq"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b211d0871436803ffbd0be1f7c80740728048b0c42c91d066cf832d66b9a95bd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # air-Q - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

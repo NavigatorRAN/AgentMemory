@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/scripts/conditions"
+final_url: "https://www.home-assistant.io/docs/scripts/conditions"
+canonical_url: "https://www.home-assistant.io/docs/scripts/conditions/"
+source_handle: "web:www-home-assistant-io:f64cdb83c692"
+source_section: "docs-scripts"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f24ab5fd71a0da5fc7d945c078200a3117bcbd7fd8af452f5099b12fc8946255"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Conditions - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

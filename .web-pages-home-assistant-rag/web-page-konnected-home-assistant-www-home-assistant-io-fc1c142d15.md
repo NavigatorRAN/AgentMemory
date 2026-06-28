@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/konnected_esphome"
+final_url: "https://www.home-assistant.io/integrations/konnected_esphome"
+canonical_url: "https://www.home-assistant.io/integrations/konnected_esphome/"
+source_handle: "web:www-home-assistant-io:fc1c142d1586"
+source_section: "integrations-konnected-esphome"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "af78107ce3b713565bd2b05e0430b3568d2557b196c5448d1df21c074eae349c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Konnected - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

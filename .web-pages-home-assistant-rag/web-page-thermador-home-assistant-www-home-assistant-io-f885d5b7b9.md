@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thermador"
+final_url: "https://www.home-assistant.io/integrations/thermador"
+canonical_url: "https://www.home-assistant.io/integrations/thermador/"
+source_handle: "web:www-home-assistant-io:f885d5b7b906"
+source_section: "integrations-thermador"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "44835d0ee9a99413564d4b3ee283d9905be8450ac5f725db9212b1affeb6b4f9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Thermador - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

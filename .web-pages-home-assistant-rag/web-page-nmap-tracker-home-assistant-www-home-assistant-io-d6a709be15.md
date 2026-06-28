@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nmap_tracker"
+final_url: "https://www.home-assistant.io/integrations/nmap_tracker"
+canonical_url: "https://www.home-assistant.io/integrations/nmap_tracker/"
+source_handle: "web:www-home-assistant-io:d6a709be1542"
+source_section: "integrations-nmap-tracker"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8e9ccce4acd93d5425c5a91f692c0d17fe0f72a82ee88b6b574730c082201f9a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nmap Tracker - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

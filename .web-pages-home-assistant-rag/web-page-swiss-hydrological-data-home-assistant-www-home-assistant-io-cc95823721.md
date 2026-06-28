@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/swiss_hydrological_data"
+final_url: "https://www.home-assistant.io/integrations/swiss_hydrological_data"
+canonical_url: "https://www.home-assistant.io/integrations/swiss_hydrological_data/"
+source_handle: "web:www-home-assistant-io:cc95823721e1"
+source_section: "integrations-swiss-hydrological-data"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8b1561d96217d6f647717e6ed210305360033131ba7e27cdf09522035965b90f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Swiss Hydrological Data - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ovo_energy"
+final_url: "https://www.home-assistant.io/integrations/ovo_energy"
+canonical_url: "https://www.home-assistant.io/integrations/ovo_energy/"
+source_handle: "web:www-home-assistant-io:b2e5db4a41fa"
+source_section: "integrations-ovo-energy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7aca7517378964d5cd9398a3857fa2775cd49b1edbfb927bf2e2f3f9f5a8ab2a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OVO Energy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

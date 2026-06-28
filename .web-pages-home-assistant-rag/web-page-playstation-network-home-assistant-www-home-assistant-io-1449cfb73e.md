@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/playstation_network"
+final_url: "https://www.home-assistant.io/integrations/playstation_network"
+canonical_url: "https://www.home-assistant.io/integrations/playstation_network/"
+source_handle: "web:www-home-assistant-io:1449cfb73e0b"
+source_section: "integrations-playstation-network"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f3438d6c1e1f16cf82f3ee7851472bbbd284723017577302f6ff52ac2179595c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # PlayStation Network - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

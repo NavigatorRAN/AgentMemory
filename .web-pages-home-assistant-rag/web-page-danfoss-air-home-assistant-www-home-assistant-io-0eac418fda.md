@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/danfoss_air"
+final_url: "https://www.home-assistant.io/integrations/danfoss_air"
+canonical_url: "https://www.home-assistant.io/integrations/danfoss_air/"
+source_handle: "web:www-home-assistant-io:0eac418fda29"
+source_section: "integrations-danfoss-air"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b62d16104e5557655a367b3aa436e2c9522216599b918e21caeb71c9c45b89d1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Danfoss Air - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

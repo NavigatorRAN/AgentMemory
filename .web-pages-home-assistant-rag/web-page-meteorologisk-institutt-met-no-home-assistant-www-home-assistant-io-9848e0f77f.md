@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/met"
+final_url: "https://www.home-assistant.io/integrations/met"
+canonical_url: "https://www.home-assistant.io/integrations/met/"
+source_handle: "web:www-home-assistant-io:9848e0f77f79"
+source_section: "integrations-met"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7c00fde5e4b07814792b5e369e6349faef5400122709ea06077e65f200a90928"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Meteorologisk institutt (Met.no) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

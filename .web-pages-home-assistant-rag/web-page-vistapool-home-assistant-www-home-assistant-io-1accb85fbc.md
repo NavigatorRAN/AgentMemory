@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vistapool"
+final_url: "https://www.home-assistant.io/integrations/vistapool"
+canonical_url: "https://www.home-assistant.io/integrations/vistapool/"
+source_handle: "web:www-home-assistant-io:1accb85fbc27"
+source_section: "integrations-vistapool"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ef27dd5fb139294ae11f42bb6a35a39da24b16d4387530d18cd4e45034351e38"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Vistapool - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/usage_prediction"
+final_url: "https://www.home-assistant.io/integrations/usage_prediction"
+canonical_url: "https://www.home-assistant.io/integrations/usage_prediction/"
+source_handle: "web:www-home-assistant-io:f1ecfb9266ef"
+source_section: "integrations-usage-prediction"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "30df6cccecb7706178920887f5d7ca408c9b50e82c069724a4ef676708fed233"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Usage Prediction - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/tools/dev-tools"
+final_url: "https://www.home-assistant.io/docs/tools/dev-tools"
+canonical_url: "https://www.home-assistant.io/docs/tools/dev-tools/"
+source_handle: "web:www-home-assistant-io:701633bd0abb"
+source_section: "docs-tools"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e5e0b4ffc8de74bf0a2db315cac88e63d265d887da93d42a806c00d77977932a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Developer tools - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/idteck_prox"
+final_url: "https://www.home-assistant.io/integrations/idteck_prox"
+canonical_url: "https://www.home-assistant.io/integrations/idteck_prox/"
+source_handle: "web:www-home-assistant-io:9de8ca68c98f"
+source_section: "integrations-idteck-prox"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "841d39385bf01085e902d736c51eedbd7ec15abaa2bd0c7b4ad66c992298fc12"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IDTECK Proximity Reader - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

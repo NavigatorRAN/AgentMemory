@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/conditional"
+final_url: "https://www.home-assistant.io/dashboards/conditional"
+canonical_url: "https://www.home-assistant.io/dashboards/conditional/"
+source_handle: "web:www-home-assistant-io:4673e0bd571a"
+source_section: "dashboards-conditional"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e67459f23317f85598f7d86bf04a376214bafdcb861a6ef7494ab61494d45fee"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Conditional card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

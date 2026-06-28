@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/media_extractor"
+final_url: "https://www.home-assistant.io/integrations/media_extractor"
+canonical_url: "https://www.home-assistant.io/integrations/media_extractor/"
+source_handle: "web:www-home-assistant-io:bb4f5d0c1e80"
+source_section: "integrations-media-extractor"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aebbbf4bd5fba4d596b95708383fd6f912cdc5136cf0cf50bc07e54a2b94b1a8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Media extractor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

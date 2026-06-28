@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/geo_location"
+final_url: "https://www.home-assistant.io/integrations/geo_location"
+canonical_url: "https://www.home-assistant.io/integrations/geo_location/"
+source_handle: "web:www-home-assistant-io:f65219bdb3a7"
+source_section: "integrations-geo-location"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7555b44f668d204d46eaf9c3eb05a3668e25482634d15d4113336ee07640110b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Geolocation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

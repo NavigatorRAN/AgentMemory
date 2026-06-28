@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ads"
+final_url: "https://www.home-assistant.io/integrations/ads"
+canonical_url: "https://www.home-assistant.io/integrations/ads/"
+source_handle: "web:www-home-assistant-io:ddbb07b67dcc"
+source_section: "integrations-ads"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "eb44be7bf208825d78f9aca73a0d8a64c7e8c0990631f16dd8243ced4b89dc4d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ADS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

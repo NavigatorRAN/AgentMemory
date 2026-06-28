@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ecovacs"
+final_url: "https://www.home-assistant.io/integrations/ecovacs"
+canonical_url: "https://www.home-assistant.io/integrations/ecovacs/"
+source_handle: "web:www-home-assistant-io:21d2dc65f130"
+source_section: "integrations-ecovacs"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "33081aa4a0c3eb74d6589d40a35e6850df79c7b435c1c7c3a6300d3a9ffee915"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Ecovacs - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

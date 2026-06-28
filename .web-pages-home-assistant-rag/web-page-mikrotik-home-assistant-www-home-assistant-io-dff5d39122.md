@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mikrotik"
+final_url: "https://www.home-assistant.io/integrations/mikrotik"
+canonical_url: "https://www.home-assistant.io/integrations/mikrotik/"
+source_handle: "web:www-home-assistant-io:dff5d3912261"
+source_section: "integrations-mikrotik"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "57487c5ff3a4ed0295d40999b624afe4bd40204d0fdb798844a11d08924ea7c6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mikrotik - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

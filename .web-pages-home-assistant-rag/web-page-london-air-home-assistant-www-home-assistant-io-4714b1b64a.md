@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/london_air"
+final_url: "https://www.home-assistant.io/integrations/london_air"
+canonical_url: "https://www.home-assistant.io/integrations/london_air/"
+source_handle: "web:www-home-assistant-io:4714b1b64aa1"
+source_section: "integrations-london-air"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "358f714e73daacdc1f8507e1b047ab45080a6c6fe4154f3bf94a21eed66c1f62"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # London Air - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

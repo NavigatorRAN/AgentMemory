@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vesync"
+final_url: "https://www.home-assistant.io/integrations/vesync"
+canonical_url: "https://www.home-assistant.io/integrations/vesync/"
+source_handle: "web:www-home-assistant-io:9e84ca1d998b"
+source_section: "integrations-vesync"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4fbdac004bf2777d1ca1764881e6ff91e2720f061a2507d54320fac6f2b93d14"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # VeSync - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

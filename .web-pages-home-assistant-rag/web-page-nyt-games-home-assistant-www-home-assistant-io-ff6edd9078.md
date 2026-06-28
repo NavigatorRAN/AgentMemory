@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nyt_games"
+final_url: "https://www.home-assistant.io/integrations/nyt_games"
+canonical_url: "https://www.home-assistant.io/integrations/nyt_games/"
+source_handle: "web:www-home-assistant-io:ff6edd907858"
+source_section: "integrations-nyt-games"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4ccd1176042e4ebf55ceeef361366c401d2b2239cd152fc04cd2807be1953cd9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NYT Games - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

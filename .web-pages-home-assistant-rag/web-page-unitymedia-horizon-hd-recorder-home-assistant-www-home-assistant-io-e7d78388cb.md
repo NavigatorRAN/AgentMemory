@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/horizon"
+final_url: "https://www.home-assistant.io/integrations/horizon"
+canonical_url: "https://www.home-assistant.io/integrations/horizon/"
+source_handle: "web:www-home-assistant-io:e7d78388cbaa"
+source_section: "integrations-horizon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f8d71374a2ee9fdca7114e93f801b91244d1e169acff624a7781456b3407d95d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Unitymedia Horizon HD Recorder - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

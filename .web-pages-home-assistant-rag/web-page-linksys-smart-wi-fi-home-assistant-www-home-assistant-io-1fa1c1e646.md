@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/linksys_smart"
+final_url: "https://www.home-assistant.io/integrations/linksys_smart"
+canonical_url: "https://www.home-assistant.io/integrations/linksys_smart/"
+source_handle: "web:www-home-assistant-io:1fa1c1e64669"
+source_section: "integrations-linksys-smart"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6ced7f399696438db5533ef05b88bfedd87561ea2b75ea31e11eccb7c8aeef45"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Linksys Smart Wi-Fi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

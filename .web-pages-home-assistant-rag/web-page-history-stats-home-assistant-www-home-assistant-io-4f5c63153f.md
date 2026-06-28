@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/history_stats"
+final_url: "https://www.home-assistant.io/integrations/history_stats"
+canonical_url: "https://www.home-assistant.io/integrations/history_stats/"
+source_handle: "web:www-home-assistant-io:4f5c63153fc3"
+source_section: "integrations-history-stats"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "851562cdd92de14b3409c466ea7fdd2f10d1bfa20eae571c2f83e08d94bf7f1c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # History Stats - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

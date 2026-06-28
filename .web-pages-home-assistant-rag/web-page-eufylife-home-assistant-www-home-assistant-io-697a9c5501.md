@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eufylife_ble"
+final_url: "https://www.home-assistant.io/integrations/eufylife_ble"
+canonical_url: "https://www.home-assistant.io/integrations/eufylife_ble/"
+source_handle: "web:www-home-assistant-io:697a9c55019f"
+source_section: "integrations-eufylife-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "83fca76955c1fc86297416c72d1999856287cda4979ebe471f49bb13ae3f45e8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EufyLife - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

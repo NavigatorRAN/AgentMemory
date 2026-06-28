@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/madeco"
+final_url: "https://www.home-assistant.io/integrations/madeco"
+canonical_url: "https://www.home-assistant.io/integrations/madeco/"
+source_handle: "web:www-home-assistant-io:4587c18b6860"
+source_section: "integrations-madeco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d41b635986c7ec84021a6067e2e0c86673ca1ae7bc2493917c6451f53df5e042"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Madeco - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

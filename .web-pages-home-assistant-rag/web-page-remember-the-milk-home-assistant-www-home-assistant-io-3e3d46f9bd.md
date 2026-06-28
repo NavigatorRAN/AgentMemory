@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/remember_the_milk"
+final_url: "https://www.home-assistant.io/integrations/remember_the_milk"
+canonical_url: "https://www.home-assistant.io/integrations/remember_the_milk/"
+source_handle: "web:www-home-assistant-io:3e3d46f9bdab"
+source_section: "integrations-remember-the-milk"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c31e62ba1f5f57dde4422cda4ffe34c3c5f9ac61517d33a306db58bacf689119"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Remember The Milk - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

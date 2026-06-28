@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lidarr"
+final_url: "https://www.home-assistant.io/integrations/lidarr"
+canonical_url: "https://www.home-assistant.io/integrations/lidarr/"
+source_handle: "web:www-home-assistant-io:d0497b18ea43"
+source_section: "integrations-lidarr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c75b72b770770fdf3b1f908d25467689085bd2e826d71a785ac88c952b1492f1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Lidarr - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

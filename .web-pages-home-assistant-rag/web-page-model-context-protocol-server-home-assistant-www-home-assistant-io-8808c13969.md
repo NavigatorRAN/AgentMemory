@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mcp_server"
+final_url: "https://www.home-assistant.io/integrations/mcp_server"
+canonical_url: "https://www.home-assistant.io/integrations/mcp_server/"
+source_handle: "web:www-home-assistant-io:8808c1396908"
+source_section: "integrations-mcp-server"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "256da91604d2e5c300180087dfe9a6da60906ce0479bde0e8f296c1675d6f600"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Model Context Protocol Server - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

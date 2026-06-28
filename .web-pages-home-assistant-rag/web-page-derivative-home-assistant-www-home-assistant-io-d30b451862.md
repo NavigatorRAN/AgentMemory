@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/derivative"
+final_url: "https://www.home-assistant.io/integrations/derivative"
+canonical_url: "https://www.home-assistant.io/integrations/derivative/"
+source_handle: "web:www-home-assistant-io:d30b45186218"
+source_section: "integrations-derivative"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "50fa90ce780ab44f790f7056c40e7faf5137c1ea39b90cc654fdcc8ab5311358"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Derivative - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

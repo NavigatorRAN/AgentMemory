@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/somfy"
+final_url: "https://www.home-assistant.io/integrations/somfy"
+canonical_url: "https://www.home-assistant.io/integrations/somfy/"
+source_handle: "web:www-home-assistant-io:e40e38086283"
+source_section: "integrations-somfy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "569e130fa908a8e9a806dee8d0d829cf035c5400ca74489280bb1ac34915a9f1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Somfy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

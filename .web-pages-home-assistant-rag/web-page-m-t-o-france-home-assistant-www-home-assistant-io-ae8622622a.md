@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/meteo_france"
+final_url: "https://www.home-assistant.io/integrations/meteo_france"
+canonical_url: "https://www.home-assistant.io/integrations/meteo_france/"
+source_handle: "web:www-home-assistant-io:ae8622622a66"
+source_section: "integrations-meteo-france"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d05672fa4805d62f10535d4b242f22c5b3959da46d64ef3317671cb80f50b1f8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Météo-France - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

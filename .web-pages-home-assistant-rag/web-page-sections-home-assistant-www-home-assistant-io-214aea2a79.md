@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/sections"
+final_url: "https://www.home-assistant.io/dashboards/sections"
+canonical_url: "https://www.home-assistant.io/dashboards/sections/"
+source_handle: "web:www-home-assistant-io:214aea2a7944"
+source_section: "dashboards-sections"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6f4658b22f6eaa13c4af029a670bf9eea535cdabd756d27a8a8603a62fddd8a5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sections - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

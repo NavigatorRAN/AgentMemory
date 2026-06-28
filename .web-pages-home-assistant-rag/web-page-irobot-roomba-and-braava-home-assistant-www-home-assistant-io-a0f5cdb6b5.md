@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/roomba"
+final_url: "https://www.home-assistant.io/integrations/roomba"
+canonical_url: "https://www.home-assistant.io/integrations/roomba/"
+source_handle: "web:www-home-assistant-io:a0f5cdb6b589"
+source_section: "integrations-roomba"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b4e1f52f4f5436e43c34d7b96fb2bb0f7787aa57d6496a9ba4b3618e7595d17f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # iRobot Roomba and Braava - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

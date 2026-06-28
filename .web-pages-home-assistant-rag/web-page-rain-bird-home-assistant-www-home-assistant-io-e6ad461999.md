@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rainbird"
+final_url: "https://www.home-assistant.io/integrations/rainbird"
+canonical_url: "https://www.home-assistant.io/integrations/rainbird/"
+source_handle: "web:www-home-assistant-io:e6ad46199904"
+source_section: "integrations-rainbird"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "50047bd8c441f0373bbea109b946af17eeef4f4fb0d5b337de79ddfec14e085d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rain Bird - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nad"
+final_url: "https://www.home-assistant.io/integrations/nad"
+canonical_url: "https://www.home-assistant.io/integrations/nad/"
+source_handle: "web:www-home-assistant-io:31205270da84"
+source_section: "integrations-nad"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2096021e0e07b1336df313059812b6b0da8ca174dfecb2df93f0bf7105cb1990"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NAD - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

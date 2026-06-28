@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/otp"
+final_url: "https://www.home-assistant.io/integrations/otp"
+canonical_url: "https://www.home-assistant.io/integrations/otp/"
+source_handle: "web:www-home-assistant-io:06d94e5c85de"
+source_section: "integrations-otp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "955e5de79c611f944225caab71fb9c6e25368276550961245df9633f455f0c31"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # One-Time Password (OTP) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

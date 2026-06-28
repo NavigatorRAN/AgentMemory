@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/what-hardware-do-i-need"
+final_url: "https://www.home-assistant.io/faq/what-hardware-do-i-need"
+canonical_url: "https://www.home-assistant.io/faq/what-hardware-do-i-need/"
+source_handle: "web:www-home-assistant-io:fe1b69e1ae69"
+source_section: "faq-what-hardware-do-i-need"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8df243663109e9ec2eb55e5997498c27b761db1a2786a15cda0d15d58d5987c2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # What hardware do I need to run Home Assistant? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/xiaomi_aqara"
+final_url: "https://www.home-assistant.io/integrations/xiaomi_aqara"
+canonical_url: "https://www.home-assistant.io/integrations/xiaomi_aqara/"
+source_handle: "web:www-home-assistant-io:d7bf22cddcf7"
+source_section: "integrations-xiaomi-aqara"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7990cd1ac36203b77e2f8e83654237a2cb1a54fcebe35b5dbaecfeb4c1ed895c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Xiaomi Gateway (Aqara) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

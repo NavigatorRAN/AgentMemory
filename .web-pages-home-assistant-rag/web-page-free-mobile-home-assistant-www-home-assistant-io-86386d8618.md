@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/free_mobile"
+final_url: "https://www.home-assistant.io/integrations/free_mobile"
+canonical_url: "https://www.home-assistant.io/integrations/free_mobile/"
+source_handle: "web:www-home-assistant-io:86386d8618d3"
+source_section: "integrations-free-mobile"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4797b39a68235ce230b423d3ed06db6852ca3531faef4f4d44e781dedf6140b3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Free Mobile - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

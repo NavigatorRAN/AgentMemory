@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/assist_daily_summary"
+final_url: "https://www.home-assistant.io/voice_control/assist_daily_summary"
+canonical_url: "https://www.home-assistant.io/voice_control/assist_daily_summary/"
+source_handle: "web:www-home-assistant-io:e0fb29dcf50c"
+source_section: "voice-control-assist-daily-summary"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ed310fa59484c298e8af183d44a9db04ec77dd3ba911f50e39499b993b85d370"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Daily summary by Assist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airnow"
+final_url: "https://www.home-assistant.io/integrations/airnow"
+canonical_url: "https://www.home-assistant.io/integrations/airnow/"
+source_handle: "web:www-home-assistant-io:7d56f8510a13"
+source_section: "integrations-airnow"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b425ce4dc34c77246b0d8a31203eb3ee598c17bd510085e1a3a41ed45bf33f54"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AirNow - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

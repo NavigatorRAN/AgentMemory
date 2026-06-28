@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kegtron"
+final_url: "https://www.home-assistant.io/integrations/kegtron"
+canonical_url: "https://www.home-assistant.io/integrations/kegtron/"
+source_handle: "web:www-home-assistant-io:b2237ede32de"
+source_section: "integrations-kegtron"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1a7d05531b0701b198b7c4e526a3f152588f7970a5df20442c5cfb9a75dc9a42"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kegtron - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

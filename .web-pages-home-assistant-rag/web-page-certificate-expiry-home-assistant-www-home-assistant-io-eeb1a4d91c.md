@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cert_expiry"
+final_url: "https://www.home-assistant.io/integrations/cert_expiry"
+canonical_url: "https://www.home-assistant.io/integrations/cert_expiry/"
+source_handle: "web:www-home-assistant-io:eeb1a4d91c2e"
+source_section: "integrations-cert-expiry"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2eb0bd86bfee20e90d4e8cdce354c34d62d09d174c8c40757e1f923687e9b231"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Certificate Expiry - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/troubleshooting_the_s3_box"
+final_url: "https://www.home-assistant.io/voice_control/troubleshooting_the_s3_box"
+canonical_url: "https://www.home-assistant.io/voice_control/troubleshooting_the_s3_box/"
+source_handle: "web:www-home-assistant-io:16f4d85de8fd"
+source_section: "voice-control-troubleshooting-the-s3-box"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c89a94a6d9dcd54e7bf6652f24e6c6e43c5710fd2d8171478f4452f72b78dac7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Troubleshooting the ESP32-S3-BOX-3 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

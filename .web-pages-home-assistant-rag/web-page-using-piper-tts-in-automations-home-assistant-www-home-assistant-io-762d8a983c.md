@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/using_tts_in_automation"
+final_url: "https://www.home-assistant.io/voice_control/using_tts_in_automation"
+canonical_url: "https://www.home-assistant.io/voice_control/using_tts_in_automation/"
+source_handle: "web:www-home-assistant-io:762d8a983c2b"
+source_section: "voice-control-using-tts-in-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28f9f90685a24dc43c3e1b1b2f99a737422c0243955991bbfecf5cde762fd897"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Using Piper TTS in automations - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sma"
+final_url: "https://www.home-assistant.io/integrations/sma"
+canonical_url: "https://www.home-assistant.io/integrations/sma/"
+source_handle: "web:www-home-assistant-io:5ac745c6ce9a"
+source_section: "integrations-sma"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3bf1f3ba80681fbed85a314ece591f7daf679e05636908900c20a6ad7daa5c67"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # SMA Solar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dremel_3d_printer"
+final_url: "https://www.home-assistant.io/integrations/dremel_3d_printer"
+canonical_url: "https://www.home-assistant.io/integrations/dremel_3d_printer/"
+source_handle: "web:www-home-assistant-io:00d42322b8a3"
+source_section: "integrations-dremel-3d-printer"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "43fd4d6eddf00529a0a5ec57b39074964ae9c31712ae0962bf3ec7611eaa996f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dremel 3D Printer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

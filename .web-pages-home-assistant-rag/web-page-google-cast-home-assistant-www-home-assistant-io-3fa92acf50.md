@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cast"
+final_url: "https://www.home-assistant.io/integrations/cast"
+canonical_url: "https://www.home-assistant.io/integrations/cast/"
+source_handle: "web:www-home-assistant-io:3fa92acf5071"
+source_section: "integrations-cast"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a871255d549a690e13270ff1be850d70baece435e6c81541903efec271eb91b2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Cast - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

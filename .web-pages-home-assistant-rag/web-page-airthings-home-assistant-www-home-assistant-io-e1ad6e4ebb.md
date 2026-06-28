@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airthings"
+final_url: "https://www.home-assistant.io/integrations/airthings"
+canonical_url: "https://www.home-assistant.io/integrations/airthings/"
+source_handle: "web:www-home-assistant-io:e1ad6e4ebbdb"
+source_section: "integrations-airthings"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5e8e46a70043a5d328196d348e6206aaf74f2041266c2c48c837dda5657435e8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Airthings - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

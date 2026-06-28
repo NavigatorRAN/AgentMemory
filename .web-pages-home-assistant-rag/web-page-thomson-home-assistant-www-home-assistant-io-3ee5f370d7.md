@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thomson"
+final_url: "https://www.home-assistant.io/integrations/thomson"
+canonical_url: "https://www.home-assistant.io/integrations/thomson/"
+source_handle: "web:www-home-assistant-io:3ee5f370d743"
+source_section: "integrations-thomson"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d4c59349f0283b5e1c8baa622607182a0ce1a308b630deb9778c038eaabca14c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Thomson - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

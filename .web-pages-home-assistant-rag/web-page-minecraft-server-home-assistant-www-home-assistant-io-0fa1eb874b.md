@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/minecraft_server"
+final_url: "https://www.home-assistant.io/integrations/minecraft_server"
+canonical_url: "https://www.home-assistant.io/integrations/minecraft_server/"
+source_handle: "web:www-home-assistant-io:0fa1eb874b40"
+source_section: "integrations-minecraft-server"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bc2d039c2d6e9268719b92b4dffbc9a609065346a828f32dcf47f64c59e9e4b2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Minecraft Server - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

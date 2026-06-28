@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/amberelectric"
+final_url: "https://www.home-assistant.io/integrations/amberelectric"
+canonical_url: "https://www.home-assistant.io/integrations/amberelectric/"
+source_handle: "web:www-home-assistant-io:a15f66b2de67"
+source_section: "integrations-amberelectric"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "56d89ec392599700f10c8eb390a7ce1ecf83ef9e4383ec79818319ce9b36f712"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Amber Electric - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

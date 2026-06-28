@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/environment_canada"
+final_url: "https://www.home-assistant.io/integrations/environment_canada"
+canonical_url: "https://www.home-assistant.io/integrations/environment_canada/"
+source_handle: "web:www-home-assistant-io:0be6eb279777"
+source_section: "integrations-environment-canada"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "00a310a70e576d659ed2400ad59c451e368c457f252afb604dfc0befe7631754"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Environment Canada - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

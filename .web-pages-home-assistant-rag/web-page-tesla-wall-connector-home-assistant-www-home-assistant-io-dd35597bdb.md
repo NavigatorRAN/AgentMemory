@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tesla_wall_connector"
+final_url: "https://www.home-assistant.io/integrations/tesla_wall_connector"
+canonical_url: "https://www.home-assistant.io/integrations/tesla_wall_connector/"
+source_handle: "web:www-home-assistant-io:dd35597bdb7f"
+source_section: "integrations-tesla-wall-connector"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e97fe9d9cfb509efe740be88c86abf1e08a83d5ee3ec8d7fda081b704d2fd1a3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tesla Wall Connector - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

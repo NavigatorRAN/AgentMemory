@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/agent_dvr"
+final_url: "https://www.home-assistant.io/integrations/agent_dvr"
+canonical_url: "https://www.home-assistant.io/integrations/agent_dvr/"
+source_handle: "web:www-home-assistant-io:b82f313a0895"
+source_section: "integrations-agent-dvr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6fa63be0f7ad88224e882f4145c4faf1a44db7e22f5693a3f73eb6fa6d52b157"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Agent DVR - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

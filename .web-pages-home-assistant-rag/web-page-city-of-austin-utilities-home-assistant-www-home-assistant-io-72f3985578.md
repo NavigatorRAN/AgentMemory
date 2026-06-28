@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/coautilities"
+final_url: "https://www.home-assistant.io/integrations/coautilities"
+canonical_url: "https://www.home-assistant.io/integrations/coautilities/"
+source_handle: "web:www-home-assistant-io:72f398557893"
+source_section: "integrations-coautilities"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9ee97e56bd9910501d640cf7678a02c4974b245ef92510743afdeea2905c2863"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # City of Austin Utilities - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

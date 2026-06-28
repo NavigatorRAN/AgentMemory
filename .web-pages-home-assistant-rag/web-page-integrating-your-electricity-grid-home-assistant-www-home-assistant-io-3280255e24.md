@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/energy/electricity-grid"
+final_url: "https://www.home-assistant.io/docs/energy/electricity-grid"
+canonical_url: "https://www.home-assistant.io/docs/energy/electricity-grid/"
+source_handle: "web:www-home-assistant-io:3280255e24d6"
+source_section: "docs-energy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "557ba79a823cd1ff79687c94b2a563df09d01f1ecd6a219b0882adf1a155f1ab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Integrating your electricity grid - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

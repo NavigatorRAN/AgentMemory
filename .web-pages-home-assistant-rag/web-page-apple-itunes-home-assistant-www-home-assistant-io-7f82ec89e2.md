@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/itunes"
+final_url: "https://www.home-assistant.io/integrations/itunes"
+canonical_url: "https://www.home-assistant.io/integrations/itunes/"
+source_handle: "web:www-home-assistant-io:7f82ec89e21c"
+source_section: "integrations-itunes"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b3c455b064fcd765db35b53d7865bee3f069934bfac74c4901f822cc75d2e01a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Apple iTunes - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/egardia"
+final_url: "https://www.home-assistant.io/integrations/egardia"
+canonical_url: "https://www.home-assistant.io/integrations/egardia/"
+source_handle: "web:www-home-assistant-io:ee739419a906"
+source_section: "integrations-egardia"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d18592069fd10652be081ceef51445e147f57ef9769198d4eb3649700b6e9822"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Egardia - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

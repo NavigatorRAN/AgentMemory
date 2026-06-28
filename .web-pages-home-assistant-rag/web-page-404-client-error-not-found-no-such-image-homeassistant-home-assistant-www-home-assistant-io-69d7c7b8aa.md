@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/404"
+final_url: "https://www.home-assistant.io/faq/404"
+canonical_url: "https://www.home-assistant.io/faq/404/"
+source_handle: "web:www-home-assistant-io:69d7c7b8aa42"
+source_section: "faq-404"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "415d402a358d190cafcbec3fef744f4d4fb0a60cf9170692c348e92f461d72aa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # 404 Client Error: Not Found ('no such image: homeassistant/...) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

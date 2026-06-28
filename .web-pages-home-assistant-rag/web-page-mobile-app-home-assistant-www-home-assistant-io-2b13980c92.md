@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mobile_app"
+final_url: "https://www.home-assistant.io/integrations/mobile_app"
+canonical_url: "https://www.home-assistant.io/integrations/mobile_app/"
+source_handle: "web:www-home-assistant-io:2b13980c9284"
+source_section: "integrations-mobile-app"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0122512f10e36151ccc5b599c6c711276cb5e5a61c2bd1cc461327484869911c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mobile App - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

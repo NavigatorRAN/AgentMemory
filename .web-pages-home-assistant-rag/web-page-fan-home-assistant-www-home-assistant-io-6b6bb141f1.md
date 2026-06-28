@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fan"
+final_url: "https://www.home-assistant.io/integrations/fan"
+canonical_url: "https://www.home-assistant.io/integrations/fan/"
+source_handle: "web:www-home-assistant-io:6b6bb141f114"
+source_section: "integrations-fan"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a8ec7b1af88a146c3d5efdeb097174b5796ca0f62bb9aa371e3cb70a318131d9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fan - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

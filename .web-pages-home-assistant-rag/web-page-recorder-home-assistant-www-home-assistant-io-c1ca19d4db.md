@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/recorder"
+final_url: "https://www.home-assistant.io/integrations/recorder"
+canonical_url: "https://www.home-assistant.io/integrations/recorder/"
+source_handle: "web:www-home-assistant-io:c1ca19d4db70"
+source_section: "integrations-recorder"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "46869a8181a63bdb5ae78251476c6a1bad4392d06bc4a0f2ef7fd427d04a9f9f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Recorder - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/flux"
+final_url: "https://www.home-assistant.io/integrations/flux"
+canonical_url: "https://www.home-assistant.io/integrations/flux/"
+source_handle: "web:www-home-assistant-io:bd2f981286c7"
+source_section: "integrations-flux"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4a60ced13fc4f1646fbe2b810a2d1a6fedf6a2b7c31ebdbca3c460dcf8503eae"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Flux - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

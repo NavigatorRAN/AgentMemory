@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/levoit"
+final_url: "https://www.home-assistant.io/integrations/levoit"
+canonical_url: "https://www.home-assistant.io/integrations/levoit/"
+source_handle: "web:www-home-assistant-io:10d313852a7f"
+source_section: "integrations-levoit"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f79347efaecbc0889e0947824b7b3236e40fece22e4021bdacd9c9f532fff5fb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Levoit - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

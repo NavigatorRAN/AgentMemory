@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sigfox"
+final_url: "https://www.home-assistant.io/integrations/sigfox"
+canonical_url: "https://www.home-assistant.io/integrations/sigfox/"
+source_handle: "web:www-home-assistant-io:20baed458821"
+source_section: "integrations-sigfox"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bfed7e9921fb9e32eea9e1d46d4a42288afe391f07e4b4b9dc32ccf5c788a6f2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sigfox - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

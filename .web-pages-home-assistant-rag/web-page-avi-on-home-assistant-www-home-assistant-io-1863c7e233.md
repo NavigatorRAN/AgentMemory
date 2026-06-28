@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/avion"
+final_url: "https://www.home-assistant.io/integrations/avion"
+canonical_url: "https://www.home-assistant.io/integrations/avion/"
+source_handle: "web:www-home-assistant-io:1863c7e233d7"
+source_section: "integrations-avion"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "eab8d8901e2cc217b3af847ee0580dc605ea0f63194083c7567573a30c32337d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Avi-on - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

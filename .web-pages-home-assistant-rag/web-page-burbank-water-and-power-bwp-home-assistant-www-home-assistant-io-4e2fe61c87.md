@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/burbank_water_and_power"
+final_url: "https://www.home-assistant.io/integrations/burbank_water_and_power"
+canonical_url: "https://www.home-assistant.io/integrations/burbank_water_and_power/"
+source_handle: "web:www-home-assistant-io:4e2fe61c87dd"
+source_section: "integrations-burbank-water-and-power"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9e316e2794e366bdf340aef8b97efb0bea5154679b6d5a54322c727e09ba8ff1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Burbank Water and Power (BWP) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

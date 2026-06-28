@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zone"
+final_url: "https://www.home-assistant.io/integrations/zone"
+canonical_url: "https://www.home-assistant.io/integrations/zone/"
+source_handle: "web:www-home-assistant-io:9caa2ce0023a"
+source_section: "integrations-zone"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3fa9a110ff6ee2b7d862cd2e3b19a36b351a0369aa843744cff02eb9f735bf13"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Zone - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

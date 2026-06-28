@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/getting-started/configuration"
+final_url: "https://www.home-assistant.io/getting-started/configuration"
+canonical_url: "https://www.home-assistant.io/getting-started/configuration/"
+source_handle: "web:www-home-assistant-io:717ff466ad5e"
+source_section: "getting-started-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "388a2f2213ce87f5de531be62258253de931fad8e49efe51a08b818c1c7232eb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Next steps - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

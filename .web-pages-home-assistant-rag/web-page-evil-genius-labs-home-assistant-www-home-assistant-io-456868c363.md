@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/evil_genius_labs"
+final_url: "https://www.home-assistant.io/integrations/evil_genius_labs"
+canonical_url: "https://www.home-assistant.io/integrations/evil_genius_labs/"
+source_handle: "web:www-home-assistant-io:456868c363fc"
+source_section: "integrations-evil-genius-labs"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fdead3bba9cd2d5b8c59ed11f940412724a21bbf9e52c82fa04c0bb6e9674602"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Evil Genius Labs - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

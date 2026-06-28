@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/myuplink"
+final_url: "https://www.home-assistant.io/integrations/myuplink"
+canonical_url: "https://www.home-assistant.io/integrations/myuplink/"
+source_handle: "web:www-home-assistant-io:c13e986b61e8"
+source_section: "integrations-myuplink"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ac4b00d57cedcbd5be2d84d099e2f531e4c4d873a0f27b5765ae51b7de784672"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # myUplink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

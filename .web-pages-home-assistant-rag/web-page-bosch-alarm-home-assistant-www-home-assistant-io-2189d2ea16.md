@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bosch_alarm"
+final_url: "https://www.home-assistant.io/integrations/bosch_alarm"
+canonical_url: "https://www.home-assistant.io/integrations/bosch_alarm/"
+source_handle: "web:www-home-assistant-io:2189d2ea1600"
+source_section: "integrations-bosch-alarm"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7404f528ab5f5dc2c786365b35471fb3648b7f712550de272702504ec4c6f5dd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Bosch Alarm - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

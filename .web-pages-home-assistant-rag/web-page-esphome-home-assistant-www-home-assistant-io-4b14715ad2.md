@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/esphome"
+final_url: "https://www.home-assistant.io/integrations/esphome"
+canonical_url: "https://www.home-assistant.io/integrations/esphome/"
+source_handle: "web:www-home-assistant-io:4b14715ad2e6"
+source_section: "integrations-esphome"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6c38cc927f3a46361c2bf481bbbb5d043578f9a0956294f3841c4d9f4d587cf0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ESPHome - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/buienradar"
+final_url: "https://www.home-assistant.io/integrations/buienradar"
+canonical_url: "https://www.home-assistant.io/integrations/buienradar/"
+source_handle: "web:www-home-assistant-io:0bc5faeb9098"
+source_section: "integrations-buienradar"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6687ddf62c22837d30bae580f01ab99276dc4d9f5b0b3a6843882d43f2a02a99"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Buienradar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

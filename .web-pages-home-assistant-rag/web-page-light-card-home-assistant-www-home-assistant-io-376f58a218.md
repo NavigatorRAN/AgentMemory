@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/light"
+final_url: "https://www.home-assistant.io/dashboards/light"
+canonical_url: "https://www.home-assistant.io/dashboards/light/"
+source_handle: "web:www-home-assistant-io:376f58a2182d"
+source_section: "dashboards-light"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4863b70d6eac985ed4b60016ade03f7c96667398f36d381b9009c57837c15cdf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Light card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

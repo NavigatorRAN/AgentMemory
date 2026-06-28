@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/modem_callerid"
+final_url: "https://www.home-assistant.io/integrations/modem_callerid"
+canonical_url: "https://www.home-assistant.io/integrations/modem_callerid/"
+source_handle: "web:www-home-assistant-io:174bcc1818bf"
+source_section: "integrations-modem-callerid"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "184c6aaf9751235b6f3daa876724991051e66d3f17c00c0f3668b57fb43cfea7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Phone Modem - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

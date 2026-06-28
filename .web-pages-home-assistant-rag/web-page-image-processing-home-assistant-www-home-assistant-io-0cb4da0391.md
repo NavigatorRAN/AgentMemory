@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/image_processing"
+final_url: "https://www.home-assistant.io/integrations/image_processing"
+canonical_url: "https://www.home-assistant.io/integrations/image_processing/"
+source_handle: "web:www-home-assistant-io:0cb4da039147"
+source_section: "integrations-image-processing"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8402e789e2338f5c45094eae20b1530c32328e26cd99540cc1c5d6240fc8a26e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Image processing - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

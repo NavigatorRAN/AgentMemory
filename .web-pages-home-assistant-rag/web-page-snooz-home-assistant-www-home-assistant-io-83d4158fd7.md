@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/snooz"
+final_url: "https://www.home-assistant.io/integrations/snooz"
+canonical_url: "https://www.home-assistant.io/integrations/snooz/"
+source_handle: "web:www-home-assistant-io:83d4158fd747"
+source_section: "integrations-snooz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "32428afc3c9a9e8115cd78855cb7a7428bfeaf33ea8242c20844cf4ffe7c857e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Snooz - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

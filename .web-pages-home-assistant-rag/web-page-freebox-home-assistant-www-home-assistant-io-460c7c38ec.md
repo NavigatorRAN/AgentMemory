@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/freebox"
+final_url: "https://www.home-assistant.io/integrations/freebox"
+canonical_url: "https://www.home-assistant.io/integrations/freebox/"
+source_handle: "web:www-home-assistant-io:460c7c38ecf7"
+source_section: "integrations-freebox"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "474d862be0afd9c8c7c17d097e0cbc85044e26500330fabb4e2061614c9769dc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Freebox - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

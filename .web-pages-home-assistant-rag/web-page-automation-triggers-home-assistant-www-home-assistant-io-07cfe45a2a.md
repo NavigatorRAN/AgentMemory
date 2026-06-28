@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/trigger"
+final_url: "https://www.home-assistant.io/docs/automation/trigger"
+canonical_url: "https://www.home-assistant.io/docs/automation/trigger/"
+source_handle: "web:www-home-assistant-io:07cfe45a2a63"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6be1929c7503febaa8ba29acb62a5f34e5f55f396c8f4cadd7f2dccc971efd11"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Automation triggers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

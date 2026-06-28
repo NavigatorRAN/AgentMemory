@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/image.mqtt"
+final_url: "https://www.home-assistant.io/integrations/image.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/image.mqtt/"
+source_handle: "web:www-home-assistant-io:7a5a4e272b8e"
+source_section: "integrations-image-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f373d5ae07a875325f7de4f0c60119c4d7880dda1995e46bcef01eadde57c7a5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Image - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

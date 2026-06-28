@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mfi"
+final_url: "https://www.home-assistant.io/integrations/mfi"
+canonical_url: "https://www.home-assistant.io/integrations/mfi/"
+source_handle: "web:www-home-assistant-io:bf4d5d34a55e"
+source_section: "integrations-mfi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "91f1dd02861b6e7c3fa80c954d8ad60b8cd278b84a4a7f3c9dfce1d89b70eb7c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ubiquiti mFi mPort - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

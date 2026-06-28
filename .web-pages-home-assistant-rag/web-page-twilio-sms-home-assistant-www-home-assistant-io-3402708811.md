@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/twilio_sms"
+final_url: "https://www.home-assistant.io/integrations/twilio_sms"
+canonical_url: "https://www.home-assistant.io/integrations/twilio_sms/"
+source_handle: "web:www-home-assistant-io:34027088117f"
+source_section: "integrations-twilio-sms"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0211a9df0cf9d6622ae3ee00c74f68ca6e18d133102ae9ad7ffcb19cf70cfa9e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Twilio SMS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

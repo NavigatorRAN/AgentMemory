@@ -62,10 +62,21 @@ class QueryIndex:
         self.index_dir.mkdir(parents=True, exist_ok=True)
         self._fts_available: bool | None = None
 
-    def connect(self) -> sqlite3.Connection:
+    def connect(self, *, readonly: bool = False) -> sqlite3.Connection:
+        if readonly:
+            if not self.db_path.exists():
+                raise QueryIndexError(f"query index missing: {self.db_path}")
+            conn = sqlite3.connect(f"{self.db_path.resolve().as_uri()}?mode=ro", uri=True)
+            conn.row_factory = sqlite3.Row
+            conn.execute("PRAGMA query_only=ON")
+            return conn
         conn = sqlite3.connect(self.db_path)
         conn.row_factory = sqlite3.Row
-        conn.execute("PRAGMA journal_mode=WAL")
+        conn.execute("PRAGMA busy_timeout=5000")
+        if str(self.db_path).startswith(("/mnt/", "/Volumes/")):
+            conn.execute("PRAGMA journal_mode=DELETE")
+        else:
+            conn.execute("PRAGMA journal_mode=WAL")
         conn.execute("PRAGMA synchronous=NORMAL")
         conn.execute("PRAGMA foreign_keys=ON")
         self.ensure_schema(conn)
@@ -175,7 +186,7 @@ class QueryIndex:
         if not self.db_path.exists():
             return False
         try:
-            with self.connect() as conn:
+            with self.connect(readonly=True) as conn:
                 row = conn.execute(
                     "SELECT value FROM meta WHERE key = 'rebuilt_at'"
                 ).fetchone()
@@ -412,9 +423,11 @@ class QueryIndex:
         conn.execute("INSERT OR REPLACE INTO meta(key, value) VALUES('graph_stale', '1')")
 
     def ensure_graph_cache(self) -> None:
-        with self.connect() as conn:
+        with self.connect(readonly=True) as conn:
             row = conn.execute("SELECT value FROM meta WHERE key = 'graph_stale'").fetchone()
-            if row and row["value"] == "1":
+            stale = bool(row and row["value"] == "1")
+        if stale:
+            with self.connect() as conn:
                 graph = self.refresh_graph_cache(conn)
                 now = str(time.time())
                 conn.execute("INSERT OR REPLACE INTO meta(key, value) VALUES('graph_cache_generated_at', ?)", (now,))
@@ -530,7 +543,7 @@ class QueryIndex:
         needle = query.lower().strip()
         if not needle:
             return []
-        with self.connect() as conn:
+        with self.connect(readonly=True) as conn:
             clauses = ["INSTR(LOWER(e.content), ?) > 0"]
             params: list[Any] = [needle]
             if since:
@@ -567,7 +580,7 @@ class QueryIndex:
         limit: int,
         include_content: bool,
     ) -> list[dict[str, Any]]:
-        with self.connect() as conn:
+        with self.connect(readonly=True) as conn:
             clauses = ["ee.entity = ?"]
             params: list[Any] = [entity]
             if since:
@@ -594,7 +607,7 @@ class QueryIndex:
             return [{k: v for k, v in event.items() if k != "content"} for event in events]
 
     def timeline(self, *, entity: str, since: str | None, granularity: str) -> list[dict[str, Any]]:
-        with self.connect() as conn:
+        with self.connect(readonly=True) as conn:
             clauses = ["ee.entity = ?"]
             params: list[Any] = [entity]
             if since:
@@ -622,7 +635,7 @@ class QueryIndex:
         ]
 
     def list_entities(self, *, prefix: str | None, type_filter: str | None) -> list[dict[str, Any]]:
-        with self.connect() as conn:
+        with self.connect(readonly=True) as conn:
             clauses: list[str] = []
             params: list[Any] = []
             if prefix:
@@ -645,7 +658,7 @@ class QueryIndex:
 
     def search_wiki(self, *, query: str, limit: int) -> list[dict[str, Any]]:
         needle = query.lower().strip()
-        with self.connect() as conn:
+        with self.connect(readonly=True) as conn:
             if needle:
                 rows = conn.execute(
                     """
@@ -670,7 +683,7 @@ class QueryIndex:
             return [self._wiki_from_row(row, include_body=False) for row in rows]
 
     def get_wiki_page(self, *, slug: str) -> dict[str, Any] | None:
-        with self.connect() as conn:
+        with self.connect(readonly=True) as conn:
             row = conn.execute(
                 "SELECT * FROM wiki_pages WHERE slug = ?",
                 (slug,),
@@ -679,7 +692,7 @@ class QueryIndex:
 
     def memory_graph(self, *, query: str | None, limit: int) -> dict[str, Any]:
         self.ensure_graph_cache()
-        with self.connect() as conn:
+        with self.connect(readonly=True) as conn:
             total_nodes = conn.execute("SELECT COUNT(*) AS count FROM graph_nodes").fetchone()["count"]
             total_edges = conn.execute("SELECT COUNT(*) AS count FROM graph_edges").fetchone()["count"]
             if query:

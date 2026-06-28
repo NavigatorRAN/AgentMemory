@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/guardian"
+final_url: "https://www.home-assistant.io/integrations/guardian"
+canonical_url: "https://www.home-assistant.io/integrations/guardian/"
+source_handle: "web:www-home-assistant-io:b049fc97cfc8"
+source_section: "integrations-guardian"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0c14fff38c8fabcaa3908cf553d9dd6eb25183c116b9ad41286bb9e736dced09"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Elexa Guardian - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

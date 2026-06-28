@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/input_number"
+final_url: "https://www.home-assistant.io/integrations/input_number"
+canonical_url: "https://www.home-assistant.io/integrations/input_number/"
+source_handle: "web:www-home-assistant-io:dc9faf5f9528"
+source_section: "integrations-input-number"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1ed58103236134257547ff7407ce655bf0009b77d3e02e34d1771c371bb1780b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Input number - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

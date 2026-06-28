@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rehlko"
+final_url: "https://www.home-assistant.io/integrations/rehlko"
+canonical_url: "https://www.home-assistant.io/integrations/rehlko/"
+source_handle: "web:www-home-assistant-io:852939d627ba"
+source_section: "integrations-rehlko"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "06e87df83554e82478003b4c1bf14f051cc61db0ee466fec27188aac2d0f808e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Rehlko - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zha"
+final_url: "https://www.home-assistant.io/integrations/zha"
+canonical_url: "https://www.home-assistant.io/integrations/zha/"
+source_handle: "web:www-home-assistant-io:2477a69e0d12"
+source_section: "integrations-zha"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8b6f9c67442f0e548984c975d141f8b786fd412e1625517e87fac6cff00c535e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Zigbee Home Automation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

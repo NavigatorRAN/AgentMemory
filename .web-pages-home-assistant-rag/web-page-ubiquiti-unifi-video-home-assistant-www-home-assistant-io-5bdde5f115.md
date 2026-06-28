@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/uvc"
+final_url: "https://www.home-assistant.io/integrations/uvc"
+canonical_url: "https://www.home-assistant.io/integrations/uvc/"
+source_handle: "web:www-home-assistant-io:5bdde5f115bb"
+source_section: "integrations-uvc"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c7c358f1ab4b1908b4ef37de44bb7b244468e7d98311f0b9c3be2a1eb120950b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ubiquiti UniFi Video - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cosori"
+final_url: "https://www.home-assistant.io/integrations/cosori"
+canonical_url: "https://www.home-assistant.io/integrations/cosori/"
+source_handle: "web:www-home-assistant-io:172511fba943"
+source_section: "integrations-cosori"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "554c967766ac0bc3afb2dc4130516bae5960376589cb0d417f264477c38bc667"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Cosori - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

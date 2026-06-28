@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/supervisord"
+final_url: "https://www.home-assistant.io/integrations/supervisord"
+canonical_url: "https://www.home-assistant.io/integrations/supervisord/"
+source_handle: "web:www-home-assistant-io:854b29e7ffc5"
+source_section: "integrations-supervisord"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b732dc94a9500a26602ff2cd5d4e2ddc8f80540a2c3f00c3105d780fc5495c1d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Supervisord - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

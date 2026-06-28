@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wake_on_lan"
+final_url: "https://www.home-assistant.io/integrations/wake_on_lan"
+canonical_url: "https://www.home-assistant.io/integrations/wake_on_lan/"
+source_handle: "web:www-home-assistant-io:84862b527df4"
+source_section: "integrations-wake-on-lan"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ec44d88214070156f82c6243a5874744f7c344a374d8076ba9483991fe3d6dea"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Wake on LAN - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

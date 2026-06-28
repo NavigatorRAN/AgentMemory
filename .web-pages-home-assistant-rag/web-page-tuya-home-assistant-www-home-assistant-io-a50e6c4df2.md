@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tuya"
+final_url: "https://www.home-assistant.io/integrations/tuya"
+canonical_url: "https://www.home-assistant.io/integrations/tuya/"
+source_handle: "web:www-home-assistant-io:a50e6c4df21a"
+source_section: "integrations-tuya"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e1d9d0c271db8a4534728d236421659c3bc98c696e67bb7ee513b41bb1c4f89c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tuya - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

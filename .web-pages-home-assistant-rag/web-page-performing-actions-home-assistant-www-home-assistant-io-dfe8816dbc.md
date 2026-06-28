@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/scripts/perform-actions"
+final_url: "https://www.home-assistant.io/docs/scripts/perform-actions"
+canonical_url: "https://www.home-assistant.io/docs/scripts/perform-actions/"
+source_handle: "web:www-home-assistant-io:dfe8816dbcb9"
+source_section: "docs-scripts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "275d79861c28faeae335ca356af0a99519340d407810cd5778ec87c4b30916df"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Performing actions - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

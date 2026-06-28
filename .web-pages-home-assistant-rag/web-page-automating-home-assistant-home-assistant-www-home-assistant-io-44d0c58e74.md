@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/getting-started/automation"
+final_url: "https://www.home-assistant.io/getting-started/automation"
+canonical_url: "https://www.home-assistant.io/getting-started/automation/"
+source_handle: "web:www-home-assistant-io:44d0c58e742e"
+source_section: "getting-started-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "407c96bbe735a4b35c506f9fcb2685057f252fe6b85e37a8acc0b98fad344bd4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Automating Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

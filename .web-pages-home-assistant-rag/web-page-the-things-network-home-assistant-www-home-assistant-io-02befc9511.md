@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thethingsnetwork"
+final_url: "https://www.home-assistant.io/integrations/thethingsnetwork"
+canonical_url: "https://www.home-assistant.io/integrations/thethingsnetwork/"
+source_handle: "web:www-home-assistant-io:02befc9511ae"
+source_section: "integrations-thethingsnetwork"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7b3a7b334b5cbe2cd9500a8392144134aae9ef249e00b714dd86ba2f8eb9baf6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # The Things Network - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

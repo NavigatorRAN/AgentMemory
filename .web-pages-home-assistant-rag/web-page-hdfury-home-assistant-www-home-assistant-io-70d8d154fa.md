@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hdfury"
+final_url: "https://www.home-assistant.io/integrations/hdfury"
+canonical_url: "https://www.home-assistant.io/integrations/hdfury/"
+source_handle: "web:www-home-assistant-io:70d8d154fa75"
+source_section: "integrations-hdfury"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7757da20fb54036147c659e5bceac39a2c73ab452e296c5c7a4d149f94d68a09"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # HDFury - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

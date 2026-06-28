@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/raspberrypi"
+final_url: "https://www.home-assistant.io/installation/raspberrypi"
+canonical_url: "https://www.home-assistant.io/installation/raspberrypi/"
+source_handle: "web:www-home-assistant-io:054f5e7572f2"
+source_section: "installation-raspberrypi"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "24a297bc6f719f203f9cc7b441455bad3de96abc800f4bdf8e62d86ab92f84f4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Raspberry Pi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

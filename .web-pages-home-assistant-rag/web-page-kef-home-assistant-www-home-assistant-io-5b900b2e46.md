@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kef"
+final_url: "https://www.home-assistant.io/integrations/kef"
+canonical_url: "https://www.home-assistant.io/integrations/kef/"
+source_handle: "web:www-home-assistant-io:5b900b2e465f"
+source_section: "integrations-kef"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "04260b264fb74c125393eaf957ee4f2b6b6a502ff3c9ac06615ec5677f117bd0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # KEF - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

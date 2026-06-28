@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating"
+final_url: "https://www.home-assistant.io/docs/templating"
+canonical_url: "https://www.home-assistant.io/docs/templating/"
+source_handle: "web:www-home-assistant-io:3dcebe5a26ba"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dc808fbf7432e4030c2d3d31a31148d99e79d1bd195a4de707b61526592071ed"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Templating - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wiim"
+final_url: "https://www.home-assistant.io/integrations/wiim"
+canonical_url: "https://www.home-assistant.io/integrations/wiim/"
+source_handle: "web:www-home-assistant-io:e574ea922e95"
+source_section: "integrations-wiim"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "78cc28f21a52dc011246ceeb9040459ababab13fa21ee665dd3912126e187d77"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WiiM - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

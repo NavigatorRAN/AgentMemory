@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/todo"
+final_url: "https://www.home-assistant.io/integrations/todo"
+canonical_url: "https://www.home-assistant.io/integrations/todo/"
+source_handle: "web:www-home-assistant-io:2b9e4848cd6f"
+source_section: "integrations-todo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4ff7adc6f727dc6fc64d20f3aff795b4708669696c35f9a69abbada0ec24874d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # To-do list - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lg_soundbar"
+final_url: "https://www.home-assistant.io/integrations/lg_soundbar"
+canonical_url: "https://www.home-assistant.io/integrations/lg_soundbar/"
+source_handle: "web:www-home-assistant-io:fd39bb29f9b9"
+source_section: "integrations-lg-soundbar"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f99b6730cb8cf5bae47959317dbfd4029a7f8b70f171d19d82931ad1d1d033f6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LG Soundbars - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/devolo_home_control"
+final_url: "https://www.home-assistant.io/integrations/devolo_home_control"
+canonical_url: "https://www.home-assistant.io/integrations/devolo_home_control/"
+source_handle: "web:www-home-assistant-io:e5a459c26e8d"
+source_section: "integrations-devolo-home-control"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0c227419e53e53fa16aad52fcad5c7870f511feb628afc2a76b0f91368dfdd4c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # devolo Home Control - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

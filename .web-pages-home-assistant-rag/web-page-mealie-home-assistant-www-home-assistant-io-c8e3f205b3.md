@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mealie"
+final_url: "https://www.home-assistant.io/integrations/mealie"
+canonical_url: "https://www.home-assistant.io/integrations/mealie/"
+source_handle: "web:www-home-assistant-io:c8e3f205b370"
+source_section: "integrations-mealie"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4a93bba660b29355f75bea5a4998b87578249f21d9406f9cd38209589efb9d31"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mealie - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

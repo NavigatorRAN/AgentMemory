@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/picture-entity"
+final_url: "https://www.home-assistant.io/dashboards/picture-entity"
+canonical_url: "https://www.home-assistant.io/dashboards/picture-entity/"
+source_handle: "web:www-home-assistant-io:c44bf76e220b"
+source_section: "dashboards-picture-entity"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ef3df6730a5056e9c73cbe0b7178e8650b6fd1b5ad69ceb70061eba9645a26b3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Picture entity card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

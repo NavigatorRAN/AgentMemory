@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ecoal_boiler"
+final_url: "https://www.home-assistant.io/integrations/ecoal_boiler"
+canonical_url: "https://www.home-assistant.io/integrations/ecoal_boiler/"
+source_handle: "web:www-home-assistant-io:54fd1151553b"
+source_section: "integrations-ecoal-boiler"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "01792ec3bba4ead06bc19999abd7985cd0de01c9dda2d736a3cfddba73c092da"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # eSterownik eCoal.pl Boiler - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

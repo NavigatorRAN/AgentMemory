@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/frontend/icons"
+final_url: "https://www.home-assistant.io/docs/frontend/icons"
+canonical_url: "https://www.home-assistant.io/docs/frontend/icons/"
+source_handle: "web:www-home-assistant-io:8e9585e9797f"
+source_section: "docs-frontend"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "10f29ef7badc2c22f934081620df59f6c54866bc882a1c7909cc98fadd943d46"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Icons - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

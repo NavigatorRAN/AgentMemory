@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/universal"
+final_url: "https://www.home-assistant.io/integrations/universal"
+canonical_url: "https://www.home-assistant.io/integrations/universal/"
+source_handle: "web:www-home-assistant-io:7a6813778146"
+source_section: "integrations-universal"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "22a49aa4aee5e3f1171f6e8f4bd0a7c26c2a4247358595d431766a373b2d3a45"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Universal media player - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

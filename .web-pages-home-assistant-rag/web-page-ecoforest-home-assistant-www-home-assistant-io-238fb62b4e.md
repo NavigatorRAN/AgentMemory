@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ecoforest"
+final_url: "https://www.home-assistant.io/integrations/ecoforest"
+canonical_url: "https://www.home-assistant.io/integrations/ecoforest/"
+source_handle: "web:www-home-assistant-io:238fb62b4e85"
+source_section: "integrations-ecoforest"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ed8c4d9c75fbf0e4bdaf6acae829985ff430f551fa5258e16f9ee7ff7d52fc83"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ecoforest - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

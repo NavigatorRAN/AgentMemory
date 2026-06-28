@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/broadlink"
+final_url: "https://www.home-assistant.io/integrations/broadlink"
+canonical_url: "https://www.home-assistant.io/integrations/broadlink/"
+source_handle: "web:www-home-assistant-io:2ff86386a44d"
+source_section: "integrations-broadlink"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4e577a14058e897b9f9fa014553cbd198efdcaba453286259f05bb43eaadb480"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Broadlink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

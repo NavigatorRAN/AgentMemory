@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/common-tasks/os"
+final_url: "https://www.home-assistant.io/common-tasks/os"
+canonical_url: "https://www.home-assistant.io/common-tasks/os/"
+source_handle: "web:www-home-assistant-io:30e00ff51dd3"
+source_section: "common-tasks-os"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4fc7342819d5e3047d42075610a346aa3da2c695e1c64f10cc4c93449aa6e31d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Common tasks - Home Assistant Operating System - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

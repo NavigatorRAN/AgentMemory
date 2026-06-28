@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zoneminder"
+final_url: "https://www.home-assistant.io/integrations/zoneminder"
+canonical_url: "https://www.home-assistant.io/integrations/zoneminder/"
+source_handle: "web:www-home-assistant-io:8559b262ab4b"
+source_section: "integrations-zoneminder"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0d6fef5de0f2e78f1bd7b6519e69d729dc930d4045058065392e1f6f20c63a3e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ZoneMinder - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

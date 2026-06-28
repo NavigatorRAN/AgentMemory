@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eafm"
+final_url: "https://www.home-assistant.io/integrations/eafm"
+canonical_url: "https://www.home-assistant.io/integrations/eafm/"
+source_handle: "web:www-home-assistant-io:e90b2d6922d8"
+source_section: "integrations-eafm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb1e8a4630fb9c757738d72e76656c82b832492d2890083edd5de95009fa3fc5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Environment Agency Flood Gauges - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

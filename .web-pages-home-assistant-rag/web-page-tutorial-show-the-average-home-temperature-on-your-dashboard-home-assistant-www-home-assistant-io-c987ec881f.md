@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/tutorial-average-temperature"
+final_url: "https://www.home-assistant.io/docs/templating/tutorial-average-temperature"
+canonical_url: "https://www.home-assistant.io/docs/templating/tutorial-average-temperature/"
+source_handle: "web:www-home-assistant-io:c987ec881f5e"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8bc8c88a390be3f45bf6145b3517095ae106ef8be459c11c1ef54b98ad3c69b7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Tutorial: Show the average home temperature on your dashboard - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

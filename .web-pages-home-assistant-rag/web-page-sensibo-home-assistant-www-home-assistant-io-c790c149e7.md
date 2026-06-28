@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensibo"
+final_url: "https://www.home-assistant.io/integrations/sensibo"
+canonical_url: "https://www.home-assistant.io/integrations/sensibo/"
+source_handle: "web:www-home-assistant-io:c790c149e7f6"
+source_section: "integrations-sensibo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "41cbd488153d730683f5626ce810d589f79101306b425ca95c5fa7dbfe016a6d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sensibo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

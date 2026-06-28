@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/discogs"
+final_url: "https://www.home-assistant.io/integrations/discogs"
+canonical_url: "https://www.home-assistant.io/integrations/discogs/"
+source_handle: "web:www-home-assistant-io:e355dc9e508e"
+source_section: "integrations-discogs"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fff355f324502ad28e211432889b005074a7591bebf3cc7fe8c133e03423e5db"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Discogs - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

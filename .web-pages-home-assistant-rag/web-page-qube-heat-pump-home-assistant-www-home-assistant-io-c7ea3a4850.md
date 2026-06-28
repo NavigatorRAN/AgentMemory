@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hr_energy_qube"
+final_url: "https://www.home-assistant.io/integrations/hr_energy_qube"
+canonical_url: "https://www.home-assistant.io/integrations/hr_energy_qube/"
+source_handle: "web:www-home-assistant-io:c7ea3a485054"
+source_section: "integrations-hr-energy-qube"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9d93a44ee522ecbd4fee8d70de7b111c56ab6b02dda9ce58c76e22be49f2d867"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Qube heat pump - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

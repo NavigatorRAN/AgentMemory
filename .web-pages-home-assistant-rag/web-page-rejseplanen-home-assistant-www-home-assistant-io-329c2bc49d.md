@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rejseplanen"
+final_url: "https://www.home-assistant.io/integrations/rejseplanen"
+canonical_url: "https://www.home-assistant.io/integrations/rejseplanen/"
+source_handle: "web:www-home-assistant-io:329c2bc49d09"
+source_section: "integrations-rejseplanen"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6d186a0817736bd840b1a7352b77b75c3ca4e8eef2e254e43f835e55aaef8499"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Rejseplanen - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

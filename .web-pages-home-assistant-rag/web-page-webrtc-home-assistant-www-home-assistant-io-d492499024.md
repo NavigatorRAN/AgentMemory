@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/web_rtc"
+final_url: "https://www.home-assistant.io/integrations/web_rtc"
+canonical_url: "https://www.home-assistant.io/integrations/web_rtc/"
+source_handle: "web:www-home-assistant-io:d49249902456"
+source_section: "integrations-web-rtc"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7d21129e9942a4d9acb915fffff63c28f1ed40777453a5befde65b45eab95015"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WebRTC - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

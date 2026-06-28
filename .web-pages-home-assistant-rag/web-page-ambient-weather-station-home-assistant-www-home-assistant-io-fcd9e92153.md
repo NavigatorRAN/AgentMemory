@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ambient_station"
+final_url: "https://www.home-assistant.io/integrations/ambient_station"
+canonical_url: "https://www.home-assistant.io/integrations/ambient_station/"
+source_handle: "web:www-home-assistant-io:fcd9e921533f"
+source_section: "integrations-ambient-station"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1e1d8a2103716c6852dfd2be4278c1d68c7b371669e68bbf46b193a1b90dafdc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ambient Weather Station - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

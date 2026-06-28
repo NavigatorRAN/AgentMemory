@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homeassistant_alerts"
+final_url: "https://www.home-assistant.io/integrations/homeassistant_alerts"
+canonical_url: "https://www.home-assistant.io/integrations/homeassistant_alerts/"
+source_handle: "web:www-home-assistant-io:2caa08eeb703"
+source_section: "integrations-homeassistant-alerts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8a8f56c0429b4a8438967be6bdf57df3334948a4fdceabb256fb021325998146"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Alerts - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

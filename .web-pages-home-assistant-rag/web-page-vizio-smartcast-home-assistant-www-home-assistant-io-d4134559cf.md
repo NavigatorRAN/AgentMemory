@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vizio"
+final_url: "https://www.home-assistant.io/integrations/vizio"
+canonical_url: "https://www.home-assistant.io/integrations/vizio/"
+source_handle: "web:www-home-assistant-io:d4134559cf47"
+source_section: "integrations-vizio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0508e80315c1d7b34f63a294ea80c5b6f1eaa37447b966f69f60e0560b7cb52e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # VIZIO SmartCast - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

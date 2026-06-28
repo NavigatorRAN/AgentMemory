@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/peco_opower"
+final_url: "https://www.home-assistant.io/integrations/peco_opower"
+canonical_url: "https://www.home-assistant.io/integrations/peco_opower/"
+source_handle: "web:www-home-assistant-io:48d0e4c75070"
+source_section: "integrations-peco-opower"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aba9ea8b3fb80468ec8297ce7b5c0eb3ef63fa65898adf684d0e80edb96ecd0d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PECO Energy Company (PECO) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

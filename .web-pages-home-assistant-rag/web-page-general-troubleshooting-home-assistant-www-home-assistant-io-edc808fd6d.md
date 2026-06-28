@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/troubleshooting_general"
+final_url: "https://www.home-assistant.io/docs/troubleshooting_general"
+canonical_url: "https://www.home-assistant.io/docs/troubleshooting_general/"
+source_handle: "web:www-home-assistant-io:edc808fd6d1e"
+source_section: "docs-troubleshooting-general"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2111526fbcbd8db51fec904cd8a1c409a4d3546de8ed5f5928ecbc4f9d9b0988"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # General troubleshooting - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

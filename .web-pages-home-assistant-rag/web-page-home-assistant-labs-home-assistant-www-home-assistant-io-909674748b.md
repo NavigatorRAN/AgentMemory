@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/labs"
+final_url: "https://www.home-assistant.io/integrations/labs"
+canonical_url: "https://www.home-assistant.io/integrations/labs/"
+source_handle: "web:www-home-assistant-io:909674748bf7"
+source_section: "integrations-labs"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5c52b1332b3be4cfcc1f00c8d4990312b5f92f04b9e728415aa2a18b649608e7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Home Assistant Labs - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

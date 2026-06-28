@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/maytag"
+final_url: "https://www.home-assistant.io/integrations/maytag"
+canonical_url: "https://www.home-assistant.io/integrations/maytag/"
+source_handle: "web:www-home-assistant-io:6e693ced2ece"
+source_section: "integrations-maytag"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1848f94fe0f97285ee621d583c164e0878988cc8a2463072d13e1aaa3f66c5d2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Maytag - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

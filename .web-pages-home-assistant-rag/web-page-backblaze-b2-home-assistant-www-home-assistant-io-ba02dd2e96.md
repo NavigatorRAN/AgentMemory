@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/backblaze_b2"
+final_url: "https://www.home-assistant.io/integrations/backblaze_b2"
+canonical_url: "https://www.home-assistant.io/integrations/backblaze_b2/"
+source_handle: "web:www-home-assistant-io:ba02dd2e96a4"
+source_section: "integrations-backblaze-b2"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "488db1c07c3f6b5aaa168d459fc798fd9f29c0451ef9fd6ff278e5737b5d13e1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Backblaze B2 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homewizard"
+final_url: "https://www.home-assistant.io/integrations/homewizard"
+canonical_url: "https://www.home-assistant.io/integrations/homewizard/"
+source_handle: "web:www-home-assistant-io:c86449d62946"
+source_section: "integrations-homewizard"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0fd8769729f0b7cafd19939ba87b07861fc0780cd6d29d16bb336b0b6237b971"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HomeWizard - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

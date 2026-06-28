@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/here_travel_time"
+final_url: "https://www.home-assistant.io/integrations/here_travel_time"
+canonical_url: "https://www.home-assistant.io/integrations/here_travel_time/"
+source_handle: "web:www-home-assistant-io:b178544c614e"
+source_section: "integrations-here-travel-time"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "283c852b04ec489e0574f124b4b83d29a1c0fc9fe920405ab69636147706c7a2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HERE Travel Time - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airvisual"
+final_url: "https://www.home-assistant.io/integrations/airvisual"
+canonical_url: "https://www.home-assistant.io/integrations/airvisual/"
+source_handle: "web:www-home-assistant-io:dd65334c8707"
+source_section: "integrations-airvisual"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4f3eb1ed3edbc93702f603a094343cb71eb6f7b5a35b4744e86e0deba4dd441f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AirVisual Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

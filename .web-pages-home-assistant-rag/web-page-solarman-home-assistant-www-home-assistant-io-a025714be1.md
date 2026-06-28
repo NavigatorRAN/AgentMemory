@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/solarman"
+final_url: "https://www.home-assistant.io/integrations/solarman"
+canonical_url: "https://www.home-assistant.io/integrations/solarman/"
+source_handle: "web:www-home-assistant-io:a025714be10b"
+source_section: "integrations-solarman"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "42881ca611a163874619f6141c77c4842c77b23fd53e52587c4a69a133207d63"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Solarman - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

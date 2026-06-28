@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openhardwaremonitor"
+final_url: "https://www.home-assistant.io/integrations/openhardwaremonitor"
+canonical_url: "https://www.home-assistant.io/integrations/openhardwaremonitor/"
+source_handle: "web:www-home-assistant-io:87de4da19043"
+source_section: "integrations-openhardwaremonitor"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b5598cabe48c1569f247a25dac1da19d4c469e4b388d209b0485118c08264893"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Open Hardware Monitor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

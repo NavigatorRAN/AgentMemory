@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/emonitor"
+final_url: "https://www.home-assistant.io/integrations/emonitor"
+canonical_url: "https://www.home-assistant.io/integrations/emonitor/"
+source_handle: "web:www-home-assistant-io:642f247cd2c7"
+source_section: "integrations-emonitor"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8cf8e891bfc8670710c89c43ca138fb645adacdd75cd078e4c01d7871c72b9bc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SiteSage Emonitor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

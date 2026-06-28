@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/totalconnect"
+final_url: "https://www.home-assistant.io/integrations/totalconnect"
+canonical_url: "https://www.home-assistant.io/integrations/totalconnect/"
+source_handle: "web:www-home-assistant-io:15c13501d825"
+source_section: "integrations-totalconnect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e6964cbbc0102d83263e9459041a861ef54f9ed9b3ecacd69d261094b27f1c43"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Total Connect - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yale"
+final_url: "https://www.home-assistant.io/integrations/yale"
+canonical_url: "https://www.home-assistant.io/integrations/yale/"
+source_handle: "web:www-home-assistant-io:36ac8e026a6b"
+source_section: "integrations-yale"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dac473ff9a4c65ba86f93a542da3b8bfd3755757568cdfc7258a1183b0cb5019"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Yale Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

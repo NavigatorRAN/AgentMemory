@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/androidtv_remote"
+final_url: "https://www.home-assistant.io/integrations/androidtv_remote"
+canonical_url: "https://www.home-assistant.io/integrations/androidtv_remote/"
+source_handle: "web:www-home-assistant-io:d1fb8939c15f"
+source_section: "integrations-androidtv-remote"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "919079321d5f97e919d0d4fad9c4ce8e022c4d0b024fd05409016e3809bb63ad"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Android TV Remote - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

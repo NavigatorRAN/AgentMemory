@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mjpeg"
+final_url: "https://www.home-assistant.io/integrations/mjpeg"
+canonical_url: "https://www.home-assistant.io/integrations/mjpeg/"
+source_handle: "web:www-home-assistant-io:ef43d4fcad2c"
+source_section: "integrations-mjpeg"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c7b46182bee87a09ae9c78eea2f248326040c9290bb9c19b7f908def92e3ed38"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MJPEG IP Camera - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

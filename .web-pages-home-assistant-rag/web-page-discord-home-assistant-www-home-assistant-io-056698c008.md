@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/discord"
+final_url: "https://www.home-assistant.io/integrations/discord"
+canonical_url: "https://www.home-assistant.io/integrations/discord/"
+source_handle: "web:www-home-assistant-io:056698c00886"
+source_section: "integrations-discord"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "72ec7d91fe61baf49ce400005ab45e5db1f590f7ab59b1d05aab7a6633b34c7a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Discord - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

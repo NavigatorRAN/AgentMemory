@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/qingping"
+final_url: "https://www.home-assistant.io/integrations/qingping"
+canonical_url: "https://www.home-assistant.io/integrations/qingping/"
+source_handle: "web:www-home-assistant-io:009b3bcd958b"
+source_section: "integrations-qingping"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6f254c6375c336c1b6e04492fae1eb34b1ab12b2cdbe03c5177e48807e259be6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Qingping - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

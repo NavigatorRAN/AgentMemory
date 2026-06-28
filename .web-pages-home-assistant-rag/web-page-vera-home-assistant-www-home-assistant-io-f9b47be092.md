@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vera"
+final_url: "https://www.home-assistant.io/integrations/vera"
+canonical_url: "https://www.home-assistant.io/integrations/vera/"
+source_handle: "web:www-home-assistant-io:f9b47be092dc"
+source_section: "integrations-vera"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "097a666b6697d659d18b79f58163d5bb14ec6e3b32e509bc1a2b2996a4699d21"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Vera - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

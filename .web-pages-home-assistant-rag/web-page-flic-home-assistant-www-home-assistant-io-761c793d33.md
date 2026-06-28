@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/flic"
+final_url: "https://www.home-assistant.io/integrations/flic"
+canonical_url: "https://www.home-assistant.io/integrations/flic/"
+source_handle: "web:www-home-assistant-io:761c793d33e6"
+source_section: "integrations-flic"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c6b4876f0fd5049fc9572f179edd782c9baab167a18742aebddc07c060cff3f4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Flic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

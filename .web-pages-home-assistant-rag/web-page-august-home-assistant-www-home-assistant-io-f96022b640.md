@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/august"
+final_url: "https://www.home-assistant.io/integrations/august"
+canonical_url: "https://www.home-assistant.io/integrations/august/"
+source_handle: "web:www-home-assistant-io:f96022b64026"
+source_section: "integrations-august"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5baa7b61e64aaf2a010d01acaf7b8ae492494d8cb67b0ae71b1e64a199d0f09c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # August - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

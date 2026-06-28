@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dsmr_reader"
+final_url: "https://www.home-assistant.io/integrations/dsmr_reader"
+canonical_url: "https://www.home-assistant.io/integrations/dsmr_reader/"
+source_handle: "web:www-home-assistant-io:a227abffd0e2"
+source_section: "integrations-dsmr-reader"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "80dee711586328957dedf4e0167c9ea4a24645eb21cd763db9547feda180ab60"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # DSMR Reader - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

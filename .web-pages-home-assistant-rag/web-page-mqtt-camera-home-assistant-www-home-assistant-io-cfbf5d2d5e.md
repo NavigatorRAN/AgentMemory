@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/camera.mqtt"
+final_url: "https://www.home-assistant.io/integrations/camera.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/camera.mqtt/"
+source_handle: "web:www-home-assistant-io:cfbf5d2d5ee5"
+source_section: "integrations-camera-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aeca50196ee320b2a86cbb36eb430d32357558a73b1ace133a7c041078ab4980"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Camera - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

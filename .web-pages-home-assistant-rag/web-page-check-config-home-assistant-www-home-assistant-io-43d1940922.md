@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/tools/check_config"
+final_url: "https://www.home-assistant.io/docs/tools/check_config"
+canonical_url: "https://www.home-assistant.io/docs/tools/check_config/"
+source_handle: "web:www-home-assistant-io:43d19409222a"
+source_section: "docs-tools"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8b30fee0a9b7d78d4f096b0c989c46a7dcee0fd007b6c4ca076358ed2fe90005"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # check_config - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

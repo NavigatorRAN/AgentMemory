@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/simplefin"
+final_url: "https://www.home-assistant.io/integrations/simplefin"
+canonical_url: "https://www.home-assistant.io/integrations/simplefin/"
+source_handle: "web:www-home-assistant-io:98ccb09e38cd"
+source_section: "integrations-simplefin"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d3f3c0108c3bce0d161751ec98d4b484ba54a10783ded673c9a3f6152325b50b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SimpleFin - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

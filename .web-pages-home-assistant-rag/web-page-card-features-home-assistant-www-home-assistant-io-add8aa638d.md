@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/features"
+final_url: "https://www.home-assistant.io/dashboards/features"
+canonical_url: "https://www.home-assistant.io/dashboards/features/"
+source_handle: "web:www-home-assistant-io:add8aa638d8a"
+source_section: "dashboards-features"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f614b6fdb88d2139abc5f7e3dd90b82a9d1b6abb705da7ab793d5d6de27f6c83"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Card features - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

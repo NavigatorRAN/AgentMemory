@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/emulated_kasa"
+final_url: "https://www.home-assistant.io/integrations/emulated_kasa"
+canonical_url: "https://www.home-assistant.io/integrations/emulated_kasa/"
+source_handle: "web:www-home-assistant-io:c9c75329f24d"
+source_section: "integrations-emulated-kasa"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b3d910c5ab32e6701abfe5fd8abb24f4c1b7e18424b06b06d5fb7087ce8324bd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Emulated Kasa - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

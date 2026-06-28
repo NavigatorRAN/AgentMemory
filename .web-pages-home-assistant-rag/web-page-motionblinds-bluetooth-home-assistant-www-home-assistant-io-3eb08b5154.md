@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/motionblinds_ble"
+final_url: "https://www.home-assistant.io/integrations/motionblinds_ble"
+canonical_url: "https://www.home-assistant.io/integrations/motionblinds_ble/"
+source_handle: "web:www-home-assistant-io:3eb08b515460"
+source_section: "integrations-motionblinds-ble"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7d360a67110f30c1665d480201f431c0e74fa68859bdd0fdd6dea7e25f054482"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Motionblinds Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

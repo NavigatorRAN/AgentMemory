@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/roon"
+final_url: "https://www.home-assistant.io/integrations/roon"
+canonical_url: "https://www.home-assistant.io/integrations/roon/"
+source_handle: "web:www-home-assistant-io:5b502479f6de"
+source_section: "integrations-roon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3cf4f2c5171285dc2ca250d3a5c67ca5162d042cf358c2de9af946593df699c2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RoonLabs music player - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mitsubishi_comfort"
+final_url: "https://www.home-assistant.io/integrations/mitsubishi_comfort"
+canonical_url: "https://www.home-assistant.io/integrations/mitsubishi_comfort/"
+source_handle: "web:www-home-assistant-io:2d1a541f58d7"
+source_section: "integrations-mitsubishi-comfort"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5c5cf6db90f462e064884560d79ad80c764f6c8a7a712cac3af598e4dd9e1f87"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mitsubishi Comfort - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

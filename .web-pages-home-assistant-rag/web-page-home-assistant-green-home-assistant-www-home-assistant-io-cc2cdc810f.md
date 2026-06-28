@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homeassistant_green"
+final_url: "https://www.home-assistant.io/integrations/homeassistant_green"
+canonical_url: "https://www.home-assistant.io/integrations/homeassistant_green/"
+source_handle: "web:www-home-assistant-io:cc2cdc810f23"
+source_section: "integrations-homeassistant-green"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "21fddea06cd7c3752fd166b3faad7b6e7bba2ba28536c38e4529351848ecbe1f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Green - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

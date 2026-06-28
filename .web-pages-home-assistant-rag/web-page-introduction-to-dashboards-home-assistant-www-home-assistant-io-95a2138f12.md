@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/getting-started/onboarding_dashboard"
+final_url: "https://www.home-assistant.io/getting-started/onboarding_dashboard"
+canonical_url: "https://www.home-assistant.io/getting-started/onboarding_dashboard/"
+source_handle: "web:www-home-assistant-io:95a2138f1206"
+source_section: "getting-started-onboarding-dashboard"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9957a03d1211194b4944407bb3660b713121a775846e2b8fa3da021d611698f0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Introduction to dashboards - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

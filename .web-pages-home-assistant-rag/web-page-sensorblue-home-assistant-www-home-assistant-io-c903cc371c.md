@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensorblue"
+final_url: "https://www.home-assistant.io/integrations/sensorblue"
+canonical_url: "https://www.home-assistant.io/integrations/sensorblue/"
+source_handle: "web:www-home-assistant-io:c903cc371cdf"
+source_section: "integrations-sensorblue"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d496712c4037ed06a98f030b9e25b9e7c629b911d52dcccab131a58555c3f9a8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SensorBlue - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/notify.mqtt"
+final_url: "https://www.home-assistant.io/integrations/notify.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/notify.mqtt/"
+source_handle: "web:www-home-assistant-io:e1f3a95424ad"
+source_section: "integrations-notify-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9a8a158b88dd3e96c4b98042ea834560a1028b6329a200d63d55df8303d27e74"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT notify - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

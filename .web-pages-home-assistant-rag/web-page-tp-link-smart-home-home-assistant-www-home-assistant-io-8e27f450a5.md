@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tplink"
+final_url: "https://www.home-assistant.io/integrations/tplink"
+canonical_url: "https://www.home-assistant.io/integrations/tplink/"
+source_handle: "web:www-home-assistant-io:8e27f450a584"
+source_section: "integrations-tplink"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8f2b7f73c693ca4c3a1ae567c76f78573461840ddaea261002857f0d12642620"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # TP-Link Smart Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

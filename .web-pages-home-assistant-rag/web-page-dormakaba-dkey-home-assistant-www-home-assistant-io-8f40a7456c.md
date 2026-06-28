@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dormakaba_dkey"
+final_url: "https://www.home-assistant.io/integrations/dormakaba_dkey"
+canonical_url: "https://www.home-assistant.io/integrations/dormakaba_dkey/"
+source_handle: "web:www-home-assistant-io:8f40a7456c78"
+source_section: "integrations-dormakaba-dkey"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "12baa887ba99027021284161419f61b980bd2abb2e049e9a33d1a9096544f0c6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dormakaba dKey - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

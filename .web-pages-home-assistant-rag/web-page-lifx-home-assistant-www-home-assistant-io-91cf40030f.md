@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lifx"
+final_url: "https://www.home-assistant.io/integrations/lifx"
+canonical_url: "https://www.home-assistant.io/integrations/lifx/"
+source_handle: "web:www-home-assistant-io:91cf40030ff9"
+source_section: "integrations-lifx"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bb5c98d0e2b7ad61afb049c35a33acd985682f06279b587e6790d87a3dda739f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # LIFX - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

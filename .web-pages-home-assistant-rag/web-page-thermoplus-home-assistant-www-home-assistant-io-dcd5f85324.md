@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thermoplus"
+final_url: "https://www.home-assistant.io/integrations/thermoplus"
+canonical_url: "https://www.home-assistant.io/integrations/thermoplus/"
+source_handle: "web:www-home-assistant-io:dcd5f8532405"
+source_section: "integrations-thermoplus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2f2ba26bc1880578d99733313daa39d4447fa7e8310e57dac74c20a1493ab809"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ThermoPlus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

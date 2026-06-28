@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/familyhub"
+final_url: "https://www.home-assistant.io/integrations/familyhub"
+canonical_url: "https://www.home-assistant.io/integrations/familyhub/"
+source_handle: "web:www-home-assistant-io:5bafd2438609"
+source_section: "integrations-familyhub"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c3950c93586213cb92484f28f98f54d98b6754b2fa9800316a14fff294759634"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Samsung Family Hub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

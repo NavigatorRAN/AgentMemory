@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/filesize"
+final_url: "https://www.home-assistant.io/integrations/filesize"
+canonical_url: "https://www.home-assistant.io/integrations/filesize/"
+source_handle: "web:www-home-assistant-io:551f45c400ba"
+source_section: "integrations-filesize"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2c3361e754c2ec82a678e3ddcdf553cd4bf9d7d5257bb9f607897e25a096f76a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # File size - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/humidifier"
+final_url: "https://www.home-assistant.io/integrations/humidifier"
+canonical_url: "https://www.home-assistant.io/integrations/humidifier/"
+source_handle: "web:www-home-assistant-io:c0dc584203c1"
+source_section: "integrations-humidifier"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4945f14c9eb2554b3bd3d93f3e7e64bb09678f36381ddcb4245dd38d04b5d044"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Humidifier - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

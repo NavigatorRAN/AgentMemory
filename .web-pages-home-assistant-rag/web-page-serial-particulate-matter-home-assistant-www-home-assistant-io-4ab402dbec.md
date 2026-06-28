@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/serial_pm"
+final_url: "https://www.home-assistant.io/integrations/serial_pm"
+canonical_url: "https://www.home-assistant.io/integrations/serial_pm/"
+source_handle: "web:www-home-assistant-io:4ab402dbecb4"
+source_section: "integrations-serial-pm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a23ed56410d32543fe0e098eb60ba43ac73349a016b82e4017fb24f267beaa86"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Serial Particulate Matter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

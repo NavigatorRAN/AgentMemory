@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/oem"
+final_url: "https://www.home-assistant.io/integrations/oem"
+canonical_url: "https://www.home-assistant.io/integrations/oem/"
+source_handle: "web:www-home-assistant-io:4487156e9e8c"
+source_section: "integrations-oem"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b23d1bdf55ee9c75c0cb1015a42c9a4b24848ad3116f8c568e0b86aca9a46d68"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenEnergyMonitor WiFi Thermostat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

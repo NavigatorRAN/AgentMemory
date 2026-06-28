@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/qnap"
+final_url: "https://www.home-assistant.io/integrations/qnap"
+canonical_url: "https://www.home-assistant.io/integrations/qnap/"
+source_handle: "web:www-home-assistant-io:1a0ad8c4dfec"
+source_section: "integrations-qnap"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8227ae2fab2d40eb42f7f83479d4ac9a3a60de7566b58a3a4b08569262dd4286"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # QNAP - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

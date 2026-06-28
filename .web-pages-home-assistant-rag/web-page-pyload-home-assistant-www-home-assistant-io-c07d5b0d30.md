@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pyload"
+final_url: "https://www.home-assistant.io/integrations/pyload"
+canonical_url: "https://www.home-assistant.io/integrations/pyload/"
+source_handle: "web:www-home-assistant-io:c07d5b0d301f"
+source_section: "integrations-pyload"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3c6479215c7794083664c2e593d7b8417b389c41c4a61d40aecff6aa27a1c44e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # pyLoad - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

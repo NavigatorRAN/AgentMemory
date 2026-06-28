@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/masonry"
+final_url: "https://www.home-assistant.io/dashboards/masonry"
+canonical_url: "https://www.home-assistant.io/dashboards/masonry/"
+source_handle: "web:www-home-assistant-io:9e5d811997f3"
+source_section: "dashboards-masonry"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a19398d6974070c3f7b136bf128efceca92e3f4367e00aa36c237d4a9d9bdaed"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Masonry view - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

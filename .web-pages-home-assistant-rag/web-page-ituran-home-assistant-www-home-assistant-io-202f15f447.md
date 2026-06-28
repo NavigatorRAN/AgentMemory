@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ituran"
+final_url: "https://www.home-assistant.io/integrations/ituran"
+canonical_url: "https://www.home-assistant.io/integrations/ituran/"
+source_handle: "web:www-home-assistant-io:202f15f447ba"
+source_section: "integrations-ituran"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6f5c7f4bbf1b615609c8f415e2abe99ec584fcaed92665ce42a5c116bbb75e41"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ituran - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

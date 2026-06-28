@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nightscout"
+final_url: "https://www.home-assistant.io/integrations/nightscout"
+canonical_url: "https://www.home-assistant.io/integrations/nightscout/"
+source_handle: "web:www-home-assistant-io:9a16c455b9aa"
+source_section: "integrations-nightscout"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8a575b4f8668bcc0e0ca322046ab218874a8ffb46ecf6121c80dfa9745100892"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nightscout - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

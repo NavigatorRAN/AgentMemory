@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tasmota"
+final_url: "https://www.home-assistant.io/integrations/tasmota"
+canonical_url: "https://www.home-assistant.io/integrations/tasmota/"
+source_handle: "web:www-home-assistant-io:1048b4071018"
+source_section: "integrations-tasmota"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aedf16164f800918d3585de0ffa06010613097d159a66fb1f4df9ede5d6af690"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Tasmota - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

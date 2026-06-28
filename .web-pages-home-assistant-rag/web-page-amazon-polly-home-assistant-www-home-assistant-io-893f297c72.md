@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/amazon_polly"
+final_url: "https://www.home-assistant.io/integrations/amazon_polly"
+canonical_url: "https://www.home-assistant.io/integrations/amazon_polly/"
+source_handle: "web:www-home-assistant-io:893f297c72e9"
+source_section: "integrations-amazon-polly"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "04231191ae6894abec7c24f4ed01fdd59075b20ce6b3f0efacd9b5da12c4ed47"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Amazon Polly - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

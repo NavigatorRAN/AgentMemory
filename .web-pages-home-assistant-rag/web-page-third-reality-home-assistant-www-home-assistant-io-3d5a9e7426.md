@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/third_reality"
+final_url: "https://www.home-assistant.io/integrations/third_reality"
+canonical_url: "https://www.home-assistant.io/integrations/third_reality/"
+source_handle: "web:www-home-assistant-io:3d5a9e74268f"
+source_section: "integrations-third-reality"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5d1e13c64f0e3e8c2824b2b52d17e9a723b8a02b29d018c2bb68ea43deae1fdc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Third Reality - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/script"
+final_url: "https://www.home-assistant.io/integrations/script"
+canonical_url: "https://www.home-assistant.io/integrations/script/"
+source_handle: "web:www-home-assistant-io:bf25a73acfd9"
+source_section: "integrations-script"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d17122f1ea3e3b20386d93e86042927a0d0cbe1cb7d45e5666da9634cfb1aff0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Scripts - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

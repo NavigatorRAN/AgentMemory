@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/velux"
+final_url: "https://www.home-assistant.io/integrations/velux"
+canonical_url: "https://www.home-assistant.io/integrations/velux/"
+source_handle: "web:www-home-assistant-io:cd759232969a"
+source_section: "integrations-velux"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "666bab55755e9b6bc9bf0d957f65c1e1fd81f02824efe4a9c044b7370e351ff0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Velux - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

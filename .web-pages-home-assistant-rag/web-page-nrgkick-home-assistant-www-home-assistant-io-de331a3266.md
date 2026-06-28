@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nrgkick"
+final_url: "https://www.home-assistant.io/integrations/nrgkick"
+canonical_url: "https://www.home-assistant.io/integrations/nrgkick/"
+source_handle: "web:www-home-assistant-io:de331a326692"
+source_section: "integrations-nrgkick"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "938b5f2bd978adf0fc03f63aaaf259066cc8255d68aee35f9d3f7f659c515ddf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NRGkick - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

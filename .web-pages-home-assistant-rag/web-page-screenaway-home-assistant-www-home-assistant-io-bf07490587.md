@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/screenaway"
+final_url: "https://www.home-assistant.io/integrations/screenaway"
+canonical_url: "https://www.home-assistant.io/integrations/screenaway/"
+source_handle: "web:www-home-assistant-io:bf0749058748"
+source_section: "integrations-screenaway"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "812d1a14aa8351787d9ab2f567fb929b14e388b79c8d37df2f9f70275a745320"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ScreenAway - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

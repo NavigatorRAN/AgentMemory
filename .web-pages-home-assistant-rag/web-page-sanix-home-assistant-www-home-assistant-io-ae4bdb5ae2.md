@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sanix"
+final_url: "https://www.home-assistant.io/integrations/sanix"
+canonical_url: "https://www.home-assistant.io/integrations/sanix/"
+source_handle: "web:www-home-assistant-io:ae4bdb5ae275"
+source_section: "integrations-sanix"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "213f60ee036ad50c453e0834c16e757fa90bab9679ec656bbd909be17b0a40c9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sanix - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/apple"
+final_url: "https://www.home-assistant.io/voice_control/apple"
+canonical_url: "https://www.home-assistant.io/voice_control/apple/"
+source_handle: "web:www-home-assistant-io:af9ad78632e0"
+source_section: "voice-control-apple"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "24586899ce7572db09669c07715799ce276dabc1f0f75ae4571cc233d99f646f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Assist on Apple devices - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

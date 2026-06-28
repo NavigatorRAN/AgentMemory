@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/opple"
+final_url: "https://www.home-assistant.io/integrations/opple"
+canonical_url: "https://www.home-assistant.io/integrations/opple/"
+source_handle: "web:www-home-assistant-io:97cbf49bec60"
+source_section: "integrations-opple"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7884bc74dc24d77cdcc84cc2b8650a30d3688227f8c62e970eb5a6652a09cab9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Opple - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

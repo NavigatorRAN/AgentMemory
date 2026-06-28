@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/route_b_smart_meter"
+final_url: "https://www.home-assistant.io/integrations/route_b_smart_meter"
+canonical_url: "https://www.home-assistant.io/integrations/route_b_smart_meter/"
+source_handle: "web:www-home-assistant-io:8584400425fb"
+source_section: "integrations-route-b-smart-meter"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d8840daee9df2daf447401cea0d27988d095c19ce124262c364076762c35d1cd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Smart Meter B Route - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

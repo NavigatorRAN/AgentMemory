@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/opendisplay"
+final_url: "https://www.home-assistant.io/integrations/opendisplay"
+canonical_url: "https://www.home-assistant.io/integrations/opendisplay/"
+source_handle: "web:www-home-assistant-io:60f2fed2fdad"
+source_section: "integrations-opendisplay"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "08a65e3eb374ab47a7df6ed6bb5bb6cffd0e7147fca30d12cff6f6b7fd4d8f18"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # OpenDisplay - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/getting-started"
+final_url: "https://www.home-assistant.io/getting-started"
+canonical_url: "https://www.home-assistant.io/getting-started/"
+source_handle: "web:www-home-assistant-io:62022cdd5c48"
+source_section: "getting-started"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e89558d818b442ce25b1885ce8821c6318869affc28c29dcea23f1ea3efbb341"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Getting started with Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

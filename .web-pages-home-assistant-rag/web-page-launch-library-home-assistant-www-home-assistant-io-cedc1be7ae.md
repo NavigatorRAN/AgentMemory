@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/launch_library"
+final_url: "https://www.home-assistant.io/integrations/launch_library"
+canonical_url: "https://www.home-assistant.io/integrations/launch_library/"
+source_handle: "web:www-home-assistant-io:cedc1be7aebf"
+source_section: "integrations-launch-library"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "62bc50b901fa03189450779c1f3b09f3e3e47d50f42077bf5042a9de08a01b6e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Launch Library - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

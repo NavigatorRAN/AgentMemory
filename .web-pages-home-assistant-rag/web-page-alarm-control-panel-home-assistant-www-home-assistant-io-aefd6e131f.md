@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alarm_control_panel"
+final_url: "https://www.home-assistant.io/integrations/alarm_control_panel"
+canonical_url: "https://www.home-assistant.io/integrations/alarm_control_panel/"
+source_handle: "web:www-home-assistant-io:aefd6e131f94"
+source_section: "integrations-alarm-control-panel"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "902b8429f520bd172fdca813c2b17268b7226da46b3980d1be0096a7e964f7ab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Alarm control panel - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

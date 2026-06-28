@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thermobeacon"
+final_url: "https://www.home-assistant.io/integrations/thermobeacon"
+canonical_url: "https://www.home-assistant.io/integrations/thermobeacon/"
+source_handle: "web:www-home-assistant-io:cee947956927"
+source_section: "integrations-thermobeacon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "25cd47394f6dc50cb094b152a1b3cbf6b6beaa036e303bd00959c5d55ebe1e14"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ThermoBeacon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

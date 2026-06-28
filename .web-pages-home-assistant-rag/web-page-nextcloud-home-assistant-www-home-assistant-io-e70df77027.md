@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nextcloud"
+final_url: "https://www.home-assistant.io/integrations/nextcloud"
+canonical_url: "https://www.home-assistant.io/integrations/nextcloud/"
+source_handle: "web:www-home-assistant-io:e70df770276e"
+source_section: "integrations-nextcloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d5160d10c7de9bd9f2d7f4c264d04624570132445848018f473c872e2c2c7eac"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nextcloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/scripts"
+final_url: "https://www.home-assistant.io/docs/scripts"
+canonical_url: "https://www.home-assistant.io/docs/scripts/"
+source_handle: "web:www-home-assistant-io:2bc141b73501"
+source_section: "docs-scripts"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "12a7da8234d95d8e805b1c586392414a40da48125d7efde1eba8af5bb21b627d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Script syntax - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

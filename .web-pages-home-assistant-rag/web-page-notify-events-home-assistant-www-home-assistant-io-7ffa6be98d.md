@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/notify_events"
+final_url: "https://www.home-assistant.io/integrations/notify_events"
+canonical_url: "https://www.home-assistant.io/integrations/notify_events/"
+source_handle: "web:www-home-assistant-io:7ffa6be98db8"
+source_section: "integrations-notify-events"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a89f67949c1788a73cea06635314ba5fa85352543741e8561ce8035e0e3f2923"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Notify.Events - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

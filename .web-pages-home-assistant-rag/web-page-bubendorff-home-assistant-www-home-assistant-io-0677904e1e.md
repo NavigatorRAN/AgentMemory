@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bubendorff"
+final_url: "https://www.home-assistant.io/integrations/bubendorff"
+canonical_url: "https://www.home-assistant.io/integrations/bubendorff/"
+source_handle: "web:www-home-assistant-io:0677904e1eee"
+source_section: "integrations-bubendorff"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e06c5fe8b6a4481466f003d8306d629510616f8c8d1e22cb8a66856792e822eb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bubendorff - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

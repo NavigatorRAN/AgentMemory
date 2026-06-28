@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/anel_pwrctrl"
+final_url: "https://www.home-assistant.io/integrations/anel_pwrctrl"
+canonical_url: "https://www.home-assistant.io/integrations/anel_pwrctrl/"
+source_handle: "web:www-home-assistant-io:dad622d63d59"
+source_section: "integrations-anel-pwrctrl"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "adb2bb298fafbd4fef740dd2d6c98cc08c4169f6090cab20fee2d514f7f7ffd6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Anel NET-PwrCtrl - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

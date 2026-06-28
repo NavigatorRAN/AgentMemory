@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/qnap_qsw"
+final_url: "https://www.home-assistant.io/integrations/qnap_qsw"
+canonical_url: "https://www.home-assistant.io/integrations/qnap_qsw/"
+source_handle: "web:www-home-assistant-io:6eb0fea56c09"
+source_section: "integrations-qnap-qsw"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "011f9902a60269b8951cfd4ed2ae567216e1493bad0bc0c1036dffe0d5cd308f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # QNAP QSW - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

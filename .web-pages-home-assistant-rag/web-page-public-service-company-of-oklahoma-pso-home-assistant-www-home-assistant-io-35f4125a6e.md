@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/psoklahoma"
+final_url: "https://www.home-assistant.io/integrations/psoklahoma"
+canonical_url: "https://www.home-assistant.io/integrations/psoklahoma/"
+source_handle: "web:www-home-assistant-io:35f4125a6eae"
+source_section: "integrations-psoklahoma"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c7dddf538b6e93b203f70ac5ecf38a064e6805b979cb380dd52c4c35d336adbb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Public Service Company of Oklahoma (PSO) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

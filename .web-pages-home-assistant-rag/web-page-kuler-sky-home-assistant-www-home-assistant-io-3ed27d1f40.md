@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kulersky"
+final_url: "https://www.home-assistant.io/integrations/kulersky"
+canonical_url: "https://www.home-assistant.io/integrations/kulersky/"
+source_handle: "web:www-home-assistant-io:3ed27d1f40bd"
+source_section: "integrations-kulersky"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1b1fd6bdf00b9b79f17cdb5722566c0753b94989b90b931090cb53fbe1a951bd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kuler Sky - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

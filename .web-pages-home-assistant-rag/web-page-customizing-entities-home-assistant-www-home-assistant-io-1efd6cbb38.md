@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/customizing-devices"
+final_url: "https://www.home-assistant.io/docs/configuration/customizing-devices"
+canonical_url: "https://www.home-assistant.io/docs/configuration/customizing-devices/"
+source_handle: "web:www-home-assistant-io:1efd6cbb3824"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "424035c92c49f601d62db50916a1c6d3b248f23656de175fb5942f2de35ab5c3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Customizing entities - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

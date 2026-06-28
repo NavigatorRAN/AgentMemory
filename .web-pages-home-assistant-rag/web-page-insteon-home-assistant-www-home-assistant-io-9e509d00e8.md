@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/insteon"
+final_url: "https://www.home-assistant.io/integrations/insteon"
+canonical_url: "https://www.home-assistant.io/integrations/insteon/"
+source_handle: "web:www-home-assistant-io:9e509d00e89a"
+source_section: "integrations-insteon"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "33dd0d289e9610686260ca57a312fe31b88002b89b0eb9fc7febcb401623e064"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Insteon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

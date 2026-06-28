@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/downloader"
+final_url: "https://www.home-assistant.io/integrations/downloader"
+canonical_url: "https://www.home-assistant.io/integrations/downloader/"
+source_handle: "web:www-home-assistant-io:986942c5c13a"
+source_section: "integrations-downloader"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0d32a08fb8cb6e8abff4b7094300c278ec06f337cab7dd7584accdc251ed8088"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Downloader - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

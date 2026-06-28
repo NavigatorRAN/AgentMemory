@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/synology_chat"
+final_url: "https://www.home-assistant.io/integrations/synology_chat"
+canonical_url: "https://www.home-assistant.io/integrations/synology_chat/"
+source_handle: "web:www-home-assistant-io:c8126dd28b58"
+source_section: "integrations-synology-chat"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ecb87d6888ba9097d2b96e4b60db942ac05fe3585c255c8aa962dff375a9cf39"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Synology Chat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

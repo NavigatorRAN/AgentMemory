@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pvpc_hourly_pricing"
+final_url: "https://www.home-assistant.io/integrations/pvpc_hourly_pricing"
+canonical_url: "https://www.home-assistant.io/integrations/pvpc_hourly_pricing/"
+source_handle: "web:www-home-assistant-io:261bd996802b"
+source_section: "integrations-pvpc-hourly-pricing"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f39120b9f2366cf8b605f5668a8d69ad1fa668a90dc36c664df2f73df4afb1c1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Spain electricity hourly pricing (PVPC) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

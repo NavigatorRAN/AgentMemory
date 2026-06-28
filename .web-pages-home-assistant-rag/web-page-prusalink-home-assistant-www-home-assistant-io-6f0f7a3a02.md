@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/prusalink"
+final_url: "https://www.home-assistant.io/integrations/prusalink"
+canonical_url: "https://www.home-assistant.io/integrations/prusalink/"
+source_handle: "web:www-home-assistant-io:6f0f7a3a0253"
+source_section: "integrations-prusalink"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5b4165d6474b95cb9c46532cfec12f92c6477b52f852598e1d5d8f22918fbc65"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PrusaLink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

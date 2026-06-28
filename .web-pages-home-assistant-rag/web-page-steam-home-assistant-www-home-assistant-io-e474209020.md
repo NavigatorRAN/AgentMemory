@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/steam_online"
+final_url: "https://www.home-assistant.io/integrations/steam_online"
+canonical_url: "https://www.home-assistant.io/integrations/steam_online/"
+source_handle: "web:www-home-assistant-io:e47420902043"
+source_section: "integrations-steam-online"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a463a7d8ca8cd6b5e1663d437ada2931b5b7a0493f3e04b397dcec15a20486cf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Steam - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

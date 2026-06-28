@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/braviatv"
+final_url: "https://www.home-assistant.io/integrations/braviatv"
+canonical_url: "https://www.home-assistant.io/integrations/braviatv/"
+source_handle: "web:www-home-assistant-io:b34e7e05231d"
+source_section: "integrations-braviatv"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "16ffd2ddd32518edd18da2e7fe1a7525275f40fd67353c334e3dc04bb3968cb1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Sony Bravia TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

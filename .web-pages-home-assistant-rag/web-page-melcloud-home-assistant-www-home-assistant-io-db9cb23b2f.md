@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/melcloud"
+final_url: "https://www.home-assistant.io/integrations/melcloud"
+canonical_url: "https://www.home-assistant.io/integrations/melcloud/"
+source_handle: "web:www-home-assistant-io:db9cb23b2fce"
+source_section: "integrations-melcloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2cfac90678db1d37792b1ed6682bf21f93b75f8b326d72d9f15a6fd05858d46a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MELCloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

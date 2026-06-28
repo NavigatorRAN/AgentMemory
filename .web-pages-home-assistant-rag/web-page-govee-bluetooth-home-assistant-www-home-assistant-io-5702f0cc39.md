@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/govee_ble"
+final_url: "https://www.home-assistant.io/integrations/govee_ble"
+canonical_url: "https://www.home-assistant.io/integrations/govee_ble/"
+source_handle: "web:www-home-assistant-io:5702f0cc39dc"
+source_section: "integrations-govee-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3dfa6b91ec221ea02c69f576f4a729ccf34940c27f06e25d9652ce94da3bae6d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Govee Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

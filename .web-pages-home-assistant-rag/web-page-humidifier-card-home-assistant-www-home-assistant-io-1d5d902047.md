@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/humidifier"
+final_url: "https://www.home-assistant.io/dashboards/humidifier"
+canonical_url: "https://www.home-assistant.io/dashboards/humidifier/"
+source_handle: "web:www-home-assistant-io:1d5d90204771"
+source_section: "dashboards-humidifier"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b82f366fb710b7fe5641a7528d927bc474eebbd0560dd348b864d99c4e4f801a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Humidifier card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

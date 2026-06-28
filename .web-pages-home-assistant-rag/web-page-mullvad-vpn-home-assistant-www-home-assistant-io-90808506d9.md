@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mullvad"
+final_url: "https://www.home-assistant.io/integrations/mullvad"
+canonical_url: "https://www.home-assistant.io/integrations/mullvad/"
+source_handle: "web:www-home-assistant-io:90808506d9d2"
+source_section: "integrations-mullvad"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a0c44449baac12c5e7e56b97909a0e2311460ccf1bebe73aab822ab0a2c12d70"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mullvad VPN - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

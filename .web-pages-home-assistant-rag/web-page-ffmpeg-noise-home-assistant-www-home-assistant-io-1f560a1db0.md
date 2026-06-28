@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ffmpeg_noise"
+final_url: "https://www.home-assistant.io/integrations/ffmpeg_noise"
+canonical_url: "https://www.home-assistant.io/integrations/ffmpeg_noise/"
+source_handle: "web:www-home-assistant-io:1f560a1db0e0"
+source_section: "integrations-ffmpeg-noise"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a521514e1e0e59eed74872297adda6307e026d7b7068da92bb372c315d8cdbf0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FFmpeg Noise - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

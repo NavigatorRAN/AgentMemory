@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/route53"
+final_url: "https://www.home-assistant.io/integrations/route53"
+canonical_url: "https://www.home-assistant.io/integrations/route53/"
+source_handle: "web:www-home-assistant-io:cfa5862d0cd1"
+source_section: "integrations-route53"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "328f58af06cc312640d537e8a06e35432ca29d8d6532714d181546b6120b2c92"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AWS Route53 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

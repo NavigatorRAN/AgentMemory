@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lawn_mower"
+final_url: "https://www.home-assistant.io/integrations/lawn_mower"
+canonical_url: "https://www.home-assistant.io/integrations/lawn_mower/"
+source_handle: "web:www-home-assistant-io:c6e46e585da4"
+source_section: "integrations-lawn-mower"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "817f717d605cb31e1247c6ffbb11bf618b8dd4fbbc4b8ebeca6ad9c5c458ce30"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Lawn mower - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

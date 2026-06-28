@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/motion"
+final_url: "https://www.home-assistant.io/integrations/motion"
+canonical_url: "https://www.home-assistant.io/integrations/motion/"
+source_handle: "web:www-home-assistant-io:e18a0c563683"
+source_section: "integrations-motion"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8c429848454ac04306ac543e9ea6a6831d74c47549c97ec32fecd5a5b8adeed5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Motion - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

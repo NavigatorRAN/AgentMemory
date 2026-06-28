@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pushsafer"
+final_url: "https://www.home-assistant.io/integrations/pushsafer"
+canonical_url: "https://www.home-assistant.io/integrations/pushsafer/"
+source_handle: "web:www-home-assistant-io:c4b57daf2ed9"
+source_section: "integrations-pushsafer"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1f703cc4b053d974f4ebfa18a5745521f4774233b82272d5abd1685f8733d521"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pushsafer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

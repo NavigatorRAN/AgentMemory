@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/atag"
+final_url: "https://www.home-assistant.io/integrations/atag"
+canonical_url: "https://www.home-assistant.io/integrations/atag/"
+source_handle: "web:www-home-assistant-io:e5320e654f70"
+source_section: "integrations-atag"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3ce279e9d149e9ac9e8d7009ee7588d072ff86661c90a3ecc7ca74e39819947e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Atag - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

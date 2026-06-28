@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ridwell"
+final_url: "https://www.home-assistant.io/integrations/ridwell"
+canonical_url: "https://www.home-assistant.io/integrations/ridwell/"
+source_handle: "web:www-home-assistant-io:0d23d94135d8"
+source_section: "integrations-ridwell"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5446607ee2102529a4d18d85c605fb02b9aad69f6d628e2ec0ef9d22e6cc7154"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Ridwell - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

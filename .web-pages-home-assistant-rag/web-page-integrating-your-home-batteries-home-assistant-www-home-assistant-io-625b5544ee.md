@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/energy/battery"
+final_url: "https://www.home-assistant.io/docs/energy/battery"
+canonical_url: "https://www.home-assistant.io/docs/energy/battery/"
+source_handle: "web:www-home-assistant-io:625b5544ee5e"
+source_section: "docs-energy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "768e606b94c5d9c5f472e8710b6dd184c899916d75d7994ee783d522a192cda4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Integrating your home batteries - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/paj_gps"
+final_url: "https://www.home-assistant.io/integrations/paj_gps"
+canonical_url: "https://www.home-assistant.io/integrations/paj_gps/"
+source_handle: "web:www-home-assistant-io:3a9efa72109e"
+source_section: "integrations-paj-gps"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dcf9da6f7ce79002886427370f18668645ca40cbd3fabb8a496f05782d4994a7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PAJ GPS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

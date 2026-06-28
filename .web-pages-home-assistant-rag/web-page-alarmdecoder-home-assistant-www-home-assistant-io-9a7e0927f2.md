@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alarmdecoder"
+final_url: "https://www.home-assistant.io/integrations/alarmdecoder"
+canonical_url: "https://www.home-assistant.io/integrations/alarmdecoder/"
+source_handle: "web:www-home-assistant-io:9a7e0927f254"
+source_section: "integrations-alarmdecoder"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "178d81e7b515a4f0693d9670d5e7deea387be247d053a1b89aba0564e7afe345"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # AlarmDecoder - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

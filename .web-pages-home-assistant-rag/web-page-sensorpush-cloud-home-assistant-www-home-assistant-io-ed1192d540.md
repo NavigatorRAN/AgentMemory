@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensorpush_cloud"
+final_url: "https://www.home-assistant.io/integrations/sensorpush_cloud"
+canonical_url: "https://www.home-assistant.io/integrations/sensorpush_cloud/"
+source_handle: "web:www-home-assistant-io:ed1192d5403d"
+source_section: "integrations-sensorpush-cloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f980ead6c804cc0c42c1b50aae2e67a3050530ae632980660dfb555685020d01"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SensorPush Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

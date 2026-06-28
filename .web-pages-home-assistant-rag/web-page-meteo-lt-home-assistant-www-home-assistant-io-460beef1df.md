@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/meteo_lt"
+final_url: "https://www.home-assistant.io/integrations/meteo_lt"
+canonical_url: "https://www.home-assistant.io/integrations/meteo_lt/"
+source_handle: "web:www-home-assistant-io:460beef1df51"
+source_section: "integrations-meteo-lt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "26994f396ca5d12d3408ae00cb6220d2298428139ac60c6f11abb60def949c79"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Meteo.lt - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

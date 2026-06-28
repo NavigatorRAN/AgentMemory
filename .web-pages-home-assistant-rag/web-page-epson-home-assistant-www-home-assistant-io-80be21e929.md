@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/epson"
+final_url: "https://www.home-assistant.io/integrations/epson"
+canonical_url: "https://www.home-assistant.io/integrations/epson/"
+source_handle: "web:www-home-assistant-io:80be21e9293c"
+source_section: "integrations-epson"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "11f49b2f36644526bc9fe0bfbece4825dba45d72e1f743355c2b90674a2e47cb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Epson - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

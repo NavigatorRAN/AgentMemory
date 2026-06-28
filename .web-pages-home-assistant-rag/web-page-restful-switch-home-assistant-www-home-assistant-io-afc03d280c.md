@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switch.rest"
+final_url: "https://www.home-assistant.io/integrations/switch.rest"
+canonical_url: "https://www.home-assistant.io/integrations/switch.rest/"
+source_handle: "web:www-home-assistant-io:afc03d280c98"
+source_section: "integrations-switch-rest"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "955077c37c8beea9ae1919d6afc328fcdfcfcf15108ed4982b379a8429c0b7fe"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RESTful Switch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

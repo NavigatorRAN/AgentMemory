@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/stookwijzer"
+final_url: "https://www.home-assistant.io/integrations/stookwijzer"
+canonical_url: "https://www.home-assistant.io/integrations/stookwijzer/"
+source_handle: "web:www-home-assistant-io:2d293f05ae17"
+source_section: "integrations-stookwijzer"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9d9a5d9005ff595e8bf7e50413aecc15159236c7a6ad97a572edecddff9a1a5e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Stookwijzer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

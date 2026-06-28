@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hdmi_cec"
+final_url: "https://www.home-assistant.io/integrations/hdmi_cec"
+canonical_url: "https://www.home-assistant.io/integrations/hdmi_cec/"
+source_handle: "web:www-home-assistant-io:84e4771a18b7"
+source_section: "integrations-hdmi-cec"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "83fd2a13e278e32bd08c14c80912fa779b677cb30b6eb4f21fe3c07938928946"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HDMI-CEC - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

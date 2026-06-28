@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/greeneye_monitor"
+final_url: "https://www.home-assistant.io/integrations/greeneye_monitor"
+canonical_url: "https://www.home-assistant.io/integrations/greeneye_monitor/"
+source_handle: "web:www-home-assistant-io:64e6577fd672"
+source_section: "integrations-greeneye-monitor"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1f245c7fe870bcf72ed1d95da7fa4816e23f35e1451490c93088611d0dcbe0ee"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # GreenEye Monitor (GEM) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

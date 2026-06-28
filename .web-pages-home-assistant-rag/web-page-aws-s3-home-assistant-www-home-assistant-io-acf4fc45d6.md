@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aws_s3"
+final_url: "https://www.home-assistant.io/integrations/aws_s3"
+canonical_url: "https://www.home-assistant.io/integrations/aws_s3/"
+source_handle: "web:www-home-assistant-io:acf4fc45d672"
+source_section: "integrations-aws-s3"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "238070fb320d927d462e072f9f89d71a5ecab18449c7e0da0da7420af659255c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AWS S3 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

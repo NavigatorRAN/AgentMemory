@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/daikin"
+final_url: "https://www.home-assistant.io/integrations/daikin"
+canonical_url: "https://www.home-assistant.io/integrations/daikin/"
+source_handle: "web:www-home-assistant-io:27a460d65d26"
+source_section: "integrations-daikin"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1411e6ad7759c3963b7f94fac2379e06d6f895b01ed619301b7828caf5a04c4d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Daikin AC - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

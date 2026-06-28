@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/netio"
+final_url: "https://www.home-assistant.io/integrations/netio"
+canonical_url: "https://www.home-assistant.io/integrations/netio/"
+source_handle: "web:www-home-assistant-io:139072e28a80"
+source_section: "integrations-netio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f5621b0aad80d486f52ff9d18067eae202077bcb763a9b5d90e61fea7e8d3be9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Netio - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

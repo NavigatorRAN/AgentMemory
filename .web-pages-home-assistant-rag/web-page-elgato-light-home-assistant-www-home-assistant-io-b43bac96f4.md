@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/elgato"
+final_url: "https://www.home-assistant.io/integrations/elgato"
+canonical_url: "https://www.home-assistant.io/integrations/elgato/"
+source_handle: "web:www-home-assistant-io:b43bac96f4ac"
+source_section: "integrations-elgato"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "67737b873da0d8d7f0c548341535a6ef7f6c1ee31e04da016e182f3189dc0bf8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Elgato Light - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

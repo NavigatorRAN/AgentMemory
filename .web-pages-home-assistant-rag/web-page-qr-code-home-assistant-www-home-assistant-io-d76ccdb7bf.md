@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/qrcode"
+final_url: "https://www.home-assistant.io/integrations/qrcode"
+canonical_url: "https://www.home-assistant.io/integrations/qrcode/"
+source_handle: "web:www-home-assistant-io:d76ccdb7bf05"
+source_section: "integrations-qrcode"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d07f9789361797e4a744aecafd17320576eb602822263e32e550b05eb18a8bf2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # QR Code - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

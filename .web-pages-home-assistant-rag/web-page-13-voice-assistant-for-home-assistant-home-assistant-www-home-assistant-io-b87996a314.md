@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/thirteen-usd-voice-remote"
+final_url: "https://www.home-assistant.io/voice_control/thirteen-usd-voice-remote"
+canonical_url: "https://www.home-assistant.io/voice_control/thirteen-usd-voice-remote/"
+source_handle: "web:www-home-assistant-io:b87996a314e0"
+source_section: "voice-control-thirteen-usd-voice-remote"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cb516670f20d169036ed84af2fb44f422686dfaf8edc32d68eab19e1cd39dc5c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # $13 voice assistant for Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

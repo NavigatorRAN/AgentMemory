@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/comelit"
+final_url: "https://www.home-assistant.io/integrations/comelit"
+canonical_url: "https://www.home-assistant.io/integrations/comelit/"
+source_handle: "web:www-home-assistant-io:9e74cb5b5277"
+source_section: "integrations-comelit"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "46d3e04c6e988626e20b685d7c1a0c1bb846b9a83d24dae5ebdf0de0c0237085"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Comelit SimpleHome - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

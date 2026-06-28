@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/folder_watcher"
+final_url: "https://www.home-assistant.io/integrations/folder_watcher"
+canonical_url: "https://www.home-assistant.io/integrations/folder_watcher/"
+source_handle: "web:www-home-assistant-io:073def830e62"
+source_section: "integrations-folder-watcher"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "218a8750ea2c8882f2a313893d20884f25f119e09db6a035b65f697038baae67"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Folder watcher - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

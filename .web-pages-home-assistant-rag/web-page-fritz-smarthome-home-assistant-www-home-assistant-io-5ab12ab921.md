@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fritzbox"
+final_url: "https://www.home-assistant.io/integrations/fritzbox"
+canonical_url: "https://www.home-assistant.io/integrations/fritzbox/"
+source_handle: "web:www-home-assistant-io:5ab12ab92196"
+source_section: "integrations-fritzbox"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "55626b8e46047d70ee8e1d978ceea2984107464605e5ad898672f995083e48a6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FRITZ!SmartHome - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

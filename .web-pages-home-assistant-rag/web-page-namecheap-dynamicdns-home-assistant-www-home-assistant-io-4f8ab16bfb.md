@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/namecheapdns"
+final_url: "https://www.home-assistant.io/integrations/namecheapdns"
+canonical_url: "https://www.home-assistant.io/integrations/namecheapdns/"
+source_handle: "web:www-home-assistant-io:4f8ab16bfb68"
+source_section: "integrations-namecheapdns"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a4be1c30e626b2fdd10159bc38dbe70c9b9d50ad611bb624c7accf607fa55873"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Namecheap DynamicDNS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/tools"
+final_url: "https://www.home-assistant.io/docs/tools"
+canonical_url: "https://www.home-assistant.io/docs/tools/"
+source_handle: "web:www-home-assistant-io:7806925d8a7c"
+source_section: "docs-tools"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a07b68e2503ed9e084541cefc8fb52749591fd7772fe794d05f6ef1fa87fbc36"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Tools - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

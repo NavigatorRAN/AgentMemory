@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hurrican_shutters_wholesale"
+final_url: "https://www.home-assistant.io/integrations/hurrican_shutters_wholesale"
+canonical_url: "https://www.home-assistant.io/integrations/hurrican_shutters_wholesale/"
+source_handle: "web:www-home-assistant-io:adf7d1434d8c"
+source_section: "integrations-hurrican-shutters-wholesale"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "802f51ff3596e933401d1b33f2a9f2301eed4382907f5bf79fb9e02ef5e48cc1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hurrican Shutters Wholesale - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

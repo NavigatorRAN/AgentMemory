@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/light.mqtt"
+final_url: "https://www.home-assistant.io/integrations/light.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/light.mqtt/"
+source_handle: "web:www-home-assistant-io:ebebbd434873"
+source_section: "integrations-light-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "caca156236d7976cdd61355137cecdbdc8a8f791d4b85e429bf983a661e86b17"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Light - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

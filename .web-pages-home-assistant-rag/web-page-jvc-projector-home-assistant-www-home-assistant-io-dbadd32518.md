@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/jvc_projector"
+final_url: "https://www.home-assistant.io/integrations/jvc_projector"
+canonical_url: "https://www.home-assistant.io/integrations/jvc_projector/"
+source_handle: "web:www-home-assistant-io:dbadd325187a"
+source_section: "integrations-jvc-projector"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "85d281c9355cb8270a56ef5faacd56240d437d43a14d1b356bd59bc4e2643125"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # JVC Projector - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

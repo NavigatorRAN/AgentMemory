@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/getting-started/join-the-community"
+final_url: "https://www.home-assistant.io/getting-started/join-the-community"
+canonical_url: "https://www.home-assistant.io/getting-started/join-the-community/"
+source_handle: "web:www-home-assistant-io:1b97845fbeda"
+source_section: "getting-started-join-the-community"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "beb83900fba1ea8c16841db3b219670a03983f066181b1231968aa8a8106b77b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Join the community - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

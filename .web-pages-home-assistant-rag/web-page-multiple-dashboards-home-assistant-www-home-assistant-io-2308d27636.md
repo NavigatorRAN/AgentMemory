@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/dashboards"
+final_url: "https://www.home-assistant.io/dashboards/dashboards"
+canonical_url: "https://www.home-assistant.io/dashboards/dashboards/"
+source_handle: "web:www-home-assistant-io:2308d2763635"
+source_section: "dashboards-dashboards"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f3d3629b0e35abb4072204bcc067c57a3041b9f27db2e895b6a6c2c430cb0bc5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Multiple dashboards - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

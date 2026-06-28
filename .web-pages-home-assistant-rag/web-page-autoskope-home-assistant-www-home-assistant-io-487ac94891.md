@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/autoskope"
+final_url: "https://www.home-assistant.io/integrations/autoskope"
+canonical_url: "https://www.home-assistant.io/integrations/autoskope/"
+source_handle: "web:www-home-assistant-io:487ac94891d9"
+source_section: "integrations-autoskope"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0c4bfdeab67316977d5916067d8f25789e3322c9ec37d0aaf2e4d9f5cb284335"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Autoskope - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

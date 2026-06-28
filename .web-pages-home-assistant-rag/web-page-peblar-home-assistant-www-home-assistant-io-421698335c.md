@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/peblar"
+final_url: "https://www.home-assistant.io/integrations/peblar"
+canonical_url: "https://www.home-assistant.io/integrations/peblar/"
+source_handle: "web:www-home-assistant-io:421698335ca6"
+source_section: "integrations-peblar"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6a33e9902dbd7585e4cf0ce27623bbef72b45d47dd4b1a190d68e06fe1f16b46"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Peblar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

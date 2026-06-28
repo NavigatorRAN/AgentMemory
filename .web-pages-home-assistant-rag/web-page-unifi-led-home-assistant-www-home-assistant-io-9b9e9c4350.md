@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/unifiled"
+final_url: "https://www.home-assistant.io/integrations/unifiled"
+canonical_url: "https://www.home-assistant.io/integrations/unifiled/"
+source_handle: "web:www-home-assistant-io:9b9e9c4350d0"
+source_section: "integrations-unifiled"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "292651219a2ab5bfc2882ba5b3811970329e3ad0caa877dc0e38cdea7fd500fa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UniFi LED - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

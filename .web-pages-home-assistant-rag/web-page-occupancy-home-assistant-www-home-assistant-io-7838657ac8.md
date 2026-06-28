@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/occupancy"
+final_url: "https://www.home-assistant.io/integrations/occupancy"
+canonical_url: "https://www.home-assistant.io/integrations/occupancy/"
+source_handle: "web:www-home-assistant-io:7838657ac872"
+source_section: "integrations-occupancy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ec82a5a0fa356b851b161b49dcce47f495f86e6a751fabbf39e28f83b9f0c378"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Occupancy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/expanding_assist"
+final_url: "https://www.home-assistant.io/voice_control/expanding_assist"
+canonical_url: "https://www.home-assistant.io/voice_control/expanding_assist/"
+source_handle: "web:www-home-assistant-io:e3637a7f836a"
+source_section: "voice-control-expanding-assist"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "629f88fa454c5699eb2429f5621ac2adb2dcbe4373843f20f14a50dba23d3f73"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Expanding Assist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

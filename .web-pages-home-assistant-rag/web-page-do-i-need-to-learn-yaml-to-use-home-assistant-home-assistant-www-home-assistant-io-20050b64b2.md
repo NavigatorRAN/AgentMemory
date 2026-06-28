@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/do-i-need-yaml"
+final_url: "https://www.home-assistant.io/faq/do-i-need-yaml"
+canonical_url: "https://www.home-assistant.io/faq/do-i-need-yaml/"
+source_handle: "web:www-home-assistant-io:20050b64b277"
+source_section: "faq-do-i-need-yaml"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3f826469ef286a01799383de98abe446e87302f6113552844bdc01bc61cad40b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Do I need to learn YAML to use Home Assistant? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

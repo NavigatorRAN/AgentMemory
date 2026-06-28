@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/victron_ble"
+final_url: "https://www.home-assistant.io/integrations/victron_ble"
+canonical_url: "https://www.home-assistant.io/integrations/victron_ble/"
+source_handle: "web:www-home-assistant-io:da49999be94a"
+source_section: "integrations-victron-ble"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ca81845cd90a1fdf7058404cbe2ca9929d8c524c249ae69bcca63a19983af4bc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Victron BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

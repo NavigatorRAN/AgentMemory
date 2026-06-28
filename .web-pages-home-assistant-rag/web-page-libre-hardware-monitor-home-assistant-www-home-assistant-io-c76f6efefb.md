@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/libre_hardware_monitor"
+final_url: "https://www.home-assistant.io/integrations/libre_hardware_monitor"
+canonical_url: "https://www.home-assistant.io/integrations/libre_hardware_monitor/"
+source_handle: "web:www-home-assistant-io:c76f6efefbb5"
+source_section: "integrations-libre-hardware-monitor"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7e30bf276fbd57d8f57f219033f6e1972c3e42093288dd5a750cdcf34037632d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Libre Hardware Monitor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aws"
+final_url: "https://www.home-assistant.io/integrations/aws"
+canonical_url: "https://www.home-assistant.io/integrations/aws/"
+source_handle: "web:www-home-assistant-io:4223cc9f71d3"
+source_section: "integrations-aws"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb6c1f61a579a963b908041033a60a6e6c031aefa01a00d6616d525798ecea1d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Amazon Web Services (AWS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

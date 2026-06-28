@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pushbullet"
+final_url: "https://www.home-assistant.io/integrations/pushbullet"
+canonical_url: "https://www.home-assistant.io/integrations/pushbullet/"
+source_handle: "web:www-home-assistant-io:cc4cf0e65032"
+source_section: "integrations-pushbullet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f645d08ca6e799a8e688881907214471eb6a5ff11204d8cf4488681240a0bb4d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pushbullet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

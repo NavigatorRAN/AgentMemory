@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/synology_dsm"
+final_url: "https://www.home-assistant.io/integrations/synology_dsm"
+canonical_url: "https://www.home-assistant.io/integrations/synology_dsm/"
+source_handle: "web:www-home-assistant-io:e5a9145cae24"
+source_section: "integrations-synology-dsm"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "00833f84c2dfe54ac6d5b049fccc633dd47a85575d407923701956e7b72aa962"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Synology DSM - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

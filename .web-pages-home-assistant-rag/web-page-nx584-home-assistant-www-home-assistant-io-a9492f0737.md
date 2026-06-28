@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nx584"
+final_url: "https://www.home-assistant.io/integrations/nx584"
+canonical_url: "https://www.home-assistant.io/integrations/nx584/"
+source_handle: "web:www-home-assistant-io:a9492f073748"
+source_section: "integrations-nx584"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7cbb5b75352eda8ced5ab2e397d616a6c49b30afdabf23d1b7c7f0db54c27406"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NX584 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

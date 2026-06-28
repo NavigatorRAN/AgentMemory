@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/slide"
+final_url: "https://www.home-assistant.io/integrations/slide"
+canonical_url: "https://www.home-assistant.io/integrations/slide/"
+source_handle: "web:www-home-assistant-io:2689534167b2"
+source_section: "integrations-slide"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c8d9f801fe63dcadc7345f592b7b27a80536a34c670513ae435f345741a78fb2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Slide - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

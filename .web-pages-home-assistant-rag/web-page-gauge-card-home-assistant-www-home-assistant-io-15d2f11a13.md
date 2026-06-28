@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/gauge"
+final_url: "https://www.home-assistant.io/dashboards/gauge"
+canonical_url: "https://www.home-assistant.io/dashboards/gauge/"
+source_handle: "web:www-home-assistant-io:15d2f11a1393"
+source_section: "dashboards-gauge"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28ee50069011a9376d498c0e04696903a75db082d440d164a0bde1d31a72e585"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Gauge card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

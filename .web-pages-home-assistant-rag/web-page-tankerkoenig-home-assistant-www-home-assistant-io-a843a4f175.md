@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tankerkoenig"
+final_url: "https://www.home-assistant.io/integrations/tankerkoenig"
+canonical_url: "https://www.home-assistant.io/integrations/tankerkoenig/"
+source_handle: "web:www-home-assistant-io:a843a4f17510"
+source_section: "integrations-tankerkoenig"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "07a47c031b98ca2525533db22ae009b617faae572418a089ee935dadb615c759"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tankerkoenig - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

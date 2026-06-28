@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mpd"
+final_url: "https://www.home-assistant.io/integrations/mpd"
+canonical_url: "https://www.home-assistant.io/integrations/mpd/"
+source_handle: "web:www-home-assistant-io:f9a6adf2a749"
+source_section: "integrations-mpd"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "416bbf3523ea105fb6bf6690d0ce931a7d33f841fea0981851c5ef3918393cbf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Music Player Daemon (MPD) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

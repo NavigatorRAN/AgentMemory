@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/seven_segments"
+final_url: "https://www.home-assistant.io/integrations/seven_segments"
+canonical_url: "https://www.home-assistant.io/integrations/seven_segments/"
+source_handle: "web:www-home-assistant-io:f70e6f003c88"
+source_section: "integrations-seven-segments"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4d186543f21142d13f1e6510eced89d5b93342ffd7614be2fa3f98eab448ef67"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Seven Segments OCR - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

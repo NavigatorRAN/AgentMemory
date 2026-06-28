@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lacrosse_view"
+final_url: "https://www.home-assistant.io/integrations/lacrosse_view"
+canonical_url: "https://www.home-assistant.io/integrations/lacrosse_view/"
+source_handle: "web:www-home-assistant-io:2af4edb80892"
+source_section: "integrations-lacrosse-view"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28566d327252a5338c5bf8b1247a9d79fe0742a2370c13844157b362f795f94b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LaCrosse View - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

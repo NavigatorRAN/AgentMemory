@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/justnimbus"
+final_url: "https://www.home-assistant.io/integrations/justnimbus"
+canonical_url: "https://www.home-assistant.io/integrations/justnimbus/"
+source_handle: "web:www-home-assistant-io:011e86b5e645"
+source_section: "integrations-justnimbus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "06808340e837fb678e411c5f465a61a0390208ff7db8c63662b6aa2f3bec70ea"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # JustNimbus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

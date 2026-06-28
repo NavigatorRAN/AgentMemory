@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/frient"
+final_url: "https://www.home-assistant.io/integrations/frient"
+canonical_url: "https://www.home-assistant.io/integrations/frient/"
+source_handle: "web:www-home-assistant-io:6889b04eb0c5"
+source_section: "integrations-frient"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28870cf0e6b951da7d3f530bef30f9a234d8909fb700769bde6ed8b93307500c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Frient - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

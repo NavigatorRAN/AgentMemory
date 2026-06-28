@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ebox"
+final_url: "https://www.home-assistant.io/integrations/ebox"
+canonical_url: "https://www.home-assistant.io/integrations/ebox/"
+source_handle: "web:www-home-assistant-io:59b0d3d8c911"
+source_section: "integrations-ebox"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cbb50500c718b1431d8b0e8381c8514e763b2d02087e396f35176bc6758bf9d8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EBox - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

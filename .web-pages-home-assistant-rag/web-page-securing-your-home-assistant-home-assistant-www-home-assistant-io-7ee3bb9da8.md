@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/securing"
+final_url: "https://www.home-assistant.io/docs/configuration/securing"
+canonical_url: "https://www.home-assistant.io/docs/configuration/securing/"
+source_handle: "web:www-home-assistant-io:7ee3bb9da854"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3f8208b7f6ce72af48328af3ddb29cd9967534ea9b4650d7623bcf3a274e3e7d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Securing your Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

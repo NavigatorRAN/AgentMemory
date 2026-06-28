@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/door"
+final_url: "https://www.home-assistant.io/integrations/door"
+canonical_url: "https://www.home-assistant.io/integrations/door/"
+source_handle: "web:www-home-assistant-io:b6c01935f4aa"
+source_section: "integrations-door"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9f83581e139af362db34eb4a42e351f869a1284663728cc7052890cf16386b01"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Door - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

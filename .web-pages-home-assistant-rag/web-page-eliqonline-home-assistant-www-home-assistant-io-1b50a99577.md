@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eliqonline"
+final_url: "https://www.home-assistant.io/integrations/eliqonline"
+canonical_url: "https://www.home-assistant.io/integrations/eliqonline/"
+source_handle: "web:www-home-assistant-io:1b50a99577a0"
+source_section: "integrations-eliqonline"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "39c28451f07acbaf285a7ab5f328cb6fa328ae036b35dcb27868efd9ad194fb4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Eliqonline - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

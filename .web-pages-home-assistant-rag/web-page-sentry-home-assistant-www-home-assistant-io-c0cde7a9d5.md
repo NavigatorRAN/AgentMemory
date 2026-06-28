@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sentry"
+final_url: "https://www.home-assistant.io/integrations/sentry"
+canonical_url: "https://www.home-assistant.io/integrations/sentry/"
+source_handle: "web:www-home-assistant-io:c0cde7a9d5eb"
+source_section: "integrations-sentry"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b7d9dde440c88ead7e23ed6ef6255d595dbbf70d1409484a0a6eb517bdebbde5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Sentry - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

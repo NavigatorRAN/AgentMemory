@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ukraine_alarm"
+final_url: "https://www.home-assistant.io/integrations/ukraine_alarm"
+canonical_url: "https://www.home-assistant.io/integrations/ukraine_alarm/"
+source_handle: "web:www-home-assistant-io:3b0624038ac1"
+source_section: "integrations-ukraine-alarm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8124a91c1d72b8c199dbf08bbea59e5a419d0b73ae809cc4f6da319e7e6917ca"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ukraine Alarm - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

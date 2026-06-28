@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/powerfox_local"
+final_url: "https://www.home-assistant.io/integrations/powerfox_local"
+canonical_url: "https://www.home-assistant.io/integrations/powerfox_local/"
+source_handle: "web:www-home-assistant-io:d4a77b5628b8"
+source_section: "integrations-powerfox-local"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a338af94607b048cbb94c81fe14bc7f07d39479453faf24e05ed79cb0c60252"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Powerfox Local - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

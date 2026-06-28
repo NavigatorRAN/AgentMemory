@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homeseer"
+final_url: "https://www.home-assistant.io/integrations/homeseer"
+canonical_url: "https://www.home-assistant.io/integrations/homeseer/"
+source_handle: "web:www-home-assistant-io:01e58f5aa532"
+source_section: "integrations-homeseer"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "06c83b3ad997ec70688f9996254318a05c488a787af50bb67b2b6237664d5de0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HomeSeer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wake_word"
+final_url: "https://www.home-assistant.io/integrations/wake_word"
+canonical_url: "https://www.home-assistant.io/integrations/wake_word/"
+source_handle: "web:www-home-assistant-io:f00aaa172bb3"
+source_section: "integrations-wake-word"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a265db4a24fb7b04d94c88704e25be0e86622d9bfb5a4f11633b4602015cb099"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Wake-word detection - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/versasense"
+final_url: "https://www.home-assistant.io/integrations/versasense"
+canonical_url: "https://www.home-assistant.io/integrations/versasense/"
+source_handle: "web:www-home-assistant-io:6d691b8b4c49"
+source_section: "integrations-versasense"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9f1d3043e7015d8196e70d80521bbe1930fba087a13d0f4d72095fe406a2d7f3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # VersaSense - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

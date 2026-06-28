@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/p1_monitor"
+final_url: "https://www.home-assistant.io/integrations/p1_monitor"
+canonical_url: "https://www.home-assistant.io/integrations/p1_monitor/"
+source_handle: "web:www-home-assistant-io:7bd4d8b45815"
+source_section: "integrations-p1-monitor"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8351fe1d0ecee58c99b79fe048cbe39c59f4e86cbba6febf73a90a04ab7fe305"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # P1 Monitor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

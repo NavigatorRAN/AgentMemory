@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/growatt_server"
+final_url: "https://www.home-assistant.io/integrations/growatt_server"
+canonical_url: "https://www.home-assistant.io/integrations/growatt_server/"
+source_handle: "web:www-home-assistant-io:086afd73aa71"
+source_section: "integrations-growatt-server"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a577e99e0455023b46eee6ae2f6bf46824f3f0a05bde7bf96bb7e2560c279cf0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Growatt - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

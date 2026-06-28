@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/acaia"
+final_url: "https://www.home-assistant.io/integrations/acaia"
+canonical_url: "https://www.home-assistant.io/integrations/acaia/"
+source_handle: "web:www-home-assistant-io:64c0b8656fc8"
+source_section: "integrations-acaia"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8d7ffc82eca323e9dfd3db25f3e2093cacef3b5ef689f6951df30183a5de45e2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Acaia - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

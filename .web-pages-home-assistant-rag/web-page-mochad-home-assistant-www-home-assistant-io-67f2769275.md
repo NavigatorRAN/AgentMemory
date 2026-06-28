@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mochad"
+final_url: "https://www.home-assistant.io/integrations/mochad"
+canonical_url: "https://www.home-assistant.io/integrations/mochad/"
+source_handle: "web:www-home-assistant-io:67f276927548"
+source_section: "integrations-mochad"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e4f6405333523a7c4011cd43a21907f9ded4f4a2762d0e7a8f77feadafac10ef"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mochad - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

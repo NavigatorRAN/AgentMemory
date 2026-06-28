@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/generic-x86-64"
+final_url: "https://www.home-assistant.io/installation/generic-x86-64"
+canonical_url: "https://www.home-assistant.io/installation/generic-x86-64/"
+source_handle: "web:www-home-assistant-io:24f213acc259"
+source_section: "installation-generic-x86-64"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5c3d0c5ffc7c27b845f84b363e8516d152f11cf5e751b64c7f767a82d54ff809"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Generic x86-64 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nws"
+final_url: "https://www.home-assistant.io/integrations/nws"
+canonical_url: "https://www.home-assistant.io/integrations/nws/"
+source_handle: "web:www-home-assistant-io:934e9bc139ff"
+source_section: "integrations-nws"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "27338b66db2cbd2f7d236a8ef8b01cf9ebb342c88e69dca1ea8ad5e289c074dc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # National Weather Service (NWS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

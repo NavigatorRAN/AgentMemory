@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/emby"
+final_url: "https://www.home-assistant.io/integrations/emby"
+canonical_url: "https://www.home-assistant.io/integrations/emby/"
+source_handle: "web:www-home-assistant-io:6978d0529553"
+source_section: "integrations-emby"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "59bae79c11396f56f631bb899197bf740d1bb193c242a66e7cdb808765986701"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Emby - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/xeoma"
+final_url: "https://www.home-assistant.io/integrations/xeoma"
+canonical_url: "https://www.home-assistant.io/integrations/xeoma/"
+source_handle: "web:www-home-assistant-io:d4f08f90890d"
+source_section: "integrations-xeoma"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "006c9ed13f44a853ef1655c83fd6443af060a58b9691114a5feb333d500e869d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Xeoma - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

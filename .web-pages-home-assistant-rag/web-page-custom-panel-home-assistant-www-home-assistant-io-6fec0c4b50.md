@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/panel_custom"
+final_url: "https://www.home-assistant.io/integrations/panel_custom"
+canonical_url: "https://www.home-assistant.io/integrations/panel_custom/"
+source_handle: "web:www-home-assistant-io:6fec0c4b5066"
+source_section: "integrations-panel-custom"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c4040f3a8e441eed99f1e3c6be4a7e40916cd1e37e9064298351c5b8c361c701"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Custom panel - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

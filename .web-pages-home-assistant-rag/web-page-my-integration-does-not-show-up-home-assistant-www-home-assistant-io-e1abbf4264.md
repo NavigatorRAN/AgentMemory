@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/component"
+final_url: "https://www.home-assistant.io/faq/component"
+canonical_url: "https://www.home-assistant.io/faq/component/"
+source_handle: "web:www-home-assistant-io:e1abbf4264c3"
+source_section: "faq-component"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b385552f8d1d9b2a491024e5a4d127bddb08d62593a77498dc92de935b1b6b99"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # My integration does not show up - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

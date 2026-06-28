@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smart_blinds"
+final_url: "https://www.home-assistant.io/integrations/smart_blinds"
+canonical_url: "https://www.home-assistant.io/integrations/smart_blinds/"
+source_handle: "web:www-home-assistant-io:9127bee9e9bd"
+source_section: "integrations-smart-blinds"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "26e01800469fd59a6d9e6a3584e6663c2ffc381654b0359d1adb52bc8ba02894"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Smartblinds - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

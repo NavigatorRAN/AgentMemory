@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mta"
+final_url: "https://www.home-assistant.io/integrations/mta"
+canonical_url: "https://www.home-assistant.io/integrations/mta/"
+source_handle: "web:www-home-assistant-io:fdb0c28ca6f6"
+source_section: "integrations-mta"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "745d1bf8db7acdfda3f10c56b5d95294f2a440ccbc85e528f87f6837d15bd569"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MTA New York City Transit - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

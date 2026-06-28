@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/scl"
+final_url: "https://www.home-assistant.io/integrations/scl"
+canonical_url: "https://www.home-assistant.io/integrations/scl/"
+source_handle: "web:www-home-assistant-io:83b470896b47"
+source_section: "integrations-scl"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5a00395fccf63cf4b8255cf934a9e90d5a1c390a089d9a80f404c46488ce34a5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Seattle City Light (SCL) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

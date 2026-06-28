@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gc100"
+final_url: "https://www.home-assistant.io/integrations/gc100"
+canonical_url: "https://www.home-assistant.io/integrations/gc100/"
+source_handle: "web:www-home-assistant-io:5527063375da"
+source_section: "integrations-gc100"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "18f7c7012a8343f487235f981474074944f7962690388909d549eaf72630585d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Global Caché GC-100 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

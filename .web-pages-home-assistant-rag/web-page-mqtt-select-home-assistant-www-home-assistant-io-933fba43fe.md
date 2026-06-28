@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/select.mqtt"
+final_url: "https://www.home-assistant.io/integrations/select.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/select.mqtt/"
+source_handle: "web:www-home-assistant-io:933fba43fee2"
+source_section: "integrations-select-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "803c940b24d97f1af078c15bd9a48fb32ca3bf8c5352e14a275bf9cf9ab42a7b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Select - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

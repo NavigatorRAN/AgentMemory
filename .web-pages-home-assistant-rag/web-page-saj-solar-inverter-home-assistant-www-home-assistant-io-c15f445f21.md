@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/saj"
+final_url: "https://www.home-assistant.io/integrations/saj"
+canonical_url: "https://www.home-assistant.io/integrations/saj/"
+source_handle: "web:www-home-assistant-io:c15f445f2113"
+source_section: "integrations-saj"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d41292dafa71aea860f58494b3d314ff857e0813968fa2392b77bf5968228385"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SAJ Solar Inverter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

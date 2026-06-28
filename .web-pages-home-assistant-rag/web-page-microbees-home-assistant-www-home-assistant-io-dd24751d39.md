@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/microbees"
+final_url: "https://www.home-assistant.io/integrations/microbees"
+canonical_url: "https://www.home-assistant.io/integrations/microbees/"
+source_handle: "web:www-home-assistant-io:dd24751d3904"
+source_section: "integrations-microbees"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cc893acf6afefdec1dc0408eb5c1fe152208ad4eb35a7a83296f31704015e425"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # microBees - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

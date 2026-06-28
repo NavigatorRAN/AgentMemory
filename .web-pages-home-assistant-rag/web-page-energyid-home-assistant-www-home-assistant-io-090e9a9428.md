@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/energyid"
+final_url: "https://www.home-assistant.io/integrations/energyid"
+canonical_url: "https://www.home-assistant.io/integrations/energyid/"
+source_handle: "web:www-home-assistant-io:090e9a9428e1"
+source_section: "integrations-energyid"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c5a7e347bf17b87764b4a29a6a4415d186909b3aa93a912ccf9de31b7cfbb837"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # EnergyID - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

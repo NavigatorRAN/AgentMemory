@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rocketchat"
+final_url: "https://www.home-assistant.io/integrations/rocketchat"
+canonical_url: "https://www.home-assistant.io/integrations/rocketchat/"
+source_handle: "web:www-home-assistant-io:811831989438"
+source_section: "integrations-rocketchat"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fe9c0395f026c08911e1759059773be64d85f8a867ece72afaae23d81243e28b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rocket.Chat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

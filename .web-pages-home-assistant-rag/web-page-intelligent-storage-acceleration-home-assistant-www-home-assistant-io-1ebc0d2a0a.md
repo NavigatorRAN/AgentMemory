@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/isal"
+final_url: "https://www.home-assistant.io/integrations/isal"
+canonical_url: "https://www.home-assistant.io/integrations/isal/"
+source_handle: "web:www-home-assistant-io:1ebc0d2a0afb"
+source_section: "integrations-isal"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9a93348317863ad64e4d367de0a6022c5cd8f78fcf367d4c26166a76637de363"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Intelligent Storage Acceleration - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

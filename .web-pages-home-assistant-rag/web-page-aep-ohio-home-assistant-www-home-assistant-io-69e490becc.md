@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aep_ohio"
+final_url: "https://www.home-assistant.io/integrations/aep_ohio"
+canonical_url: "https://www.home-assistant.io/integrations/aep_ohio/"
+source_handle: "web:www-home-assistant-io:69e490becc49"
+source_section: "integrations-aep-ohio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ac18fde3d47737335ad45eadfd4c529f8feb1a7ca259c1ca31945b6474cd21f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AEP Ohio - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

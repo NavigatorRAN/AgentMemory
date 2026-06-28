@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bluetooth_le_tracker"
+final_url: "https://www.home-assistant.io/integrations/bluetooth_le_tracker"
+canonical_url: "https://www.home-assistant.io/integrations/bluetooth_le_tracker/"
+source_handle: "web:www-home-assistant-io:978655de8e60"
+source_section: "integrations-bluetooth-le-tracker"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5f61fb9e615668e6498c741b39820faee7ceccb878d0f20466a1a9b0cbb5b919"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bluetooth LE Tracker - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

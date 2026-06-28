@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/swisscom"
+final_url: "https://www.home-assistant.io/integrations/swisscom"
+canonical_url: "https://www.home-assistant.io/integrations/swisscom/"
+source_handle: "web:www-home-assistant-io:98c6682a4e56"
+source_section: "integrations-swisscom"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a96f6982ea4cd9884a9479269ede70178808f14ec054ddd9f1d9d5954259a43e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Swisscom Internet-Box - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

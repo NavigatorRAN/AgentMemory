@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/air_quality"
+final_url: "https://www.home-assistant.io/integrations/air_quality"
+canonical_url: "https://www.home-assistant.io/integrations/air_quality/"
+source_handle: "web:www-home-assistant-io:0696e4d52330"
+source_section: "integrations-air-quality"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c3062a1c6b8b3b2a3e151355c2072391cf69e1f61d9765b4c572918b1f87c29d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Air quality - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

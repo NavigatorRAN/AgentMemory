@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/debugging"
+final_url: "https://www.home-assistant.io/docs/templating/debugging"
+canonical_url: "https://www.home-assistant.io/docs/templating/debugging/"
+source_handle: "web:www-home-assistant-io:b683fa72da87"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8ad3cabdee10f96afee436c99bdfb0bd5f13b35ab8d3f057bf5c0f9e2020292e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Debugging templates - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

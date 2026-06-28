@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/apple_tv"
+final_url: "https://www.home-assistant.io/integrations/apple_tv"
+canonical_url: "https://www.home-assistant.io/integrations/apple_tv/"
+source_handle: "web:www-home-assistant-io:9e723a1ec343"
+source_section: "integrations-apple-tv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "91ce979368b58b28fa9832cc7e817d8c1ef77986382d726e3f3c0b38636321fa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Apple TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

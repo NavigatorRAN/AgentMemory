@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/casper_glow"
+final_url: "https://www.home-assistant.io/integrations/casper_glow"
+canonical_url: "https://www.home-assistant.io/integrations/casper_glow/"
+source_handle: "web:www-home-assistant-io:346951eabaf8"
+source_section: "integrations-casper-glow"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "486c9018a577338236c719f9d658eef4a89e0a5e651e96d237b8cdaf67b700b4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Casper Glow - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

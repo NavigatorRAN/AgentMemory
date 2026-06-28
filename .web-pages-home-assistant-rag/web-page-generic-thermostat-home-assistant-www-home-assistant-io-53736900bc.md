@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/generic_thermostat"
+final_url: "https://www.home-assistant.io/integrations/generic_thermostat"
+canonical_url: "https://www.home-assistant.io/integrations/generic_thermostat/"
+source_handle: "web:www-home-assistant-io:53736900bc91"
+source_section: "integrations-generic-thermostat"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9b009cc85b2fb58de14d88d70bc15332387a797a5ddf1c54e02b72764b61714f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Generic Thermostat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

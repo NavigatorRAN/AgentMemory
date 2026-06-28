@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/heltun"
+final_url: "https://www.home-assistant.io/integrations/heltun"
+canonical_url: "https://www.home-assistant.io/integrations/heltun/"
+source_handle: "web:www-home-assistant-io:955432062b49"
+source_section: "integrations-heltun"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f404d693db57a4081057cbf8bd28157e0def77eb3e22d105cca7931ddda10495"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HELTUN - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

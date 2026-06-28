@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fido"
+final_url: "https://www.home-assistant.io/integrations/fido"
+canonical_url: "https://www.home-assistant.io/integrations/fido/"
+source_handle: "web:www-home-assistant-io:a406840e4d6f"
+source_section: "integrations-fido"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "265a1ae1ddbc777dae60787922ef4885aa775408515596932b9964e48bbd7f35"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fido - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

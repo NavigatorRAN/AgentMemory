@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ziggo_mediabox_xl"
+final_url: "https://www.home-assistant.io/integrations/ziggo_mediabox_xl"
+canonical_url: "https://www.home-assistant.io/integrations/ziggo_mediabox_xl/"
+source_handle: "web:www-home-assistant-io:5591de0e5d01"
+source_section: "integrations-ziggo-mediabox-xl"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "afbf11fd90494309876dd86ca70e55535f947edf626523ac4ec5b8c87f660a7c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ziggo Mediabox XL - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

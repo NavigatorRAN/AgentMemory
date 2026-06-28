@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switchbot_cloud"
+final_url: "https://www.home-assistant.io/integrations/switchbot_cloud"
+canonical_url: "https://www.home-assistant.io/integrations/switchbot_cloud/"
+source_handle: "web:www-home-assistant-io:31b2d9c353a7"
+source_section: "integrations-switchbot-cloud"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e4bfaeae0fbe142dcef7eb729758ae432fad99a0cee56dfcaf4c76bf8f731f54"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # SwitchBot Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

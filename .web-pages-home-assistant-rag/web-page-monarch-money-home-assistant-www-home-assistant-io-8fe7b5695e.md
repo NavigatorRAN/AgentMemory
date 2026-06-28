@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/monarch_money"
+final_url: "https://www.home-assistant.io/integrations/monarch_money"
+canonical_url: "https://www.home-assistant.io/integrations/monarch_money/"
+source_handle: "web:www-home-assistant-io:8fe7b5695ec1"
+source_section: "integrations-monarch-money"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "58a649c6b39df694269412ce24675faa6587a7e3b02d03cc573a5471c3e20fbc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Monarch Money - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

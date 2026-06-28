@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/madvr"
+final_url: "https://www.home-assistant.io/integrations/madvr"
+canonical_url: "https://www.home-assistant.io/integrations/madvr/"
+source_handle: "web:www-home-assistant-io:833aaed36c95"
+source_section: "integrations-madvr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b8cb55a13840dc94997f857194dd4a4d2e5bae7e63c1012baf3e01bb2a251d95"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # madVR Envy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

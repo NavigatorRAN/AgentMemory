@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/message_bird"
+final_url: "https://www.home-assistant.io/integrations/message_bird"
+canonical_url: "https://www.home-assistant.io/integrations/message_bird/"
+source_handle: "web:www-home-assistant-io:9d51c26f9a7a"
+source_section: "integrations-message-bird"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6e38faff8f4dbba5dc9940fff75615bdd99076e7e08aacb951922377278d1c4f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MessageBird - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

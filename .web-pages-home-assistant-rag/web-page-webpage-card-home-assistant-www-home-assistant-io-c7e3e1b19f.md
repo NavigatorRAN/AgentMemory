@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/iframe"
+final_url: "https://www.home-assistant.io/dashboards/iframe"
+canonical_url: "https://www.home-assistant.io/dashboards/iframe/"
+source_handle: "web:www-home-assistant-io:c7e3e1b19f1e"
+source_section: "dashboards-iframe"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b3ff6d37706059e036a95b9b80c94a4171741cc4cf2fb7dda62dd3ba53a6ea31"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Webpage card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

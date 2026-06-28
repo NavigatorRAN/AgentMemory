@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zeroconf"
+final_url: "https://www.home-assistant.io/integrations/zeroconf"
+canonical_url: "https://www.home-assistant.io/integrations/zeroconf/"
+source_handle: "web:www-home-assistant-io:453d3c19e634"
+source_section: "integrations-zeroconf"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "33ed167cac86bfed7b422d87f2647a10a6e89e913822c93a6761c622dd6c0597"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Zero-configuration networking (zeroconf) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

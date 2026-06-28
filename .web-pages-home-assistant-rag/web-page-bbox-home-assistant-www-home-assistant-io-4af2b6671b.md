@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bbox"
+final_url: "https://www.home-assistant.io/integrations/bbox"
+canonical_url: "https://www.home-assistant.io/integrations/bbox/"
+source_handle: "web:www-home-assistant-io:4af2b6671b1a"
+source_section: "integrations-bbox"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "486020b2f7bc02c1e2be4ea8e9abf88487ce5ab7fe872493aee167c9b3fbb604"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Bbox - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

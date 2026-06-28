@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration"
+final_url: "https://www.home-assistant.io/docs/configuration"
+canonical_url: "https://www.home-assistant.io/docs/configuration/"
+source_handle: "web:www-home-assistant-io:d19b357e4e7a"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "259dcb1b8860045cca0418a9fffe246d35ad164d2a8c7d2b730376e523a52f06"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # The configuration.yaml file - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

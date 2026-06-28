@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vlc"
+final_url: "https://www.home-assistant.io/integrations/vlc"
+canonical_url: "https://www.home-assistant.io/integrations/vlc/"
+source_handle: "web:www-home-assistant-io:a6be203c6ae1"
+source_section: "integrations-vlc"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "896a7edd5653c588fd8336b9eb13ef50e91050d3eb6023fa80a16ad10bf4d30b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # VLC media player - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

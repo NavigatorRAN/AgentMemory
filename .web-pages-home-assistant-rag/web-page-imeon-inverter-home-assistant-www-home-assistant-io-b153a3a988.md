@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/imeon_inverter"
+final_url: "https://www.home-assistant.io/integrations/imeon_inverter"
+canonical_url: "https://www.home-assistant.io/integrations/imeon_inverter/"
+source_handle: "web:www-home-assistant-io:b153a3a988e5"
+source_section: "integrations-imeon-inverter"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1ba09526993c85bbc359aeece002df6dbce750edb6737acec0b2d3d9f5593331"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Imeon Inverter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

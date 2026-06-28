@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/z-wave/controllers"
+final_url: "https://www.home-assistant.io/docs/z-wave/controllers"
+canonical_url: "https://www.home-assistant.io/docs/z-wave/controllers/"
+source_handle: "web:www-home-assistant-io:c64c3d1a6277"
+source_section: "docs-z-wave"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d096d6686353d1392ee4efe780ae52c0912215746536680ad32e9497da476570"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Z-Wave adapters - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lw12wifi"
+final_url: "https://www.home-assistant.io/integrations/lw12wifi"
+canonical_url: "https://www.home-assistant.io/integrations/lw12wifi/"
+source_handle: "web:www-home-assistant-io:c01d77f8e5fa"
+source_section: "integrations-lw12wifi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7892f5506583e67f26ab9a30fa2620ad42e952a854e35fb4eef986f25ed8b825"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LAGUTE LW-12 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

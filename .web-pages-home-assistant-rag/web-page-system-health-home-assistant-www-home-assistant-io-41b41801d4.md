@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/system_health"
+final_url: "https://www.home-assistant.io/integrations/system_health"
+canonical_url: "https://www.home-assistant.io/integrations/system_health/"
+source_handle: "web:www-home-assistant-io:41b41801d426"
+source_section: "integrations-system-health"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "27466930fbd5d5b0cc9ee634f5dc83b15cc60a50a38d05d10ac5221866121775"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # System Health - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

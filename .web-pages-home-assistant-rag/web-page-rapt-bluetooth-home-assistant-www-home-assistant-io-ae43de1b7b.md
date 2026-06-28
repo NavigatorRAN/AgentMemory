@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rapt_ble"
+final_url: "https://www.home-assistant.io/integrations/rapt_ble"
+canonical_url: "https://www.home-assistant.io/integrations/rapt_ble/"
+source_handle: "web:www-home-assistant-io:ae43de1b7b87"
+source_section: "integrations-rapt-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c5e95b8d0aacb126099f0338877c0c86b69001c14d3a6fa0aa7a31c85f855f1b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RAPT Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

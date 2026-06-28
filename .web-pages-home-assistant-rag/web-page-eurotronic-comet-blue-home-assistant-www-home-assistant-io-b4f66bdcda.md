@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eurotronic_cometblue"
+final_url: "https://www.home-assistant.io/integrations/eurotronic_cometblue"
+canonical_url: "https://www.home-assistant.io/integrations/eurotronic_cometblue/"
+source_handle: "web:www-home-assistant-io:b4f66bdcda99"
+source_section: "integrations-eurotronic-cometblue"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "411d1df9922a74fb23c69e4baadce839769877ff71b45609a9a81f09a2d7c9d6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Eurotronic Comet Blue - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

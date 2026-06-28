@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hypontech"
+final_url: "https://www.home-assistant.io/integrations/hypontech"
+canonical_url: "https://www.home-assistant.io/integrations/hypontech/"
+source_handle: "web:www-home-assistant-io:47f870b78c88"
+source_section: "integrations-hypontech"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0d8a93dd62630ec49765a4162d1552bd02fbbe61dbf6d214dd0432218886fc7a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hypontech Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

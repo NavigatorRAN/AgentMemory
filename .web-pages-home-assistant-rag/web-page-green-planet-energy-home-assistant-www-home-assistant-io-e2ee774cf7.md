@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/green_planet_energy"
+final_url: "https://www.home-assistant.io/integrations/green_planet_energy"
+canonical_url: "https://www.home-assistant.io/integrations/green_planet_energy/"
+source_handle: "web:www-home-assistant-io:e2ee774cf739"
+source_section: "integrations-green-planet-energy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7b2e3389b45fd8196ee29eef371e3c376ed46dd7f29a22f05337abdae67ae87d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Green Planet Energy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

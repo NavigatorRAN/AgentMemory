@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/command_line"
+final_url: "https://www.home-assistant.io/integrations/command_line"
+canonical_url: "https://www.home-assistant.io/integrations/command_line/"
+source_handle: "web:www-home-assistant-io:eeb6c2dcd787"
+source_section: "integrations-command-line"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "06cb4cc55134823570043425cd33566ca399199556f8e1130e9053105725aca7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Command line - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

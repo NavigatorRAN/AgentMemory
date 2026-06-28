@@ -8,6 +8,7 @@ rag-retrieval, with vault on AISharedDrive.
 from __future__ import annotations
 
 import os
+import threading
 from typing import Any
 
 from fastmcp import FastMCP
@@ -28,6 +29,16 @@ HOST = os.environ.get("MEMORY_HOST", "0.0.0.0")
 PORT = int(os.environ.get("MEMORY_PORT", "8006"))
 
 storage = Storage(VAULT_ROOT)
+
+
+def _prewarm_query_index() -> None:
+    try:
+        storage.ensure_query_index()
+    except Exception as error:
+        metrics.record_index_fallback("startup_index_rebuild", error)
+
+
+threading.Thread(target=_prewarm_query_index, name="memory-mcp-index-prewarm", daemon=True).start()
 
 # FastMCP 3.x: json_response and transport_security are passed to run()/run_http_async,
 # not the constructor. Setting them as env-style kwargs at run time below.
@@ -328,7 +339,33 @@ def memory_metrics() -> dict[str, Any]:
     This intentionally excludes raw memory content. Use it to spot slow tools,
     index fallback symptoms, and graph cache regressions.
     """
-    return metrics.snapshot()
+    snapshot = metrics.snapshot()
+    index_status: dict[str, Any] = {
+        "index_dir": str(storage.index_dir),
+        "db_path": str(storage.query_index.db_path),
+        "db_exists": storage.query_index.db_path.exists(),
+        "index_dir_writable": os.access(storage.index_dir, os.W_OK),
+    }
+    try:
+        index_status["ready"] = storage.query_index.is_ready()
+        with storage.query_index.connect(readonly=True) as conn:
+            for table in ("events", "wiki_pages", "entities", "graph_nodes", "graph_edges"):
+                row = conn.execute(f"SELECT COUNT(*) AS count FROM {table}").fetchone()
+                index_status[f"{table}_count"] = row["count"] if row else 0
+            generated = conn.execute(
+                "SELECT value FROM meta WHERE key = 'graph_cache_generated_at'"
+            ).fetchone()
+            stale = conn.execute(
+                "SELECT value FROM meta WHERE key = 'graph_stale'"
+            ).fetchone()
+            index_status["graph_cache_generated_at"] = generated["value"] if generated else None
+            index_status["graph_stale"] = stale["value"] if stale else None
+    except Exception as error:
+        index_status["ready"] = False
+        index_status["error_type"] = type(error).__name__
+        index_status["error"] = str(error)[:500]
+    snapshot["index"] = index_status
+    return snapshot
 
 
 # ---------------------------------------------------------------------------

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tailscale"
+final_url: "https://www.home-assistant.io/integrations/tailscale"
+canonical_url: "https://www.home-assistant.io/integrations/tailscale/"
+source_handle: "web:www-home-assistant-io:1e1b8c70b276"
+source_section: "integrations-tailscale"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b5a3b7176e9014bb5f0d3c94a090443a12bbd80d41db87e61112535bc018b63e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tailscale - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

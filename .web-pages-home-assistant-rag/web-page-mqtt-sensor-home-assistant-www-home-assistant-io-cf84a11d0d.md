@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensor.mqtt"
+final_url: "https://www.home-assistant.io/integrations/sensor.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/sensor.mqtt/"
+source_handle: "web:www-home-assistant-io:cf84a11d0d43"
+source_section: "integrations-sensor-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1abc0e00a79914d57d8e17bbac70981713602993d1194d4f45a2365957c82cd9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

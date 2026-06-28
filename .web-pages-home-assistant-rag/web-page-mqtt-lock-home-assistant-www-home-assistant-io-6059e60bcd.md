@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lock.mqtt"
+final_url: "https://www.home-assistant.io/integrations/lock.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/lock.mqtt/"
+source_handle: "web:www-home-assistant-io:6059e60bcda2"
+source_section: "integrations-lock-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f6972766fcb89dea09ded2c262b105178d37e9c9ec6a5c2126648e1332e317ad"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Lock - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

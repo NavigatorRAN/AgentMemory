@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/blueprint/schema"
+final_url: "https://www.home-assistant.io/docs/blueprint/schema"
+canonical_url: "https://www.home-assistant.io/docs/blueprint/schema/"
+source_handle: "web:www-home-assistant-io:c6e915aa4328"
+source_section: "docs-blueprint"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d270852b1c32d6f4963bc9e12476fcd366e65609300165200e5d13bee924d23b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # About the blueprint schema - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

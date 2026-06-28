@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/weheat"
+final_url: "https://www.home-assistant.io/integrations/weheat"
+canonical_url: "https://www.home-assistant.io/integrations/weheat/"
+source_handle: "web:www-home-assistant-io:0c46faf3adab"
+source_section: "integrations-weheat"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ffbbbc1af399df6214929214063a50a6a22b8ccc38881bc8a5af477a8f16c380"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Weheat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

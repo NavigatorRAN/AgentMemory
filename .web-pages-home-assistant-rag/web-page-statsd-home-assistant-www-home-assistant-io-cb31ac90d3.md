@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/statsd"
+final_url: "https://www.home-assistant.io/integrations/statsd"
+canonical_url: "https://www.home-assistant.io/integrations/statsd/"
+source_handle: "web:www-home-assistant-io:cb31ac90d378"
+source_section: "integrations-statsd"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a652a7d365b020cdc07d2013de463518618ca512a8aacf1d3d089cd0ab42d9a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # StatsD - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

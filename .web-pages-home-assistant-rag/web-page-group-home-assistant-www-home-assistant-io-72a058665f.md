@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/group"
+final_url: "https://www.home-assistant.io/integrations/group"
+canonical_url: "https://www.home-assistant.io/integrations/group/"
+source_handle: "web:www-home-assistant-io:72a058665ff9"
+source_section: "integrations-group"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "98c680c295a51d9f9ceec10a78b6a6ba4c51c7ac7e6806ea08c79ddf87cc292d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Group - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

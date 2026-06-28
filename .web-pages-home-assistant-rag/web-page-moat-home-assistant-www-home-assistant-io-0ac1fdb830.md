@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/moat"
+final_url: "https://www.home-assistant.io/integrations/moat"
+canonical_url: "https://www.home-assistant.io/integrations/moat/"
+source_handle: "web:www-home-assistant-io:0ac1fdb83043"
+source_section: "integrations-moat"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5f2a92cd205711042c6dda34da61a2c38c7138c184035c555aaccfc2f62388b0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Moat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

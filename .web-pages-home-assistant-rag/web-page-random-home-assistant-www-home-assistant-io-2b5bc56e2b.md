@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/random"
+final_url: "https://www.home-assistant.io/integrations/random"
+canonical_url: "https://www.home-assistant.io/integrations/random/"
+source_handle: "web:www-home-assistant-io:2b5bc56e2bbf"
+source_section: "integrations-random"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a4df366028c8db0869ab4a99098132fb7f480ba6974ac5d63e704867c4ecef06"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Random - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

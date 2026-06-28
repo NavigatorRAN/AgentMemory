@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/baf"
+final_url: "https://www.home-assistant.io/integrations/baf"
+canonical_url: "https://www.home-assistant.io/integrations/baf/"
+source_handle: "web:www-home-assistant-io:2366772d315c"
+source_section: "integrations-baf"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2c647cf9b43c632e6ae5fd222af2a79478a5f6097434df305385ae26ab5c1c14"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Big Ass Fans - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/netatmo"
+final_url: "https://www.home-assistant.io/integrations/netatmo"
+canonical_url: "https://www.home-assistant.io/integrations/netatmo/"
+source_handle: "web:www-home-assistant-io:f4de9ccb4725"
+source_section: "integrations-netatmo"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "26d27023493ad97f55a0398aabeaff086c03fbac0fdc907becb0b9ab206173f0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Netatmo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

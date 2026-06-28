@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/unifi_access"
+final_url: "https://www.home-assistant.io/integrations/unifi_access"
+canonical_url: "https://www.home-assistant.io/integrations/unifi_access/"
+source_handle: "web:www-home-assistant-io:c60539202b94"
+source_section: "integrations-unifi-access"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "73842a7635f7b115b8b0557bc3087230ad24e46f69a7521224609e5a4405257b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UniFi Access - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

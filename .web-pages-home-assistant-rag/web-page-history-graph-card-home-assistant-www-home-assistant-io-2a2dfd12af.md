@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/history-graph"
+final_url: "https://www.home-assistant.io/dashboards/history-graph"
+canonical_url: "https://www.home-assistant.io/dashboards/history-graph/"
+source_handle: "web:www-home-assistant-io:2a2dfd12af2d"
+source_section: "dashboards-history-graph"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3b1175fc6c75a1811d5ff89aee9dcc1bf90a7bfe1ec2dac62279bde1a2bb2af5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # History graph card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

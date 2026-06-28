@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ring"
+final_url: "https://www.home-assistant.io/integrations/ring"
+canonical_url: "https://www.home-assistant.io/integrations/ring/"
+source_handle: "web:www-home-assistant-io:7bf25dfc998d"
+source_section: "integrations-ring"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5ba9bd2d81a0bdee544aefb2d7a697a05d4ff99861b96296819e240accf9943b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Ring - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

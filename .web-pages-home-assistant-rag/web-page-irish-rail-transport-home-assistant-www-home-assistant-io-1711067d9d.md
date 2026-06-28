@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/irish_rail_transport"
+final_url: "https://www.home-assistant.io/integrations/irish_rail_transport"
+canonical_url: "https://www.home-assistant.io/integrations/irish_rail_transport/"
+source_handle: "web:www-home-assistant-io:1711067d9d11"
+source_section: "integrations-irish-rail-transport"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ac417ad8f7cf820b7a4fd7d976630aa9c975deadc7af1a1331c329097e916da5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Irish Rail Transport - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

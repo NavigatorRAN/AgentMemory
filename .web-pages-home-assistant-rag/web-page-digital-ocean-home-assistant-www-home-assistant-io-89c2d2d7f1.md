@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/digital_ocean"
+final_url: "https://www.home-assistant.io/integrations/digital_ocean"
+canonical_url: "https://www.home-assistant.io/integrations/digital_ocean/"
+source_handle: "web:www-home-assistant-io:89c2d2d7f175"
+source_section: "integrations-digital-ocean"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b43d1e6120de481405a4678ecbfb4370d9cfe44a84df3803607a41c73de3cf1a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Digital Ocean - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

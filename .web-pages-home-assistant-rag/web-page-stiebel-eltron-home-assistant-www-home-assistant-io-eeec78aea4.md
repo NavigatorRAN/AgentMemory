@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/stiebel_eltron"
+final_url: "https://www.home-assistant.io/integrations/stiebel_eltron"
+canonical_url: "https://www.home-assistant.io/integrations/stiebel_eltron/"
+source_handle: "web:www-home-assistant-io:eeec78aea44f"
+source_section: "integrations-stiebel-eltron"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b96013c82a305ce26ebbdd5070451e3fc92c93a61fd7f54f5d8611fe7713cf9a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # STIEBEL ELTRON - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

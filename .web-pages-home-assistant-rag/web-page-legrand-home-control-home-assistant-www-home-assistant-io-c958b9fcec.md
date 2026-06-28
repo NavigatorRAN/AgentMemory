@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/home_plus_control"
+final_url: "https://www.home-assistant.io/integrations/home_plus_control"
+canonical_url: "https://www.home-assistant.io/integrations/home_plus_control/"
+source_handle: "web:www-home-assistant-io:c958b9fcec92"
+source_section: "integrations-home-plus-control"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2fbb7ad6d992537bd51aeae439b0c5f6a26ccd12cfb8a3e33a6a707abae26c97"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Legrand Home+ Control - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

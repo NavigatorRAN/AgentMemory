@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/flexit_bacnet"
+final_url: "https://www.home-assistant.io/integrations/flexit_bacnet"
+canonical_url: "https://www.home-assistant.io/integrations/flexit_bacnet/"
+source_handle: "web:www-home-assistant-io:98ed9e408dc4"
+source_section: "integrations-flexit-bacnet"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bf88b545a1c3c343bb3a92aee779b540a96c7539c91834167b7c3bdd29e7a4c0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Flexit Nordic (BACnet) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

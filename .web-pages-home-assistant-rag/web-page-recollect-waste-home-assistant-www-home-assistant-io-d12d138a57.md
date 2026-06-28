@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/recollect_waste"
+final_url: "https://www.home-assistant.io/integrations/recollect_waste"
+canonical_url: "https://www.home-assistant.io/integrations/recollect_waste/"
+source_handle: "web:www-home-assistant-io:d12d138a575e"
+source_section: "integrations-recollect-waste"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8ca32ba46220d7a9d6f4ad97705581a0ca43d0bd7cf31b0e090e3a2f7cdeb0ae"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ReCollect Waste - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/etherscan"
+final_url: "https://www.home-assistant.io/integrations/etherscan"
+canonical_url: "https://www.home-assistant.io/integrations/etherscan/"
+source_handle: "web:www-home-assistant-io:954311e254bd"
+source_section: "integrations-etherscan"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4f7a311aba1fb771bdf48fe51d56295013c214062860dbdffc2e8832cf88bda2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Etherscan - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

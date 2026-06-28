@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/clementine"
+final_url: "https://www.home-assistant.io/integrations/clementine"
+canonical_url: "https://www.home-assistant.io/integrations/clementine/"
+source_handle: "web:www-home-assistant-io:36c8a1448e2e"
+source_section: "integrations-clementine"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fd2409dc28db63b4f1370ee388f2a0a78c57dbef624127bfbd5b5323cb2c1b01"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Clementine Music Player - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

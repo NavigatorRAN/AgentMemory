@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homeassistant_sky_connect"
+final_url: "https://www.home-assistant.io/integrations/homeassistant_sky_connect"
+canonical_url: "https://www.home-assistant.io/integrations/homeassistant_sky_connect/"
+source_handle: "web:www-home-assistant-io:95ac3fe63d84"
+source_section: "integrations-homeassistant-sky-connect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1ea7b2811a6bb95db2355aebf4217522bbe25edd15619360435636b93f369196"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Connect ZBT-1 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

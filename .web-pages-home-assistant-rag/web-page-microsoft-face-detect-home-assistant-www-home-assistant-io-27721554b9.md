@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/microsoft_face_detect"
+final_url: "https://www.home-assistant.io/integrations/microsoft_face_detect"
+canonical_url: "https://www.home-assistant.io/integrations/microsoft_face_detect/"
+source_handle: "web:www-home-assistant-io:27721554b9f2"
+source_section: "integrations-microsoft-face-detect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b6d842cf13d3c31ffc0b29a8f84451eb24c64d6b48fe3ab2bdaf53b578068e9a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Microsoft Face Detect - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

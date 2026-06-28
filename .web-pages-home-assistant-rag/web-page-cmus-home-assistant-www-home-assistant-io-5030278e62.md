@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cmus"
+final_url: "https://www.home-assistant.io/integrations/cmus"
+canonical_url: "https://www.home-assistant.io/integrations/cmus/"
+source_handle: "web:www-home-assistant-io:5030278e62fc"
+source_section: "integrations-cmus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "94be1ae3e74e8d32eb5ebd9ae75b2d9a68c73909c0826b61cab497e173420e92"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # cmus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

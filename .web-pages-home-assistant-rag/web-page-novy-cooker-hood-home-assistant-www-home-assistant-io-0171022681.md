@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/novy_cooker_hood"
+final_url: "https://www.home-assistant.io/integrations/novy_cooker_hood"
+canonical_url: "https://www.home-assistant.io/integrations/novy_cooker_hood/"
+source_handle: "web:www-home-assistant-io:0171022681bb"
+source_section: "integrations-novy-cooker-hood"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2841dc634bd091e79794da7f7ca603be6aa6e610b78793969af29dc88b497a20"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Novy Cooker Hood - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/legrand"
+final_url: "https://www.home-assistant.io/integrations/legrand"
+canonical_url: "https://www.home-assistant.io/integrations/legrand/"
+source_handle: "web:www-home-assistant-io:56dd8d7df4f0"
+source_section: "integrations-legrand"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "69e89f459a3fc596e0e31debe535af00885f3f4e43c8a88611fc092b1b5305bf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Legrand - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

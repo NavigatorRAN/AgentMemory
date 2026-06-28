@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/portlandgeneral"
+final_url: "https://www.home-assistant.io/integrations/portlandgeneral"
+canonical_url: "https://www.home-assistant.io/integrations/portlandgeneral/"
+source_handle: "web:www-home-assistant-io:f8039dae74e2"
+source_section: "integrations-portlandgeneral"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cb578d11eee8bf022daecda2867be15c8568ba96c79ad2cbb41d4243f6dd8c9d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Portland General Electric (PGE) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

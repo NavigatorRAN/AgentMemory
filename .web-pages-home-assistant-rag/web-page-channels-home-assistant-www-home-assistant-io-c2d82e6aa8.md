@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/channels"
+final_url: "https://www.home-assistant.io/integrations/channels"
+canonical_url: "https://www.home-assistant.io/integrations/channels/"
+source_handle: "web:www-home-assistant-io:c2d82e6aa835"
+source_section: "integrations-channels"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b7a267dd009976bb21ad551074841d163a00f3855d0a94eebe9c3d5c9db542b8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Channels - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

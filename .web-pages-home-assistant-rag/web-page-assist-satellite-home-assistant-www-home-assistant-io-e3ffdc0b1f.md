@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/assist_satellite"
+final_url: "https://www.home-assistant.io/integrations/assist_satellite"
+canonical_url: "https://www.home-assistant.io/integrations/assist_satellite/"
+source_handle: "web:www-home-assistant-io:e3ffdc0b1f99"
+source_section: "integrations-assist-satellite"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bf576a3587241697dce313ba7ea9b56f9c105bb8c290199f5386eb0388f75baa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Assist Satellite - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

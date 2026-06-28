@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/diagnostics"
+final_url: "https://www.home-assistant.io/integrations/diagnostics"
+canonical_url: "https://www.home-assistant.io/integrations/diagnostics/"
+source_handle: "web:www-home-assistant-io:49dcaf8e7f3c"
+source_section: "integrations-diagnostics"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2d04a93d4ba2165537250ebd6c1b70bf74ae85b5d3152648df6b9938b4fa4545"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Diagnostics - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

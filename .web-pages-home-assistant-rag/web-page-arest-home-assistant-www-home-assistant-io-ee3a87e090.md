@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/arest"
+final_url: "https://www.home-assistant.io/integrations/arest"
+canonical_url: "https://www.home-assistant.io/integrations/arest/"
+source_handle: "web:www-home-assistant-io:ee3a87e09012"
+source_section: "integrations-arest"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3aa81cabc9e63afc2d5684fb07691eb4cb4b053e4397edb0b8607f683fcb358f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # aREST - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

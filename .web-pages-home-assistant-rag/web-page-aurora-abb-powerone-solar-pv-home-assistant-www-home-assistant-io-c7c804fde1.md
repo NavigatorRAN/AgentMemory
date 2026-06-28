@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aurora_abb_powerone"
+final_url: "https://www.home-assistant.io/integrations/aurora_abb_powerone"
+canonical_url: "https://www.home-assistant.io/integrations/aurora_abb_powerone/"
+source_handle: "web:www-home-assistant-io:c7c804fde12f"
+source_section: "integrations-aurora-abb-powerone"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5f1bf9f70b3e0b24982a4b6d790d9453ae207f139fd5da4fa6451e699ef479d5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aurora ABB PowerOne Solar PV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

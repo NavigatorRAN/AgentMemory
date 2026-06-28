@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/minio"
+final_url: "https://www.home-assistant.io/integrations/minio"
+canonical_url: "https://www.home-assistant.io/integrations/minio/"
+source_handle: "web:www-home-assistant-io:866aa1946618"
+source_section: "integrations-minio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1e1547f5fc8a7b67cd70c9cd928d2b8bb41c8efc4f347c6848d14e921aa9e4e4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Minio - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

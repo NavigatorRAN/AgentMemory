@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/foursquare"
+final_url: "https://www.home-assistant.io/integrations/foursquare"
+canonical_url: "https://www.home-assistant.io/integrations/foursquare/"
+source_handle: "web:www-home-assistant-io:8f138593c893"
+source_section: "integrations-foursquare"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "acba70240ca13702759e92dd277411f24d06020e47e8aa2ef7ab44b33199a2a5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Foursquare - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/garages_amsterdam"
+final_url: "https://www.home-assistant.io/integrations/garages_amsterdam"
+canonical_url: "https://www.home-assistant.io/integrations/garages_amsterdam/"
+source_handle: "web:www-home-assistant-io:ed87f5f46524"
+source_section: "integrations-garages-amsterdam"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bd36d4a3a0efeb8ba315146fd7a4bd74999fdec3b597a5c1ff38b03b22fc2741"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Garages Amsterdam - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

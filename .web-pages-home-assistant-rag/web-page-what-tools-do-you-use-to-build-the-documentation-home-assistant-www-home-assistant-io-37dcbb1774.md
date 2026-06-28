@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/documentation-tool"
+final_url: "https://www.home-assistant.io/faq/documentation-tool"
+canonical_url: "https://www.home-assistant.io/faq/documentation-tool/"
+source_handle: "web:www-home-assistant-io:37dcbb177445"
+source_section: "faq-documentation-tool"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bf4fe9d6786a84bdf078fae3c434589e792c6bf489fe1d1c97aa7ebe7908715f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # What tools do you use to build the documentation? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

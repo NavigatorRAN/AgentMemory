@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/android"
+final_url: "https://www.home-assistant.io/voice_control/android"
+canonical_url: "https://www.home-assistant.io/voice_control/android/"
+source_handle: "web:www-home-assistant-io:2a809221d4d2"
+source_section: "voice-control-android"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9defebaabc7607579f97ca9c1c52b5cadae0885039ef84da4ab0a6d931393ff3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Assist on Android - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

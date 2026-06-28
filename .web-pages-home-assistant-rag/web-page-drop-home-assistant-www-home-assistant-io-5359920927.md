@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/drop_connect"
+final_url: "https://www.home-assistant.io/integrations/drop_connect"
+canonical_url: "https://www.home-assistant.io/integrations/drop_connect/"
+source_handle: "web:www-home-assistant-io:5359920927e3"
+source_section: "integrations-drop-connect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6e35cfe8f396f5234b614f1e9040b507b6978a5df0aeadcc60a2eaf4fde5a24e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # DROP - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

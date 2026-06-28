@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/scene"
+final_url: "https://www.home-assistant.io/integrations/scene"
+canonical_url: "https://www.home-assistant.io/integrations/scene/"
+source_handle: "web:www-home-assistant-io:38f66090a942"
+source_section: "integrations-scene"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0151f1bc7ec16241caa95b0db2aa6cef1048c9bc9c3d0869f60cad12b135742f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Scenes - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

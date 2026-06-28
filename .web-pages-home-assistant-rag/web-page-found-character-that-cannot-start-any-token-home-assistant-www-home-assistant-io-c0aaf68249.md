@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/character_t"
+final_url: "https://www.home-assistant.io/faq/character_t"
+canonical_url: "https://www.home-assistant.io/faq/character_t/"
+source_handle: "web:www-home-assistant-io:c0aaf68249de"
+source_section: "faq-character-t"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bce62dae2be408978a90e3a30294dac47b81bbdcc6af4e141419d86369762734"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # found character ' ' that cannot start any token - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

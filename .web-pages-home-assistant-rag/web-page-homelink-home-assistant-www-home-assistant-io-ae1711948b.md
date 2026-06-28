@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gentex_homelink"
+final_url: "https://www.home-assistant.io/integrations/gentex_homelink"
+canonical_url: "https://www.home-assistant.io/integrations/gentex_homelink/"
+source_handle: "web:www-home-assistant-io:ae1711948b6c"
+source_section: "integrations-gentex-homelink"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d88d501ba934c2dc02f93fb5c3ac6aae873dc69b290855b8046f223120073fb7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HomeLink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aprs"
+final_url: "https://www.home-assistant.io/integrations/aprs"
+canonical_url: "https://www.home-assistant.io/integrations/aprs/"
+source_handle: "web:www-home-assistant-io:5dd1a3894adf"
+source_section: "integrations-aprs"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a27fdce4e9f276704f2b036189753d221b532cff27d8af170e2fae9f46a5ebcf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # APRS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/stt"
+final_url: "https://www.home-assistant.io/integrations/stt"
+canonical_url: "https://www.home-assistant.io/integrations/stt/"
+source_handle: "web:www-home-assistant-io:d21dd3879f7c"
+source_section: "integrations-stt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "882aa7b6927a668cfde10bcdce1a9edf4a0d657076faed405894836560899fb8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Speech-to-text (STT) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

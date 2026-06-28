@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/onvif"
+final_url: "https://www.home-assistant.io/integrations/onvif"
+canonical_url: "https://www.home-assistant.io/integrations/onvif/"
+source_handle: "web:www-home-assistant-io:729dcab02d5e"
+source_section: "integrations-onvif"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7c6eef6496896c8bce58148c0ab073bd468ae8f4845d596557093c71ee77a537"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ONVIF - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

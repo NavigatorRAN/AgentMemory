@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/youtube"
+final_url: "https://www.home-assistant.io/integrations/youtube"
+canonical_url: "https://www.home-assistant.io/integrations/youtube/"
+source_handle: "web:www-home-assistant-io:43fa9719df72"
+source_section: "integrations-youtube"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d991f1f19acf1fe43c7554a8c40616bed3f0d38fba444639abb0964a0fc44729"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # YouTube - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

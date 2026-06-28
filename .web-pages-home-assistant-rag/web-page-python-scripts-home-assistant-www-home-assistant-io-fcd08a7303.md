@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/python_script"
+final_url: "https://www.home-assistant.io/integrations/python_script"
+canonical_url: "https://www.home-assistant.io/integrations/python_script/"
+source_handle: "web:www-home-assistant-io:fcd08a73035e"
+source_section: "integrations-python-script"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a552e9cc26d1d2511a44111e1585dcc72374b2e8d326b176e14804cc33d9a901"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Python Scripts - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

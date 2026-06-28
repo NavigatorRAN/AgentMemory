@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cambridge_audio"
+final_url: "https://www.home-assistant.io/integrations/cambridge_audio"
+canonical_url: "https://www.home-assistant.io/integrations/cambridge_audio/"
+source_handle: "web:www-home-assistant-io:349005b5fda7"
+source_section: "integrations-cambridge-audio"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7ec78b333ffccd50af9ad643c94ce7619c771a3ccc05146447639a57362668c8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Cambridge Audio - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

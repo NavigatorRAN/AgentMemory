@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sftp_storage"
+final_url: "https://www.home-assistant.io/integrations/sftp_storage"
+canonical_url: "https://www.home-assistant.io/integrations/sftp_storage/"
+source_handle: "web:www-home-assistant-io:f1e6a2d2451c"
+source_section: "integrations-sftp-storage"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4d25832d1f30d901401a88cd70cf5634fe4f23acf8cb5b1b541dadaad96ad2aa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SFTP Storage - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

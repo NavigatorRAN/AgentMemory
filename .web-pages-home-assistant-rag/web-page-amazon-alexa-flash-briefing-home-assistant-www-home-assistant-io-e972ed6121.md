@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alexa.flash_briefings"
+final_url: "https://www.home-assistant.io/integrations/alexa.flash_briefings"
+canonical_url: "https://www.home-assistant.io/integrations/alexa.flash_briefings/"
+source_handle: "web:www-home-assistant-io:e972ed6121b0"
+source_section: "integrations-alexa-flash-briefings"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f99d30f3a4ee7b82f1f5f0015c55d529ca85d6ed6fa48dd019e4a40a1522cfe7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Amazon Alexa Flash Briefing - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

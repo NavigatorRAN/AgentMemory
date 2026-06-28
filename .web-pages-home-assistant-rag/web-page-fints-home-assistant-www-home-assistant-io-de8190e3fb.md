@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fints"
+final_url: "https://www.home-assistant.io/integrations/fints"
+canonical_url: "https://www.home-assistant.io/integrations/fints/"
+source_handle: "web:www-home-assistant-io:de8190e3fbfe"
+source_section: "integrations-fints"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7c8e780f0c267f6f70fc80f80a792bfca59434b2d96a22f00fad26fd671ef207"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FinTS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ecobee"
+final_url: "https://www.home-assistant.io/integrations/ecobee"
+canonical_url: "https://www.home-assistant.io/integrations/ecobee/"
+source_handle: "web:www-home-assistant-io:94d47c694ded"
+source_section: "integrations-ecobee"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6d60e185cc2541f466f1e35bbd91b42d34f261b7c516d27a1f9149b0468d8482"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ecobee - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

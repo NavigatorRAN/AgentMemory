@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tplink_tapo"
+final_url: "https://www.home-assistant.io/integrations/tplink_tapo"
+canonical_url: "https://www.home-assistant.io/integrations/tplink_tapo/"
+source_handle: "web:www-home-assistant-io:6a9f8e4e3b59"
+source_section: "integrations-tplink-tapo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ac5073c0ee8d188cc2e96f42b421d8517037ef76e87dec29c785eebfbc945652"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tapo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

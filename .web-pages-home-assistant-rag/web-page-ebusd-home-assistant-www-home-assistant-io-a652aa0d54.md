@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ebusd"
+final_url: "https://www.home-assistant.io/integrations/ebusd"
+canonical_url: "https://www.home-assistant.io/integrations/ebusd/"
+source_handle: "web:www-home-assistant-io:a652aa0d54e7"
+source_section: "integrations-ebusd"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "45cea61cef18edd4bea17a8f7760c1541847c39fda218da462dcf7ac26e0aba3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # ebusd - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

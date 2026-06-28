@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/decora_wifi"
+final_url: "https://www.home-assistant.io/integrations/decora_wifi"
+canonical_url: "https://www.home-assistant.io/integrations/decora_wifi/"
+source_handle: "web:www-home-assistant-io:1a819320abdd"
+source_section: "integrations-decora-wifi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dac7c56cc2e18c650ad6ff591617d0d398d1221501ccee87d6142bde0a80b15f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Leviton Decora Wi-Fi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

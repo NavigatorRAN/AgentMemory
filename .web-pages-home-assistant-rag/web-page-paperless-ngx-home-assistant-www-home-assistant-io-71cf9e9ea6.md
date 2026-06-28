@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/paperless_ngx"
+final_url: "https://www.home-assistant.io/integrations/paperless_ngx"
+canonical_url: "https://www.home-assistant.io/integrations/paperless_ngx/"
+source_handle: "web:www-home-assistant-io:71cf9e9ea6da"
+source_section: "integrations-paperless-ngx"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "83dc1a0d682a20c42120da379cb727d8c2ebbdb13ecc43967251feb02f085d71"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Paperless-ngx - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ovhcloud_ai_endpoints"
+final_url: "https://www.home-assistant.io/integrations/ovhcloud_ai_endpoints"
+canonical_url: "https://www.home-assistant.io/integrations/ovhcloud_ai_endpoints/"
+source_handle: "web:www-home-assistant-io:d92d88d20884"
+source_section: "integrations-ovhcloud-ai-endpoints"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "45aff6cd31852ebe9a6ba1bb91ad7d34dcdb5475dcc2cf2e642211d32bc024e5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OVHcloud AI Endpoints - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

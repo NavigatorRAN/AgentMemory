@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/moisture"
+final_url: "https://www.home-assistant.io/integrations/moisture"
+canonical_url: "https://www.home-assistant.io/integrations/moisture/"
+source_handle: "web:www-home-assistant-io:baf66f11243d"
+source_section: "integrations-moisture"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ef08be5a6634557573d18eb559d7649633a4f310478fd4f08b7e722a3872b90c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Moisture - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

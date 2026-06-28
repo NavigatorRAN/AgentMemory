@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/atome"
+final_url: "https://www.home-assistant.io/integrations/atome"
+canonical_url: "https://www.home-assistant.io/integrations/atome/"
+source_handle: "web:www-home-assistant-io:015fcb7ba148"
+source_section: "integrations-atome"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "041d586c5746df4d0e8155413abd6a7f2daa722decc9f6102628b0c319b14630"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Atome Linky - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

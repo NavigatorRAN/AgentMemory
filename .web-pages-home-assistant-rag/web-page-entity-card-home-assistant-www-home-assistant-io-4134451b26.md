@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/entity"
+final_url: "https://www.home-assistant.io/dashboards/entity"
+canonical_url: "https://www.home-assistant.io/dashboards/entity/"
+source_handle: "web:www-home-assistant-io:4134451b26b1"
+source_section: "dashboards-entity"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "73c223a33afd913ce596940567bb15d59c05fe8ca44e3f17cce99d826a9850ac"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Entity card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

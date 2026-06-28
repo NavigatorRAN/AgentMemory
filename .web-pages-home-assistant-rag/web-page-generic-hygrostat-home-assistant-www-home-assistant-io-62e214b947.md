@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/generic_hygrostat"
+final_url: "https://www.home-assistant.io/integrations/generic_hygrostat"
+canonical_url: "https://www.home-assistant.io/integrations/generic_hygrostat/"
+source_handle: "web:www-home-assistant-io:62e214b94760"
+source_section: "integrations-generic-hygrostat"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1eca1e518adcb8da34c6b3abb0d7d159ef7f943269c50b50db7e3ce1b33a30f2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Generic hygrostat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

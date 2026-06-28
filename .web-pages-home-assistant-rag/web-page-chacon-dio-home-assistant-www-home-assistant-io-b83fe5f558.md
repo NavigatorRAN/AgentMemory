@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/chacon_dio"
+final_url: "https://www.home-assistant.io/integrations/chacon_dio"
+canonical_url: "https://www.home-assistant.io/integrations/chacon_dio/"
+source_handle: "web:www-home-assistant-io:b83fe5f558e7"
+source_section: "integrations-chacon-dio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3b8a73045f4b5c4ebe393b0c26735c68df07095892ec06804b15c4f253c34384"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Chacon DiO - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

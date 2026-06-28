@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hlk_sw16"
+final_url: "https://www.home-assistant.io/integrations/hlk_sw16"
+canonical_url: "https://www.home-assistant.io/integrations/hlk_sw16/"
+source_handle: "web:www-home-assistant-io:6806857cb261"
+source_section: "integrations-hlk-sw16"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "45441beb83ee1290819ce5a3c25070a8511b14f2cf8662aa97ddf17ebc0632e9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hi-Link HLK-SW16 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

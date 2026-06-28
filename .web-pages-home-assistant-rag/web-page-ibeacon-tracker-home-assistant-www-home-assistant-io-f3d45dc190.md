@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ibeacon"
+final_url: "https://www.home-assistant.io/integrations/ibeacon"
+canonical_url: "https://www.home-assistant.io/integrations/ibeacon/"
+source_handle: "web:www-home-assistant-io:f3d45dc190a7"
+source_section: "integrations-ibeacon"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "36ece97f0f2efac2578e30a1c90d6ea85da99bacfb64ca2de035c9bdc36531b0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # iBeacon Tracker - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

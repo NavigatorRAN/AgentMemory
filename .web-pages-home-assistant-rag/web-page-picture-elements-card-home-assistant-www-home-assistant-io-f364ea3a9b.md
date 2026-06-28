@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/picture-elements"
+final_url: "https://www.home-assistant.io/dashboards/picture-elements"
+canonical_url: "https://www.home-assistant.io/dashboards/picture-elements/"
+source_handle: "web:www-home-assistant-io:f364ea3a9b02"
+source_section: "dashboards-picture-elements"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8575507ea5d36afaccbcba23ce71bc277c290622807a5b63f67a9614b34e3cf3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Picture elements card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/jasco"
+final_url: "https://www.home-assistant.io/integrations/jasco"
+canonical_url: "https://www.home-assistant.io/integrations/jasco/"
+source_handle: "web:www-home-assistant-io:b5ae81126c7c"
+source_section: "integrations-jasco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fdc9c9de0701fadf4be2460425368c678a09c908fbde1a5d615cd271fb4e740a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Jasco - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

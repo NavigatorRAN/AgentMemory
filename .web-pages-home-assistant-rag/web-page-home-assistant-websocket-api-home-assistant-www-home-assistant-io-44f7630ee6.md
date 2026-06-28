@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/websocket_api"
+final_url: "https://www.home-assistant.io/integrations/websocket_api"
+canonical_url: "https://www.home-assistant.io/integrations/websocket_api/"
+source_handle: "web:www-home-assistant-io:44f7630ee6e9"
+source_section: "integrations-websocket-api"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "92f751b4252e225c41fe94ad0ba899ad7fed4d95bb130d80e6a9db8555ea4623"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant WebSocket API - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tod"
+final_url: "https://www.home-assistant.io/integrations/tod"
+canonical_url: "https://www.home-assistant.io/integrations/tod/"
+source_handle: "web:www-home-assistant-io:6e484aaf7cb2"
+source_section: "integrations-tod"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9f99c121170628c3f8acf676cf3c7c7a2fb8ecc06ed9a3564355d0605847af0c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Times of the Day - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

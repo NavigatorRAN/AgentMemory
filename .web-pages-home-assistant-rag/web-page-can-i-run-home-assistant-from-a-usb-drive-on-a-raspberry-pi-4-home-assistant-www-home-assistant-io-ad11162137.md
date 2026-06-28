@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/usb_boot"
+final_url: "https://www.home-assistant.io/faq/usb_boot"
+canonical_url: "https://www.home-assistant.io/faq/usb_boot/"
+source_handle: "web:www-home-assistant-io:ad1116213714"
+source_section: "faq-usb-boot"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d94b4ba3efe6bee3702dd954270a2ac876b517ec346bab9c637810f253642eb9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Can I run Home Assistant from a USB drive on a Raspberry Pi 4? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

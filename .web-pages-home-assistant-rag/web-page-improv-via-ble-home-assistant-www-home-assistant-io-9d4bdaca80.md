@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/improv_ble"
+final_url: "https://www.home-assistant.io/integrations/improv_ble"
+canonical_url: "https://www.home-assistant.io/integrations/improv_ble/"
+source_handle: "web:www-home-assistant-io:9d4bdaca802d"
+source_section: "integrations-improv-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7e8a0a35d20109b6470b42aa62136420d382ff0340b2b113442124c58fdbb47d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Improv via BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/syncthru"
+final_url: "https://www.home-assistant.io/integrations/syncthru"
+canonical_url: "https://www.home-assistant.io/integrations/syncthru/"
+source_handle: "web:www-home-assistant-io:157239ff7e0b"
+source_section: "integrations-syncthru"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e1ed42c1b2fec71c1ded0ea5d6d46f3e598011ec839904d180744808d7b027f3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Samsung SyncThru Printer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

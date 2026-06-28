@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aurora"
+final_url: "https://www.home-assistant.io/integrations/aurora"
+canonical_url: "https://www.home-assistant.io/integrations/aurora/"
+source_handle: "web:www-home-assistant-io:49d9957893b3"
+source_section: "integrations-aurora"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "66e042f926312427acbf6d55e6b30291f88338dda096b7fda52bc3aa1ab45260"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aurora - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

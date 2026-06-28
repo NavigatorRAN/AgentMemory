@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ecowitt"
+final_url: "https://www.home-assistant.io/integrations/ecowitt"
+canonical_url: "https://www.home-assistant.io/integrations/ecowitt/"
+source_handle: "web:www-home-assistant-io:57c6bee01a9d"
+source_section: "integrations-ecowitt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d26875f6989167b489208558b8b57293607562e49f0ba11eda5fd7a825befefb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ecowitt - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

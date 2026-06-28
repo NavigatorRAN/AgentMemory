@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sun"
+final_url: "https://www.home-assistant.io/integrations/sun"
+canonical_url: "https://www.home-assistant.io/integrations/sun/"
+source_handle: "web:www-home-assistant-io:28fd309603f0"
+source_section: "integrations-sun"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f082fb45dd5e710043650b553138466d23e370e020548e5b8bd175df34b4cf89"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Sun - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

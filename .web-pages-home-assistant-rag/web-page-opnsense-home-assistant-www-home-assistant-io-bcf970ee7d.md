@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/opnsense"
+final_url: "https://www.home-assistant.io/integrations/opnsense"
+canonical_url: "https://www.home-assistant.io/integrations/opnsense/"
+source_handle: "web:www-home-assistant-io:bcf970ee7d31"
+source_section: "integrations-opnsense"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0fcfe19000682aa80d1104eac3068ffcd671c1f48ad67ede127b3478d252b859"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OPNsense - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

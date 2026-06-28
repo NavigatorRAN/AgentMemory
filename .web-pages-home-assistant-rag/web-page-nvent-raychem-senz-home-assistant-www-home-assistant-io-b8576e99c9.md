@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/senz"
+final_url: "https://www.home-assistant.io/integrations/senz"
+canonical_url: "https://www.home-assistant.io/integrations/senz/"
+source_handle: "web:www-home-assistant-io:b8576e99c98f"
+source_section: "integrations-senz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fadcde343f5e4c60c01abd0bbfa7c2b0307fab555ee78cbc5c6826a2b3028392"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # nVent RAYCHEM SENZ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

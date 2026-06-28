@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/valve.mqtt"
+final_url: "https://www.home-assistant.io/integrations/valve.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/valve.mqtt/"
+source_handle: "web:www-home-assistant-io:ce37cf5d7ef9"
+source_section: "integrations-valve-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "15b4daa0fd6c4f7b55673cc770e4aa90e281131c95b7861cea9dc696fb96144a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Valve - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yolink"
+final_url: "https://www.home-assistant.io/integrations/yolink"
+canonical_url: "https://www.home-assistant.io/integrations/yolink/"
+source_handle: "web:www-home-assistant-io:08c5dc4ee036"
+source_section: "integrations-yolink"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4f9b89088a6a3179718a8665a8e9eb8cb4506cb9be62ba22c98e55ebb2ca5ec1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # YoLink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

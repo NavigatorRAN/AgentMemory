@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/user-configuration"
+final_url: "https://www.home-assistant.io/docs/configuration/user-configuration"
+canonical_url: "https://www.home-assistant.io/docs/configuration/user-configuration/"
+source_handle: "web:www-home-assistant-io:63ee9b050101"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "daf4953a2b5a37010f8ce9d8b598dda08eeeb0777167e859b90a8606637f7ebe"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # People and user configuration - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/entities_domains"
+final_url: "https://www.home-assistant.io/docs/configuration/entities_domains"
+canonical_url: "https://www.home-assistant.io/docs/configuration/entities_domains/"
+source_handle: "web:www-home-assistant-io:bff3ac14a699"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a2d7ad3e42cb5d198647d09227d68af0716859900c8b3ebbbd3ac8ab2dedab3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Entities and domains - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

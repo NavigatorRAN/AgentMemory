@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dwd_weather_warnings"
+final_url: "https://www.home-assistant.io/integrations/dwd_weather_warnings"
+canonical_url: "https://www.home-assistant.io/integrations/dwd_weather_warnings/"
+source_handle: "web:www-home-assistant-io:02a5e4a5716d"
+source_section: "integrations-dwd-weather-warnings"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3b5cdc07889439ed2d62ff85367df3ebeeaf372e172805325cba7e31a5071acc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Deutscher Wetterdienst (DWD) Weather Warnings - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

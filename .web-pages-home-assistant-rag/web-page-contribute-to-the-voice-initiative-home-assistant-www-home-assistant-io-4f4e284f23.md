@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/contribute-voice"
+final_url: "https://www.home-assistant.io/voice_control/contribute-voice"
+canonical_url: "https://www.home-assistant.io/voice_control/contribute-voice/"
+source_handle: "web:www-home-assistant-io:4f4e284f2380"
+source_section: "voice-control-contribute-voice"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ef1d42df21170478298c8afe73d5bfb51baeb2d429b19267d804a360086b44ce"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Contribute to the Voice initiative - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

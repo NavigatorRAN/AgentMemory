@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/escea"
+final_url: "https://www.home-assistant.io/integrations/escea"
+canonical_url: "https://www.home-assistant.io/integrations/escea/"
+source_handle: "web:www-home-assistant-io:730b2bf5a94c"
+source_section: "integrations-escea"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1b73ca1c31542e876cc334c1f70e4934931f44a0ed443de301461f03946ebf79"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Escea - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

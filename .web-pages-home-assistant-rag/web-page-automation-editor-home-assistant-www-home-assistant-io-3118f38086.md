@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/editor"
+final_url: "https://www.home-assistant.io/docs/automation/editor"
+canonical_url: "https://www.home-assistant.io/docs/automation/editor/"
+source_handle: "web:www-home-assistant-io:3118f38086ad"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "75db1ec8a0c0d3be7cddc15f96e2ffe69d46cb9181bdc4e6869bd5dd1beb079d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Automation editor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

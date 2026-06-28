@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/worlds-most-private-voice-assistant"
+final_url: "https://www.home-assistant.io/voice_control/worlds-most-private-voice-assistant"
+canonical_url: "https://www.home-assistant.io/voice_control/worlds-most-private-voice-assistant/"
+source_handle: "web:www-home-assistant-io:fa596dfbb47a"
+source_section: "voice-control-worlds-most-private-voice-assistant"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e16f483db9876c91a6f81f39388305627fdc2dbf9b07f4875c3a7dc595e7ae02"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # World's most private voice assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

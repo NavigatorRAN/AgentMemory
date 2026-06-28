@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/unifi_direct"
+final_url: "https://www.home-assistant.io/integrations/unifi_direct"
+canonical_url: "https://www.home-assistant.io/integrations/unifi_direct/"
+source_handle: "web:www-home-assistant-io:c31c1af22248"
+source_section: "integrations-unifi-direct"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a94d06daae36bd463cc5d9c9ee5484e499e3ed3c787d1459f114e63de6bcdfc9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UniFi AP - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

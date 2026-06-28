@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ipp"
+final_url: "https://www.home-assistant.io/integrations/ipp"
+canonical_url: "https://www.home-assistant.io/integrations/ipp/"
+source_handle: "web:www-home-assistant-io:9feac0d11ea4"
+source_section: "integrations-ipp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fbe6f7396d9c9fc82ca07889f2c358d86c06560965a73ca499baaea7024a91fd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Internet Printing Protocol (IPP) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/squeezebox"
+final_url: "https://www.home-assistant.io/integrations/squeezebox"
+canonical_url: "https://www.home-assistant.io/integrations/squeezebox/"
+source_handle: "web:www-home-assistant-io:4e8494970991"
+source_section: "integrations-squeezebox"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "81e193f48210fc8398331396fa1a75f30232b516a021a7aa94530a10ee605dfb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Squeezebox (Lyrion Music Server) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

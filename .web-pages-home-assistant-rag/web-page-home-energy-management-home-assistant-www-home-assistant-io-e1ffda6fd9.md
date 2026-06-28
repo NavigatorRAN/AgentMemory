@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/energy"
+final_url: "https://www.home-assistant.io/docs/energy"
+canonical_url: "https://www.home-assistant.io/docs/energy/"
+source_handle: "web:www-home-assistant-io:e1ffda6fd931"
+source_section: "docs-energy"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a06378f08966b29b233b2dab862c319acccbed2a232360710dea1ffbc5c0a15d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Home energy management - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

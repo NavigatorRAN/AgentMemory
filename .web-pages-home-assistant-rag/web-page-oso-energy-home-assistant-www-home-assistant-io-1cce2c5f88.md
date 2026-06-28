@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/osoenergy"
+final_url: "https://www.home-assistant.io/integrations/osoenergy"
+canonical_url: "https://www.home-assistant.io/integrations/osoenergy/"
+source_handle: "web:www-home-assistant-io:1cce2c5f88f7"
+source_section: "integrations-osoenergy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cd161432653bda9292813b287308c4b97f857f1b53a13fe60fa007433f796295"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OSO Energy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

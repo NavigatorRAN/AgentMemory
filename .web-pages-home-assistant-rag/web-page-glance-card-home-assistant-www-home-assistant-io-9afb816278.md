@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/glance"
+final_url: "https://www.home-assistant.io/dashboards/glance"
+canonical_url: "https://www.home-assistant.io/dashboards/glance/"
+source_handle: "web:www-home-assistant-io:9afb81627824"
+source_section: "dashboards-glance"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b635c2a2008511f300961a98106b3b83554984d3c0d0198d5951905bd28f2557"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Glance card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

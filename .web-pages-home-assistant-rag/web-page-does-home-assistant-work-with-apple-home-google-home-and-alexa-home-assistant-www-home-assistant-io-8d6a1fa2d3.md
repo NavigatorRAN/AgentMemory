@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/works-with-apple-google-alexa"
+final_url: "https://www.home-assistant.io/faq/works-with-apple-google-alexa"
+canonical_url: "https://www.home-assistant.io/faq/works-with-apple-google-alexa/"
+source_handle: "web:www-home-assistant-io:8d6a1fa2d3d6"
+source_section: "faq-works-with-apple-google-alexa"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "801d7d52983100ab00d4d27a7479d5bb8d180d18319fcfe8efb84ed2f6960b58"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Does Home Assistant work with Apple Home, Google Home, and Alexa? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

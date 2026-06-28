@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/analytics"
+final_url: "https://www.home-assistant.io/integrations/analytics"
+canonical_url: "https://www.home-assistant.io/integrations/analytics/"
+source_handle: "web:www-home-assistant-io:2522248430c6"
+source_section: "integrations-analytics"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8157f171ce44abfdd44da703e8c551001e000305f953b255830a2a600d95088f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Analytics - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

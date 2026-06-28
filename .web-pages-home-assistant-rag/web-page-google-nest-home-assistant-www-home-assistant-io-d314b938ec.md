@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nest"
+final_url: "https://www.home-assistant.io/integrations/nest"
+canonical_url: "https://www.home-assistant.io/integrations/nest/"
+source_handle: "web:www-home-assistant-io:d314b938ec5f"
+source_section: "integrations-nest"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "242a4422026777e4dbe63cc205cc0915c472d61ce9e54321f928813d92d8037d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Nest - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

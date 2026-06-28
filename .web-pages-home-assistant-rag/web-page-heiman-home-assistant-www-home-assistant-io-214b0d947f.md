@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/heiman"
+final_url: "https://www.home-assistant.io/integrations/heiman"
+canonical_url: "https://www.home-assistant.io/integrations/heiman/"
+source_handle: "web:www-home-assistant-io:214b0d947f9c"
+source_section: "integrations-heiman"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "12477ed2658cc28306364e31888efad53c17bf9834d32598e79f0a961c66a152"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Heiman - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

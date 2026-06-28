@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/weatherkit"
+final_url: "https://www.home-assistant.io/integrations/weatherkit"
+canonical_url: "https://www.home-assistant.io/integrations/weatherkit/"
+source_handle: "web:www-home-assistant-io:ed87e3f44de4"
+source_section: "integrations-weatherkit"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "be1dd4b99f1bce3e2848bcafa687fe67267a5650f6fca93ae81c328f0b8ac856"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Apple WeatherKit - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

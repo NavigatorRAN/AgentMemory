@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/piper"
+final_url: "https://www.home-assistant.io/integrations/piper"
+canonical_url: "https://www.home-assistant.io/integrations/piper/"
+source_handle: "web:www-home-assistant-io:e95a3ccad6d2"
+source_section: "integrations-piper"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "44f682703b7d79f18b88a69fb714a4de19bf25db47cdf16762c05d740ea867ec"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Piper - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

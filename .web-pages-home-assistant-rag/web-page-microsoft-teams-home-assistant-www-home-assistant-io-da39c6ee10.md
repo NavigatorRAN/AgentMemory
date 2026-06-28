@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/msteams"
+final_url: "https://www.home-assistant.io/integrations/msteams"
+canonical_url: "https://www.home-assistant.io/integrations/msteams/"
+source_handle: "web:www-home-assistant-io:da39c6ee102f"
+source_section: "integrations-msteams"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "acdd931f8ffa2cf273a4696eb83a106a6b74f877d139e8fe014718a69c1d5443"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Microsoft Teams - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

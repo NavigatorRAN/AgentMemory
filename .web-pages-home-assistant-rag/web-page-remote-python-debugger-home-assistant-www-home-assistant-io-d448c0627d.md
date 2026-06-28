@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/debugpy"
+final_url: "https://www.home-assistant.io/integrations/debugpy"
+canonical_url: "https://www.home-assistant.io/integrations/debugpy/"
+source_handle: "web:www-home-assistant-io:d448c0627df7"
+source_section: "integrations-debugpy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e6c0e9460cfbc5653d5e674894d553188548b0b693a17bad3ea0b09ffb89d071"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Remote Python Debugger - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

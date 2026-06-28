@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/raincloud"
+final_url: "https://www.home-assistant.io/integrations/raincloud"
+canonical_url: "https://www.home-assistant.io/integrations/raincloud/"
+source_handle: "web:www-home-assistant-io:e98ebc744771"
+source_section: "integrations-raincloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "503dc219253d9d00c9d06a28633ba8e30c81abd62a258f5b79e4fa3917dd3faa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Melnor RainCloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tradfri"
+final_url: "https://www.home-assistant.io/integrations/tradfri"
+canonical_url: "https://www.home-assistant.io/integrations/tradfri/"
+source_handle: "web:www-home-assistant-io:4e5256f8c429"
+source_section: "integrations-tradfri"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8996b527e755445892bd7dc7e09ceb5a5865dd5dddc37b82d2bd110a96204cf3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IKEA TRÅDFRI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

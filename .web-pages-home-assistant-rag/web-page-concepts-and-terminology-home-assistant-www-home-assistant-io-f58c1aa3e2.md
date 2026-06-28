@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/getting-started/concepts-terminology"
+final_url: "https://www.home-assistant.io/getting-started/concepts-terminology"
+canonical_url: "https://www.home-assistant.io/getting-started/concepts-terminology/"
+source_handle: "web:www-home-assistant-io:f58c1aa3e218"
+source_section: "getting-started-concepts-terminology"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9f410e685178e5b23614185069f4c769810aecc2b297cf8d4c38606f6306b527"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Concepts and terminology - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

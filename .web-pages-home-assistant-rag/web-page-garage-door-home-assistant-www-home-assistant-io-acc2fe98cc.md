@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/garage_door"
+final_url: "https://www.home-assistant.io/integrations/garage_door"
+canonical_url: "https://www.home-assistant.io/integrations/garage_door/"
+source_handle: "web:www-home-assistant-io:acc2fe98cc4a"
+source_section: "integrations-garage-door"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "00b5e1983653aaff7cf5ba7481cf6d5ced0b3bebf5bf3f8920606287d4fe116e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Garage door - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

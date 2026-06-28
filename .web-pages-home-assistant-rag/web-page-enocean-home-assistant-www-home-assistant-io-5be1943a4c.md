@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/enocean"
+final_url: "https://www.home-assistant.io/integrations/enocean"
+canonical_url: "https://www.home-assistant.io/integrations/enocean/"
+source_handle: "web:www-home-assistant-io:5be1943a4c0f"
+source_section: "integrations-enocean"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "95d7e39dc5fe079ef07d24647115d9586b0ae286bb3d8b7a17352489ac92ed50"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # EnOcean - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

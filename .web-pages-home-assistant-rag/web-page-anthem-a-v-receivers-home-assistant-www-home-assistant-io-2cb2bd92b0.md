@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/anthemav"
+final_url: "https://www.home-assistant.io/integrations/anthemav"
+canonical_url: "https://www.home-assistant.io/integrations/anthemav/"
+source_handle: "web:www-home-assistant-io:2cb2bd92b058"
+source_section: "integrations-anthemav"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d0d08ea0b7db282f048578b356c3b458a771a2d96342e8a7ad215668e62022bd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Anthem A/V Receivers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

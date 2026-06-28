@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yardian"
+final_url: "https://www.home-assistant.io/integrations/yardian"
+canonical_url: "https://www.home-assistant.io/integrations/yardian/"
+source_handle: "web:www-home-assistant-io:70fb157457a7"
+source_section: "integrations-yardian"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "db834c1172da3f9b17ae6341af8ed09017e2d80d6aece103df110766115d292d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Yardian - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/sidebar"
+final_url: "https://www.home-assistant.io/dashboards/sidebar"
+canonical_url: "https://www.home-assistant.io/dashboards/sidebar/"
+source_handle: "web:www-home-assistant-io:c8c3a14e46e5"
+source_section: "dashboards-sidebar"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6549d5d016cafb8f17b5dcbabe45e066c39635ff8ec488ed14cd3d95d73114e2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Sidebar view - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

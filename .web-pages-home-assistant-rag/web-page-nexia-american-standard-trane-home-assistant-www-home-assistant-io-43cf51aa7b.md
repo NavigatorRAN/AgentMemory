@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nexia"
+final_url: "https://www.home-assistant.io/integrations/nexia"
+canonical_url: "https://www.home-assistant.io/integrations/nexia/"
+source_handle: "web:www-home-assistant-io:43cf51aa7b85"
+source_section: "integrations-nexia"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e446d62128ae0fc39a42f33dbc4a7ba8237f29a9e93859c573f2f1990124f531"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nexia/American Standard/Trane - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

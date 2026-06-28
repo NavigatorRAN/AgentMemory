@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rhasspy"
+final_url: "https://www.home-assistant.io/integrations/rhasspy"
+canonical_url: "https://www.home-assistant.io/integrations/rhasspy/"
+source_handle: "web:www-home-assistant-io:0d2641f0630c"
+source_section: "integrations-rhasspy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d605fc469d6889ab553d71cddaff463584b35799d5eb819e3489b1eea2601c53"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rhasspy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

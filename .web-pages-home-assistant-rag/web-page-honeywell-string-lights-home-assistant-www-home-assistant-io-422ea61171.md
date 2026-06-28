@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/honeywell_string_lights"
+final_url: "https://www.home-assistant.io/integrations/honeywell_string_lights"
+canonical_url: "https://www.home-assistant.io/integrations/honeywell_string_lights/"
+source_handle: "web:www-home-assistant-io:422ea6117146"
+source_section: "integrations-honeywell-string-lights"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ca57d662353ccc0255d231d0c4ebc58a6e6975bbc49728437ebe4dac498132cd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Honeywell String Lights - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thingspeak"
+final_url: "https://www.home-assistant.io/integrations/thingspeak"
+canonical_url: "https://www.home-assistant.io/integrations/thingspeak/"
+source_handle: "web:www-home-assistant-io:85bcf4759646"
+source_section: "integrations-thingspeak"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a2fcb24052b069fc8271821a911b35d62170366634ed6943286386b778359afa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ThingSpeak - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

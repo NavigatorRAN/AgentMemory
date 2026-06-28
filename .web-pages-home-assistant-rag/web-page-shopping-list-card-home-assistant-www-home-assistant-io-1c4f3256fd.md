@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/shopping-list"
+final_url: "https://www.home-assistant.io/dashboards/shopping-list"
+canonical_url: "https://www.home-assistant.io/dashboards/shopping-list/"
+source_handle: "web:www-home-assistant-io:1c4f3256fd87"
+source_section: "dashboards-shopping-list"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7449d14943ead3c69424b0206bc824e3cdcb4d26de4b7b00d3737268464b2a3a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Shopping list card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

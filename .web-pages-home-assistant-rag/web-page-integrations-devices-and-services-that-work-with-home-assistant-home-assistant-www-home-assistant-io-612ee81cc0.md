@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations"
+final_url: "https://www.home-assistant.io/integrations"
+canonical_url: "https://www.home-assistant.io/integrations/"
+source_handle: "web:www-home-assistant-io:612ee81cc0af"
+source_section: "integrations"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bf5cd2cda5b1d66b6d27651beb842d8d74c2450a243e89fb91de1263bd691f67"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Integrations - devices and services that work with Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nintendo_parental_controls"
+final_url: "https://www.home-assistant.io/integrations/nintendo_parental_controls"
+canonical_url: "https://www.home-assistant.io/integrations/nintendo_parental_controls/"
+source_handle: "web:www-home-assistant-io:eaf72401b94b"
+source_section: "integrations-nintendo-parental-controls"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dbf57121a58a7b80a2ee5d822d42c25e601d71f7df6807a6d796a08fe146e194"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nintendo Switch parental controls - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

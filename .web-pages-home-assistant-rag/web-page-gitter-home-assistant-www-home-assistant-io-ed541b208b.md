@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gitter"
+final_url: "https://www.home-assistant.io/integrations/gitter"
+canonical_url: "https://www.home-assistant.io/integrations/gitter/"
+source_handle: "web:www-home-assistant-io:ed541b208bef"
+source_section: "integrations-gitter"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f0e1aa6b819a3f29c35457e33e2bf2b61b35a4c3a720a26fa3b3f88186ce5ffc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Gitter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

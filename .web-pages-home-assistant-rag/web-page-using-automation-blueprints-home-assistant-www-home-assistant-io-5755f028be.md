@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/using_blueprints"
+final_url: "https://www.home-assistant.io/docs/automation/using_blueprints"
+canonical_url: "https://www.home-assistant.io/docs/automation/using_blueprints/"
+source_handle: "web:www-home-assistant-io:5755f028be57"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c49947937d12277d1e4d07a34edc63748164e8673229ffc180ceabe0997e7a47"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Using automation blueprints - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

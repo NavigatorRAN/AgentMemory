@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rabbitair"
+final_url: "https://www.home-assistant.io/integrations/rabbitair"
+canonical_url: "https://www.home-assistant.io/integrations/rabbitair/"
+source_handle: "web:www-home-assistant-io:82f8677e6250"
+source_section: "integrations-rabbitair"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a7f1c7bd959b907054d1bd17a8b8d84f13b674b559e9a18b0d68d3bf1ec9348a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rabbit Air - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

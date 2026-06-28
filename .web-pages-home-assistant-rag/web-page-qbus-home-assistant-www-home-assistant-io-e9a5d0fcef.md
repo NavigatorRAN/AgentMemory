@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/qbus"
+final_url: "https://www.home-assistant.io/integrations/qbus"
+canonical_url: "https://www.home-assistant.io/integrations/qbus/"
+source_handle: "web:www-home-assistant-io:e9a5d0fcef82"
+source_section: "integrations-qbus"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d0044eb75bf6b19c378b0db13d1a076df46fd62df3697e49c1c063cb5fe43900"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Qbus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

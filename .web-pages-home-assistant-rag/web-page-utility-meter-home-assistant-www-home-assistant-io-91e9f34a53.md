@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/utility_meter"
+final_url: "https://www.home-assistant.io/integrations/utility_meter"
+canonical_url: "https://www.home-assistant.io/integrations/utility_meter/"
+source_handle: "web:www-home-assistant-io:91e9f34a5360"
+source_section: "integrations-utility-meter"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "33ad386d43c893f38596dd05bcbc4b116428bbec9d0bf0117e58e7d2f35d5f62"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Utility Meter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

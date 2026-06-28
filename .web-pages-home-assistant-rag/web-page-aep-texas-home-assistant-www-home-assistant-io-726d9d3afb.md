@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aep_texas"
+final_url: "https://www.home-assistant.io/integrations/aep_texas"
+canonical_url: "https://www.home-assistant.io/integrations/aep_texas/"
+source_handle: "web:www-home-assistant-io:726d9d3afbf2"
+source_section: "integrations-aep-texas"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f596843f1e96222ea38fb08bbd4085ec37acea5105c0568b16ece516da93e430"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AEP Texas - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

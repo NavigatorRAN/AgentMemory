@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/html5"
+final_url: "https://www.home-assistant.io/integrations/html5"
+canonical_url: "https://www.home-assistant.io/integrations/html5/"
+source_handle: "web:www-home-assistant-io:ede041ab5b9a"
+source_section: "integrations-html5"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5bc5a43a05ea6960bd5ee2338ef5c4c1cdc3f863a6b9af60482628c4dc856bc7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # HTML5 Push Notifications - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/linkplay"
+final_url: "https://www.home-assistant.io/integrations/linkplay"
+canonical_url: "https://www.home-assistant.io/integrations/linkplay/"
+source_handle: "web:www-home-assistant-io:472b82a69d0e"
+source_section: "integrations-linkplay"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "22c13b62db5f4159e66d5c9932b053e0651e3a8760c100b689e57cb16633f24e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LinkPlay - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

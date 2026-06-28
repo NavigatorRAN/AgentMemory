@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bizkaibus"
+final_url: "https://www.home-assistant.io/integrations/bizkaibus"
+canonical_url: "https://www.home-assistant.io/integrations/bizkaibus/"
+source_handle: "web:www-home-assistant-io:513b6ccce2fa"
+source_section: "integrations-bizkaibus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0444d3dc8a0be1883d40f0f785d6b17ec99be759fc5cf006ccf7c04561404e06"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bizkaibus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/unique_id"
+final_url: "https://www.home-assistant.io/faq/unique_id"
+canonical_url: "https://www.home-assistant.io/faq/unique_id/"
+source_handle: "web:www-home-assistant-io:fd2b03e7c9d9"
+source_section: "faq-unique-id"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bb63a5c2ba9e76842dc2bc0f41dc0413f2dc190a6e17c5f006f81739be1f1a9c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Why doesn't this entity have a unique ID? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

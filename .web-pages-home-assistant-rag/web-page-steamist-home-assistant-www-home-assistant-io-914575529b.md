@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/steamist"
+final_url: "https://www.home-assistant.io/integrations/steamist"
+canonical_url: "https://www.home-assistant.io/integrations/steamist/"
+source_handle: "web:www-home-assistant-io:914575529bf9"
+source_section: "integrations-steamist"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "448ffd946e0e0ef7a37d690b0900dedfa8def2ca6cec91fe007a9dd8c26895b1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Steamist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

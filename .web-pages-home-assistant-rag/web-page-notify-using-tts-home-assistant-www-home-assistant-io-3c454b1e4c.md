@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/notify.tts"
+final_url: "https://www.home-assistant.io/integrations/notify.tts"
+canonical_url: "https://www.home-assistant.io/integrations/notify.tts/"
+source_handle: "web:www-home-assistant-io:3c454b1e4c5d"
+source_section: "integrations-notify-tts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a55b19c53573b743d0be477cfb1ca3baa76228184b8c69807129e117371afbe1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Notify using TTS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

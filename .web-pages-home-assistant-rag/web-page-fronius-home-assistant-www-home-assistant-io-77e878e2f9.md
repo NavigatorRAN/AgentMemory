@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fronius"
+final_url: "https://www.home-assistant.io/integrations/fronius"
+canonical_url: "https://www.home-assistant.io/integrations/fronius/"
+source_handle: "web:www-home-assistant-io:77e878e2f994"
+source_section: "integrations-fronius"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "352cfa64b6bc6aa2b54286b4514af1948182e431f04f5edd1ccab7fe6b8e248f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fronius - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

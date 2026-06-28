@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/snoo"
+final_url: "https://www.home-assistant.io/integrations/snoo"
+canonical_url: "https://www.home-assistant.io/integrations/snoo/"
+source_handle: "web:www-home-assistant-io:1706abefb316"
+source_section: "integrations-snoo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e123a032b082725641362426ff39499defcb59265b278ae168bbbdfac92af802"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Happiest Baby Snoo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

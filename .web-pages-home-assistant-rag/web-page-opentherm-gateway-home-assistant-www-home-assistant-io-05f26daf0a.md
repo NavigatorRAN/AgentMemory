@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/opentherm_gw"
+final_url: "https://www.home-assistant.io/integrations/opentherm_gw"
+canonical_url: "https://www.home-assistant.io/integrations/opentherm_gw/"
+source_handle: "web:www-home-assistant-io:05f26daf0adf"
+source_section: "integrations-opentherm-gw"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ccac47e68ed9ed324194b2d3aae734a24ecb75300f70d025547d208ebc5b6116"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenTherm Gateway - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

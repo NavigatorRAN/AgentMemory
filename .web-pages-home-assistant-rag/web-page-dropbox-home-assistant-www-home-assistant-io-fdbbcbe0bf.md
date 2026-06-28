@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dropbox"
+final_url: "https://www.home-assistant.io/integrations/dropbox"
+canonical_url: "https://www.home-assistant.io/integrations/dropbox/"
+source_handle: "web:www-home-assistant-io:fdbbcbe0bfa5"
+source_section: "integrations-dropbox"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "028fa305271e11f9d1d8b35a554d566c59966c4eab5ce1cca4b280f59521633b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dropbox - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

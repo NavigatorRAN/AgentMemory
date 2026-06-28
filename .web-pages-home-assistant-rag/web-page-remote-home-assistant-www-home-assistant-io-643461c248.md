@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/remote"
+final_url: "https://www.home-assistant.io/integrations/remote"
+canonical_url: "https://www.home-assistant.io/integrations/remote/"
+source_handle: "web:www-home-assistant-io:643461c24822"
+source_section: "integrations-remote"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6f3cd22950e93f4b547dc8cf8f48127d65ef1c565edb13052eb5e8239a905399"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Remote - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

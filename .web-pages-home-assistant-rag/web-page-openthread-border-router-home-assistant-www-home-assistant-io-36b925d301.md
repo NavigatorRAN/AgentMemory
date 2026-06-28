@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/otbr"
+final_url: "https://www.home-assistant.io/integrations/otbr"
+canonical_url: "https://www.home-assistant.io/integrations/otbr/"
+source_handle: "web:www-home-assistant-io:36b925d3016d"
+source_section: "integrations-otbr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fd3aee8fdca42f06140827d6061507654388f71315df26d1cb803e6f1738f94c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenThread Border Router - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

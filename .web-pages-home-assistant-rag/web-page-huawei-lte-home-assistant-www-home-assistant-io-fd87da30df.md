@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/huawei_lte"
+final_url: "https://www.home-assistant.io/integrations/huawei_lte"
+canonical_url: "https://www.home-assistant.io/integrations/huawei_lte/"
+source_handle: "web:www-home-assistant-io:fd87da30dfce"
+source_section: "integrations-huawei-lte"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "edf63f39c95db21956b18b5cd8f4e49edfce1e7799850ed53d7b1b0c03ac5f8c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Huawei LTE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

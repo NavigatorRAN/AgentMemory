@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switcher_kis"
+final_url: "https://www.home-assistant.io/integrations/switcher_kis"
+canonical_url: "https://www.home-assistant.io/integrations/switcher_kis/"
+source_handle: "web:www-home-assistant-io:88762a2c1a06"
+source_section: "integrations-switcher-kis"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d520e83583147f9f2706ad7635e4367d7843d55fa83d86eb5f0419d9acffec9a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Switcher - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sinch"
+final_url: "https://www.home-assistant.io/integrations/sinch"
+canonical_url: "https://www.home-assistant.io/integrations/sinch/"
+source_handle: "web:www-home-assistant-io:b514d96de441"
+source_section: "integrations-sinch"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ab6241a4a00887ccf1ece5645b9e5fb748f10c799b73dde18b95bb3f0248b5a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sinch SMS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

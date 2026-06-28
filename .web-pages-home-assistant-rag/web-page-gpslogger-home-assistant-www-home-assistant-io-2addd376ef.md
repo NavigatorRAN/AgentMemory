@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gpslogger"
+final_url: "https://www.home-assistant.io/integrations/gpslogger"
+canonical_url: "https://www.home-assistant.io/integrations/gpslogger/"
+source_handle: "web:www-home-assistant-io:2addd376ef06"
+source_section: "integrations-gpslogger"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "86e39c7a8d9966ff1b02a11429149df9d575ffcf14a6a58e5b7450b878f5559b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GPSLogger - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/browser"
+final_url: "https://www.home-assistant.io/faq/browser"
+canonical_url: "https://www.home-assistant.io/faq/browser/"
+source_handle: "web:www-home-assistant-io:773e45e67412"
+source_section: "faq-browser"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e4c1c748291bfd00e2477f7b5fdb9f246fb19dcb50c201e0f683e24305fb8e3c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # The Home Assistant user interface is acting weird - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nut"
+final_url: "https://www.home-assistant.io/integrations/nut"
+canonical_url: "https://www.home-assistant.io/integrations/nut/"
+source_handle: "web:www-home-assistant-io:ba7cf7a5daca"
+source_section: "integrations-nut"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "adb765036b23f3728b44422f545d40622dfb87ea0e86518599c02d30d12ed557"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Network UPS Tools (NUT) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

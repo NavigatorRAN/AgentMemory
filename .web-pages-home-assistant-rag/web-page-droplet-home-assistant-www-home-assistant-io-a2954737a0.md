@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/droplet"
+final_url: "https://www.home-assistant.io/integrations/droplet"
+canonical_url: "https://www.home-assistant.io/integrations/droplet/"
+source_handle: "web:www-home-assistant-io:a2954737a073"
+source_section: "integrations-droplet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2f2ac55cd0d5e855f69a3fcca98beda4125a63abb6059d294e316b61eb151757"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Droplet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

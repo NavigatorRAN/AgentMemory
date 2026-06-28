@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/webostv"
+final_url: "https://www.home-assistant.io/integrations/webostv"
+canonical_url: "https://www.home-assistant.io/integrations/webostv/"
+source_handle: "web:www-home-assistant-io:f84ec8803349"
+source_section: "integrations-webostv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5d44c3534b15989537ce65eaa4cd7015402fdd562a63dc2ff2a0601211a7185a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LG webOS TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

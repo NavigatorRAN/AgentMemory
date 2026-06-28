@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/proxy"
+final_url: "https://www.home-assistant.io/integrations/proxy"
+canonical_url: "https://www.home-assistant.io/integrations/proxy/"
+source_handle: "web:www-home-assistant-io:8412ec279e78"
+source_section: "integrations-proxy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a1196b3ed8661847e122eaa5a6f222ab7bec798cd6cd0685e114fe33d3833ea5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Camera Proxy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

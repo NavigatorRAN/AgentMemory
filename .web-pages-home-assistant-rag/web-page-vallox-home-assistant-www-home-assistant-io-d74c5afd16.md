@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vallox"
+final_url: "https://www.home-assistant.io/integrations/vallox"
+canonical_url: "https://www.home-assistant.io/integrations/vallox/"
+source_handle: "web:www-home-assistant-io:d74c5afd16ed"
+source_section: "integrations-vallox"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d32db60399bf952b6dc2f47037bff25356a8af41c27daa45b1e108fd1199c52c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Vallox - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

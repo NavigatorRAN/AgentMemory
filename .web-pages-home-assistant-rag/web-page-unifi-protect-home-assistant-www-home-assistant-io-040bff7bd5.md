@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/unifiprotect"
+final_url: "https://www.home-assistant.io/integrations/unifiprotect"
+canonical_url: "https://www.home-assistant.io/integrations/unifiprotect/"
+source_handle: "web:www-home-assistant-io:040bff7bd5ed"
+source_section: "integrations-unifiprotect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cda217ea467d2262ceeb359b8e85e599cda43d6e59dd2f82376e2340f1a5b8de"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UniFi Protect - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

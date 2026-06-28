@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yandex_transport"
+final_url: "https://www.home-assistant.io/integrations/yandex_transport"
+canonical_url: "https://www.home-assistant.io/integrations/yandex_transport/"
+source_handle: "web:www-home-assistant-io:052adf37d5e4"
+source_section: "integrations-yandex-transport"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "358b5a04150f3bf583455b65580406ff4ab393cc486ad4c602d2fcc64054f78c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Yandex Transport - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

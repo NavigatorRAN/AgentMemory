@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airly"
+final_url: "https://www.home-assistant.io/integrations/airly"
+canonical_url: "https://www.home-assistant.io/integrations/airly/"
+source_handle: "web:www-home-assistant-io:79b6bc79b68d"
+source_section: "integrations-airly"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a4fa97da107ff9915fc04dde9bc4f8506a65c12031d6c88d24bf5f2158c629f5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Airly - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

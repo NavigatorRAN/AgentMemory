@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rflink"
+final_url: "https://www.home-assistant.io/integrations/rflink"
+canonical_url: "https://www.home-assistant.io/integrations/rflink/"
+source_handle: "web:www-home-assistant-io:b8356f72703b"
+source_section: "integrations-rflink"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4c7b405e6612d00b7d46a13e6531ff7e286d765cf21e674bdc873ab5f84e153e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # RFLink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

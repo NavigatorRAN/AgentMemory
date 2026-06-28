@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/glances"
+final_url: "https://www.home-assistant.io/integrations/glances"
+canonical_url: "https://www.home-assistant.io/integrations/glances/"
+source_handle: "web:www-home-assistant-io:86a9a1e9d0e3"
+source_section: "integrations-glances"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "734664b469dd835f585d35d78a2e24277d48ea37197fd3f48343f831269bcd4a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Glances - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

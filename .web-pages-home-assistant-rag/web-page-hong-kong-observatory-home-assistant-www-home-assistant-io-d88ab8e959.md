@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hko"
+final_url: "https://www.home-assistant.io/integrations/hko"
+canonical_url: "https://www.home-assistant.io/integrations/hko/"
+source_handle: "web:www-home-assistant-io:d88ab8e95938"
+source_section: "integrations-hko"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "43441602a80398994a2c558afba9064147dd97294b9b30674e94df90dee26b7d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hong Kong Observatory - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

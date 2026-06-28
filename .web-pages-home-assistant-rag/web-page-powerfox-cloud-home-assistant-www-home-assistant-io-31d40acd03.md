@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/powerfox"
+final_url: "https://www.home-assistant.io/integrations/powerfox"
+canonical_url: "https://www.home-assistant.io/integrations/powerfox/"
+source_handle: "web:www-home-assistant-io:31d40acd0335"
+source_section: "integrations-powerfox"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6fd61334d6ce4d129272a3bcfd8c3691e2d717e1254cfffea260ec9b1a1a1806"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Powerfox Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

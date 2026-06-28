@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homeassistant_yellow"
+final_url: "https://www.home-assistant.io/integrations/homeassistant_yellow"
+canonical_url: "https://www.home-assistant.io/integrations/homeassistant_yellow/"
+source_handle: "web:www-home-assistant-io:f573d85ab532"
+source_section: "integrations-homeassistant-yellow"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a33b2e7f189178442cd37a5c3cff23fd1b3818122201707eea05cfdc78c9d8a4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Yellow - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

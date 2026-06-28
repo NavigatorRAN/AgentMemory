@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/idasen_desk"
+final_url: "https://www.home-assistant.io/integrations/idasen_desk"
+canonical_url: "https://www.home-assistant.io/integrations/idasen_desk/"
+source_handle: "web:www-home-assistant-io:f4f4cfd29589"
+source_section: "integrations-idasen-desk"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8ad36bd71f97e91aaa42cc9c9e4427dfa0939dd3dc695716acd7785d4a392976"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IKEA Idasen Desk - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

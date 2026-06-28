@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bluetooth"
+final_url: "https://www.home-assistant.io/integrations/bluetooth"
+canonical_url: "https://www.home-assistant.io/integrations/bluetooth/"
+source_handle: "web:www-home-assistant-io:a5d48c65fb6c"
+source_section: "integrations-bluetooth"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b66730f8d3c1f7cf376cb5b6dca7b56c044ce2d2aa955d5896780d6d2c07c5ee"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

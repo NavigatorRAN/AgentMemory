@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rainforest_raven"
+final_url: "https://www.home-assistant.io/integrations/rainforest_raven"
+canonical_url: "https://www.home-assistant.io/integrations/rainforest_raven/"
+source_handle: "web:www-home-assistant-io:677e247174ab"
+source_section: "integrations-rainforest-raven"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a8be89dc64fbf9191ddd8d6a4e05dae6eb0eac8f23a8924b004669cf1a69c76"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rainforest RAVEn - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

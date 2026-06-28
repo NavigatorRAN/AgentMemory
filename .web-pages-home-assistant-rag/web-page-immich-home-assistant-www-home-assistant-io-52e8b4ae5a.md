@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/immich"
+final_url: "https://www.home-assistant.io/integrations/immich"
+canonical_url: "https://www.home-assistant.io/integrations/immich/"
+source_handle: "web:www-home-assistant-io:52e8b4ae5a22"
+source_section: "integrations-immich"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "34141da34344c4b0523de724e4a77c61d81623b8a56b2a1d597fa4348aec1dfc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Immich - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

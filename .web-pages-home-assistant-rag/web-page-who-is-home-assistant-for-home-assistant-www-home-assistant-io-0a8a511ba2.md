@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/who-is-it-for"
+final_url: "https://www.home-assistant.io/faq/who-is-it-for"
+canonical_url: "https://www.home-assistant.io/faq/who-is-it-for/"
+source_handle: "web:www-home-assistant-io:0a8a511ba22f"
+source_section: "faq-who-is-it-for"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "401206dce5ddda0b009fe931c56869cf991f10c592e52c495df0abeb2fb89c86"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Who is Home Assistant for? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

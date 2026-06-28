@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/binary_sensor.rest"
+final_url: "https://www.home-assistant.io/integrations/binary_sensor.rest"
+canonical_url: "https://www.home-assistant.io/integrations/binary_sensor.rest/"
+source_handle: "web:www-home-assistant-io:5363a744fe69"
+source_section: "integrations-binary-sensor-rest"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ada1a334f5ddb26f2c8327788570b599834a77160ae8dd06c140ca04e3ff8fdc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RESTful binary sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

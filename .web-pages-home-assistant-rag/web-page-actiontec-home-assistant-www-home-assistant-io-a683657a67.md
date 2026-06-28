@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/actiontec"
+final_url: "https://www.home-assistant.io/integrations/actiontec"
+canonical_url: "https://www.home-assistant.io/integrations/actiontec/"
+source_handle: "web:www-home-assistant-io:a683657a67bc"
+source_section: "integrations-actiontec"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "13494a69b9695ec86bf26d44bfab7dfd467ba22f4c86a6f5858c03f1724d40ae"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Actiontec - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

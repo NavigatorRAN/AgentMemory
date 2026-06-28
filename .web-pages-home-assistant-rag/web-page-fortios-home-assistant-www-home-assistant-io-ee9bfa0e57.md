@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fortios"
+final_url: "https://www.home-assistant.io/integrations/fortios"
+canonical_url: "https://www.home-assistant.io/integrations/fortios/"
+source_handle: "web:www-home-assistant-io:ee9bfa0e57f7"
+source_section: "integrations-fortios"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "388754f03fd0eafba164fafefefc36eb1c3b9db062bc98be95d99d4b08a747b4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FortiOS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fumis"
+final_url: "https://www.home-assistant.io/integrations/fumis"
+canonical_url: "https://www.home-assistant.io/integrations/fumis/"
+source_handle: "web:www-home-assistant-io:cb6577ec2273"
+source_section: "integrations-fumis"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "676395c7afb07342ec997f9ff0316c877ae364ddf9b0c9a7237fcb030d3eaa69"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Fumis - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

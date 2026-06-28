@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/met_eireann"
+final_url: "https://www.home-assistant.io/integrations/met_eireann"
+canonical_url: "https://www.home-assistant.io/integrations/met_eireann/"
+source_handle: "web:www-home-assistant-io:b31186d6f176"
+source_section: "integrations-met-eireann"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "853df8471f5fd3d3c0acb2383e5c30af9c21f8858f5ed822117d8080eccd8ead"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Met Éireann - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

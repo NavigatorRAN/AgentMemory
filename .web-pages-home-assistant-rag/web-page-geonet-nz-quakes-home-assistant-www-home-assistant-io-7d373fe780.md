@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/geonetnz_quakes"
+final_url: "https://www.home-assistant.io/integrations/geonetnz_quakes"
+canonical_url: "https://www.home-assistant.io/integrations/geonetnz_quakes/"
+source_handle: "web:www-home-assistant-io:7d373fe780f9"
+source_section: "integrations-geonetnz-quakes"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "188e53a2e0a89784a3e57e0403e3338161e9d428ed023166efcd63e27f425a8d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GeoNet NZ Quakes - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

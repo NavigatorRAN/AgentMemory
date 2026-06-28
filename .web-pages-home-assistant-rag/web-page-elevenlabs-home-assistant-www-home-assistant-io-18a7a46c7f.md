@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/elevenlabs"
+final_url: "https://www.home-assistant.io/integrations/elevenlabs"
+canonical_url: "https://www.home-assistant.io/integrations/elevenlabs/"
+source_handle: "web:www-home-assistant-io:18a7a46c7f8f"
+source_section: "integrations-elevenlabs"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "67445f0d51807f9a9a0ce8cdc1c304b5e8fe3daffe5dea5ba5acd0b492553f41"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ElevenLabs - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/maxcube"
+final_url: "https://www.home-assistant.io/integrations/maxcube"
+canonical_url: "https://www.home-assistant.io/integrations/maxcube/"
+source_handle: "web:www-home-assistant-io:24f5993630fc"
+source_section: "integrations-maxcube"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "46ce1b5dad2de71c82febd85c2dafc97932528849867ccf7af68cb3ed23f9e93"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # eQ-3 MAX! - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

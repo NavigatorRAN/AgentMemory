@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/packages"
+final_url: "https://www.home-assistant.io/docs/configuration/packages"
+canonical_url: "https://www.home-assistant.io/docs/configuration/packages/"
+source_handle: "web:www-home-assistant-io:eae0f8cb0193"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2254b28aadb09248cfdada753f9fb202ea25ed19c33268f4718873d82ed5d128"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Configuration packages - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

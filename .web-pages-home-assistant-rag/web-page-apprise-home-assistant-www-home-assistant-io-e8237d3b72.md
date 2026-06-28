@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/apprise"
+final_url: "https://www.home-assistant.io/integrations/apprise"
+canonical_url: "https://www.home-assistant.io/integrations/apprise/"
+source_handle: "web:www-home-assistant-io:e8237d3b720e"
+source_section: "integrations-apprise"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7ac55fdd02bc0ca822e074ac920c099a35c283e2fcfe565fa984806e8792dade"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Apprise - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

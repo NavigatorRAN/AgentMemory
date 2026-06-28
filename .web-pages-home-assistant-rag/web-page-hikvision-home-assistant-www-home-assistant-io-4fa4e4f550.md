@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hikvisioncam"
+final_url: "https://www.home-assistant.io/integrations/hikvisioncam"
+canonical_url: "https://www.home-assistant.io/integrations/hikvisioncam/"
+source_handle: "web:www-home-assistant-io:4fa4e4f55090"
+source_section: "integrations-hikvisioncam"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a2e86c798206fa95259f975c593b5d94faf13a2bf0f871dc335c187e24715d8d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hikvision - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

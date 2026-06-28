@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hvv_departures"
+final_url: "https://www.home-assistant.io/integrations/hvv_departures"
+canonical_url: "https://www.home-assistant.io/integrations/hvv_departures/"
+source_handle: "web:www-home-assistant-io:882eb4d64eaf"
+source_section: "integrations-hvv-departures"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ca62c0ffec0f8c3649c7d531702a07f46276910520b5df70a7a63a32a72b39f1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HVV Departures - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

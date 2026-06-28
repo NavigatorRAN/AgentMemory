@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yale_smart_alarm"
+final_url: "https://www.home-assistant.io/integrations/yale_smart_alarm"
+canonical_url: "https://www.home-assistant.io/integrations/yale_smart_alarm/"
+source_handle: "web:www-home-assistant-io:b94afd394ed5"
+source_section: "integrations-yale-smart-alarm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "735a76f066df3b3ff76bb6dd77dd9ff310f12091b453aee4036b4430ff33fbb2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Yale Smart Living - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

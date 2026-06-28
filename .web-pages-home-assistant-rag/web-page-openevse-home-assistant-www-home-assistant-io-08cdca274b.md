@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openevse"
+final_url: "https://www.home-assistant.io/integrations/openevse"
+canonical_url: "https://www.home-assistant.io/integrations/openevse/"
+source_handle: "web:www-home-assistant-io:08cdca274b1a"
+source_section: "integrations-openevse"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "153f53424d6ae479d3e85ad01f4ee20391233f0634c9525c96b10849928aeed2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenEVSE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

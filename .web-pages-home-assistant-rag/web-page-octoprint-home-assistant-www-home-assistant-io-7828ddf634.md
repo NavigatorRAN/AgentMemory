@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/octoprint"
+final_url: "https://www.home-assistant.io/integrations/octoprint"
+canonical_url: "https://www.home-assistant.io/integrations/octoprint/"
+source_handle: "web:www-home-assistant-io:7828ddf634ed"
+source_section: "integrations-octoprint"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5e6617916e9c65286cde7d4a53614f42595fbd0c208e87169dc5441b05b3e8b6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OctoPrint - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

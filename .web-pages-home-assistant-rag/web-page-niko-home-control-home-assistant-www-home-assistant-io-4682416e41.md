@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/niko_home_control"
+final_url: "https://www.home-assistant.io/integrations/niko_home_control"
+canonical_url: "https://www.home-assistant.io/integrations/niko_home_control/"
+source_handle: "web:www-home-assistant-io:4682416e416a"
+source_section: "integrations-niko-home-control"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "89ea439caac690d683b71bb014892c1718cf625700de315729dbc044c857b836"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Niko Home Control - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

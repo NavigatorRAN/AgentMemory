@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/local_ip"
+final_url: "https://www.home-assistant.io/integrations/local_ip"
+canonical_url: "https://www.home-assistant.io/integrations/local_ip/"
+source_handle: "web:www-home-assistant-io:4aadfe7d8129"
+source_section: "integrations-local-ip"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a147dc89bc3d120ba5c2f7d2f31e967c8100aaff1ad56afc23837b501a7d9b5a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Local IP Address - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

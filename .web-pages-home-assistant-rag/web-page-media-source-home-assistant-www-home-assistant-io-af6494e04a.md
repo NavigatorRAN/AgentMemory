@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/media_source"
+final_url: "https://www.home-assistant.io/integrations/media_source"
+canonical_url: "https://www.home-assistant.io/integrations/media_source/"
+source_handle: "web:www-home-assistant-io:af6494e04ade"
+source_section: "integrations-media-source"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4710a90f16c578413ec90d32df036e7056ccc69febf55880e18bcab826670551"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Media source - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

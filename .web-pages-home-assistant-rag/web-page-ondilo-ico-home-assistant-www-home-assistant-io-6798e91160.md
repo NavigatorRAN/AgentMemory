@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ondilo_ico"
+final_url: "https://www.home-assistant.io/integrations/ondilo_ico"
+canonical_url: "https://www.home-assistant.io/integrations/ondilo_ico/"
+source_handle: "web:www-home-assistant-io:6798e911607f"
+source_section: "integrations-ondilo-ico"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5597807f47bc7e4b248749fbc6056dd403a13b73d1eab7dc19c50c1937c6612f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ondilo ICO - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

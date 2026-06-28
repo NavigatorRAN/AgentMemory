@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/metoffice"
+final_url: "https://www.home-assistant.io/integrations/metoffice"
+canonical_url: "https://www.home-assistant.io/integrations/metoffice/"
+source_handle: "web:www-home-assistant-io:be0e29e0f639"
+source_section: "integrations-metoffice"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "07fb60599c41d77ec3d1a01919e8a51bc00e21b4779be90b71deb67767af9be4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Met Office - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

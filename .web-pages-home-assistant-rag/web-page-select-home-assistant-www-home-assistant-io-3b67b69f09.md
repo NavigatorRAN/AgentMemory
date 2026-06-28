@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/select"
+final_url: "https://www.home-assistant.io/integrations/select"
+canonical_url: "https://www.home-assistant.io/integrations/select/"
+source_handle: "web:www-home-assistant-io:3b67b69f092b"
+source_section: "integrations-select"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f72b9e0eddc1ca81d4ee5270206f9a4c4f2e77b469dd5a996458e8d19e57899b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Select - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

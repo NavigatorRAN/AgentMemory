@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/forked_daapd"
+final_url: "https://www.home-assistant.io/integrations/forked_daapd"
+canonical_url: "https://www.home-assistant.io/integrations/forked_daapd/"
+source_handle: "web:www-home-assistant-io:db42a8211148"
+source_section: "integrations-forked-daapd"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6ac363a3bc962568fe24e6cdaa1dd6de1318b10b013c43d0925ab075c7c1cc93"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OwnTone - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

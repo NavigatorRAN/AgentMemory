@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/assign_areas_floors"
+final_url: "https://www.home-assistant.io/voice_control/assign_areas_floors"
+canonical_url: "https://www.home-assistant.io/voice_control/assign_areas_floors/"
+source_handle: "web:www-home-assistant-io:214963f8a786"
+source_section: "voice-control-assign-areas-floors"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9ef96f96364c9ff32577677970d222288a8dcda165516ab256d7d21245042c83"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Assigning areas to floors and an area to a device - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/samsam"
+final_url: "https://www.home-assistant.io/integrations/samsam"
+canonical_url: "https://www.home-assistant.io/integrations/samsam/"
+source_handle: "web:www-home-assistant-io:635012e0fbf9"
+source_section: "integrations-samsam"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cd26af4aefd42025b4857e5758e36586ca33e3913277e85372c8cff07c002d6c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SamSam - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/workday"
+final_url: "https://www.home-assistant.io/integrations/workday"
+canonical_url: "https://www.home-assistant.io/integrations/workday/"
+source_handle: "web:www-home-assistant-io:30734a9fb52d"
+source_section: "integrations-workday"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d58752d2ed9bc6298f45c619b4f806e0fd71047cd6fba605b497ad11cf10109c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Workday - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

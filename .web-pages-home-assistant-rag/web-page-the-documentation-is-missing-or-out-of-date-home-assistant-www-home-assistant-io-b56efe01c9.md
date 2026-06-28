@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/missing-documentation"
+final_url: "https://www.home-assistant.io/faq/missing-documentation"
+canonical_url: "https://www.home-assistant.io/faq/missing-documentation/"
+source_handle: "web:www-home-assistant-io:b56efe01c928"
+source_section: "faq-missing-documentation"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f03a2d9521d053f86aa2ec0447eca740fe5f98ad136d7d17901df2b855542613"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # The documentation is missing or out of date - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

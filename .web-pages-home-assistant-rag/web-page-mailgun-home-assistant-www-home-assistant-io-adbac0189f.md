@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mailgun"
+final_url: "https://www.home-assistant.io/integrations/mailgun"
+canonical_url: "https://www.home-assistant.io/integrations/mailgun/"
+source_handle: "web:www-home-assistant-io:adbac0189f3e"
+source_section: "integrations-mailgun"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "677210dda4ac7671a41dde78cd603405c3107584cf06d1db689b7774778cce47"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mailgun - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

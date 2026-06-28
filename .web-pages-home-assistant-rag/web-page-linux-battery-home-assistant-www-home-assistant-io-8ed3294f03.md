@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/linux_battery"
+final_url: "https://www.home-assistant.io/integrations/linux_battery"
+canonical_url: "https://www.home-assistant.io/integrations/linux_battery/"
+source_handle: "web:www-home-assistant-io:8ed3294f03fe"
+source_section: "integrations-linux-battery"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b924935a66d6249d6f8f1f179c5ed57d6f546fee360f65b11e7c99dd2afd17b9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Linux Battery - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

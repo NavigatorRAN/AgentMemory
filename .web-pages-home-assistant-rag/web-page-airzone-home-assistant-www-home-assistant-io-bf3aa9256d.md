@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airzone"
+final_url: "https://www.home-assistant.io/integrations/airzone"
+canonical_url: "https://www.home-assistant.io/integrations/airzone/"
+source_handle: "web:www-home-assistant-io:bf3aa9256db0"
+source_section: "integrations-airzone"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "38b0234ee52aa5899a084c73dc11c9af47a2a7a75e4a90ab4703c526dd821bd1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Airzone - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

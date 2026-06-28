@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smappee"
+final_url: "https://www.home-assistant.io/integrations/smappee"
+canonical_url: "https://www.home-assistant.io/integrations/smappee/"
+source_handle: "web:www-home-assistant-io:3aa3f4b1da62"
+source_section: "integrations-smappee"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2c1dd86c03ad5c2e6fb6eadb1498f000f514baa04695303034163781900e76ab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Smappee - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/music_assistant"
+final_url: "https://www.home-assistant.io/integrations/music_assistant"
+canonical_url: "https://www.home-assistant.io/integrations/music_assistant/"
+source_handle: "web:www-home-assistant-io:eb5b3988e0b3"
+source_section: "integrations-music-assistant"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "55a1dee725349d224ecfcd225409ab0779c93099d2987cc2d3ac049cd699cf87"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Music Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

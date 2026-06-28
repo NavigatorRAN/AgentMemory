@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/synology_srm"
+final_url: "https://www.home-assistant.io/integrations/synology_srm"
+canonical_url: "https://www.home-assistant.io/integrations/synology_srm/"
+source_handle: "web:www-home-assistant-io:028dcfb9e85b"
+source_section: "integrations-synology-srm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a272606ebea47404f705328b68e859472914ef07ce9664461cc78a0e4cbaf344"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Synology SRM - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

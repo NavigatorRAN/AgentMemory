@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kentuckypower"
+final_url: "https://www.home-assistant.io/integrations/kentuckypower"
+canonical_url: "https://www.home-assistant.io/integrations/kentuckypower/"
+source_handle: "web:www-home-assistant-io:ec142dd656f4"
+source_section: "integrations-kentuckypower"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "30cca9ad5518079d4dff06b9bac92ca040f4c77fc48baae1167314ebfd786080"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kentucky Power - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

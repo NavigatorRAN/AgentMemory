@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/essent"
+final_url: "https://www.home-assistant.io/integrations/essent"
+canonical_url: "https://www.home-assistant.io/integrations/essent/"
+source_handle: "web:www-home-assistant-io:651abb1ff0fb"
+source_section: "integrations-essent"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "97c1b2bf0555ce5d2e5dc1766e33432a2760aae58f7d2e132e351268cade2aa9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Essent - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

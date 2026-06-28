@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/statistic"
+final_url: "https://www.home-assistant.io/dashboards/statistic"
+canonical_url: "https://www.home-assistant.io/dashboards/statistic/"
+source_handle: "web:www-home-assistant-io:207e77462d97"
+source_section: "dashboards-statistic"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ed85ea459f5581dff4358bbc386315089511222ddc111c1b1e97e4a5c97d37f2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Statistic card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

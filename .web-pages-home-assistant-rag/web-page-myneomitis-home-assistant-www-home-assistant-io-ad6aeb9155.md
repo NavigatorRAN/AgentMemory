@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/myneomitis"
+final_url: "https://www.home-assistant.io/integrations/myneomitis"
+canonical_url: "https://www.home-assistant.io/integrations/myneomitis/"
+source_handle: "web:www-home-assistant-io:ad6aeb9155c8"
+source_section: "integrations-myneomitis"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "00158fe9cc074a56acd49995566a66e2f13805a8ac5a41c01dc8f1d76f24fc80"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MyNeomitis - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

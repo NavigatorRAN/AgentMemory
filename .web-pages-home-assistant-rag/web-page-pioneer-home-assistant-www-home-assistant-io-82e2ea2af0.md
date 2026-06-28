@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pioneer"
+final_url: "https://www.home-assistant.io/integrations/pioneer"
+canonical_url: "https://www.home-assistant.io/integrations/pioneer/"
+source_handle: "web:www-home-assistant-io:82e2ea2af093"
+source_section: "integrations-pioneer"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cc98482e9d29a1ee75770a7da54acdc12bc4cced39386cd2e8964a9d63a8740d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Pioneer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

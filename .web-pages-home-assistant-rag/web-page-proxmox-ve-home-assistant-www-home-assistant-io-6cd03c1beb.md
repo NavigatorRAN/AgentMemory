@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/proxmoxve"
+final_url: "https://www.home-assistant.io/integrations/proxmoxve"
+canonical_url: "https://www.home-assistant.io/integrations/proxmoxve/"
+source_handle: "web:www-home-assistant-io:6cd03c1bebc8"
+source_section: "integrations-proxmoxve"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cecdff40e8a090277a78aecf31b72943b70f6c757e60605916a55834858a0a4f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Proxmox VE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

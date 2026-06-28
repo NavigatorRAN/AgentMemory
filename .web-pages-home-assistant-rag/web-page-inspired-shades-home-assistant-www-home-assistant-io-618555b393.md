@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/inspired_shades"
+final_url: "https://www.home-assistant.io/integrations/inspired_shades"
+canonical_url: "https://www.home-assistant.io/integrations/inspired_shades/"
+source_handle: "web:www-home-assistant-io:618555b39341"
+source_section: "integrations-inspired-shades"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "639ddc60b6444eb1f8cff4158caec0f9e52f379735b6b4fe60c680e4cedd56b4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Inspired Shades - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/water_heater"
+final_url: "https://www.home-assistant.io/integrations/water_heater"
+canonical_url: "https://www.home-assistant.io/integrations/water_heater/"
+source_handle: "web:www-home-assistant-io:a4c02eaa1d44"
+source_section: "integrations-water-heater"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "708aeec7e1cc39278997d220c93561e46d277f2b8a198602d9595b0ee084e0d1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Water heater - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

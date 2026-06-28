@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/anova"
+final_url: "https://www.home-assistant.io/integrations/anova"
+canonical_url: "https://www.home-assistant.io/integrations/anova/"
+source_handle: "web:www-home-assistant-io:4d2a4deff7eb"
+source_section: "integrations-anova"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "29b015a15d3ead28f413da41ab9e945337bfc50973c20a7ca4342f2f82e8feaf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Anova - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

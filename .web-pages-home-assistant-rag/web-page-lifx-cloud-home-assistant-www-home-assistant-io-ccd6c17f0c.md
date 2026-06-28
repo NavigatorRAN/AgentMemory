@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lifx_cloud"
+final_url: "https://www.home-assistant.io/integrations/lifx_cloud"
+canonical_url: "https://www.home-assistant.io/integrations/lifx_cloud/"
+source_handle: "web:www-home-assistant-io:ccd6c17f0cc6"
+source_section: "integrations-lifx-cloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "890c49ba17b50ccc4e8027edccd9a0cf97c1f83fb782f24ac50974fc844b13a7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LIFX Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

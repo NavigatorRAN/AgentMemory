@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/remote"
+final_url: "https://www.home-assistant.io/docs/configuration/remote"
+canonical_url: "https://www.home-assistant.io/docs/configuration/remote/"
+source_handle: "web:www-home-assistant-io:7da70bda6115"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0b9036f8a577e4c605f92656c564a02a1f1dbcd0d188c72251aa4854c2bfb1e2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Remote access to Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

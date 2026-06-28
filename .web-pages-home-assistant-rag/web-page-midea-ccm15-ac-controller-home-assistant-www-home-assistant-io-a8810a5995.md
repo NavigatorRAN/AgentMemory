@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ccm15"
+final_url: "https://www.home-assistant.io/integrations/ccm15"
+canonical_url: "https://www.home-assistant.io/integrations/ccm15/"
+source_handle: "web:www-home-assistant-io:a8810a5995f7"
+source_section: "integrations-ccm15"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8448d07d36f66d427f1131c02ac5fd264e7d169a3e38335534c35b6556d05bf6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Midea ccm15 AC Controller - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

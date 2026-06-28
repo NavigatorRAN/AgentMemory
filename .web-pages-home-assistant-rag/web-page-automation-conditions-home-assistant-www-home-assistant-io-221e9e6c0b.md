@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/condition"
+final_url: "https://www.home-assistant.io/docs/automation/condition"
+canonical_url: "https://www.home-assistant.io/docs/automation/condition/"
+source_handle: "web:www-home-assistant-io:221e9e6c0bf8"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "17aab33e5765744dcff204dc6721a870663745fa5a91e1d8d6d71088541855ac"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Automation conditions - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

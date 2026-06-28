@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/touchline"
+final_url: "https://www.home-assistant.io/integrations/touchline"
+canonical_url: "https://www.home-assistant.io/integrations/touchline/"
+source_handle: "web:www-home-assistant-io:8d99a4c6db29"
+source_section: "integrations-touchline"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "59678487d4a2e1bbae4b1b24930f130902c6dda0c1cd62efe9e4074edd0d37a2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Roth Touchline - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

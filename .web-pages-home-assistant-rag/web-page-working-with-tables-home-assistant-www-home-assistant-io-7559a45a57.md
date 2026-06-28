@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/organizing/tables"
+final_url: "https://www.home-assistant.io/docs/organizing/tables"
+canonical_url: "https://www.home-assistant.io/docs/organizing/tables/"
+source_handle: "web:www-home-assistant-io:7559a45a57d7"
+source_section: "docs-organizing"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c2c5a669530fdce1962caec682e88f5c0fb08ff98b438ba7b2c6818c412ec8cd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Working with tables - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

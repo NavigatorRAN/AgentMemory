@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fitbit"
+final_url: "https://www.home-assistant.io/integrations/fitbit"
+canonical_url: "https://www.home-assistant.io/integrations/fitbit/"
+source_handle: "web:www-home-assistant-io:186431aad54c"
+source_section: "integrations-fitbit"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dacee5a7ecc4c44e2035fddafd8553453a2eb103ec2c5365213c69d17d92fd7a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fitbit - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/troubleshooting"
+final_url: "https://www.home-assistant.io/docs/automation/troubleshooting"
+canonical_url: "https://www.home-assistant.io/docs/automation/troubleshooting/"
+source_handle: "web:www-home-assistant-io:78911f34ad7d"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7079614f976734f678eb77957857b0367c67549bdbdbd5d37f2f7da7176280e4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Testing and troubleshooting automations - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

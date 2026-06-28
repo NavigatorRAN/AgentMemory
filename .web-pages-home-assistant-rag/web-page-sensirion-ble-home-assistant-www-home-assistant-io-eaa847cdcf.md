@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensirion_ble"
+final_url: "https://www.home-assistant.io/integrations/sensirion_ble"
+canonical_url: "https://www.home-assistant.io/integrations/sensirion_ble/"
+source_handle: "web:www-home-assistant-io:eaa847cdcf66"
+source_section: "integrations-sensirion-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "da9e4bc8f3e1552cbf4c5d0a28725a702a7850b491516e2b88b1ef6210e641bf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sensirion BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

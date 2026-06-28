@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lojack"
+final_url: "https://www.home-assistant.io/integrations/lojack"
+canonical_url: "https://www.home-assistant.io/integrations/lojack/"
+source_handle: "web:www-home-assistant-io:22e4c412c972"
+source_section: "integrations-lojack"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7a53a7ecc6d1bfeb8f2e94fea0a8617818b70767716fbb3a64139371f37e60e0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # LoJack - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

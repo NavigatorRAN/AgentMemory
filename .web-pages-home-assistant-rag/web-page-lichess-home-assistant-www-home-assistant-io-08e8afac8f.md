@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lichess"
+final_url: "https://www.home-assistant.io/integrations/lichess"
+canonical_url: "https://www.home-assistant.io/integrations/lichess/"
+source_handle: "web:www-home-assistant-io:08e8afac8f7a"
+source_section: "integrations-lichess"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6791296aa0781b16302eb814364d8a0762881fe65a98fe1e6dc481fa61b9017f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Lichess - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

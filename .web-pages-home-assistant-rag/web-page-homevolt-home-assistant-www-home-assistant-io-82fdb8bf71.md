@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homevolt"
+final_url: "https://www.home-assistant.io/integrations/homevolt"
+canonical_url: "https://www.home-assistant.io/integrations/homevolt/"
+source_handle: "web:www-home-assistant-io:82fdb8bf7196"
+source_section: "integrations-homevolt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "474c21d206904360e313c97b07cdeec71e1cca1726efa06ab7c9e74a420905a1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Homevolt - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

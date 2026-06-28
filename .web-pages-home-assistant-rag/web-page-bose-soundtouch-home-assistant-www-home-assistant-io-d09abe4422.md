@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/soundtouch"
+final_url: "https://www.home-assistant.io/integrations/soundtouch"
+canonical_url: "https://www.home-assistant.io/integrations/soundtouch/"
+source_handle: "web:www-home-assistant-io:d09abe44225a"
+source_section: "integrations-soundtouch"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e772775ce71944473a08d6514657feba5f990a388668ba5bcdc70a8ab88fe4e1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bose SoundTouch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

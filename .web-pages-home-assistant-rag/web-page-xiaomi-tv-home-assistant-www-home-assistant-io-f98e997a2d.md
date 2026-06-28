@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/xiaomi_tv"
+final_url: "https://www.home-assistant.io/integrations/xiaomi_tv"
+canonical_url: "https://www.home-assistant.io/integrations/xiaomi_tv/"
+source_handle: "web:www-home-assistant-io:f98e997a2d36"
+source_section: "integrations-xiaomi-tv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "127edb24a76b6884646f95a0f7925cc8317111d00fee7cef00a7751a198afb04"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Xiaomi TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

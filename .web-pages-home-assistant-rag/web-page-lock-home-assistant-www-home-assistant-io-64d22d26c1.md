@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lock"
+final_url: "https://www.home-assistant.io/integrations/lock"
+canonical_url: "https://www.home-assistant.io/integrations/lock/"
+source_handle: "web:www-home-assistant-io:64d22d26c1fb"
+source_section: "integrations-lock"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "93814fefe0d76d06b32f68a35f9377d1df11d6b209d610aff773d109c8cfe045"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Lock - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

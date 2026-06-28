@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/twinkly"
+final_url: "https://www.home-assistant.io/integrations/twinkly"
+canonical_url: "https://www.home-assistant.io/integrations/twinkly/"
+source_handle: "web:www-home-assistant-io:bd85060daa03"
+source_section: "integrations-twinkly"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aad96fc4853fe9f0e00f7e07977fa0a61851a801841095755cab4d686450c4ae"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Twinkly - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

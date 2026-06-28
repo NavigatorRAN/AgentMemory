@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/duckdns"
+final_url: "https://www.home-assistant.io/integrations/duckdns"
+canonical_url: "https://www.home-assistant.io/integrations/duckdns/"
+source_handle: "web:www-home-assistant-io:84a90343f4ea"
+source_section: "integrations-duckdns"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0c4ed269fc98694c8b5327b0e7fa2e021f58fc9005e4fc6c4dba898fef4818e8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Duck DNS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

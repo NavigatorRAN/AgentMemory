@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/energyzero"
+final_url: "https://www.home-assistant.io/integrations/energyzero"
+canonical_url: "https://www.home-assistant.io/integrations/energyzero/"
+source_handle: "web:www-home-assistant-io:b9e42d0b59d0"
+source_section: "integrations-energyzero"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1cc9fdf1c2e8d8111f817e4bbf9fedd539dbac07fe3f27d752bd8c2f83c3067b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EnergyZero - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

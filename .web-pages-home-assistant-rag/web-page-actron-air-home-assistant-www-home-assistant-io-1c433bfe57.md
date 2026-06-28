@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/actron_air"
+final_url: "https://www.home-assistant.io/integrations/actron_air"
+canonical_url: "https://www.home-assistant.io/integrations/actron_air/"
+source_handle: "web:www-home-assistant-io:1c433bfe5701"
+source_section: "integrations-actron-air"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8f1f98426f367d7e894c7b205de2f2c4ebf315cff6d5e6ce1eac1171f5042989"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Actron Air - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

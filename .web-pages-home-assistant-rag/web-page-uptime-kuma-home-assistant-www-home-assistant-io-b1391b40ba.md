@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/uptime_kuma"
+final_url: "https://www.home-assistant.io/integrations/uptime_kuma"
+canonical_url: "https://www.home-assistant.io/integrations/uptime_kuma/"
+source_handle: "web:www-home-assistant-io:b1391b40ba47"
+source_section: "integrations-uptime-kuma"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f7792551ead4789db586f7d993b95fdff22007d345da3cf472442dc7be72f107"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Uptime Kuma - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

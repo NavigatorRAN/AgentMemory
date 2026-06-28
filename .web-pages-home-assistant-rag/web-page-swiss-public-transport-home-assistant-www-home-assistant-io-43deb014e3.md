@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/swiss_public_transport"
+final_url: "https://www.home-assistant.io/integrations/swiss_public_transport"
+canonical_url: "https://www.home-assistant.io/integrations/swiss_public_transport/"
+source_handle: "web:www-home-assistant-io:43deb014e36b"
+source_section: "integrations-swiss-public-transport"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "787ad78f62e45db520ed0a82a0d00f1de52322cda833cf931525db6fb627c073"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Swiss public transport - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

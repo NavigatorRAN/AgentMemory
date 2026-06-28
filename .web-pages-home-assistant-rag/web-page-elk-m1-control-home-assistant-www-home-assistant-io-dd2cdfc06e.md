@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/elkm1"
+final_url: "https://www.home-assistant.io/integrations/elkm1"
+canonical_url: "https://www.home-assistant.io/integrations/elkm1/"
+source_handle: "web:www-home-assistant-io:dd2cdfc06e84"
+source_section: "integrations-elkm1"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "31978edb656f70e0853b279f0d7ce7abd96d07b68c9a278b1a7226f263e64dc4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Elk-M1 Control - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/crownstone"
+final_url: "https://www.home-assistant.io/integrations/crownstone"
+canonical_url: "https://www.home-assistant.io/integrations/crownstone/"
+source_handle: "web:www-home-assistant-io:6d8aa505e90b"
+source_section: "integrations-crownstone"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2e62dc8e56be8fd7b6133fd8b269aef57db7b3521aa949186bf707363d8a1858"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Crownstone - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

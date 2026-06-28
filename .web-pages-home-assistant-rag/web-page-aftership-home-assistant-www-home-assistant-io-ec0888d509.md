@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aftership"
+final_url: "https://www.home-assistant.io/integrations/aftership"
+canonical_url: "https://www.home-assistant.io/integrations/aftership/"
+source_handle: "web:www-home-assistant-io:ec0888d5099b"
+source_section: "integrations-aftership"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b17cf8231fc5b66c11f15585e06e1c15c3ebc43fa19ad2c913a1febeca1bb138"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AfterShip - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

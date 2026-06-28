@@ -1,0 +1,104 @@
+{
+  "chunk_profiles": {
+    "api-docs": 1255,
+    "code-docs": 58,
+    "reference-docs": 392,
+    "web-docs": 17
+  },
+  "collections": {
+    "home-assistant-docs": 1721
+  },
+  "doc_types": {
+    "api-reference": 1255,
+    "code-documentation": 58,
+    "reference": 391,
+    "web-documentation": 17
+  },
+  "import_run_ids": {
+    "home-assistant-docs-legacy-backfill": 1722
+  },
+  "rag_metadata": {
+    "markdown_count": 1721,
+    "missing_counts": {
+      "canonical_url": 0,
+      "chunk_profile": 0,
+      "collection": 0,
+      "content_hash": 0,
+      "doc_type": 0,
+      "final_url": 0,
+      "import_run_id": 0,
+      "language": 0,
+      "source_handle": 0,
+      "source_section": 0,
+      "source_url": 0
+    },
+    "missing_frontmatter": 0,
+    "required_keys": [
+      "source_url",
+      "final_url",
+      "canonical_url",
+      "source_handle",
+      "source_section",
+      "collection",
+      "doc_type",
+      "language",
+      "import_run_id",
+      "content_hash",
+      "chunk_profile"
+    ],
+    "with_frontmatter": 1721
+  },
+  "record_metadata": {
+    "complete_records": 1722,
+    "missing_counts": {
+      "chunk_profile": 0,
+      "content_hash": 0,
+      "import_run_id": 0,
+      "rag_path": 0,
+      "source_handle": 0,
+      "source_section": 0
+    },
+    "required_keys": [
+      "source_handle",
+      "source_section",
+      "content_hash",
+      "chunk_profile",
+      "import_run_id",
+      "rag_path"
+    ]
+  },
+  "samples": {
+    "rag_markdown_missing_frontmatter": [],
+    "records_missing_metadata": []
+  },
+  "state": {
+    "completed": 1722,
+    "discovered": 0,
+    "failed": 0,
+    "records": 1722,
+    "skipped": 0
+  },
+  "top_source_sections": {
+    "common-tasks-container": 1,
+    "common-tasks-general": 1,
+    "common-tasks-os": 1,
+    "dashboards": 1,
+    "dashboards-alarm-panel": 1,
+    "dashboards-area": 1,
+    "dashboards-badges": 1,
+    "dashboards-button": 1,
+    "dashboards-calendar": 1,
+    "dashboards-cards": 1,
+    "docs-authentication": 3,
+    "docs-automation": 12,
+    "docs-blueprint": 4,
+    "docs-configuration": 15,
+    "docs-energy": 9,
+    "docs-organizing": 6,
+    "docs-scene": 2,
+    "docs-scripts": 3,
+    "docs-templating": 16,
+    "docs-tools": 4
+  },
+  "wiki_output": "docs/home-assistant-import-wiki.md"
+}

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/yellow"
+final_url: "https://www.home-assistant.io/installation/yellow"
+canonical_url: "https://www.home-assistant.io/installation/yellow/"
+source_handle: "web:www-home-assistant-io:5a17421abbc3"
+source_section: "installation-yellow"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6dba5f03d4d7866630ae778d57d0daa9605807c407f78f90a84d3fc3e0e409b7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Home Assistant Yellow - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

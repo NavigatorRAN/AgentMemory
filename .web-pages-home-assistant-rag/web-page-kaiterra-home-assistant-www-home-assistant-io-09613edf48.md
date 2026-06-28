@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kaiterra"
+final_url: "https://www.home-assistant.io/integrations/kaiterra"
+canonical_url: "https://www.home-assistant.io/integrations/kaiterra/"
+source_handle: "web:www-home-assistant-io:09613edf4887"
+source_section: "integrations-kaiterra"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "78f8f36440e3a8feb07189085b2db5b5d443505886df4ceb97206b10c3a571bb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kaiterra - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

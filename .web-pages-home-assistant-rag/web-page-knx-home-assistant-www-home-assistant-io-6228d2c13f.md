@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/knx"
+final_url: "https://www.home-assistant.io/integrations/knx"
+canonical_url: "https://www.home-assistant.io/integrations/knx/"
+source_handle: "web:www-home-assistant-io:6228d2c13f08"
+source_section: "integrations-knx"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e5ebffdcaf033b42fdef1b01c1e2c550e45ab5a32c0988b09d6f06a2fba3c2e9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # KNX - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

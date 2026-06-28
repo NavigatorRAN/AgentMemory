@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ouman_eh_800"
+final_url: "https://www.home-assistant.io/integrations/ouman_eh_800"
+canonical_url: "https://www.home-assistant.io/integrations/ouman_eh_800/"
+source_handle: "web:www-home-assistant-io:7160dafb1e8b"
+source_section: "integrations-ouman-eh-800"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "99e44ef76016eeb7f3296aba7aa50bf8862cecd27deb269ef60e45e0c6f0768f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ouman EH-800 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

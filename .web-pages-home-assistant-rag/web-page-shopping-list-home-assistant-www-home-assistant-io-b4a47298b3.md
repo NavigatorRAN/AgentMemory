@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/shopping_list"
+final_url: "https://www.home-assistant.io/integrations/shopping_list"
+canonical_url: "https://www.home-assistant.io/integrations/shopping_list/"
+source_handle: "web:www-home-assistant-io:b4a47298b3b2"
+source_section: "integrations-shopping-list"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a9f00d673fe680496d199b882226554b3943c32427a4d87e4d995bd61c3bebe8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Shopping list - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

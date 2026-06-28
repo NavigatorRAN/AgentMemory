@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/quadrafire"
+final_url: "https://www.home-assistant.io/integrations/quadrafire"
+canonical_url: "https://www.home-assistant.io/integrations/quadrafire/"
+source_handle: "web:www-home-assistant-io:006ed4d39fb6"
+source_section: "integrations-quadrafire"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "97c01c3c6d0e75b471f6c8dfc32e6ab391cae335a4a6e76f049f2327c414bd9e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Quadra-Fire - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

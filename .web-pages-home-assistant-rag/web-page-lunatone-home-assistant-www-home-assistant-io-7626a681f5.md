@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lunatone"
+final_url: "https://www.home-assistant.io/integrations/lunatone"
+canonical_url: "https://www.home-assistant.io/integrations/lunatone/"
+source_handle: "web:www-home-assistant-io:7626a681f5cc"
+source_section: "integrations-lunatone"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f42527de9d8eb9cde2921dff1308510db518812f1d42ccae4acfa3ad97d19c79"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Lunatone - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

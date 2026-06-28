@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yi"
+final_url: "https://www.home-assistant.io/integrations/yi"
+canonical_url: "https://www.home-assistant.io/integrations/yi/"
+source_handle: "web:www-home-assistant-io:bad3e1ca0c75"
+source_section: "integrations-yi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ee170d55c60ae2bcec99d8587b9ca922929a3c9156561d2804e06a8e8954979f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Yi Home Cameras - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

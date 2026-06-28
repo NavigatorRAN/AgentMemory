@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/blackbird"
+final_url: "https://www.home-assistant.io/integrations/blackbird"
+canonical_url: "https://www.home-assistant.io/integrations/blackbird/"
+source_handle: "web:www-home-assistant-io:67e296596e85"
+source_section: "integrations-blackbird"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a7082203a90c4034bfc62944cbe0153e95be05011349f9a2cd8eb2bd581210ae"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Monoprice Blackbird Matrix Switch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

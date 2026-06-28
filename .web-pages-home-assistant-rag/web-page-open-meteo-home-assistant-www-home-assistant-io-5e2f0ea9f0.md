@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/open_meteo"
+final_url: "https://www.home-assistant.io/integrations/open_meteo"
+canonical_url: "https://www.home-assistant.io/integrations/open_meteo/"
+source_handle: "web:www-home-assistant-io:5e2f0ea9f076"
+source_section: "integrations-open-meteo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e297e5f8aa1952dd8c55de1fe4da15a95fdcf31ffc16ef32fa735392ef90492b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Open-Meteo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

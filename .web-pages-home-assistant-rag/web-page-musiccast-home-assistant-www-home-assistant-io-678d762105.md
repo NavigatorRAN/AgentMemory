@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yamaha_musiccast"
+final_url: "https://www.home-assistant.io/integrations/yamaha_musiccast"
+canonical_url: "https://www.home-assistant.io/integrations/yamaha_musiccast/"
+source_handle: "web:www-home-assistant-io:678d7621059a"
+source_section: "integrations-yamaha-musiccast"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a4841da02111e57307f63bee9bc082e1f5ee14e4846e6e210cc1bc10591b5273"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MusicCast - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

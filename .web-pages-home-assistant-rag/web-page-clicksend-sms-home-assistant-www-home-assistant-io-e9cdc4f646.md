@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/clicksend"
+final_url: "https://www.home-assistant.io/integrations/clicksend"
+canonical_url: "https://www.home-assistant.io/integrations/clicksend/"
+source_handle: "web:www-home-assistant-io:e9cdc4f6462e"
+source_section: "integrations-clicksend"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "06542d38c96c6a383b88d5e5dc22fd7f4accee5b737f89b7fbfbd30a8057a14b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ClickSend SMS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

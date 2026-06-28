@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/songpal"
+final_url: "https://www.home-assistant.io/integrations/songpal"
+canonical_url: "https://www.home-assistant.io/integrations/songpal/"
+source_handle: "web:www-home-assistant-io:b0678e607136"
+source_section: "integrations-songpal"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1216fc9529348899c8a5b7b6a348b01d3c96d117a6f8a2d5a99cf7d73ade83d7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sony Songpal - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

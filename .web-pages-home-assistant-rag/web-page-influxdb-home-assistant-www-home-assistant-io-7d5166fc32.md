@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/influxdb"
+final_url: "https://www.home-assistant.io/integrations/influxdb"
+canonical_url: "https://www.home-assistant.io/integrations/influxdb/"
+source_handle: "web:www-home-assistant-io:7d5166fc3257"
+source_section: "integrations-influxdb"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bd3709455ce3b8c340d04e5d93e13fad1ad7c04b30b2e103d5bd15f2517351af"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # InfluxDB - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

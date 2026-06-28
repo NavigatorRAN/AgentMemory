@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/energy"
+final_url: "https://www.home-assistant.io/dashboards/energy"
+canonical_url: "https://www.home-assistant.io/dashboards/energy/"
+source_handle: "web:www-home-assistant-io:459ecf73c950"
+source_section: "dashboards-energy"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "11a10c9630731040bfb526ea7c4e568e54feec3ecf737fe66f77857a49499398"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Energy cards - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

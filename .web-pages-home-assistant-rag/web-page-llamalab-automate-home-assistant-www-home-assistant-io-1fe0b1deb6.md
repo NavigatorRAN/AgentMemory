@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/llamalab_automate"
+final_url: "https://www.home-assistant.io/integrations/llamalab_automate"
+canonical_url: "https://www.home-assistant.io/integrations/llamalab_automate/"
+source_handle: "web:www-home-assistant-io:1fe0b1deb6f3"
+source_section: "integrations-llamalab-automate"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f99e44bb92dd207438622e0d49418699dcc7cbd6a01291cceb98c33c223c8e86"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LlamaLab Automate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

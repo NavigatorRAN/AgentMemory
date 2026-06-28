@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/image"
+final_url: "https://www.home-assistant.io/integrations/image"
+canonical_url: "https://www.home-assistant.io/integrations/image/"
+source_handle: "web:www-home-assistant-io:be6dc6cf985e"
+source_section: "integrations-image"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "94e4800cf41acb3eb42eadf80eeebd7f87b63b987339e7e1341d02b20ff19baa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Image - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

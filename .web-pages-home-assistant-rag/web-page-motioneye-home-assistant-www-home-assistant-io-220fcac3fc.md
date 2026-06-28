@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/motioneye"
+final_url: "https://www.home-assistant.io/integrations/motioneye"
+canonical_url: "https://www.home-assistant.io/integrations/motioneye/"
+source_handle: "web:www-home-assistant-io:220fcac3fc75"
+source_section: "integrations-motioneye"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c4d254f764b206e7816f9ae8118dcc24b6e2b4b10ad050d2d2ac465bc5dc11b9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # motionEye - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

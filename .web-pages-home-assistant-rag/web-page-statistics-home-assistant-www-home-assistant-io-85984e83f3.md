@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/statistics"
+final_url: "https://www.home-assistant.io/integrations/statistics"
+canonical_url: "https://www.home-assistant.io/integrations/statistics/"
+source_handle: "web:www-home-assistant-io:85984e83f3e2"
+source_section: "integrations-statistics"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e394996829dd0c1969e4d71340b4023a51e25d109a60881c8b86645503ad9696"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Statistics - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

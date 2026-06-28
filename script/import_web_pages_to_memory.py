@@ -22,6 +22,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections import Counter
 from dataclasses import dataclass
 from html.parser import HTMLParser
 from typing import Any
@@ -36,6 +37,27 @@ from deep_import_apple_docs_to_rag import RAGSSHClient  # noqa: E402
 DEFAULT_STATE = ".web-pages-memory-import-state.json"
 DEFAULT_LOG = ".web-pages-memory-import.log.jsonl"
 DEFAULT_RAG_DIR = ".web-pages-rag-staging"
+REQUIRED_RECORD_METADATA_KEYS = (
+    "source_handle",
+    "source_section",
+    "content_hash",
+    "chunk_profile",
+    "import_run_id",
+    "rag_path",
+)
+REQUIRED_RAG_METADATA_KEYS = (
+    "source_url",
+    "final_url",
+    "canonical_url",
+    "source_handle",
+    "source_section",
+    "collection",
+    "doc_type",
+    "language",
+    "import_run_id",
+    "content_hash",
+    "chunk_profile",
+)
 EXCLUDED_PATH_PARTS = (
     "/actions",
     "/activity",
@@ -553,6 +575,411 @@ def markdown_frontmatter(metadata: dict[str, str]) -> str:
     return "\n".join(lines)
 
 
+def parse_markdown_frontmatter(text: str) -> dict[str, str]:
+    if not text.startswith("---\n"):
+        return {}
+    end = text.find("\n---", 4)
+    if end == -1:
+        return {}
+    metadata: dict[str, str] = {}
+    for raw_line in text[4:end].splitlines():
+        line = raw_line.strip()
+        if not line or ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        key = key.strip()
+        value = value.strip()
+        if not key:
+            continue
+        if len(value) >= 2 and value[0] == value[-1] == '"':
+            value = value[1:-1].replace('\\"', '"')
+        metadata[key] = value
+    return metadata
+
+
+def read_markdown_frontmatter(path: pathlib.Path) -> dict[str, str]:
+    try:
+        return parse_markdown_frontmatter(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError):
+        return {}
+
+
+def rag_markdown_files(directory: pathlib.Path) -> list[pathlib.Path]:
+    if not directory.exists():
+        return []
+    return sorted(path for path in directory.glob("*.md") if path.is_file())
+
+
+def metadata_missing_counts(records: list[dict[str, Any]], required_keys: tuple[str, ...]) -> dict[str, int]:
+    counts = {key: 0 for key in required_keys}
+    for record in records:
+        for key in required_keys:
+            if is_missing_metadata_value(record.get(key)):
+                counts[key] += 1
+    return counts
+
+
+def is_missing_metadata_value(value: Any) -> bool:
+    return value is None or value == ""
+
+
+def audit_import_outputs(
+    *,
+    state: ImportState,
+    rag_dir: pathlib.Path,
+    sample_limit: int = 8,
+) -> dict[str, Any]:
+    records = list(state.records.values())
+    record_missing = metadata_missing_counts(records, REQUIRED_RECORD_METADATA_KEYS)
+    complete_record_count = sum(
+        1
+        for record in records
+        if all(not is_missing_metadata_value(record.get(key)) for key in REQUIRED_RECORD_METADATA_KEYS)
+    )
+
+    markdown_files = rag_markdown_files(rag_dir)
+    rag_metadata: list[tuple[pathlib.Path, dict[str, str]]] = [
+        (path, read_markdown_frontmatter(path)) for path in markdown_files
+    ]
+    rag_missing = metadata_missing_counts([metadata for _, metadata in rag_metadata], REQUIRED_RAG_METADATA_KEYS)
+    rag_with_frontmatter = sum(1 for _, metadata in rag_metadata if metadata)
+
+    section_counter: Counter[str] = Counter()
+    chunk_counter: Counter[str] = Counter()
+    doc_type_counter: Counter[str] = Counter()
+    run_counter: Counter[str] = Counter()
+    collection_counter: Counter[str] = Counter()
+
+    record_sections = 0
+    record_chunks = 0
+    record_runs = 0
+    for record in records:
+        if record.get("source_section"):
+            section_counter[str(record["source_section"])] += 1
+            record_sections += 1
+        if record.get("chunk_profile"):
+            chunk_counter[str(record["chunk_profile"])] += 1
+            record_chunks += 1
+        if record.get("import_run_id"):
+            run_counter[str(record["import_run_id"])] += 1
+            record_runs += 1
+    rag_section_counter: Counter[str] = Counter()
+    rag_chunk_counter: Counter[str] = Counter()
+    rag_run_counter: Counter[str] = Counter()
+    for _, metadata in rag_metadata:
+        if metadata.get("source_section"):
+            rag_section_counter[metadata["source_section"]] += 1
+        if metadata.get("chunk_profile"):
+            rag_chunk_counter[metadata["chunk_profile"]] += 1
+        if metadata.get("doc_type"):
+            doc_type_counter[metadata["doc_type"]] += 1
+        if metadata.get("import_run_id"):
+            rag_run_counter[metadata["import_run_id"]] += 1
+        if metadata.get("collection"):
+            collection_counter[metadata["collection"]] += 1
+    if not record_sections:
+        section_counter = rag_section_counter
+    if not record_chunks:
+        chunk_counter = rag_chunk_counter
+    if not record_runs:
+        run_counter = rag_run_counter
+
+    missing_record_samples = [
+        {
+            "url": url,
+            "title": record.get("title", ""),
+            "missing": [
+                key for key in REQUIRED_RECORD_METADATA_KEYS if is_missing_metadata_value(record.get(key))
+            ],
+        }
+        for url, record in sorted(state.records.items())
+        if any(is_missing_metadata_value(record.get(key)) for key in REQUIRED_RECORD_METADATA_KEYS)
+    ][:sample_limit]
+    missing_frontmatter_samples = [
+        str(path)
+        for path, metadata in rag_metadata
+        if not metadata
+    ][:sample_limit]
+
+    return {
+        "state": {
+            "discovered": len(state.discovered),
+            "completed": len(state.completed),
+            "failed": len(state.failed),
+            "skipped": len(state.skipped),
+            "records": len(state.records),
+        },
+        "record_metadata": {
+            "required_keys": list(REQUIRED_RECORD_METADATA_KEYS),
+            "complete_records": complete_record_count,
+            "missing_counts": record_missing,
+        },
+        "rag_metadata": {
+            "required_keys": list(REQUIRED_RAG_METADATA_KEYS),
+            "markdown_count": len(markdown_files),
+            "with_frontmatter": rag_with_frontmatter,
+            "missing_frontmatter": len(markdown_files) - rag_with_frontmatter,
+            "missing_counts": rag_missing,
+        },
+        "top_source_sections": dict(section_counter.most_common(20)),
+        "chunk_profiles": dict(chunk_counter.most_common()),
+        "doc_types": dict(doc_type_counter.most_common()),
+        "collections": dict(collection_counter.most_common()),
+        "import_run_ids": dict(run_counter.most_common(20)),
+        "samples": {
+            "records_missing_metadata": missing_record_samples,
+            "rag_markdown_missing_frontmatter": missing_frontmatter_samples,
+        },
+    }
+
+
+def legacy_markdown_field(markdown: str, label: str) -> str:
+    pattern = rf"^- {re.escape(label)}:\s*(.+?)\s*$"
+    match = re.search(pattern, markdown, flags=re.MULTILINE)
+    return match.group(1).strip() if match else ""
+
+
+def legacy_markdown_section(markdown: str, heading: str) -> str:
+    marker = f"## {heading}"
+    start = markdown.find(marker)
+    if start == -1:
+        return ""
+    start += len(marker)
+    next_heading = markdown.find("\n## ", start)
+    section = markdown[start:] if next_heading == -1 else markdown[start:next_heading]
+    return section.strip()
+
+
+def web_page_from_legacy_markdown(path: pathlib.Path, url: str, record: dict[str, Any]) -> WebPage | None:
+    try:
+        markdown = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return None
+    if parse_markdown_frontmatter(markdown):
+        return None
+    title_match = re.search(r"^#\s+(.+?)\s*$", markdown, flags=re.MULTILINE)
+    title = title_match.group(1).strip() if title_match else str(record.get("title") or url)
+    text = legacy_markdown_section(markdown, "Extracted Text")
+    description = legacy_markdown_section(markdown, "Description")
+    return WebPage(
+        requested_url=legacy_markdown_field(markdown, "Requested URL") or url,
+        final_url=legacy_markdown_field(markdown, "Final URL") or str(record.get("final_url") or url),
+        canonical_url=legacy_markdown_field(markdown, "Canonical URL") or str(record.get("canonical_url") or ""),
+        title=title,
+        description=description,
+        content_type=legacy_markdown_field(markdown, "Content type") or "text/html",
+        text=text,
+        fetched_at=legacy_markdown_field(markdown, "Fetched at") or str(record.get("fetched_at") or ""),
+    )
+
+
+def prepend_frontmatter_if_missing(path: pathlib.Path, metadata: dict[str, str], *, dry_run: bool) -> bool:
+    markdown = path.read_text(encoding="utf-8")
+    if parse_markdown_frontmatter(markdown):
+        return False
+    if not dry_run:
+        path.write_text(f"{markdown_frontmatter(metadata)}\n\n{markdown}", encoding="utf-8")
+    return True
+
+
+def upgrade_legacy_import_metadata(
+    *,
+    state: ImportState,
+    state_path: pathlib.Path,
+    rag_dir: pathlib.Path,
+    collection: str,
+    import_run_id: str,
+    dry_run: bool = False,
+    limit: int = 0,
+) -> dict[str, Any]:
+    upgraded_records = 0
+    upgraded_markdown = 0
+    already_current = 0
+    missing_rag_files: list[str] = []
+    unreadable_rag_files: list[str] = []
+    processed = 0
+
+    for url, record in sorted(state.records.items()):
+        if limit and processed >= limit:
+            break
+        processed += 1
+        rag_path_value = str(record.get("rag_path") or "")
+        if not rag_path_value:
+            missing_rag_files.append(url)
+            continue
+        rag_path = pathlib.Path(rag_path_value)
+        if not rag_path.is_absolute():
+            rag_path = pathlib.Path.cwd() / rag_path
+        if not rag_path.exists():
+            alternative = rag_dir / pathlib.Path(rag_path_value).name
+            rag_path = alternative if alternative.exists() else rag_path
+        if not rag_path.exists():
+            missing_rag_files.append(rag_path_value)
+            continue
+
+        existing_metadata = read_markdown_frontmatter(rag_path)
+        if existing_metadata:
+            updated_record = dict(record)
+            for key in ("source_handle", "source_section", "content_hash", "chunk_profile", "import_run_id"):
+                if existing_metadata.get(key):
+                    updated_record[key] = existing_metadata[key]
+            if updated_record != record:
+                upgraded_records += 1
+                if not dry_run:
+                    state.records[url] = updated_record
+            already_current += 1
+            continue
+
+        page = web_page_from_legacy_markdown(rag_path, url, record)
+        if page is None:
+            already_current += 1
+            continue
+        chunk_profile = str(record.get("chunk_profile") or chunk_profile_for_page(page, "auto"))
+        metadata = rag_metadata_for_page(
+            page=page,
+            collection=collection,
+            import_run_id=import_run_id,
+            chunk_profile=chunk_profile,
+        )
+        try:
+            if prepend_frontmatter_if_missing(rag_path, metadata, dry_run=dry_run):
+                upgraded_markdown += 1
+        except (OSError, UnicodeDecodeError):
+            unreadable_rag_files.append(str(rag_path))
+            continue
+
+        updated_record = dict(record)
+        updated_record.update(
+            {
+                "source_handle": metadata["source_handle"],
+                "source_section": metadata["source_section"],
+                "content_hash": metadata["content_hash"],
+                "chunk_profile": metadata["chunk_profile"],
+                "import_run_id": metadata["import_run_id"],
+            }
+        )
+        if updated_record != record:
+            upgraded_records += 1
+            if not dry_run:
+                state.records[url] = updated_record
+
+    if not dry_run:
+        state.save(state_path)
+
+    return {
+        "processed": processed,
+        "upgraded_records": upgraded_records,
+        "upgraded_markdown": upgraded_markdown,
+        "already_current": already_current,
+        "missing_rag_files": missing_rag_files[:20],
+        "missing_rag_file_count": len(missing_rag_files),
+        "unreadable_rag_files": unreadable_rag_files[:20],
+        "unreadable_rag_file_count": len(unreadable_rag_files),
+        "dry_run": dry_run,
+        "import_run_id": import_run_id,
+    }
+
+
+def format_counter_lines(values: dict[str, Any], *, empty: str = "- none") -> list[str]:
+    if not values:
+        return [empty]
+    return [f"- {key}: {value}" for key, value in values.items()]
+
+
+def build_collection_wiki_markdown(
+    *,
+    title: str,
+    collection: str,
+    state_path: pathlib.Path,
+    log_path: pathlib.Path,
+    rag_dir: pathlib.Path,
+    audit: dict[str, Any],
+    generated_at: str | None = None,
+    memory_endpoint: str = "",
+    rag_stats: dict[str, int] | None = None,
+) -> str:
+    generated_at = generated_at or utc_now()
+    state_counts = audit["state"]
+    record_missing = audit["record_metadata"]["missing_counts"]
+    rag_metadata = audit["rag_metadata"]
+    rag_missing = rag_metadata["missing_counts"]
+    summary = (
+        f"{collection} has {state_counts['completed']} completed pages, "
+        f"{state_counts['failed']} failures, and {rag_metadata['markdown_count']} staged RAG markdown files."
+    )
+    metadata = {
+        "slug": slug(title),
+        "title": title,
+        "collection": collection,
+        "generated_at": generated_at,
+        "language": "en",
+        "summary": summary,
+    }
+    lines = [
+        markdown_frontmatter(metadata),
+        "",
+        f"# {title}",
+        "",
+        summary,
+        "",
+        "## Import State",
+        "",
+        f"- Discovered URLs: {state_counts['discovered']}",
+        f"- Completed URLs: {state_counts['completed']}",
+        f"- Skipped URLs: {state_counts['skipped']}",
+        f"- Failed URLs: {state_counts['failed']}",
+        f"- State file: {state_path}",
+        f"- Log file: {log_path}",
+        f"- RAG staging directory: {rag_dir}",
+    ]
+    if memory_endpoint:
+        lines.append(f"- Memory MCP endpoint: {memory_endpoint}")
+
+    lines.extend(
+        [
+            "",
+            "## Metadata Health",
+            "",
+            f"- Complete state records: {audit['record_metadata']['complete_records']} of {state_counts['records']}",
+            f"- RAG markdown with frontmatter: {rag_metadata['with_frontmatter']} of {rag_metadata['markdown_count']}",
+            "",
+            "State record missing counts:",
+            *format_counter_lines(record_missing),
+            "",
+            "RAG frontmatter missing counts:",
+            *format_counter_lines(rag_missing),
+            "",
+            "## Source Sections",
+            "",
+            *format_counter_lines(audit["top_source_sections"]),
+            "",
+            "## RAG Profiles",
+            "",
+            "Chunk profiles:",
+            *format_counter_lines(audit["chunk_profiles"]),
+            "",
+            "Document types:",
+            *format_counter_lines(audit["doc_types"]),
+        ]
+    )
+
+    if rag_stats is not None:
+        lines.extend(["", "## RAG Queue", "", *format_counter_lines({key: rag_stats[key] for key in sorted(rag_stats)})])
+
+    lines.extend(
+        [
+            "",
+            "## Retrieval Handles",
+            "",
+            f"- Collection: {collection}",
+            f"- Wiki slug: {slug(title)}",
+            "- Preferred Memory lookup: search_wiki for the collection name, then search_events for a source handle or page title.",
+            "- Preferred RAG lookup: filter by collection, source_section, source_url, canonical_url, or content_hash.",
+        ]
+    )
+    return "\n".join(lines).strip() + "\n"
+
+
 def sitemap_candidates(seed_url: str) -> list[str]:
     parsed = urllib.parse.urlparse(seed_url)
     origin = urllib.parse.urlunparse((parsed.scheme, parsed.netloc, "", "", "", ""))
@@ -1023,6 +1450,77 @@ def run(args: argparse.Namespace) -> int:
     state = ImportState.load(state_path)
     entries = load_url_inputs(args.url, pathlib.Path(args.url_file) if args.url_file else None)
     import_run_id = args.import_run_id or f"web-import-{utc_now().replace(':', '').replace('-', '')}"
+    if args.upgrade_metadata_only:
+        metadata_import_run_id = args.import_run_id or f"{slug(args.collection)}-legacy-backfill"
+        upgrade = upgrade_legacy_import_metadata(
+            state=state,
+            state_path=state_path,
+            rag_dir=rag_dir,
+            collection=args.collection,
+            import_run_id=metadata_import_run_id,
+            dry_run=args.dry_run,
+            limit=args.upgrade_limit,
+        )
+        audit = audit_import_outputs(state=state, rag_dir=rag_dir)
+        result = {"upgrade": upgrade, "audit": audit}
+        if args.wiki_output:
+            wiki_path = pathlib.Path(args.wiki_output)
+            wiki_path.parent.mkdir(parents=True, exist_ok=True)
+            wiki_path.write_text(
+                build_collection_wiki_markdown(
+                    title=args.wiki_title or f"{args.collection} Import",
+                    collection=args.collection,
+                    state_path=state_path,
+                    log_path=log_path,
+                    rag_dir=rag_dir,
+                    audit=audit,
+                    memory_endpoint=args.endpoint,
+                ),
+                encoding="utf-8",
+            )
+            result["wiki_output"] = str(wiki_path)
+        if args.audit_output:
+            audit_path = pathlib.Path(args.audit_output)
+            audit_path.parent.mkdir(parents=True, exist_ok=True)
+            audit_path.write_text(json.dumps(result, indent=2, sort_keys=True), encoding="utf-8")
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return 0
+    if args.audit_only:
+        audit = audit_import_outputs(state=state, rag_dir=rag_dir)
+        rag_stats = None
+        if args.include_rag_stats:
+            rag_stats = RAGSSHClient(
+                host=args.rag_host,
+                user=args.rag_user,
+                identity=args.rag_identity,
+                staging_dir=args.rag_staging_dir,
+                ingest_dir=args.rag_ingest_dir,
+                collection=args.collection,
+            ).stats()
+            audit["rag_queue"] = rag_stats
+        if args.wiki_output:
+            wiki_path = pathlib.Path(args.wiki_output)
+            wiki_path.parent.mkdir(parents=True, exist_ok=True)
+            wiki_path.write_text(
+                build_collection_wiki_markdown(
+                    title=args.wiki_title or f"{args.collection} Import",
+                    collection=args.collection,
+                    state_path=state_path,
+                    log_path=log_path,
+                    rag_dir=rag_dir,
+                    audit=audit,
+                    memory_endpoint=args.endpoint,
+                    rag_stats=rag_stats,
+                ),
+                encoding="utf-8",
+            )
+            audit["wiki_output"] = str(wiki_path)
+        if args.audit_output:
+            audit_path = pathlib.Path(args.audit_output)
+            audit_path.parent.mkdir(parents=True, exist_ok=True)
+            audit_path.write_text(json.dumps(audit, indent=2, sort_keys=True), encoding="utf-8")
+        print(json.dumps(audit, indent=2, sort_keys=True))
+        return 0
     if args.crawl and entries:
         print(
             f"Discovering documentation pages from {len(entries)} seed(s) "
@@ -1219,6 +1717,17 @@ def main() -> int:
     parser.add_argument("--state", default=DEFAULT_STATE)
     parser.add_argument("--log", default=DEFAULT_LOG)
     parser.add_argument("--rag-dir", default=DEFAULT_RAG_DIR)
+    parser.add_argument("--audit-only", action="store_true", help="Inspect state/RAG outputs without importing URLs.")
+    parser.add_argument("--audit-output", default="", help="Optional JSON path for --audit-only results.")
+    parser.add_argument("--wiki-output", default="", help="Optional markdown path for an import collection wiki page.")
+    parser.add_argument("--wiki-title", default="", help="Title for --wiki-output. Defaults to '<collection> Import'.")
+    parser.add_argument("--include-rag-stats", action="store_true", help="Include RAG queue stats in --audit-only output.")
+    parser.add_argument(
+        "--upgrade-metadata-only",
+        action="store_true",
+        help="Backfill Phase 3A metadata into existing state/RAG markdown without fetching, Memory writes, or RAG enqueue.",
+    )
+    parser.add_argument("--upgrade-limit", type=int, default=0, help="Limit metadata backfill records for testing.")
     parser.add_argument("--delay", type=float, default=0.5)
     parser.add_argument("--retries", type=int, default=3)
     parser.add_argument("--retry-backoff", type=float, default=1.5)

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openhome"
+final_url: "https://www.home-assistant.io/integrations/openhome"
+canonical_url: "https://www.home-assistant.io/integrations/openhome/"
+source_handle: "web:www-home-assistant-io:53dd27d1437c"
+source_section: "integrations-openhome"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b8b75446aa4ce2889e79384f3e966ae890b59349857fd0fc6f1e80e0230637fc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Linn / OpenHome - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/frontier_silicon"
+final_url: "https://www.home-assistant.io/integrations/frontier_silicon"
+canonical_url: "https://www.home-assistant.io/integrations/frontier_silicon/"
+source_handle: "web:www-home-assistant-io:a963c5a3a76d"
+source_section: "integrations-frontier-silicon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "df8354ad69b0936cc765475f2b23c3b07c257468d9c6d1fa993b0139022bd8bc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Frontier Silicon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

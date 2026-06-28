@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/centriconnect"
+final_url: "https://www.home-assistant.io/integrations/centriconnect"
+canonical_url: "https://www.home-assistant.io/integrations/centriconnect/"
+source_handle: "web:www-home-assistant-io:9b268aaa5fa8"
+source_section: "integrations-centriconnect"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ea2a649d51c42e0d91c038d278e785883c74b1edb3c7a8685349aeecff52fd83"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # CentriConnect/MyPropane - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

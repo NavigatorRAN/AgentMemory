@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/time_date"
+final_url: "https://www.home-assistant.io/integrations/time_date"
+canonical_url: "https://www.home-assistant.io/integrations/time_date/"
+source_handle: "web:www-home-assistant-io:ce09218f30df"
+source_section: "integrations-time-date"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bdf638f5aac02693b1ec5eadcdec3847485ba8ec5eb91b752edb5e2da5950e93"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Time & Date - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

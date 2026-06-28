@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bryant_evolution"
+final_url: "https://www.home-assistant.io/integrations/bryant_evolution"
+canonical_url: "https://www.home-assistant.io/integrations/bryant_evolution/"
+source_handle: "web:www-home-assistant-io:07b18ffa5c94"
+source_section: "integrations-bryant-evolution"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5d5cc68c40c494280cce5d428470a02ba7ba0c3af5ea3e611bb48dc7e4732d82"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bryant Evolution - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

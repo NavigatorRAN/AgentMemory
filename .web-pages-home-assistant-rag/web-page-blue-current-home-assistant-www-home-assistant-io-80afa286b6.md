@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/blue_current"
+final_url: "https://www.home-assistant.io/integrations/blue_current"
+canonical_url: "https://www.home-assistant.io/integrations/blue_current/"
+source_handle: "web:www-home-assistant-io:80afa286b6f7"
+source_section: "integrations-blue-current"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d8ea0581b11790b098726a04436e164f1cb9c506154b7fb2fc840c2824f0c225"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Blue Current - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

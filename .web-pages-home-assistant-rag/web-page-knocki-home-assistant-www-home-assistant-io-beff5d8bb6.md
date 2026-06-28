@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/knocki"
+final_url: "https://www.home-assistant.io/integrations/knocki"
+canonical_url: "https://www.home-assistant.io/integrations/knocki/"
+source_handle: "web:www-home-assistant-io:beff5d8bb67a"
+source_section: "integrations-knocki"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "26ca4f381be96790a83c04eae395da5eaf5ab28c4109f2011a09f0902d90a193"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Knocki - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

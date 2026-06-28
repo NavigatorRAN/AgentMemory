@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensor.rest"
+final_url: "https://www.home-assistant.io/integrations/sensor.rest"
+canonical_url: "https://www.home-assistant.io/integrations/sensor.rest/"
+source_handle: "web:www-home-assistant-io:1d4735d2e4bb"
+source_section: "integrations-sensor-rest"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9a42d6f846a3d50c4e1c4c6e6a919d329bfa2da10c8be0212ceb37ac0cce00b9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RESTful Sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smart_rollos"
+final_url: "https://www.home-assistant.io/integrations/smart_rollos"
+canonical_url: "https://www.home-assistant.io/integrations/smart_rollos/"
+source_handle: "web:www-home-assistant-io:4079620835b5"
+source_section: "integrations-smart-rollos"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d8491919c3cd104a73cacb7c88a4c16bfa96baf03ea93745184e1f1175102e09"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Smart Rollos - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

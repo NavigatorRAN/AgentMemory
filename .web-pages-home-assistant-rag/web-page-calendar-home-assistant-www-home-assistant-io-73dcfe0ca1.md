@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/calendar"
+final_url: "https://www.home-assistant.io/integrations/calendar"
+canonical_url: "https://www.home-assistant.io/integrations/calendar/"
+source_handle: "web:www-home-assistant-io:73dcfe0ca165"
+source_section: "integrations-calendar"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "afa77172742a16e895b57e1e0f46a30b1c497784963636611e65053a4d425d0e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Calendar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/peco"
+final_url: "https://www.home-assistant.io/integrations/peco"
+canonical_url: "https://www.home-assistant.io/integrations/peco/"
+source_handle: "web:www-home-assistant-io:8eef3e0c3fdb"
+source_section: "integrations-peco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fa36455e6b671fa1829ee7f2710ece8ba92877ca0af99ed9a549c41ede973dc0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PECO Outage Counter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

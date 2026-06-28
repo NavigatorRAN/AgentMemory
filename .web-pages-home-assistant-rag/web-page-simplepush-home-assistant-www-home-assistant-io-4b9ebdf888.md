@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/simplepush"
+final_url: "https://www.home-assistant.io/integrations/simplepush"
+canonical_url: "https://www.home-assistant.io/integrations/simplepush/"
+source_handle: "web:www-home-assistant-io:4b9ebdf888ab"
+source_section: "integrations-simplepush"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3536e5f576368041a2845b86c01deb52de4091c5f3217367c79b5cf32b913ff9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Simplepush - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

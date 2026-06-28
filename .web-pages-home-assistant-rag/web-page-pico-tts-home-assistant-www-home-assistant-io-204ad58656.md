@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/picotts"
+final_url: "https://www.home-assistant.io/integrations/picotts"
+canonical_url: "https://www.home-assistant.io/integrations/picotts/"
+source_handle: "web:www-home-assistant-io:204ad58656b3"
+source_section: "integrations-picotts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "daad5904da2c486bb1c1dfc53138621c8e4e2c6fb55580cf308d3fbc9459ca2a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pico TTS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

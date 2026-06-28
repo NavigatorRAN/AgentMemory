@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/torque"
+final_url: "https://www.home-assistant.io/integrations/torque"
+canonical_url: "https://www.home-assistant.io/integrations/torque/"
+source_handle: "web:www-home-assistant-io:ca7293d22bbb"
+source_section: "integrations-torque"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ffe9078e9826e6d3cd105ee4fec1ebac0a9be01d98247803f3c379eba4328c75"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Torque - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

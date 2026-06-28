@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/beewi_smartclim"
+final_url: "https://www.home-assistant.io/integrations/beewi_smartclim"
+canonical_url: "https://www.home-assistant.io/integrations/beewi_smartclim/"
+source_handle: "web:www-home-assistant-io:8dc14d898495"
+source_section: "integrations-beewi-smartclim"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5aa3f498ef6755d9e5cb5553df5edf8b057572415a47c03b9d8db2aa333221d3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BeeWi SmartClim BLE sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

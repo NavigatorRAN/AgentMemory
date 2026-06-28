@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/authentication/providers"
+final_url: "https://www.home-assistant.io/docs/authentication/providers"
+canonical_url: "https://www.home-assistant.io/docs/authentication/providers/"
+source_handle: "web:www-home-assistant-io:69307892d03e"
+source_section: "docs-authentication"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "27840d0f1aab5d3a23ebadf33292f5c56a2e4483bd853d707593aab5e455ebcd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Authentication providers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

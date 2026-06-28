@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lamarzocco"
+final_url: "https://www.home-assistant.io/integrations/lamarzocco"
+canonical_url: "https://www.home-assistant.io/integrations/lamarzocco/"
+source_handle: "web:www-home-assistant-io:06bb5b011d30"
+source_section: "integrations-lamarzocco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ccc2efe2609551985046411a496ff58da87284fb95df2d48eaf445c0699fe84a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # La Marzocco - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

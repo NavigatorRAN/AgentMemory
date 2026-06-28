@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yalexs_ble"
+final_url: "https://www.home-assistant.io/integrations/yalexs_ble"
+canonical_url: "https://www.home-assistant.io/integrations/yalexs_ble/"
+source_handle: "web:www-home-assistant-io:fe1dde644567"
+source_section: "integrations-yalexs-ble"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "50a43e6ddce55ab821f4b5400ff6e8e4cbc65f5e140b2e836deb36b881d95662"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Yale Access Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

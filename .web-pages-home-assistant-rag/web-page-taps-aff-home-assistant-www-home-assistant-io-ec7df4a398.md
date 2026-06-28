@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tapsaff"
+final_url: "https://www.home-assistant.io/integrations/tapsaff"
+canonical_url: "https://www.home-assistant.io/integrations/tapsaff/"
+source_handle: "web:www-home-assistant-io:ec7df4a39896"
+source_section: "integrations-tapsaff"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0e7e74695f311f535184ec683d96a7b10dd272dc71cf36b2d21cd42f65681bdc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Taps Aff - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

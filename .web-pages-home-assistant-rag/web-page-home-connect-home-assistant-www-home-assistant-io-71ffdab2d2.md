@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/home_connect"
+final_url: "https://www.home-assistant.io/integrations/home_connect"
+canonical_url: "https://www.home-assistant.io/integrations/home_connect/"
+source_handle: "web:www-home-assistant-io:71ffdab2d2b1"
+source_section: "integrations-home-connect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a15ffbbfd5547fef2c2c4a9a61b2112d4843149ff1bc134a9cafe4324031a728"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Connect - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cync"
+final_url: "https://www.home-assistant.io/integrations/cync"
+canonical_url: "https://www.home-assistant.io/integrations/cync/"
+source_handle: "web:www-home-assistant-io:acb3cc762aca"
+source_section: "integrations-cync"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1a25964032e51c7ac30d3590313e0d8c22b5f7b61bf407de1715339201db98bb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Cync - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

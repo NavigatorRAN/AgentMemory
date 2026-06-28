@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/custom_sentences"
+final_url: "https://www.home-assistant.io/voice_control/custom_sentences"
+canonical_url: "https://www.home-assistant.io/voice_control/custom_sentences/"
+source_handle: "web:www-home-assistant-io:b6a7fb938639"
+source_section: "voice-control-custom-sentences"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "76f8e8b44b8faf49c22aff87990e714b3c8864fbddaaa43d05f693cb801b294b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Adding a custom sentence to trigger an automation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/humidity"
+final_url: "https://www.home-assistant.io/integrations/humidity"
+canonical_url: "https://www.home-assistant.io/integrations/humidity/"
+source_handle: "web:www-home-assistant-io:243878f24b32"
+source_section: "integrations-humidity"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9b58467dc2fef7eba322177ec75d8f7f1727bd39e2bcbfbaa50995bfbcd5f12e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Humidity - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

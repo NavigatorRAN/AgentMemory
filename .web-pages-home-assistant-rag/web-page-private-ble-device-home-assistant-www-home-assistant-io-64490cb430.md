@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/private_ble_device"
+final_url: "https://www.home-assistant.io/integrations/private_ble_device"
+canonical_url: "https://www.home-assistant.io/integrations/private_ble_device/"
+source_handle: "web:www-home-assistant-io:64490cb430a4"
+source_section: "integrations-private-ble-device"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "11d5c02c6e002bb47284abc7b039f28e2c1e5e2fee4cec5d89f394d541ba9c20"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Private BLE Device - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

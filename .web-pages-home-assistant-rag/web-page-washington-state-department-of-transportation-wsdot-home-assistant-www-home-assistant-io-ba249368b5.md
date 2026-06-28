@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wsdot"
+final_url: "https://www.home-assistant.io/integrations/wsdot"
+canonical_url: "https://www.home-assistant.io/integrations/wsdot/"
+source_handle: "web:www-home-assistant-io:ba249368b5ad"
+source_section: "integrations-wsdot"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3d95fe6077310c4ea47261a63f11e8121ee78177aad0bd2363389e9743275afc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Washington State Department of Transportation (WSDOT) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

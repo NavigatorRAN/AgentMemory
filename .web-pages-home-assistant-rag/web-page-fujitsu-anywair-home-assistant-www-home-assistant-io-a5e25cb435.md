@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fujitsu_anywair"
+final_url: "https://www.home-assistant.io/integrations/fujitsu_anywair"
+canonical_url: "https://www.home-assistant.io/integrations/fujitsu_anywair/"
+source_handle: "web:www-home-assistant-io:a5e25cb43587"
+source_section: "integrations-fujitsu-anywair"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8d31148598c70a8840731947c3b60046e680953c1a556bd16b984ae64c4bfae1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fujitsu anywAIR - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

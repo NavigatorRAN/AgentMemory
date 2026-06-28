@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/voip"
+final_url: "https://www.home-assistant.io/integrations/voip"
+canonical_url: "https://www.home-assistant.io/integrations/voip/"
+source_handle: "web:www-home-assistant-io:9bd99db9f046"
+source_section: "integrations-voip"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "74ee5a8c80ebefaadec2c269b2511ce0110bc713afe10764d80ea721438d7fa3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Voice over IP - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

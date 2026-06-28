@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/edl21"
+final_url: "https://www.home-assistant.io/integrations/edl21"
+canonical_url: "https://www.home-assistant.io/integrations/edl21/"
+source_handle: "web:www-home-assistant-io:4a29673d5a67"
+source_section: "integrations-edl21"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b1c02a5638f1a3090e9529744a34fb8a8118ed9784dd7732f9bef56c23519017"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EDL21 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/moon"
+final_url: "https://www.home-assistant.io/integrations/moon"
+canonical_url: "https://www.home-assistant.io/integrations/moon/"
+source_handle: "web:www-home-assistant-io:c8069cd3bb2b"
+source_section: "integrations-moon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1a3393c5dc7e3ae064228d6fc212b1b43e7b215973518cf7a924345c0011fc56"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Moon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

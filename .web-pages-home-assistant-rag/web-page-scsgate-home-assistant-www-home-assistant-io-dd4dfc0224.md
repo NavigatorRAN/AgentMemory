@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/scsgate"
+final_url: "https://www.home-assistant.io/integrations/scsgate"
+canonical_url: "https://www.home-assistant.io/integrations/scsgate/"
+source_handle: "web:www-home-assistant-io:dd4dfc0224c9"
+source_section: "integrations-scsgate"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "025fe9616a09afb3e1829824f7a3558d92b5026a94ff82f418bcc0011e1acc9c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # SCSGate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

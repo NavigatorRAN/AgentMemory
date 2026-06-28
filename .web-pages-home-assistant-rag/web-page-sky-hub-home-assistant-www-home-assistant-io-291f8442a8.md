@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sky_hub"
+final_url: "https://www.home-assistant.io/integrations/sky_hub"
+canonical_url: "https://www.home-assistant.io/integrations/sky_hub/"
+source_handle: "web:www-home-assistant-io:291f8442a8eb"
+source_section: "integrations-sky-hub"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0000dcf8b3663a26afe0040f26081741fc05b1d5f42f5a5a91dc799aa2e5eb2d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sky Hub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

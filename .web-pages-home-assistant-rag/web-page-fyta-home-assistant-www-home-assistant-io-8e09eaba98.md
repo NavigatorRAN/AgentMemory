@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fyta"
+final_url: "https://www.home-assistant.io/integrations/fyta"
+canonical_url: "https://www.home-assistant.io/integrations/fyta/"
+source_handle: "web:www-home-assistant-io:8e09eaba9833"
+source_section: "integrations-fyta"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e7d2428d5962b5305e85b18d70724c927da83db9870783760bffe94e0c3b108a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FYTA - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

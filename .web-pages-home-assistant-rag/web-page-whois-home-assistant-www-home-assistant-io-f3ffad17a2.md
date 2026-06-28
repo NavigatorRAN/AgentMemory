@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/whois"
+final_url: "https://www.home-assistant.io/integrations/whois"
+canonical_url: "https://www.home-assistant.io/integrations/whois/"
+source_handle: "web:www-home-assistant-io:f3ffad17a2c1"
+source_section: "integrations-whois"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b373ea22a42e65eba7752724ebd3a1e1357e0fa48bd65370f9df266f91beb87e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Whois - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

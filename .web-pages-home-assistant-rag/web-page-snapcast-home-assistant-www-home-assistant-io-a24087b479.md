@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/snapcast"
+final_url: "https://www.home-assistant.io/integrations/snapcast"
+canonical_url: "https://www.home-assistant.io/integrations/snapcast/"
+source_handle: "web:www-home-assistant-io:a24087b47960"
+source_section: "integrations-snapcast"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "68e113870a6fd863cef2f76f9f45c53efa6dd527abf2777431eed691a69588e2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Snapcast - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

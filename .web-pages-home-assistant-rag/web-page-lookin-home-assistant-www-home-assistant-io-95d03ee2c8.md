@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lookin"
+final_url: "https://www.home-assistant.io/integrations/lookin"
+canonical_url: "https://www.home-assistant.io/integrations/lookin/"
+source_handle: "web:www-home-assistant-io:95d03ee2c84b"
+source_section: "integrations-lookin"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2332240849035c2e5b5fb06515fdb1d3d4cf906f54844200847c66ddfc56f18c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LOOKin - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

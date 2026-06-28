@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/acmeda"
+final_url: "https://www.home-assistant.io/integrations/acmeda"
+canonical_url: "https://www.home-assistant.io/integrations/acmeda/"
+source_handle: "web:www-home-assistant-io:78529d582a97"
+source_section: "integrations-acmeda"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a91ca11f5b9521ab91bcea40b43237e317b7f961fbfc1557698f7e0954f1aab8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rollease Acmeda Automate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

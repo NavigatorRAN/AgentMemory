@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/prowl"
+final_url: "https://www.home-assistant.io/integrations/prowl"
+canonical_url: "https://www.home-assistant.io/integrations/prowl/"
+source_handle: "web:www-home-assistant-io:125275cb8018"
+source_section: "integrations-prowl"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7f7c28fdc00009bfea865eb27b9fbceb550fa66bedc07ff15100c2d2a5ff24c1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Prowl - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

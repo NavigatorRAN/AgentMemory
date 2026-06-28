@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nfandroidtv"
+final_url: "https://www.home-assistant.io/integrations/nfandroidtv"
+canonical_url: "https://www.home-assistant.io/integrations/nfandroidtv/"
+source_handle: "web:www-home-assistant-io:4f112b6764fa"
+source_section: "integrations-nfandroidtv"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f25e7f0dad8a51d6a1d57ba8d982cbd55c13acc5afcaae6dfad5792959115480"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Notifications for Android TV / Fire TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

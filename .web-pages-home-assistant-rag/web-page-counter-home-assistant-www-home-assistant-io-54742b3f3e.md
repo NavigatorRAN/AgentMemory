@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/counter"
+final_url: "https://www.home-assistant.io/integrations/counter"
+canonical_url: "https://www.home-assistant.io/integrations/counter/"
+source_handle: "web:www-home-assistant-io:54742b3f3e84"
+source_section: "integrations-counter"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "53837126cb8f676d868ba7363d31245b471563d371de1cf39658df7542098395"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Counter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

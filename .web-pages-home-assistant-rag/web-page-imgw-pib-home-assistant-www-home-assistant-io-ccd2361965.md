@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/imgw_pib"
+final_url: "https://www.home-assistant.io/integrations/imgw_pib"
+canonical_url: "https://www.home-assistant.io/integrations/imgw_pib/"
+source_handle: "web:www-home-assistant-io:ccd23619653a"
+source_section: "integrations-imgw-pib"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5c8b0126ebf84e6de46781ca08dffd4c382b1153ad4ab80a237c172707d00f54"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IMGW-PIB - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

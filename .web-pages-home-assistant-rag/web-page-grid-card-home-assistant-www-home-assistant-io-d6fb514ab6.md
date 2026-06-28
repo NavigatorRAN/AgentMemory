@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/grid"
+final_url: "https://www.home-assistant.io/dashboards/grid"
+canonical_url: "https://www.home-assistant.io/dashboards/grid/"
+source_handle: "web:www-home-assistant-io:d6fb514ab674"
+source_section: "dashboards-grid"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c458519fa21e4ff05adac2fe0a9372032c078f35dc397a480d5d95bb7c79556f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Grid card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

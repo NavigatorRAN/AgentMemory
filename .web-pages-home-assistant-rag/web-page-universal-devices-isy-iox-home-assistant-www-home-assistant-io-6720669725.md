@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/isy994"
+final_url: "https://www.home-assistant.io/integrations/isy994"
+canonical_url: "https://www.home-assistant.io/integrations/isy994/"
+source_handle: "web:www-home-assistant-io:6720669725b0"
+source_section: "integrations-isy994"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c9afdd75bbb7bb7cbe4bcfc009913c3a08616acf57b4f1b9dfb4ccb31c05d3c7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Universal Devices ISY/IoX - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/econet"
+final_url: "https://www.home-assistant.io/integrations/econet"
+canonical_url: "https://www.home-assistant.io/integrations/econet/"
+source_handle: "web:www-home-assistant-io:b460d18af9c0"
+source_section: "integrations-econet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4f8f1dda591c85f4ac22853aa86e4b81fdd5bd1e55e4a908f4257e43cbd37dd9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rheem EcoNet Products - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

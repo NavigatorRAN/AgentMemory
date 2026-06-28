@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/emoncms_history"
+final_url: "https://www.home-assistant.io/integrations/emoncms_history"
+canonical_url: "https://www.home-assistant.io/integrations/emoncms_history/"
+source_handle: "web:www-home-assistant-io:c89dc8827530"
+source_section: "integrations-emoncms-history"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7be723129adab132288fc950f5979efe27a40f04b6c349f398b18948cfb4fd97"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Emoncms History - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

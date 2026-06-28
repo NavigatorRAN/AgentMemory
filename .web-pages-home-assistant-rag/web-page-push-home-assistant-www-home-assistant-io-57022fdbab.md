@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/push"
+final_url: "https://www.home-assistant.io/integrations/push"
+canonical_url: "https://www.home-assistant.io/integrations/push/"
+source_handle: "web:www-home-assistant-io:57022fdbab2f"
+source_section: "integrations-push"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0f81dbd9efcfff5989142338edcca0e2afb4cedd429ed0b15ed751187c4f0fc0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Push - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

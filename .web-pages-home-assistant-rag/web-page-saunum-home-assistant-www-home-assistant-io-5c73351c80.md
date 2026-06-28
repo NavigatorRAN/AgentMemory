@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/saunum"
+final_url: "https://www.home-assistant.io/integrations/saunum"
+canonical_url: "https://www.home-assistant.io/integrations/saunum/"
+source_handle: "web:www-home-assistant-io:5c73351c8004"
+source_section: "integrations-saunum"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6add547a257bfc69a4ce4054280a94d50505170f33175972931d03605ebf6763"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Saunum - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

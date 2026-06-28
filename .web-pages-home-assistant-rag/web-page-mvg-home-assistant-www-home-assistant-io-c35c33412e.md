@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mvglive"
+final_url: "https://www.home-assistant.io/integrations/mvglive"
+canonical_url: "https://www.home-assistant.io/integrations/mvglive/"
+source_handle: "web:www-home-assistant-io:c35c33412eac"
+source_section: "integrations-mvglive"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a0d3a51ab8410dd18df6cad6f0cd7fa890821678a48c6b3841a1b303fc451f35"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MVG - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

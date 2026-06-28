@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/denon"
+final_url: "https://www.home-assistant.io/integrations/denon"
+canonical_url: "https://www.home-assistant.io/integrations/denon/"
+source_handle: "web:www-home-assistant-io:97731db7ce2b"
+source_section: "integrations-denon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "441238ea366616854ffdd84df9e4c86cc9aeccbab8489a2a4172e590fbaded21"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Denon Network Receivers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

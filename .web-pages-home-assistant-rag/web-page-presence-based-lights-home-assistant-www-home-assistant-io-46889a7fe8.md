@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/device_sun_light_trigger"
+final_url: "https://www.home-assistant.io/integrations/device_sun_light_trigger"
+canonical_url: "https://www.home-assistant.io/integrations/device_sun_light_trigger/"
+source_handle: "web:www-home-assistant-io:46889a7fe802"
+source_section: "integrations-device-sun-light-trigger"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ba65274ac54cd87cc833893ae82936ee8408d834505fc6bd7debfd9ec941e772"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Presence-based lights - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

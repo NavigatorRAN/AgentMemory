@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_weather"
+final_url: "https://www.home-assistant.io/integrations/google_weather"
+canonical_url: "https://www.home-assistant.io/integrations/google_weather/"
+source_handle: "web:www-home-assistant-io:06166fb643fa"
+source_section: "integrations-google-weather"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9c4020cd7167b4008b51d5bfcf453a04f2ac8e15726dea55adb23c8b79735e02"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Weather - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sleepiq"
+final_url: "https://www.home-assistant.io/integrations/sleepiq"
+canonical_url: "https://www.home-assistant.io/integrations/sleepiq/"
+source_handle: "web:www-home-assistant-io:b6a0642e6a2a"
+source_section: "integrations-sleepiq"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e0d4e81e3b74c631dc9d2cb50cba41bb6853b1bb49485d91ad59be6ad431c47b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SleepIQ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

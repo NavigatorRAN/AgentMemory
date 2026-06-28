@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/electrasmart"
+final_url: "https://www.home-assistant.io/integrations/electrasmart"
+canonical_url: "https://www.home-assistant.io/integrations/electrasmart/"
+source_handle: "web:www-home-assistant-io:024028546e18"
+source_section: "integrations-electrasmart"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c61647800a2a178a8a1562257fd35c4c1b252fbdf74d7d67744e9153380a0247"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Electra Smart - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

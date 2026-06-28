@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vacuum"
+final_url: "https://www.home-assistant.io/integrations/vacuum"
+canonical_url: "https://www.home-assistant.io/integrations/vacuum/"
+source_handle: "web:www-home-assistant-io:ef2a8edf1f68"
+source_section: "integrations-vacuum"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b16243a96cc156077c7b7b9698e34627dcf4b0d80f7e5bc512c7089376aae8b4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Vacuum - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

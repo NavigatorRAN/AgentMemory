@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/surepetcare"
+final_url: "https://www.home-assistant.io/integrations/surepetcare"
+canonical_url: "https://www.home-assistant.io/integrations/surepetcare/"
+source_handle: "web:www-home-assistant-io:2dcb52bdf8d7"
+source_section: "integrations-surepetcare"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3c5f0b3f287f94f2d5537aca68db6b0f2cfea96e4c555d9540ffd2868d4dfd3b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sure Petcare - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

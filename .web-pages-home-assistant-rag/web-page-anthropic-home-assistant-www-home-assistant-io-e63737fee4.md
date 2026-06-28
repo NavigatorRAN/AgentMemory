@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/anthropic"
+final_url: "https://www.home-assistant.io/integrations/anthropic"
+canonical_url: "https://www.home-assistant.io/integrations/anthropic/"
+source_handle: "web:www-home-assistant-io:e63737fee46c"
+source_section: "integrations-anthropic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "494d953c88003d4dcd8c97803fbbb9f318eb20aa0730a4b5f13e04dd82f5a44d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Anthropic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

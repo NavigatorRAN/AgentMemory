@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/trmnl"
+final_url: "https://www.home-assistant.io/integrations/trmnl"
+canonical_url: "https://www.home-assistant.io/integrations/trmnl/"
+source_handle: "web:www-home-assistant-io:abd77b3f19c7"
+source_section: "integrations-trmnl"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "615d8c1393d7f7bae28ae135cd3dd91bd16e0af3f4ebbf3358e56b8a1cd6a47f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # TRMNL - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

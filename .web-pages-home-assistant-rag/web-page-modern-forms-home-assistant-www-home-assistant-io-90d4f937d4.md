@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/modern_forms"
+final_url: "https://www.home-assistant.io/integrations/modern_forms"
+canonical_url: "https://www.home-assistant.io/integrations/modern_forms/"
+source_handle: "web:www-home-assistant-io:90d4f937d498"
+source_section: "integrations-modern-forms"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b12cda3288bdc8f8d595918f82c26342973f9d3ba7b1f11f1d44e34f919741fa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Modern Forms - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

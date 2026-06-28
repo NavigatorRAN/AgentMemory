@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hegel"
+final_url: "https://www.home-assistant.io/integrations/hegel"
+canonical_url: "https://www.home-assistant.io/integrations/hegel/"
+source_handle: "web:www-home-assistant-io:d1fc776668c0"
+source_section: "integrations-hegel"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9ae40021e0c83da3654aa02398f3e7c7d88331b35fc2594125ec83506061ff6c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Hegel Amplifier - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

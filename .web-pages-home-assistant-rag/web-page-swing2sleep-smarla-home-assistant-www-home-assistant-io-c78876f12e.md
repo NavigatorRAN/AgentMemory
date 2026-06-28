@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smarla"
+final_url: "https://www.home-assistant.io/integrations/smarla"
+canonical_url: "https://www.home-assistant.io/integrations/smarla/"
+source_handle: "web:www-home-assistant-io:c78876f12ead"
+source_section: "integrations-smarla"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "211173a976ab0a842ab26848c344f034e31fec5e5185a6f5ddcabc9252272249"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Swing2Sleep Smarla - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

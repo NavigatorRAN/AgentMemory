@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rainmachine"
+final_url: "https://www.home-assistant.io/integrations/rainmachine"
+canonical_url: "https://www.home-assistant.io/integrations/rainmachine/"
+source_handle: "web:www-home-assistant-io:0b5b137f5f79"
+source_section: "integrations-rainmachine"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5412fba711f74b8e3057696cd3dd9343b4b59949b255b7e256a1c0d86b43c8e1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RainMachine - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

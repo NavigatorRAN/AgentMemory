@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tellstick"
+final_url: "https://www.home-assistant.io/integrations/tellstick"
+canonical_url: "https://www.home-assistant.io/integrations/tellstick/"
+source_handle: "web:www-home-assistant-io:478fd9432f0d"
+source_section: "integrations-tellstick"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a4782ab268de1ff879a9de6af9ada0863603d326db82ce4ec51786a111950d0d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # TellStick - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

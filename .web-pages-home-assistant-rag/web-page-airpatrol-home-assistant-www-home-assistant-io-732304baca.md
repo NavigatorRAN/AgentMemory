@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airpatrol"
+final_url: "https://www.home-assistant.io/integrations/airpatrol"
+canonical_url: "https://www.home-assistant.io/integrations/airpatrol/"
+source_handle: "web:www-home-assistant-io:732304baca3f"
+source_section: "integrations-airpatrol"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "455e0aaade447d06b1139fe8ea90a4464007966c9c78c82ed4b17421af69c919"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AirPatrol - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

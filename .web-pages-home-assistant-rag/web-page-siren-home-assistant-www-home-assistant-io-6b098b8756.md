@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/siren"
+final_url: "https://www.home-assistant.io/integrations/siren"
+canonical_url: "https://www.home-assistant.io/integrations/siren/"
+source_handle: "web:www-home-assistant-io:6b098b87566e"
+source_section: "integrations-siren"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7095c93897cc0107639c724d22c754e0902fb35b87d87e1db194adf3f93e062a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Siren - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

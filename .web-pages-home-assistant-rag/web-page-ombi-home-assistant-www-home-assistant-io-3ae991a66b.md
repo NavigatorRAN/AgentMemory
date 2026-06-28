@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ombi"
+final_url: "https://www.home-assistant.io/integrations/ombi"
+canonical_url: "https://www.home-assistant.io/integrations/ombi/"
+source_handle: "web:www-home-assistant-io:3ae991a66b63"
+source_section: "integrations-ombi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3c3008ab156869533055fdb28032e60a5ed1d79331ff21db283df3d0d779a60b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ombi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

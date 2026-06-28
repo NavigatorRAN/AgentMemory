@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/loops-and-conditions"
+final_url: "https://www.home-assistant.io/docs/templating/loops-and-conditions"
+canonical_url: "https://www.home-assistant.io/docs/templating/loops-and-conditions/"
+source_handle: "web:www-home-assistant-io:72ec50083935"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "81c1c3ce0372f0068f4a9b950b568d7549bb274139f743e481ec5c5399a949b7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Loops and conditions - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/upcloud"
+final_url: "https://www.home-assistant.io/integrations/upcloud"
+canonical_url: "https://www.home-assistant.io/integrations/upcloud/"
+source_handle: "web:www-home-assistant-io:2d0b641c4d6e"
+source_section: "integrations-upcloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b37524ffa9773f2abc8d579dcb57b6beb2a1c7e14b3380957db6fb8ff491af1d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UpCloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

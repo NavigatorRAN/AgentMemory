@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cloudflare"
+final_url: "https://www.home-assistant.io/integrations/cloudflare"
+canonical_url: "https://www.home-assistant.io/integrations/cloudflare/"
+source_handle: "web:www-home-assistant-io:3f4167ab0442"
+source_section: "integrations-cloudflare"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0fcdb31f8d4b0f0fc9742958ab96932b260e1b2d8d210153750ffda97f5b515a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Cloudflare - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

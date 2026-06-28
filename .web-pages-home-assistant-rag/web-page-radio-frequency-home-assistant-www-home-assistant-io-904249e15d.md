@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/radio_frequency"
+final_url: "https://www.home-assistant.io/integrations/radio_frequency"
+canonical_url: "https://www.home-assistant.io/integrations/radio_frequency/"
+source_handle: "web:www-home-assistant-io:904249e15d42"
+source_section: "integrations-radio-frequency"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "42f85f64df10687b384366b7a8dd192c8d39342133beb8b5f6790549bb30982d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Radio frequency - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

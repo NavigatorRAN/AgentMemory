@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/manual"
+final_url: "https://www.home-assistant.io/integrations/manual"
+canonical_url: "https://www.home-assistant.io/integrations/manual/"
+source_handle: "web:www-home-assistant-io:c1dfe0d99c64"
+source_section: "integrations-manual"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "56f6ec963b168c4c793a0280841f4b3bc35a336005668f2f02814b4d7146d2c8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Manual Alarm control panel - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

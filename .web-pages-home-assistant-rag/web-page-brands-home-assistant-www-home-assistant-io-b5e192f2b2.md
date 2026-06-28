@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/brands"
+final_url: "https://www.home-assistant.io/integrations/brands"
+canonical_url: "https://www.home-assistant.io/integrations/brands/"
+source_handle: "web:www-home-assistant-io:b5e192f2b2fb"
+source_section: "integrations-brands"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "be90191144c0c7e3729afb4765068b1e8c05ef8c1ec0cb7d0815c0db8ce1358b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Brands - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

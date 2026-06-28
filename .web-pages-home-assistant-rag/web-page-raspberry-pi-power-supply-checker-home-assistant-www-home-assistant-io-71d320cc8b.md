@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rpi_power"
+final_url: "https://www.home-assistant.io/integrations/rpi_power"
+canonical_url: "https://www.home-assistant.io/integrations/rpi_power/"
+source_handle: "web:www-home-assistant-io:71d320cc8bbf"
+source_section: "integrations-rpi-power"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "939cd1a9166a6ae997df70cf70bb34880e4cf90b7ba19808a1df0878551aa0ab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Raspberry Pi Power Supply Checker - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

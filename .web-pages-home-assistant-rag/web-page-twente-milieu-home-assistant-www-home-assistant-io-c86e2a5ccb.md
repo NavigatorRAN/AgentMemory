@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/twentemilieu"
+final_url: "https://www.home-assistant.io/integrations/twentemilieu"
+canonical_url: "https://www.home-assistant.io/integrations/twentemilieu/"
+source_handle: "web:www-home-assistant-io:c86e2a5ccbb8"
+source_section: "integrations-twentemilieu"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1047ef5dd28c59ae59dd3d06706928b78fa7921fd5e70007bfb1de5c446bba9c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Twente Milieu - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

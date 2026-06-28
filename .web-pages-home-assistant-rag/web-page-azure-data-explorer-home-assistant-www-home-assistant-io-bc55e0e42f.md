@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/azure_data_explorer"
+final_url: "https://www.home-assistant.io/integrations/azure_data_explorer"
+canonical_url: "https://www.home-assistant.io/integrations/azure_data_explorer/"
+source_handle: "web:www-home-assistant-io:bc55e0e42fbc"
+source_section: "integrations-azure-data-explorer"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7b49f6dd9d53d8b3a28e7fbfd198dd3778d7b4f38cbbe0f4d1570cde29991120"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Azure Data Explorer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/upnp"
+final_url: "https://www.home-assistant.io/integrations/upnp"
+canonical_url: "https://www.home-assistant.io/integrations/upnp/"
+source_handle: "web:www-home-assistant-io:c251e76da102"
+source_section: "integrations-upnp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "95f1688cdb9d8485933f78cca10c8673d35815b66b7228a3e032ff42c8182460"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UPnP/IGD - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

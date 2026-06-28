@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dlink"
+final_url: "https://www.home-assistant.io/integrations/dlink"
+canonical_url: "https://www.home-assistant.io/integrations/dlink/"
+source_handle: "web:www-home-assistant-io:7a601eae3363"
+source_section: "integrations-dlink"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "17c72eaa29f6eb2f4a368cd06ba928f76f75d3a08f54b33193d4341fdfa5c995"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # D-Link Wi-Fi Smart Plugs - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

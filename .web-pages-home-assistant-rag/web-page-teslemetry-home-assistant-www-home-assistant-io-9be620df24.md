@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/teslemetry"
+final_url: "https://www.home-assistant.io/integrations/teslemetry"
+canonical_url: "https://www.home-assistant.io/integrations/teslemetry/"
+source_handle: "web:www-home-assistant-io:9be620df24cb"
+source_section: "integrations-teslemetry"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb3548194de0fb032306bbe98edd82dda30e5e2cb618620c0a6a888f7ef5a7f6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Teslemetry - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smarty"
+final_url: "https://www.home-assistant.io/integrations/smarty"
+canonical_url: "https://www.home-assistant.io/integrations/smarty/"
+source_handle: "web:www-home-assistant-io:db3981af35b2"
+source_section: "integrations-smarty"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5192fecf2e6a0fce8e64fb7c417ed89f3a885ac65faaffdbaf2e452521fef631"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Salda Smarty - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

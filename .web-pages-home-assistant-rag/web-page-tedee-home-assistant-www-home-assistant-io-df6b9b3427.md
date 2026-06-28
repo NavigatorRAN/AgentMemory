@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tedee"
+final_url: "https://www.home-assistant.io/integrations/tedee"
+canonical_url: "https://www.home-assistant.io/integrations/tedee/"
+source_handle: "web:www-home-assistant-io:df6b9b342789"
+source_section: "integrations-tedee"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "170325fe9254ec7e39cf996d11a35c2f0fe0cf9bb654491fc94fb710492fa21a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tedee - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

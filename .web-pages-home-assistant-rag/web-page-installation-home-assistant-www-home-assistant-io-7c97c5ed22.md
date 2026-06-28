@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation"
+final_url: "https://www.home-assistant.io/installation"
+canonical_url: "https://www.home-assistant.io/installation/"
+source_handle: "web:www-home-assistant-io:7c97c5ed22bd"
+source_section: "installation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5cbf9bb6f5929099f045d4957137ae9f042028dd16ece2f91e3d272ecc1810de"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Installation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

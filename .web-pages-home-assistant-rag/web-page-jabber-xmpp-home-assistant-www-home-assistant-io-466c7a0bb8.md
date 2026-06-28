@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/xmpp"
+final_url: "https://www.home-assistant.io/integrations/xmpp"
+canonical_url: "https://www.home-assistant.io/integrations/xmpp/"
+source_handle: "web:www-home-assistant-io:466c7a0bb8cf"
+source_section: "integrations-xmpp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bff3f56c74d8c83c838db79a19bb7f3bd8eddcd3fe00cfd6c5a765095ba893ed"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Jabber (XMPP) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

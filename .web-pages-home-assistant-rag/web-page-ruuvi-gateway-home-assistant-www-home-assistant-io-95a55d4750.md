@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ruuvi_gateway"
+final_url: "https://www.home-assistant.io/integrations/ruuvi_gateway"
+canonical_url: "https://www.home-assistant.io/integrations/ruuvi_gateway/"
+source_handle: "web:www-home-assistant-io:95a55d475075"
+source_section: "integrations-ruuvi-gateway"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fdbc8ba1224613f9c2901cd051995aa78e1f78cb52b6bbe9238c84635605edb7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ruuvi Gateway - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

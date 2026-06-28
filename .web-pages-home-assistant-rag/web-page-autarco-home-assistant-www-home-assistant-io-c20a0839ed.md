@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/autarco"
+final_url: "https://www.home-assistant.io/integrations/autarco"
+canonical_url: "https://www.home-assistant.io/integrations/autarco/"
+source_handle: "web:www-home-assistant-io:c20a0839edc7"
+source_section: "integrations-autarco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "302ad75c7268fbd163eed55ec01632a91a258c5bd6c065feb4a7b9f056542cd3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Autarco - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

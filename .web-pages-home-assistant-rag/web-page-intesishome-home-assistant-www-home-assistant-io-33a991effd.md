@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/intesishome"
+final_url: "https://www.home-assistant.io/integrations/intesishome"
+canonical_url: "https://www.home-assistant.io/integrations/intesishome/"
+source_handle: "web:www-home-assistant-io:33a991effdde"
+source_section: "integrations-intesishome"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "253d4cecb5aede401dd6050580c70e87a54cca40636c7173024e286546f0956f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IntesisHome - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

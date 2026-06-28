@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/decorquip"
+final_url: "https://www.home-assistant.io/integrations/decorquip"
+canonical_url: "https://www.home-assistant.io/integrations/decorquip/"
+source_handle: "web:www-home-assistant-io:bcbff95fa6b3"
+source_section: "integrations-decorquip"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3d93ae9b9cc06612e48ef13323dcbdfd1c8dd491411607f670213f62270df150"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Decorquip Dream - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

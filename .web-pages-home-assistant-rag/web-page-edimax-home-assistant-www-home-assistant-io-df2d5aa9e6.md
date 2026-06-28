@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/edimax"
+final_url: "https://www.home-assistant.io/integrations/edimax"
+canonical_url: "https://www.home-assistant.io/integrations/edimax/"
+source_handle: "web:www-home-assistant-io:df2d5aa9e6d3"
+source_section: "integrations-edimax"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c267726cf6071d31b27197806525a4fee386809122981c9b1afbec108020c9ec"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Edimax - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

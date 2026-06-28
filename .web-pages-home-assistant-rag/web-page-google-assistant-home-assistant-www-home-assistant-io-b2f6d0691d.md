@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_assistant"
+final_url: "https://www.home-assistant.io/integrations/google_assistant"
+canonical_url: "https://www.home-assistant.io/integrations/google_assistant/"
+source_handle: "web:www-home-assistant-io:b2f6d0691d1f"
+source_section: "integrations-google-assistant"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "785c87bdd00bb8980d2ddb108e3e472bf2cad01a3d348302859d3a316bf15543"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

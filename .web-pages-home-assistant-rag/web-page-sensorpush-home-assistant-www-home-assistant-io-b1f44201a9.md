@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensorpush"
+final_url: "https://www.home-assistant.io/integrations/sensorpush"
+canonical_url: "https://www.home-assistant.io/integrations/sensorpush/"
+source_handle: "web:www-home-assistant-io:b1f44201a9c5"
+source_section: "integrations-sensorpush"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "47004dbdb903c6a49e9274ccc355dd29f3217683c651feb60737afe9b0c1af14"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SensorPush - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

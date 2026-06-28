@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/release"
+final_url: "https://www.home-assistant.io/faq/release"
+canonical_url: "https://www.home-assistant.io/faq/release/"
+source_handle: "web:www-home-assistant-io:36f2e18ddd93"
+source_section: "faq-release"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5ad86ca89fb2b080bb659996f05b9706079413d11512e111d212b39c5db63cab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # When is the next Home Assistant release? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

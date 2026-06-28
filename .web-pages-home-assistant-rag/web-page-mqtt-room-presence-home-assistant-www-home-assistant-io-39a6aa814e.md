@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mqtt_room"
+final_url: "https://www.home-assistant.io/integrations/mqtt_room"
+canonical_url: "https://www.home-assistant.io/integrations/mqtt_room/"
+source_handle: "web:www-home-assistant-io:39a6aa814e23"
+source_section: "integrations-mqtt-room"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e8b7f3139a7099c1aba8038c819a35d3526cf53d2de7f512ebef10e8481c6e14"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MQTT room presence - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

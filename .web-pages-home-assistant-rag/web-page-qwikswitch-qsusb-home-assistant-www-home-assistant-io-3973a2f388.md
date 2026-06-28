@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/qwikswitch"
+final_url: "https://www.home-assistant.io/integrations/qwikswitch"
+canonical_url: "https://www.home-assistant.io/integrations/qwikswitch/"
+source_handle: "web:www-home-assistant-io:3973a2f38895"
+source_section: "integrations-qwikswitch"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "41a9089076cfcf050dd260e40140787e950ca3d153c97602045b5a4b80235889"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # QwikSwitch QSUSB - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sfr_box"
+final_url: "https://www.home-assistant.io/integrations/sfr_box"
+canonical_url: "https://www.home-assistant.io/integrations/sfr_box/"
+source_handle: "web:www-home-assistant-io:2df3efeb0e99"
+source_section: "integrations-sfr-box"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8d8ff2b06d522583505bc5bc46d646a55cef2c79cb91877025b51aa97f4bde56"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SFR Box - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

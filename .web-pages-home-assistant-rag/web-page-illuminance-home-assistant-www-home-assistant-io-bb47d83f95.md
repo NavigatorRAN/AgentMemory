@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/illuminance"
+final_url: "https://www.home-assistant.io/integrations/illuminance"
+canonical_url: "https://www.home-assistant.io/integrations/illuminance/"
+source_handle: "web:www-home-assistant-io:bb47d83f955a"
+source_section: "integrations-illuminance"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a1d43c663df6966cbf8f709fb9863d9617e15f3788d86ae242d3ecc61e6151d6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Illuminance - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

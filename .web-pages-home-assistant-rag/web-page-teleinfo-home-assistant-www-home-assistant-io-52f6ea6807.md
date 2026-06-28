@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/teleinfo"
+final_url: "https://www.home-assistant.io/integrations/teleinfo"
+canonical_url: "https://www.home-assistant.io/integrations/teleinfo/"
+source_handle: "web:www-home-assistant-io:52f6ea680760"
+source_section: "integrations-teleinfo"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb99045a5d58c4b1245c279b3de7ef709afe97c81a78b05c7299381b51e987b9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Teleinfo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

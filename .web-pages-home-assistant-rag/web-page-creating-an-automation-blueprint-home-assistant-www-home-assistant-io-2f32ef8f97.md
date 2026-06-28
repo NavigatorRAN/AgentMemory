@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/blueprint/tutorial"
+final_url: "https://www.home-assistant.io/docs/blueprint/tutorial"
+canonical_url: "https://www.home-assistant.io/docs/blueprint/tutorial/"
+source_handle: "web:www-home-assistant-io:2f32ef8f97ca"
+source_section: "docs-blueprint"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "64e1daceba04fb99a049d58bb98b8a2f799a5eaee8643762c9ff86190cabd538"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Creating an automation blueprint - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

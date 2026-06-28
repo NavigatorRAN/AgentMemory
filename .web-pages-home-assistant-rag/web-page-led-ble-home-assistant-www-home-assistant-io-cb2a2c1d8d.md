@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/led_ble"
+final_url: "https://www.home-assistant.io/integrations/led_ble"
+canonical_url: "https://www.home-assistant.io/integrations/led_ble/"
+source_handle: "web:www-home-assistant-io:cb2a2c1d8dac"
+source_section: "integrations-led-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e437b62d3f0f8c883b00e390aada98ab140545f9528a06a11c290a756dea4167"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LED BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/distribution"
+final_url: "https://www.home-assistant.io/dashboards/distribution"
+canonical_url: "https://www.home-assistant.io/dashboards/distribution/"
+source_handle: "web:www-home-assistant-io:558f5af4c5f9"
+source_section: "dashboards-distribution"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b4b56386414cb2b3234042899bfc4795ab6f2719d3bfc368b528aa30686de897"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Distribution card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

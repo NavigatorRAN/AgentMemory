@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/schedule"
+final_url: "https://www.home-assistant.io/integrations/schedule"
+canonical_url: "https://www.home-assistant.io/integrations/schedule/"
+source_handle: "web:www-home-assistant-io:412aa167ce14"
+source_section: "integrations-schedule"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6404eb20d138bd741bd0777fab98cffe1c07b95d62be20fbf25c8e1177fbd1fd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Schedule - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

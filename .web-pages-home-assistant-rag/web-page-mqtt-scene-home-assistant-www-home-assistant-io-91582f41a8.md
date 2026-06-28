@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/scene.mqtt"
+final_url: "https://www.home-assistant.io/integrations/scene.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/scene.mqtt/"
+source_handle: "web:www-home-assistant-io:91582f41a8c5"
+source_section: "integrations-scene-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "afeb9a60eee002b898e7ec3d9d82abdc9f9a5c9497c076aaac1cb2aede6b8358"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Scene - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/plant-status"
+final_url: "https://www.home-assistant.io/dashboards/plant-status"
+canonical_url: "https://www.home-assistant.io/dashboards/plant-status/"
+source_handle: "web:www-home-assistant-io:14851d0e779f"
+source_section: "dashboards-plant-status"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "72874aaf39428e54c865a8f8dd5a4efe11482a8f38b4d1ed37e3b836825ed267"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Plant status card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

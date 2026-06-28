@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/joaoapps_join"
+final_url: "https://www.home-assistant.io/integrations/joaoapps_join"
+canonical_url: "https://www.home-assistant.io/integrations/joaoapps_join/"
+source_handle: "web:www-home-assistant-io:2fa4b2e84b66"
+source_section: "integrations-joaoapps-join"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "997d5642c581dffe142f6ecbe46da648ccc3dd0ee61ca0a0f735c496eefcba46"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Joaoapps Join - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

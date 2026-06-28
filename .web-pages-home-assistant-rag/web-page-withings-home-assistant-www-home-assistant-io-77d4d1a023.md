@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/withings"
+final_url: "https://www.home-assistant.io/integrations/withings"
+canonical_url: "https://www.home-assistant.io/integrations/withings/"
+source_handle: "web:www-home-assistant-io:77d4d1a023c5"
+source_section: "integrations-withings"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d4981dac2ca66094288cc1ddc4bd0e397609f0382ea17f2365c51339fbd393e5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Withings - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

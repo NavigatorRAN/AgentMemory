@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/marytts"
+final_url: "https://www.home-assistant.io/integrations/marytts"
+canonical_url: "https://www.home-assistant.io/integrations/marytts/"
+source_handle: "web:www-home-assistant-io:bb2c7c4bbc51"
+source_section: "integrations-marytts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "35ea1e329173ffdf43199ef996ceb422b1d25a9267dae2625aa3820d15b0b04d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MaryTTS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

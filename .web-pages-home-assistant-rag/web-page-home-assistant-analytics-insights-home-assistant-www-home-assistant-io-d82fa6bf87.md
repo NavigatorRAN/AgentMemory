@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/analytics_insights"
+final_url: "https://www.home-assistant.io/integrations/analytics_insights"
+canonical_url: "https://www.home-assistant.io/integrations/analytics_insights/"
+source_handle: "web:www-home-assistant-io:d82fa6bf8775"
+source_section: "integrations-analytics-insights"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "20509ac39ae707649be9f01b6ac7d26cc8630882e7800f50b0e106312def2371"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Analytics Insights - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

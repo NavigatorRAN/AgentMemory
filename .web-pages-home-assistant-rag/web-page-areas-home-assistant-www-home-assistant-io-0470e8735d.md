@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/organizing/areas"
+final_url: "https://www.home-assistant.io/docs/organizing/areas"
+canonical_url: "https://www.home-assistant.io/docs/organizing/areas/"
+source_handle: "web:www-home-assistant-io:0470e8735dd5"
+source_section: "docs-organizing"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fab8651cc94a18af19cc1b751ea000bbd4578dc8fd4fdd86e32d5eb950818689"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Areas - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

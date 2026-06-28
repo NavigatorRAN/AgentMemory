@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/event.mqtt"
+final_url: "https://www.home-assistant.io/integrations/event.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/event.mqtt/"
+source_handle: "web:www-home-assistant-io:42f2b829a71e"
+source_section: "integrations-event-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c337b04d8b29e6912b8097e394afc943cf4a332a3f6d03c6d1a0357905ba4a98"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Event - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/everlights"
+final_url: "https://www.home-assistant.io/integrations/everlights"
+canonical_url: "https://www.home-assistant.io/integrations/everlights/"
+source_handle: "web:www-home-assistant-io:1426131b6afc"
+source_section: "integrations-everlights"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "808e8823435ca6a66dda053c99ee388a9c5c39401524b68bff53c31dfcd1070c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EverLights - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

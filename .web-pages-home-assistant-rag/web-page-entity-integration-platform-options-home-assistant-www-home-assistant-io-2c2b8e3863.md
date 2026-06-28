@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/platform_options"
+final_url: "https://www.home-assistant.io/docs/configuration/platform_options"
+canonical_url: "https://www.home-assistant.io/docs/configuration/platform_options/"
+source_handle: "web:www-home-assistant-io:2c2b8e386345"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0a0ea4cd0a01c2695553bc365412be14ac3b054a8c0940e8e0e6c9ac7e869d1e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Entity integration platform options - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

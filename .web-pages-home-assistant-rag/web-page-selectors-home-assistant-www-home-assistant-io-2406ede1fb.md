@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/blueprint/selectors"
+final_url: "https://www.home-assistant.io/docs/blueprint/selectors"
+canonical_url: "https://www.home-assistant.io/docs/blueprint/selectors/"
+source_handle: "web:www-home-assistant-io:2406ede1fbeb"
+source_section: "docs-blueprint"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "678a55c62e74948ecb6bada312a1df3849dbb2acd5526c8fb4e47ba1c7d2ce9c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Selectors - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

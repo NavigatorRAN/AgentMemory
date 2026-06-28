@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/matrix"
+final_url: "https://www.home-assistant.io/integrations/matrix"
+canonical_url: "https://www.home-assistant.io/integrations/matrix/"
+source_handle: "web:www-home-assistant-io:70cef9da76fc"
+source_section: "integrations-matrix"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bf4962110425720836feafadd8b333f790dc1d2ca9902a6f89da445156b8d904"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Matrix - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

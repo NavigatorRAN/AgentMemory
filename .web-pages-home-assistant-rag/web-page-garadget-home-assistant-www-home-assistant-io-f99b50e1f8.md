@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/garadget"
+final_url: "https://www.home-assistant.io/integrations/garadget"
+canonical_url: "https://www.home-assistant.io/integrations/garadget/"
+source_handle: "web:www-home-assistant-io:f99b50e1f8ac"
+source_section: "integrations-garadget"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "45160f74ef9d910d1da142bacf5744dbad2acbdc9abcf8b1e0497a6946f3fd06"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Garadget - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/freedns"
+final_url: "https://www.home-assistant.io/integrations/freedns"
+canonical_url: "https://www.home-assistant.io/integrations/freedns/"
+source_handle: "web:www-home-assistant-io:f71a405c3b6d"
+source_section: "integrations-freedns"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8d4825f51b80984ac72d214cd3c10e8d35eead5a2685d7a42612d49efe4c8ffd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FreeDNS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

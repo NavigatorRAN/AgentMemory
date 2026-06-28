@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/v2c"
+final_url: "https://www.home-assistant.io/integrations/v2c"
+canonical_url: "https://www.home-assistant.io/integrations/v2c/"
+source_handle: "web:www-home-assistant-io:eb5a6acea82e"
+source_section: "integrations-v2c"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6685e81fb568cc4513910f9c5b452a3f1354bb5a6f62580f9f2245db4bb991ab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # V2C - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

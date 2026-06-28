@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/honeywell"
+final_url: "https://www.home-assistant.io/integrations/honeywell"
+canonical_url: "https://www.home-assistant.io/integrations/honeywell/"
+source_handle: "web:www-home-assistant-io:295de182582b"
+source_section: "integrations-honeywell"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0cde9ceffa950fd96787cc98de78737af76d16d92ce795b25ee01fae57775177"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Honeywell Total Connect Comfort (US) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

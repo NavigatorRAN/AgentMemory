@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tesla_fleet"
+final_url: "https://www.home-assistant.io/integrations/tesla_fleet"
+canonical_url: "https://www.home-assistant.io/integrations/tesla_fleet/"
+source_handle: "web:www-home-assistant-io:760112428229"
+source_section: "integrations-tesla-fleet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4e5250af8a17a10d5647ecb8df9c9e943b4793846ad22b792895c38782689d9b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tesla Fleet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

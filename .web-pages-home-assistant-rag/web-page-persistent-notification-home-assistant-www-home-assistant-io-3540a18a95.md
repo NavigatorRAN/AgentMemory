@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/persistent_notification"
+final_url: "https://www.home-assistant.io/integrations/persistent_notification"
+canonical_url: "https://www.home-assistant.io/integrations/persistent_notification/"
+source_handle: "web:www-home-assistant-io:3540a18a9574"
+source_section: "integrations-persistent-notification"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7ec4e6671a8b037ff97cccc2d940d719514a12c00ce15b0124f8b61fbbd69bf8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Persistent Notification - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

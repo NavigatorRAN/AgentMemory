@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/slack"
+final_url: "https://www.home-assistant.io/integrations/slack"
+canonical_url: "https://www.home-assistant.io/integrations/slack/"
+source_handle: "web:www-home-assistant-io:1f2ec5baf31f"
+source_section: "integrations-slack"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "90be57fcd1cf0d4bdbafd92abb8d055bdd6b5322680660f018f21b4242ad8e5e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Slack - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

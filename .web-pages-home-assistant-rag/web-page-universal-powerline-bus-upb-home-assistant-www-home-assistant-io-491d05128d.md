@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/upb"
+final_url: "https://www.home-assistant.io/integrations/upb"
+canonical_url: "https://www.home-assistant.io/integrations/upb/"
+source_handle: "web:www-home-assistant-io:491d05128da7"
+source_section: "integrations-upb"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cb4d696476822c363d3be80bfae2c755dcb84d5f26d917b0558427bdf564e86b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Universal Powerline Bus (UPB) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

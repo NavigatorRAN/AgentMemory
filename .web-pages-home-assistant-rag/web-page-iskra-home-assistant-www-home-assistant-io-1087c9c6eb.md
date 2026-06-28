@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iskra"
+final_url: "https://www.home-assistant.io/integrations/iskra"
+canonical_url: "https://www.home-assistant.io/integrations/iskra/"
+source_handle: "web:www-home-assistant-io:1087c9c6eb7a"
+source_section: "integrations-iskra"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "330fe5489a192d7f1584871b67fae1f2c07a1d151dfa889f1a5ce427561bb03f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # iskra - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

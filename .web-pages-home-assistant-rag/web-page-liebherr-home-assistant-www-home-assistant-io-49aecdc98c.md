@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/liebherr"
+final_url: "https://www.home-assistant.io/integrations/liebherr"
+canonical_url: "https://www.home-assistant.io/integrations/liebherr/"
+source_handle: "web:www-home-assistant-io:49aecdc98c0a"
+source_section: "integrations-liebherr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1bdbd85959f8f4440b3df4d35719962dcc33fd01c94368aedd30d3c372130b87"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Liebherr - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

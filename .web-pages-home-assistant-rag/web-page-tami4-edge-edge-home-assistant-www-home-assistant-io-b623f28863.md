@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tami4"
+final_url: "https://www.home-assistant.io/integrations/tami4"
+canonical_url: "https://www.home-assistant.io/integrations/tami4/"
+source_handle: "web:www-home-assistant-io:b623f2886332"
+source_section: "integrations-tami4"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "288d003ae368da3332c3b50602f628fecb47a64dbb6055e573d11b0d96c15d1f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tami4 Edge / Edge+ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

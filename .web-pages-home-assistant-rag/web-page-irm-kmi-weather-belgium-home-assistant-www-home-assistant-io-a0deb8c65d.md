@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/irm_kmi"
+final_url: "https://www.home-assistant.io/integrations/irm_kmi"
+canonical_url: "https://www.home-assistant.io/integrations/irm_kmi/"
+source_handle: "web:www-home-assistant-io:a0deb8c65d2c"
+source_section: "integrations-irm-kmi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "324cce3afb3971afc30cc949d4d92fa6c2def320362b93aaad3979fdc656e17c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IRM KMI Weather Belgium - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

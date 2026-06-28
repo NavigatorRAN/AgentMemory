@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aqualogic"
+final_url: "https://www.home-assistant.io/integrations/aqualogic"
+canonical_url: "https://www.home-assistant.io/integrations/aqualogic/"
+source_handle: "web:www-home-assistant-io:bc8506ac4e07"
+source_section: "integrations-aqualogic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "befd582db293006349a94e33cf31242db41645f9608649abc9fc49fb62a42d02"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AquaLogic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

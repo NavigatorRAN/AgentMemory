@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/anwb_energie"
+final_url: "https://www.home-assistant.io/integrations/anwb_energie"
+canonical_url: "https://www.home-assistant.io/integrations/anwb_energie/"
+source_handle: "web:www-home-assistant-io:be32b8505b4c"
+source_section: "integrations-anwb-energie"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5d90ea63349bb775600e6f919779ac099bbd0751d204c3be271d4eb36260d659"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ANWB Energie - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

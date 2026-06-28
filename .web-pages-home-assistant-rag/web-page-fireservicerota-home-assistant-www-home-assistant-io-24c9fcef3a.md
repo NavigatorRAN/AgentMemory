@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fireservicerota"
+final_url: "https://www.home-assistant.io/integrations/fireservicerota"
+canonical_url: "https://www.home-assistant.io/integrations/fireservicerota/"
+source_handle: "web:www-home-assistant-io:24c9fcef3abb"
+source_section: "integrations-fireservicerota"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "03d33561f4c91abb223c4f776ea641a005261208d461a32f4e8a5516e4cf14df"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FireServiceRota - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/device_trigger.mqtt"
+final_url: "https://www.home-assistant.io/integrations/device_trigger.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/device_trigger.mqtt/"
+source_handle: "web:www-home-assistant-io:8c43055cf447"
+source_section: "integrations-device-trigger-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "71d9aaa036b76b83d1dbddbca77afc98f778bd3d8c48b64d81f753160f161fa4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Device trigger - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

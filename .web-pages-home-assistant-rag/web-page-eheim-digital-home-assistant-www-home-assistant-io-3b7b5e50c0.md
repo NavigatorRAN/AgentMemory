@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eheimdigital"
+final_url: "https://www.home-assistant.io/integrations/eheimdigital"
+canonical_url: "https://www.home-assistant.io/integrations/eheimdigital/"
+source_handle: "web:www-home-assistant-io:3b7b5e50c071"
+source_section: "integrations-eheimdigital"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a0e3b9d68cd1e5ae51e2dce3aebacfeb0a69f875d9cb853222cc2e481b82f44b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EHEIM Digital - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

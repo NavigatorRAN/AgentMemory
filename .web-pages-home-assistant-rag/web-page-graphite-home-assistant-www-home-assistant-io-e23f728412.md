@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/graphite"
+final_url: "https://www.home-assistant.io/integrations/graphite"
+canonical_url: "https://www.home-assistant.io/integrations/graphite/"
+source_handle: "web:www-home-assistant-io:e23f72841235"
+source_section: "integrations-graphite"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f086498756dee8a0dd294f0150f58c6ca16e9b7cf35552ef3dd09115eb7e230e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Graphite - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

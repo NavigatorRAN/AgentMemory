@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/twitch"
+final_url: "https://www.home-assistant.io/integrations/twitch"
+canonical_url: "https://www.home-assistant.io/integrations/twitch/"
+source_handle: "web:www-home-assistant-io:93fe19168575"
+source_section: "integrations-twitch"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "76a0f68903ce2f0584841fc3fb3508e547a448fd27542502dc1c609f6e556df6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Twitch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

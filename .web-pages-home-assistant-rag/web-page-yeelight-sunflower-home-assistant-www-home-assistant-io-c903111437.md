@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yeelightsunflower"
+final_url: "https://www.home-assistant.io/integrations/yeelightsunflower"
+canonical_url: "https://www.home-assistant.io/integrations/yeelightsunflower/"
+source_handle: "web:www-home-assistant-io:c903111437b3"
+source_section: "integrations-yeelightsunflower"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "22da22e983eb3da6ee49133e4c93ecace42f4f87ab4f707d468add592c17940e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Yeelight Sunflower - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

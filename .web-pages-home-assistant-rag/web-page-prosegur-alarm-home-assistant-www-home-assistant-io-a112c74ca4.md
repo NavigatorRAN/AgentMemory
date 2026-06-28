@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/prosegur"
+final_url: "https://www.home-assistant.io/integrations/prosegur"
+canonical_url: "https://www.home-assistant.io/integrations/prosegur/"
+source_handle: "web:www-home-assistant-io:a112c74ca4d5"
+source_section: "integrations-prosegur"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7553ad19960a782a3cc5d7557d78319dab4bbeb4761a10a471334aceda6bf4df"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Prosegur Alarm - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/webmin"
+final_url: "https://www.home-assistant.io/integrations/webmin"
+canonical_url: "https://www.home-assistant.io/integrations/webmin/"
+source_handle: "web:www-home-assistant-io:910eca1241e5"
+source_section: "integrations-webmin"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "03ae11a9d7f948420e699bfc172424eeef277491aadfa13704bf38f02e33d8cb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Webmin - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

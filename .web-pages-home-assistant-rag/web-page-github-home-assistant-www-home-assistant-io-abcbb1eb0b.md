@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/github"
+final_url: "https://www.home-assistant.io/integrations/github"
+canonical_url: "https://www.home-assistant.io/integrations/github/"
+source_handle: "web:www-home-assistant-io:abcbb1eb0baf"
+source_section: "integrations-github"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "83ec5bf7f2a413ea20c4aece549e49aef68478ea8db199fa1ff96db865b6c5c5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GitHub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

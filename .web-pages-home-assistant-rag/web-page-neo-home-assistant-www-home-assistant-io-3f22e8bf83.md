@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/neo"
+final_url: "https://www.home-assistant.io/integrations/neo"
+canonical_url: "https://www.home-assistant.io/integrations/neo/"
+source_handle: "web:www-home-assistant-io:3f22e8bf83e9"
+source_section: "integrations-neo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bbb9f6b3690dedb23bc7ee31fc131a3bd6e19a90ad17733716fe73d5d7746524"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Neo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

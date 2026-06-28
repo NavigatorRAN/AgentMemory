@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/suez_water"
+final_url: "https://www.home-assistant.io/integrations/suez_water"
+canonical_url: "https://www.home-assistant.io/integrations/suez_water/"
+source_handle: "web:www-home-assistant-io:6346c06f38d2"
+source_section: "integrations-suez-water"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ebc319094834c96d2683538d57c486522f1a419e454393911f9e113e5ad0818"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Suez Water - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/voicerss"
+final_url: "https://www.home-assistant.io/integrations/voicerss"
+canonical_url: "https://www.home-assistant.io/integrations/voicerss/"
+source_handle: "web:www-home-assistant-io:8aa1c25033c2"
+source_section: "integrations-voicerss"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6e24b61d047a6502e3ecc9a27c3d1dbce34a1cc973827d22dffa323fc8638d92"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # VoiceRSS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

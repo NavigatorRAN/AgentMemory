@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/auth"
+final_url: "https://www.home-assistant.io/integrations/auth"
+canonical_url: "https://www.home-assistant.io/integrations/auth/"
+source_handle: "web:www-home-assistant-io:152c90e9386c"
+source_section: "integrations-auth"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "51606d8563b164e244c2d7d84c96e2a25c921e23392c6b873f3a5a69b0ec7b13"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Auth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

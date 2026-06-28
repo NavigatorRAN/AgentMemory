@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lupusec"
+final_url: "https://www.home-assistant.io/integrations/lupusec"
+canonical_url: "https://www.home-assistant.io/integrations/lupusec/"
+source_handle: "web:www-home-assistant-io:428453fd13ad"
+source_section: "integrations-lupusec"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "44c2e496c63ec5414fac7e1211760866b51e3c55557db345edb08d818b800b2b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Lupus Electronics LUPUSEC - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

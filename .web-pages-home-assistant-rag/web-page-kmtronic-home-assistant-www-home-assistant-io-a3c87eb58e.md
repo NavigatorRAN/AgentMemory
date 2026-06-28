@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kmtronic"
+final_url: "https://www.home-assistant.io/integrations/kmtronic"
+canonical_url: "https://www.home-assistant.io/integrations/kmtronic/"
+source_handle: "web:www-home-assistant-io:a3c87eb58ea0"
+source_section: "integrations-kmtronic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "869fb3b4253090595fdf63f7fcacf85e2191051dd0be7688647a4b3bed9c95b0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # KMtronic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/shell_command"
+final_url: "https://www.home-assistant.io/integrations/shell_command"
+canonical_url: "https://www.home-assistant.io/integrations/shell_command/"
+source_handle: "web:www-home-assistant-io:b2619a137f65"
+source_section: "integrations-shell-command"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2b2e8f8ea9ad0f5e0a5dfd717c5407adeff3f4426769eaabd9c8dd917a8186d1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Shell Command - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

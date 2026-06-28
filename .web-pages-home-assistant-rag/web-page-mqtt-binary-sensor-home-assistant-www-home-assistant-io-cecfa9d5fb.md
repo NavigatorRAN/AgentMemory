@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/binary_sensor.mqtt"
+final_url: "https://www.home-assistant.io/integrations/binary_sensor.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/binary_sensor.mqtt/"
+source_handle: "web:www-home-assistant-io:cecfa9d5fb79"
+source_section: "integrations-binary-sensor-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6436540ed0d4d2c547b4f664ec532c5d630a61decf10c218d21b0b334b7cf034"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT binary sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

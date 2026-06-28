@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/create_wake_word"
+final_url: "https://www.home-assistant.io/voice_control/create_wake_word"
+canonical_url: "https://www.home-assistant.io/voice_control/create_wake_word/"
+source_handle: "web:www-home-assistant-io:f2bc3b30827e"
+source_section: "voice-control-create-wake-word"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "da47a9068909db74ec28e602b12241bb180886d92367e2ecbd6d5b9b7ab94cd3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Wake words for Assist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/palazzetti"
+final_url: "https://www.home-assistant.io/integrations/palazzetti"
+canonical_url: "https://www.home-assistant.io/integrations/palazzetti/"
+source_handle: "web:www-home-assistant-io:f7beea23b68c"
+source_section: "integrations-palazzetti"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5f0d98fc2f9828a2dc908ec813c7ff8fe4920546f15ad3f0b449dd51b5d3e70b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Palazzetti - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

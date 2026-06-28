@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/connection-error"
+final_url: "https://www.home-assistant.io/faq/connection-error"
+canonical_url: "https://www.home-assistant.io/faq/connection-error/"
+source_handle: "web:www-home-assistant-io:37a008640243"
+source_section: "faq-connection-error"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4a228d951a23fafd6e085e1856a14235b9ce3347161da5bc63309b4ff3007bb8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Connection error - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zwave_js"
+final_url: "https://www.home-assistant.io/integrations/zwave_js"
+canonical_url: "https://www.home-assistant.io/integrations/zwave_js/"
+source_handle: "web:www-home-assistant-io:9d8991a3350b"
+source_section: "integrations-zwave-js"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c3a542c113311a291ecb1aa1255505ea5d3d4ea7d75e8d1f3964d696ffb3da96"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Z-Wave - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

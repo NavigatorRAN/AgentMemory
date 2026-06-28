@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/how-long-to-set-up"
+final_url: "https://www.home-assistant.io/faq/how-long-to-set-up"
+canonical_url: "https://www.home-assistant.io/faq/how-long-to-set-up/"
+source_handle: "web:www-home-assistant-io:8500ab018c9a"
+source_section: "faq-how-long-to-set-up"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6519b129aae749933c76577cf686a9838d2c4668b9279b0a77a642a9f7fbba61"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # How long does it take to set up Home Assistant? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

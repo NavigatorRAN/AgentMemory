@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lg_infrared"
+final_url: "https://www.home-assistant.io/integrations/lg_infrared"
+canonical_url: "https://www.home-assistant.io/integrations/lg_infrared/"
+source_handle: "web:www-home-assistant-io:d2f0e291f65c"
+source_section: "integrations-lg-infrared"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e42befebf1d3d745fd10eb7923ea717533a326aaeff4eb5d3af913e3c3e064e2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # LG Infrared - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

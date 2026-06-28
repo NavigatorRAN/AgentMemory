@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/best_practices"
+final_url: "https://www.home-assistant.io/voice_control/best_practices"
+canonical_url: "https://www.home-assistant.io/voice_control/best_practices/"
+source_handle: "web:www-home-assistant-io:15bed7685c37"
+source_section: "voice-control-best-practices"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9a35b2d7040f70b108da89e4caa858990c0fe379840393125ec224c6747e20a4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Best practices with Assist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

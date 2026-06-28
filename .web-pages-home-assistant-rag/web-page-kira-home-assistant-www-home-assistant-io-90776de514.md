@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kira"
+final_url: "https://www.home-assistant.io/integrations/kira"
+canonical_url: "https://www.home-assistant.io/integrations/kira/"
+source_handle: "web:www-home-assistant-io:90776de514c4"
+source_section: "integrations-kira"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8ec0cbaed8ba994b73d4bb6cc7c975ec6659daaaa85ce35b60626dbaff88d500"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Kira - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ubiwizz"
+final_url: "https://www.home-assistant.io/integrations/ubiwizz"
+canonical_url: "https://www.home-assistant.io/integrations/ubiwizz/"
+source_handle: "web:www-home-assistant-io:b1bfc6d1560c"
+source_section: "integrations-ubiwizz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c8220cd667c6269bd9d67967a94b13ee2e9886b62a5772a840f5d913e74c25dd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ubiwizz - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

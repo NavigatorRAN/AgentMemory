@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/yaml"
+final_url: "https://www.home-assistant.io/docs/automation/yaml"
+canonical_url: "https://www.home-assistant.io/docs/automation/yaml/"
+source_handle: "web:www-home-assistant-io:a663a6d1280d"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0568c5a21a655b9eab0f6dd539a072cff524ef3a1e35f3673ab15ff6f998d1cb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Automations in YAML - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

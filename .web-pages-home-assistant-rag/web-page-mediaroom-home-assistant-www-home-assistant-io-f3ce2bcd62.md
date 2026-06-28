@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mediaroom"
+final_url: "https://www.home-assistant.io/integrations/mediaroom"
+canonical_url: "https://www.home-assistant.io/integrations/mediaroom/"
+source_handle: "web:www-home-assistant-io:f3ce2bcd62fe"
+source_section: "integrations-mediaroom"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bffee2f72ae1bb641cfdf0e9e4674d36117e1bd31822374c8ab17f6b53627132"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mediaroom - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

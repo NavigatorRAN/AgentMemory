@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/3_day_blinds"
+final_url: "https://www.home-assistant.io/integrations/3_day_blinds"
+canonical_url: "https://www.home-assistant.io/integrations/3_day_blinds/"
+source_handle: "web:www-home-assistant-io:5874bea2db5e"
+source_section: "integrations-3-day-blinds"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cc8f28eb37b4faa469fcbb752a80c505bee4b4f46fb55bde5e63c79d01c03bff"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # 3 Day Blinds - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

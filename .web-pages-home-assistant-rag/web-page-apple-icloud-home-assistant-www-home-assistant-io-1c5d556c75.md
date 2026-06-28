@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/icloud"
+final_url: "https://www.home-assistant.io/integrations/icloud"
+canonical_url: "https://www.home-assistant.io/integrations/icloud/"
+source_handle: "web:www-home-assistant-io:1c5d556c7596"
+source_section: "integrations-icloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9051c3805241a036935c96e1b54c0836412e2d0c5bbc5708e56f7f15dd27aa3a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Apple iCloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

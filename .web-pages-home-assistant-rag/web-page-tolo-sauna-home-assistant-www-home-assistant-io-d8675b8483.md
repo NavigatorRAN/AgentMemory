@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tolo"
+final_url: "https://www.home-assistant.io/integrations/tolo"
+canonical_url: "https://www.home-assistant.io/integrations/tolo/"
+source_handle: "web:www-home-assistant-io:d8675b848366"
+source_section: "integrations-tolo"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d3665334853fffecdd257e0e17f773c6a15414707993f10e72cc1b5e2a5c7061"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # TOLO Sauna - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

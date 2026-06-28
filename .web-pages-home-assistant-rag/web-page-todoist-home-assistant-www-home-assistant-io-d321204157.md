@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/todoist"
+final_url: "https://www.home-assistant.io/integrations/todoist"
+canonical_url: "https://www.home-assistant.io/integrations/todoist/"
+source_handle: "web:www-home-assistant-io:d321204157f2"
+source_section: "integrations-todoist"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "776960ab52012406db69ee36ac4fe9bdf9de486b724b3aa972e47d556333bf04"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Todoist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

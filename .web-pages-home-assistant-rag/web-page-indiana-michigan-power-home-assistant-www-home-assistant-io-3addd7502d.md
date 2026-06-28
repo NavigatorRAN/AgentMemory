@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/indianamichiganpower"
+final_url: "https://www.home-assistant.io/integrations/indianamichiganpower"
+canonical_url: "https://www.home-assistant.io/integrations/indianamichiganpower/"
+source_handle: "web:www-home-assistant-io:3addd7502d56"
+source_section: "integrations-indianamichiganpower"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c1d163dde63553ddb74cf7ad3d52ee0d56d50423a5964e0157e1350ebc64d67e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Indiana Michigan Power - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

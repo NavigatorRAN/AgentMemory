@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/xiaomi_miio"
+final_url: "https://www.home-assistant.io/integrations/xiaomi_miio"
+canonical_url: "https://www.home-assistant.io/integrations/xiaomi_miio/"
+source_handle: "web:www-home-assistant-io:29e45c9e2721"
+source_section: "integrations-xiaomi-miio"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a69ae995b8787f4bda2f1033ae315e224b32c66e35c6ad38f29aa71a383b7e9d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Xiaomi Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/views"
+final_url: "https://www.home-assistant.io/dashboards/views"
+canonical_url: "https://www.home-assistant.io/dashboards/views/"
+source_handle: "web:www-home-assistant-io:13753ef9184c"
+source_section: "dashboards-views"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "782aa27aa451de4add863ea0de605cf2e08c61aaccb60faa05f8e882fcbc2337"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Dashboard views - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

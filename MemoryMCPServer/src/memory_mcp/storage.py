@@ -97,8 +97,21 @@ class Storage:
             return Path(configured)
         root_text = str(root)
         if root_text.startswith(("/mnt/", "/Volumes/")):
-            return Path.cwd() / ".index"
+            local_index = Path.cwd() / ".index"
+            if self._index_dir_is_usable(local_index):
+                return local_index
+            transient_index = Path(os.environ.get("TMPDIR") or "/tmp") / "memory-mcp-index"
+            if self._index_dir_is_usable(transient_index):
+                return transient_index
+            return root / ".index"
         return root / ".index"
+
+    @staticmethod
+    def _index_dir_is_usable(path: Path) -> bool:
+        if path.exists():
+            return os.access(path, os.R_OK | os.W_OK | os.X_OK)
+        parent = path.parent
+        return parent.exists() and os.access(parent, os.W_OK | os.X_OK)
 
     # --- event writes -----------------------------------------------------
 
@@ -435,6 +448,12 @@ class Storage:
             try:
                 self._index_path().unlink()
             except FileNotFoundError:
+                pass
+            except OSError:
+                # The legacy JSON entity index is only a cache. Some deployed
+                # paths may be read-only while the SQLite cache remains usable;
+                # memory writes must not fail just because this cache cannot be
+                # removed.
                 pass
 
     def get_entity_index(self) -> dict[str, dict[str, Any]]:

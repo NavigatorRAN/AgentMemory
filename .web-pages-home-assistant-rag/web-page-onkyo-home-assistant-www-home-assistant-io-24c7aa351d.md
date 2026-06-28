@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/onkyo"
+final_url: "https://www.home-assistant.io/integrations/onkyo"
+canonical_url: "https://www.home-assistant.io/integrations/onkyo/"
+source_handle: "web:www-home-assistant-io:24c7aa351db9"
+source_section: "integrations-onkyo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fd6ef57b1adecbe9594a939ede49e723d69ecf36c630e14c8b97e9151536074e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Onkyo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tomato"
+final_url: "https://www.home-assistant.io/integrations/tomato"
+canonical_url: "https://www.home-assistant.io/integrations/tomato/"
+source_handle: "web:www-home-assistant-io:dac171821728"
+source_section: "integrations-tomato"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "618c93c6bcbad65fb1786f8e3d5e22e933af50502032fd45319316fcd0f91e53"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tomato - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

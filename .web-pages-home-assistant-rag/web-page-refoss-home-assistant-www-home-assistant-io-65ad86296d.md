@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/refoss"
+final_url: "https://www.home-assistant.io/integrations/refoss"
+canonical_url: "https://www.home-assistant.io/integrations/refoss/"
+source_handle: "web:www-home-assistant-io:65ad86296d75"
+source_section: "integrations-refoss"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ce0f8127592d8e5b4eafe0772afab43e54d135efda1a89544203aeb70f04f2cb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Refoss - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

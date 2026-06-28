@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bt_home_hub_5"
+final_url: "https://www.home-assistant.io/integrations/bt_home_hub_5"
+canonical_url: "https://www.home-assistant.io/integrations/bt_home_hub_5/"
+source_handle: "web:www-home-assistant-io:6c921b67430a"
+source_section: "integrations-bt-home-hub-5"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a52a34d191f3cd19c593d34d15a0ad9584ff000c091346c692922e291b92dce"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BT Home Hub 5 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

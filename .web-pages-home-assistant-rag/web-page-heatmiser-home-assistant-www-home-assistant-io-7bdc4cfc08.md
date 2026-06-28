@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/heatmiser"
+final_url: "https://www.home-assistant.io/integrations/heatmiser"
+canonical_url: "https://www.home-assistant.io/integrations/heatmiser/"
+source_handle: "web:www-home-assistant-io:7bdc4cfc084b"
+source_section: "integrations-heatmiser"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fde74b61ab39b40214325f1153941b9321dfa417494fdbe07834a8b3f3fafb55"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Heatmiser - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

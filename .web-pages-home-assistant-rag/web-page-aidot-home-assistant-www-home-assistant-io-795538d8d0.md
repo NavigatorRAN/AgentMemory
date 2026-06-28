@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aidot"
+final_url: "https://www.home-assistant.io/integrations/aidot"
+canonical_url: "https://www.home-assistant.io/integrations/aidot/"
+source_handle: "web:www-home-assistant-io:795538d8d07a"
+source_section: "integrations-aidot"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7adcf615086e5faaafdd2b2cae07bf6d556726392d2fc789563f7aeceea2f1d1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AiDot - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

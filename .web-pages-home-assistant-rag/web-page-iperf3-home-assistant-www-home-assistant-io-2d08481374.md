@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iperf3"
+final_url: "https://www.home-assistant.io/integrations/iperf3"
+canonical_url: "https://www.home-assistant.io/integrations/iperf3/"
+source_handle: "web:www-home-assistant-io:2d08481374e5"
+source_section: "integrations-iperf3"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b08e8470b4c1abfd6a999992e3a950af4f216633856dc40be5a1ddadbf396404"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Iperf3 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

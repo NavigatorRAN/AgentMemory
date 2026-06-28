@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/button"
+final_url: "https://www.home-assistant.io/dashboards/button"
+canonical_url: "https://www.home-assistant.io/dashboards/button/"
+source_handle: "web:www-home-assistant-io:866daf2f04bd"
+source_section: "dashboards-button"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e2f9a480baa9acf60822671a0ec86267956f66bfb9ffdfb35d4beeff4d307e50"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Button card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

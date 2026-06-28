@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/teltonika"
+final_url: "https://www.home-assistant.io/integrations/teltonika"
+canonical_url: "https://www.home-assistant.io/integrations/teltonika/"
+source_handle: "web:www-home-assistant-io:84615027c8b1"
+source_section: "integrations-teltonika"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fcb11dba440ae293bcc44759080d8da42bc819d9ab4728fbdc19923dc985f627"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Teltonika - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alexa_devices"
+final_url: "https://www.home-assistant.io/integrations/alexa_devices"
+canonical_url: "https://www.home-assistant.io/integrations/alexa_devices/"
+source_handle: "web:www-home-assistant-io:d19624f55324"
+source_section: "integrations-alexa-devices"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0b5a3783779b2d0efc993b22065ed02c77a774f9bc9a4716e4d4df5c5f019352"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Alexa Devices - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

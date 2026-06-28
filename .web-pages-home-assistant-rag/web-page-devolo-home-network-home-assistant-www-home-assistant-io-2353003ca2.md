@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/devolo_home_network"
+final_url: "https://www.home-assistant.io/integrations/devolo_home_network"
+canonical_url: "https://www.home-assistant.io/integrations/devolo_home_network/"
+source_handle: "web:www-home-assistant-io:2353003ca295"
+source_section: "integrations-devolo-home-network"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e58c46fbd789f3e6781d1911c6a88c25827930264917f9a63015781a5fb17ecb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # devolo Home Network - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

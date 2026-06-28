@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kaiser_nienhaus"
+final_url: "https://www.home-assistant.io/integrations/kaiser_nienhaus"
+canonical_url: "https://www.home-assistant.io/integrations/kaiser_nienhaus/"
+source_handle: "web:www-home-assistant-io:1b7d168b09dc"
+source_section: "integrations-kaiser-nienhaus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fbb49a4a385be2c886fc31fdd0afb72d0fbef5b2f93b48635f2f1c21af5e99b2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kaiser Nienhaus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

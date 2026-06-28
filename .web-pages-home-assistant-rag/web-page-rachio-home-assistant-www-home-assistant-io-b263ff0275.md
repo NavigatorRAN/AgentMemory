@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rachio"
+final_url: "https://www.home-assistant.io/integrations/rachio"
+canonical_url: "https://www.home-assistant.io/integrations/rachio/"
+source_handle: "web:www-home-assistant-io:b263ff02757e"
+source_section: "integrations-rachio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5ec761af3e745392fadffcf57e1e52d790f3638a96a09dcdc01dc559037899e0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rachio - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/faa_delays"
+final_url: "https://www.home-assistant.io/integrations/faa_delays"
+canonical_url: "https://www.home-assistant.io/integrations/faa_delays/"
+source_handle: "web:www-home-assistant-io:e00030e59a03"
+source_section: "integrations-faa-delays"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28e5e75795e97fdd6f88d35b2fd302a677ce1444d5e2138eba85da9f3a98a181"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FAA Delays - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

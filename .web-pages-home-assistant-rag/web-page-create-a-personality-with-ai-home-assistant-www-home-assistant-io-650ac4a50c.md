@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/assist_create_open_ai_personality"
+final_url: "https://www.home-assistant.io/voice_control/assist_create_open_ai_personality"
+canonical_url: "https://www.home-assistant.io/voice_control/assist_create_open_ai_personality/"
+source_handle: "web:www-home-assistant-io:650ac4a50cd1"
+source_section: "voice-control-assist-create-open-ai-personality"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "458053ba58cc2d480135a304cc5a2fbd6e37941e71596aa011d467b9ab767b4e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Create a personality with AI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

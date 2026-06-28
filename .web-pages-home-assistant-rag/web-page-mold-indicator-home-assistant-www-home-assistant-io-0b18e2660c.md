@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mold_indicator"
+final_url: "https://www.home-assistant.io/integrations/mold_indicator"
+canonical_url: "https://www.home-assistant.io/integrations/mold_indicator/"
+source_handle: "web:www-home-assistant-io:0b18e2660cc4"
+source_section: "integrations-mold-indicator"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0dd59cc6dfbb85bff89c9e13fa15474972fe39354fc29f814c9041b803c5bdc8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Mold Indicator - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

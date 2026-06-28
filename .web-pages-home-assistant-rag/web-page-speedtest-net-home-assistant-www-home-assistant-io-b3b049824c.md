@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/speedtestdotnet"
+final_url: "https://www.home-assistant.io/integrations/speedtestdotnet"
+canonical_url: "https://www.home-assistant.io/integrations/speedtestdotnet/"
+source_handle: "web:www-home-assistant-io:b3b049824ced"
+source_section: "integrations-speedtestdotnet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ac8f381bcb27117402d225124dcf8a82eee03c3a7a52807e150e0c06d6451dd0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Speedtest.net - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

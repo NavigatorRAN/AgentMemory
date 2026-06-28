@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/spotify"
+final_url: "https://www.home-assistant.io/integrations/spotify"
+canonical_url: "https://www.home-assistant.io/integrations/spotify/"
+source_handle: "web:www-home-assistant-io:9967dabd80ef"
+source_section: "integrations-spotify"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b3e37734bc1d285343dcf8f891a4638e1738ae7367af1ac190fc7a5c2a1cebd8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Spotify - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/screenlogic"
+final_url: "https://www.home-assistant.io/integrations/screenlogic"
+canonical_url: "https://www.home-assistant.io/integrations/screenlogic/"
+source_handle: "web:www-home-assistant-io:caa566dc875f"
+source_section: "integrations-screenlogic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e02278e89b69723944bd3c131b917eb6e2d22411b0d0c13958dd4253f1589116"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pentair ScreenLogic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mopeka"
+final_url: "https://www.home-assistant.io/integrations/mopeka"
+canonical_url: "https://www.home-assistant.io/integrations/mopeka/"
+source_handle: "web:www-home-assistant-io:c2dbcf793910"
+source_section: "integrations-mopeka"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a64abfa2e99422c8150efcb14c88c51774ea9dbe9437e119e63ee8dcea6c0634"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mopeka - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

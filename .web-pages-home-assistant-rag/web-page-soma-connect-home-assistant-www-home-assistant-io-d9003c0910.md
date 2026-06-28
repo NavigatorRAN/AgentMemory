@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/soma"
+final_url: "https://www.home-assistant.io/integrations/soma"
+canonical_url: "https://www.home-assistant.io/integrations/soma/"
+source_handle: "web:www-home-assistant-io:d9003c0910e0"
+source_section: "integrations-soma"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2b4a24317411bf9e84662464e29def5e5a33ecfed6468f58ed1c5f87a76678bf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Soma Connect - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

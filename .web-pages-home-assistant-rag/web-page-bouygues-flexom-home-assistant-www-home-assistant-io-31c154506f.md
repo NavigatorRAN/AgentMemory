@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/flexom"
+final_url: "https://www.home-assistant.io/integrations/flexom"
+canonical_url: "https://www.home-assistant.io/integrations/flexom/"
+source_handle: "web:www-home-assistant-io:31c154506fe5"
+source_section: "integrations-flexom"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2c7587c1fc27e93e72e168a4275bd7c1604baf1ec70ce82bba772f88d975d4ea"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bouygues Flexom - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

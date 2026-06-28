@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/simply_automated"
+final_url: "https://www.home-assistant.io/integrations/simply_automated"
+canonical_url: "https://www.home-assistant.io/integrations/simply_automated/"
+source_handle: "web:www-home-assistant-io:1aa154f1b190"
+source_section: "integrations-simply-automated"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1828f95659f7ff5d4a80f1ed45df963deb45d55bd5c893923aa242e174d73bf3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Simply Automated - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

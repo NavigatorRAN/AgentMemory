@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/household-use"
+final_url: "https://www.home-assistant.io/faq/household-use"
+canonical_url: "https://www.home-assistant.io/faq/household-use/"
+source_handle: "web:www-home-assistant-io:317d95218e5d"
+source_section: "faq-household-use"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "59674bb7f6a49c74b464100245622b27e8dd5a670c3c02d705dcfb966eaec99d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Can the rest of my household use Home Assistant? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

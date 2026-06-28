@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/common-tasks/general"
+final_url: "https://www.home-assistant.io/common-tasks/general"
+canonical_url: "https://www.home-assistant.io/common-tasks/general/"
+source_handle: "web:www-home-assistant-io:ef8265cfb079"
+source_section: "common-tasks-general"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fe766417a99e73ce0f1c15c0d82c2d525052de3755d6c0a8ee7a0803441d2188"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Common tasks for every Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

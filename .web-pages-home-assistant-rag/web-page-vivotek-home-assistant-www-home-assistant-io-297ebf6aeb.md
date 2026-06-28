@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vivotek"
+final_url: "https://www.home-assistant.io/integrations/vivotek"
+canonical_url: "https://www.home-assistant.io/integrations/vivotek/"
+source_handle: "web:www-home-assistant-io:297ebf6aeb13"
+source_section: "integrations-vivotek"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d1d189a7a44578ad1caced33d5db2d07e156090bdba8735cdbeb892a77a71f38"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # VIVOTEK - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

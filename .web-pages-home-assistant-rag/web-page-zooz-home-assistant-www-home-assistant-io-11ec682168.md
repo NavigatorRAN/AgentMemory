@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zooz"
+final_url: "https://www.home-assistant.io/integrations/zooz"
+canonical_url: "https://www.home-assistant.io/integrations/zooz/"
+source_handle: "web:www-home-assistant-io:11ec6821687a"
+source_section: "integrations-zooz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ab0f72382f0409284b5923956fd531b6e789e07e391b3fed3b2635bc66cc1bac"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Zooz - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

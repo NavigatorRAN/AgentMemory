@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/waze_travel_time"
+final_url: "https://www.home-assistant.io/integrations/waze_travel_time"
+canonical_url: "https://www.home-assistant.io/integrations/waze_travel_time/"
+source_handle: "web:www-home-assistant-io:e56765b9a81d"
+source_section: "integrations-waze-travel-time"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8e5f182d1ca18d95a43460a5d0c076883f8a61c448e7846c6635ae2b9691ff87"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Waze Travel Time - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ted5000"
+final_url: "https://www.home-assistant.io/integrations/ted5000"
+canonical_url: "https://www.home-assistant.io/integrations/ted5000/"
+source_handle: "web:www-home-assistant-io:e52d7c1b67a5"
+source_section: "integrations-ted5000"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "682f1c5f1a586cf0005789485b25d0ce219b074ba6642fa21c65fba004458491"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # The Energy Detective TED5000 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

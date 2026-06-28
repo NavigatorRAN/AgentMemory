@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/binary_sensor"
+final_url: "https://www.home-assistant.io/integrations/binary_sensor"
+canonical_url: "https://www.home-assistant.io/integrations/binary_sensor/"
+source_handle: "web:www-home-assistant-io:fac89de32447"
+source_section: "integrations-binary-sensor"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f97d23caac873509dc7c347bfae90155894af96c5f1f3246348eb8f60ee732a1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Binary sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ezviz"
+final_url: "https://www.home-assistant.io/integrations/ezviz"
+canonical_url: "https://www.home-assistant.io/integrations/ezviz/"
+source_handle: "web:www-home-assistant-io:2f00d0be77f1"
+source_section: "integrations-ezviz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e05c0adc6c7f37182831754cdc1440724800c4edb18f290e4a5a4dd78fdfce35"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EZVIZ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

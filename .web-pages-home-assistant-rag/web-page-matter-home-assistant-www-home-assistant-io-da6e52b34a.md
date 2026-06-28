@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/matter"
+final_url: "https://www.home-assistant.io/integrations/matter"
+canonical_url: "https://www.home-assistant.io/integrations/matter/"
+source_handle: "web:www-home-assistant-io:da6e52b34a8b"
+source_section: "integrations-matter"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "77cdf8feb0c3f68d059c6a48b7855f47977ed6f8b8ea114ceb061ca18e05a84a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Matter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

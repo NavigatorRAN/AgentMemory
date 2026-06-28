@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/laundrify"
+final_url: "https://www.home-assistant.io/integrations/laundrify"
+canonical_url: "https://www.home-assistant.io/integrations/laundrify/"
+source_handle: "web:www-home-assistant-io:6935d7eb24f9"
+source_section: "integrations-laundrify"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b98adfbbc7c86585412a9cb2e6921bff88c01463fe8f1e4621dc7fb1f35521a1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # laundrify - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

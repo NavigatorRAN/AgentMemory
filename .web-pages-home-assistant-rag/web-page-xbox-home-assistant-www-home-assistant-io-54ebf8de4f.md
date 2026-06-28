@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/xbox"
+final_url: "https://www.home-assistant.io/integrations/xbox"
+canonical_url: "https://www.home-assistant.io/integrations/xbox/"
+source_handle: "web:www-home-assistant-io:54ebf8de4f48"
+source_section: "integrations-xbox"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f137b12d55fbb60a702260bd723252ba13755f0e0b4b5d5f437ce19c3a6a4034"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Xbox - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

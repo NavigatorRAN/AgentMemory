@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/sdcard_files"
+final_url: "https://www.home-assistant.io/faq/sdcard_files"
+canonical_url: "https://www.home-assistant.io/faq/sdcard_files/"
+source_handle: "web:www-home-assistant-io:1cb7a4d089ac"
+source_section: "faq-sdcard-files"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ccf1c7e36c38a5363fdf5db58e67ea1792184b359f34819c1633c341679784d6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # I'm trying to find my files on the host or SD card. Where are they? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

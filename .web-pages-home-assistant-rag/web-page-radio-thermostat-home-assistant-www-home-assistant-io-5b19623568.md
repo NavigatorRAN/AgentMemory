@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/radiotherm"
+final_url: "https://www.home-assistant.io/integrations/radiotherm"
+canonical_url: "https://www.home-assistant.io/integrations/radiotherm/"
+source_handle: "web:www-home-assistant-io:5b1962356855"
+source_section: "integrations-radiotherm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bbd380bb7472982391947ee0444c02e09b384803f34c5ab8993d0cbb0426171d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Radio Thermostat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

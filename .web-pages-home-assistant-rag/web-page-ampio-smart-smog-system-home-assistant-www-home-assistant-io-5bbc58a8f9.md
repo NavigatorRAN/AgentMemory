@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ampio"
+final_url: "https://www.home-assistant.io/integrations/ampio"
+canonical_url: "https://www.home-assistant.io/integrations/ampio/"
+source_handle: "web:www-home-assistant-io:5bbc58a8f924"
+source_section: "integrations-ampio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ee1f49a7b831498cf8d559e52f5f8c9cbedb29b00a3d1a0c2dd3e8b0355c4a06"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ampio Smart Smog System - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

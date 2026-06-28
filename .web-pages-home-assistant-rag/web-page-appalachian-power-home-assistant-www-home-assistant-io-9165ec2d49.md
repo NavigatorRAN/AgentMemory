@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/appalachianpower"
+final_url: "https://www.home-assistant.io/integrations/appalachianpower"
+canonical_url: "https://www.home-assistant.io/integrations/appalachianpower/"
+source_handle: "web:www-home-assistant-io:9165ec2d499a"
+source_section: "integrations-appalachianpower"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fc736f807533f25369b5280ac13436b55c8a480dcea106c138077926b524b2b0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Appalachian Power - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

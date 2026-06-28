@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fritz"
+final_url: "https://www.home-assistant.io/integrations/fritz"
+canonical_url: "https://www.home-assistant.io/integrations/fritz/"
+source_handle: "web:www-home-assistant-io:1c8a735970b6"
+source_section: "integrations-fritz"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a12260743f98ac00981ddc57cb552a922afddae84f1b820c95621a81424e20c3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # FRITZ!Box Tools - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

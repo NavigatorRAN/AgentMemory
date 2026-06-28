@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/clicksend_tts"
+final_url: "https://www.home-assistant.io/integrations/clicksend_tts"
+canonical_url: "https://www.home-assistant.io/integrations/clicksend_tts/"
+source_handle: "web:www-home-assistant-io:fd667911624f"
+source_section: "integrations-clicksend-tts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "16acc9c903ab96c1e5e32c449ba7e9092eb93b41a10ea8600fda9b0e3b4102c6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ClickSend TTS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

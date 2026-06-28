@@ -5,6 +5,7 @@ SERVER="${MEMORY_MCP_SERVER:-matt@192.168.1.26}"
 SSH_KEY="${MEMORY_MCP_SSH_KEY:-$HOME/.ssh/id_rsa_hermes}"
 REMOTE_DIR="${MEMORY_MCP_REMOTE_DIR:-/opt/memory-mcp}"
 ENDPOINT="${MEMORY_MCP_ENDPOINT:-http://192.168.1.26:8006/mcp}"
+REMOTE_INDEX_DIR="${MEMORY_MCP_REMOTE_INDEX_DIR:-${REMOTE_DIR}/.index}"
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 REMOTE_STAGE="/tmp/memory-mcp-deploy-${STAMP}"
 
@@ -26,13 +27,24 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
   fi
   rsync -a --delete --exclude '.venv' '${REMOTE_STAGE}/' '${REMOTE_DIR}/'
   cd '${REMOTE_DIR}'
+  mkdir -p '${REMOTE_INDEX_DIR}'
   python3 -m venv .venv
   if .venv/bin/python -c 'import memory_mcp.index_cli' >/dev/null 2>&1; then
     echo 'Existing venv imports staged source; skipping package reinstall.'
   else
     .venv/bin/pip install --no-index --no-build-isolation --no-deps -e .
   fi
+  export MEMORY_INDEX_ROOT='${REMOTE_INDEX_DIR}'
   .venv/bin/python -m memory_mcp.index_cli --status
+  if sudo -n true 2>/dev/null; then
+    sudo -n mkdir -p /etc/systemd/system/memory-mcp.service.d
+    printf '%s\n' \
+      '[Service]' \
+      'Environment="MEMORY_INDEX_ROOT=${REMOTE_INDEX_DIR}"' \
+      'ReadWritePaths=${REMOTE_INDEX_DIR}' \
+      | sudo -n tee /etc/systemd/system/memory-mcp.service.d/index-root.conf >/dev/null
+    sudo -n systemctl daemon-reload
+  fi
   if sudo -n systemctl restart memory-mcp.service 2>/dev/null; then
     echo 'Restarted memory-mcp.service through systemd.'
   else
@@ -47,6 +59,7 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
     if ! systemctl is-active memory-mcp.service >/dev/null 2>&1; then
       echo 'systemd did not restart the service; starting the same command as the service user.'
       MEMORY_VAULT_ROOT=/mnt/aishareddrive/family-agents/memory \
+      MEMORY_INDEX_ROOT='${REMOTE_INDEX_DIR}' \
       MEMORY_HOST=0.0.0.0 \
       MEMORY_PORT=8006 \
       nohup '${REMOTE_DIR}/.venv/bin/memory-mcp' > /tmp/memory-mcp-manual.log 2>&1 &

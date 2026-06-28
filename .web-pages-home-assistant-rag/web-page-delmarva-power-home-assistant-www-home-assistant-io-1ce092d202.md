@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/delmarva"
+final_url: "https://www.home-assistant.io/integrations/delmarva"
+canonical_url: "https://www.home-assistant.io/integrations/delmarva/"
+source_handle: "web:www-home-assistant-io:1ce092d20222"
+source_section: "integrations-delmarva"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "00ee82754b1e9a4fe8d06cc648bcae20eeb9ef81f169e51a7235ae6cbc72a076"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Delmarva Power - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

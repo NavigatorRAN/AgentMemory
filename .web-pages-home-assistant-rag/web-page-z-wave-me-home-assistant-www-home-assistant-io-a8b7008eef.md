@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zwave_me"
+final_url: "https://www.home-assistant.io/integrations/zwave_me"
+canonical_url: "https://www.home-assistant.io/integrations/zwave_me/"
+source_handle: "web:www-home-assistant-io:a8b7008eef7f"
+source_section: "integrations-zwave-me"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0224f73dff32bd555a5e1a5bd7ceeba188a82c4dd71d0a162e3ff3e8c0872b43"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Z-Wave.Me - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

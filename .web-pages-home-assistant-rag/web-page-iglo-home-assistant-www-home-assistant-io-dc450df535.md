@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iglo"
+final_url: "https://www.home-assistant.io/integrations/iglo"
+canonical_url: "https://www.home-assistant.io/integrations/iglo/"
+source_handle: "web:www-home-assistant-io:dc450df535c6"
+source_section: "integrations-iglo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "32dc611885fcf839d5f539d236612a17acb7e716bd4ebc118f967c1c939687bb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # iGlo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

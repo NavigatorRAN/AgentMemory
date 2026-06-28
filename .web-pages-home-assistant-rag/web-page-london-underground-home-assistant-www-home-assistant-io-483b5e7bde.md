@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/london_underground"
+final_url: "https://www.home-assistant.io/integrations/london_underground"
+canonical_url: "https://www.home-assistant.io/integrations/london_underground/"
+source_handle: "web:www-home-assistant-io:483b5e7bde82"
+source_section: "integrations-london-underground"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b8dabcd568021387546e78aa690f0bbcbf57b92755c41ea5d39053fa8705cc9b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # London Underground - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

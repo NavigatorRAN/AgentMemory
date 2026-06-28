@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fire_tv"
+final_url: "https://www.home-assistant.io/integrations/fire_tv"
+canonical_url: "https://www.home-assistant.io/integrations/fire_tv/"
+source_handle: "web:www-home-assistant-io:e36c79a3718b"
+source_section: "integrations-fire-tv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b881f10281fdbdecfc1d0e6001667bbce063b67973393d53067a52a7f70fdd8e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Amazon Fire TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

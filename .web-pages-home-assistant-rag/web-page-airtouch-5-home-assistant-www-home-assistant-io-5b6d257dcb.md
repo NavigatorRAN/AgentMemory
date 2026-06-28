@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airtouch5"
+final_url: "https://www.home-assistant.io/integrations/airtouch5"
+canonical_url: "https://www.home-assistant.io/integrations/airtouch5/"
+source_handle: "web:www-home-assistant-io:5b6d257dcb54"
+source_section: "integrations-airtouch5"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1dff6d5b108f5202f909cde9abb2aad5792d86c16ef9214ec1923fb232af0db0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AirTouch 5 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

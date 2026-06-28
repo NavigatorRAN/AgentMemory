@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/huisbaasje"
+final_url: "https://www.home-assistant.io/integrations/huisbaasje"
+canonical_url: "https://www.home-assistant.io/integrations/huisbaasje/"
+source_handle: "web:www-home-assistant-io:f747b9f3bbe5"
+source_section: "integrations-huisbaasje"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "96b145161fb820991c2cb0e6beb647e9566e383219b4cc24b5714b1f53998d0c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EnergyFlip - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

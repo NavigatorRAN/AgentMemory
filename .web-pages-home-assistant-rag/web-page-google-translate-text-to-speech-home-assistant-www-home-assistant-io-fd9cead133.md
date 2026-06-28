@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_translate"
+final_url: "https://www.home-assistant.io/integrations/google_translate"
+canonical_url: "https://www.home-assistant.io/integrations/google_translate/"
+source_handle: "web:www-home-assistant-io:fd9cead13362"
+source_section: "integrations-google-translate"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c9b7d11abca4b8d678bf1af95defe2b1a9d8aa0faa0f0389ce87a98e76fd8689"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Google Translate text-to-speech - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

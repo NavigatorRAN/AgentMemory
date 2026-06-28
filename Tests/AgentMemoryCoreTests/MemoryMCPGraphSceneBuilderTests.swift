@@ -7,7 +7,8 @@ final class MemoryMCPGraphSceneBuilderTests: XCTestCase {
             nodes: [
                 MemoryMCPGraphNode(id: "event:event-1", label: "Event", kind: .event, subtitle: "today"),
                 MemoryMCPGraphNode(id: "entity:agentmemory", label: "AgentMemory", kind: .entity, subtitle: "project"),
-                MemoryMCPGraphNode(id: "entity:rag-mcp", label: "RAG MCP", kind: .entity, subtitle: nil)
+                MemoryMCPGraphNode(id: "entity:product-documentation-litellm", label: "product-documentation-litellm", kind: .entity, subtitle: "unknown | 50 events"),
+                MemoryMCPGraphNode(id: "wiki:overview", label: "Overview", kind: .wiki, subtitle: nil)
             ],
             edges: [
                 MemoryMCPGraphEdge(
@@ -23,22 +24,16 @@ final class MemoryMCPGraphSceneBuilderTests: XCTestCase {
 
         XCTAssertEqual(scene.nodes.map(\.id), [
             "entity:agentmemory",
-            "entity:rag-mcp",
-            "event:event-1"
+            "entity:product-documentation-litellm",
+            "event:event-1",
+            "wiki:overview"
         ])
-        XCTAssertEqual(scene.nodes[0].position.roundedForTest, MemoryMCPGraphPoint3D(x: 10, y: 0, z: 0))
-        XCTAssertEqual(scene.nodes[1].position.roundedForTest, MemoryMCPGraphPoint3D(x: -5, y: 8.66, z: 0))
-        XCTAssertEqual(scene.nodes[2].position.roundedForTest, MemoryMCPGraphPoint3D(x: -5, y: -8.66, z: 4))
+        XCTAssertGreaterThan(Set(scene.nodes.map(\.community)).count, 1)
+        XCTAssertTrue(scene.nodes.contains { $0.community == "memory" })
+        XCTAssertTrue(scene.nodes.contains { $0.community == "litellm" })
+        XCTAssertTrue(scene.nodes.contains { $0.community == "wiki" })
+        XCTAssertGreaterThan(scene.nodes.map { abs($0.position.z) }.max() ?? 0, 0)
+        XCTAssertTrue(scene.nodes.allSatisfy { $0.importance > 0 })
         XCTAssertEqual(scene.edges, graph.edges)
-    }
-}
-
-private extension MemoryMCPGraphPoint3D {
-    var roundedForTest: MemoryMCPGraphPoint3D {
-        MemoryMCPGraphPoint3D(
-            x: (x * 100).rounded() / 100,
-            y: (y * 100).rounded() / 100,
-            z: (z * 100).rounded() / 100
-        )
     }
 }

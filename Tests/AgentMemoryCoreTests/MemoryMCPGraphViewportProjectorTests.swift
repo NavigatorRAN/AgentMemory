@@ -65,4 +65,45 @@ final class MemoryMCPGraphViewportProjectorTests: XCTestCase {
 
         XCTAssertEqual(projection.nodes[0].point, MemoryMCPGraphPoint2D(x: 100, y: 50))
     }
+
+    func testProjectsSceneWithCameraRotationAndZoom() {
+        let scene = MemoryMCPGraphScene(
+            nodes: [
+                MemoryMCPGraphSceneNode(
+                    id: "front",
+                    label: "Front",
+                    kind: .entity,
+                    subtitle: nil,
+                    position: MemoryMCPGraphPoint3D(x: 40, y: 0, z: 30),
+                    communityIndex: 2,
+                    importance: 0.8
+                ),
+                MemoryMCPGraphSceneNode(
+                    id: "back",
+                    label: "Back",
+                    kind: .wiki,
+                    subtitle: nil,
+                    position: MemoryMCPGraphPoint3D(x: -40, y: 0, z: -30),
+                    communityIndex: 3,
+                    importance: 0.4
+                )
+            ],
+            edges: [
+                MemoryMCPGraphEdge(id: "edge:front:back", sourceID: "front", targetID: "back", label: "documents")
+            ]
+        )
+
+        let projection = MemoryMCPGraphViewportProjector().project(
+            scene,
+            width: 240,
+            height: 160,
+            padding: 20,
+            camera: MemoryMCPGraphCamera(yaw: .pi / 4, pitch: 0.25, zoom: 1.4)
+        )
+
+        XCTAssertEqual(Set(projection.nodes.map(\.id)), ["front", "back"])
+        XCTAssertEqual(Set(projection.nodes.map(\.communityIndex)), [2, 3])
+        XCTAssertTrue(projection.nodes.contains { abs($0.depth) > 0 })
+        XCTAssertEqual(projection.edgeSegments.count, 1)
+    }
 }

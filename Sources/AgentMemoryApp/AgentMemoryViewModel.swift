@@ -32,6 +32,8 @@ final class AgentMemoryViewModel {
     var memoryEntityDetail: MemoryMCPEntityDetail?
     var memoryEntityResults: [MemoryMCPEntitySummary] = []
     var memoryServerGraph: MemoryMCPGraph?
+    var memoryServerGraphOverview: MemoryMCPGraph?
+    var memoryServerGraphUsesOverview: Bool = true
     var selectedMemoryGraphNodeID: String?
     var selectedWikiPageSlug: String?
     var ragQueueStats: RAGQueueStats?
@@ -201,7 +203,22 @@ final class AgentMemoryViewModel {
     }
 
     var focusedMemoryGraph: MemoryMCPGraph {
-        MemoryMCPGraphFocusBuilder().focusedGraph(
+        if let memoryServerGraph {
+            if memoryServerGraphUsesOverview {
+                return MemoryMCPGraphOverviewBuilder().focusedGraph(
+                    from: memoryServerGraph,
+                    overview: memoryServerGraphOverview,
+                    selectedNodeID: selectedMemoryGraphNodeID
+                )
+            }
+
+            return MemoryMCPGraphFocusBuilder().focusedGraph(
+                from: memoryServerGraph,
+                selectedNodeID: selectedMemoryGraphNodeID
+            )
+        }
+
+        return MemoryMCPGraphFocusBuilder().focusedGraph(
             from: memoryGraph,
             selectedNodeID: selectedMemoryGraphNodeID
         )
@@ -209,7 +226,7 @@ final class AgentMemoryViewModel {
 
     var selectedMemoryGraphSummary: MemoryMCPGraphSelectionSummary? {
         MemoryMCPGraphSelectionSummaryBuilder().summary(
-            from: memoryGraph,
+            from: focusedMemoryGraph,
             selectedNodeID: selectedMemoryGraphNodeID
         )
     }
@@ -957,6 +974,8 @@ final class AgentMemoryViewModel {
             memoryEntityDetail = nil
             memoryEntityResults = []
             memoryServerGraph = nil
+            memoryServerGraphOverview = nil
+            memoryServerGraphUsesOverview = true
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -967,26 +986,35 @@ final class AgentMemoryViewModel {
             memoryEntityDetail = nil
             memoryEntityResults = []
             memoryServerGraph = nil
+            memoryServerGraphOverview = nil
+            memoryServerGraphUsesOverview = true
             selectedMemoryGraphNodeID = nil
             return
         }
 
         Task {
             do {
-                let results = try await MemoryMCPHTTPTransport(endpoint: endpoint).searchEvents(query: query, limit: 10)
+                let transport = MemoryMCPHTTPTransport(endpoint: endpoint)
+                async let searchResults = transport.searchEvents(query: query, limit: 25)
+                async let queryGraph = transport.memoryGraph(query: query, limit: 10_000)
+                let (results, graph) = try await (searchResults, queryGraph)
                 memorySearchResults = results
+                memoryServerGraph = graph
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = false
                 selectedMemoryGraphNodeID = nil
                 memoryEntityDetail = nil
                 memoryEntityResults = []
-                memoryServerGraph = nil
                 statusMessage = results.isEmpty
-                    ? "Memory MCP search found no events."
-                    : "Memory MCP search found \(results.count) events."
+                    ? "Memory MCP search loaded a focused graph with \(graph.nodes.count) nodes."
+                    : "Memory MCP search found \(results.count) events and loaded a focused graph with \(graph.nodes.count) nodes."
             } catch {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 memoryServerGraph = nil
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = true
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP search failed: \(error.localizedDescription)"
             }
@@ -1001,6 +1029,8 @@ final class AgentMemoryViewModel {
             memoryEntityDetail = nil
             memoryEntityResults = []
             memoryServerGraph = nil
+            memoryServerGraphOverview = nil
+            memoryServerGraphUsesOverview = true
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1011,6 +1041,8 @@ final class AgentMemoryViewModel {
             memoryEntityDetail = nil
             memoryEntityResults = []
             memoryServerGraph = nil
+            memoryServerGraphOverview = nil
+            memoryServerGraphUsesOverview = true
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1023,6 +1055,8 @@ final class AgentMemoryViewModel {
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 memoryServerGraph = nil
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = true
                 statusMessage = results.isEmpty
                     ? "Memory MCP recall found no events for \(entity)."
                     : "Memory MCP recall found \(results.count) events for \(entity)."
@@ -1031,6 +1065,8 @@ final class AgentMemoryViewModel {
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 memoryServerGraph = nil
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = true
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP recall failed: \(error.localizedDescription)"
             }
@@ -1045,6 +1081,8 @@ final class AgentMemoryViewModel {
             memoryEntityDetail = nil
             memoryEntityResults = []
             memoryServerGraph = nil
+            memoryServerGraphOverview = nil
+            memoryServerGraphUsesOverview = true
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1055,6 +1093,8 @@ final class AgentMemoryViewModel {
             memoryEntityDetail = nil
             memoryEntityResults = []
             memoryServerGraph = nil
+            memoryServerGraphOverview = nil
+            memoryServerGraphUsesOverview = true
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1066,6 +1106,8 @@ final class AgentMemoryViewModel {
                 selectedMemoryGraphNodeID = nil
                 memoryEntityResults = []
                 memoryServerGraph = nil
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = true
                 memorySearchResults = detail.recentEvents.map {
                     MemoryMCPSearchEvent(
                         id: $0.id,
@@ -1084,6 +1126,8 @@ final class AgentMemoryViewModel {
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 memoryServerGraph = nil
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = true
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP entity load failed: \(error.localizedDescription)"
             }
@@ -1099,6 +1143,8 @@ final class AgentMemoryViewModel {
             memoryEntityDetail = nil
             memoryEntityResults = []
             memoryServerGraph = nil
+            memoryServerGraphOverview = nil
+            memoryServerGraphUsesOverview = true
             selectedMemoryGraphNodeID = nil
             return
         }
@@ -1111,6 +1157,8 @@ final class AgentMemoryViewModel {
                 memoryEntityDetail = nil
                 memorySearchResults = []
                 memoryServerGraph = nil
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = true
                 statusMessage = entities.isEmpty
                     ? "Memory MCP entity list found no matches."
                     : "Memory MCP entity list found \(entities.count) matches."
@@ -1119,6 +1167,8 @@ final class AgentMemoryViewModel {
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 memoryServerGraph = nil
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = true
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP entity list failed: \(error.localizedDescription)"
             }
@@ -1132,24 +1182,31 @@ final class AgentMemoryViewModel {
             memoryEntityDetail = nil
             memoryEntityResults = []
             memoryServerGraph = nil
+            memoryServerGraphOverview = nil
+            memoryServerGraphUsesOverview = true
             selectedMemoryGraphNodeID = nil
             return
         }
 
         Task {
             do {
-                let graph = try await MemoryMCPHTTPTransport(endpoint: endpoint).memoryGraph(limit: 5_000)
+                let graph = try await MemoryMCPHTTPTransport(endpoint: endpoint).memoryGraph(limit: 10_000)
                 memoryServerGraph = graph
+                memoryServerGraphOverview = MemoryMCPGraphOverviewBuilder().overview(from: graph)
+                memoryServerGraphUsesOverview = true
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 selectedMemoryGraphNodeID = nil
-                statusMessage = "Loaded Memory MCP graph overview with \(graph.nodes.count) nodes and \(graph.edges.count) edges."
+                let overview = memoryServerGraphOverview ?? graph
+                statusMessage = "Loaded Memory MCP graph overview with \(overview.nodes.count) grouped nodes from \(graph.nodes.count) detailed nodes."
             } catch {
                 memorySearchResults = []
                 memoryEntityDetail = nil
                 memoryEntityResults = []
                 memoryServerGraph = nil
+                memoryServerGraphOverview = nil
+                memoryServerGraphUsesOverview = true
                 selectedMemoryGraphNodeID = nil
                 statusMessage = "Memory MCP graph refresh failed: \(error.localizedDescription)"
             }

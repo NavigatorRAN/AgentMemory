@@ -1,3 +1,5 @@
+import Foundation
+
 public struct MemoryMCPGraphViewportProjection: Equatable, Sendable {
     public var nodes: [MemoryMCPGraphViewportNode]
     public var edges: [MemoryMCPGraphEdge]
@@ -19,12 +21,26 @@ public struct MemoryMCPGraphViewportNode: Equatable, Sendable {
     public var label: String
     public var kind: MemoryMCPGraphNode.Kind
     public var point: MemoryMCPGraphPoint2D
+    public var depth: Double
+    public var communityIndex: Int
+    public var importance: Double
 
-    public init(id: String, label: String, kind: MemoryMCPGraphNode.Kind, point: MemoryMCPGraphPoint2D) {
+    public init(
+        id: String,
+        label: String,
+        kind: MemoryMCPGraphNode.Kind,
+        point: MemoryMCPGraphPoint2D,
+        depth: Double = 0,
+        communityIndex: Int = 0,
+        importance: Double = 0.35
+    ) {
         self.id = id
         self.label = label
         self.kind = kind
         self.point = point
+        self.depth = depth
+        self.communityIndex = communityIndex
+        self.importance = importance
     }
 }
 
@@ -60,6 +76,20 @@ public struct MemoryMCPGraphViewportEdgeSegment: Equatable, Sendable {
         self.label = label
         self.source = source
         self.target = target
+    }
+}
+
+public struct MemoryMCPGraphCamera: Equatable, Sendable {
+    public var yaw: Double
+    public var pitch: Double
+    public var zoom: Double
+    public var distance: Double
+
+    public init(yaw: Double = 0, pitch: Double = 0, zoom: Double = 1, distance: Double = 420) {
+        self.yaw = yaw
+        self.pitch = pitch
+        self.zoom = zoom
+        self.distance = distance
     }
 }
 
@@ -102,7 +132,9 @@ public struct MemoryMCPGraphViewportProjector: Sendable {
                 id: node.id,
                 label: node.label,
                 kind: node.kind,
-                point: point
+                point: point,
+                communityIndex: node.communityIndex,
+                importance: node.importance
             )
         }
 
@@ -129,5 +161,98 @@ public struct MemoryMCPGraphViewportProjector: Sendable {
             edges: scene.edges,
             edgeSegments: edgeSegments
         )
+    }
+
+    public func project(
+        _ scene: MemoryMCPGraphScene,
+        width: Double,
+        height: Double,
+        padding: Double,
+        camera: MemoryMCPGraphCamera
+    ) -> MemoryMCPGraphViewportProjection {
+        guard !scene.nodes.isEmpty else {
+            return MemoryMCPGraphViewportProjection(nodes: [], edges: scene.edges)
+        }
+
+        let rotatedNodes = scene.nodes.map { node in
+            (node: node, rotated: rotate(node.position, yaw: camera.yaw, pitch: camera.pitch))
+        }
+        let projected = rotatedNodes.map { item in
+            let perspective = max(0.22, camera.distance / max(80, camera.distance + item.rotated.z))
+            return (
+                node: item.node,
+                point: MemoryMCPGraphPoint2D(
+                    x: item.rotated.x * perspective,
+                    y: item.rotated.y * perspective
+                ),
+                depth: item.rotated.z
+            )
+        }
+
+        let maxAbsX = projected.map { abs($0.point.x) }.max() ?? 1
+        let maxAbsY = projected.map { abs($0.point.y) }.max() ?? 1
+        let maxAbs = max(maxAbsX, maxAbsY, 1)
+        let drawableWidth = max(width - (padding * 2), 0)
+        let drawableHeight = max(height - (padding * 2), 0)
+        let scale = (min(drawableWidth, drawableHeight) / 2) / maxAbs
+        let zoom = max(0.35, min(camera.zoom, 5))
+
+        let nodes = projected.map { item in
+            MemoryMCPGraphViewportNode(
+                id: item.node.id,
+                label: item.node.label,
+                kind: item.node.kind,
+                point: MemoryMCPGraphPoint2D(
+                    x: (width / 2) + (item.point.x * scale * zoom),
+                    y: (height / 2) - (item.point.y * scale * zoom)
+                ),
+                depth: item.depth,
+                communityIndex: item.node.communityIndex,
+                importance: item.node.importance
+            )
+        }
+
+        let nodesByID = Dictionary(uniqueKeysWithValues: nodes.map { ($0.id, $0) })
+        let edgeSegments = scene.edges.compactMap { edge -> MemoryMCPGraphViewportEdgeSegment? in
+            guard let source = nodesByID[edge.sourceID],
+                  let target = nodesByID[edge.targetID]
+            else {
+                return nil
+            }
+
+            return MemoryMCPGraphViewportEdgeSegment(
+                id: edge.id,
+                sourceID: edge.sourceID,
+                targetID: edge.targetID,
+                label: edge.label,
+                source: source.point,
+                target: target.point
+            )
+        }
+
+        return MemoryMCPGraphViewportProjection(
+            nodes: nodes.sorted { lhs, rhs in
+                if lhs.depth == rhs.depth {
+                    return lhs.id < rhs.id
+                }
+                return lhs.depth > rhs.depth
+            },
+            edges: scene.edges,
+            edgeSegments: edgeSegments
+        )
+    }
+
+    private func rotate(_ point: MemoryMCPGraphPoint3D, yaw: Double, pitch: Double) -> MemoryMCPGraphPoint3D {
+        let cosYaw = cos(yaw)
+        let sinYaw = sin(yaw)
+        let yawedX = (point.x * cosYaw) + (point.z * sinYaw)
+        let yawedZ = (-point.x * sinYaw) + (point.z * cosYaw)
+
+        let cosPitch = cos(pitch)
+        let sinPitch = sin(pitch)
+        let pitchedY = (point.y * cosPitch) - (yawedZ * sinPitch)
+        let pitchedZ = (point.y * sinPitch) + (yawedZ * cosPitch)
+
+        return MemoryMCPGraphPoint3D(x: yawedX, y: pitchedY, z: pitchedZ)
     }
 }

@@ -1,0 +1,168 @@
+# IMAP - Home Assistant
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://www.home-assistant.io/integrations/imap
+- Final URL: https://www.home-assistant.io/integrations/imap
+- Canonical URL: https://www.home-assistant.io/integrations/imap/
+- Fetched at: 2026-06-28T02:51:46Z
+- Content type: text/html; charset=UTF-8
+
+## Description
+
+Instructions on how to integrate IMAP unread email into Home Assistant.
+
+## Extracted Text
+
+On this page
+Configuration
+IMAP services with App Passwords
+Microsoft 365 and Live IMAP services
+Google Gmail IMAP service
+Configuring IMAP Searches
+Selecting a charset supported by the imap server
+Selecting message data to include in the IMAP event
+Selecting an alternate SSL cipher list or disabling SSL verification
+Enable IMAP-Push
+Troubleshooting
+Using events
+List of actions
+Example - post-processing
+Example - keyword spotting
+Example - extracting formatted text from an email using template sensors
+Example - custom event data template
+Remove an IMAP service
+To remove an integration instance from Home Assistant
+The IMAP integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] is observing your IMAP server . It can report the number of unread emails and can send a custom event that can be used to trigger an automation. Other search criteria can be used, as shown in the example below.
+To add the IMAP service to your Home Assistant instance, use this My button:
+Manual configuration steps
+If the above My button doesn’t work, you can also perform the following steps
+manually:
+Browse to your Home Assistant instance.
+Go to Settings > Devices & services .
+In the bottom right corner, select the
+Add Integration button.
+From the list, select IMAP .
+Follow the instructions on screen to complete the setup.
+Microsoft has removed support for direct use (App) passwords when accessing IMAP without modern verification. You can create an App password, but access is only allowed though OAUTH2 enabled mail clients authorized by Microsoft or via an App registration in Microsoft Entra ID (school or business).
+An OAUTH2 authentication flow is not supported for the IMAP integration. This means that unfortunately, it is not possible to use Home Assistant IMAP with Microsoft 365 IMAP services for school and business and the (free) personal Microsoft Live IMAP services.
+If you’re going to use Gmail, 2-step verification must be enabled on your Gmail account. Once it is enabled, you need to create an App Password .
+Go to your Google Account
+Select Security
+Under “How you sign into Google” select 2-Step Verification .
+Sign in to your Account.
+At the bottom of the 2-Step Verification page, click App Passwords .
+Give your app a name that makes sense to you (Home Assistant IMAP, for example).
+Click Create , then make a note of your 16-character app password for safekeeping (remove the spaces when you save it).
+Click Done .
+Add the IMAP Integration to your Home Assistant instance using the My button above. Enter the following information as needed:
+Username: Your Gmail email login
+Password: your 16-character app password (without the spaces)
+Server: imap.gmail.com
+Port: 993
+Click Submit .
+Assign your integration to an “Area” if desired, then click Finish .
+Congratulations, you now have a sensor that counts the number of unread emails in your Gmail account. From here you can create additional sensors based upon the data that comes through the event bus when there’s a new message detected.
+By default, this integration will count unread emails. By configuring the search string, you can count other results, for example:
+ALL to count all emails in a folder
+FROM , TO , SUBJECT to find emails in a folder (see IMAP RFC for all standard options )
+Gmail’s IMAP extensions allow raw Gmail searches, like X-GM-RAW "in: inbox older_than:7d" to show emails older than one week in your inbox. Note that raw Gmail searches will ignore your folder configuration and search all emails in your account!
+Some IMAP services, like Yahoo, require a US-ASCII charset to be configured.
+By default, the IMAP event won’t include text or headers message data. If you want them to be included ( text , headers , or both), you have to manually select them in the option flow.
+Another way to process the text data, is to use the imap.fetch action. In this case, text won’t be limited by size.
+If the default IMAP server settings do not work, you might try to set an alternate SSL cipher list.
+The SSL cipher list option allows you to select the list of SSL ciphers to be accepted from this endpoint: default ( system default ), modern or intermediate ( inspired by Mozilla Security/Server Side TLS ).
+If you are using self signed certificates, you can turn off SSL verification.
+IMAP-Push is enabled by default if your IMAP server supports it. If you use an unreliable IMAP service that periodically drops the connection and causes issues, you might consider turning off IMAP-Push. This will fall back to polling the IMAP server.
+Email providers may limit the number of reported emails. The number may be less than the limit (10,000 at least for Yahoo) even if you set the IMAP search to reduce the number of results. If you are not getting expected events and cleaning your Inbox or the configured folder is not desired, set up an email filter for the specific sender to go into a new folder. Then create a new config entry or modify the existing one with the desired folder.
+When a new message arrives or a message is removed within the defined search command scope, the imap integration will send a custom event that can be used to trigger an automation.
+It is also possible to use to create a template binary_sensor or sensor based the event data .
+The table below shows what attributes come with trigger.event.data . The data is a dictionary that has the keys that are shown below.
+The attributes shown in the table are also available as variables for the custom event data template. The example shows how to use this as an event filter.
+Note
+The text attribute is not size limited when used as a variable in the template.
+server
+The IMAP server name
+username
+The IMAP username
+search
+The IMAP search configuration
+folder
+The IMAP folder configuration
+text
+The email body text of the message. By default, only the first 2048 bytes of the body text will be available; the rest will be clipped off. You can increase the maximum text size of the body, but this is not advised and will never guarantee that the entire message text is available. A better practice is to use a custom event data template that can parse the entire message, not limited by size. The rendered result will then be added as an attribute custom to the event data to be used for automations. text will be included if it is explicitly selected in the option flow.
+sender
+The sender of the message
+subject
+The subject of the message
+date
+A datetime object of the date sent
+headers
+The headers of the message in the for of a dictionary. The values are iterable as headers can occur more than once. headers will be included if it is explicitly selected in the option flow.
+custom
+Holds the result of the custom event data template . All attributes are available as a variable in the template.
+initial
+Returns True if this is the initial event for the last message received. When a message within the search scope is removed and the last message received has not been changed, then an imap_content event is generated and the initial property is set to False . Note that if no Message-ID header was set on the triggering email, the initial property will always be set to True .
+parts
+Returns a dictionary with the available parts in a multipart message. The keys of the dictionary can be used to pass via the part option to the fetch action to allow you to receive the content of a specific part of the message.
+uid
+Latest uid of the message.
+The event_type for the custom event should be set to imap_content . The configuration below shows how you can use the event data in a template sensor .
+If the default maximum message size (2048 bytes) used in events is too small for your needs, you can increase this maximum size.
+Warning
+Increasing the default maximum message size (2048 bytes) could have a negative impact on performance as event data is also logged by the recorder . If the total event data size exceeds the maximum event size (32168 bytes), the event will be skipped.
+template : - trigger : - trigger : event event_type : " imap_content" id : " custom_event" sensor : - name : imap_content state : " {{ trigger.event.data['subject'] }}" attributes : Entry : " {{ trigger.event.data['entry_id'] }}" UID : " {{ trigger.event.data['uid'] }}" Message : " {{ trigger.event.data['text'] }}" Server : " {{ trigger.event.data['server'] }}" Username : " {{ trigger.event.data['username'] }}" Search : " {{ trigger.event.data['search'] }}" Folder : " {{ trigger.event.data['folder'] }}" Sender : " {{ trigger.event.data['sender'] }}" Date : " {{ trigger.event.data['date'] }}" Subject : " {{ trigger.event.data['subject'] }}" Initial : " {{ trigger.event.data['initial'] }}" To : " {{ trigger.event.data['headers'].get('Delivered-To', ['n/a'])[0] }}" Return-Path : " {{ trigger.event.data['headers'].get('Return-Path',['n/a'])[0] }}" Received-first : " {{ trigger.event.data['headers'].get('Received',['n/a'])[0] }}" Received-last : " {{ trigger.event.data['headers'].get('Received',['n/a'])[-1] }}"
+The IMAP integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] provides the following actions. Each link below opens a dedicated page with examples, parameters, and a step-by-step UI walkthrough.
+Delete message ( imap.delete )
+Deletes an IMAP email message.
+Fetch message ( imap.fetch )
+Fetches the text body and part metadata of an IMAP email message.
+Fetch message part ( imap.fetch_part )
+Fetches a single part or attachment from an IMAP email message.
+Move message ( imap.move )
+Moves an IMAP email message to another folder.
+Mark message as seen ( imap.seen )
+Marks an IMAP email message as seen.
+For an overview of every action across all integrations, see the actions reference .
+The example below filters the event trigger by entry_id , fetches the message and stores it in message_text . It then marks the message in the event as seen and finally, it adds a notification with the subject of the message. The seen action entry_id can be a template or literal string. In UI mode you can select the desired entry from a list as well.
+alias : " imap fetch and seen example" description : " Fetch and mark an incoming message as seen" triggers : - trigger : event event_type : imap_content event_data : entry_id : 91fadb3617c5a3ea692aeb62d92aa869 conditions : - condition : template value_template : " {{ trigger.event.data['sender'] == ' [email protected] ' }}" actions : - action : imap.fetch data : entry : 91fadb3617c5a3ea692aeb62d92aa869 uid : " {{ trigger.event.data['uid'] }}" response_variable : message_text - action : imap.seen data : entry : 91fadb3617c5a3ea692aeb62d92aa869 uid : " {{ trigger.event.data['uid'] }}" - action : persistent_notification.create data : message : " {{ message_text['subject'] }}"
+In case you want to process a message part, use the fetch_part action, and specify the part option.
+alias : " imap fetch and seen example" description : " Fetch and mark an incoming message as seen" triggers : - trigger : event event_type : imap_content event_data : entry_id : 91fadb3617c5a3ea692aeb62d92aa869 conditions : - condition : template value_template : " {{ trigger.event.data['sender'] == ' [email protected] ' }}" - condition : template value_template : " {{ trigger.event.data['parts'].get('1') }}" - condition : template value_template : " {{ trigger.event.data['parts']['1'].get('content_type') == 'text/plain' }}" actions : - action : imap.fetch_part data : entry : 91fadb3617c5a3ea692aeb62d92aa869 uid : " {{ trigger.event.data['uid'] }}" part : " 1" response_variable : message_text - action : imap.seen data : entry : 91fadb3617c5a3ea692aeb62d92aa869 uid : " {{ trigger.event.data['uid'] }}" - action : persistent_notification.create data : message : " {{ message_text['part_data'] | base64_decode }}"
+The following example shows the usage of the IMAP email content sensor to scan the subject of an email for text, in this case, an email from the APC SmartConnect service, which tells whether the UPS is running on battery or not.
+template : - trigger : - trigger : event event_type : " imap_content" id : " custom_event" event_data : sender : " [email protected] " initial : true sensor : - name : house_electricity state : >- {% if 'UPS On Battery' in trigger.event.data["subject"] %} power_out {% elif 'Power Restored' in trigger.event.data["subject"] %} power_on {% endif %}
+This example shows how to extract numbers or other formatted data from an email to change the value of a template sensor to a value extracted from the email. In this example, we will be extracting energy use, cost, and billed amount from an email (from Georgia Power) and putting it into sensor values using a template sensor that runs against our IMAP email sensor already set up. A sample of the body of the email used is below:
+Yesterday's Energy Use: 76 kWh
+Yesterday's estimated energy cost: $8
+Monthly Energy use-to-date for 23 days: 1860 kWh
+Monthly estimated energy cost-to-date for 23 days: $198
+To view your account for details about your energy use, please click here.
+Below is the template sensor which extracts the information from the body of the email in our IMAP email sensor (named sensor.energy_email) into 3 sensors for the energy use, daily cost, and billing cycle total.
+template : - trigger : - trigger : event event_type : " imap_content" id : " custom_event" event_data : sender : " [email protected] " sensor : - name : " Previous Day Energy Use" unit_of_measurement : " kWh" state : > {{ trigger.event.data["text"] | regex_findall_index("\*Yesterday's Energy Use:\* ([0-9]+) kWh") }} - name : " Previous Day Cost" unit_of_measurement : " $" state : > {{ trigger.event.data["text"] | regex_findall_index("\*Yesterday's estimated energy cost:\* \$([0-9.]+)") }} - name : " Billing Cycle Total" unit_of_measurement : " $" state : > {{ trigger.event.data["text"] | regex_findall_index("\ days:\* \$([0-9.]+)") }}
+By making small changes to the regular expressions defined above, a similar structure can parse other types of data out of the body text of other emails.
+We can define a custom event data template to help filter events. This can be handy if, for example, we have multiple senders we want to allow.
+We define the following template to return true if part of the sender is @example.com :
+{{ "@example.com" in sender }}
+This will render to True if the sender is allowed. The result is added to the event data as trigger.event.data["custom"] .
+The example below will only set the state to the subject of the email of template sensor, but only if the sender address matches.
+template : - trigger : - trigger : event event_type : " imap_content" id : " custom_event" event_data : custom : true sensor : - name : event filtered by template state : ' {{ trigger.event.data["subject"] }}'
+This integration follows standard config entry removal.
+Go to Settings > Devices & services and select the integration card.
+From the list of devices, select the integration instance you want to remove.
+Next to the entry, select the three dots menu. Then, select Delete .
+Help us improve our documentation
+Suggest an edit to this page, or provide/view feedback for this page.
+Edit
+Provide feedback
+View pending feedback
+The IMAP service was introduced in Home Assistant 0.25, and it's used by
+2274 active installations.
+Its IoT class is Cloud Push.
+View source on GitHub
+View known issues
+View feature requests
+Integration owners
+We are incredibly grateful to the following contributors who currently maintain this integration:
+@jbouwh
+Categories
+Mailbox
+Back to top

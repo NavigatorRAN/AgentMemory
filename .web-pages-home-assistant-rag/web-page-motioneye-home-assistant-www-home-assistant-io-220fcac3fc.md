@@ -1,0 +1,170 @@
+# motionEye - Home Assistant
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://www.home-assistant.io/integrations/motioneye
+- Final URL: https://www.home-assistant.io/integrations/motioneye
+- Canonical URL: https://www.home-assistant.io/integrations/motioneye/
+- Fetched at: 2026-06-28T03:01:20Z
+- Content type: text/html; charset=UTF-8
+
+## Description
+
+Instructions on how to integrate motionEye into Home Assistant.
+
+## Extracted Text
+
+On this page
+Configuration
+Options
+Usage
+Entities
+Events
+List of actions
+Media Browsing
+Manually Configured Root Directories
+Example Dashboard Card
+Example Automations
+Set text overlay when alarm is armed
+Automatically play stored movies
+Debugging
+Debug Logging
+The motionEye integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] allows you to integrate your
+motionEye server into Home Assistant. motionEye
+is an open source web-frontend for the motion daemon, used to centralize the management
+and visualization of multiple types of cameras.
+To add the motionEye hub to your Home Assistant instance, use this My button:
+Manual configuration steps
+If the above My button doesn’t work, you can also perform the following steps
+manually:
+Browse to your Home Assistant instance.
+Go to Settings > Devices & services .
+In the bottom right corner, select the
+Add Integration button.
+From the list, select motionEye .
+Follow the instructions on screen to complete the setup.
+url
+The URL of the motionEye server itself – not the URL for the camera stream(s) that it makes available.
+admin_username
+The username of the motionEye administrative account, used for changing camera settings.
+admin_password
+The password of the motionEye administrative account.
+surveillance_username
+The username of the motionEye surveillance user, used to authenticate video streams.
+surveillance_password
+The password of the motionEye surveillance account.
+To define options for motionEye, follow these steps:
+In Home Assistant, go to Settings > Devices & services .
+If multiple instances of motionEye are configured, choose the instance you want to configure.
+On the card, select the cogwheel .
+If the card does not have a cogwheel, the integration does not support options for this device.
+Edit the options, then select Submit to save the changes.
+Configure motionEye webhooks to report events to Home Assistant
+Whether or not motionEye webhooks should be configured to callback into Home Assistant. If this option is disabled, no motion detected or file stored events will be generated unless the webhooks are manually configured.
+Overwrite unrecognized webhooks
+Whether or not to overwrite webhooks that are already configured and are not recognized as belonging to this integration (webhooks are deemed to belong to this integration if they contain src=hass-motioneye in the query string).
+Stream URL template
+A jinja2 template that is used to override the standard MJPEG stream URL (e.g. for use with reverse proxies). See Camera MJPEG Streams below.
+Platform Description camera An MJPEG camera that shows the motionEye video stream. switch Switch entities to enable/disable motion detection, text overlay, video streaming, still image capture, movie capture and upload enabled. sensor An “action sensor” that shows the number of configured actions for this device. The names of the available actions are viewable in the actions attribute of the sensor entity.
+Note :
+If the video streaming switch is turned off, the camera entity, and actions that operate on that camera, will become unavailable. The rest of the integration will continue to function.
+As cameras are added or removed to motionEye, devices/entities are automatically added or removed from Home Assistant.
+Camera MJPEG Streams
+In order for the MJPEG streams to function they need to be accessible at
+<motioneyehost>:<streaming port> , that is, Home Assistant will directly connect to the streaming port
+that is configured in the motionEye UI (under Video Streaming ) on the host that the
+motionEye integration is configured to use.
+Example:
+If this integration is configured to talk to motionEye at http://motioneye:8765 , and
+a camera is configured to stream on port 8081 – Home Assistant needs to
+be able to communicate to motioneye port 8081 .
+Stream URL Template
+For advanced usecases, this behavior can be changed with the Stream URL
+template option. When set, this string will override the default
+stream address that is derived from the default behavior described above. This
+option supports jinja2 templates and has
+the camera dict variables from motionEye
+( example )
+available for the template. Note that no Home Assistant state is available to
+the template, only the camera dict from motionEye.
+This is very useful when motionEye is behind a custom configured reverse proxy,
+and/or when the stream ports are otherwise not accessible to Home Assistant
+(e.g. firewall rules).
+Stream URL Template Examples
+The below are useful examples of how this option may be set.
+Use the camera name in the stream URL :
+http://motioneye/video/{{ name }}
+Use the camera name in the stream URL, converting it to lowercase first :
+http://motioneye/video/{{ name|lower }}
+Use the camera id in the stream URL :
+http://motioneye/video/{{ id }}
+On receipt of a motion or file stored callbacks, events will be fired which can be used
+in automations (etc).
+Data in events
+The event data includes the Home Assistant device_id for this motionEye
+camera device and the Home Assistant device name .
+Event data also includes as many Motion Conversion
+Specifiers
+as make sense for that event type.
+Any additional &key=value pairs added manually to the motionEye webhook
+(in the motionEye UI) will automatically propagate to the event data. If
+you manually tweak the webhook, remove the src=hass-motioneye parameter
+or the webhook will be overwritten.
+For file storage events, the integration will automatically add
+media_content_id (an identifier that can be used to play the media in a
+Home Assistant media player) and file_url (a raw URL to the media). See
+example automation below for an illustration of how
+this can be used.
+file_type will be less than 8 if the media stored is an image, otherwise,
+it is a movie/video. See the motion
+source
+for more details.
+Example motion detected event
+{ "event_type" : "motioneye.motion_detected" , "data" : { "device_id" : "662aa1c77657dbc4af836abcdf80000a" , "name" : "Office" , "camera_id" : "2" , "changed_pixels" : "99354" , "despeckle_labels" : "55" , "event" : "02" , "fps" : "24" , "frame_number" : "10" , "height" : "1080" , "host" : "6aa7a495490c" , "motion_center_x" : "314" , "motion_center_y" : "565" , "motion_height" : "730" , "motion_version" : "4.2.2" , "motion_width" : "252" , "noise_level" : "12" , "threshold" : "20736" , "width" : "1920" }, "origin" : "LOCAL" , "time_fired" : "2021-04-11T04:25:41.106964+00:00" , "context" : { "id" : "0320bb897aa3656dbb02affddce322f2" , "parent_id" : null , "user_id" : null } }
+Example file stored event
+{ "event_type" : "motioneye.file_stored" , "data" : { "device_id" : "662aa1c77657dbc4af836abcdf80000a" , "name" : "Office" , "camera_id" : "2" , "event" : "03" , "file_path" : "/var/lib/motioneye/Camera2/2021-04-10/21-27-53.mp4" , "file_type" : "8" , "media_content_id" : "media-source://motioneye/74565ad414754616000674c87bdc876c#662aa1c77657dbc4af836abcdf80000a#movies#/2021-04-10/21-27-53.mp4" , "file_url" : "https://cctv/movie/2/playback/2021-04-10/21-27-53.mp4?_username=admin&_signature=bc4565fe414754616000674c87bdcacbd" , "fps" : "25" , "frame_number" : "21" , "height" : "1080" , "host" : "6aa7a495490c" , "motion_version" : "4.2.2" , "noise_level" : "12" , "threshold" : "20736" , "width" : "1920" }, "origin" : "LOCAL" , "time_fired" : "2021-04-11T04:27:54.528671+00:00" , "context" : { "id" : "0358cac9457e3e3a2039da8c998e4c25" , "parent_id" : null , "user_id" : null } }
+The motionEye integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] provides the following actions. Each link below opens a dedicated page with examples, parameters, and a step-by-step UI walkthrough.
+Trigger motionEye action ( motioneye.action )
+Triggers a motionEye action.
+Set text overlay ( motioneye.set_text_overlay )
+Sets the text overlay for a camera.
+Snapshot ( motioneye.snapshot )
+Triggers a motionEye still snapshot.
+For an overview of every action across all integrations, see the actions reference .
+Saved motionEye media (movies and images) can be natively browsed from the Home Assistant “Media
+Browser”.
+While this integration allows drilling down into the media for each camera separately,
+underneath motionEye is using the directory structure to associate media items to each
+individual camera. Thus if multiple cameras are manually configured to share the same
+root directory, motionEye will return the combination of the media items when any one
+of the “overlapping” cameras are queried. Use different root directories (in motionEye:
+File Storage -> Root Directory ) to ensure motionEye (and thus this integration) will
+correctly associate media with the camera from which that media was captured.
+A dashboard card with icons that will call the action action to send action commands to motionEye.
+- type : picture-glance title : " Living Room" camera_image : camera.living_room camera_view : live entities : - entity : camera.living_room - entity : camera.living_room icon : " mdi:arrow-left" tap_action : action : perform-action perform_action : motioneye.action data : action : left entity_id : camera.living_room - entity : camera.living_room icon : " mdi:arrow-right" tap_action : action : perform-action perform_action : motioneye.action data : action : right entity_id : camera.living_room - entity : camera.living_room icon : " mdi:arrow-up" tap_action : action : perform-action perform_action : motioneye.action data : action : up entity_id : camera.living_room - entity : camera.living_room icon : " mdi:arrow-down" tap_action : action : perform-action perform_action : motioneye.action data : action : down entity_id : camera.living_room
+A simple automation to set text overlay indicating the alarm armed status. Text overlay
+must be switched on for this automation to work (controllable via switch.<name>_text_overlay ).
+- alias : " Set camera text overlay to armed" triggers : - trigger : state entity_id : alarm_control_panel.home_alarm to : " armed_away" actions : - action : motioneye.set_text_overlay target : entity_id : camera.living_room data : left_text : custom-text custom_left_text : " Alarm is ARMED" - alias : " Set camera text overlay to disarmed" triggers : - trigger : state entity_id : alarm_control_panel.home_alarm to : " disarmed" actions : - action : motioneye.set_text_overlay target : entity_id : camera.living_room data : left_text : custom-text custom_left_text : " Alarm is disarmed"
+An automation to cast stored movie clips to a TV as they arrive.
+- alias : " Cast motionEye movie clips" triggers : - trigger : event event_type : motioneye.file_stored event_data : # Only cast video. file_type : " 8" actions : - action : media_player.play_media target : entity_id : media_player.kitchen_tv data : media_content_id : " {{ trigger.event.data.media_content_id }}" media_content_type : video
+To enable debug logging for both the integration and the underlying client library,
+enable the following in your configuration.yaml The configuration.yaml file is the main configuration file for Home Assistant. It lists the integrations to be loaded and their specific configurations. In some cases, the configuration needs to be edited manually directly in the configuration.yaml file. Most integrations can be configured in the UI. [Learn more] and then restart:
+logger : default : warning logs : motioneye_client : debug homeassistant.components.motioneye : debug
+Help us improve our documentation
+Suggest an edit to this page, or provide/view feedback for this page.
+Edit
+Provide feedback
+View pending feedback
+The motionEye hub was introduced in Home Assistant 2021.5, and it's used by
+3707 active installations.
+Its IoT class is Local Polling.
+View source on GitHub
+View known issues
+View feature requests
+Integration owners
+We are incredibly grateful to the following contributors who currently maintain this integration:
+@dermotduffy
+Categories
+Camera
+Media source
+Back to top

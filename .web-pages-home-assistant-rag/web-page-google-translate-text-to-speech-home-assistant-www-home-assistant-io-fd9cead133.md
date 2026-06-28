@@ -1,0 +1,73 @@
+# Google Translate text-to-speech - Home Assistant
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://www.home-assistant.io/integrations/google_translate
+- Final URL: https://www.home-assistant.io/integrations/google_translate
+- Canonical URL: https://www.home-assistant.io/integrations/google_translate/
+- Fetched at: 2026-06-28T02:46:59Z
+- Content type: text/html; charset=UTF-8
+
+## Description
+
+Instructions on how to set up Google Translate text-to-speech with Home Assistant.
+
+## Extracted Text
+
+On this page
+Configuration
+Action: Speak
+Action: Say (legacy)
+The Google Translate text-to-speech integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] uses the unofficial Google Translate text-to-speech engine to read text with natural-sounding voices. Despite the name, the integration only does text-to-speech and does not translate the messages you send to it.
+To add the Google Translate text-to-speech service to your Home Assistant instance, use this My button:
+Manual configuration steps
+If the above My button doesn’t work, you can also perform the following steps
+manually:
+Browse to your Home Assistant instance.
+Go to Settings > Devices & services .
+In the bottom right corner, select the
+Add Integration button.
+From the list, select Google Translate text-to-speech .
+Follow the instructions on screen to complete the setup.
+Supported languages
+All languages where the “Talk” feature is enabled in Google Translate are supported. The current list of supported languages is:
+Language Code Language af Afrikaans am Amharic ar Arabic bg Bulgarian bn Bengali bs Bosnian ca Catalan cs Czech cy Welsh da Danish de German el Greek en English es Spanish et Estonian eu Basque fi Finnish fil Filipino (Tagalog) fr French gl Galician gu Gujarati ha Hausa hi Hindi hr Croatian hu Hungarian id Indonesian is Icelandic it Italian iw Hebrew ja Japanese jw Javanese km Khmer kn Kannada ko Korean la Latin lt Lithuanian lv Latvian ml Malayalam mr Marathi ms Malay my Myanmar (Burmese) ne Nepali nl Dutch no Norwegian pa Punjabi pl Polish pt Portuguese (Portugal, Brazil) ro Romanian ru Russian si Sinhala (Sinhalese) sk Slovak sq Albanian sr Serbian su Sundanese sv Swedish sw Swahili ta Tamil te Telugu th Thai tl Tagalog (Filipino) tr Turkish uk Ukrainian ur Urdu vi Vietnamese
+Check the complete list of supported TLDs for allowed TLD values. This is used to force the dialect when multiple dialects fall into the same 2-digit language code (for example, US , UK , or AU ).
+You can also use supported BCP 47 tags or the 2-2 digit format for your supported dialect ( en-gb or en-us ). The currently implemented mappings are:
+Dialect Language TLD en-us en com en-gb en co.uk en-uk en co.uk en-au en com.au en-ca en ca en-in en co.in en-ie en ie en-za en co.za fr-ca fr ca fr-fr fr fr pt-br pt com.br pt-pt pt pt es-es es es es-us es com
+The tts.speak action is the modern way to use Google Translate text-to-speech. Add the speak action, select the entity for your Google Translate text-to-speech (it is named for the language you created it with), select the media player entity or group to send the TTS audio to, and enter the message to speak.
+For more options about speak , see the Speak section on the main TTS building block page.
+In YAML, your action will look like this:
+action : tts.speak target : entity_id : tts.google_en_com data : media_player_entity_id : media_player.giant_tv message : " Hello, can you hear me now?"
+Tip
+The google_translate_say action can be used when configuring the legacy google_translate text-to-speech platform in configuration.yaml . We recommend that new users instead set up the integration in the UI and use the tts.speak action with the corresponding Google Translate text-to-speech entity as the target.
+The google_translate_say action supports language and also options for setting tld . You set the text to speak with the message option. The action name can be customized with the service_name configuration option.
+Say to all media_player device entities:
+# Replace google_translate_say with <platform>_say when you use a different platform. action : tts.google_translate_say data : entity_id : all message : " May the force be with you."
+Say to the media_player.floor device entity:
+action : tts.google_translate_say data : entity_id : media_player.floor message : " May the force be with you."
+Say to the media_player.floor device entity in French:
+action : tts.google_translate_say data : entity_id : media_player.floor message : " Que la force soit avec toi." language : " fr"
+Say to the media_player.floor device entity in UK English:
+action : tts.google_translate_say data : entity_id : media_player.floor message : " May the force be with you." language : " en-uk"
+action : tts.google_translate_say data : entity_id : media_player.floor message : " May the force be with you." language : " en" options : tld : co.uk
+With a template:
+action : tts.google_translate_say data : message : " Temperature is {{states('sensor.temperature')}}." cache : false
+For more information about using text-to-speech with Home Assistant and more details on all the options it provides, see the TTS documentation .
+Help us improve our documentation
+Suggest an edit to this page, or provide/view feedback for this page.
+Edit
+Provide feedback
+View pending feedback
+The Google Translate text-to-speech service was introduced in Home Assistant 0.35, and it's used by
+92.4% of the active installations.
+Its IoT class is Cloud Push.
+View source on GitHub
+View known issues
+View feature requests
+Integration owners
+This integration is community maintained.
+If you are a developer and would like to help, feel free to contribute!
+Categories
+Text-to-speech
+Back to top

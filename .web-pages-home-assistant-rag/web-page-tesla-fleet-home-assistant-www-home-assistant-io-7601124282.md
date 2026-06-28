@@ -1,0 +1,158 @@
+# Tesla Fleet - Home Assistant
+
+Source-backed web page detail staged by AgentMemory bulk web importer.
+
+- Requested URL: https://www.home-assistant.io/integrations/tesla_fleet
+- Final URL: https://www.home-assistant.io/integrations/tesla_fleet
+- Canonical URL: https://www.home-assistant.io/integrations/tesla_fleet/
+- Fetched at: 2026-06-28T03:21:37Z
+- Content type: text/html; charset=UTF-8
+
+## Description
+
+Instructions on how to integrate the Tesla Fleet API within Home Assistant.
+
+## Extracted Text
+
+On this page
+Prerequisites
+Tesla Developer Application
+Configuration
+Hosting with NGINX app (optional)
+Data updates
+Command signing
+Generating your own key pair
+Entities
+Vehicles
+Energy sites
+Wall connector
+Vehicle sleep
+Removing the integration
+To remove an integration instance from Home Assistant
+Troubleshooting
+The Tesla Fleet integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] lets you control Tesla vehicles and energy sites using the Tesla Fleet API .
+You need to configure developer credentials and host a public key file to allow Home Assistant to communicate with your Tesla account.
+A Tesla account with verified email
+A web domain to host your public key file:
+NGINX Home Assistant SSL proxy app (recommended)
+External hosting service, such as FleetKey.net or MyTeslamate.com
+Warning
+The China region is currently not supported by this integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] .
+Create a Tesla Developer Application to connect Home Assistant with the Tesla Fleet API.
+Create a developer application:
+Go to developer.tesla.com/request
+Select your Tesla account from the dropdown
+Enter application details:
+Application name: A name to identify the application
+Description: Enter a brief description of your integration
+Purpose of Usage: Explain how you’ll use the API (e.g., “Home Assistant”)
+Configure client details:
+OAuth Grant Type: Select Authorization Code and Machine-to-Machine
+Allowed Origin URL(s): Enter your domain’s URL, for example https://yourdomain.com/
+Allowed Redirect URI: Enter one of the following:
+The literal string https://my.home-assistant.io/redirect/oauth if the My Home Assistant integration is enabled (it is by default).
+Home Assistant uses this service by default to redirect requests towards your instance.
+<HOME_ASSISTANT_URL>/auth/external/callback if you do not have the My Home Assistant integration enabled.
+Allowed Returned URL(s): Leave this field empty (not required)
+Select desired API scopes:
+Vehicle Information (mandatory for vehicles)
+Vehicle Location (recommended)
+Vehicle Commands (recommended)
+Energy Product Information (mandatory for energy products)
+Energy Product Settings (recommended)
+Set up billing (optional):
+Tesla provides $10 monthly credit for personal use
+You can add billing details later if needed
+Save your credentials:
+After creating the application, go to View Details > Credentials & APIs
+Note your Client ID and Client Secret - you’ll need these to configure Home Assistant.
+To add the Tesla Fleet hub to your Home Assistant instance, use this My button:
+Manual configuration steps
+If the above My button doesn’t work, you can also perform the following steps
+manually:
+Browse to your Home Assistant instance.
+Go to Settings > Devices & services .
+In the bottom right corner, select the
+Add Integration button.
+From the list, select Tesla Fleet .
+Follow the instructions on screen to complete the setup.
+Add application credentials
+Enter your application Client ID and Client Secret from your Tesla Developer Application
+This step will be skipped if you already have exactly one Tesla Fleet application credential already configured
+Authenticate with Tesla:
+You’ll be redirected to Tesla’s login page
+Enter your Tesla account credentials
+On the authorization page, select Select All and then Allow to allow all the scopes you previously selected
+Redirect to Home Assistant:
+Confirm you want to Link account to Home Assistant
+Enter domain
+Enter the domain name you intend to host your public key on
+This domain should be the same or a subdomain of your origin domain, and must use a valid SSL certificate.
+Register public key
+Upload the public key shown to the domain you entered in step 4 at .well-known/appspecific/com.tesla.3p.public-key.pem
+Install Virtual Key
+Use your smartphone to scan the QR code or enter the address to install your public key on your vehicles with the Tesla app.
+This process needs to be repeated for each vehicle, excluding Model S and Model X vehicles manufactured before 2021.
+Create the NGINX configuration:
+echo 'location /.well-known/appspecific/com.tesla.3p.public-key.pem {
+root /share/tesla;
+}' > /share/nginx_proxy_default_tesla.conf
+Copy the public key shown during setup to /share/tesla
+Configure the NGINX app:
+Go to Settings > Apps > NGINX Home Assistant SSL proxy > Configuration
+Change customize.active from false to true
+Leave config.default at its default value: nginx_proxy_default*.conf
+Restart the NGINX app and verify your public key is accessible at:
+https://yourdomain.com/.well-known/appspecific/com.tesla.3p.public-key.pem
+The integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] polls Data polling is the process of querying a device or service at regular intervals to check for updates or retrieve data. By defining a custom polling interval, you can control how frequently your system checks for new data, which can help optimize performance and reduce unnecessary network traffic. [Learn more] each vehicle every 10 minutes while it’s awake. This is designed to stay within Tesla’s $10 monthly credit for most users, which you can monitor usage in the Tesla Developer Dashboard . Energy product APIs are free to use.
+If you need different polling intervals, you can define a custom polling interval .
+Certain vehicles, including all vehicles manufactured since late 2023, require vehicle commands to be signed with a private key. All actions Actions are used in several places in Home Assistant. As part of a script or automation, actions define what is going to happen once a trigger is activated. In scripts, an action is called sequence . [Learn more] on vehicle entities An entity represents a sensor, actor, or function in Home Assistant. Entities are used to monitor physical properties or to control other entities. An entity is usually part of a device or a service. [Learn more] will fail with an error if this is required and the key has not been set up correctly.
+Your public key must be added to each of these vehicles by visiting https://tesla.com/_ak/YOUR_DOMAIN and following the instructions in the Tesla app.
+If you’re using an iPhone, you may need to use Safari to open the webpage and finish the setup.
+For more details see Tesla Fleet API vehicle commands documentation .
+The integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] generates a private key automatically at config/tesla_fleet.key . You can replace it with your own key (such as one from another Home Assistant instance) before configuring the integration. You can generate your own key pair following Tesla’s documentation .
+These are the entities available in the Tesla Fleet integration. Not all entities are enabled by default, and not all values are always available.
+Domain Name Enabled Binary sensor Battery heater No Binary sensor Cabin overheat protection actively cooling No Binary sensor Charge cable Yes Binary sensor Charger has multiple phases No Binary sensor Dashcam No Binary sensor Front driver door Yes Binary sensor Front driver window Yes Binary sensor Front passenger door Yes Binary sensor Front passenger window Yes Binary sensor Preconditioning enabled No Binary sensor Preconditioning No Binary sensor Rear driver door Yes Binary sensor Rear driver window Yes Binary sensor Rear passenger door Yes Binary sensor Rear passenger window Yes Binary sensor Scheduled charging pending No Binary sensor Status Yes Binary sensor Tire pressure warning front left No Binary sensor Tire pressure warning front right No Binary sensor Tire pressure warning rear left No Binary sensor Tire pressure warning rear right No Binary sensor Trip charging No Binary sensor User present Yes Button Flash lights Yes Button HomeLink Yes Button Honk horn Yes Button Keyless driving Yes Button Play fart Yes Button Wake Yes Climate Cabin overheat protection No Climate Climate Yes Cover Charge port door Yes Cover Frunk Yes Cover Sunroof No Cover Trunk Yes Cover Vent windows Yes Device tracker Location Yes Device tracker Route Yes Lock Charge cable lock Yes Lock Lock Yes Media player Media player Yes Number Charge current Yes Number Charge limit Yes Select Seat heater front left Yes Select Seat heater front right Yes Select Seat heater rear center No Select Seat heater rear left No Select Seat heater rear right No Select Seat heater third row left No Select Seat heater third row right No Select Steering wheel heater Yes Sensor Battery level Yes Sensor Battery range Yes Sensor Charge cable No Sensor Charge energy added Yes Sensor Charge rate Yes Sensor Charger current Yes Sensor Charger power Yes Sensor Charger voltage Yes Sensor Charging Yes Sensor Distance to arrival Yes Sensor Driver temperature setting No Sensor Estimate battery range No Sensor Fast charger type No Sensor Ideal battery range No Sensor Inside temperature Yes Sensor Odometer No Sensor Outside temperature Yes Sensor Passenger temperature setting No Sensor Power No Sensor Shift state No Sensor Speed No Sensor State of charge at arrival No Sensor Time to arrival Yes Sensor Time to full charge Yes Sensor Tire pressure front left No Sensor Tire pressure front right No Sensor Tire pressure rear left No Sensor Tire pressure rear right No Sensor Traffic delay No Sensor Usable battery level No Switch Auto seat climate left Yes Switch Auto seat climate right Yes Switch Auto steering wheel heater Yes Switch Charge Yes Switch Defrost Yes Switch Sentry mode Yes Update Update Yes
+Domain Name Enabled Binary sensor Backup capable Yes Binary sensor Grid services active Yes Binary sensor Grid services enabled Yes Binary sensor Storm watch active Yes Number Backup reserve Yes Number Off grid reserve Yes Select Allow export Yes Select Operation mode Yes Sensor Battery power Yes Sensor Consumer imported from battery No Sensor Consumer imported from generator No Sensor Consumer imported from grid No Sensor Consumer imported from solar No Sensor Energy left Yes Sensor Generator exported Yes Sensor Generator power No Sensor Grid exported Yes Sensor Grid exported from battery No Sensor Grid exported from generator No Sensor Grid exported from solar No Sensor Grid imported No Sensor Grid power Yes Sensor Grid services exported No Sensor Grid services imported No Sensor Grid services power Yes Sensor Home usage Yes Sensor Island status Yes Sensor Load power Yes Sensor Percentage charged Yes Sensor Solar exported No Sensor Solar generated Yes Sensor Solar power Yes Sensor Total pack energy No Sensor Version Yes Sensor VPP backup reserve Yes Switch Allow charging from grid Yes Switch Storm watch Yes
+Domain Name Enabled Sensor Fault state No Sensor Power Yes Sensor State Yes Sensor Vehicle Yes
+Constant API polling Data polling is the process of querying a device or service at regular intervals to check for updates or retrieve data. By defining a custom polling interval, you can control how frequently your system checks for new data, which can help optimize performance and reduce unnecessary network traffic. [Learn more] will prevent most Model S and Model X vehicles manufactured before 2021 from sleeping. The integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] automatically stops polling Data polling is the process of querying a device or service at regular intervals to check for updates or retrieve data. By defining a custom polling interval, you can control how frequently your system checks for new data, which can help optimize performance and reduce unnecessary network traffic. [Learn more] these vehicles for 15 minutes after inactivity. You can call the homeassistant.update_entity action Actions are used in several places in Home Assistant. As part of a script or automation, actions define what is going to happen once a trigger is activated. In scripts, an action is called sequence . [Learn more] to force polling Data polling is the process of querying a device or service at regular intervals to check for updates or retrieve data. By defining a custom polling interval, you can control how frequently your system checks for new data, which can help optimize performance and reduce unnecessary network traffic. [Learn more] , which will reset the timer.
+Note
+Vehicles manufactured outside of those mentioned above have no issues with prevented sleep.
+Go to Settings > Devices & services and select the integration card.
+From the list of devices, select the integration instance you want to remove.
+Next to the entry, select the three dots menu. Then, select Delete .
+Removing the integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] does not delete your Tesla Developer Application - you can remove it manually from the Tesla Developer Dashboard if no longer needed.
+Setup errors : Verify your public key is accessible at the correct URL and you’ve completed all registration steps with Tesla
+Command failures : Ensure tesla_fleet.key exists in your Home Assistant config directory and add your public key to vehicles via https://tesla.com/_ak/YOUR_DOMAIN
+Integration Integrations connect and integrate Home Assistant with your devices, services, and more. [Learn more] stopped working : Use the reconfigure option in Settings > Devices & services > Tesla Fleet
+Access to this resource is not authorized : Check your Tesla Developer Dashboard to ensure you haven’t exceeded your usage limits and add billing information if required. In certain countries, the Fart (remote boombox) command will also throw this error where its usage is illegal.
+If you have an error with your credentials, you can delete them in the Application Credentials user interface.
+Help us improve our documentation
+Suggest an edit to this page, or provide/view feedback for this page.
+Edit
+Provide feedback
+View pending feedback
+The Tesla Fleet hub was introduced in Home Assistant 2024.8, and it's used by
+3705 active installations.
+Its IoT class is Cloud Polling.
+View source on GitHub
+View known issues
+View feature requests
+Integration owners
+We are incredibly grateful to the following contributors who currently maintain this integration:
+@Bre77
+Categories
+Binary sensor
+Button
+Car
+Climate
+Cover
+Device tracker
+Lock
+Media player
+Number
+Select
+Sensor
+Switch
+Update
+Back to top

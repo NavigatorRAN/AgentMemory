@@ -79,7 +79,7 @@ public struct MemoryMCPHTTPTransport: MemoryMCPTransporting {
         )
     }
 
-    public func memoryGraph(query: String? = nil, limit: Int = 5000) async throws -> MemoryMCPGraph {
+    public func memoryGraph(query: String? = nil, limit: Int = 10_000) async throws -> MemoryMCPGraph {
         let structured = try await callTool(
             name: "memory_graph",
             arguments: MemoryGraphArguments(query: query, limit: limit),

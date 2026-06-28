@@ -31,15 +31,21 @@ final class MemoryMCPGraphViewportNodeMarkerBuilderTests: XCTestCase {
                 id: "entity:agentmemory",
                 kind: .entity,
                 point: MemoryMCPGraphPoint2D(x: 40, y: 50),
-                radius: 8,
-                selectionRingRadius: 13
+                radius: 5.8,
+                selectionRingRadius: 10.8,
+                depth: 0,
+                communityIndex: 0,
+                importance: 0.35
             ),
             MemoryMCPGraphViewportNodeMarker(
                 id: "event:import",
                 kind: .event,
                 point: MemoryMCPGraphPoint2D(x: 80, y: 50),
-                radius: 6,
-                selectionRingRadius: nil
+                radius: 4.8,
+                selectionRingRadius: nil,
+                depth: 0,
+                communityIndex: 0,
+                importance: 0.35
             )
         ])
     }

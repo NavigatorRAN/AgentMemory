@@ -58,6 +58,15 @@ REQUIRED_RAG_METADATA_KEYS = (
     "content_hash",
     "chunk_profile",
 )
+CHUNK_PROFILE_DOC_TYPES = {
+    "api-docs": "api-reference",
+    "code-docs": "code-documentation",
+    "reference-docs": "reference",
+    "web-docs": "web-documentation",
+}
+VALID_CHUNK_PROFILES = set(CHUNK_PROFILE_DOC_TYPES)
+VALID_DOC_TYPES = set(CHUNK_PROFILE_DOC_TYPES.values())
+CONTENT_HASH_RE = re.compile(r"^[0-9a-f]{64}$")
 EXCLUDED_PATH_PARTS = (
     "/actions",
     "/activity",
@@ -518,12 +527,7 @@ def content_hash_for_page(page: WebPage) -> str:
 
 
 def doc_type_for_profile(chunk_profile: str) -> str:
-    return {
-        "api-docs": "api-reference",
-        "code-docs": "code-documentation",
-        "reference-docs": "reference",
-        "web-docs": "web-documentation",
-    }.get(chunk_profile, "web-documentation")
+    return CHUNK_PROFILE_DOC_TYPES.get(chunk_profile, "web-documentation")
 
 
 def chunk_profile_for_page(page: WebPage, requested_profile: str) -> str:
@@ -552,7 +556,7 @@ def rag_metadata_for_page(
     return {
         "source_url": page.requested_url,
         "final_url": page.final_url,
-        "canonical_url": page.canonical_url,
+        "canonical_url": final_or_canonical,
         "source_handle": source_handle_for_url(final_or_canonical),
         "source_section": source_section_for_url(final_or_canonical),
         "collection": collection,
@@ -604,6 +608,23 @@ def read_markdown_frontmatter(path: pathlib.Path) -> dict[str, str]:
         return {}
 
 
+def update_markdown_frontmatter(path: pathlib.Path, updates: dict[str, str]) -> bool:
+    markdown = path.read_text(encoding="utf-8")
+    metadata = parse_markdown_frontmatter(markdown)
+    if not metadata:
+        return False
+    end = markdown.find("\n---", 4)
+    body = markdown[end + len("\n---"):].lstrip("\n")
+    changed = False
+    for key, value in updates.items():
+        if value and metadata.get(key) != value:
+            metadata[key] = value
+            changed = True
+    if changed:
+        path.write_text(f"{markdown_frontmatter(metadata)}\n\n{body}", encoding="utf-8")
+    return changed
+
+
 def rag_markdown_files(directory: pathlib.Path) -> list[pathlib.Path]:
     if not directory.exists():
         return []
@@ -621,6 +642,84 @@ def metadata_missing_counts(records: list[dict[str, Any]], required_keys: tuple[
 
 def is_missing_metadata_value(value: Any) -> bool:
     return value is None or value == ""
+
+
+def validate_import_record(record: dict[str, Any]) -> list[str]:
+    issues = [
+        f"missing {key}"
+        for key in REQUIRED_RECORD_METADATA_KEYS
+        if is_missing_metadata_value(record.get(key))
+    ]
+    chunk_profile = str(record.get("chunk_profile") or "")
+    if chunk_profile and chunk_profile not in VALID_CHUNK_PROFILES:
+        issues.append(f"invalid chunk_profile {chunk_profile!r}")
+    content_hash = str(record.get("content_hash") or "")
+    if content_hash and not CONTENT_HASH_RE.match(content_hash):
+        issues.append("content_hash must be sha256 hex")
+    source_handle = str(record.get("source_handle") or "")
+    if source_handle and not source_handle.startswith("web:"):
+        issues.append("source_handle must start with web:")
+    return issues
+
+
+def validate_rag_metadata(metadata: dict[str, Any]) -> list[str]:
+    issues = [
+        f"missing {key}"
+        for key in REQUIRED_RAG_METADATA_KEYS
+        if is_missing_metadata_value(metadata.get(key))
+    ]
+    language = str(metadata.get("language") or "")
+    if language and language != "en":
+        issues.append("language must be en")
+    chunk_profile = str(metadata.get("chunk_profile") or "")
+    if chunk_profile and chunk_profile not in VALID_CHUNK_PROFILES:
+        issues.append(f"invalid chunk_profile {chunk_profile!r}")
+    doc_type = str(metadata.get("doc_type") or "")
+    if doc_type and doc_type not in VALID_DOC_TYPES:
+        issues.append(f"invalid doc_type {doc_type!r}")
+    content_hash = str(metadata.get("content_hash") or "")
+    if content_hash and not CONTENT_HASH_RE.match(content_hash):
+        issues.append("content_hash must be sha256 hex")
+    source_handle = str(metadata.get("source_handle") or "")
+    if source_handle and not source_handle.startswith("web:"):
+        issues.append("source_handle must start with web:")
+    return issues
+
+
+def state_record_for_page(
+    *,
+    page: WebPage,
+    label: str,
+    collection: str,
+    import_run_id: str,
+    chunk_profile: str,
+    rag_path: pathlib.Path,
+    rag_job_id: int | None,
+    memory_event_id: str = "",
+    wiki_slug: str = "",
+) -> dict[str, Any]:
+    final_or_canonical = page.canonical_url or page.final_url
+    record: dict[str, Any] = {
+        "title": label or page.title,
+        "final_url": page.final_url,
+        "canonical_url": page.canonical_url,
+        "source_handle": source_handle_for_url(final_or_canonical),
+        "source_section": source_section_for_url(final_or_canonical),
+        "content_hash": content_hash_for_page(page),
+        "chunk_profile": chunk_profile,
+        "import_run_id": import_run_id,
+        "rag_path": str(rag_path),
+        "rag_job_id": rag_job_id,
+        "fetched_at": page.fetched_at,
+    }
+    if memory_event_id:
+        record["memory_event_id"] = memory_event_id
+    if wiki_slug:
+        record["wiki_slug"] = wiki_slug
+    validation_issues = validate_import_record(record)
+    if validation_issues:
+        record["validation_issues"] = validation_issues
+    return record
 
 
 def audit_import_outputs(
@@ -700,6 +799,23 @@ def audit_import_outputs(
         for path, metadata in rag_metadata
         if not metadata
     ][:sample_limit]
+    record_validation_samples = [
+        {
+            "url": url,
+            "title": record.get("title", ""),
+            "issues": issues,
+        }
+        for url, record in sorted(state.records.items())
+        if (issues := validate_import_record(record))
+    ][:sample_limit]
+    rag_validation_samples = [
+        {
+            "path": str(path),
+            "issues": issues,
+        }
+        for path, metadata in rag_metadata
+        if metadata and (issues := validate_rag_metadata(metadata))
+    ][:sample_limit]
 
     return {
         "state": {
@@ -726,6 +842,12 @@ def audit_import_outputs(
         "doc_types": dict(doc_type_counter.most_common()),
         "collections": dict(collection_counter.most_common()),
         "import_run_ids": dict(run_counter.most_common(20)),
+        "validation": {
+            "record_issue_count": sum(1 for record in records if validate_import_record(record)),
+            "rag_issue_count": sum(1 for _, metadata in rag_metadata if metadata and validate_rag_metadata(metadata)),
+            "record_issue_samples": record_validation_samples,
+            "rag_issue_samples": rag_validation_samples,
+        },
         "samples": {
             "records_missing_metadata": missing_record_samples,
             "rag_markdown_missing_frontmatter": missing_frontmatter_samples,
@@ -942,6 +1064,8 @@ def build_collection_wiki_markdown(
             "",
             f"- Complete state records: {audit['record_metadata']['complete_records']} of {state_counts['records']}",
             f"- RAG markdown with frontmatter: {rag_metadata['with_frontmatter']} of {rag_metadata['markdown_count']}",
+            f"- State record validation issues: {audit['validation']['record_issue_count']}",
+            f"- RAG metadata validation issues: {audit['validation']['rag_issue_count']}",
             "",
             "State record missing counts:",
             *format_counter_lines(record_missing),
@@ -1374,6 +1498,10 @@ def enqueue_rag_markdown(rag_client: Any, path: pathlib.Path, tags: list[str]) -
     return int(rag_client.enqueue_markdown(path.name, path.read_text(encoding="utf-8"), tags))
 
 
+def memory_event_id_from_response(response: dict[str, Any]) -> str:
+    return str(response.get("result", {}).get("structuredContent", {}).get("id") or "")
+
+
 def record_page(
     client: MemoryMCPClient,
     *,
@@ -1384,7 +1512,7 @@ def record_page(
     collection: str,
     import_run_id: str,
     chunk_profile: str,
-) -> None:
+) -> str:
     final_or_canonical = page.canonical_url or page.final_url
     content = build_memory_content(
         page=page,
@@ -1399,11 +1527,12 @@ def record_page(
         content_hash=content_hash_for_page(page),
     )
     page_slug = slug(label or page.title)
-    client.record_event(
+    response = client.record_event(
         content=content,
         entities=stable_unique(["agentmemory", "memory-mcp", "web-page-import", f"web-page-{page_slug}", collection, source_handle_for_url(final_or_canonical)]),
         tags=stable_unique(["agentmemory", "web-page-import", "source-backed", "rag-staged", page_slug, slug(collection), chunk_profile, import_run_id]),
     )
+    return memory_event_id_from_response(response)
 
 
 def record_run_summary(
@@ -1630,7 +1759,7 @@ def run(args: argparse.Namespace) -> int:
                 rag_jobs_this_run += 1
                 print(f"  enqueued RAG job #{rag_job_id}")
             if client:
-                record_page(
+                memory_event_id = record_page(
                     client,
                     page=page,
                     label=label,
@@ -1640,22 +1769,22 @@ def run(args: argparse.Namespace) -> int:
                     import_run_id=import_run_id,
                     chunk_profile=chunk_profile,
                 )
-                state.mark_completed(
-                    url,
-                    {
-                        "title": label or page.title,
-                        "final_url": page.final_url,
-                        "canonical_url": page.canonical_url,
-                        "source_handle": source_handle_for_url(page.canonical_url or page.final_url),
-                        "source_section": source_section_for_url(page.canonical_url or page.final_url),
-                        "content_hash": content_hash_for_page(page),
-                        "chunk_profile": chunk_profile,
-                        "import_run_id": import_run_id,
-                        "rag_path": str(rag_path),
-                        "rag_job_id": rag_job_id,
-                        "fetched_at": page.fetched_at,
-                    },
+                if memory_event_id:
+                    update_markdown_frontmatter(rag_path, {"memory_event_id": memory_event_id})
+                record = state_record_for_page(
+                    page=page,
+                    label=label,
+                    collection=args.collection,
+                    import_run_id=import_run_id,
+                    chunk_profile=chunk_profile,
+                    rag_path=rag_path,
+                    rag_job_id=rag_job_id,
+                    memory_event_id=memory_event_id,
                 )
+                issues = validate_import_record(record)
+                if issues:
+                    raise RuntimeError(f"import record validation failed: {', '.join(issues)}")
+                state.mark_completed(url, record)
                 state.save(state_path)
             write_log(
                 log_path,

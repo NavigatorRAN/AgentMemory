@@ -27,8 +27,12 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
   rsync -a --delete --exclude '.venv' '${REMOTE_STAGE}/' '${REMOTE_DIR}/'
   cd '${REMOTE_DIR}'
   python3 -m venv .venv
-  .venv/bin/pip install --no-index --no-build-isolation --no-deps -e .
-  .venv/bin/memory-mcp-index --status
+  if .venv/bin/python -c 'import memory_mcp.index_cli' >/dev/null 2>&1; then
+    echo 'Existing venv imports staged source; skipping package reinstall.'
+  else
+    .venv/bin/pip install --no-index --no-build-isolation --no-deps -e .
+  fi
+  .venv/bin/python -m memory_mcp.index_cli --status
   sudo systemctl restart memory-mcp.service
   systemctl is-active memory-mcp.service
 "

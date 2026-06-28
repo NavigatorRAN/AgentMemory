@@ -29,8 +29,12 @@ from import_web_pages_to_memory import (
     resolve_host_with_dns_server,
     should_skip_fetched_page,
     source_handle_for_url,
+    state_record_for_page,
     safe_rag_filename,
+    update_markdown_frontmatter,
     upgrade_legacy_import_metadata,
+    validate_import_record,
+    validate_rag_metadata,
     write_log,
 )
 
@@ -303,6 +307,92 @@ class WebPageImporterTests(unittest.TestCase):
         self.assertEqual(metadata["import_run_id"], "run-1")
         self.assertEqual(metadata["language"], "en")
 
+    def test_validation_accepts_current_import_record_and_rag_metadata(self) -> None:
+        page = extract_page(
+            requested_url="https://docs.example.com/docs/start",
+            final_url="https://docs.example.com/docs/start",
+            content_type="text/plain",
+            raw=b"Start\n\nUseful documentation body.",
+            max_text_chars=10_000,
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            rag_path = pathlib.Path(directory) / "start.md"
+            record = state_record_for_page(
+                page=page,
+                label="",
+                collection="example-docs",
+                import_run_id="run-1",
+                chunk_profile="web-docs",
+                rag_path=rag_path,
+                rag_job_id=42,
+                memory_event_id="event-1",
+                wiki_slug="example-docs",
+            )
+
+        metadata = rag_metadata_for_page(
+            page=page,
+            collection="example-docs",
+            import_run_id="run-1",
+            chunk_profile="web-docs",
+            memory_event_id="event-1",
+            wiki_slug="example-docs",
+        )
+
+        self.assertEqual(validate_import_record(record), [])
+        self.assertEqual(validate_rag_metadata(metadata), [])
+
+    def test_validation_flags_bad_hash_and_language(self) -> None:
+        record = {
+            "source_handle": "not-web",
+            "source_section": "docs-start",
+            "content_hash": "hash",
+            "chunk_profile": "unknown",
+            "import_run_id": "run-1",
+            "rag_path": "rag/start.md",
+        }
+        metadata = {
+            "source_url": "https://docs.example.com/docs/start",
+            "final_url": "https://docs.example.com/docs/start",
+            "canonical_url": "https://docs.example.com/docs/start",
+            "source_handle": "not-web",
+            "source_section": "docs-start",
+            "collection": "example-docs",
+            "doc_type": "unknown",
+            "language": "fr",
+            "import_run_id": "run-1",
+            "content_hash": "hash",
+            "chunk_profile": "unknown",
+        }
+
+        self.assertIn("content_hash must be sha256 hex", validate_import_record(record))
+        self.assertIn("language must be en", validate_rag_metadata(metadata))
+
+    def test_update_markdown_frontmatter_patches_memory_event_id(self) -> None:
+        markdown = build_rag_markdown(
+            page=extract_page(
+                requested_url="https://example.com/source",
+                final_url="https://example.com/final",
+                content_type="text/plain",
+                raw=b"Heading\n\nBody",
+                max_text_chars=10_000,
+            ),
+            label="",
+            max_chars=10_000,
+            collection="example-docs",
+            import_run_id="run-1",
+            chunk_profile="web-docs",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = pathlib.Path(directory) / "page.md"
+            path.write_text(markdown, encoding="utf-8")
+
+            changed = update_markdown_frontmatter(path, {"memory_event_id": "event-1"})
+            metadata = parse_markdown_frontmatter(path.read_text(encoding="utf-8"))
+
+        self.assertTrue(changed)
+        self.assertEqual(metadata["memory_event_id"], "event-1")
+
     def test_audit_import_outputs_flags_legacy_records_and_frontmatter(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = pathlib.Path(directory)
@@ -351,6 +441,13 @@ class WebPageImporterTests(unittest.TestCase):
         self.assertEqual(audit["rag_metadata"]["missing_frontmatter"], 1)
         self.assertEqual(audit["chunk_profiles"]["reference-docs"], 1)
         self.assertEqual(audit["doc_types"]["reference"], 1)
+        self.assertEqual(audit["validation"]["record_issue_count"], 2)
+        sampled_issues = [
+            issue
+            for sample in audit["validation"]["record_issue_samples"]
+            for issue in sample["issues"]
+        ]
+        self.assertIn("content_hash must be sha256 hex", sampled_issues)
 
     def test_collection_wiki_markdown_summarizes_import_and_rag_health(self) -> None:
         state = ImportState()

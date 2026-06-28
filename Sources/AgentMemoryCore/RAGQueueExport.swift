@@ -1,4 +1,5 @@
 import Foundation
+import CryptoKit
 
 public struct RAGExportDocument: Equatable, Sendable {
     public var filename: String
@@ -34,7 +35,20 @@ public struct RAGQueueExportBuilder: Sendable {
     }
 
     private func content(for item: CaptureItem) -> String {
-        [
+        let sourceURL = firstHTTPURL(in: item.rawInput) ?? ""
+        let metadata = [
+            "collection": defaultCollection,
+            "source_type": item.sourceType.rawValue,
+            "source_section": item.sourceType.rawValue,
+            "doc_type": "agentmemory-capture",
+            "language": "en",
+            "capture_id": item.id.uuidString.lowercased(),
+            "content_hash": sha256Hex(item.rawInput),
+            "source_url": sourceURL,
+            "canonical_url": sourceURL
+        ]
+        return [
+            frontmatter(metadata),
             "# \(item.displayName)",
             "",
             "AgentMemory capture export for RAG.",
@@ -48,6 +62,25 @@ public struct RAGQueueExportBuilder: Sendable {
             "",
             item.rawInput
         ].joined(separator: "\n")
+    }
+
+    private func frontmatter(_ metadata: [String: String]) -> String {
+        let lines = metadata.keys.sorted().map { key in
+            "\(key): \"\(metadata[key, default: ""].replacingOccurrences(of: "\"", with: "\\\""))\""
+        }
+        return (["---"] + lines + ["---", ""]).joined(separator: "\n")
+    }
+
+    private func sha256Hex(_ value: String) -> String {
+        SHA256.hash(data: Data(value.utf8)).map { String(format: "%02x", $0) }.joined()
+    }
+
+    private func firstHTTPURL(in value: String) -> String? {
+        let pattern = #"https?://[^\s<>"')\]]+"#
+        guard let range = value.range(of: pattern, options: .regularExpression) else {
+            return nil
+        }
+        return String(value[range]).trimmingCharacters(in: CharacterSet(charactersIn: ".,;:"))
     }
 
     private func slug(for value: String) -> String {

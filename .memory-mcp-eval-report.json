@@ -1,0 +1,44 @@
+{
+  "case_count": 5,
+  "cases": [
+    {
+      "elapsed_ms": 8.1,
+      "failures": [],
+      "name": "wiki-memory-mcp",
+      "passed": true,
+      "tool": "search_wiki"
+    },
+    {
+      "elapsed_ms": 6.98,
+      "failures": [],
+      "name": "wiki-page-memory-mcp",
+      "passed": true,
+      "tool": "get_wiki_page"
+    },
+    {
+      "elapsed_ms": 50.58,
+      "failures": [],
+      "name": "events-home-assistant",
+      "passed": true,
+      "tool": "search_events"
+    },
+    {
+      "elapsed_ms": 473.65,
+      "failures": [],
+      "name": "graph-home-assistant-focus",
+      "passed": true,
+      "tool": "memory_graph"
+    },
+    {
+      "elapsed_ms": 10.47,
+      "failures": [],
+      "name": "metrics-index-ready",
+      "passed": true,
+      "tool": "memory_metrics"
+    }
+  ],
+  "endpoint": "http://192.168.1.26:8006/mcp",
+  "generated_at": "2026-06-28T06:49:39Z",
+  "memory_event_id": "01KW6FVAT6FXAGSMXNY6GYBGD0",
+  "passed_count": 5
+}

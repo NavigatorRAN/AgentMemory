@@ -90,6 +90,10 @@ def main() -> int:
     checks["search_wiki"] = client.call_tool("search_wiki", {"query": "memory-mcp", "limit": 3})
     checks["get_wiki_page"] = client.call_tool("get_wiki_page", {"slug": args.wiki_slug})
     checks["memory_graph"] = client.call_tool("memory_graph", {"limit": 10})
+    checks["memory_metrics"] = client.call_tool("memory_metrics", {})
+    index = checks["memory_metrics"].get("index", {})
+    if index and index.get("ready") is not True:
+        raise RuntimeError(f"Memory MCP query index is not ready: {index}")
     print(json.dumps(checks, indent=2, sort_keys=True))
     return 0
 

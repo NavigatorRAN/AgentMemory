@@ -208,12 +208,12 @@ class QueryIndex:
 
             event_count = 0
             for event in events:
-                self.index_event(event, conn=conn, refresh_graph=False)
+                self.index_event(event, conn=conn, refresh_graph=False, refresh_counts=False)
                 event_count += 1
 
             entity_count = 0
             for entity in entities:
-                self.index_entity(entity, conn=conn)
+                self.index_entity(entity, conn=conn, refresh_counts=False)
                 entity_count += 1
             self.refresh_entity_counts(conn)
 
@@ -242,6 +242,7 @@ class QueryIndex:
         *,
         conn: sqlite3.Connection | None = None,
         refresh_graph: bool = True,
+        refresh_counts: bool = True,
     ) -> None:
         owns_conn = conn is None
         if conn is None:
@@ -289,7 +290,8 @@ class QueryIndex:
             if self._ensure_fts(conn):
                 conn.execute("DELETE FROM event_fts WHERE id = ?", (event_id,))
                 conn.execute("INSERT INTO event_fts(id, content) VALUES (?, ?)", (event_id, content))
-            self.refresh_entity_counts(conn)
+            if refresh_counts:
+                self.refresh_entity_counts(conn)
             if refresh_graph:
                 self.mark_graph_stale(conn)
             if owns_conn:
@@ -298,7 +300,13 @@ class QueryIndex:
             if owns_conn:
                 conn.close()
 
-    def index_entity(self, entity: dict[str, Any], *, conn: sqlite3.Connection | None = None) -> None:
+    def index_entity(
+        self,
+        entity: dict[str, Any],
+        *,
+        conn: sqlite3.Connection | None = None,
+        refresh_counts: bool = True,
+    ) -> None:
         owns_conn = conn is None
         if conn is None:
             conn = self.connect()
@@ -324,7 +332,8 @@ class QueryIndex:
                     str(entity.get("path") or ""),
                 ),
             )
-            self.refresh_entity_counts(conn)
+            if refresh_counts:
+                self.refresh_entity_counts(conn)
             self.mark_graph_stale(conn)
             if owns_conn:
                 conn.commit()

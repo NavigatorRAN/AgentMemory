@@ -33,7 +33,18 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
     .venv/bin/pip install --no-index --no-build-isolation --no-deps -e .
   fi
   .venv/bin/python -m memory_mcp.index_cli --status
-  sudo systemctl restart memory-mcp.service
+  if sudo -n systemctl restart memory-mcp.service 2>/dev/null; then
+    echo 'Restarted memory-mcp.service through systemd.'
+  else
+    echo 'sudo restart unavailable; signaling user-owned memory-mcp process.'
+    pid=\"\$(pgrep -u \"\$(id -u)\" -f '${REMOTE_DIR}/.venv/bin/memory-mcp' | head -n 1)\"
+    if [ -z \"\${pid}\" ]; then
+      echo 'No user-owned memory-mcp process found to restart.' >&2
+      exit 1
+    fi
+    kill \"\${pid}\"
+    sleep 5
+  fi
   systemctl is-active memory-mcp.service
 "
 

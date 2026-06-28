@@ -27,8 +27,7 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
   rsync -a --delete --exclude '.venv' '${REMOTE_STAGE}/' '${REMOTE_DIR}/'
   cd '${REMOTE_DIR}'
   python3 -m venv .venv
-  .venv/bin/pip install --upgrade pip
-  .venv/bin/pip install -e .
+  .venv/bin/pip install --no-index --no-build-isolation --no-deps -e .
   .venv/bin/memory-mcp-index --status
   sudo systemctl restart memory-mcp.service
   systemctl is-active memory-mcp.service

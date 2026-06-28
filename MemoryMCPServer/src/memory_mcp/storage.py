@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import fcntl
 import json
+import os
 import re
 import threading
 from contextlib import contextmanager
@@ -81,7 +82,7 @@ class Storage:
         self.events_dir = self.root / "events"
         self.entities_dir = self.root / "entities"
         self.wiki_dir = self.root / "wiki"
-        self.index_dir = self.root / ".index"
+        self.index_dir = self._default_index_dir(self.root)
         self._index_lock = threading.Lock()
         self._index_cache: dict[str, Any] | None = None
         self._index_cache_mtime: float = 0.0
@@ -89,6 +90,15 @@ class Storage:
 
         for d in (self.events_dir, self.entities_dir, self.wiki_dir, self.index_dir):
             d.mkdir(parents=True, exist_ok=True)
+
+    def _default_index_dir(self, root: Path) -> Path:
+        configured = os.environ.get("MEMORY_INDEX_ROOT")
+        if configured:
+            return Path(configured)
+        root_text = str(root)
+        if root_text.startswith(("/mnt/", "/Volumes/")):
+            return Path.cwd() / ".index"
+        return root / ".index"
 
     # --- event writes -----------------------------------------------------
 

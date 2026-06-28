@@ -60,9 +60,11 @@ trail and operational history.
 
 ## Derived SQLite index
 
-Markdown remains the source of truth. The server maintains a rebuildable SQLite
-query cache at `<vault>/.index/memory.sqlite3` for faster event search, entity
-recall, wiki search, and materialized graph responses.
+Markdown remains the source of truth. The server maintains a rebuildable local
+SQLite query cache for faster event search, entity recall, wiki search, and
+materialized graph responses. If `MEMORY_INDEX_ROOT` is unset, NAS-style vault
+paths under `/mnt/` or `/Volumes/` use the server working directory `.index/`
+instead of the shared mount.
 
 Rebuild or inspect it with:
 
@@ -72,7 +74,8 @@ memory-mcp-index --status
 ```
 
 If the SQLite cache is missing or unhealthy, query tools fall back to scanning
-markdown files and the cache can be rebuilt safely from the vault.
+markdown files and the cache can be rebuilt safely from the vault. Keep the
+SQLite cache off CIFS/NFS-style shared mounts.
 
 ## File format
 
@@ -213,9 +216,10 @@ similar to X," that's the RAG service. Memory is for "things tagged with X."
 If you find yourself wanting embeddings here, that's a signal the boundary
 is being eroded — push back to thoughtful entity tagging instead.
 
-**Derived indexing.** SQLite under `.index/` is a query cache, not source of
-truth. If the database is stale or corrupt, delete/rebuild it with
-`memory-mcp-index`; the markdown vault remains authoritative.
+**Derived indexing.** SQLite under the configured `.index/` is a query cache,
+not source of truth. If the database is stale or corrupt, delete/rebuild it
+with `memory-mcp-index`; the markdown vault remains authoritative. Keep this
+cache on local disk, not the shared vault mount.
 
 **Auth is currently off.** Same posture as rag-retrieval — home-network
 trusted. To add auth, the easiest path is bearer tokens via FastMCP's auth

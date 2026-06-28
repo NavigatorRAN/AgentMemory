@@ -111,8 +111,10 @@ Share extension, watched folders, PDF/image source rendering, automatic retry sc
 
 The always-on Memory MCP server source is tracked in `MemoryMCPServer/`.
 Markdown files remain the canonical vault format, while the server maintains a
-rebuildable SQLite cache under the vault `.index/` directory for faster event
-search, entity recall, wiki lookup, and materialized graph responses.
+rebuildable local SQLite cache for faster event search, entity recall, wiki
+lookup, and materialized graph responses. For the live NAS-backed vault, the
+cache lives beside the server under `/opt/memory-mcp/.index/`, not on the CIFS
+mount.
 
 Useful commands:
 

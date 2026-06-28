@@ -5,6 +5,7 @@ dist/
 .apple-docs-memory-import*.json
 .apple-docs-rag-deep-import*.json
 MemoryMCPServer/.venv/
+MemoryMCPServer/.index/
 MemoryMCPServer/.pytest_cache/
 MemoryMCPServer/src/*.egg-info/
 __pycache__/

@@ -99,9 +99,34 @@ The first build slice is a local SwiftUI foundation:
 - Contextual action groups that replace the overflowing global button strip
 - Automatic wiki layer for compiled knowledge pages and Memory MCP-discoverable summaries
 - Local CodeGraphRAG indexing for codebase understanding, conceptually inspired by Microsoft GraphRAG
+- Tracked Memory MCP server package with deploy scripts, smoke checks, and a rebuildable SQLite query/graph cache
 
 ## GraphRAG Attribution
 
 AgentMemory's CodeGraphRAG layer is conceptually inspired by [Microsoft GraphRAG](https://microsoft.github.io/graphrag/) and its knowledge-graph/community-summary retrieval process. This repository does not vendor Microsoft GraphRAG code in the current slice; see [CodeGraphRAG Attribution](docs/code-graphrag-attribution.md) for details and credit.
 
 Share extension, watched folders, PDF/image source rendering, automatic retry scheduling, richer YouTube transcript provider controls, expanded Memory MCP recall/entity views, expanded RAG job detail views, and production-scale graph layout are planned next.
+
+## Memory MCP Server Package
+
+The always-on Memory MCP server source is tracked in `MemoryMCPServer/`.
+Markdown files remain the canonical vault format, while the server maintains a
+rebuildable local SQLite cache for faster event search, entity recall, wiki
+lookup, and materialized graph responses. For the live NAS-backed vault, the
+cache lives beside the server under `/opt/memory-mcp/.index/`, not on the CIFS
+mount.
+
+Useful commands:
+
+```bash
+cd MemoryMCPServer
+.venv/bin/pytest
+.venv/bin/memory-mcp-index --vault-root /path/to/vault
+scripts/smoke_check.py --endpoint http://192.168.1.26:8006/mcp
+scripts/deploy.sh
+```
+
+The deploy script stages the tracked package to `matt@192.168.1.26`, backs up
+`/opt/memory-mcp`, installs the package, restarts `memory-mcp.service`, and runs
+smoke checks. Configure it with `MEMORY_MCP_SERVER`, `MEMORY_MCP_SSH_KEY`,
+`MEMORY_MCP_REMOTE_DIR`, and `MEMORY_MCP_ENDPOINT` if the live host changes.

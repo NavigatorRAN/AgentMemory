@@ -64,7 +64,12 @@ Markdown remains the source of truth. The server maintains a rebuildable local
 SQLite query cache for faster event search, entity recall, wiki search, and
 materialized graph responses. If `MEMORY_INDEX_ROOT` is unset, NAS-style vault
 paths under `/mnt/` or `/Volumes/` use the server working directory `.index/`
-instead of the shared mount.
+instead of the shared mount when that local path is usable. If service
+hardening blocks the working-directory cache, the server falls back to a
+transient local cache under `${TMPDIR:-/tmp}/memory-mcp-index` so queries can
+still use SQLite without relying on shared-mount locking. For production,
+prefer setting `MEMORY_INDEX_ROOT` to a durable local path and allowing that
+path in the service sandbox.
 
 Rebuild or inspect it with:
 
@@ -75,7 +80,9 @@ memory-mcp-index --status
 
 If the SQLite cache is missing or unhealthy, query tools fall back to scanning
 markdown files and the cache can be rebuilt safely from the vault. Keep the
-SQLite cache off CIFS/NFS-style shared mounts.
+SQLite cache off CIFS/NFS-style shared mounts when the service sandbox allows a
+local cache path. The server also prewarms the derived index in the background
+at startup so a transient cache can recover after service restarts.
 
 ## File format
 

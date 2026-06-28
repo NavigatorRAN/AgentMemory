@@ -4,7 +4,7 @@ from pathlib import Path
 
 import frontmatter
 
-from memory_mcp import queries
+from memory_mcp import metrics, queries
 from memory_mcp.storage import Storage
 
 
@@ -22,6 +22,23 @@ def test_default_index_dir_for_mounted_vault_is_local_cwd(tmp_path, monkeypatch)
     storage = object.__new__(Storage)
 
     assert storage._default_index_dir(Path("/mnt/aishareddrive/family-agents/memory")) == tmp_path / ".index"
+
+
+def test_default_index_dir_for_mounted_vault_falls_back_to_tmp_when_cwd_is_blocked(tmp_path, monkeypatch):
+    monkeypatch.delenv("MEMORY_INDEX_ROOT", raising=False)
+    monkeypatch.chdir(tmp_path)
+    tmp_index_root = tmp_path / "tmp"
+    tmp_index_root.mkdir()
+    monkeypatch.setenv("TMPDIR", str(tmp_index_root))
+
+    def inaccessible(path, mode):
+        return False if Path(path) == tmp_path else True
+
+    monkeypatch.setattr("memory_mcp.storage.os.access", inaccessible)
+    storage = object.__new__(Storage)
+
+    vault_root = Path("/mnt/aishareddrive/family-agents/memory")
+    assert storage._default_index_dir(vault_root) == tmp_index_root / "memory-mcp-index"
 
 
 def test_configured_index_dir_overrides_default(tmp_path, monkeypatch):
@@ -117,6 +134,31 @@ def test_query_index_serves_native_and_event_backed_wiki_pages(tmp_path):
     assert page["body"].startswith("# Memory MCP")
 
 
+def test_query_index_read_paths_work_when_index_directory_is_read_only(tmp_path):
+    storage = Storage(tmp_path)
+    native = frontmatter.Post(
+        "# Memory MCP\n\nNative body",
+        slug="memory-mcp",
+        title="Memory MCP",
+        summary="Always-on memory server.",
+        tags=["memory"],
+    )
+    (storage.wiki_dir / "memory-mcp.md").write_text(frontmatter.dumps(native), encoding="utf-8")
+    storage.rebuild_query_index()
+    storage.query_index.db_path.chmod(0o444)
+    storage.index_dir.chmod(0o555)
+    try:
+        search = queries.search_wiki(storage, "memory-mcp", limit=3)
+        page = queries.get_wiki_page(storage, "memory-mcp")
+    finally:
+        storage.index_dir.chmod(0o755)
+        storage.query_index.db_path.chmod(0o644)
+
+    assert search
+    assert search[0]["slug"] == "memory-mcp"
+    assert page["title"] == "Memory MCP"
+
+
 def test_memory_graph_uses_materialized_cache_and_focuses_query(tmp_path):
     storage = Storage(tmp_path)
     storage.record_event(
@@ -165,3 +207,4 @@ def test_query_falls_back_to_markdown_when_index_is_unavailable(tmp_path, monkey
 
     assert len(matches) == 1
     assert matches[0]["entities"] == ["fallback"]
+    assert metrics.snapshot()["index_fallbacks"]["search_events"]["count"] >= 1

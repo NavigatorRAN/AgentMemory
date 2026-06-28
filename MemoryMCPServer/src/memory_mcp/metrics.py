@@ -9,6 +9,7 @@ from typing import Any, Iterator
 
 _lock = Lock()
 _tools: dict[str, dict[str, Any]] = {}
+_index_fallbacks: dict[str, dict[str, Any]] = {}
 
 
 @contextmanager
@@ -39,6 +40,21 @@ def measure_tool(name: str) -> Iterator[None]:
             bucket["max_ms"] = max(bucket["max_ms"], elapsed_ms)
 
 
+def record_index_fallback(tool: str, error: BaseException) -> None:
+    with _lock:
+        bucket = _index_fallbacks.setdefault(
+            tool,
+            {
+                "count": 0,
+                "last_error_type": None,
+                "last_error": None,
+            },
+        )
+        bucket["count"] += 1
+        bucket["last_error_type"] = type(error).__name__
+        bucket["last_error"] = str(error)[:500]
+
+
 def snapshot() -> dict[str, Any]:
     with _lock:
         tools = {
@@ -48,4 +64,8 @@ def snapshot() -> dict[str, Any]:
             }
             for name, values in sorted(_tools.items())
         }
-    return {"tools": tools}
+        index_fallbacks = {
+            name: dict(values)
+            for name, values in sorted(_index_fallbacks.items())
+        }
+    return {"tools": tools, "index_fallbacks": index_fallbacks}

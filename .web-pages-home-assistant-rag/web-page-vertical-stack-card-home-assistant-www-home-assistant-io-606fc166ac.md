@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/vertical-stack"
+final_url: "https://www.home-assistant.io/dashboards/vertical-stack"
+canonical_url: "https://www.home-assistant.io/dashboards/vertical-stack/"
+source_handle: "web:www-home-assistant-io:606fc166acb6"
+source_section: "dashboards-vertical-stack"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6b5980db7f23d3176802e98d4cf8458ac541ac3a6f645f145689b9970271761a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Vertical stack card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

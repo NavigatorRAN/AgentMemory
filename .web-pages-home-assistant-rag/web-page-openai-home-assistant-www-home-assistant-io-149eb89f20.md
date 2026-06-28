@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openai_conversation"
+final_url: "https://www.home-assistant.io/integrations/openai_conversation"
+canonical_url: "https://www.home-assistant.io/integrations/openai_conversation/"
+source_handle: "web:www-home-assistant-io:149eb89f2076"
+source_section: "integrations-openai-conversation"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1c429838de215907023406540af9e9f237c9711ce3c5135522d7b52b81ee7e6b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenAI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

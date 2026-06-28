@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/intelliclima"
+final_url: "https://www.home-assistant.io/integrations/intelliclima"
+canonical_url: "https://www.home-assistant.io/integrations/intelliclima/"
+source_handle: "web:www-home-assistant-io:9f9d73d09059"
+source_section: "integrations-intelliclima"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7161eb80efcb982fafd7360c4cc49f734db4e31f19f16ef8f7322e97f60392e2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IntelliClima - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

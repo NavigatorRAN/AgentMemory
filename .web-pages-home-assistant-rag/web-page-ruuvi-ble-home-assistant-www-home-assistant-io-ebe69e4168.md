@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ruuvitag_ble"
+final_url: "https://www.home-assistant.io/integrations/ruuvitag_ble"
+canonical_url: "https://www.home-assistant.io/integrations/ruuvitag_ble/"
+source_handle: "web:www-home-assistant-io:ebe69e4168f9"
+source_section: "integrations-ruuvitag-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "40c06a7ac15ba4cc6efa7aeb2e9efb8cd959e4ae5d11004cc54a885933b2183f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ruuvi BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

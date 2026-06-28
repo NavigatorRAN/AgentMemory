@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/solaredge_local"
+final_url: "https://www.home-assistant.io/integrations/solaredge_local"
+canonical_url: "https://www.home-assistant.io/integrations/solaredge_local/"
+source_handle: "web:www-home-assistant-io:1faf6aa13eb0"
+source_section: "integrations-solaredge-local"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "03bbd505c2ddc479052ca65d932d80b6c75d72abc7fdad9f81124b9ebaa2d948"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SolarEdge Local - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

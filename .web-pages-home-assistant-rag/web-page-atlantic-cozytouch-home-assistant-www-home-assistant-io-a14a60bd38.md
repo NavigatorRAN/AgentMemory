@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cozytouch"
+final_url: "https://www.home-assistant.io/integrations/cozytouch"
+canonical_url: "https://www.home-assistant.io/integrations/cozytouch/"
+source_handle: "web:www-home-assistant-io:a14a60bd38fb"
+source_section: "integrations-cozytouch"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "657640a7d2b2c6ef651a7a76eadc87390baf68a0ef63d1a74e3591a61ceb279f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Atlantic Cozytouch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/repetier"
+final_url: "https://www.home-assistant.io/integrations/repetier"
+canonical_url: "https://www.home-assistant.io/integrations/repetier/"
+source_handle: "web:www-home-assistant-io:30bbcac16f02"
+source_section: "integrations-repetier"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d35ba931792832db29c48f8d849bec27b7582efd242d619e70eae30134789500"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Repetier-Server - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

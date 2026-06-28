@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/energy/water"
+final_url: "https://www.home-assistant.io/docs/energy/water"
+canonical_url: "https://www.home-assistant.io/docs/energy/water/"
+source_handle: "web:www-home-assistant-io:d0d6167a6ea4"
+source_section: "docs-energy"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0079b1fda2842f91ff78471922ddfd8fe46d36d54f82b5ecd23dcad5c03f9730"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Integrating your water usage - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/header-footer"
+final_url: "https://www.home-assistant.io/dashboards/header-footer"
+canonical_url: "https://www.home-assistant.io/dashboards/header-footer/"
+source_handle: "web:www-home-assistant-io:1cdebd3074ae"
+source_section: "dashboards-header-footer"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4c11aab04f795e96202329291dd3e8885dc1dc2f1aa7915022f84bd87d2a3cda"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Card headers and footers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

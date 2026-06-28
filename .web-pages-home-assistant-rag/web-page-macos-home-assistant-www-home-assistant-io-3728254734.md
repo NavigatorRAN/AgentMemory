@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/macos"
+final_url: "https://www.home-assistant.io/installation/macos"
+canonical_url: "https://www.home-assistant.io/installation/macos/"
+source_handle: "web:www-home-assistant-io:3728254734f7"
+source_section: "installation-macos"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2bfc934464a4f674da14870477fc1240202cc5495e5ca550f02e5aab8a9d0f8c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # macOS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

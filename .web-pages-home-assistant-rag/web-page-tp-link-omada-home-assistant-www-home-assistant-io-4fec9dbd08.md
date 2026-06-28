@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tplink_omada"
+final_url: "https://www.home-assistant.io/integrations/tplink_omada"
+canonical_url: "https://www.home-assistant.io/integrations/tplink_omada/"
+source_handle: "web:www-home-assistant-io:4fec9dbd0866"
+source_section: "integrations-tplink-omada"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a12b169c207f4e4bebb50e0f1efe711107a76e75560f573cd84827f75116274b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # TP-Link Omada - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

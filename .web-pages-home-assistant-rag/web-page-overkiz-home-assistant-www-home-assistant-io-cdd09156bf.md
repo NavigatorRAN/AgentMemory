@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/overkiz"
+final_url: "https://www.home-assistant.io/integrations/overkiz"
+canonical_url: "https://www.home-assistant.io/integrations/overkiz/"
+source_handle: "web:www-home-assistant-io:cdd09156bfa0"
+source_section: "integrations-overkiz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3e2b1edd17f085ede9a74b3d3f6f2bdfd828ca5181e818711ac811a5608a0e05"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Overkiz - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

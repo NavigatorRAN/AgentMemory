@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kaleidescape"
+final_url: "https://www.home-assistant.io/integrations/kaleidescape"
+canonical_url: "https://www.home-assistant.io/integrations/kaleidescape/"
+source_handle: "web:www-home-assistant-io:dbaaf0741616"
+source_section: "integrations-kaleidescape"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2417325c4a9e5738691433849b7d86e6374cb3fea80b1a8c0b112ac94cb37b29"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Kaleidescape - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

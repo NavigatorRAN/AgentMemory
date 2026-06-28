@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/islamic_prayer_times"
+final_url: "https://www.home-assistant.io/integrations/islamic_prayer_times"
+canonical_url: "https://www.home-assistant.io/integrations/islamic_prayer_times/"
+source_handle: "web:www-home-assistant-io:9c4005171671"
+source_section: "integrations-islamic-prayer-times"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9e0bce7ab330911050507e2c3a582f76876b8a2764546530a2a7e8180d4dd52e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Islamic Prayer Times - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

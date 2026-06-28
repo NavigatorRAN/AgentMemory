@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/system_bridge"
+final_url: "https://www.home-assistant.io/integrations/system_bridge"
+canonical_url: "https://www.home-assistant.io/integrations/system_bridge/"
+source_handle: "web:www-home-assistant-io:911d2c94b43c"
+source_section: "integrations-system-bridge"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d333bfeab61fe81ce0767bde21d3207cfd9103781f22d5d93dc210aec9ab6030"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # System Bridge - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

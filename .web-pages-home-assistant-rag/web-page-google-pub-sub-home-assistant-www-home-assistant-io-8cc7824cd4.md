@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_pubsub"
+final_url: "https://www.home-assistant.io/integrations/google_pubsub"
+canonical_url: "https://www.home-assistant.io/integrations/google_pubsub/"
+source_handle: "web:www-home-assistant-io:8cc7824cd40d"
+source_section: "integrations-google-pubsub"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "88d1dcf8bdeb33ff9a4afbc56b5c80b7b4f3752a67fc70b44f79ae717d31b749"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Pub/Sub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

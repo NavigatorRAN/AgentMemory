@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/denonavr"
+final_url: "https://www.home-assistant.io/integrations/denonavr"
+canonical_url: "https://www.home-assistant.io/integrations/denonavr/"
+source_handle: "web:www-home-assistant-io:e50137cc393e"
+source_section: "integrations-denonavr"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e7ff005b03c85a69ebfd244998e2b9d806e76482bf6c6c3585ec1dbd1d3378e5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Denon AVR Network Receivers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mqtt_statestream"
+final_url: "https://www.home-assistant.io/integrations/mqtt_statestream"
+canonical_url: "https://www.home-assistant.io/integrations/mqtt_statestream/"
+source_handle: "web:www-home-assistant-io:ac6366a7144f"
+source_section: "integrations-mqtt-statestream"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "175409d55135cf94df5f268cf114abf48dff5e47929ea3ce93972162409e39f3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MQTT Statestream - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

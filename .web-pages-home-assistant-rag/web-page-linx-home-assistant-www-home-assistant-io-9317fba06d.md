@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/linx"
+final_url: "https://www.home-assistant.io/integrations/linx"
+canonical_url: "https://www.home-assistant.io/integrations/linx/"
+source_handle: "web:www-home-assistant-io:9317fba06d99"
+source_section: "integrations-linx"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4627e5758f9159ab505d98255aa3dabbd4ccd9ecd72b1a02cba013a6da97c1cc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Linx - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

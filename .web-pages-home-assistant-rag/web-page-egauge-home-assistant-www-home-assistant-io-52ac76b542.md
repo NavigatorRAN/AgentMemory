@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/egauge"
+final_url: "https://www.home-assistant.io/integrations/egauge"
+canonical_url: "https://www.home-assistant.io/integrations/egauge/"
+source_handle: "web:www-home-assistant-io:52ac76b54224"
+source_section: "integrations-egauge"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aced2e7406f2e60c1841af3e517c7534de1af5bcbd34e12ed711382a8038b74f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # eGauge - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

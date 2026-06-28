@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hassio"
+final_url: "https://www.home-assistant.io/integrations/hassio"
+canonical_url: "https://www.home-assistant.io/integrations/hassio/"
+source_handle: "web:www-home-assistant-io:a8de7506b6d4"
+source_section: "integrations-hassio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aab2bd6e35879dfd51fc30db0be6b79f97d03bf8924f50a9ea5423fb2b73b124"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Supervisor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

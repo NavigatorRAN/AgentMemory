@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/conversation"
+final_url: "https://www.home-assistant.io/integrations/conversation"
+canonical_url: "https://www.home-assistant.io/integrations/conversation/"
+source_handle: "web:www-home-assistant-io:88908589af8a"
+source_section: "integrations-conversation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "318914587a698ab7c6a79f593d1b7d36ed94c040ca59e5483e9fbcd1fb9419ba"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Conversation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

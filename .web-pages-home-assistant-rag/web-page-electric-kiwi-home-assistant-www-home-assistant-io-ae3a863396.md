@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/electric_kiwi"
+final_url: "https://www.home-assistant.io/integrations/electric_kiwi"
+canonical_url: "https://www.home-assistant.io/integrations/electric_kiwi/"
+source_handle: "web:www-home-assistant-io:ae3a8633962b"
+source_section: "integrations-electric-kiwi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2976cc24967a7f44de50080e0505b8ca43c318282b00da6c7aefae6ae12a8b8b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Electric Kiwi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

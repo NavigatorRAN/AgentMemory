@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/states"
+final_url: "https://www.home-assistant.io/docs/templating/states"
+canonical_url: "https://www.home-assistant.io/docs/templating/states/"
+source_handle: "web:www-home-assistant-io:54d5eb4a56d8"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8d1c219c70224bf93e4b78a7e5a8e250785b28bfe5955449c71686322f66d572"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Working with states - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

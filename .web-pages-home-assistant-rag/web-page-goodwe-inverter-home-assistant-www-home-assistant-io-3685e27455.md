@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/goodwe"
+final_url: "https://www.home-assistant.io/integrations/goodwe"
+canonical_url: "https://www.home-assistant.io/integrations/goodwe/"
+source_handle: "web:www-home-assistant-io:3685e274556b"
+source_section: "integrations-goodwe"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a412ff20075abdb1841ba4e2dc50d28109424d405c5bb79ee40029247a2b0e89"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # GoodWe Inverter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

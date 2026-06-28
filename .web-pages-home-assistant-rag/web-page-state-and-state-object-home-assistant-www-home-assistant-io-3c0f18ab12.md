@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/state_object"
+final_url: "https://www.home-assistant.io/docs/configuration/state_object"
+canonical_url: "https://www.home-assistant.io/docs/configuration/state_object/"
+source_handle: "web:www-home-assistant-io:3c0f18ab12c1"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2d569bdca7adbdd20a3516427c7c58c081ac74f34a28670e4c4e1f907ae08326"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # State and state object - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

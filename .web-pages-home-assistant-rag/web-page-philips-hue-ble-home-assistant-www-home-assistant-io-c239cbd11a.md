@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hue_ble"
+final_url: "https://www.home-assistant.io/integrations/hue_ble"
+canonical_url: "https://www.home-assistant.io/integrations/hue_ble/"
+source_handle: "web:www-home-assistant-io:c239cbd11a8a"
+source_section: "integrations-hue-ble"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "635ee9d1f97201a71dd2a1f595a32c75aca6a3e5710b840519f4354300ed8d4c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Philips Hue BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

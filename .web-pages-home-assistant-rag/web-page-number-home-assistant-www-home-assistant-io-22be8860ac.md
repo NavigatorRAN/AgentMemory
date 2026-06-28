@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/number"
+final_url: "https://www.home-assistant.io/integrations/number"
+canonical_url: "https://www.home-assistant.io/integrations/number/"
+source_handle: "web:www-home-assistant-io:22be8860ac42"
+source_section: "integrations-number"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "51b2a92586deabd4fdf05350553a1fb75523be74b2dce4d3c29068a274838767"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Number - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

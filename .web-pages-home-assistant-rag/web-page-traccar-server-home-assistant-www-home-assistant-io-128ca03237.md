@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/traccar_server"
+final_url: "https://www.home-assistant.io/integrations/traccar_server"
+canonical_url: "https://www.home-assistant.io/integrations/traccar_server/"
+source_handle: "web:www-home-assistant-io:128ca032378a"
+source_section: "integrations-traccar-server"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "60af81f8edc877eae28c4ebd7ce41c5bdbe58d95790d2bc60d3edb11e53967bd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Traccar Server - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dooya"
+final_url: "https://www.home-assistant.io/integrations/dooya"
+canonical_url: "https://www.home-assistant.io/integrations/dooya/"
+source_handle: "web:www-home-assistant-io:3567317f396e"
+source_section: "integrations-dooya"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9e46f92d07628e3c70353c5b9b677c945c03329a3e939bc3ff08d27c8f66b963"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dooya - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

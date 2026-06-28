@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rainforest_eagle"
+final_url: "https://www.home-assistant.io/integrations/rainforest_eagle"
+canonical_url: "https://www.home-assistant.io/integrations/rainforest_eagle/"
+source_handle: "web:www-home-assistant-io:0fa44de48fd1"
+source_section: "integrations-rainforest-eagle"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "166c554e00a1a13a8c9c0ab072c7942f5a659b788dc573d278b0526719ee7aed"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rainforest Eagle - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

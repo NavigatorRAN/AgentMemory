@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_sheets"
+final_url: "https://www.home-assistant.io/integrations/google_sheets"
+canonical_url: "https://www.home-assistant.io/integrations/google_sheets/"
+source_handle: "web:www-home-assistant-io:1482152c1399"
+source_section: "integrations-google-sheets"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e1ce9f1e24d66071a95cb4e0e834410d720076b926989f2687ce893d2fbf600f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Sheets - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

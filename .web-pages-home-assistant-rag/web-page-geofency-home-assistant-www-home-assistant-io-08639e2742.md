@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/geofency"
+final_url: "https://www.home-assistant.io/integrations/geofency"
+canonical_url: "https://www.home-assistant.io/integrations/geofency/"
+source_handle: "web:www-home-assistant-io:08639e27422f"
+source_section: "integrations-geofency"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "315a32ba4f581b9903d92e9754ba1f6b65729a1b2f7c9a46a620f5a045d2b60a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Geofency - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

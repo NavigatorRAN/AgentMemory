@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/leaone"
+final_url: "https://www.home-assistant.io/integrations/leaone"
+canonical_url: "https://www.home-assistant.io/integrations/leaone/"
+source_handle: "web:www-home-assistant-io:e453dc139774"
+source_section: "integrations-leaone"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6df5e56f6682ab7a10806cb311e1a50d3245a78b29187a5527e79ab86ad01568"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LeaOne - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

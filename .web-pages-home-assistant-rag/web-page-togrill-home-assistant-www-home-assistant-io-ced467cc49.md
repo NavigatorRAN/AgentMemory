@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/togrill"
+final_url: "https://www.home-assistant.io/integrations/togrill"
+canonical_url: "https://www.home-assistant.io/integrations/togrill/"
+source_handle: "web:www-home-assistant-io:ced467cc49dd"
+source_section: "integrations-togrill"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b78cdccfdf693077223296f8d26ef479e45a53e9bee02d72e2c3c24f266b1864"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ToGrill - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

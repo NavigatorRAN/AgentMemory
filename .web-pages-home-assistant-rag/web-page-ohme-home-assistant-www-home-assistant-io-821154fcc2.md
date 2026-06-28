@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ohme"
+final_url: "https://www.home-assistant.io/integrations/ohme"
+canonical_url: "https://www.home-assistant.io/integrations/ohme/"
+source_handle: "web:www-home-assistant-io:821154fcc2f2"
+source_section: "integrations-ohme"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "21af19e26df9197d65dca3fa97234995c65d7a5bf6e3b66031280c72c13658c8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ohme - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

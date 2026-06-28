@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/arcam_fmj"
+final_url: "https://www.home-assistant.io/integrations/arcam_fmj"
+canonical_url: "https://www.home-assistant.io/integrations/arcam_fmj/"
+source_handle: "web:www-home-assistant-io:b06b9b17c7ad"
+source_section: "integrations-arcam-fmj"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7d54c64f8a5247d6eaf1593d0d9fecb69f0126e2e777442595584774d50ae931"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Arcam FMJ Receivers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/opengarage"
+final_url: "https://www.home-assistant.io/integrations/opengarage"
+canonical_url: "https://www.home-assistant.io/integrations/opengarage/"
+source_handle: "web:www-home-assistant-io:d864266619bd"
+source_section: "integrations-opengarage"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4112bc45de87e0ca57b85956fa1032515e8a490ab1598f04201f78926b5f9f6b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenGarage - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

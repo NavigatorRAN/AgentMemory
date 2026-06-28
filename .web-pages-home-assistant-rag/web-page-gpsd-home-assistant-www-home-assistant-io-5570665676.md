@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gpsd"
+final_url: "https://www.home-assistant.io/integrations/gpsd"
+canonical_url: "https://www.home-assistant.io/integrations/gpsd/"
+source_handle: "web:www-home-assistant-io:557066567696"
+source_section: "integrations-gpsd"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8ee0db78fd6574cef42b37d5946a47e58ec2c8e4a09d86ca10df6a782334f0e9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GPSD - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

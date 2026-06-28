@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switchbot"
+final_url: "https://www.home-assistant.io/integrations/switchbot"
+canonical_url: "https://www.home-assistant.io/integrations/switchbot/"
+source_handle: "web:www-home-assistant-io:2cd52d1df40b"
+source_section: "integrations-switchbot"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b5b97bed4917a6c2e681e380acd2f0070f2995e101601e83dd3ab3925b7c7839"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # SwitchBot Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

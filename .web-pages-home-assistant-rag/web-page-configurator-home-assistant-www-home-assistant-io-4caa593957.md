@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/configurator"
+final_url: "https://www.home-assistant.io/integrations/configurator"
+canonical_url: "https://www.home-assistant.io/integrations/configurator/"
+source_handle: "web:www-home-assistant-io:4caa5939572d"
+source_section: "integrations-configurator"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0acac75fc635aa36b28cbfdaaf9a869daf1e2f1566e57df25a0e9c5235e981a5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Configurator - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

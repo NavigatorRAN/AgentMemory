@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gaggenau"
+final_url: "https://www.home-assistant.io/integrations/gaggenau"
+canonical_url: "https://www.home-assistant.io/integrations/gaggenau/"
+source_handle: "web:www-home-assistant-io:5c67dcb4af70"
+source_section: "integrations-gaggenau"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d858a18b1d088fe40ee37acd8d73b1b158599f5710dae62d2843490492dc7dc0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Gaggenau - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

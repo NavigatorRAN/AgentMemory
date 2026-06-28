@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/logbook"
+final_url: "https://www.home-assistant.io/dashboards/logbook"
+canonical_url: "https://www.home-assistant.io/dashboards/logbook/"
+source_handle: "web:www-home-assistant-io:2b6d1947f9ad"
+source_section: "dashboards-logbook"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "93e6bb00a2ba856f19fba570f8eef58a3d855cb22ad28433bf2037666894c5e6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Activity card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

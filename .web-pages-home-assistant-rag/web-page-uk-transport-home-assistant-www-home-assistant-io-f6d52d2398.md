@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/uk_transport"
+final_url: "https://www.home-assistant.io/integrations/uk_transport"
+canonical_url: "https://www.home-assistant.io/integrations/uk_transport/"
+source_handle: "web:www-home-assistant-io:f6d52d239803"
+source_section: "integrations-uk-transport"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5c997f926a7309ff2dc02b59b60f630edb1db04fabaf282e271a4b3b333273c2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UK Transport - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

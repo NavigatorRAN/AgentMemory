@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kostal_plenticore"
+final_url: "https://www.home-assistant.io/integrations/kostal_plenticore"
+canonical_url: "https://www.home-assistant.io/integrations/kostal_plenticore/"
+source_handle: "web:www-home-assistant-io:499a3881e475"
+source_section: "integrations-kostal-plenticore"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a0fb718399367de577540f077b82b773fc30cd976889b16bd98a30451c1503e9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kostal Plenticore Solar Inverter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

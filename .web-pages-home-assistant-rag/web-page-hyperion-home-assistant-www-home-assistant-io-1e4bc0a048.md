@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hyperion"
+final_url: "https://www.home-assistant.io/integrations/hyperion"
+canonical_url: "https://www.home-assistant.io/integrations/hyperion/"
+source_handle: "web:www-home-assistant-io:1e4bc0a048f8"
+source_section: "integrations-hyperion"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "389c909412ce6d1f12d8104e382d1f2fbf41f474b5875fb792f07b5eb36544e6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hyperion - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

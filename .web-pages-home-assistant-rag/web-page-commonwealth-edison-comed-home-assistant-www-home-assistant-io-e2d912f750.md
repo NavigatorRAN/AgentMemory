@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/comed"
+final_url: "https://www.home-assistant.io/integrations/comed"
+canonical_url: "https://www.home-assistant.io/integrations/comed/"
+source_handle: "web:www-home-assistant-io:e2d912f750f7"
+source_section: "integrations-comed"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dd9e11a46d1a706a80f4803d9a04b4ee1247b63ff63435eb0136d574977c2662"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Commonwealth Edison (ComEd) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

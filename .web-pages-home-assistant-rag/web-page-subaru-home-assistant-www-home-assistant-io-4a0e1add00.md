@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/subaru"
+final_url: "https://www.home-assistant.io/integrations/subaru"
+canonical_url: "https://www.home-assistant.io/integrations/subaru/"
+source_handle: "web:www-home-assistant-io:4a0e1add001c"
+source_section: "integrations-subaru"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b270ffae2d2e281f17e50c7543c7200f230ef5f11e5b4da9dc0aafce81310e8c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Subaru - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

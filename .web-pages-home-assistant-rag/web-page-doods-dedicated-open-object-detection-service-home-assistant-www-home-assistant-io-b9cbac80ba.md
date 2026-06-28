@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/doods"
+final_url: "https://www.home-assistant.io/integrations/doods"
+canonical_url: "https://www.home-assistant.io/integrations/doods/"
+source_handle: "web:www-home-assistant-io:b9cbac80baa1"
+source_section: "integrations-doods"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8b77e7126f61a2225a95391f0cccef3b4f95ca12f4d5fa2103fbc96f33c18bf7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # DOODS - Dedicated Open Object Detection Service - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

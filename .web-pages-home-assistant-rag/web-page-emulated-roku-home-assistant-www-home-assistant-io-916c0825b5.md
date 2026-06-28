@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/emulated_roku"
+final_url: "https://www.home-assistant.io/integrations/emulated_roku"
+canonical_url: "https://www.home-assistant.io/integrations/emulated_roku/"
+source_handle: "web:www-home-assistant-io:916c0825b5ec"
+source_section: "integrations-emulated-roku"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "737170f35a80293ffb5c0f2bfe0a297ed31633fef075f23a807f21d29f180325"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Emulated Roku - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sony_projector"
+final_url: "https://www.home-assistant.io/integrations/sony_projector"
+canonical_url: "https://www.home-assistant.io/integrations/sony_projector/"
+source_handle: "web:www-home-assistant-io:3282cde3c794"
+source_section: "integrations-sony-projector"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8cf94d6ff330eaef080e5f8cd1dc0e187b3e6a2b239e8e78b0fd841f52784f78"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sony Projector - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

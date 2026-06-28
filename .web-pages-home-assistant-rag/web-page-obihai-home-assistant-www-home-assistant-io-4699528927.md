@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/obihai"
+final_url: "https://www.home-assistant.io/integrations/obihai"
+canonical_url: "https://www.home-assistant.io/integrations/obihai/"
+source_handle: "web:www-home-assistant-io:469952892715"
+source_section: "integrations-obihai"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6546376117464138f83d24f438aceda04fefecba4cdab9ddcf6ed60574b9923a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Obihai - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

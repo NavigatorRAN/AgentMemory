@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/watergate"
+final_url: "https://www.home-assistant.io/integrations/watergate"
+canonical_url: "https://www.home-assistant.io/integrations/watergate/"
+source_handle: "web:www-home-assistant-io:0f7c0c70e619"
+source_section: "integrations-watergate"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f9e5e707afa81d55fa127d7eaa2e75d6bd54f08f1ee45f271728162955872fb1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Watergate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

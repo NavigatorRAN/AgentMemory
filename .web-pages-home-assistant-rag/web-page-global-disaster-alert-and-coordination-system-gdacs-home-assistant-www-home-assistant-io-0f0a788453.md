@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gdacs"
+final_url: "https://www.home-assistant.io/integrations/gdacs"
+canonical_url: "https://www.home-assistant.io/integrations/gdacs/"
+source_handle: "web:www-home-assistant-io:0f0a788453b3"
+source_section: "integrations-gdacs"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "26a2d736ffee0b81a2bf8d81c9c1f2af9e3e809f414015b7ca4a739ffe1f5154"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Global Disaster Alert and Coordination System (GDACS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

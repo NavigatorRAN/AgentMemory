@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/motionmount"
+final_url: "https://www.home-assistant.io/integrations/motionmount"
+canonical_url: "https://www.home-assistant.io/integrations/motionmount/"
+source_handle: "web:www-home-assistant-io:bc2b86368329"
+source_section: "integrations-motionmount"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b2e04009d079db4ce310ad6891d639e14096033647ffa27074830fe668ea0761"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Vogel's MotionMount - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cielo_home"
+final_url: "https://www.home-assistant.io/integrations/cielo_home"
+canonical_url: "https://www.home-assistant.io/integrations/cielo_home/"
+source_handle: "web:www-home-assistant-io:334c5c3a5451"
+source_section: "integrations-cielo-home"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cf320c1c23a2c7774660a93ca9c547ad9687aecd7a88fcc872f4d612d90993d4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Cielo Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

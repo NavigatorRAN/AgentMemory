@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google"
+final_url: "https://www.home-assistant.io/integrations/google"
+canonical_url: "https://www.home-assistant.io/integrations/google/"
+source_handle: "web:www-home-assistant-io:2f82ed0a8a25"
+source_section: "integrations-google"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7d87646967785a76497287f0c97c4c3d84ad8413fe2905267d5e4da22ac4998e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Calendar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

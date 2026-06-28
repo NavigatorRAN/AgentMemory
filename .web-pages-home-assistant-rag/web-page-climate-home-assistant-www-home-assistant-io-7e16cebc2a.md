@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/climate"
+final_url: "https://www.home-assistant.io/integrations/climate"
+canonical_url: "https://www.home-assistant.io/integrations/climate/"
+source_handle: "web:www-home-assistant-io:7e16cebc2ac9"
+source_section: "integrations-climate"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "60a1937c83b37a6c3f6e7487bb787938a6b6dea74f8327024a9887225c69e44e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Climate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

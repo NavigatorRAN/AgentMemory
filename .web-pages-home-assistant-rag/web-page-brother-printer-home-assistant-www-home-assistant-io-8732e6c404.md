@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/brother"
+final_url: "https://www.home-assistant.io/integrations/brother"
+canonical_url: "https://www.home-assistant.io/integrations/brother/"
+source_handle: "web:www-home-assistant-io:8732e6c404a0"
+source_section: "integrations-brother"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "69745445c3ee4feea010a0eae37130fb810c44a6b5272b08e584e190ec7d915a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Brother Printer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/getting-started/presence-detection"
+final_url: "https://www.home-assistant.io/getting-started/presence-detection"
+canonical_url: "https://www.home-assistant.io/getting-started/presence-detection/"
+source_handle: "web:www-home-assistant-io:1866432fab74"
+source_section: "getting-started-presence-detection"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f8f57740d10cacaba3b34c3c4dc49c5366b08575c8a11078691cfc6367ef83c5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Setting up presence detection - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

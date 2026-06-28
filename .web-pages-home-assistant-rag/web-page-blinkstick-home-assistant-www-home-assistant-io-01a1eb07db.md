@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/blinksticklight"
+final_url: "https://www.home-assistant.io/integrations/blinksticklight"
+canonical_url: "https://www.home-assistant.io/integrations/blinksticklight/"
+source_handle: "web:www-home-assistant-io:01a1eb07db7e"
+source_section: "integrations-blinksticklight"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4a2f8d5463d0f5586030b6b6cbda0263572239934c1b9ccf90776cb93433e64d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BlinkStick - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

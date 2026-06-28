@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/configuration-file"
+final_url: "https://www.home-assistant.io/faq/configuration-file"
+canonical_url: "https://www.home-assistant.io/faq/configuration-file/"
+source_handle: "web:www-home-assistant-io:8b2ea4f8f311"
+source_section: "faq-configuration-file"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "eb3cee3c543ba560d2eaabe8eb0cd95f4e03f64079075642b525c6c8464055cb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Why does Home Assistant use YAML for power-user configuration? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

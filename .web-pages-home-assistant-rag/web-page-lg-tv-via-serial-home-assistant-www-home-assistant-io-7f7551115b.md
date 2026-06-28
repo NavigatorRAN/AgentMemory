@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lg_tv_rs232"
+final_url: "https://www.home-assistant.io/integrations/lg_tv_rs232"
+canonical_url: "https://www.home-assistant.io/integrations/lg_tv_rs232/"
+source_handle: "web:www-home-assistant-io:7f7551115b5b"
+source_section: "integrations-lg-tv-rs232"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "de887eaead0702776ac5519341212bcc1c3456f88f3f49352f679459af1b8de4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # LG TV via Serial - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

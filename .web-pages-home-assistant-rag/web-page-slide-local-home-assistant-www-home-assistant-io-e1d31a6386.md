@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/slide_local"
+final_url: "https://www.home-assistant.io/integrations/slide_local"
+canonical_url: "https://www.home-assistant.io/integrations/slide_local/"
+source_handle: "web:www-home-assistant-io:e1d31a63866f"
+source_section: "integrations-slide-local"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "adb7cd6d8bf3f75afebb2cac8d546dbacc45361bb65ec0a1a47d59c5756acc00"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Slide Local - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

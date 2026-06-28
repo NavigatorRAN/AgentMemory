@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/netgear_lte"
+final_url: "https://www.home-assistant.io/integrations/netgear_lte"
+canonical_url: "https://www.home-assistant.io/integrations/netgear_lte/"
+source_handle: "web:www-home-assistant-io:364910c2bb89"
+source_section: "integrations-netgear-lte"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3732e494ecaba28ab56b59db052bd0605c0eac98096fd5092316834dd8d57453"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NETGEAR LTE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

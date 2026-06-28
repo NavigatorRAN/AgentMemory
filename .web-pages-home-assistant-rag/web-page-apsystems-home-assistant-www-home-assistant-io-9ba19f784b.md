@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/apsystems"
+final_url: "https://www.home-assistant.io/integrations/apsystems"
+canonical_url: "https://www.home-assistant.io/integrations/apsystems/"
+source_handle: "web:www-home-assistant-io:9ba19f784b19"
+source_section: "integrations-apsystems"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6371016515818c2c72e6d0c52b6ca115a0d0748d5df982605d2cd15cf8022ab3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # APsystems - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

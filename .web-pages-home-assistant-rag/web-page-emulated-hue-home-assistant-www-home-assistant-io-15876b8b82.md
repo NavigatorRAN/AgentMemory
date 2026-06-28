@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/emulated_hue"
+final_url: "https://www.home-assistant.io/integrations/emulated_hue"
+canonical_url: "https://www.home-assistant.io/integrations/emulated_hue/"
+source_handle: "web:www-home-assistant-io:15876b8b8257"
+source_section: "integrations-emulated-hue"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5901607109b0ce533260b8c0edb358e6f967e9a2c0285adadb3640a0276d06bd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Emulated Hue - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

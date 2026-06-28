@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pcs_lighting"
+final_url: "https://www.home-assistant.io/integrations/pcs_lighting"
+canonical_url: "https://www.home-assistant.io/integrations/pcs_lighting/"
+source_handle: "web:www-home-assistant-io:5c3d3b970b88"
+source_section: "integrations-pcs-lighting"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bbb429f4c48f5a08fef8985fe2e6db6291887d6ee39e06d6fed41936f8e5f771"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PCS Lighting - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/person"
+final_url: "https://www.home-assistant.io/integrations/person"
+canonical_url: "https://www.home-assistant.io/integrations/person/"
+source_handle: "web:www-home-assistant-io:c8b344e21a30"
+source_section: "integrations-person"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "beb3d1b15abca5c59e607cf386bd669237c4c625eb72b8fcf2074444286fb183"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Person - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fastdotcom"
+final_url: "https://www.home-assistant.io/integrations/fastdotcom"
+canonical_url: "https://www.home-assistant.io/integrations/fastdotcom/"
+source_handle: "web:www-home-assistant-io:ac535087452b"
+source_section: "integrations-fastdotcom"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2c4c6156622834cdb69a0b6b267ba49d455648cd5a89de9b6cbea433051cc5bf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fast.com - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

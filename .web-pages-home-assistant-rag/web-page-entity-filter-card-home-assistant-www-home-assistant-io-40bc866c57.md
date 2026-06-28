@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/entity-filter"
+final_url: "https://www.home-assistant.io/dashboards/entity-filter"
+canonical_url: "https://www.home-assistant.io/dashboards/entity-filter/"
+source_handle: "web:www-home-assistant-io:40bc866c571b"
+source_section: "dashboards-entity-filter"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "89c1a9bb30d220eaa85cdaa7df65c4d3c51f915eebedff3333273fbdd5a87018"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Entity filter card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

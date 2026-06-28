@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/discovergy"
+final_url: "https://www.home-assistant.io/integrations/discovergy"
+canonical_url: "https://www.home-assistant.io/integrations/discovergy/"
+source_handle: "web:www-home-assistant-io:ee8f984fab88"
+source_section: "integrations-discovergy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "34719a4c2828d7bf38b0fa72a3b2f4fc40ee6d2bc02c3307ab57117d36512fca"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # inexogy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

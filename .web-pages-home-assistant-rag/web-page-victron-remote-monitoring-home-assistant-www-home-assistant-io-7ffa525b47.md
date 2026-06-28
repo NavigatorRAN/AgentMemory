@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/victron_remote_monitoring"
+final_url: "https://www.home-assistant.io/integrations/victron_remote_monitoring"
+canonical_url: "https://www.home-assistant.io/integrations/victron_remote_monitoring/"
+source_handle: "web:www-home-assistant-io:7ffa525b4750"
+source_section: "integrations-victron-remote-monitoring"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bc4ddb5813f9acdc28d8c5db27b164d94659ab618b29a30cc11e77776f13478d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Victron Remote Monitoring - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

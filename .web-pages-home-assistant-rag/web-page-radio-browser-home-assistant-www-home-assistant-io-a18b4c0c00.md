@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/radio_browser"
+final_url: "https://www.home-assistant.io/integrations/radio_browser"
+canonical_url: "https://www.home-assistant.io/integrations/radio_browser/"
+source_handle: "web:www-home-assistant-io:a18b4c0c0023"
+source_section: "integrations-radio-browser"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "97fe92080dfa76ecea78ae13e66118a190bd17151bb5ade37017f42aea126e32"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Radio Browser - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/uprise_smart_shades"
+final_url: "https://www.home-assistant.io/integrations/uprise_smart_shades"
+canonical_url: "https://www.home-assistant.io/integrations/uprise_smart_shades/"
+source_handle: "web:www-home-assistant-io:4d42f61c4eda"
+source_section: "integrations-uprise-smart-shades"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "193df8a86bb37b002dab143dcbb9c76c33ccda442c6351b761891ebb200009da"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Uprise Smart Shades - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

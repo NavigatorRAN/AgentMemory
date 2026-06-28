@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensoterra"
+final_url: "https://www.home-assistant.io/integrations/sensoterra"
+canonical_url: "https://www.home-assistant.io/integrations/sensoterra/"
+source_handle: "web:www-home-assistant-io:e96ba414f1a8"
+source_section: "integrations-sensoterra"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "383c1c8d5895cbf379de8e6913beda4d7d80e4461bad9c65ebeec21c5e8a94fa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sensoterra - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

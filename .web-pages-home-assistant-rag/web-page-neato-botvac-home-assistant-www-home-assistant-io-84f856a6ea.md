@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/neato"
+final_url: "https://www.home-assistant.io/integrations/neato"
+canonical_url: "https://www.home-assistant.io/integrations/neato/"
+source_handle: "web:www-home-assistant-io:84f856a6eadc"
+source_section: "integrations-neato"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "222185effc9a1806bb0440293915c9b072b24424fabb7be15cca401c71d6fcda"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Neato Botvac - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

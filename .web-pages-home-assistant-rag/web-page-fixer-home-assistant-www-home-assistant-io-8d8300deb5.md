@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fixer"
+final_url: "https://www.home-assistant.io/integrations/fixer"
+canonical_url: "https://www.home-assistant.io/integrations/fixer/"
+source_handle: "web:www-home-assistant-io:8d8300deb51a"
+source_section: "integrations-fixer"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7b022717e3cb2d94c592973d9d274d527e7fb9aead503c27d4a0d4ee37fb5489"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fixer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

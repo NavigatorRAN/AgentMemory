@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bloc_blinds"
+final_url: "https://www.home-assistant.io/integrations/bloc_blinds"
+canonical_url: "https://www.home-assistant.io/integrations/bloc_blinds/"
+source_handle: "web:www-home-assistant-io:e789b5e87329"
+source_section: "integrations-bloc-blinds"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "51291b3f959fe775e9b68504c6cc423a9e607aff5b2cbdab937db9e2f7cdf8f4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bloc Blinds - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

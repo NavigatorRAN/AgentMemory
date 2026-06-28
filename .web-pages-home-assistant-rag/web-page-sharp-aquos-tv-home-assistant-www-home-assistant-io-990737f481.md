@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aquostv"
+final_url: "https://www.home-assistant.io/integrations/aquostv"
+canonical_url: "https://www.home-assistant.io/integrations/aquostv/"
+source_handle: "web:www-home-assistant-io:990737f4811c"
+source_section: "integrations-aquostv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0bbe800865b3d15968ec17b6841b6c00d01b086c6408335dea60cb4dedb56861"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sharp Aquos TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

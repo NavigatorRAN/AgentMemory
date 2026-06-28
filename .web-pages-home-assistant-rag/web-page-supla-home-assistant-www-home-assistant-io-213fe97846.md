@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/supla"
+final_url: "https://www.home-assistant.io/integrations/supla"
+canonical_url: "https://www.home-assistant.io/integrations/supla/"
+source_handle: "web:www-home-assistant-io:213fe97846af"
+source_section: "integrations-supla"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28ee39ad962d154483202512ea3cf602e83e575ccdd4a6da512f5ebcba139183"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SUPLA - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

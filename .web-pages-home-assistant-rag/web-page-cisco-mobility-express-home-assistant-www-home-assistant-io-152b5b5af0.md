@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cisco_mobility_express"
+final_url: "https://www.home-assistant.io/integrations/cisco_mobility_express"
+canonical_url: "https://www.home-assistant.io/integrations/cisco_mobility_express/"
+source_handle: "web:www-home-assistant-io:152b5b5af07b"
+source_section: "integrations-cisco-mobility-express"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e18682d56d123bb09d8ba28ade81cbf7c5d7ade3f3ca20f4ecc3fba8e802b2c5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Cisco Mobility Express - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

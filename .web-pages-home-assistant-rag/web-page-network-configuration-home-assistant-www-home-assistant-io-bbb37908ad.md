@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/network"
+final_url: "https://www.home-assistant.io/integrations/network"
+canonical_url: "https://www.home-assistant.io/integrations/network/"
+source_handle: "web:www-home-assistant-io:bbb37908ada4"
+source_section: "integrations-network"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "44a7b69b91de95ac803a7185efa71fd950a80e4bfee5878d7b9848b70edaf5fa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Network Configuration - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/currencylayer"
+final_url: "https://www.home-assistant.io/integrations/currencylayer"
+canonical_url: "https://www.home-assistant.io/integrations/currencylayer/"
+source_handle: "web:www-home-assistant-io:d80cc62aabf0"
+source_section: "integrations-currencylayer"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "66f6e3965a86e1837ffbda27e4461b5730d367d859ec925ee5e8f8df408203ca"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # currencylayer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

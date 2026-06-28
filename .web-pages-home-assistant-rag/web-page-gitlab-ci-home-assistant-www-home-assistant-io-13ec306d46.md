@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gitlab_ci"
+final_url: "https://www.home-assistant.io/integrations/gitlab_ci"
+canonical_url: "https://www.home-assistant.io/integrations/gitlab_ci/"
+source_handle: "web:www-home-assistant-io:13ec306d46ec"
+source_section: "integrations-gitlab-ci"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e3683c9cf76b759ac7267c66b3ff4a2cf9b1fb1a67b7fc7c8673763792475fbf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GitLab-CI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

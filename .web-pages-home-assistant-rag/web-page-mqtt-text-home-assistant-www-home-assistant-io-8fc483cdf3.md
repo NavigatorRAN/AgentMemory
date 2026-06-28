@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/text.mqtt"
+final_url: "https://www.home-assistant.io/integrations/text.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/text.mqtt/"
+source_handle: "web:www-home-assistant-io:8fc483cdf37f"
+source_section: "integrations-text-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0d1a091d6539a726f0cc12f9836f6f9076e0dfc762e1e9999722ea1725ba4383"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Text - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

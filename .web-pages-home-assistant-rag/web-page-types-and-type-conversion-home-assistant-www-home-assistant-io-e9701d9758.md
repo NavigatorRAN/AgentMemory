@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/types"
+final_url: "https://www.home-assistant.io/docs/templating/types"
+canonical_url: "https://www.home-assistant.io/docs/templating/types/"
+source_handle: "web:www-home-assistant-io:e9701d9758a6"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fa16eba29768ad004498fd18946c0c08f76b3a1dd74c8baafe3c6164b69d8bc4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Types and type conversion - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

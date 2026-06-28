@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nobo_hub"
+final_url: "https://www.home-assistant.io/integrations/nobo_hub"
+canonical_url: "https://www.home-assistant.io/integrations/nobo_hub/"
+source_handle: "web:www-home-assistant-io:a3ba3175f887"
+source_section: "integrations-nobo-hub"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9cf6c0fc97d1788242b2606d6f61d8007227f89a6751e4be1ea103ac70510993"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Nobø Ecohub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

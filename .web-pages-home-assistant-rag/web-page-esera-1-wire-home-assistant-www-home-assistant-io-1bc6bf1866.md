@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/esera_onewire"
+final_url: "https://www.home-assistant.io/integrations/esera_onewire"
+canonical_url: "https://www.home-assistant.io/integrations/esera_onewire/"
+source_handle: "web:www-home-assistant-io:1bc6bf186652"
+source_section: "integrations-esera-onewire"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "245cdbe752f8e41b4a65889f506f891d9c762336d9cc1b35f2c3a8b7ad111684"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ESERA 1-Wire - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

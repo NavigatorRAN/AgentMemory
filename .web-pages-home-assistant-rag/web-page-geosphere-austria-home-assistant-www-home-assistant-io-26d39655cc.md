@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zamg"
+final_url: "https://www.home-assistant.io/integrations/zamg"
+canonical_url: "https://www.home-assistant.io/integrations/zamg/"
+source_handle: "web:www-home-assistant-io:26d39655ccea"
+source_section: "integrations-zamg"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d4733ab57c385686966ad41bb4f1c9116f135991e6b037737be5e3cfd16f8d6a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GeoSphere Austria - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

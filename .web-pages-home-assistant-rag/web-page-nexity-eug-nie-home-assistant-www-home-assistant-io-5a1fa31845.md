@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nexity"
+final_url: "https://www.home-assistant.io/integrations/nexity"
+canonical_url: "https://www.home-assistant.io/integrations/nexity/"
+source_handle: "web:www-home-assistant-io:5a1fa31845ce"
+source_section: "integrations-nexity"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "68bc9a2a6b0d675d9b13cc0b99a07f08c3c789f1bd3218a137ec7ac5e7a2c938"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nexity Eugénie - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nasweb"
+final_url: "https://www.home-assistant.io/integrations/nasweb"
+canonical_url: "https://www.home-assistant.io/integrations/nasweb/"
+source_handle: "web:www-home-assistant-io:dca6487141bc"
+source_section: "integrations-nasweb"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "60287c0355dbd10c5fc9e6b266a435f1e9d729436cadb9cb50cc53a6a9e46563"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NASweb - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

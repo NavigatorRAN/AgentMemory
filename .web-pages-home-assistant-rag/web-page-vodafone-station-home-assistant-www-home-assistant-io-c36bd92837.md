@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vodafone_station"
+final_url: "https://www.home-assistant.io/integrations/vodafone_station"
+canonical_url: "https://www.home-assistant.io/integrations/vodafone_station/"
+source_handle: "web:www-home-assistant-io:c36bd92837af"
+source_section: "integrations-vodafone-station"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f319c22a84fe0dd6b37ee93ae902f58499d21b49d0626f3c7af949fe6809c7b8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Vodafone Station - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

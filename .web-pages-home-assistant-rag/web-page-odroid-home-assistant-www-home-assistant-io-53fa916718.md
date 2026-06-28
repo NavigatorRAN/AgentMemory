@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/odroid"
+final_url: "https://www.home-assistant.io/installation/odroid"
+canonical_url: "https://www.home-assistant.io/installation/odroid/"
+source_handle: "web:www-home-assistant-io:53fa91671874"
+source_section: "installation-odroid"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "279b8d171c23c0c77768a808a395a88ce96c0e28b531bbff75992d5b1b83897a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # ODROID - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

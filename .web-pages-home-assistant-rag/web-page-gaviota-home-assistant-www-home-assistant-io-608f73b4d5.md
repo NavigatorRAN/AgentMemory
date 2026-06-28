@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gaviota"
+final_url: "https://www.home-assistant.io/integrations/gaviota"
+canonical_url: "https://www.home-assistant.io/integrations/gaviota/"
+source_handle: "web:www-home-assistant-io:608f73b4d567"
+source_section: "integrations-gaviota"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b1c103bf46d69c21b5440aa04bfe7164332f91e4b913cee0b5d3f2e6867baad5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Gaviota - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

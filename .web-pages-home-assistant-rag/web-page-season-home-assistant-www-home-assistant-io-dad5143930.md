@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/season"
+final_url: "https://www.home-assistant.io/integrations/season"
+canonical_url: "https://www.home-assistant.io/integrations/season/"
+source_handle: "web:www-home-assistant-io:dad5143930f8"
+source_section: "integrations-season"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ca8a12aa7254cac62803f3225f6be758b2578d680141b340e89c80b70d63c4d6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Season - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

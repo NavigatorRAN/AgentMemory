@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/izone"
+final_url: "https://www.home-assistant.io/integrations/izone"
+canonical_url: "https://www.home-assistant.io/integrations/izone/"
+source_handle: "web:www-home-assistant-io:b47118280729"
+source_section: "integrations-izone"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2085bc8e19fd321f52b125270c592d096b9e586ee33a74427ac762fe8b9150e3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # iZone - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

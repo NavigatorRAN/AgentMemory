@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eastron"
+final_url: "https://www.home-assistant.io/integrations/eastron"
+canonical_url: "https://www.home-assistant.io/integrations/eastron/"
+source_handle: "web:www-home-assistant-io:a1cd49df0428"
+source_section: "integrations-eastron"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8eae6eb282e221c0d814524df1ee16c27a8d7fd95c27efbf2077aac6cf3cedc9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Eastron - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

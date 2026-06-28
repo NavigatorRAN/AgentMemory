@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/luxaflex"
+final_url: "https://www.home-assistant.io/integrations/luxaflex"
+canonical_url: "https://www.home-assistant.io/integrations/luxaflex/"
+source_handle: "web:www-home-assistant-io:c8060e5293a4"
+source_section: "integrations-luxaflex"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b9bd51e23b39c8d28cd19020dd58ed03d9fa6020ac1b3af1321b73ff61796537"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Luxaflex - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

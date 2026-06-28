@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fivem"
+final_url: "https://www.home-assistant.io/integrations/fivem"
+canonical_url: "https://www.home-assistant.io/integrations/fivem/"
+source_handle: "web:www-home-assistant-io:897bf45d9188"
+source_section: "integrations-fivem"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "231fc48681c251ac877dcb80b4868eb00f88f6f758a5d2d60de6cff297db426f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FiveM - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

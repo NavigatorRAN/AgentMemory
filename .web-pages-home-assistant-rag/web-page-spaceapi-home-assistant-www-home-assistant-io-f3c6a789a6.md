@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/spaceapi"
+final_url: "https://www.home-assistant.io/integrations/spaceapi"
+canonical_url: "https://www.home-assistant.io/integrations/spaceapi/"
+source_handle: "web:www-home-assistant-io:f3c6a789a6bc"
+source_section: "integrations-spaceapi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d9e1a04c63648f20a58d66353a87cc06e30772a0973fd3b90ad2e5eb5dc7f347"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SpaceAPI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

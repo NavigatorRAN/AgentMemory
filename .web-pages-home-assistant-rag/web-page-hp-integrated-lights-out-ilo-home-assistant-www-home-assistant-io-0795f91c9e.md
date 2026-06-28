@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hp_ilo"
+final_url: "https://www.home-assistant.io/integrations/hp_ilo"
+canonical_url: "https://www.home-assistant.io/integrations/hp_ilo/"
+source_handle: "web:www-home-assistant-io:0795f91c9e1c"
+source_section: "integrations-hp-ilo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4b3d734a10c5cde98dae092e63216685e7a9eef94e3bcbd80a2c2479c8002258"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HP Integrated Lights-Out (ILO) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

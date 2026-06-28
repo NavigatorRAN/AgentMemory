@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/deluge"
+final_url: "https://www.home-assistant.io/integrations/deluge"
+canonical_url: "https://www.home-assistant.io/integrations/deluge/"
+source_handle: "web:www-home-assistant-io:aee3a60476a7"
+source_section: "integrations-deluge"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ff19ff4bdc1548acf299a60cb83974156e91d4ef144bfd4759620bdc328e701e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Deluge - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

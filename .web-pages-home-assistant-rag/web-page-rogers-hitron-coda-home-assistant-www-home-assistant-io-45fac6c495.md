@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hitron_coda"
+final_url: "https://www.home-assistant.io/integrations/hitron_coda"
+canonical_url: "https://www.home-assistant.io/integrations/hitron_coda/"
+source_handle: "web:www-home-assistant-io:45fac6c49545"
+source_section: "integrations-hitron-coda"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1af90998df9a8eadd3db37a2b5a7f9875750b84699a42311cc6753c725eff34e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Rogers Hitron CODA - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

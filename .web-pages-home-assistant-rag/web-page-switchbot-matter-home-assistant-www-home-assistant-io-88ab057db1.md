@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switchbot_matter"
+final_url: "https://www.home-assistant.io/integrations/switchbot_matter"
+canonical_url: "https://www.home-assistant.io/integrations/switchbot_matter/"
+source_handle: "web:www-home-assistant-io:88ab057db1ff"
+source_section: "integrations-switchbot-matter"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "eef27cb4203a1a528b4dca672c97162b3d4e746e9138fd8bdb9be2c1274303ab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SwitchBot Matter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

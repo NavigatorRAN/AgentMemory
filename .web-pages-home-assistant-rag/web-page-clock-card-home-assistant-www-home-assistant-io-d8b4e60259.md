@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/clock"
+final_url: "https://www.home-assistant.io/dashboards/clock"
+canonical_url: "https://www.home-assistant.io/dashboards/clock/"
+source_handle: "web:www-home-assistant-io:d8b4e602598a"
+source_section: "dashboards-clock"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "345d66a8d23dc173aa0ad78a027d3610feac8bfcb5923c0d13e5ff60eaffa657"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Clock card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

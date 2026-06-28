@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zimi"
+final_url: "https://www.home-assistant.io/integrations/zimi"
+canonical_url: "https://www.home-assistant.io/integrations/zimi/"
+source_handle: "web:www-home-assistant-io:2529737a45eb"
+source_section: "integrations-zimi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b6598dcb2e3f5d24dde33bdf2078a8b4de705eafa738009bec45b2619a3abaa1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # zimi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

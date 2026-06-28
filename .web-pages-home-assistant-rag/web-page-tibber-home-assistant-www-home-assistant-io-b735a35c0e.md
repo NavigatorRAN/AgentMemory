@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tibber"
+final_url: "https://www.home-assistant.io/integrations/tibber"
+canonical_url: "https://www.home-assistant.io/integrations/tibber/"
+source_handle: "web:www-home-assistant-io:b735a35c0e42"
+source_section: "integrations-tibber"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f5122218f35518f608c042c7b891194fc5dd752b51683717aad407199ec7ce34"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tibber - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

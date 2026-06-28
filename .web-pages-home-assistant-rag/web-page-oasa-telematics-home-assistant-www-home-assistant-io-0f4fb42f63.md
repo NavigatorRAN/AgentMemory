@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/oasa_telematics"
+final_url: "https://www.home-assistant.io/integrations/oasa_telematics"
+canonical_url: "https://www.home-assistant.io/integrations/oasa_telematics/"
+source_handle: "web:www-home-assistant-io:0f4fb42f6305"
+source_section: "integrations-oasa-telematics"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fc943c9d097b160e332596eb92c69b1be7e02e236757b1c6c52edb3adc73da52"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OASA Telematics - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

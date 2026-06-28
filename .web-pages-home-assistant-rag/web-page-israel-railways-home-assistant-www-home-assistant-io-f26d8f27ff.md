@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/israel_rail"
+final_url: "https://www.home-assistant.io/integrations/israel_rail"
+canonical_url: "https://www.home-assistant.io/integrations/israel_rail/"
+source_handle: "web:www-home-assistant-io:f26d8f27ff82"
+source_section: "integrations-israel-rail"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d42ff89643d7cf027370aba4ec912c3ddcf33dc9e5dae5d8a8177e4c3a0770db"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Israel Railways - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

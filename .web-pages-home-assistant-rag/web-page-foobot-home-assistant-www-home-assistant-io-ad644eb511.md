@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/foobot"
+final_url: "https://www.home-assistant.io/integrations/foobot"
+canonical_url: "https://www.home-assistant.io/integrations/foobot/"
+source_handle: "web:www-home-assistant-io:ad644eb51168"
+source_section: "integrations-foobot"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "90b0830bad42036d9eabdff4db4c010dffe49bd87b4a9950b7fe8759261fdcb9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Foobot - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

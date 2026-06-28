@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/camera.ffmpeg"
+final_url: "https://www.home-assistant.io/integrations/camera.ffmpeg"
+canonical_url: "https://www.home-assistant.io/integrations/camera.ffmpeg/"
+source_handle: "web:www-home-assistant-io:ab0ef70f1dd7"
+source_section: "integrations-camera-ffmpeg"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "32dffd45cabaab63636ede795dd1aaca38594894b0dbf28499cbbda68dafaa62"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FFmpeg Camera - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

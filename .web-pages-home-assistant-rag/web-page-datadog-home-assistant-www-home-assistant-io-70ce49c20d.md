@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/datadog"
+final_url: "https://www.home-assistant.io/integrations/datadog"
+canonical_url: "https://www.home-assistant.io/integrations/datadog/"
+source_handle: "web:www-home-assistant-io:70ce49c20d6a"
+source_section: "integrations-datadog"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "41b2ac87c846976146cdd756de7590779bb5ca8af555ecaa08999a410a84a5e2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Datadog - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

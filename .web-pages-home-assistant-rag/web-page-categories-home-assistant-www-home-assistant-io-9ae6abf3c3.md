@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/organizing/categories"
+final_url: "https://www.home-assistant.io/docs/organizing/categories"
+canonical_url: "https://www.home-assistant.io/docs/organizing/categories/"
+source_handle: "web:www-home-assistant-io:9ae6abf3c371"
+source_section: "docs-organizing"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6a72e7edb86b5549830d182ac56b5107a7b44e078fe3b3037f0855fa86de74ab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Categories - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/brunt"
+final_url: "https://www.home-assistant.io/integrations/brunt"
+canonical_url: "https://www.home-assistant.io/integrations/brunt/"
+source_handle: "web:www-home-assistant-io:0fa766782768"
+source_section: "integrations-brunt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4fcd5025a1c99fd05d000c259b61dff85b0d323536d1d5b562e538a93d8a37b8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Brunt Blind Engine - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/remote_rpi_gpio"
+final_url: "https://www.home-assistant.io/integrations/remote_rpi_gpio"
+canonical_url: "https://www.home-assistant.io/integrations/remote_rpi_gpio/"
+source_handle: "web:www-home-assistant-io:53670be826a7"
+source_section: "integrations-remote-rpi-gpio"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6e5373c90112fdbb19d3bb73a6d86136575c2c893c5c5c31c8236f3c6e4ab1f3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Raspberry Pi Remote GPIO - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

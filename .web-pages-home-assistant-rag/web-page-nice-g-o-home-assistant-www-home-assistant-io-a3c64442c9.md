@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nice_go"
+final_url: "https://www.home-assistant.io/integrations/nice_go"
+canonical_url: "https://www.home-assistant.io/integrations/nice_go/"
+source_handle: "web:www-home-assistant-io:a3c64442c99a"
+source_section: "integrations-nice-go"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3b049b250cbfe242f3bfc528d982047874cd397f38d5b7e8b555978853f9a0a6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nice G.O. - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

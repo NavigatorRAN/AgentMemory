@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/syntax"
+final_url: "https://www.home-assistant.io/docs/templating/syntax"
+canonical_url: "https://www.home-assistant.io/docs/templating/syntax/"
+source_handle: "web:www-home-assistant-io:8f9e1c3d5d46"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ad84fcf78f14647b40edfe040d98c6bf3de0dbc987ce1a9ea51d10b33e7a9101"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Template syntax - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lutron_caseta"
+final_url: "https://www.home-assistant.io/integrations/lutron_caseta"
+canonical_url: "https://www.home-assistant.io/integrations/lutron_caseta/"
+source_handle: "web:www-home-assistant-io:f7708ed43afb"
+source_section: "integrations-lutron-caseta"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3a1056be9e362911b2a171cf66f2a3e1f93cdede438a4e9992068e5ac9e6575b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Lutron Caséta - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

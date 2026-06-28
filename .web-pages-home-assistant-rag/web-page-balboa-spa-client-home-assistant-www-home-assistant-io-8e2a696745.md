@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/balboa"
+final_url: "https://www.home-assistant.io/integrations/balboa"
+canonical_url: "https://www.home-assistant.io/integrations/balboa/"
+source_handle: "web:www-home-assistant-io:8e2a6967452c"
+source_section: "integrations-balboa"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a91fa726b6b9686703599782d6b45c379849582d41b9ed66c22f901024edf0f2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Balboa Spa Client - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

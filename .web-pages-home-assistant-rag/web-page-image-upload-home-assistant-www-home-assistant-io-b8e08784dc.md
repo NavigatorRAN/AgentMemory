@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/image_upload"
+final_url: "https://www.home-assistant.io/integrations/image_upload"
+canonical_url: "https://www.home-assistant.io/integrations/image_upload/"
+source_handle: "web:www-home-assistant-io:b8e08784dc21"
+source_section: "integrations-image-upload"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3aa5d27edda2f200cd152c9fac718157960e1faa15a91008d43a21411808a22a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Image upload - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

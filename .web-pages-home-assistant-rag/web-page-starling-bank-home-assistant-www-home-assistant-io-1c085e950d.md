@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/starlingbank"
+final_url: "https://www.home-assistant.io/integrations/starlingbank"
+canonical_url: "https://www.home-assistant.io/integrations/starlingbank/"
+source_handle: "web:www-home-assistant-io:1c085e950df2"
+source_section: "integrations-starlingbank"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "82e46334d61212c1328ae57f0d70ac01ff3da28a8250160c184d1b42409e47d8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Starling Bank - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/medcom_ble"
+final_url: "https://www.home-assistant.io/integrations/medcom_ble"
+canonical_url: "https://www.home-assistant.io/integrations/medcom_ble/"
+source_handle: "web:www-home-assistant-io:1fbd910d4d54"
+source_section: "integrations-medcom-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ef5a63d4c4897378197b0773b1f4009619081aff957dba0ae1a8f65e1e82190f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Medcom Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

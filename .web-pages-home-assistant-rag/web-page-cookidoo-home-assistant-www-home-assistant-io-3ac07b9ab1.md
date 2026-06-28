@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cookidoo"
+final_url: "https://www.home-assistant.io/integrations/cookidoo"
+canonical_url: "https://www.home-assistant.io/integrations/cookidoo/"
+source_handle: "web:www-home-assistant-io:3ac07b9ab1be"
+source_section: "integrations-cookidoo"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "25cd84456f1940ab439ca3ca274d24aaa28e147d9650278ae930fb389abba498"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Cookidoo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

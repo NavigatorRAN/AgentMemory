@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/habitica"
+final_url: "https://www.home-assistant.io/integrations/habitica"
+canonical_url: "https://www.home-assistant.io/integrations/habitica/"
+source_handle: "web:www-home-assistant-io:008b754e58ec"
+source_section: "integrations-habitica"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "86e609e3113a723d3f6fce790514c80d2dbdc31eb6d748d07697bcfa6e1c36a4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Habitica - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

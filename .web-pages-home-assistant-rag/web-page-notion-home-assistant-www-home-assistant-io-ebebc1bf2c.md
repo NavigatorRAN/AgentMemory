@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/notion"
+final_url: "https://www.home-assistant.io/integrations/notion"
+canonical_url: "https://www.home-assistant.io/integrations/notion/"
+source_handle: "web:www-home-assistant-io:ebebc1bf2c6f"
+source_section: "integrations-notion"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1b5d15f047617f5bf81168da5d52855661f37b2b01e370653482052782e6d663"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Notion - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

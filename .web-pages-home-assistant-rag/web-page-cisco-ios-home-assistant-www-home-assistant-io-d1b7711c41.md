@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cisco_ios"
+final_url: "https://www.home-assistant.io/integrations/cisco_ios"
+canonical_url: "https://www.home-assistant.io/integrations/cisco_ios/"
+source_handle: "web:www-home-assistant-io:d1b7711c414e"
+source_section: "integrations-cisco-ios"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "099132c94b306a2ac4e816f20138a7d11d88f6de7f04d00448018a76cd6d8057"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Cisco IOS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

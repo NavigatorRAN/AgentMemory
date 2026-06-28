@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/energy/faq"
+final_url: "https://www.home-assistant.io/docs/energy/faq"
+canonical_url: "https://www.home-assistant.io/docs/energy/faq/"
+source_handle: "web:www-home-assistant-io:73f1feb673e9"
+source_section: "docs-energy"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cc0d89bb0fd991d6038a525eb11a34abdd9ee52367c821065e749c967f68d272"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Frequently Asked Questions about home energy management - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

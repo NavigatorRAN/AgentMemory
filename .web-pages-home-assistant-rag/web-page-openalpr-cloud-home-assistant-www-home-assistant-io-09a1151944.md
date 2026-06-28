@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openalpr_cloud"
+final_url: "https://www.home-assistant.io/integrations/openalpr_cloud"
+canonical_url: "https://www.home-assistant.io/integrations/openalpr_cloud/"
+source_handle: "web:www-home-assistant-io:09a1151944d1"
+source_section: "integrations-openalpr-cloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d49a26005979e9a44ec779d9f5918fde8bfede65858cb1e1f276e0db99631560"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenALPR Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

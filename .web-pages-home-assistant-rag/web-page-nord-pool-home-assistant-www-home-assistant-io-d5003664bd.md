@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nordpool"
+final_url: "https://www.home-assistant.io/integrations/nordpool"
+canonical_url: "https://www.home-assistant.io/integrations/nordpool/"
+source_handle: "web:www-home-assistant-io:d5003664bdbe"
+source_section: "integrations-nordpool"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9cab3d0c287ed56ef6e627b05fb0a29f6a1a45f8395d4a6092d44266196330c5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nord Pool - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nutrichef"
+final_url: "https://www.home-assistant.io/integrations/nutrichef"
+canonical_url: "https://www.home-assistant.io/integrations/nutrichef/"
+source_handle: "web:www-home-assistant-io:e2ec07c6347a"
+source_section: "integrations-nutrichef"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ddbcce49ab5876bc3b4cec31572935d47e2aae9bcc503577f916f9275e6d1d04"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nutrichef - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/luci"
+final_url: "https://www.home-assistant.io/integrations/luci"
+canonical_url: "https://www.home-assistant.io/integrations/luci/"
+source_handle: "web:www-home-assistant-io:0a3e749d5024"
+source_section: "integrations-luci"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b81117a74b232c3f774b48468fa36fe75ba932babdb05640141cfe7d5bf79ba0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenWrt (luci) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

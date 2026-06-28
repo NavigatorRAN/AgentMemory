@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/russound_rnet"
+final_url: "https://www.home-assistant.io/integrations/russound_rnet"
+canonical_url: "https://www.home-assistant.io/integrations/russound_rnet/"
+source_handle: "web:www-home-assistant-io:120002d9b440"
+source_section: "integrations-russound-rnet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ac74a543fd2d170500e0ff55b8c05e22ff121bd1c4dba084acd47a54c11cb3a2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Russound RNET - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

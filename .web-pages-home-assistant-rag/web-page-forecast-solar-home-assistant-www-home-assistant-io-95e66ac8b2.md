@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/forecast_solar"
+final_url: "https://www.home-assistant.io/integrations/forecast_solar"
+canonical_url: "https://www.home-assistant.io/integrations/forecast_solar/"
+source_handle: "web:www-home-assistant-io:95e66ac8b2c4"
+source_section: "integrations-forecast-solar"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "27dc6b5dc3309b26420898d2289ba16b740b6ed34a6d2dfddaae17c7c79be4a5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Forecast.Solar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

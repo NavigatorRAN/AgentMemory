@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nsw_fuel_station"
+final_url: "https://www.home-assistant.io/integrations/nsw_fuel_station"
+canonical_url: "https://www.home-assistant.io/integrations/nsw_fuel_station/"
+source_handle: "web:www-home-assistant-io:a4e537121d1d"
+source_section: "integrations-nsw-fuel-station"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d72d08d832703a7e33256fc8edab6b50eb224fca9735a211786db6cc8625ae0f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NSW Fuel Station Price - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

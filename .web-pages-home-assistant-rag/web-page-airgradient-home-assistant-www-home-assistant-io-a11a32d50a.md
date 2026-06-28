@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airgradient"
+final_url: "https://www.home-assistant.io/integrations/airgradient"
+canonical_url: "https://www.home-assistant.io/integrations/airgradient/"
+source_handle: "web:www-home-assistant-io:a11a32d50a10"
+source_section: "integrations-airgradient"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "75c2d8454107c02603ebdbae3c84292890c71abb7b8960a6ecc3535200306362"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AirGradient - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/history"
+final_url: "https://www.home-assistant.io/integrations/history"
+canonical_url: "https://www.home-assistant.io/integrations/history/"
+source_handle: "web:www-home-assistant-io:1a11e0ae2a6c"
+source_section: "integrations-history"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a37799ac5e69a155b6bc8d598fffdfd508f71e7036538df5ff5c3f90ca50996a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # History - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/netdata"
+final_url: "https://www.home-assistant.io/integrations/netdata"
+canonical_url: "https://www.home-assistant.io/integrations/netdata/"
+source_handle: "web:www-home-assistant-io:8abe71874764"
+source_section: "integrations-netdata"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "658b968ae91912094b581c506dbcdb849515bd47d26e12c7aa8bb1ac97c10e06"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Netdata - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

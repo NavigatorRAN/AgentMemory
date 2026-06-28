@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/earn_e_p1"
+final_url: "https://www.home-assistant.io/integrations/earn_e_p1"
+canonical_url: "https://www.home-assistant.io/integrations/earn_e_p1/"
+source_handle: "web:www-home-assistant-io:31eb65f15262"
+source_section: "integrations-earn-e-p1"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cc098735cfa56c3e1a0a06b4fc1bdfa39a8a3f5f3769c6d031a2a48f7ff12621"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EARN-E P1 Meter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

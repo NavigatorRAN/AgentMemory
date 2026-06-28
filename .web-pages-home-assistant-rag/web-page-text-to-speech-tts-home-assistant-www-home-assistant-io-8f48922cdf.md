@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tts"
+final_url: "https://www.home-assistant.io/integrations/tts"
+canonical_url: "https://www.home-assistant.io/integrations/tts/"
+source_handle: "web:www-home-assistant-io:8f48922cdf9f"
+source_section: "integrations-tts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c2a316d9341dfe984960f99199a0419a831cb8db5f1b45b7c5dfabcf24401bff"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Text-to-speech (TTS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

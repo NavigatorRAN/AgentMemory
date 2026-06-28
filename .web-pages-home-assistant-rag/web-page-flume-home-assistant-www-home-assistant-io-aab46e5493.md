@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/flume"
+final_url: "https://www.home-assistant.io/integrations/flume"
+canonical_url: "https://www.home-assistant.io/integrations/flume/"
+source_handle: "web:www-home-assistant-io:aab46e5493eb"
+source_section: "integrations-flume"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "78acf5c6b11a58c4ec0f06297323a222ccd648df822e409c6f50946936bc6a5e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Flume - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/markdown"
+final_url: "https://www.home-assistant.io/dashboards/markdown"
+canonical_url: "https://www.home-assistant.io/dashboards/markdown/"
+source_handle: "web:www-home-assistant-io:5be62e8b4bc0"
+source_section: "dashboards-markdown"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c15c76b307f39ef2ae49120e6de46a013be78143e8a1f3845f3727d6135587f5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Markdown card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensor.ios"
+final_url: "https://www.home-assistant.io/integrations/sensor.ios"
+canonical_url: "https://www.home-assistant.io/integrations/sensor.ios/"
+source_handle: "web:www-home-assistant-io:248990fc1116"
+source_section: "integrations-sensor-ios"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4caa6691dd35a5a0b06975a8d31761f56402b2a4e00f1ff6e4f926a1d2a39696"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # iOS Sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

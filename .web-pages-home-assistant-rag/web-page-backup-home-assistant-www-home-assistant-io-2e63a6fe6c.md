@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/backup"
+final_url: "https://www.home-assistant.io/integrations/backup"
+canonical_url: "https://www.home-assistant.io/integrations/backup/"
+source_handle: "web:www-home-assistant-io:2e63a6fe6cb8"
+source_section: "integrations-backup"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "56c6aec4b45f997bb7a811a29c7d3f95665819ab738076363a77ba1c01393d90"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Backup - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

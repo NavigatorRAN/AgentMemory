@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/update"
+final_url: "https://www.home-assistant.io/integrations/update"
+canonical_url: "https://www.home-assistant.io/integrations/update/"
+source_handle: "web:www-home-assistant-io:41b61fa6f777"
+source_section: "integrations-update"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7c3d82fe991dc6900690c8e74fe4998340ec18ae314ac43f85428f58acdc1422"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Update - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

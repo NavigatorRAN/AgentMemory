@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/troubleshooting"
+final_url: "https://www.home-assistant.io/installation/troubleshooting"
+canonical_url: "https://www.home-assistant.io/installation/troubleshooting/"
+source_handle: "web:www-home-assistant-io:27fdddad14b8"
+source_section: "installation-troubleshooting"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fede2e11e220ca49e98fc2507e78916898695983c7d7490e4e8fb2b4d3380275"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Troubleshooting installation problems - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tractive"
+final_url: "https://www.home-assistant.io/integrations/tractive"
+canonical_url: "https://www.home-assistant.io/integrations/tractive/"
+source_handle: "web:www-home-assistant-io:d9f6e01e2741"
+source_section: "integrations-tractive"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "64d4f323f33a3a91ed288c36935a902b91f098e5edb1e78e9a72fe69a561de6b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tractive - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

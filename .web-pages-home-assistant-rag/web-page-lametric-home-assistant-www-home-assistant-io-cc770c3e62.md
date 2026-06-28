@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lametric"
+final_url: "https://www.home-assistant.io/integrations/lametric"
+canonical_url: "https://www.home-assistant.io/integrations/lametric/"
+source_handle: "web:www-home-assistant-io:cc770c3e625c"
+source_section: "integrations-lametric"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ef9f0c807b2f3b19f69c996a33c37a6c06e3b30ffd89e19996d40a35b4ceda23"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LaMetric - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

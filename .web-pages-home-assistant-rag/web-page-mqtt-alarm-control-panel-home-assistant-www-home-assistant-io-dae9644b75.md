@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alarm_control_panel.mqtt"
+final_url: "https://www.home-assistant.io/integrations/alarm_control_panel.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/alarm_control_panel.mqtt/"
+source_handle: "web:www-home-assistant-io:dae9644b75f3"
+source_section: "integrations-alarm-control-panel-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "03aa102a2b65437f0903b9a7c0536d1aaee7da1837e7cb5fd14e18f84fe65140"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Alarm control panel - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

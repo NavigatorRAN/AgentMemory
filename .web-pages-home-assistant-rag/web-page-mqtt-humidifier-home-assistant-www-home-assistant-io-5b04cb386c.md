@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/humidifier.mqtt"
+final_url: "https://www.home-assistant.io/integrations/humidifier.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/humidifier.mqtt/"
+source_handle: "web:www-home-assistant-io:5b04cb386c9d"
+source_section: "integrations-humidifier-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "086dfb77467de335c2deb2880060796a7527bcec5d7006f02c1866e89ab65b78"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Humidifier - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

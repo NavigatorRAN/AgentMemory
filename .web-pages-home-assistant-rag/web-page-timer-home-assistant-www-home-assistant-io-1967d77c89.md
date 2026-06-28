@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/timer"
+final_url: "https://www.home-assistant.io/integrations/timer"
+canonical_url: "https://www.home-assistant.io/integrations/timer/"
+source_handle: "web:www-home-assistant-io:1967d77c8920"
+source_section: "integrations-timer"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d575b9bf3c24688d5572dc1e9d43278db36c415cc48c84b7d43ac8c8dd96e01d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Timer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

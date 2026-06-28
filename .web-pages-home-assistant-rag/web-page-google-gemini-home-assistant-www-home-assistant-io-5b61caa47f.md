@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_generative_ai_conversation"
+final_url: "https://www.home-assistant.io/integrations/google_generative_ai_conversation"
+canonical_url: "https://www.home-assistant.io/integrations/google_generative_ai_conversation/"
+source_handle: "web:www-home-assistant-io:5b61caa47f47"
+source_section: "integrations-google-generative-ai-conversation"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1bbe0134322e928f933bf9f1f4171d5191bfdacb9d9a289691ed02fe5dd0fe56"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Gemini - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

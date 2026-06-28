@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/panasonic_bluray"
+final_url: "https://www.home-assistant.io/integrations/panasonic_bluray"
+canonical_url: "https://www.home-assistant.io/integrations/panasonic_bluray/"
+source_handle: "web:www-home-assistant-io:4cd51b9d0e11"
+source_section: "integrations-panasonic-bluray"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8d23771b2ffd3c15c22fb669128e0f0b2d860023e6ff3f40398b835f23f66875"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Panasonic Blu-Ray Player - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

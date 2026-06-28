@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ssdp"
+final_url: "https://www.home-assistant.io/integrations/ssdp"
+canonical_url: "https://www.home-assistant.io/integrations/ssdp/"
+source_handle: "web:www-home-assistant-io:d228912dfce7"
+source_section: "integrations-ssdp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "221a5e97e02ccc3f2c0cb1a196a7a69d0c2463bd1d2c40c425bae4cab14de487"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Simple Service Discovery Protocol (SSDP) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

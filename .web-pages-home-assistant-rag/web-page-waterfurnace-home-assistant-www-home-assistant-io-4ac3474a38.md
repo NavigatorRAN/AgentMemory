@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/waterfurnace"
+final_url: "https://www.home-assistant.io/integrations/waterfurnace"
+canonical_url: "https://www.home-assistant.io/integrations/waterfurnace/"
+source_handle: "web:www-home-assistant-io:4ac3474a3804"
+source_section: "integrations-waterfurnace"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4f43f7f1168862794c3528a4695d58c794c24d85dbadf6d39b931a4fabb88788"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WaterFurnace - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

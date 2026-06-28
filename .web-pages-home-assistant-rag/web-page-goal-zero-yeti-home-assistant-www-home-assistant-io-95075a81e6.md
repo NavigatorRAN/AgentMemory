@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/goalzero"
+final_url: "https://www.home-assistant.io/integrations/goalzero"
+canonical_url: "https://www.home-assistant.io/integrations/goalzero/"
+source_handle: "web:www-home-assistant-io:95075a81e629"
+source_section: "integrations-goalzero"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "35d087097f95b9cf77c04dcc998aaa3eb52a1e9c6d242f8b83b2e47a6366119b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Goal Zero Yeti - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

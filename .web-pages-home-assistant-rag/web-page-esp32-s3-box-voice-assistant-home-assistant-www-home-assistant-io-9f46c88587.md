@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/s3_box_voice_assistant"
+final_url: "https://www.home-assistant.io/voice_control/s3_box_voice_assistant"
+canonical_url: "https://www.home-assistant.io/voice_control/s3_box_voice_assistant/"
+source_handle: "web:www-home-assistant-io:9f46c88587b4"
+source_section: "voice-control-s3-box-voice-assistant"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0f1ff01ca972fa271cf1b2e4086669ca676cc139aac53ebde5b9aa559a345335"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # ESP32-S3-BOX voice assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/trafikverket_ferry"
+final_url: "https://www.home-assistant.io/integrations/trafikverket_ferry"
+canonical_url: "https://www.home-assistant.io/integrations/trafikverket_ferry/"
+source_handle: "web:www-home-assistant-io:8d2c89b79db7"
+source_section: "integrations-trafikverket-ferry"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c7da04bf2a3df68b91bfeca059798e1a4ed45569b4c32957457fd7ea56912a82"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Trafikverket Ferry - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

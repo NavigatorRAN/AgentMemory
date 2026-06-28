@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/locked_out"
+final_url: "https://www.home-assistant.io/docs/locked_out"
+canonical_url: "https://www.home-assistant.io/docs/locked_out/"
+source_handle: "web:www-home-assistant-io:fca87090242e"
+source_section: "docs-locked-out"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "71b987217fa821fc97bed46e77af47b573a884ce71f6432d72dfa7ada24792db"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # I'm locked out! - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

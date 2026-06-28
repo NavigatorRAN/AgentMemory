@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zestimate"
+final_url: "https://www.home-assistant.io/integrations/zestimate"
+canonical_url: "https://www.home-assistant.io/integrations/zestimate/"
+source_handle: "web:www-home-assistant-io:1621598472ea"
+source_section: "integrations-zestimate"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0f9d5f0b3c3d531ec948d5909592504ec0b1770cbb2c99d11ee042743a1cbfba"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Zestimate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

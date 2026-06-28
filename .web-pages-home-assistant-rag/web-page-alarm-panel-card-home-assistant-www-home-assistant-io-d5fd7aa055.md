@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/alarm-panel"
+final_url: "https://www.home-assistant.io/dashboards/alarm-panel"
+canonical_url: "https://www.home-assistant.io/dashboards/alarm-panel/"
+source_handle: "web:www-home-assistant-io:d5fd7aa05596"
+source_section: "dashboards-alarm-panel"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "24a96387d4900e0749ff28b4f319e80b4b822258a60101096d438aa6a3b55f87"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Alarm panel card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

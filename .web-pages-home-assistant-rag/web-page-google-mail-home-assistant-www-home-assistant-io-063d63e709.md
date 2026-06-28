@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_mail"
+final_url: "https://www.home-assistant.io/integrations/google_mail"
+canonical_url: "https://www.home-assistant.io/integrations/google_mail/"
+source_handle: "web:www-home-assistant-io:063d63e7098c"
+source_section: "integrations-google-mail"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5ff526dedc1831bf7464faf6103a98480f20f996131dc9e905caa682f64889cd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Mail - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lcn"
+final_url: "https://www.home-assistant.io/integrations/lcn"
+canonical_url: "https://www.home-assistant.io/integrations/lcn/"
+source_handle: "web:www-home-assistant-io:cc117afc2df1"
+source_section: "integrations-lcn"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e74b66dac3db6a042536b9060c5738dc4770885293fff882b43916f90d7cd329"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LCN - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

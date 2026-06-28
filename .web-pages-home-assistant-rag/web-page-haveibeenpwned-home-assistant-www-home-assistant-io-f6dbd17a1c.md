@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/haveibeenpwned"
+final_url: "https://www.home-assistant.io/integrations/haveibeenpwned"
+canonical_url: "https://www.home-assistant.io/integrations/haveibeenpwned/"
+source_handle: "web:www-home-assistant-io:f6dbd17a1ced"
+source_section: "integrations-haveibeenpwned"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0de1b0efa15848d5de91895f4a063fe356d7d74763c188e4c5a464e6936972c6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HaveIBeenPwned - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/media-control"
+final_url: "https://www.home-assistant.io/dashboards/media-control"
+canonical_url: "https://www.home-assistant.io/dashboards/media-control/"
+source_handle: "web:www-home-assistant-io:56020674bac0"
+source_section: "dashboards-media-control"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb3456047942165941e0558d2f41b9ae60c8bb32b9497ab2cedcca3150a31d23"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Media control card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

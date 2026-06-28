@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wled"
+final_url: "https://www.home-assistant.io/integrations/wled"
+canonical_url: "https://www.home-assistant.io/integrations/wled/"
+source_handle: "web:www-home-assistant-io:c8ee8bc205ce"
+source_section: "integrations-wled"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ec47131f6e6f7d4f6aa3a5f806b09cdb5576dd15554871cea1e880cf2b3029d2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # WLED - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

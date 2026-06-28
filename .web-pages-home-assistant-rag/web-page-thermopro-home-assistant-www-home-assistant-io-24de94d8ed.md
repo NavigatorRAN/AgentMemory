@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thermopro"
+final_url: "https://www.home-assistant.io/integrations/thermopro"
+canonical_url: "https://www.home-assistant.io/integrations/thermopro/"
+source_handle: "web:www-home-assistant-io:24de94d8ed7a"
+source_section: "integrations-thermopro"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2e8d87dd0cb4cf7fa131dabcd13b3619e58b9c2b18aa884c5c5ef72479610595"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ThermoPro - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

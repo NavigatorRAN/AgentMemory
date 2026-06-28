@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/valve"
+final_url: "https://www.home-assistant.io/integrations/valve"
+canonical_url: "https://www.home-assistant.io/integrations/valve/"
+source_handle: "web:www-home-assistant-io:fdfbd1e27cad"
+source_section: "integrations-valve"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a6f8b80df2e43c16e8d409d67db60b3180b795f4d430264400c0e69cf333942b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Valve - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

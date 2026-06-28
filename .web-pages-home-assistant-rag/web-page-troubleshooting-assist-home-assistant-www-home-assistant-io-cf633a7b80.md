@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/troubleshooting"
+final_url: "https://www.home-assistant.io/voice_control/troubleshooting"
+canonical_url: "https://www.home-assistant.io/voice_control/troubleshooting/"
+source_handle: "web:www-home-assistant-io:cf633a7b8056"
+source_section: "voice-control-troubleshooting"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "08887795a0e5f6f22de194e2a77eaee7a68aca4b48229f20ee5c853d38649ba3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Troubleshooting Assist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

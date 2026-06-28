@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/works-without-internet"
+final_url: "https://www.home-assistant.io/faq/works-without-internet"
+canonical_url: "https://www.home-assistant.io/faq/works-without-internet/"
+source_handle: "web:www-home-assistant-io:561507b2a278"
+source_section: "faq-works-without-internet"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "117e2b47a0e81380141c7fc35cba2a4052de58485f9ec3b913e0559f00581d5a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Does Home Assistant work without an internet connection? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

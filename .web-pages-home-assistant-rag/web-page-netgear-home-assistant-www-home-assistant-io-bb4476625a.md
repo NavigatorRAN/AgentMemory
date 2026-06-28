@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/netgear"
+final_url: "https://www.home-assistant.io/integrations/netgear"
+canonical_url: "https://www.home-assistant.io/integrations/netgear/"
+source_handle: "web:www-home-assistant-io:bb4476625a99"
+source_section: "integrations-netgear"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8f9feec562c8e3abf6bf8614e163d7e115290494fad2ef8b6bef00c1dd34ee07"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NETGEAR - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

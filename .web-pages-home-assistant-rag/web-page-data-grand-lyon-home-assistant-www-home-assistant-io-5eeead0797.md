@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/data_grand_lyon"
+final_url: "https://www.home-assistant.io/integrations/data_grand_lyon"
+canonical_url: "https://www.home-assistant.io/integrations/data_grand_lyon/"
+source_handle: "web:www-home-assistant-io:5eeead079798"
+source_section: "integrations-data-grand-lyon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e326e3cfdae659ec757ed6ad897530b5b76ba59d43dacae8eb050e84817b0b52"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Data Grand Lyon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

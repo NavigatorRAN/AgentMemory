@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/infrared"
+final_url: "https://www.home-assistant.io/integrations/infrared"
+canonical_url: "https://www.home-assistant.io/integrations/infrared/"
+source_handle: "web:www-home-assistant-io:ea9341dee2f1"
+source_section: "integrations-infrared"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "669a011087ce6ff039747cbe2fdfaafa7acfd5e0c27437d51e7d45936440ad75"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Infrared - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pegel_online"
+final_url: "https://www.home-assistant.io/integrations/pegel_online"
+canonical_url: "https://www.home-assistant.io/integrations/pegel_online/"
+source_handle: "web:www-home-assistant-io:ae9cb53fd098"
+source_section: "integrations-pegel-online"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0893028d6eb8b3ac0718dcad89c456253c998f52be70ce23d2b984b9574751c1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PEGELONLINE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

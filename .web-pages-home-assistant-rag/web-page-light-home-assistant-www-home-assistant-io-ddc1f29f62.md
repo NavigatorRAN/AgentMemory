@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/light"
+final_url: "https://www.home-assistant.io/integrations/light"
+canonical_url: "https://www.home-assistant.io/integrations/light/"
+source_handle: "web:www-home-assistant-io:ddc1f29f62f7"
+source_section: "integrations-light"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "50b5331d1eb389ac718ea9b17597d46f3c75a2ca0af489cf2cad20075f3b3760"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Light - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

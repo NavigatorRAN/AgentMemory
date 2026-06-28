@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/threshold"
+final_url: "https://www.home-assistant.io/integrations/threshold"
+canonical_url: "https://www.home-assistant.io/integrations/threshold/"
+source_handle: "web:www-home-assistant-io:b2a03ab14655"
+source_section: "integrations-threshold"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "63c63a18d97f1d49ef15e1f4c83d0b1d6becf1763202b57182eaed2e0eaed199"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Threshold - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

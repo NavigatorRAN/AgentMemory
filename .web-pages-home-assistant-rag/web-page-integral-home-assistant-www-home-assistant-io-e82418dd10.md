@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/integration"
+final_url: "https://www.home-assistant.io/integrations/integration"
+canonical_url: "https://www.home-assistant.io/integrations/integration/"
+source_handle: "web:www-home-assistant-io:e82418dd1025"
+source_section: "integrations-integration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f4fd8ad86b561e6e3dabdf0905869641b541a3bc314bd65e8eb99cde3d2ae71a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Integral - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

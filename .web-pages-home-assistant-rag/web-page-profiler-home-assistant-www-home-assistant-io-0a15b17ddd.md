@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/profiler"
+final_url: "https://www.home-assistant.io/integrations/profiler"
+canonical_url: "https://www.home-assistant.io/integrations/profiler/"
+source_handle: "web:www-home-assistant-io:0a15b17dddd0"
+source_section: "integrations-profiler"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4cc776565c5e2219f98eac756ea9e13321647406140bdf65ab6494d3611c2b88"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Profiler - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

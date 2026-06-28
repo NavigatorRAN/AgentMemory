@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lektrico"
+final_url: "https://www.home-assistant.io/integrations/lektrico"
+canonical_url: "https://www.home-assistant.io/integrations/lektrico/"
+source_handle: "web:www-home-assistant-io:6e766e1fe7a3"
+source_section: "integrations-lektrico"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c0bc12e8df2adf4a5f72178dd3b5fc8ef1d0bf9294fcfcab1c8176f56b9ddf09"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Lektrico Charging Station - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

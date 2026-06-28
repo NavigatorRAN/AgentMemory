@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/guntamatic"
+final_url: "https://www.home-assistant.io/integrations/guntamatic"
+canonical_url: "https://www.home-assistant.io/integrations/guntamatic/"
+source_handle: "web:www-home-assistant-io:80d873d363a2"
+source_section: "integrations-guntamatic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "df8f8c40994788786ec544e72c5a22b657fcfaf2f6f393f0e48618f358471cd5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Guntamatic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

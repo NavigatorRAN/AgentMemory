@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/adguard"
+final_url: "https://www.home-assistant.io/integrations/adguard"
+canonical_url: "https://www.home-assistant.io/integrations/adguard/"
+source_handle: "web:www-home-assistant-io:434b27ead97b"
+source_section: "integrations-adguard"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "55791c14bb61c6033829dee219a29ffcabdd1c6856adef982e593b110abafeed"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AdGuard Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

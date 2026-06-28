@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/brandt"
+final_url: "https://www.home-assistant.io/integrations/brandt"
+canonical_url: "https://www.home-assistant.io/integrations/brandt/"
+source_handle: "web:www-home-assistant-io:01f8e42dcea8"
+source_section: "integrations-brandt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c9d489f406787ea823e8040cb8caf3a30c41ecc5fb2870eec0f80c8a1402420a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Brandt Smart Control - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

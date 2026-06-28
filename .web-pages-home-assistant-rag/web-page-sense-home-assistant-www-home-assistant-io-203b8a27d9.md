@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sense"
+final_url: "https://www.home-assistant.io/integrations/sense"
+canonical_url: "https://www.home-assistant.io/integrations/sense/"
+source_handle: "web:www-home-assistant-io:203b8a27d9a1"
+source_section: "integrations-sense"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8527d7651a60ff4109e16501212967a78fa363856e3db904162d1826cf4a8d86"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sense - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

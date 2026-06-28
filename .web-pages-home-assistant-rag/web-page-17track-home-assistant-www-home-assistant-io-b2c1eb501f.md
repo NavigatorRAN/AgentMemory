@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/seventeentrack"
+final_url: "https://www.home-assistant.io/integrations/seventeentrack"
+canonical_url: "https://www.home-assistant.io/integrations/seventeentrack/"
+source_handle: "web:www-home-assistant-io:b2c1eb501f49"
+source_section: "integrations-seventeentrack"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "35c8b6c062e0e608d063a53750e4de67ba96e4488076b1a26cefe23c8077d217"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # 17TRACK - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

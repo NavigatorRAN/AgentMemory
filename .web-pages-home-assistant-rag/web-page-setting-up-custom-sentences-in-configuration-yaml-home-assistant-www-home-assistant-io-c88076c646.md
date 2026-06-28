@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/custom_sentences_yaml"
+final_url: "https://www.home-assistant.io/voice_control/custom_sentences_yaml"
+canonical_url: "https://www.home-assistant.io/voice_control/custom_sentences_yaml/"
+source_handle: "web:www-home-assistant-io:c88076c6466b"
+source_section: "voice-control-custom-sentences-yaml"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4c09557763846395a7cc8e72f4dc3be15218758d6b4e3f8dea95e4ba8c172ece"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Setting up custom sentences in configuration.yaml - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

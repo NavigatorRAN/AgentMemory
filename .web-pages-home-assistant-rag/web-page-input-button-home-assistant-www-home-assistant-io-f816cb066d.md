@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/input_button"
+final_url: "https://www.home-assistant.io/integrations/input_button"
+canonical_url: "https://www.home-assistant.io/integrations/input_button/"
+source_handle: "web:www-home-assistant-io:f816cb066dbe"
+source_section: "integrations-input-button"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1b265de694503f34ffc9f93275ec62ca7e19aa0e763de905ce8257aa220c9951"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Input button - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/generic"
+final_url: "https://www.home-assistant.io/integrations/generic"
+canonical_url: "https://www.home-assistant.io/integrations/generic/"
+source_handle: "web:www-home-assistant-io:c2117867c8b9"
+source_section: "integrations-generic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e214f482ccb9d12a72bbc2875595d4ad8f1034e9d5cd85c4175dd41795aaffa3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Generic Camera - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

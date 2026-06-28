@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_travel_time"
+final_url: "https://www.home-assistant.io/integrations/google_travel_time"
+canonical_url: "https://www.home-assistant.io/integrations/google_travel_time/"
+source_handle: "web:www-home-assistant-io:b25ad83b548b"
+source_section: "integrations-google-travel-time"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "270e3cf9de26a586b5d72d5ac534a7a9df961a4b2f8d4f2616f99f6586bd9b52"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Maps Travel Time - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

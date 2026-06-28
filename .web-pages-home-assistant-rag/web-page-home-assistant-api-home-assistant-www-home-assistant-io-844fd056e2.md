@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/api"
+final_url: "https://www.home-assistant.io/integrations/api"
+canonical_url: "https://www.home-assistant.io/integrations/api/"
+source_handle: "web:www-home-assistant-io:844fd056e261"
+source_section: "integrations-api"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7cabc8118b58d826fef275dc05148f63c65beeee8c1d7004d30724eba2841cbe"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant API - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

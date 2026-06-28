@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/husqvarna_automower_ble"
+final_url: "https://www.home-assistant.io/integrations/husqvarna_automower_ble"
+canonical_url: "https://www.home-assistant.io/integrations/husqvarna_automower_ble/"
+source_handle: "web:www-home-assistant-io:0b1c478db6c2"
+source_section: "integrations-husqvarna-automower-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2131b38c03c6d492df1f3a78712cda947f6b3a8633a0dfac8852f7734b29abcf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Husqvarna Automower BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

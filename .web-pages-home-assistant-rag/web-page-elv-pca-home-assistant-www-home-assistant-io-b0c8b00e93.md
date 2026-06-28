@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/elv"
+final_url: "https://www.home-assistant.io/integrations/elv"
+canonical_url: "https://www.home-assistant.io/integrations/elv/"
+source_handle: "web:www-home-assistant-io:b0c8b00e93e8"
+source_section: "integrations-elv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0a1d2b63258adc3198eb1f4b42bb2570a15488827dfdf20b4408c159d166e55b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ELV PCA - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

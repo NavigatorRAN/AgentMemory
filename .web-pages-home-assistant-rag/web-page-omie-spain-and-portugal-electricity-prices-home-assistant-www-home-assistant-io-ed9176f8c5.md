@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/omie"
+final_url: "https://www.home-assistant.io/integrations/omie"
+canonical_url: "https://www.home-assistant.io/integrations/omie/"
+source_handle: "web:www-home-assistant-io:ed9176f8c548"
+source_section: "integrations-omie"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9522973d609f0a5af5299adbdfd649ee5aa178fe56825c9fa112286fb31854ae"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OMIE - Spain and Portugal electricity prices - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

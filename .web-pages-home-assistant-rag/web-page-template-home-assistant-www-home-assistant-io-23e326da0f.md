@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/template"
+final_url: "https://www.home-assistant.io/integrations/template"
+canonical_url: "https://www.home-assistant.io/integrations/template/"
+source_handle: "web:www-home-assistant-io:23e326da0fb8"
+source_section: "integrations-template"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3f9962f27ccc81ad568e29817c4906d8ab76f7b42319b5eaf268767787db84a8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Template - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

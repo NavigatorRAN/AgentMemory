@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ign_sismologia"
+final_url: "https://www.home-assistant.io/integrations/ign_sismologia"
+canonical_url: "https://www.home-assistant.io/integrations/ign_sismologia/"
+source_handle: "web:www-home-assistant-io:eabf9db9b2f5"
+source_section: "integrations-ign-sismologia"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f980e993595ca1baf204d6d0e4489d8df3ef79a4dabddfe84dc7bb927594f5c9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IGN Sismología - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

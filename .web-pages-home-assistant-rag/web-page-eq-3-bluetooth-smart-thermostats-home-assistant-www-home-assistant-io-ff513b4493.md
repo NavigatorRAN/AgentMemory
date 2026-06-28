@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eq3btsmart"
+final_url: "https://www.home-assistant.io/integrations/eq3btsmart"
+canonical_url: "https://www.home-assistant.io/integrations/eq3btsmart/"
+source_handle: "web:www-home-assistant-io:ff513b4493b8"
+source_section: "integrations-eq3btsmart"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c702c89299a719440310c6054590c77217a56ca569852419432ab351d8affd4e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # eQ-3 Bluetooth Smart Thermostats - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

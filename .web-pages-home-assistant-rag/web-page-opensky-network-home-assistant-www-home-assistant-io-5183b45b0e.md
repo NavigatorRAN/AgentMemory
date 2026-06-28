@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/opensky"
+final_url: "https://www.home-assistant.io/integrations/opensky"
+canonical_url: "https://www.home-assistant.io/integrations/opensky/"
+source_handle: "web:www-home-assistant-io:5183b45b0e07"
+source_section: "integrations-opensky"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "528de4a78dcde367937b8916bfd579a84ce49119049ddfb1799497f9635000bf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenSky Network - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

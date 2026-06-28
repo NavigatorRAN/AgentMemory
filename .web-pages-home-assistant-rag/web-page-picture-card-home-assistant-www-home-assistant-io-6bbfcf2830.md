@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/picture"
+final_url: "https://www.home-assistant.io/dashboards/picture"
+canonical_url: "https://www.home-assistant.io/dashboards/picture/"
+source_handle: "web:www-home-assistant-io:6bbfcf2830a2"
+source_section: "dashboards-picture"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d7a6e4a8924dfd6a06af3199dd3847b7611ee2af8f95f823bbe25fc3fca5766e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Picture card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

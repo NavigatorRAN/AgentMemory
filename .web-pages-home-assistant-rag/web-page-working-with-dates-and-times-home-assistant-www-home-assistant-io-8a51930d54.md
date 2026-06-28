@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/dates-and-times"
+final_url: "https://www.home-assistant.io/docs/templating/dates-and-times"
+canonical_url: "https://www.home-assistant.io/docs/templating/dates-and-times/"
+source_handle: "web:www-home-assistant-io:8a51930d5490"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "516b82120d1873502e5c59d559c953f3e4bd3e13278c567d1972e0d271015a64"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Working with dates and times - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

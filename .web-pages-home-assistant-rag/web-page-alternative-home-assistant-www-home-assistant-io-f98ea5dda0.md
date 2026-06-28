@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/alternative"
+final_url: "https://www.home-assistant.io/installation/alternative"
+canonical_url: "https://www.home-assistant.io/installation/alternative/"
+source_handle: "web:www-home-assistant-io:f98ea5dda080"
+source_section: "installation-alternative"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9cfcf593eb2dbe197649a1f978fd51e71e0b3e729daaa84a269549df2c05152a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Alternative - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

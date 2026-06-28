@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/input_boolean"
+final_url: "https://www.home-assistant.io/integrations/input_boolean"
+canonical_url: "https://www.home-assistant.io/integrations/input_boolean/"
+source_handle: "web:www-home-assistant-io:75e56978352a"
+source_section: "integrations-input-boolean"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6d29a323882097f0a2d5729a1c6f1be36193a6e65616c5a7fd1348f6765bc4fc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Input boolean - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/weather-forecast"
+final_url: "https://www.home-assistant.io/dashboards/weather-forecast"
+canonical_url: "https://www.home-assistant.io/dashboards/weather-forecast/"
+source_handle: "web:www-home-assistant-io:5ee04ce6cb37"
+source_section: "dashboards-weather-forecast"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f674c5056c8ff439c45420b0229651bb0d64e58541dcc9979e244811a11c4883"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Weather forecast card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

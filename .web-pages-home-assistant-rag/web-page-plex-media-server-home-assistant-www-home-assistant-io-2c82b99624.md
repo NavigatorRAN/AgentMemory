@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/plex"
+final_url: "https://www.home-assistant.io/integrations/plex"
+canonical_url: "https://www.home-assistant.io/integrations/plex/"
+source_handle: "web:www-home-assistant-io:2c82b99624b4"
+source_section: "integrations-plex"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "21fb463ceb78c8931e4396d8af33c1889b8a55375425c293c46bea065d238d6a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Plex Media Server - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

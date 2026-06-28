@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smarther"
+final_url: "https://www.home-assistant.io/integrations/smarther"
+canonical_url: "https://www.home-assistant.io/integrations/smarther/"
+source_handle: "web:www-home-assistant-io:322d22390e90"
+source_section: "integrations-smarther"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ecdaeb5ff68d7a88098185e606432b8764b51a3c3f09329c526308d6589725fc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Smarther - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

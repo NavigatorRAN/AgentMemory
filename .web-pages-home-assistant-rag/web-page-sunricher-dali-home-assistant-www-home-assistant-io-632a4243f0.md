@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sunricher_dali"
+final_url: "https://www.home-assistant.io/integrations/sunricher_dali"
+canonical_url: "https://www.home-assistant.io/integrations/sunricher_dali/"
+source_handle: "web:www-home-assistant-io:632a4243f030"
+source_section: "integrations-sunricher-dali"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1d7e69a5f953b797ef83f5005dd0a26c2cf49179694b57b663b2b606bc876372"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Sunricher DALI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

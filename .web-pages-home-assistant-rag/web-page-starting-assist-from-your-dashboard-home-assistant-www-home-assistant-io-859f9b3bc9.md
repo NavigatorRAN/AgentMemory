@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/start_assist_from_dashboard"
+final_url: "https://www.home-assistant.io/voice_control/start_assist_from_dashboard"
+canonical_url: "https://www.home-assistant.io/voice_control/start_assist_from_dashboard/"
+source_handle: "web:www-home-assistant-io:859f9b3bc90d"
+source_section: "voice-control-start-assist-from-dashboard"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "85100b3da5d7e9fef3095005b754fc8f632228b77a76522d50111cc6e69d330f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Starting Assist from your dashboard - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

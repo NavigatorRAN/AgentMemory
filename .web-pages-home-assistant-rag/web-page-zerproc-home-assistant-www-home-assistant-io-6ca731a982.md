@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zerproc"
+final_url: "https://www.home-assistant.io/integrations/zerproc"
+canonical_url: "https://www.home-assistant.io/integrations/zerproc/"
+source_handle: "web:www-home-assistant-io:6ca731a98282"
+source_section: "integrations-zerproc"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "04b88de6d222adbe454f14a391de0768733dd7eb8b5ebb2a607dbe6de70e9c51"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Zerproc - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

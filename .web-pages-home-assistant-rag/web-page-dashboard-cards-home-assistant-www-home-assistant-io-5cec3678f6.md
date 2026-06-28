@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/cards"
+final_url: "https://www.home-assistant.io/dashboards/cards"
+canonical_url: "https://www.home-assistant.io/dashboards/cards/"
+source_handle: "web:www-home-assistant-io:5cec3678f6eb"
+source_section: "dashboards-cards"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c1f992493fa3a2fa0db4140adf5855dac5bcb811ffe0286ba1af7663525d27ca"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dashboard cards - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

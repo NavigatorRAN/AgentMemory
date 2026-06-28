@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/august_ble"
+final_url: "https://www.home-assistant.io/integrations/august_ble"
+canonical_url: "https://www.home-assistant.io/integrations/august_ble/"
+source_handle: "web:www-home-assistant-io:667531795ad9"
+source_section: "integrations-august-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b1f8a5c450d8c6ef7346735083e2fb033501a280e0e7a858e4b1f41a624c4e3d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # August Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

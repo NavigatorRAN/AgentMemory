@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/simu"
+final_url: "https://www.home-assistant.io/integrations/simu"
+canonical_url: "https://www.home-assistant.io/integrations/simu/"
+source_handle: "web:www-home-assistant-io:ee3a10462c66"
+source_section: "integrations-simu"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "18c2f8476b2d85ffb445bac8d737062493a6990a8197d0e741f057615d91b772"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SIMU LiveIn2 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

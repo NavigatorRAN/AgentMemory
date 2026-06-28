@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kiosker"
+final_url: "https://www.home-assistant.io/integrations/kiosker"
+canonical_url: "https://www.home-assistant.io/integrations/kiosker/"
+source_handle: "web:www-home-assistant-io:ad6afe35c792"
+source_section: "integrations-kiosker"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "469fb545503f6e1760daee5d7e2074a8167ba7b23ed2f72669183e4dc0cb3a8f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kiosker - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

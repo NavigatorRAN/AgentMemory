@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/getting-started/integration"
+final_url: "https://www.home-assistant.io/getting-started/integration"
+canonical_url: "https://www.home-assistant.io/getting-started/integration/"
+source_handle: "web:www-home-assistant-io:4b38c02f0705"
+source_section: "getting-started-integration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "26d20fdbbb34e6b58f455e7df62da5f30eae6be0b5a2d3782db698048faba152"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Adding integrations - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

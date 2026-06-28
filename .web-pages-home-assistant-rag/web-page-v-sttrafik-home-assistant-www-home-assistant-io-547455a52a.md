@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vasttrafik"
+final_url: "https://www.home-assistant.io/integrations/vasttrafik"
+canonical_url: "https://www.home-assistant.io/integrations/vasttrafik/"
+source_handle: "web:www-home-assistant-io:547455a52ae3"
+source_section: "integrations-vasttrafik"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a9b1377951bc5e954321bdc8d830971d30924c635d405669c9ad2dffbd113005"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Västtrafik - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

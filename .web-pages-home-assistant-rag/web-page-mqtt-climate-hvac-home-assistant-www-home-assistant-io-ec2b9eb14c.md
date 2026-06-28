@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/climate.mqtt"
+final_url: "https://www.home-assistant.io/integrations/climate.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/climate.mqtt/"
+source_handle: "web:www-home-assistant-io:ec2b9eb14ccb"
+source_section: "integrations-climate-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "37cecc28c0bd5152d83915818feec20ef427aa5b92db89a266683e5dd742e35a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT climate (HVAC) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

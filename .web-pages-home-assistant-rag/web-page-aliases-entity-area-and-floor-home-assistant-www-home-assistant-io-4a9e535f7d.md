@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/aliases"
+final_url: "https://www.home-assistant.io/voice_control/aliases"
+canonical_url: "https://www.home-assistant.io/voice_control/aliases/"
+source_handle: "web:www-home-assistant-io:4a9e535f7dfe"
+source_section: "voice-control-aliases"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "91dc04a285cbda5122973efb81e89806b03957474f783c6fa5e76dfb16af8597"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Aliases - entity, area, and floor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

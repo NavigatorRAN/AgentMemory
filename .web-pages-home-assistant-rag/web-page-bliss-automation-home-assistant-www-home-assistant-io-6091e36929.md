@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bliss_automation"
+final_url: "https://www.home-assistant.io/integrations/bliss_automation"
+canonical_url: "https://www.home-assistant.io/integrations/bliss_automation/"
+source_handle: "web:www-home-assistant-io:6091e3692941"
+source_section: "integrations-bliss-automation"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3c572a6e2206301e8fb8a0a2bd0e395a6a564d3ff89fb0063fbfbe053736e59a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bliss Automation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

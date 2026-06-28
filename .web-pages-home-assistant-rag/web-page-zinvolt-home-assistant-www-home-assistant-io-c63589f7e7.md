@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zinvolt"
+final_url: "https://www.home-assistant.io/integrations/zinvolt"
+canonical_url: "https://www.home-assistant.io/integrations/zinvolt/"
+source_handle: "web:www-home-assistant-io:c63589f7e772"
+source_section: "integrations-zinvolt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f9c19833182b1baa8ab9135740b389ae2853096cbc6d69f384ff01043f670cea"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Zinvolt - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zbox_hub"
+final_url: "https://www.home-assistant.io/integrations/zbox_hub"
+canonical_url: "https://www.home-assistant.io/integrations/zbox_hub/"
+source_handle: "web:www-home-assistant-io:7682fc4e367e"
+source_section: "integrations-zbox-hub"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5432c03eadbe3fbefa851345551bb89fce3ca18c625e0c8b2860bb2c95c864e0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Z-Box Hub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/melissa"
+final_url: "https://www.home-assistant.io/integrations/melissa"
+canonical_url: "https://www.home-assistant.io/integrations/melissa/"
+source_handle: "web:www-home-assistant-io:462fb88a7a84"
+source_section: "integrations-melissa"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4b97d5b7326490b6950eb2e5a86ee5418d28fc66e563579de84cfef9ef1455c6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Melissa - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

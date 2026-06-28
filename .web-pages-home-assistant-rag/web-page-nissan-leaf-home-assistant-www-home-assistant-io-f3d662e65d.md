@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nissan_leaf"
+final_url: "https://www.home-assistant.io/integrations/nissan_leaf"
+canonical_url: "https://www.home-assistant.io/integrations/nissan_leaf/"
+source_handle: "web:www-home-assistant-io:f3d662e65d7a"
+source_section: "integrations-nissan-leaf"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f71011948f494dbdd45facf43ace9fe09f175678e1df591a1cf9d7fc53101ce8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nissan Leaf - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/waqi"
+final_url: "https://www.home-assistant.io/integrations/waqi"
+canonical_url: "https://www.home-assistant.io/integrations/waqi/"
+source_handle: "web:www-home-assistant-io:5c816163eac2"
+source_section: "integrations-waqi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f8c04c4ab4b7c5091cd8a383c31389ad27cf4613764bae29e876d308026fa46d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # World Air Quality Index (WAQI) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/balay"
+final_url: "https://www.home-assistant.io/integrations/balay"
+canonical_url: "https://www.home-assistant.io/integrations/balay/"
+source_handle: "web:www-home-assistant-io:d8d00da3e9f0"
+source_section: "integrations-balay"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "95704609d13ba3fc74e2f39e305afd91fa19d1ccf7c8af5df45192b6711556a3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Balay - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

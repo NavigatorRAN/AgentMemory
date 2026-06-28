@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ld2410_ble"
+final_url: "https://www.home-assistant.io/integrations/ld2410_ble"
+canonical_url: "https://www.home-assistant.io/integrations/ld2410_ble/"
+source_handle: "web:www-home-assistant-io:fc326f43adc4"
+source_section: "integrations-ld2410-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8148ba4fbe7ae4fac3b09eacea5f083e2bd6a4a7a173d836d4f79abd39921591"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LD2410 BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

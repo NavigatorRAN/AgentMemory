@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/file_upload"
+final_url: "https://www.home-assistant.io/integrations/file_upload"
+canonical_url: "https://www.home-assistant.io/integrations/file_upload/"
+source_handle: "web:www-home-assistant-io:dd0bb647e65b"
+source_section: "integrations-file-upload"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f75f57488ef8e85e786ede68c8bea5acfad88d9eb467e7b5b8bd5dc9928ebf9a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # File upload - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

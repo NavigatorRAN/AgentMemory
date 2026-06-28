@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensor"
+final_url: "https://www.home-assistant.io/integrations/sensor"
+canonical_url: "https://www.home-assistant.io/integrations/sensor/"
+source_handle: "web:www-home-assistant-io:69a8f4e7ac63"
+source_section: "integrations-sensor"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9d76710ad62d7ecfc022e3274935ea9eb8e21c27fbb26cd0e47efe688dd67d11"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

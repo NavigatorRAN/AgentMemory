@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/heos"
+final_url: "https://www.home-assistant.io/integrations/heos"
+canonical_url: "https://www.home-assistant.io/integrations/heos/"
+source_handle: "web:www-home-assistant-io:2952f18f248e"
+source_section: "integrations-heos"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "40be43a91a62da50a9be815c06ab7fb527535c31ba221213e47b1689b35ddefa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Denon HEOS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

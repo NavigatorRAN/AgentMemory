@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/heiwa"
+final_url: "https://www.home-assistant.io/integrations/heiwa"
+canonical_url: "https://www.home-assistant.io/integrations/heiwa/"
+source_handle: "web:www-home-assistant-io:f7b9c748aebd"
+source_section: "integrations-heiwa"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ad7f7dcb1ecbf2b07410dfaaf5f8d6096483a3a97a8b488f240b9ca721825ead"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Heiwa - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

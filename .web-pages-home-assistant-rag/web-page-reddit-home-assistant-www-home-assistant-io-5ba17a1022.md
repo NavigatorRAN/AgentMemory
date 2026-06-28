@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/reddit"
+final_url: "https://www.home-assistant.io/integrations/reddit"
+canonical_url: "https://www.home-assistant.io/integrations/reddit/"
+source_handle: "web:www-home-assistant-io:5ba17a102292"
+source_section: "integrations-reddit"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4d1fea6107750d8b3c13c3b481ee226ed170a4ee722ee519a569abb2a63fd1dd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Reddit - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

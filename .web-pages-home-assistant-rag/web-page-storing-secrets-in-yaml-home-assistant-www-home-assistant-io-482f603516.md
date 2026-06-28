@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/secrets"
+final_url: "https://www.home-assistant.io/docs/configuration/secrets"
+canonical_url: "https://www.home-assistant.io/docs/configuration/secrets/"
+source_handle: "web:www-home-assistant-io:482f6035160b"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "49f24575b8d584a793e39e19864eea973164d555b0a99d5d19b439eb894152f0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Storing secrets in YAML - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

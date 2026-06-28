@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/azure_service_bus"
+final_url: "https://www.home-assistant.io/integrations/azure_service_bus"
+canonical_url: "https://www.home-assistant.io/integrations/azure_service_bus/"
+source_handle: "web:www-home-assistant-io:8a8651c5d218"
+source_section: "integrations-azure-service-bus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "609b7c8d5f7114a7f2878d2241cdd916c62d1a62602b8de9d58b6e1ebbf9d402"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Azure Service Bus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smtp"
+final_url: "https://www.home-assistant.io/integrations/smtp"
+canonical_url: "https://www.home-assistant.io/integrations/smtp/"
+source_handle: "web:www-home-assistant-io:8c9f398c3e09"
+source_section: "integrations-smtp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4f9b6b47c51e1ed5be3121031705d4ab6f5670cf3ad1e2f340e8fc406f31d090"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SMTP - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

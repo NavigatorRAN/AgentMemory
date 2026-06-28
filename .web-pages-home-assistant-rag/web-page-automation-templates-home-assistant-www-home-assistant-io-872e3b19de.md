@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/templating"
+final_url: "https://www.home-assistant.io/docs/automation/templating"
+canonical_url: "https://www.home-assistant.io/docs/automation/templating/"
+source_handle: "web:www-home-assistant-io:872e3b19de84"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1ac9c9dcc4f702c97e1c35190573cb43b0bb7a04ce39bd6a8a4f2050ee316fba"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Automation templates - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ffmpeg_motion"
+final_url: "https://www.home-assistant.io/integrations/ffmpeg_motion"
+canonical_url: "https://www.home-assistant.io/integrations/ffmpeg_motion/"
+source_handle: "web:www-home-assistant-io:7afbcad1600f"
+source_section: "integrations-ffmpeg-motion"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a5cb12a08122fabf8387be7f6db4b2b9711071d782901b1f5e2fdf3e9e749448"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FFmpeg Motion - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

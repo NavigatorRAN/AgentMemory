@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ddwrt"
+final_url: "https://www.home-assistant.io/integrations/ddwrt"
+canonical_url: "https://www.home-assistant.io/integrations/ddwrt/"
+source_handle: "web:www-home-assistant-io:d0ba8658abdb"
+source_section: "integrations-ddwrt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "22efe431666c1b17450e7dadd8a40097c2d4956a994019e631e3320f99191d1c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # DD-WRT - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

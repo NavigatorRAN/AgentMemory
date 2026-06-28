@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yandextts"
+final_url: "https://www.home-assistant.io/integrations/yandextts"
+canonical_url: "https://www.home-assistant.io/integrations/yandextts/"
+source_handle: "web:www-home-assistant-io:87d3bfa0704f"
+source_section: "integrations-yandextts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9768b53170f7d102081629e7092531d449a909600b30bc57dd1afb3eb3e08f99"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Yandex TTS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

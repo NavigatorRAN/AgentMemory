@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alexa"
+final_url: "https://www.home-assistant.io/integrations/alexa"
+canonical_url: "https://www.home-assistant.io/integrations/alexa/"
+source_handle: "web:www-home-assistant-io:d43cfefa60a9"
+source_section: "integrations-alexa"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "78614dc9b42eb28307b1c2fcee6edbb20103e7da0b9d4aee874f29a98c29b449"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Amazon Alexa - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

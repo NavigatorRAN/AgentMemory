@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/temperature"
+final_url: "https://www.home-assistant.io/integrations/temperature"
+canonical_url: "https://www.home-assistant.io/integrations/temperature/"
+source_handle: "web:www-home-assistant-io:32779751849d"
+source_section: "integrations-temperature"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "990a1138e255f2dfdec66789e474cce09efe577472ce3e40697698bdeb461c6a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Temperature - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

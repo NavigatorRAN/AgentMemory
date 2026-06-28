@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/water_heater.mqtt"
+final_url: "https://www.home-assistant.io/integrations/water_heater.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/water_heater.mqtt/"
+source_handle: "web:www-home-assistant-io:5b2a1ce2e892"
+source_section: "integrations-water-heater-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "821a2069989d7fac08cf5fce84d6cd3c4fe1c43ba7a83372632e11cbd3adaf54"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT water heater - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

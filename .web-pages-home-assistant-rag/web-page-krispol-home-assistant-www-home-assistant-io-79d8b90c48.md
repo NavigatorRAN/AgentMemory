@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/krispol"
+final_url: "https://www.home-assistant.io/integrations/krispol"
+canonical_url: "https://www.home-assistant.io/integrations/krispol/"
+source_handle: "web:www-home-assistant-io:79d8b90c4830"
+source_section: "integrations-krispol"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "248cad083584262ea56831b150cb41aae56eeebaeb7f88ee53a11132c120bc38"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Krispol - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

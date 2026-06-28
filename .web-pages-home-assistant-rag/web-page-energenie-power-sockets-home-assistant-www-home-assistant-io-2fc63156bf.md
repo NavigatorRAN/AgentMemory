@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/energenie_power_sockets"
+final_url: "https://www.home-assistant.io/integrations/energenie_power_sockets"
+canonical_url: "https://www.home-assistant.io/integrations/energenie_power_sockets/"
+source_handle: "web:www-home-assistant-io:2fc63156bf63"
+source_section: "integrations-energenie-power-sockets"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ab804df721a105f23f620ad631ff4c95244b3af7ffb154029e0c2c59d5f65f5e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Energenie Power Sockets - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

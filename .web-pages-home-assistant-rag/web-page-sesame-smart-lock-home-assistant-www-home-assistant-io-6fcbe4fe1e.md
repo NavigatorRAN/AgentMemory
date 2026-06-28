@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sesame"
+final_url: "https://www.home-assistant.io/integrations/sesame"
+canonical_url: "https://www.home-assistant.io/integrations/sesame/"
+source_handle: "web:www-home-assistant-io:6fcbe4fe1ebf"
+source_section: "integrations-sesame"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "271cb625053e44ed4cf013dd0fe191e71176dc0af2a4e905104ac3109e0c4614"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sesame Smart Lock - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

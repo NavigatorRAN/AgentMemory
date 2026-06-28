@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tag.mqtt"
+final_url: "https://www.home-assistant.io/integrations/tag.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/tag.mqtt/"
+source_handle: "web:www-home-assistant-io:e5eac2a06e54"
+source_section: "integrations-tag-mqtt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "62b4336ecd9ae9e4278e31362c1b2fc8e3e7639681c56ae26344a5926a0b0d3d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # MQTT tag scanner - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

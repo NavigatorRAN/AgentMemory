@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/time"
+final_url: "https://www.home-assistant.io/integrations/time"
+canonical_url: "https://www.home-assistant.io/integrations/time/"
+source_handle: "web:www-home-assistant-io:af284d03ad2e"
+source_section: "integrations-time"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a6e5b8fae0d530759ba66a2055177543e0219c94bc45536358cf34bd43a37cdf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Time - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

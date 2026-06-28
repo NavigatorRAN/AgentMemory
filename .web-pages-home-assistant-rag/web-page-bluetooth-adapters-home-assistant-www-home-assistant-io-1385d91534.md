@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bluetooth_adapters"
+final_url: "https://www.home-assistant.io/integrations/bluetooth_adapters"
+canonical_url: "https://www.home-assistant.io/integrations/bluetooth_adapters/"
+source_handle: "web:www-home-assistant-io:1385d9153451"
+source_section: "integrations-bluetooth-adapters"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "82d5062798861f43264fad6249948f5eb3443f24b65b83bba59198d9b7c3f2b8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bluetooth Adapters - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

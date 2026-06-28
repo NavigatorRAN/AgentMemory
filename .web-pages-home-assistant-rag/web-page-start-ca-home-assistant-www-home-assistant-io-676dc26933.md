@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/startca"
+final_url: "https://www.home-assistant.io/integrations/startca"
+canonical_url: "https://www.home-assistant.io/integrations/startca/"
+source_handle: "web:www-home-assistant-io:676dc269333f"
+source_section: "integrations-startca"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "602a334982d57ae1c0031c3c1f2a2bb0b755e56615f5c0b5a9bd39725bf02506"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Start.ca - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

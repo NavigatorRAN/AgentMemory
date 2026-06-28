@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/geocaching"
+final_url: "https://www.home-assistant.io/integrations/geocaching"
+canonical_url: "https://www.home-assistant.io/integrations/geocaching/"
+source_handle: "web:www-home-assistant-io:92415a181c20"
+source_section: "integrations-geocaching"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a0e6d6eb8f9aec43e99637cb67dbad110c7edc4b0acc0d949c067efc8931b4de"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Geocaching - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

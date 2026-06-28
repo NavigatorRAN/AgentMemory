@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/technove"
+final_url: "https://www.home-assistant.io/integrations/technove"
+canonical_url: "https://www.home-assistant.io/integrations/technove/"
+source_handle: "web:www-home-assistant-io:157340be9d93"
+source_section: "integrations-technove"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d9784485c49002cd59a76b6d9c46bffc5473de897d9da82220074102b12275f2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # TechnoVE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

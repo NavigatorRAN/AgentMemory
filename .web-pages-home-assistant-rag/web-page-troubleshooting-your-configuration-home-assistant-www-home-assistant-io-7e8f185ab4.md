@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/troubleshooting"
+final_url: "https://www.home-assistant.io/docs/configuration/troubleshooting"
+canonical_url: "https://www.home-assistant.io/docs/configuration/troubleshooting/"
+source_handle: "web:www-home-assistant-io:7e8f185ab4fc"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8605b3f89314e055d09b941118287f60e70f72bb2491eaa7d8a9cc07cfa71a00"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Troubleshooting your configuration - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

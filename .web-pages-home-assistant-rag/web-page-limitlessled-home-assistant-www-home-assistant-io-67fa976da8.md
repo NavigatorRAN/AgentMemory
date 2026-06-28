@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/limitlessled"
+final_url: "https://www.home-assistant.io/integrations/limitlessled"
+canonical_url: "https://www.home-assistant.io/integrations/limitlessled/"
+source_handle: "web:www-home-assistant-io:67fa976da8d9"
+source_section: "integrations-limitlessled"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aea4cfac9eafa9f50a5e712d49dc6c01f7d30b86c694797d68af97f164650c1c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LimitlessLED - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

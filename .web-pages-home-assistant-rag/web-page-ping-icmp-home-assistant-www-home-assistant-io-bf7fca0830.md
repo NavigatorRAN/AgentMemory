@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ping"
+final_url: "https://www.home-assistant.io/integrations/ping"
+canonical_url: "https://www.home-assistant.io/integrations/ping/"
+source_handle: "web:www-home-assistant-io:bf7fca083055"
+source_section: "integrations-ping"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dc5e555e9575965c11cc8b42d61bb1f41dacfd958afaefbd98658c2946b35691"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ping (ICMP) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

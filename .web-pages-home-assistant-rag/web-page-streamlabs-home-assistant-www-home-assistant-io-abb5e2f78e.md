@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/streamlabswater"
+final_url: "https://www.home-assistant.io/integrations/streamlabswater"
+canonical_url: "https://www.home-assistant.io/integrations/streamlabswater/"
+source_handle: "web:www-home-assistant-io:abb5e2f78e7d"
+source_section: "integrations-streamlabswater"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "97a4a4845f02039c0083d8627e40792683ca0c2296da02d78f4d65d601a4a0ca"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # StreamLabs - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nextdns"
+final_url: "https://www.home-assistant.io/integrations/nextdns"
+canonical_url: "https://www.home-assistant.io/integrations/nextdns/"
+source_handle: "web:www-home-assistant-io:130affd68ec3"
+source_section: "integrations-nextdns"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "07604b5fb11dbcc1491ec969de420195d083a41849554e4dae12c76087384ec8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NextDNS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

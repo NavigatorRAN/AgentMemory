@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ipma"
+final_url: "https://www.home-assistant.io/integrations/ipma"
+canonical_url: "https://www.home-assistant.io/integrations/ipma/"
+source_handle: "web:www-home-assistant-io:7935efa3b71b"
+source_section: "integrations-ipma"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e6613ce013c32b5c10a61742a076b6babb61ddf9d44e7fda9f49d622a72b7709"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Instituto Português do Mar e Atmosfera (IPMA) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/onewire"
+final_url: "https://www.home-assistant.io/integrations/onewire"
+canonical_url: "https://www.home-assistant.io/integrations/onewire/"
+source_handle: "web:www-home-assistant-io:0bccaa517a6f"
+source_section: "integrations-onewire"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "88bb9739b5fb9c4dafa1bd7e938dbfb73c71d0b0189c7c2c4089d35a12dd91c7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # 1-Wire - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

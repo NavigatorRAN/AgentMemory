@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/qbittorrent"
+final_url: "https://www.home-assistant.io/integrations/qbittorrent"
+canonical_url: "https://www.home-assistant.io/integrations/qbittorrent/"
+source_handle: "web:www-home-assistant-io:64cfb8f02c51"
+source_section: "integrations-qbittorrent"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d4465e86e3a8cf6775f9e5020f0632813eee6bf53bea177c7d2abd602423511b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # qBittorrent - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

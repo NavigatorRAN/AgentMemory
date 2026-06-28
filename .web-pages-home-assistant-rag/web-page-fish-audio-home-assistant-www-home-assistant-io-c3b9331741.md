@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fish_audio"
+final_url: "https://www.home-assistant.io/integrations/fish_audio"
+canonical_url: "https://www.home-assistant.io/integrations/fish_audio/"
+source_handle: "web:www-home-assistant-io:c3b9331741c8"
+source_section: "integrations-fish-audio"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "98ab873a35eca2275c07a791ff1c7eba57fe9b73ed52cdb1cf89063ef0237c2a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fish Audio - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

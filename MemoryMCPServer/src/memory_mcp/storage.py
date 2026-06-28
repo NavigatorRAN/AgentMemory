@@ -95,9 +95,6 @@ class Storage:
         configured = os.environ.get("MEMORY_INDEX_ROOT")
         if configured:
             return Path(configured)
-        root_text = str(root)
-        if root_text.startswith(("/mnt/", "/Volumes/")):
-            return Path.cwd() / ".index"
         return root / ".index"
 
     # --- event writes -----------------------------------------------------
@@ -435,6 +432,12 @@ class Storage:
             try:
                 self._index_path().unlink()
             except FileNotFoundError:
+                pass
+            except OSError:
+                # The legacy JSON entity index is only a cache. Some deployed
+                # paths may be read-only while the SQLite cache remains usable;
+                # memory writes must not fail just because this cache cannot be
+                # removed.
                 pass
 
     def get_entity_index(self) -> dict[str, dict[str, Any]]:

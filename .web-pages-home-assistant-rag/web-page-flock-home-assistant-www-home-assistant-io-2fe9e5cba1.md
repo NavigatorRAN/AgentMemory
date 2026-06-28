@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/flock"
+final_url: "https://www.home-assistant.io/integrations/flock"
+canonical_url: "https://www.home-assistant.io/integrations/flock/"
+source_handle: "web:www-home-assistant-io:2fe9e5cba1ad"
+source_section: "integrations-flock"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8e133606133622b871fe96cb348d7c5a8436f932e6ec7b09a9654feef9a6d514"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Flock - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

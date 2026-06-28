@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/common-tasks/container"
+final_url: "https://www.home-assistant.io/common-tasks/container"
+canonical_url: "https://www.home-assistant.io/common-tasks/container/"
+source_handle: "web:www-home-assistant-io:70935e9bf49e"
+source_section: "common-tasks-container"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b359fb98bba63d392903108ffb20ad06b199231eef32e441d3fc2ee3e0bb37fd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Common tasks - Home Assistant Container - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

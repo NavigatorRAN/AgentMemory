@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alexa.intent"
+final_url: "https://www.home-assistant.io/integrations/alexa.intent"
+canonical_url: "https://www.home-assistant.io/integrations/alexa.intent/"
+source_handle: "web:www-home-assistant-io:d094358ddc98"
+source_section: "integrations-alexa-intent"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ffe167705b877ea40966ed7b2a6869c9e93f52db54a9634b79eb64f972735c5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Amazon Alexa Custom Skill - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

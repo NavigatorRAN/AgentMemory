@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/indevolt"
+final_url: "https://www.home-assistant.io/integrations/indevolt"
+canonical_url: "https://www.home-assistant.io/integrations/indevolt/"
+source_handle: "web:www-home-assistant-io:a34d3494de30"
+source_section: "integrations-indevolt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d3f89df37a5032e99f971142913cf884e8b04d3ca289e9c4fe83e1b6a4b7e327"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Indevolt - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/coinbase"
+final_url: "https://www.home-assistant.io/integrations/coinbase"
+canonical_url: "https://www.home-assistant.io/integrations/coinbase/"
+source_handle: "web:www-home-assistant-io:791d80907355"
+source_section: "integrations-coinbase"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "27c58528f399cf211facd515eac427150b9be3163b380d99aea5cd634b37c8be"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Coinbase - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

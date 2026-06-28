@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/inkbird"
+final_url: "https://www.home-assistant.io/integrations/inkbird"
+canonical_url: "https://www.home-assistant.io/integrations/inkbird/"
+source_handle: "web:www-home-assistant-io:4bc14c49cb94"
+source_section: "integrations-inkbird"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b35dc3feea9ea724249f6010f2119284eb0bd0cb4858d2e8212daf7ed147d1bb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # INKBIRD - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

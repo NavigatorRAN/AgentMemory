@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/weather"
+final_url: "https://www.home-assistant.io/integrations/weather"
+canonical_url: "https://www.home-assistant.io/integrations/weather/"
+source_handle: "web:www-home-assistant-io:d3abeb4f1d4a"
+source_section: "integrations-weather"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "84639fbaf5c90300e525f6ff0fce06ae0094ae091cf36ebf79e47ae3008eea82"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Weather - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/directv"
+final_url: "https://www.home-assistant.io/integrations/directv"
+canonical_url: "https://www.home-assistant.io/integrations/directv/"
+source_handle: "web:www-home-assistant-io:6cb486229f5c"
+source_section: "integrations-directv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3b7ce821a37c785b1c469d5f12b75216b1608909efc998bf8dc8d0738e48670b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # DirecTV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

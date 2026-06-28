@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/solax"
+final_url: "https://www.home-assistant.io/integrations/solax"
+canonical_url: "https://www.home-assistant.io/integrations/solax/"
+source_handle: "web:www-home-assistant-io:9b2fe2a633d5"
+source_section: "integrations-solax"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "deba796237b84acbe670be5d8f54a1b3d12190bdfdd73defdd012b06fc4f7f12"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SolaX Power - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

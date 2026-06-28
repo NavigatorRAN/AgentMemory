@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/trafikverket_train"
+final_url: "https://www.home-assistant.io/integrations/trafikverket_train"
+canonical_url: "https://www.home-assistant.io/integrations/trafikverket_train/"
+source_handle: "web:www-home-assistant-io:59bdad7b3071"
+source_section: "integrations-trafikverket-train"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6364e6f7d3a565385babf6a799d87693ca035a10192d37ff88508f97dffd51b4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Trafikverket Train - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

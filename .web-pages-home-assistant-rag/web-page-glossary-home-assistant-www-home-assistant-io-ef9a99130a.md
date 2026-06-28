@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/glossary"
+final_url: "https://www.home-assistant.io/docs/glossary"
+canonical_url: "https://www.home-assistant.io/docs/glossary/"
+source_handle: "web:www-home-assistant-io:ef9a99130a9e"
+source_section: "docs-glossary"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "150521d3334ae990b7f39ffaa7a42428c3590242ea335862b7b4f9c939a10939"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Glossary - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

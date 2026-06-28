@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kraken"
+final_url: "https://www.home-assistant.io/integrations/kraken"
+canonical_url: "https://www.home-assistant.io/integrations/kraken/"
+source_handle: "web:www-home-assistant-io:d35512d012b3"
+source_section: "integrations-kraken"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "76fdea4e4c4b364b5dc0a323413a63dc253a98073e3d2944ba5003b3015f22e0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kraken - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

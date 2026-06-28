@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/shelly"
+final_url: "https://www.home-assistant.io/integrations/shelly"
+canonical_url: "https://www.home-assistant.io/integrations/shelly/"
+source_handle: "web:www-home-assistant-io:b94bff0b4c88"
+source_section: "integrations-shelly"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ccd3e0df4fd6e15443e6fa06c028d0f7e5a72a40459cf833dcabbf824124bd9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Shelly - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

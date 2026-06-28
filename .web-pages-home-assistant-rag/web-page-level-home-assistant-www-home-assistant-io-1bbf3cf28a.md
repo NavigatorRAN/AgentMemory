@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/level"
+final_url: "https://www.home-assistant.io/integrations/level"
+canonical_url: "https://www.home-assistant.io/integrations/level/"
+source_handle: "web:www-home-assistant-io:1bbf3cf28a3c"
+source_section: "integrations-level"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "be92b9dddb30d8e609dad12a4ad47b8fffb5c55fd304bce236ae1c0a19cb24f9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Level - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

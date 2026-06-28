@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/linak"
+final_url: "https://www.home-assistant.io/integrations/linak"
+canonical_url: "https://www.home-assistant.io/integrations/linak/"
+source_handle: "web:www-home-assistant-io:1ffda791f565"
+source_section: "integrations-linak"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ae42b9f2b07fd33326cc052de7f79e31b761eb4d90395c357713681768aa2916"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LINAK - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

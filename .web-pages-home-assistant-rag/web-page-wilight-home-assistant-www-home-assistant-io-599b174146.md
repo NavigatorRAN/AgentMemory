@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wilight"
+final_url: "https://www.home-assistant.io/integrations/wilight"
+canonical_url: "https://www.home-assistant.io/integrations/wilight/"
+source_handle: "web:www-home-assistant-io:599b174146e8"
+source_section: "integrations-wilight"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6e73db1f348cbb7fa571c9244a53cf0e71efeef9cea8862313dcf8fa8f2e4b3d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WiLight - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

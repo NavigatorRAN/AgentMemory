@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bluesound"
+final_url: "https://www.home-assistant.io/integrations/bluesound"
+canonical_url: "https://www.home-assistant.io/integrations/bluesound/"
+source_handle: "web:www-home-assistant-io:dd3b9e08a468"
+source_section: "integrations-bluesound"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "76bbea5c6714b2acdff5978c2d13e128657c244fd2a63a216ce90de965667f87"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bluesound - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

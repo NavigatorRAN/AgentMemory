@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/where-to-use"
+final_url: "https://www.home-assistant.io/docs/templating/where-to-use"
+canonical_url: "https://www.home-assistant.io/docs/templating/where-to-use/"
+source_handle: "web:www-home-assistant-io:6c3886267d7c"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4d92f70bccc92233f816acd6eedba3a49c66f085db28427886b3d453b0177e50"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Where to use templates - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

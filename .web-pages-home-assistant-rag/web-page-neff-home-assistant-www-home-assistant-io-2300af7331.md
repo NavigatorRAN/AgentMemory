@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/neff"
+final_url: "https://www.home-assistant.io/integrations/neff"
+canonical_url: "https://www.home-assistant.io/integrations/neff/"
+source_handle: "web:www-home-assistant-io:2300af733133"
+source_section: "integrations-neff"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "df9568fb6b57281ac1e3b97dfb3317c116cf4d594d06bf568486b586f5739e8d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Neff - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

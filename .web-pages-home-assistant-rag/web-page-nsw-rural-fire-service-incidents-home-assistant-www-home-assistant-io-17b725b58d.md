@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nsw_rural_fire_service_feed"
+final_url: "https://www.home-assistant.io/integrations/nsw_rural_fire_service_feed"
+canonical_url: "https://www.home-assistant.io/integrations/nsw_rural_fire_service_feed/"
+source_handle: "web:www-home-assistant-io:17b725b58d92"
+source_section: "integrations-nsw-rural-fire-service-feed"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b6d0eead905207c254d0a3ba21f26136f078e4aae3b6b46ffe310549b670a7de"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # NSW Rural Fire Service Incidents - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

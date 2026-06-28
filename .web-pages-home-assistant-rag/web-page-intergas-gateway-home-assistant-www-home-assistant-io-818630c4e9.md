@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/incomfort"
+final_url: "https://www.home-assistant.io/integrations/incomfort"
+canonical_url: "https://www.home-assistant.io/integrations/incomfort/"
+source_handle: "web:www-home-assistant-io:818630c4e956"
+source_section: "integrations-incomfort"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ef68afa2d1264574a5e65df5053907cb3eaa8dfd12078542f945e2d37cae7a9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Intergas gateway - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

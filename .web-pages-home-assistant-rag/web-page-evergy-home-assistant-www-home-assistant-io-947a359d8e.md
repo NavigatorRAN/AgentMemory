@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/evergy"
+final_url: "https://www.home-assistant.io/integrations/evergy"
+canonical_url: "https://www.home-assistant.io/integrations/evergy/"
+source_handle: "web:www-home-assistant-io:947a359d8ec0"
+source_section: "integrations-evergy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "42e4686a1283a545681f7ae0a96e022eff0939235907f0c96ba8079d2d6a2428"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Evergy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

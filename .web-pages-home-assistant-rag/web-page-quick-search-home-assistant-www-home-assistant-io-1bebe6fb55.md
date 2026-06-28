@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/tools/quick-search"
+final_url: "https://www.home-assistant.io/docs/tools/quick-search"
+canonical_url: "https://www.home-assistant.io/docs/tools/quick-search/"
+source_handle: "web:www-home-assistant-io:1bebe6fb55f6"
+source_section: "docs-tools"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1006681d9c5461fc7afa80717d726dd99205fddd61aa7ad533596d3527341c73"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Quick search - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

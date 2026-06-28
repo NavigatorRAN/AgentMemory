@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/usb_config"
+final_url: "https://www.home-assistant.io/faq/usb_config"
+canonical_url: "https://www.home-assistant.io/faq/usb_config/"
+source_handle: "web:www-home-assistant-io:ee3b1cd942c6"
+source_section: "faq-usb-config"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a11d35a2a9912b303acded0c08a41d1a65a44b3b6cf6eb6f2ef4d2aea7d8c64c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Do I need to leave the USB stick connected for Wi-Fi? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

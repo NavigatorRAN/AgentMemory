@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iotawatt"
+final_url: "https://www.home-assistant.io/integrations/iotawatt"
+canonical_url: "https://www.home-assistant.io/integrations/iotawatt/"
+source_handle: "web:www-home-assistant-io:b2a8b58b775d"
+source_section: "integrations-iotawatt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cf1998ebd52870ef3918d33eb6248d718dae063cc72cc4906170e0e97670e995"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IoTaWatt - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

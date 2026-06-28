@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openexchangerates"
+final_url: "https://www.home-assistant.io/integrations/openexchangerates"
+canonical_url: "https://www.home-assistant.io/integrations/openexchangerates/"
+source_handle: "web:www-home-assistant-io:efae27db8811"
+source_section: "integrations-openexchangerates"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f94e48aad7d90747a7b5b476f64567103866b180d67411a9e97b40dd5c6829d8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Open Exchange Rates - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

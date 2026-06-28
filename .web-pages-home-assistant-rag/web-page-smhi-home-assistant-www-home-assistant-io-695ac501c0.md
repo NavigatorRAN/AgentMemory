@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smhi"
+final_url: "https://www.home-assistant.io/integrations/smhi"
+canonical_url: "https://www.home-assistant.io/integrations/smhi/"
+source_handle: "web:www-home-assistant-io:695ac501c0dd"
+source_section: "integrations-smhi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dd890f650ff672ae2200c4beb94105c8fa0388d4ed568b503ac6c455ac08d00c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SMHI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

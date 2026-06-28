@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aemet"
+final_url: "https://www.home-assistant.io/integrations/aemet"
+canonical_url: "https://www.home-assistant.io/integrations/aemet/"
+source_handle: "web:www-home-assistant-io:7ef8ad89500b"
+source_section: "integrations-aemet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1a0da5b7c472b76158661b3f48c62057e027fb6cc279b29934ddc694f8ecb780"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AEMET OpenData - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

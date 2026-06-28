@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tado"
+final_url: "https://www.home-assistant.io/integrations/tado"
+canonical_url: "https://www.home-assistant.io/integrations/tado/"
+source_handle: "web:www-home-assistant-io:2431d03c7bc0"
+source_section: "integrations-tado"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d3915470a465e4087ce8b4a42f70c389f00dd51a4ce05ad0dec30e888d408644"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tado - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

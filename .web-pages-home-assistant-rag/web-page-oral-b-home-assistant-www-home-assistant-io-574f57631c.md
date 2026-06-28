@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/oralb"
+final_url: "https://www.home-assistant.io/integrations/oralb"
+canonical_url: "https://www.home-assistant.io/integrations/oralb/"
+source_handle: "web:www-home-assistant-io:574f57631c74"
+source_section: "integrations-oralb"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "89a00cf4e77635cc720c5d987738bce184ac1e792549d2d93d87b37443411143"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Oral-B - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

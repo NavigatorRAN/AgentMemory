@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/greenwave"
+final_url: "https://www.home-assistant.io/integrations/greenwave"
+canonical_url: "https://www.home-assistant.io/integrations/greenwave/"
+source_handle: "web:www-home-assistant-io:32319a094d49"
+source_section: "integrations-greenwave"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c71b94a5b71965e88ed618d51fd388eecaffa364aa4bd1627325c8220221169a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Greenwave Reality - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

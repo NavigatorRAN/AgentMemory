@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zabbix"
+final_url: "https://www.home-assistant.io/integrations/zabbix"
+canonical_url: "https://www.home-assistant.io/integrations/zabbix/"
+source_handle: "web:www-home-assistant-io:121f00239c4a"
+source_section: "integrations-zabbix"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "63339a422bc4821068236a9b4e21b877b5ffd662c8fb79540414bab031e67d4a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Zabbix - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

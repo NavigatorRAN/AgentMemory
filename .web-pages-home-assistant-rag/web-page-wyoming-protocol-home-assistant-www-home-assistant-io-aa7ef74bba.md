@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wyoming"
+final_url: "https://www.home-assistant.io/integrations/wyoming"
+canonical_url: "https://www.home-assistant.io/integrations/wyoming/"
+source_handle: "web:www-home-assistant-io:aa7ef74bba33"
+source_section: "integrations-wyoming"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "44c103de6a27b9fdb156767cd18c61f254a75ac1c2aff798686da6eefed6bd4f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Wyoming Protocol - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

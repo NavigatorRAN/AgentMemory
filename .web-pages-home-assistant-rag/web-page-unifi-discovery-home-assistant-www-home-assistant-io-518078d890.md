@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/unifi_discovery"
+final_url: "https://www.home-assistant.io/integrations/unifi_discovery"
+canonical_url: "https://www.home-assistant.io/integrations/unifi_discovery/"
+source_handle: "web:www-home-assistant-io:518078d89032"
+source_section: "integrations-unifi-discovery"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e4a67f0fbf39480c6914b1c02a9ad95c82217771ad0632709ba359fb88eb4ae9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UniFi Discovery - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

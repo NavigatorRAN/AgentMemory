@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/make_your_own"
+final_url: "https://www.home-assistant.io/voice_control/make_your_own"
+canonical_url: "https://www.home-assistant.io/voice_control/make_your_own/"
+source_handle: "web:www-home-assistant-io:68303487798f"
+source_section: "voice-control-make-your-own"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0d5f3a7e34e42de41307a5a2bf800106d53fb538d4ca408f3523862b158e1da4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Make your own Assist device - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nuki_matter"
+final_url: "https://www.home-assistant.io/integrations/nuki_matter"
+canonical_url: "https://www.home-assistant.io/integrations/nuki_matter/"
+source_handle: "web:www-home-assistant-io:9ee44d123f65"
+source_section: "integrations-nuki-matter"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "177b9a057e2bade7c0ffe2a463a7aa6e7669e2d11236285882e69a82b953a5d9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nuki Matter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

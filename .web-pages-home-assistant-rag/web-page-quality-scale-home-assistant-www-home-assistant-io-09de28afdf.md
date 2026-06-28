@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/quality_scale"
+final_url: "https://www.home-assistant.io/docs/quality_scale"
+canonical_url: "https://www.home-assistant.io/docs/quality_scale/"
+source_handle: "web:www-home-assistant-io:09de28afdf09"
+source_section: "docs-quality-scale"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5a1231e31c9e79d1d7be11cb283b8d9a7141957c857de7f5c27e35d3b9b1b386"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Quality scale - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

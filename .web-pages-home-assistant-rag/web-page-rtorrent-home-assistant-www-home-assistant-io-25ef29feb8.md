@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rtorrent"
+final_url: "https://www.home-assistant.io/integrations/rtorrent"
+canonical_url: "https://www.home-assistant.io/integrations/rtorrent/"
+source_handle: "web:www-home-assistant-io:25ef29feb88f"
+source_section: "integrations-rtorrent"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9197e0e9f0e15454fa366a1bd0a7593404363009baa009d8713728ed2b18607a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # rTorrent - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

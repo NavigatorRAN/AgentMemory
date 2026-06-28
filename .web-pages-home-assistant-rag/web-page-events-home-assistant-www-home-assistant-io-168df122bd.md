@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/events"
+final_url: "https://www.home-assistant.io/docs/configuration/events"
+canonical_url: "https://www.home-assistant.io/docs/configuration/events/"
+source_handle: "web:www-home-assistant-io:168df122bd14"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "57b6a68605c655b0591557eac2683a850f00f75e265e223342a46c06c286b169"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Events - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

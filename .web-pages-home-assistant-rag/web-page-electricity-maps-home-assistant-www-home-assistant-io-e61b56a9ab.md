@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/co2signal"
+final_url: "https://www.home-assistant.io/integrations/co2signal"
+canonical_url: "https://www.home-assistant.io/integrations/co2signal/"
+source_handle: "web:www-home-assistant-io:e61b56a9ab51"
+source_section: "integrations-co2signal"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bb0326b4fd1214a2ba935172ee08c967703c75325eb60c67b802a1e495ba22e3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Electricity Maps - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

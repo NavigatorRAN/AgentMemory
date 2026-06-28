@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gate"
+final_url: "https://www.home-assistant.io/integrations/gate"
+canonical_url: "https://www.home-assistant.io/integrations/gate/"
+source_handle: "web:www-home-assistant-io:820db585624a"
+source_section: "integrations-gate"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7e41fe21886b8e7ff8a41ad9a74a7cd4409f511ece7486b0f8d867e7810c4824"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Gate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/redgtech"
+final_url: "https://www.home-assistant.io/integrations/redgtech"
+canonical_url: "https://www.home-assistant.io/integrations/redgtech/"
+source_handle: "web:www-home-assistant-io:2e8dd5ed84d9"
+source_section: "integrations-redgtech"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "07637c83bd3022c60664dbc5f2f5d15eaf8f9a1e53e31affcb170ede31471145"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Redgtech - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

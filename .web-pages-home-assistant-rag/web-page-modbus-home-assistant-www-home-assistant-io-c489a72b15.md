@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/modbus"
+final_url: "https://www.home-assistant.io/integrations/modbus"
+canonical_url: "https://www.home-assistant.io/integrations/modbus/"
+source_handle: "web:www-home-assistant-io:c489a72b154b"
+source_section: "integrations-modbus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9c89b854872e57919487115e0b6a7ae4c94589d156d99b68be27fbea18d49850"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Modbus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sia"
+final_url: "https://www.home-assistant.io/integrations/sia"
+canonical_url: "https://www.home-assistant.io/integrations/sia/"
+source_handle: "web:www-home-assistant-io:9df6196d9a0d"
+source_section: "integrations-sia"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "297552f76e6e7dfb510f11e69f8420b5982ab775692bc448e2d45ba172ae9eee"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # SIA Alarm Systems - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

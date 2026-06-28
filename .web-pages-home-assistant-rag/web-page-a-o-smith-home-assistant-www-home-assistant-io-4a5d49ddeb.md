@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aosmith"
+final_url: "https://www.home-assistant.io/integrations/aosmith"
+canonical_url: "https://www.home-assistant.io/integrations/aosmith/"
+source_handle: "web:www-home-assistant-io:4a5d49ddeb1c"
+source_section: "integrations-aosmith"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d3ac26a24a11a1090125497ed51d7e15686184fd79933ed420788d5f091c5a9c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # A. O. Smith - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

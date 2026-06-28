@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nam"
+final_url: "https://www.home-assistant.io/integrations/nam"
+canonical_url: "https://www.home-assistant.io/integrations/nam/"
+source_handle: "web:www-home-assistant-io:4ab86b0d0c06"
+source_section: "integrations-nam"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a5fd69694f8dfef15793ff72ee4f8e978c75ff9e1011e6343557ad1584088f62"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nettigo Air Monitor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

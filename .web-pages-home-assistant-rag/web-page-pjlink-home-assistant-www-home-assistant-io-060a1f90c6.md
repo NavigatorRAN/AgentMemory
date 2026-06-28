@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pjlink"
+final_url: "https://www.home-assistant.io/integrations/pjlink"
+canonical_url: "https://www.home-assistant.io/integrations/pjlink/"
+source_handle: "web:www-home-assistant-io:060a1f90c627"
+source_section: "integrations-pjlink"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e7770b9132c66d48cf262abe474c9060611e8c6382dfdb8f6fa5b84371b3ae56"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PJLink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

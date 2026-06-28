@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/datetime"
+final_url: "https://www.home-assistant.io/integrations/datetime"
+canonical_url: "https://www.home-assistant.io/integrations/datetime/"
+source_handle: "web:www-home-assistant-io:2d1329c8d9b9"
+source_section: "integrations-datetime"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2d31341d6f21e1c9c37f2bd94dfcc75eb13cf464891a7855d1a45349e67fef03"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Date/Time - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

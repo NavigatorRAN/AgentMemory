@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dynalite"
+final_url: "https://www.home-assistant.io/integrations/dynalite"
+canonical_url: "https://www.home-assistant.io/integrations/dynalite/"
+source_handle: "web:www-home-assistant-io:c09d25ac2b99"
+source_section: "integrations-dynalite"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7f66234b49094c591df275caee2514536bd8ec1fe9bdca8ecad7985f95ee5673"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Philips Dynalite - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

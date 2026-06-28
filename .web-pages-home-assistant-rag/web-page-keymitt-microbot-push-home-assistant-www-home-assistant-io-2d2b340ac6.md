@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/keymitt_ble"
+final_url: "https://www.home-assistant.io/integrations/keymitt_ble"
+canonical_url: "https://www.home-assistant.io/integrations/keymitt_ble/"
+source_handle: "web:www-home-assistant-io:2d2b340ac639"
+source_section: "integrations-keymitt-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6a3b2943f3f4480ea9d3fea514fa2adccb591bbf3a8fcdc046065f8aab7ac85f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Keymitt MicroBot Push - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

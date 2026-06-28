@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/travisci"
+final_url: "https://www.home-assistant.io/integrations/travisci"
+canonical_url: "https://www.home-assistant.io/integrations/travisci/"
+source_handle: "web:www-home-assistant-io:2fb3242e925f"
+source_section: "integrations-travisci"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8ba3d91e5e414fd0355b30d73eea9106192e6bdd32cccd3dbede5a25a09e02fc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Travis-CI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

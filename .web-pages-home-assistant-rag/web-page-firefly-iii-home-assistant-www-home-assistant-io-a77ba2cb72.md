@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/firefly_iii"
+final_url: "https://www.home-assistant.io/integrations/firefly_iii"
+canonical_url: "https://www.home-assistant.io/integrations/firefly_iii/"
+source_handle: "web:www-home-assistant-io:a77ba2cb7264"
+source_section: "integrations-firefly-iii"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "51b0efbab7371dfa94e4c444aec49851969ee6f5eb238c5f05cd60e25875978f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Firefly III - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

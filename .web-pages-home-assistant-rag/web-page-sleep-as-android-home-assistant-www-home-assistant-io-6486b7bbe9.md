@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sleep_as_android"
+final_url: "https://www.home-assistant.io/integrations/sleep_as_android"
+canonical_url: "https://www.home-assistant.io/integrations/sleep_as_android/"
+source_handle: "web:www-home-assistant-io:6486b7bbe9c7"
+source_section: "integrations-sleep-as-android"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "032075dcf722fa34748dd60023e4918daf1c3dce5ddde94b045454eed6b976a4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Sleep as Android - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

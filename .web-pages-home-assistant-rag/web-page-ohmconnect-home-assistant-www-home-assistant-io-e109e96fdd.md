@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ohmconnect"
+final_url: "https://www.home-assistant.io/integrations/ohmconnect"
+canonical_url: "https://www.home-assistant.io/integrations/ohmconnect/"
+source_handle: "web:www-home-assistant-io:e109e96fddb2"
+source_section: "integrations-ohmconnect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e4b5a545c888a9ffb0962ac147e2953961b7327ecf9c7abab822eabc379397c3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OhmConnect - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

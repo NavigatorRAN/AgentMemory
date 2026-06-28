@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ai_task"
+final_url: "https://www.home-assistant.io/integrations/ai_task"
+canonical_url: "https://www.home-assistant.io/integrations/ai_task/"
+source_handle: "web:www-home-assistant-io:a348115cb44e"
+source_section: "integrations-ai-task"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4fb80233e1244079c6fdad4536ec0db2ddb364d7739b0f4c68798d445421e92c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AI Task - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

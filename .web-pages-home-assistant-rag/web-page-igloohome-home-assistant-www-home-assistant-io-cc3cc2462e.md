@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/igloohome"
+final_url: "https://www.home-assistant.io/integrations/igloohome"
+canonical_url: "https://www.home-assistant.io/integrations/igloohome/"
+source_handle: "web:www-home-assistant-io:cc3cc2462e9e"
+source_section: "integrations-igloohome"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "87cf1928923f9d775c76d5e3ca74ba72f46997e5b7a9a7cb0380f5b4eeb94949"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # igloohome - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

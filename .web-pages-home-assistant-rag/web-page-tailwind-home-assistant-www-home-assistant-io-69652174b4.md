@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tailwind"
+final_url: "https://www.home-assistant.io/integrations/tailwind"
+canonical_url: "https://www.home-assistant.io/integrations/tailwind/"
+source_handle: "web:www-home-assistant-io:69652174b48d"
+source_section: "integrations-tailwind"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1c6096a653bc4438d75c996933fc3f43d5a277415d4239ce575d6c4a7d916880"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Tailwind - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

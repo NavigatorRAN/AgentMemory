@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homeassistant_connect_zbt2"
+final_url: "https://www.home-assistant.io/integrations/homeassistant_connect_zbt2"
+canonical_url: "https://www.home-assistant.io/integrations/homeassistant_connect_zbt2/"
+source_handle: "web:www-home-assistant-io:a0808a73cb72"
+source_section: "integrations-homeassistant-connect-zbt2"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "40d78ce13ccf35100be0562869cb7877566cecf86708d1b07ecfa8e72a9660fe"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Connect ZBT-2 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

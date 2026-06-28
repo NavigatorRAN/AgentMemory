@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/radarr"
+final_url: "https://www.home-assistant.io/integrations/radarr"
+canonical_url: "https://www.home-assistant.io/integrations/radarr/"
+source_handle: "web:www-home-assistant-io:367711d235e9"
+source_section: "integrations-radarr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "701cb0ff0c53d9ac26c04b1adb64a186d34c28c778a6f64f447ad1899ead7082"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Radarr - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

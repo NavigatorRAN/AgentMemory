@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mystrom"
+final_url: "https://www.home-assistant.io/integrations/mystrom"
+canonical_url: "https://www.home-assistant.io/integrations/mystrom/"
+source_handle: "web:www-home-assistant-io:93074d953d37"
+source_section: "integrations-mystrom"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7fb017e1704f6af31ce38bdae3317d40de0541fa1ee4275dbe1dee1b165867df"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # myStrom - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

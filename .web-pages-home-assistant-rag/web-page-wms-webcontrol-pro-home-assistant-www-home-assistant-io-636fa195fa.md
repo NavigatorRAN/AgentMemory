@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wmspro"
+final_url: "https://www.home-assistant.io/integrations/wmspro"
+canonical_url: "https://www.home-assistant.io/integrations/wmspro/"
+source_handle: "web:www-home-assistant-io:636fa195fa05"
+source_section: "integrations-wmspro"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "04345e713307b48d67e6abc1cf937776ae32a5abfddd7e2c583faf24811eb58a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WMS WebControl pro - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

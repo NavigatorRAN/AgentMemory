@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eufy"
+final_url: "https://www.home-assistant.io/integrations/eufy"
+canonical_url: "https://www.home-assistant.io/integrations/eufy/"
+source_handle: "web:www-home-assistant-io:ed30443c7b22"
+source_section: "integrations-eufy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "96f7eae022ecccb970b1641a0075372b39e1b3dd268ea82584e83111ad83bc91"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EufyHome - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

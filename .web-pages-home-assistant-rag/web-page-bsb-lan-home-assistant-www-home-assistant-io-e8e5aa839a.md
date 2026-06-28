@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bsblan"
+final_url: "https://www.home-assistant.io/integrations/bsblan"
+canonical_url: "https://www.home-assistant.io/integrations/bsblan/"
+source_handle: "web:www-home-assistant-io:e8e5aa839a66"
+source_section: "integrations-bsblan"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "23c4d5de7ed90c3308bf71968aae343891860ed7ec193e6241545e4d74bac4a4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # BSB-LAN - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

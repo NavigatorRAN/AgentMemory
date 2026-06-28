@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ruckus_unleashed"
+final_url: "https://www.home-assistant.io/integrations/ruckus_unleashed"
+canonical_url: "https://www.home-assistant.io/integrations/ruckus_unleashed/"
+source_handle: "web:www-home-assistant-io:71689160877c"
+source_section: "integrations-ruckus-unleashed"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "57c9d62aa1fafe103c7cbcd1222c93376176d5110c5115d584bff64155d08f31"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ruckus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

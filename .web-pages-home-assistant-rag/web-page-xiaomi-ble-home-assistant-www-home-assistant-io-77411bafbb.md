@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/xiaomi_ble"
+final_url: "https://www.home-assistant.io/integrations/xiaomi_ble"
+canonical_url: "https://www.home-assistant.io/integrations/xiaomi_ble/"
+source_handle: "web:www-home-assistant-io:77411bafbb29"
+source_section: "integrations-xiaomi-ble"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "68e8d9345d7e1dd23471af08fd69b5576d661386b015cca4528a8ae0586dcc4d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Xiaomi BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_tasks"
+final_url: "https://www.home-assistant.io/integrations/google_tasks"
+canonical_url: "https://www.home-assistant.io/integrations/google_tasks/"
+source_handle: "web:www-home-assistant-io:464ddac576e7"
+source_section: "integrations-google-tasks"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1a449b20bbed29bac654ea1a6a41e5ce28454af2c417ca4fba134ca61400f79c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Tasks - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

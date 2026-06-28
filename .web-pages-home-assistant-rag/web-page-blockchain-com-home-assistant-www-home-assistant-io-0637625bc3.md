@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/blockchain"
+final_url: "https://www.home-assistant.io/integrations/blockchain"
+canonical_url: "https://www.home-assistant.io/integrations/blockchain/"
+source_handle: "web:www-home-assistant-io:0637625bc3df"
+source_section: "integrations-blockchain"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cd2845ed9ae327cde0a9d081c91730e079a045cf556dba3a6974e6d703f9d297"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Blockchain.com - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

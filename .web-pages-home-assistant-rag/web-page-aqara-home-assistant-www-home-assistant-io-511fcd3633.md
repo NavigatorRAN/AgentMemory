@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aqara"
+final_url: "https://www.home-assistant.io/integrations/aqara"
+canonical_url: "https://www.home-assistant.io/integrations/aqara/"
+source_handle: "web:www-home-assistant-io:511fcd36334e"
+source_section: "integrations-aqara"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28e76ac240e0ff25770f343ea219a11ee19d50a27836727336a0b57dad8a569f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aqara - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

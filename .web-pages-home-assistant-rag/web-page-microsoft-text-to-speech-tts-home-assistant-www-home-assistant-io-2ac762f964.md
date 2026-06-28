@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/microsoft"
+final_url: "https://www.home-assistant.io/integrations/microsoft"
+canonical_url: "https://www.home-assistant.io/integrations/microsoft/"
+source_handle: "web:www-home-assistant-io:2ac762f9646f"
+source_section: "integrations-microsoft"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c80d3454ad78fc2471ac75414e613f532f0745253e6317bb15b43ade1f793066"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Microsoft Text-to-Speech (TTS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

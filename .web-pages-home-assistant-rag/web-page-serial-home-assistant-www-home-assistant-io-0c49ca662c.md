@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/serial"
+final_url: "https://www.home-assistant.io/integrations/serial"
+canonical_url: "https://www.home-assistant.io/integrations/serial/"
+source_handle: "web:www-home-assistant-io:0c49ca662c1c"
+source_section: "integrations-serial"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ef84499d871de360dca3e185205264b26ff54b4177e8223d50c6f32e0db22521"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Serial - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

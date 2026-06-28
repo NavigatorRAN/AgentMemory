@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ffmpeg"
+final_url: "https://www.home-assistant.io/integrations/ffmpeg"
+canonical_url: "https://www.home-assistant.io/integrations/ffmpeg/"
+source_handle: "web:www-home-assistant-io:0177ef6da91c"
+source_section: "integrations-ffmpeg"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c5c196476f2d7c433155e276a437f160e4086b3cbe63d316947a21e2d48a773b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FFmpeg - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/prometheus"
+final_url: "https://www.home-assistant.io/integrations/prometheus"
+canonical_url: "https://www.home-assistant.io/integrations/prometheus/"
+source_handle: "web:www-home-assistant-io:925f1d1457a8"
+source_section: "integrations-prometheus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9dd906ed1472d65d7602b671798f3e072315770665799c356a462b518c3da928"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Prometheus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

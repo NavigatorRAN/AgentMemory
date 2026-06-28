@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sabnzbd"
+final_url: "https://www.home-assistant.io/integrations/sabnzbd"
+canonical_url: "https://www.home-assistant.io/integrations/sabnzbd/"
+source_handle: "web:www-home-assistant-io:25177ab31954"
+source_section: "integrations-sabnzbd"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9914bb41e3feac6d6295ea63388ddd3511fe175db706a7e21c8a793e7579c4e6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SABnzbd - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

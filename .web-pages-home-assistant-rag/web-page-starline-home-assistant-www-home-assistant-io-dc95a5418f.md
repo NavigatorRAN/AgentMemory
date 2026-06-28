@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/starline"
+final_url: "https://www.home-assistant.io/integrations/starline"
+canonical_url: "https://www.home-assistant.io/integrations/starline/"
+source_handle: "web:www-home-assistant-io:dc95a5418f42"
+source_section: "integrations-starline"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2af671c3fe847b78bbf05257aa1c0364673e5c8264fb649921882ab598e25031"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # StarLine - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

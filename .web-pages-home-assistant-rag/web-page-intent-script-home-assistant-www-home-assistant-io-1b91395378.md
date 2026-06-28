@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/intent_script"
+final_url: "https://www.home-assistant.io/integrations/intent_script"
+canonical_url: "https://www.home-assistant.io/integrations/intent_script/"
+source_handle: "web:www-home-assistant-io:1b91395378c1"
+source_section: "integrations-intent-script"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aed21018f3ea4c5d8040ada8a13a290806d2271e6ad93d3d016b517eef21e93a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Intent Script - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

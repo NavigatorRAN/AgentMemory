@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sql"
+final_url: "https://www.home-assistant.io/integrations/sql"
+canonical_url: "https://www.home-assistant.io/integrations/sql/"
+source_handle: "web:www-home-assistant-io:3fc7f457d100"
+source_section: "integrations-sql"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6ad844b0b3c8841875fdfa01e946b79f7deafa9c2a3e5039581151a45f195c8d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # SQL - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/acomax"
+final_url: "https://www.home-assistant.io/integrations/acomax"
+canonical_url: "https://www.home-assistant.io/integrations/acomax/"
+source_handle: "web:www-home-assistant-io:46714738122b"
+source_section: "integrations-acomax"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d2bc77d3f1695878adbf19c9e2a47d232466404c1d847dbb603c92081b4599f8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Acomax - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

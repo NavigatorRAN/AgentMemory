@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switchmate"
+final_url: "https://www.home-assistant.io/integrations/switchmate"
+canonical_url: "https://www.home-assistant.io/integrations/switchmate/"
+source_handle: "web:www-home-assistant-io:a3f2986946fa"
+source_section: "integrations-switchmate"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b56cc38b16b1e3904c34c2b32f87e5db23bc22cbf8a7927e6a0d71d7d5ae01cd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Switchmate SimplySmart Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_drive"
+final_url: "https://www.home-assistant.io/integrations/google_drive"
+canonical_url: "https://www.home-assistant.io/integrations/google_drive/"
+source_handle: "web:www-home-assistant-io:6333ebcdffc2"
+source_section: "integrations-google-drive"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a5185abe18dc892dcb953a7f29c2d5e42b44722918ac645a466402323ea32fc6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Drive - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

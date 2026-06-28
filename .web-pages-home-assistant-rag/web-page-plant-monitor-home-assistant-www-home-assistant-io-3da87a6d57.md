@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/plant"
+final_url: "https://www.home-assistant.io/integrations/plant"
+canonical_url: "https://www.home-assistant.io/integrations/plant/"
+source_handle: "web:www-home-assistant-io:3da87a6d57dd"
+source_section: "integrations-plant"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "62d1296f6d5f58f0cf5d0bc2a19830f07a5a6162d3728be935211bc397791d37"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Plant Monitor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

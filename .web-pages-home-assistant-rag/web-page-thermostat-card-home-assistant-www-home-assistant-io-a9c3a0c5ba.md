@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/thermostat"
+final_url: "https://www.home-assistant.io/dashboards/thermostat"
+canonical_url: "https://www.home-assistant.io/dashboards/thermostat/"
+source_handle: "web:www-home-assistant-io:a9c3a0c5bad3"
+source_section: "dashboards-thermostat"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "40fc86ad807f12d524057038f989db49c462d9e6b636859341bbc54bbb80aa74"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Thermostat card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

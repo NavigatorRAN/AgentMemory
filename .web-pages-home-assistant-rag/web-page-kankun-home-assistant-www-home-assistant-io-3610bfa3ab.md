@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kankun"
+final_url: "https://www.home-assistant.io/integrations/kankun"
+canonical_url: "https://www.home-assistant.io/integrations/kankun/"
+source_handle: "web:www-home-assistant-io:3610bfa3abbf"
+source_section: "integrations-kankun"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1bff4f00fd03ae0a25baa7f28960227b87769b654249e43503f8416d1990b487"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Kankun - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

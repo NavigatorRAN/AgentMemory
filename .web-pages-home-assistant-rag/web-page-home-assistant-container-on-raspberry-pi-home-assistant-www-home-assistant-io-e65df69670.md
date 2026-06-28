@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/installation/raspberrypi-other"
+final_url: "https://www.home-assistant.io/installation/raspberrypi-other"
+canonical_url: "https://www.home-assistant.io/installation/raspberrypi-other/"
+source_handle: "web:www-home-assistant-io:e65df6967058"
+source_section: "installation-raspberrypi-other"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a04a16c23b17eaa600d658e57e1fe2cdfd851347287aeba406829f6aab6903fc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Home Assistant Container on Raspberry Pi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

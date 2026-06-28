@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/melnor"
+final_url: "https://www.home-assistant.io/integrations/melnor"
+canonical_url: "https://www.home-assistant.io/integrations/melnor/"
+source_handle: "web:www-home-assistant-io:5e0b4b213b66"
+source_section: "integrations-melnor"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f76daa0c485a5d618cafeb360ae5617fc5e739d58b585a261b7402754db8621c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Melnor Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

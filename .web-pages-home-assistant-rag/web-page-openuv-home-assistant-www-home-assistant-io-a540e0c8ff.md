@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openuv"
+final_url: "https://www.home-assistant.io/integrations/openuv"
+canonical_url: "https://www.home-assistant.io/integrations/openuv/"
+source_handle: "web:www-home-assistant-io:a540e0c8ff95"
+source_section: "integrations-openuv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b256aacae6838352f3c3e92cc381d393286d5b9ad2bab6cb10d5ebb48f631d1d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenUV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

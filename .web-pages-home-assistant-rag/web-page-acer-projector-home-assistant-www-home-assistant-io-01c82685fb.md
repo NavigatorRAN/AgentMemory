@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/acer_projector"
+final_url: "https://www.home-assistant.io/integrations/acer_projector"
+canonical_url: "https://www.home-assistant.io/integrations/acer_projector/"
+source_handle: "web:www-home-assistant-io:01c82685fb8f"
+source_section: "integrations-acer-projector"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cb79a7fe61ff5fcfe81c03975bf6496124c9b458b5035873b03acf51365531ff"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Acer Projector - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

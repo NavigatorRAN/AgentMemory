@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wallbox"
+final_url: "https://www.home-assistant.io/integrations/wallbox"
+canonical_url: "https://www.home-assistant.io/integrations/wallbox/"
+source_handle: "web:www-home-assistant-io:c466824c9b4a"
+source_section: "integrations-wallbox"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bcb9d0ba3d550565a44cb54e07418ee3d42cc7284ef146ff0ecde95f070b3fcb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Wallbox - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

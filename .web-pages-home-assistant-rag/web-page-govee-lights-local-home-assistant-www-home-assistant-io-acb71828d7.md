@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/govee_light_local"
+final_url: "https://www.home-assistant.io/integrations/govee_light_local"
+canonical_url: "https://www.home-assistant.io/integrations/govee_light_local/"
+source_handle: "web:www-home-assistant-io:acb71828d71a"
+source_section: "integrations-govee-light-local"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb8af1545f761c98fe5643754b67ba2a8c8e71b22633b1b30d82883ab82453b6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Govee lights local - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/constructa"
+final_url: "https://www.home-assistant.io/integrations/constructa"
+canonical_url: "https://www.home-assistant.io/integrations/constructa/"
+source_handle: "web:www-home-assistant-io:ba58f3409cda"
+source_section: "integrations-constructa"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e73022687a999ff90645ad92eec694e19f9ee0978146054651b197b4ede1f3f3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Constructa - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

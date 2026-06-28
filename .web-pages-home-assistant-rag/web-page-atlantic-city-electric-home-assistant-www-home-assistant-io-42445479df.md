@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/atlanticcityelectric"
+final_url: "https://www.home-assistant.io/integrations/atlanticcityelectric"
+canonical_url: "https://www.home-assistant.io/integrations/atlanticcityelectric/"
+source_handle: "web:www-home-assistant-io:42445479df42"
+source_section: "integrations-atlanticcityelectric"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4d1ab0803bbc9ebdeb8d211523a640b4a3d3e25835fbb69424097f25ec6fe5ff"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Atlantic City Electric - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

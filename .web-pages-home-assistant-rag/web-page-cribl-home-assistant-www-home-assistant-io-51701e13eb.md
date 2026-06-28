@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cribl"
+final_url: "https://www.home-assistant.io/integrations/cribl"
+canonical_url: "https://www.home-assistant.io/integrations/cribl/"
+source_handle: "web:www-home-assistant-io:51701e13eb52"
+source_section: "integrations-cribl"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f19242c457d4d4a9382bd2295ca18ce9e2c2951408479ff94db761ea9cc2b58d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Cribl - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

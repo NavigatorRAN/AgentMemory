@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ghost"
+final_url: "https://www.home-assistant.io/integrations/ghost"
+canonical_url: "https://www.home-assistant.io/integrations/ghost/"
+source_handle: "web:www-home-assistant-io:a2143defc886"
+source_section: "integrations-ghost"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ed8fa0435b3eb9d70023d2c8ed4d1ee061c3aea296bfed7bce4da8e451b9d1a2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ghost - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

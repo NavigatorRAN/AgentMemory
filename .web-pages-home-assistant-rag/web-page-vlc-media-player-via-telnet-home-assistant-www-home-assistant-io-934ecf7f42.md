@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vlc_telnet"
+final_url: "https://www.home-assistant.io/integrations/vlc_telnet"
+canonical_url: "https://www.home-assistant.io/integrations/vlc_telnet/"
+source_handle: "web:www-home-assistant-io:934ecf7f4229"
+source_section: "integrations-vlc-telnet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "beeb24d7724b8b07adbf65d8bfc0da24c979dd74927cffa2fc09a31d1da936cf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # VLC media player via Telnet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

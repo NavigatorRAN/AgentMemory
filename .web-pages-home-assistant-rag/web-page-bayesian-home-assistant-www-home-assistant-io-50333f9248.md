@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bayesian"
+final_url: "https://www.home-assistant.io/integrations/bayesian"
+canonical_url: "https://www.home-assistant.io/integrations/bayesian/"
+source_handle: "web:www-home-assistant-io:50333f9248dc"
+source_section: "integrations-bayesian"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b7c9401b1bd9ede2f8a0fa9cfad4ebffae5ec4ed9a159ebfcf32611cf1b01ef6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Bayesian - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

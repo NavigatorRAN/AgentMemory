@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/flipr"
+final_url: "https://www.home-assistant.io/integrations/flipr"
+canonical_url: "https://www.home-assistant.io/integrations/flipr/"
+source_handle: "web:www-home-assistant-io:e97debe66164"
+source_section: "integrations-flipr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8f41ef1390b38ad8c421470dc13dcaaf636ef77295a9b3bf45253f209ea28f08"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Flipr - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

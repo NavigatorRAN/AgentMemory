@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fjaraskupan"
+final_url: "https://www.home-assistant.io/integrations/fjaraskupan"
+canonical_url: "https://www.home-assistant.io/integrations/fjaraskupan/"
+source_handle: "web:www-home-assistant-io:082ecc0b50af"
+source_section: "integrations-fjaraskupan"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5a70f5f84f4d7cc36a6ae4cddfcf2360d1505dce0569675667c9cc723cf96b50"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fjäråskupan - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

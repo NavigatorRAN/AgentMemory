@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pglab"
+final_url: "https://www.home-assistant.io/integrations/pglab"
+canonical_url: "https://www.home-assistant.io/integrations/pglab/"
+source_handle: "web:www-home-assistant-io:6bbd03e96d2e"
+source_section: "integrations-pglab"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c5582520f0f3d781790cb0b52d5075e77cf9516a6b9e4a031fdc003de22c9753"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PG LAB Electronics - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

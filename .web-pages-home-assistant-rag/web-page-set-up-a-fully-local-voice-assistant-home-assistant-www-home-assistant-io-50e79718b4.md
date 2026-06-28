@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/voice_remote_local_assistant"
+final_url: "https://www.home-assistant.io/voice_control/voice_remote_local_assistant"
+canonical_url: "https://www.home-assistant.io/voice_control/voice_remote_local_assistant/"
+source_handle: "web:www-home-assistant-io:50e79718b431"
+source_section: "voice-control-voice-remote-local-assistant"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ff4dee6632995bd969a456c0adfbddaf5c1e0b4fe92a5e9ff55c1578cea75d5c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Set up a fully local voice assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

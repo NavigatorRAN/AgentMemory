@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bond"
+final_url: "https://www.home-assistant.io/integrations/bond"
+canonical_url: "https://www.home-assistant.io/integrations/bond/"
+source_handle: "web:www-home-assistant-io:54418d184fbd"
+source_section: "integrations-bond"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4d1a017a916ab17f755c692d02c4717f0620071236f89f84801afaf09766bc39"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bond - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

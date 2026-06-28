@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/heading"
+final_url: "https://www.home-assistant.io/dashboards/heading"
+canonical_url: "https://www.home-assistant.io/dashboards/heading/"
+source_handle: "web:www-home-assistant-io:0116c37dfa96"
+source_section: "dashboards-heading"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d107c63fd509a832e73d424d45f471c0dd3628d323e8ca649c89c8fcb9493be2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Heading card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

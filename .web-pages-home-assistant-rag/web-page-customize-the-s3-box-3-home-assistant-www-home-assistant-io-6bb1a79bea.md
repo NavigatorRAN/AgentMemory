@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/s3-box-customize"
+final_url: "https://www.home-assistant.io/voice_control/s3-box-customize"
+canonical_url: "https://www.home-assistant.io/voice_control/s3-box-customize/"
+source_handle: "web:www-home-assistant-io:6bb1a79bea70"
+source_section: "voice-control-s3-box-customize"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9ed9f5fe908b5d835a98e0471c342178979da202d86f152c08ce5e48966416dc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Customize the S3-BOX-3 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

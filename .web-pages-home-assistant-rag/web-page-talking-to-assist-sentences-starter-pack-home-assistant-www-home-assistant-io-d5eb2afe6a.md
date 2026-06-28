@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/builtin_sentences"
+final_url: "https://www.home-assistant.io/voice_control/builtin_sentences"
+canonical_url: "https://www.home-assistant.io/voice_control/builtin_sentences/"
+source_handle: "web:www-home-assistant-io:d5eb2afe6a4a"
+source_section: "voice-control-builtin-sentences"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb56e1711866d52b6b01418b091c5e4c645023e1196428498aa9304d3d318490"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Talking to Assist - Sentences starter pack - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

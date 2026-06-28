@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cloud"
+final_url: "https://www.home-assistant.io/integrations/cloud"
+canonical_url: "https://www.home-assistant.io/integrations/cloud/"
+source_handle: "web:www-home-assistant-io:3249ea2b3aa7"
+source_section: "integrations-cloud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bac5acb1727081a0204ff6de170e566e3cbb30c0d8b90703378f7d8adcc8fdee"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

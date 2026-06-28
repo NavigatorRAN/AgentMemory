@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/idrive_e2"
+final_url: "https://www.home-assistant.io/integrations/idrive_e2"
+canonical_url: "https://www.home-assistant.io/integrations/idrive_e2/"
+source_handle: "web:www-home-assistant-io:9258e5f50bc3"
+source_section: "integrations-idrive-e2"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "882e040524077667fd17879f795497c360fc470589e1e3c911effbfdc37c1bc6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IDrive e2 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/watttime"
+final_url: "https://www.home-assistant.io/integrations/watttime"
+canonical_url: "https://www.home-assistant.io/integrations/watttime/"
+source_handle: "web:www-home-assistant-io:14fa0e2068c0"
+source_section: "integrations-watttime"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28f2915329cf3cde86515d0bd82cca0acef110a7d1b9671c4b07149116d2df4d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WattTime - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

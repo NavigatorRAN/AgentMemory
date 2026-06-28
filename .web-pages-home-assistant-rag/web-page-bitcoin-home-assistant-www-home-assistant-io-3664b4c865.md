@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bitcoin"
+final_url: "https://www.home-assistant.io/integrations/bitcoin"
+canonical_url: "https://www.home-assistant.io/integrations/bitcoin/"
+source_handle: "web:www-home-assistant-io:3664b4c86502"
+source_section: "integrations-bitcoin"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e11a40df595f524811de5d15be99ebda082ebab277f29d87a19069f1645e2efa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bitcoin - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

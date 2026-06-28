@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/time.mqtt"
+final_url: "https://www.home-assistant.io/integrations/time.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/time.mqtt/"
+source_handle: "web:www-home-assistant-io:41e050427a3f"
+source_section: "integrations-time-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "57115ad183ed3c46b528a120c84fb6307698f2db7e90364688f4c943b0921e22"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Time - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

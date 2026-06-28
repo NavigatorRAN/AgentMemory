@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/azure_storage"
+final_url: "https://www.home-assistant.io/integrations/azure_storage"
+canonical_url: "https://www.home-assistant.io/integrations/azure_storage/"
+source_handle: "web:www-home-assistant-io:8fc2b2e8a5e1"
+source_section: "integrations-azure-storage"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fa35900562d2be3ebc5cf796568d621005e76c487ea1301be864a10cc5206c2c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Azure Storage - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

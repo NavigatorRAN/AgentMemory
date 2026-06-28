@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/problems-with-dependencies"
+final_url: "https://www.home-assistant.io/faq/problems-with-dependencies"
+canonical_url: "https://www.home-assistant.io/faq/problems-with-dependencies/"
+source_handle: "web:www-home-assistant-io:4bb12b922d13"
+source_section: "faq-problems-with-dependencies"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "33881bb2140f6ab7e0c9a65311f624de90ea7942e9f020fb3a6978f93e11151c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Problems with dependencies - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

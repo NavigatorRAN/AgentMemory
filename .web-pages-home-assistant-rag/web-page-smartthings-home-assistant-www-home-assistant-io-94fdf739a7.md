@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smartthings"
+final_url: "https://www.home-assistant.io/integrations/smartthings"
+canonical_url: "https://www.home-assistant.io/integrations/smartthings/"
+source_handle: "web:www-home-assistant-io:94fdf739a728"
+source_section: "integrations-smartthings"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5db3bda509bedde330664dbe5f1b6cbae356c336063667b43606826de38ac8a2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SmartThings - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

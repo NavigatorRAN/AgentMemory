@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/onedrive"
+final_url: "https://www.home-assistant.io/integrations/onedrive"
+canonical_url: "https://www.home-assistant.io/integrations/onedrive/"
+source_handle: "web:www-home-assistant-io:413f7aba93de"
+source_section: "integrations-onedrive"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d56e700b19da7477d9957054f3eea03f72e047d3a407df680615b74df9638c3f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OneDrive - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

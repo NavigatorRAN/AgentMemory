@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sky_remote"
+final_url: "https://www.home-assistant.io/integrations/sky_remote"
+canonical_url: "https://www.home-assistant.io/integrations/sky_remote/"
+source_handle: "web:www-home-assistant-io:cc0a92ca3b7a"
+source_section: "integrations-sky-remote"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9befcaea18a18b1bc182f0c9da1e0289f256d1d793dbb7d87932f76f6b1f5d34"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sky Remote Control - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nuheat"
+final_url: "https://www.home-assistant.io/integrations/nuheat"
+canonical_url: "https://www.home-assistant.io/integrations/nuheat/"
+source_handle: "web:www-home-assistant-io:3759bd0dc38c"
+source_section: "integrations-nuheat"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c06fe2e6493351ce8f73df894f7472aeae17833a93f969086acecbcd6f1156ca"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # NuHeat - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

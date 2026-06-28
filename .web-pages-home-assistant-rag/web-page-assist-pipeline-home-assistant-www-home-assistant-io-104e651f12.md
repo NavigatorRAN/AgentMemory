@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/assist_pipeline"
+final_url: "https://www.home-assistant.io/integrations/assist_pipeline"
+canonical_url: "https://www.home-assistant.io/integrations/assist_pipeline/"
+source_handle: "web:www-home-assistant-io:104e651f128f"
+source_section: "integrations-assist-pipeline"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "258d5f8086b379b84b377deb99c99144c0f3763393da86870aa1469d0717c3b7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Assist pipeline - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

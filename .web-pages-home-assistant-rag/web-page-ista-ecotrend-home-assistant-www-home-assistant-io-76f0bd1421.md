@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ista_ecotrend"
+final_url: "https://www.home-assistant.io/integrations/ista_ecotrend"
+canonical_url: "https://www.home-assistant.io/integrations/ista_ecotrend/"
+source_handle: "web:www-home-assistant-io:76f0bd142129"
+source_section: "integrations-ista-ecotrend"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "102e69877c30c8eaa1ceb5993548f17b75c9141166223b2172d59ba2e016257d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # ista EcoTrend - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

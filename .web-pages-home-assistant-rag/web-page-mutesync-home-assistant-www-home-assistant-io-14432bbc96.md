@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mutesync"
+final_url: "https://www.home-assistant.io/integrations/mutesync"
+canonical_url: "https://www.home-assistant.io/integrations/mutesync/"
+source_handle: "web:www-home-assistant-io:14432bbc963f"
+source_section: "integrations-mutesync"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "37c18ae19d3d40e69dcb56d897ebd0d8af96051ca20f74a27d9384ba707fa7cb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # mutesync - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

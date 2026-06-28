@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iaqualink"
+final_url: "https://www.home-assistant.io/integrations/iaqualink"
+canonical_url: "https://www.home-assistant.io/integrations/iaqualink/"
+source_handle: "web:www-home-assistant-io:60aa177a58f2"
+source_section: "integrations-iaqualink"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a507c4beaa483fee54e8c1a983b57d21b4cb6abf48770f27790a3908a06f8bf1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Jandy iAquaLink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

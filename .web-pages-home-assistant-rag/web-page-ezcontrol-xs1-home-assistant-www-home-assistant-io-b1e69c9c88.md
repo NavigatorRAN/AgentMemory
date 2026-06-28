@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/xs1"
+final_url: "https://www.home-assistant.io/integrations/xs1"
+canonical_url: "https://www.home-assistant.io/integrations/xs1/"
+source_handle: "web:www-home-assistant-io:b1e69c9c881a"
+source_section: "integrations-xs1"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cb2c706c29536619520ae7842fa94365a380947b2a521fe8319e53076b5c3298"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EZcontrol XS1 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

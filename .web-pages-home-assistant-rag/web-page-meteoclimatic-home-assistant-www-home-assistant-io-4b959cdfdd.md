@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/meteoclimatic"
+final_url: "https://www.home-assistant.io/integrations/meteoclimatic"
+canonical_url: "https://www.home-assistant.io/integrations/meteoclimatic/"
+source_handle: "web:www-home-assistant-io:4b959cdfdd9c"
+source_section: "integrations-meteoclimatic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5f8be640fc282030b085dd06baacd6e29aa1e34abe1491113e5e25ca7ac84cd7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Meteoclimatic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

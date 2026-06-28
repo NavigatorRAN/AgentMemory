@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/efergy"
+final_url: "https://www.home-assistant.io/integrations/efergy"
+canonical_url: "https://www.home-assistant.io/integrations/efergy/"
+source_handle: "web:www-home-assistant-io:a90e8bfa32ac"
+source_section: "integrations-efergy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a3f81331a4b555adc8cef8ce4874e03afaed3852e844547179cede9cbc8bbea1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Efergy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs"
+final_url: "https://www.home-assistant.io/docs"
+canonical_url: "https://www.home-assistant.io/docs/"
+source_handle: "web:www-home-assistant-io:2442fe405ba3"
+source_section: "docs"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "965c1fa2634dc376bbf29661b97bbf257b3a9e81ca55d31a5ca7568e2f33af9c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Home Assistant Docs
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

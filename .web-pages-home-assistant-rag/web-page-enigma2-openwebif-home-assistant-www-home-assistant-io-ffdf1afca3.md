@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/enigma2"
+final_url: "https://www.home-assistant.io/integrations/enigma2"
+canonical_url: "https://www.home-assistant.io/integrations/enigma2/"
+source_handle: "web:www-home-assistant-io:ffdf1afca31f"
+source_section: "integrations-enigma2"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c2f431dee5d3b2dbbb85fe53c32bd957d45a9aea51aa75cf44ce69aa48f71a1f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Enigma2 (OpenWebif) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

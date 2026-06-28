@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/ha-vs-hassio"
+final_url: "https://www.home-assistant.io/faq/ha-vs-hassio"
+canonical_url: "https://www.home-assistant.io/faq/ha-vs-hassio/"
+source_handle: "web:www-home-assistant-io:aa4265952df7"
+source_section: "faq-ha-vs-hassio"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3a712b5919477173699ad51d78c09abeca508445e4dda3860e16e6e83017120e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # What is the difference between Home Assistant Operating System and Home Assistant Container? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

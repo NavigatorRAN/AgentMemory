@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/demo"
+final_url: "https://www.home-assistant.io/integrations/demo"
+canonical_url: "https://www.home-assistant.io/integrations/demo/"
+source_handle: "web:www-home-assistant-io:dfb45b2c564a"
+source_section: "integrations-demo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "57969551dda856aeb78d4361494d5e4510cfcaa8aa2ea9e957b95618d60289bc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Demo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

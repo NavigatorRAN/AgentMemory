@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zhong_hong"
+final_url: "https://www.home-assistant.io/integrations/zhong_hong"
+canonical_url: "https://www.home-assistant.io/integrations/zhong_hong/"
+source_handle: "web:www-home-assistant-io:2183d2bf07da"
+source_section: "integrations-zhong-hong"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0d283a2ad07ab764c6861469824e54f2ecad4b194dad4f519c181110a793cd3a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ZhongHong - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/norway_air"
+final_url: "https://www.home-assistant.io/integrations/norway_air"
+canonical_url: "https://www.home-assistant.io/integrations/norway_air/"
+source_handle: "web:www-home-assistant-io:8123fe16702e"
+source_section: "integrations-norway-air"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fab104c032120e45f18f757e2026bbc0099cef0a3d27e8848b688e7617388d38"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Om Luftkvalitet i Norge (Norway Air) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

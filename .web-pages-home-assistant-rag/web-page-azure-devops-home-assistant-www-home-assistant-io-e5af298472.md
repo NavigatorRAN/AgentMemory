@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/azure_devops"
+final_url: "https://www.home-assistant.io/integrations/azure_devops"
+canonical_url: "https://www.home-assistant.io/integrations/azure_devops/"
+source_handle: "web:www-home-assistant-io:e5af298472f3"
+source_section: "integrations-azure-devops"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8746e15c577775b6f8c48a971edc16149f001f95fcb64c4caa5e6af23df3ab9b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Azure DevOps - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

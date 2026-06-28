@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/facebook"
+final_url: "https://www.home-assistant.io/integrations/facebook"
+canonical_url: "https://www.home-assistant.io/integrations/facebook/"
+source_handle: "web:www-home-assistant-io:34692cb9c7d0"
+source_section: "integrations-facebook"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "837d90c2af048a7ff90d361cfeb114ae5dc3b6a97d2060bec7c3271d4b998921"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Facebook Messenger - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

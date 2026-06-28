@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/plugwise"
+final_url: "https://www.home-assistant.io/integrations/plugwise"
+canonical_url: "https://www.home-assistant.io/integrations/plugwise/"
+source_handle: "web:www-home-assistant-io:19063be997f7"
+source_section: "integrations-plugwise"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d05fad56f18b3caa0411137cb43a310b75e5326687a6f68600e3814273cef032"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Plugwise - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

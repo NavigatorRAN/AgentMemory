@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/splunk"
+final_url: "https://www.home-assistant.io/integrations/splunk"
+canonical_url: "https://www.home-assistant.io/integrations/splunk/"
+source_handle: "web:www-home-assistant-io:fc8086654437"
+source_section: "integrations-splunk"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dc81fbeeb1d81089227f86c8ba00bad2136e9dbeb2d7e55527d8bdf1218e8300"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Splunk - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rest"
+final_url: "https://www.home-assistant.io/integrations/rest"
+canonical_url: "https://www.home-assistant.io/integrations/rest/"
+source_handle: "web:www-home-assistant-io:0138926b6bc7"
+source_section: "integrations-rest"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8d9e14d94d0240436ca1b6f3e5261dddef93c3781920afee396ad9d2321a61f0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RESTful - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

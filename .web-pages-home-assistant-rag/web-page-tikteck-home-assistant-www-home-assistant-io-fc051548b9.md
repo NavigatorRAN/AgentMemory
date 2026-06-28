@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tikteck"
+final_url: "https://www.home-assistant.io/integrations/tikteck"
+canonical_url: "https://www.home-assistant.io/integrations/tikteck/"
+source_handle: "web:www-home-assistant-io:fc051548b9fb"
+source_section: "integrations-tikteck"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7798c7747d8f0040499cc6747c4eb50407ed5ebf8049be8103c4cc9a14bee116"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tikteck - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

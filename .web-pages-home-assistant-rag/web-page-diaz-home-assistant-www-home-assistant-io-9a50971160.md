@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/diaz"
+final_url: "https://www.home-assistant.io/integrations/diaz"
+canonical_url: "https://www.home-assistant.io/integrations/diaz/"
+source_handle: "web:www-home-assistant-io:9a50971160c9"
+source_section: "integrations-diaz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3cfe99fd1b29afaeb11cef7bbfd59cb8eb09f71c63c13dc9764b64d11be5a586"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Diaz - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

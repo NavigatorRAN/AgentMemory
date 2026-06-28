@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alert"
+final_url: "https://www.home-assistant.io/integrations/alert"
+canonical_url: "https://www.home-assistant.io/integrations/alert/"
+source_handle: "web:www-home-assistant-io:892b198fc101"
+source_section: "integrations-alert"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a0c9207c07757a7ffdd1a4d1af46ab0a13f54d2dd74715d2e9b664fa28533bc8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Alert - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

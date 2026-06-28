@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/button"
+final_url: "https://www.home-assistant.io/integrations/button"
+canonical_url: "https://www.home-assistant.io/integrations/button/"
+source_handle: "web:www-home-assistant-io:12b8fa07ceee"
+source_section: "integrations-button"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8a4badeef2e6e8b1ae58053c07b68665a1cb3d9490be994784b061b5e360a8d2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Button - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

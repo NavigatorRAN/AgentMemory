@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/miele"
+final_url: "https://www.home-assistant.io/integrations/miele"
+canonical_url: "https://www.home-assistant.io/integrations/miele/"
+source_handle: "web:www-home-assistant-io:0fd1ae4b5e08"
+source_section: "integrations-miele"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c66a9a45ed0e8787cbdc583905ac5596d25b9da919ed94947fb091ae887696e4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Miele - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

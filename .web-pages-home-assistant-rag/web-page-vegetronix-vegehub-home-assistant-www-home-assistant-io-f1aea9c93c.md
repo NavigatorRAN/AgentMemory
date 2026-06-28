@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vegehub"
+final_url: "https://www.home-assistant.io/integrations/vegehub"
+canonical_url: "https://www.home-assistant.io/integrations/vegehub/"
+source_handle: "web:www-home-assistant-io:f1aea9c93cb0"
+source_section: "integrations-vegehub"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ddb99ef29d0a5b84190964ec4767fe5a5453105a9a3c2683b15dbe9b2267f842"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Vegetronix VegeHub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

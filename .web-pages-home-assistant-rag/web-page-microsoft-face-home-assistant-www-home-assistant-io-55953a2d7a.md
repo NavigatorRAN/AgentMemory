@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/microsoft_face"
+final_url: "https://www.home-assistant.io/integrations/microsoft_face"
+canonical_url: "https://www.home-assistant.io/integrations/microsoft_face/"
+source_handle: "web:www-home-assistant-io:55953a2d7aa2"
+source_section: "integrations-microsoft-face"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a1a32b3ec320c4f77b6c1d32f7d687f6bdf94205e4033ec604ef27c02672733f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Microsoft Face - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

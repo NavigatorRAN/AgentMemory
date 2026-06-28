@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kiwi"
+final_url: "https://www.home-assistant.io/integrations/kiwi"
+canonical_url: "https://www.home-assistant.io/integrations/kiwi/"
+source_handle: "web:www-home-assistant-io:3b942da60488"
+source_section: "integrations-kiwi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "78cecb2c753e755828c3af2884211788e06ee14f3fa3c7cc6ac39c4a3f9436e4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # KIWI - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

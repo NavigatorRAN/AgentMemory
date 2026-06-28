@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tag"
+final_url: "https://www.home-assistant.io/integrations/tag"
+canonical_url: "https://www.home-assistant.io/integrations/tag/"
+source_handle: "web:www-home-assistant-io:87799f092346"
+source_section: "integrations-tag"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e4c93561a1ab25ad0c94893cc9fb3209d55f7a1bdb274448cec73480d2dd52bc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Tags - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/amp_motorization"
+final_url: "https://www.home-assistant.io/integrations/amp_motorization"
+canonical_url: "https://www.home-assistant.io/integrations/amp_motorization/"
+source_handle: "web:www-home-assistant-io:33b6400821b5"
+source_section: "integrations-amp-motorization"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "869bcbb6980e713291060dcf9be4d1924595ff12f3cb96d4569a57ec376dc179"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AMP Motorization - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

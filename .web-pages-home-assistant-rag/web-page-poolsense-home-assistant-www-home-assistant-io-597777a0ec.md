@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/poolsense"
+final_url: "https://www.home-assistant.io/integrations/poolsense"
+canonical_url: "https://www.home-assistant.io/integrations/poolsense/"
+source_handle: "web:www-home-assistant-io:597777a0ec6a"
+source_section: "integrations-poolsense"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "43a02d4a4a4cf46f43056e87a9b398bdd2a6e8a41f8c59effc3745831b8b6edb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PoolSense - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lawn_mower.mqtt"
+final_url: "https://www.home-assistant.io/integrations/lawn_mower.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/lawn_mower.mqtt/"
+source_handle: "web:www-home-assistant-io:c497cb696a0e"
+source_section: "integrations-lawn-mower-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a62d16094b182e2ae4d5e412c0d34e076a53f47dfd0b9e310ffe14ac937cc6b4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT lawn mower - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

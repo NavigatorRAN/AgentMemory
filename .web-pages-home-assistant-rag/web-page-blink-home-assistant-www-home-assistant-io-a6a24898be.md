@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/blink"
+final_url: "https://www.home-assistant.io/integrations/blink"
+canonical_url: "https://www.home-assistant.io/integrations/blink/"
+source_handle: "web:www-home-assistant-io:a6a24898bef6"
+source_section: "integrations-blink"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a048ddd533989ea4a19ab1d9e9884f2477fe64bd88662720f638f4fb04803543"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Blink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

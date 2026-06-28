@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/eltako"
+final_url: "https://www.home-assistant.io/integrations/eltako"
+canonical_url: "https://www.home-assistant.io/integrations/eltako/"
+source_handle: "web:www-home-assistant-io:a407526cd67b"
+source_section: "integrations-eltako"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d02290e0869ad8bdf43129faac2111d56aaa65b5def79016b7db4ac2540a438a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Eltako - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

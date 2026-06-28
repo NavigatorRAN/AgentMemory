@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/go2rtc"
+final_url: "https://www.home-assistant.io/integrations/go2rtc"
+canonical_url: "https://www.home-assistant.io/integrations/go2rtc/"
+source_handle: "web:www-home-assistant-io:8c4ff8e46949"
+source_section: "integrations-go2rtc"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b89a5a19dfdeb1700b8aa1b7397c40ebf4b68b4e8e63730e64f5892d8a100df9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # go2rtc - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

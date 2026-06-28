@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/syncthing"
+final_url: "https://www.home-assistant.io/integrations/syncthing"
+canonical_url: "https://www.home-assistant.io/integrations/syncthing/"
+source_handle: "web:www-home-assistant-io:bf7ae3068ea7"
+source_section: "integrations-syncthing"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6db829c010b9ac8fe4f56b6e303823fb1fd4bb05d46bc49174d3cd2814c42685"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Syncthing - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

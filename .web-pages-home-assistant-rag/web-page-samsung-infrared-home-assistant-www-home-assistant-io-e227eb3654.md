@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/samsung_infrared"
+final_url: "https://www.home-assistant.io/integrations/samsung_infrared"
+canonical_url: "https://www.home-assistant.io/integrations/samsung_infrared/"
+source_handle: "web:www-home-assistant-io:e227eb365496"
+source_section: "integrations-samsung-infrared"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "01fe80c81cc9dec9a69740e99a581a9ecdcd7a3ebd1375f540fb5def1748613d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Samsung Infrared - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

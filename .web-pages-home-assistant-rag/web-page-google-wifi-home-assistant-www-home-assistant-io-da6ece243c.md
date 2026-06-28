@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_wifi"
+final_url: "https://www.home-assistant.io/integrations/google_wifi"
+canonical_url: "https://www.home-assistant.io/integrations/google_wifi/"
+source_handle: "web:www-home-assistant-io:da6ece243ce8"
+source_section: "integrations-google-wifi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c578373f11a668811a303f8c0fb8aaa9ba9ede7cd43e13ad3356c9493ed31b3c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Wifi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

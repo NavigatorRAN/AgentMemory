@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/text"
+final_url: "https://www.home-assistant.io/integrations/text"
+canonical_url: "https://www.home-assistant.io/integrations/text/"
+source_handle: "web:www-home-assistant-io:c37fb2e7db35"
+source_section: "integrations-text"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "39dab58173608d7ec7d52fccf8f1554c766974b05a1c9123076ce0c5ab66b8e3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Text - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

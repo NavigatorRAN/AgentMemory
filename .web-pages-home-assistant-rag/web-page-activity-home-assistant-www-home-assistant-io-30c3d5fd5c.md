@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/logbook"
+final_url: "https://www.home-assistant.io/integrations/logbook"
+canonical_url: "https://www.home-assistant.io/integrations/logbook/"
+source_handle: "web:www-home-assistant-io:30c3d5fd5c5e"
+source_section: "integrations-logbook"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "43f45c8e96f8ed5a194e4b94bac516ca71f14f273da90238c90e22b002a4e2e8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Activity - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

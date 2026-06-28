@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_maps"
+final_url: "https://www.home-assistant.io/integrations/google_maps"
+canonical_url: "https://www.home-assistant.io/integrations/google_maps/"
+source_handle: "web:www-home-assistant-io:7b603a2a4414"
+source_section: "integrations-google-maps"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "34796f18a75535610b1778902cd80fdf4dc5142e7e10e02bf9c4d3e8fdae9ab3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Maps - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

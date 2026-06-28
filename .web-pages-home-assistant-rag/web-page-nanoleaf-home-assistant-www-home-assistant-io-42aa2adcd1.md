@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nanoleaf"
+final_url: "https://www.home-assistant.io/integrations/nanoleaf"
+canonical_url: "https://www.home-assistant.io/integrations/nanoleaf/"
+source_handle: "web:www-home-assistant-io:42aa2adcd1ff"
+source_section: "integrations-nanoleaf"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "90c459009c52de52485525a1ab61d7237cf174c191c5c81f01cddf93ffdbbe5c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nanoleaf - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

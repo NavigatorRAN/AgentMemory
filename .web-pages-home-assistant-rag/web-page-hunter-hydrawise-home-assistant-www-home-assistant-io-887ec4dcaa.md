@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hydrawise"
+final_url: "https://www.home-assistant.io/integrations/hydrawise"
+canonical_url: "https://www.home-assistant.io/integrations/hydrawise/"
+source_handle: "web:www-home-assistant-io:887ec4dcaae3"
+source_section: "integrations-hydrawise"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7eb35f1bbd0d2da33e3ea9e0cf9ac87a4d69d6bb418100c090b5af14f2b24609"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hunter Hydrawise - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

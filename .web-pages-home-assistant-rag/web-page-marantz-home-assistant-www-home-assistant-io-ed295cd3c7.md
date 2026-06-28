@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/marantz"
+final_url: "https://www.home-assistant.io/integrations/marantz"
+canonical_url: "https://www.home-assistant.io/integrations/marantz/"
+source_handle: "web:www-home-assistant-io:ed295cd3c77a"
+source_section: "integrations-marantz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a4b02e60e4690d3ba8fa0d648ba964b73ae60a9b48e359cf67ffb4d989eb69eb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Marantz - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

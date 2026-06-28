@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rmvtransport"
+final_url: "https://www.home-assistant.io/integrations/rmvtransport"
+canonical_url: "https://www.home-assistant.io/integrations/rmvtransport/"
+source_handle: "web:www-home-assistant-io:6a488d7e369e"
+source_section: "integrations-rmvtransport"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "07874deb43ad2c45c52b9b53d3ec05e361584702da8fc23cf2052f3e6adcbe70"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RMV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

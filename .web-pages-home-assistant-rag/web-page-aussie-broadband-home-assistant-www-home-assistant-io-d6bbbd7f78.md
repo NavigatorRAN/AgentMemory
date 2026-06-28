@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aussie_broadband"
+final_url: "https://www.home-assistant.io/integrations/aussie_broadband"
+canonical_url: "https://www.home-assistant.io/integrations/aussie_broadband/"
+source_handle: "web:www-home-assistant-io:d6bbbd7f78c0"
+source_section: "integrations-aussie-broadband"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3926105200f081c5685adb3d825ae4730af5f23cc8dbbb5fa939fa003a8086b4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aussie Broadband - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

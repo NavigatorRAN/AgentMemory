@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smart_meter_texas"
+final_url: "https://www.home-assistant.io/integrations/smart_meter_texas"
+canonical_url: "https://www.home-assistant.io/integrations/smart_meter_texas/"
+source_handle: "web:www-home-assistant-io:e93e692fca79"
+source_section: "integrations-smart-meter-texas"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ab76203382c2108f4f5a964d972bee2af7b88a767c14fb6c526d5a5481783dc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Smart Meter Texas - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

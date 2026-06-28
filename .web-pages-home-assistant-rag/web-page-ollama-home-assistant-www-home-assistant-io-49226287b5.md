@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ollama"
+final_url: "https://www.home-assistant.io/integrations/ollama"
+canonical_url: "https://www.home-assistant.io/integrations/ollama/"
+source_handle: "web:www-home-assistant-io:49226287b580"
+source_section: "integrations-ollama"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb9d99b7da51a3368037a3c2468e54e37b34ffa12b857e2516628e3c2e37cd72"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ollama - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

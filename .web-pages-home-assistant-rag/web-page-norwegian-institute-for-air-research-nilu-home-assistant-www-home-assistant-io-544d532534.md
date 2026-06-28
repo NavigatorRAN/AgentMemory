@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nilu"
+final_url: "https://www.home-assistant.io/integrations/nilu"
+canonical_url: "https://www.home-assistant.io/integrations/nilu/"
+source_handle: "web:www-home-assistant-io:544d532534c0"
+source_section: "integrations-nilu"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8c6f0c0041b8079e4f70e1afd3fb838d96e800c05d1201e314541621879d21b7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Norwegian Institute for Air Research (NILU) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

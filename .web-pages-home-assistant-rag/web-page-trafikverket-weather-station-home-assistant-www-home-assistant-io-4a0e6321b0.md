@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/trafikverket_weatherstation"
+final_url: "https://www.home-assistant.io/integrations/trafikverket_weatherstation"
+canonical_url: "https://www.home-assistant.io/integrations/trafikverket_weatherstation/"
+source_handle: "web:www-home-assistant-io:4a0e6321b094"
+source_section: "integrations-trafikverket-weatherstation"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2e8910664baddb904b4414c1446f1ef82b8907aec5009e324e3a7bf66c68495a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Trafikverket Weather Station - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

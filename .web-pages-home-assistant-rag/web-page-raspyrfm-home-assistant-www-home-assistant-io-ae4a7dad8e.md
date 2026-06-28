@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/raspyrfm"
+final_url: "https://www.home-assistant.io/integrations/raspyrfm"
+canonical_url: "https://www.home-assistant.io/integrations/raspyrfm/"
+source_handle: "web:www-home-assistant-io:ae4a7dad8e1d"
+source_section: "integrations-raspyrfm"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0014811d2a8ac582643c3d9833af4dd988c092d26c7645b0128f5aeb59b31282"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # RaspyRFM - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fail2ban"
+final_url: "https://www.home-assistant.io/integrations/fail2ban"
+canonical_url: "https://www.home-assistant.io/integrations/fail2ban/"
+source_handle: "web:www-home-assistant-io:bda4635ef9fc"
+source_section: "integrations-fail2ban"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "826087f51076d052bc35482529e9ff8e9c7594949850bf171bbaae53e368ca4d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Fail2Ban - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

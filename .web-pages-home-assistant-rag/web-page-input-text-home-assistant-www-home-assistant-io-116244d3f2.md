@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/input_text"
+final_url: "https://www.home-assistant.io/integrations/input_text"
+canonical_url: "https://www.home-assistant.io/integrations/input_text/"
+source_handle: "web:www-home-assistant-io:116244d3f206"
+source_section: "integrations-input-text"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fa2eede926a48fe3ca6cdfadcca153a5a2c0bafa4dc0ac59e03f1ddd06287c81"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Input text - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

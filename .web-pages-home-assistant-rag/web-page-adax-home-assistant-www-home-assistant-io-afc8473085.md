@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/adax"
+final_url: "https://www.home-assistant.io/integrations/adax"
+canonical_url: "https://www.home-assistant.io/integrations/adax/"
+source_handle: "web:www-home-assistant-io:afc8473085a8"
+source_section: "integrations-adax"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "01f19d37b60d03d1f1456bcf98728acd56c2eb56805e8a8492af7513f1586ddd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Adax - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

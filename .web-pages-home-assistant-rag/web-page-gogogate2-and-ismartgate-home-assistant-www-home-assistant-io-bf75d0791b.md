@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gogogate2"
+final_url: "https://www.home-assistant.io/integrations/gogogate2"
+canonical_url: "https://www.home-assistant.io/integrations/gogogate2/"
+source_handle: "web:www-home-assistant-io:bf75d0791bc6"
+source_section: "integrations-gogogate2"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "65902c00c38cbce678ad68f3d40b44a1ee2f80bf87a5bad795759d169a86d851"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Gogogate2 and ismartgate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

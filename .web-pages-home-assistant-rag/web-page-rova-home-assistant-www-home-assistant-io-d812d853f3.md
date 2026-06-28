@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rova"
+final_url: "https://www.home-assistant.io/integrations/rova"
+canonical_url: "https://www.home-assistant.io/integrations/rova/"
+source_handle: "web:www-home-assistant-io:d812d853f35a"
+source_section: "integrations-rova"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7a9f06e31f214244badd78420b555346475401948773c2e82446e7c4a5c1f731"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ROVA - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

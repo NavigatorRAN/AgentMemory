@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aprilaire"
+final_url: "https://www.home-assistant.io/integrations/aprilaire"
+canonical_url: "https://www.home-assistant.io/integrations/aprilaire/"
+source_handle: "web:www-home-assistant-io:b1952f94e995"
+source_section: "integrations-aprilaire"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "82a0b94a63e4f6ac587cac635a3006c9f5feac522926b2f83e58e1e6380d6805"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AprilAire - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

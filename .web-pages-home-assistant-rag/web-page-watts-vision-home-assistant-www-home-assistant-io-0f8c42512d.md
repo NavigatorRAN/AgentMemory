@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/watts"
+final_url: "https://www.home-assistant.io/integrations/watts"
+canonical_url: "https://www.home-assistant.io/integrations/watts/"
+source_handle: "web:www-home-assistant-io:0f8c42512d30"
+source_section: "integrations-watts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "58e8f3f2f6149a29c3b0d94b63d59d02eb6f503d733e5d83ac762d456fabe305"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Watts Vision + - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

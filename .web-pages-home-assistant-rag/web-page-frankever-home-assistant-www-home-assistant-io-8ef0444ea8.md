@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/frankever"
+final_url: "https://www.home-assistant.io/integrations/frankever"
+canonical_url: "https://www.home-assistant.io/integrations/frankever/"
+source_handle: "web:www-home-assistant-io:8ef0444ea8f2"
+source_section: "integrations-frankever"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5eb39e435d9e16751d3cef28c2b22eac1da25b7cf65fc47ce6c08dcadfab7058"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FrankEver - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

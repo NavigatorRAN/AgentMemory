@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/webdav"
+final_url: "https://www.home-assistant.io/integrations/webdav"
+canonical_url: "https://www.home-assistant.io/integrations/webdav/"
+source_handle: "web:www-home-assistant-io:e3ae669914d8"
+source_section: "integrations-webdav"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "189c58664786089996a161a1eca11430825f452bd79933ef18337adb98343d8c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WebDAV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

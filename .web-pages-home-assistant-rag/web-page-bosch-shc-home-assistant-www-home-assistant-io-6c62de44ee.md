@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bosch_shc"
+final_url: "https://www.home-assistant.io/integrations/bosch_shc"
+canonical_url: "https://www.home-assistant.io/integrations/bosch_shc/"
+source_handle: "web:www-home-assistant-io:6c62de44ee7a"
+source_section: "integrations-bosch-shc"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0e7716561a1830f8725dd3c8e493e6cc54a9f2e0a671a9f25a31756564e58e0f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bosch SHC - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

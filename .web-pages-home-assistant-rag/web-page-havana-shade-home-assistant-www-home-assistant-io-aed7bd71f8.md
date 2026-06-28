@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/havana_shade"
+final_url: "https://www.home-assistant.io/integrations/havana_shade"
+canonical_url: "https://www.home-assistant.io/integrations/havana_shade/"
+source_handle: "web:www-home-assistant-io:aed7bd71f8b3"
+source_section: "integrations-havana-shade"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ec7f6a8c915710d7745a22609ce8ebc34b1f8f9588b8572e25987f160bf08c02"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Havana Shade - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

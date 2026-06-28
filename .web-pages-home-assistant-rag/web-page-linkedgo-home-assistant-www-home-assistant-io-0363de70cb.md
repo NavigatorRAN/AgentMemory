@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/linkedgo"
+final_url: "https://www.home-assistant.io/integrations/linkedgo"
+canonical_url: "https://www.home-assistant.io/integrations/linkedgo/"
+source_handle: "web:www-home-assistant-io:0363de70cbac"
+source_section: "integrations-linkedgo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7b6c958dcf1ceaa3406dde1d36ccaf900c127e5d67f1280cc133504ab11eed7c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LinkedGo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

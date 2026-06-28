@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/duotecno"
+final_url: "https://www.home-assistant.io/integrations/duotecno"
+canonical_url: "https://www.home-assistant.io/integrations/duotecno/"
+source_handle: "web:www-home-assistant-io:6bef5afdb751"
+source_section: "integrations-duotecno"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e20dc7b9df334690442ed600a1432bbcc67b005081d50884a345d180aa92b107"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Duotecno - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

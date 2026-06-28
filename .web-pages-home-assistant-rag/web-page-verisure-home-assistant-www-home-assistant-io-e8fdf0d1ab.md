@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/verisure"
+final_url: "https://www.home-assistant.io/integrations/verisure"
+canonical_url: "https://www.home-assistant.io/integrations/verisure/"
+source_handle: "web:www-home-assistant-io:e8fdf0d1abbd"
+source_section: "integrations-verisure"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6b31d36b3b1f1fc86151e99e3295d01299aa68edc9a01f79d178ce53419f3c39"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Verisure - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

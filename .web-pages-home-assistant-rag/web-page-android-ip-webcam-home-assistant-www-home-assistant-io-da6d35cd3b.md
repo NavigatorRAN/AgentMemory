@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/android_ip_webcam"
+final_url: "https://www.home-assistant.io/integrations/android_ip_webcam"
+canonical_url: "https://www.home-assistant.io/integrations/android_ip_webcam/"
+source_handle: "web:www-home-assistant-io:da6d35cd3beb"
+source_section: "integrations-android-ip-webcam"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a0d7ed9b6562dbb8c5f7f5476011aa47d4bbfeaa703ed5038905e2052de5f4fd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Android IP Webcam - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

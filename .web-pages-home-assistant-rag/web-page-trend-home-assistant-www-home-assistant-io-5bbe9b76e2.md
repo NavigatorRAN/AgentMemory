@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/trend"
+final_url: "https://www.home-assistant.io/integrations/trend"
+canonical_url: "https://www.home-assistant.io/integrations/trend/"
+source_handle: "web:www-home-assistant-io:5bbe9b76e233"
+source_section: "integrations-trend"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ad168cabf657425ff9603f436b509d07abbc7f2a5d0a6dee00c4315ff1ebc614"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Trend - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/triggercmd"
+final_url: "https://www.home-assistant.io/integrations/triggercmd"
+canonical_url: "https://www.home-assistant.io/integrations/triggercmd/"
+source_handle: "web:www-home-assistant-io:79e17a5ed376"
+source_section: "integrations-triggercmd"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "55af056eca58d10e467284fd1a8bc53ec1b8b783fc0a40722afda5c64f7c6418"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # TRIGGERcmd - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

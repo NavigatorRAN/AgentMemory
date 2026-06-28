@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/itach"
+final_url: "https://www.home-assistant.io/integrations/itach"
+canonical_url: "https://www.home-assistant.io/integrations/itach/"
+source_handle: "web:www-home-assistant-io:b799f48eb7b7"
+source_section: "integrations-itach"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b06045045937ceebc5bd47ad54cdb09a0137b3167a790d710c94aced6de5b230"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Global Caché iTach TCP/IP to IR - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

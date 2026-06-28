@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/srp_energy"
+final_url: "https://www.home-assistant.io/integrations/srp_energy"
+canonical_url: "https://www.home-assistant.io/integrations/srp_energy/"
+source_handle: "web:www-home-assistant-io:90d90961e774"
+source_section: "integrations-srp-energy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b2ad2375ae1184259b27200df6c9233ed620ac837a3507586f7510b69a5664d4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SRP Energy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thermoworks_smoke"
+final_url: "https://www.home-assistant.io/integrations/thermoworks_smoke"
+canonical_url: "https://www.home-assistant.io/integrations/thermoworks_smoke/"
+source_handle: "web:www-home-assistant-io:beff0d0109fb"
+source_section: "integrations-thermoworks-smoke"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1bafa3d32263f94c185ee668aca44173d2beff4ac0c1b148cb061922ef3f1824"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ThermoWorks Smoke - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

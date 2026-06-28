@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/recswitch"
+final_url: "https://www.home-assistant.io/integrations/recswitch"
+canonical_url: "https://www.home-assistant.io/integrations/recswitch/"
+source_handle: "web:www-home-assistant-io:e0befd2b9c63"
+source_section: "integrations-recswitch"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "934d60a65545ab012ff6bb1d88c091926f6634cbfaab953324707850d9eb2445"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ankuoo REC Switch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/feedreader"
+final_url: "https://www.home-assistant.io/integrations/feedreader"
+canonical_url: "https://www.home-assistant.io/integrations/feedreader/"
+source_handle: "web:www-home-assistant-io:6171d7d09db1"
+source_section: "integrations-feedreader"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b668f3c95cd87c702aecdd331b77486ab46d5bd12134701685aeda4623ceff82"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Feedreader - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fressnapf_tracker"
+final_url: "https://www.home-assistant.io/integrations/fressnapf_tracker"
+canonical_url: "https://www.home-assistant.io/integrations/fressnapf_tracker/"
+source_handle: "web:www-home-assistant-io:3cba49405f6c"
+source_section: "integrations-fressnapf-tracker"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "913f5db877a7c3105e17d881ccd823d28e874ae1de1bd1dcda0d54d01464eb47"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fressnapf Tracker - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/omnilogic"
+final_url: "https://www.home-assistant.io/integrations/omnilogic"
+canonical_url: "https://www.home-assistant.io/integrations/omnilogic/"
+source_handle: "web:www-home-assistant-io:21c0d955c7a7"
+source_section: "integrations-omnilogic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b1d8f75b724f05365450487b63db09998dd5be07cddd1874e7feba3a254e593b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hayward Omnilogic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

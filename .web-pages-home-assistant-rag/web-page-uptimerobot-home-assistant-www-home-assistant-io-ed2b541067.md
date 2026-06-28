@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/uptimerobot"
+final_url: "https://www.home-assistant.io/integrations/uptimerobot"
+canonical_url: "https://www.home-assistant.io/integrations/uptimerobot/"
+source_handle: "web:www-home-assistant-io:ed2b541067df"
+source_section: "integrations-uptimerobot"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bdb396b5edcec175f416f866bdc91fd92f1f044e801aff0200a58e1ecc41b3f1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UptimeRobot - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

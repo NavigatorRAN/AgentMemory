@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cover"
+final_url: "https://www.home-assistant.io/integrations/cover"
+canonical_url: "https://www.home-assistant.io/integrations/cover/"
+source_handle: "web:www-home-assistant-io:2af5c6e12288"
+source_section: "integrations-cover"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1e9bee9de52a5367c5daf39d6f67f885abb74a1401072012a8d37372fd74ba53"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Cover - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

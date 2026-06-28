@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/cppm_tracker"
+final_url: "https://www.home-assistant.io/integrations/cppm_tracker"
+canonical_url: "https://www.home-assistant.io/integrations/cppm_tracker/"
+source_handle: "web:www-home-assistant-io:19fad1b8dbc3"
+source_section: "integrations-cppm-tracker"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0c76fe8e479f0789350dad147f7bd287d1ad59e7c003419083b0f4e69ea5091e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aruba ClearPass - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

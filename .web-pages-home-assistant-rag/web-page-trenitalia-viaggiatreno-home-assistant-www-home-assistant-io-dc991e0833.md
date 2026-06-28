@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/viaggiatreno"
+final_url: "https://www.home-assistant.io/integrations/viaggiatreno"
+canonical_url: "https://www.home-assistant.io/integrations/viaggiatreno/"
+source_handle: "web:www-home-assistant-io:dc991e083313"
+source_section: "integrations-viaggiatreno"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7531503238a84a4742e300a79aa208b865006b7385fe065966373e8554cf9bcf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Trenitalia ViaggiaTreno - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

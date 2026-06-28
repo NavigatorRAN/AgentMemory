@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/progettihwsw"
+final_url: "https://www.home-assistant.io/integrations/progettihwsw"
+canonical_url: "https://www.home-assistant.io/integrations/progettihwsw/"
+source_handle: "web:www-home-assistant-io:3ff558e9c86e"
+source_section: "integrations-progettihwsw"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c4822f86be01232f94a5ebe5a3f5a14bdd62116f4da7b4ae51a1bf01a541fb65"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ProgettiHWSW Automation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

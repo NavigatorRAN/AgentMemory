@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/whisper"
+final_url: "https://www.home-assistant.io/integrations/whisper"
+canonical_url: "https://www.home-assistant.io/integrations/whisper/"
+source_handle: "web:www-home-assistant-io:249d61ca30db"
+source_section: "integrations-whisper"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "496afda500e4472fb99a89f3193d0d53c72d74062f03c072f076e09cece61a1c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Whisper - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

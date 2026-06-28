@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dlna_dmr"
+final_url: "https://www.home-assistant.io/integrations/dlna_dmr"
+canonical_url: "https://www.home-assistant.io/integrations/dlna_dmr/"
+source_handle: "web:www-home-assistant-io:f188c7c1d257"
+source_section: "integrations-dlna-dmr"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "289cf9f52bddd07363622bb0ed4c45dd2b1cce7ec5e7229116c88914bb1018c9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # DLNA Digital Media Renderer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

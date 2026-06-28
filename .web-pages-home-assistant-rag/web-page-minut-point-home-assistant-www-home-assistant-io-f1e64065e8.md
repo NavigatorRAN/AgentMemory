@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/point"
+final_url: "https://www.home-assistant.io/integrations/point"
+canonical_url: "https://www.home-assistant.io/integrations/point/"
+source_handle: "web:www-home-assistant-io:f1e64065e89b"
+source_section: "integrations-point"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "30a7bf2811f3f0401666de63ae36381f3838c8aabd5c3a1ea3bc2b238bb04a17"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Minut Point - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

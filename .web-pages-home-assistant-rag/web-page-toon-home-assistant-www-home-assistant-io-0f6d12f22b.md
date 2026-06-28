@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/toon"
+final_url: "https://www.home-assistant.io/integrations/toon"
+canonical_url: "https://www.home-assistant.io/integrations/toon/"
+source_handle: "web:www-home-assistant-io:0f6d12f22b96"
+source_section: "integrations-toon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f77a37a55809f54951d63d287e6ebe2df3c22c15be0d8d50e4a03e4a6fa419b0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Toon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

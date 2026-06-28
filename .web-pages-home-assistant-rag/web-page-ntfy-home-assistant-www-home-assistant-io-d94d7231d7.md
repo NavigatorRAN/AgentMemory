@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ntfy"
+final_url: "https://www.home-assistant.io/integrations/ntfy"
+canonical_url: "https://www.home-assistant.io/integrations/ntfy/"
+source_handle: "web:www-home-assistant-io:d94d7231d711"
+source_section: "integrations-ntfy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f122906c00e1b9f9cb7f970a39eb4bd4fcec8c26af0c064ce22a62adbd3fe01c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ntfy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

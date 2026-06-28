@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sonarr"
+final_url: "https://www.home-assistant.io/integrations/sonarr"
+canonical_url: "https://www.home-assistant.io/integrations/sonarr/"
+source_handle: "web:www-home-assistant-io:b64f327793a7"
+source_section: "integrations-sonarr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e451393877830c812fad1bd513c5ec20f07577c182c4e84d15638e0b8fe9c041"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sonarr - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

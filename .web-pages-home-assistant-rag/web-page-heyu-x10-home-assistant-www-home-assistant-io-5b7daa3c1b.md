@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/x10"
+final_url: "https://www.home-assistant.io/integrations/x10"
+canonical_url: "https://www.home-assistant.io/integrations/x10/"
+source_handle: "web:www-home-assistant-io:5b7daa3c1b40"
+source_section: "integrations-x10"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0f4cf99ffbedd16877ba95f07624a3b76e74e8d0f6e2fd9da542e4d86500ebec"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Heyu X10 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/panasonic_viera"
+final_url: "https://www.home-assistant.io/integrations/panasonic_viera"
+canonical_url: "https://www.home-assistant.io/integrations/panasonic_viera/"
+source_handle: "web:www-home-assistant-io:c891e5ff76c3"
+source_section: "integrations-panasonic-viera"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f5ba2cf8e4b22dd2bab5ef7ccd6ec92fc43a9293d3df7b155badfb9dbdad7594"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Panasonic Viera - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

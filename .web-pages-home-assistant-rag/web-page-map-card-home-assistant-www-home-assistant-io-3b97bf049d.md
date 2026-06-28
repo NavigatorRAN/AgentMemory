@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/map"
+final_url: "https://www.home-assistant.io/dashboards/map"
+canonical_url: "https://www.home-assistant.io/dashboards/map/"
+source_handle: "web:www-home-assistant-io:3b97bf049d80"
+source_section: "dashboards-map"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ea07e4526c2b10446498d5ac1d1a045dfab99b204925923482cf35f2d086549c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Map card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

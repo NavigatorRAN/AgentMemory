@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/overseerr"
+final_url: "https://www.home-assistant.io/integrations/overseerr"
+canonical_url: "https://www.home-assistant.io/integrations/overseerr/"
+source_handle: "web:www-home-assistant-io:41052c19546d"
+source_section: "integrations-overseerr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "212c79b415b39ea249a67352b1223d5476f4c555a91a85c84acb930cfa10edab"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Seerr - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

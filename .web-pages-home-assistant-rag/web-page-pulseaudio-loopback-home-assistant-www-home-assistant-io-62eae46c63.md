@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pulseaudio_loopback"
+final_url: "https://www.home-assistant.io/integrations/pulseaudio_loopback"
+canonical_url: "https://www.home-assistant.io/integrations/pulseaudio_loopback/"
+source_handle: "web:www-home-assistant-io:62eae46c63fa"
+source_section: "integrations-pulseaudio-loopback"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6042df272cfd55b560009544627223286f105cc86b3189c379eb5f92caf7bb49"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PulseAudio Loopback - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

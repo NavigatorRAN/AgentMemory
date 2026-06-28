@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/whirlpool"
+final_url: "https://www.home-assistant.io/integrations/whirlpool"
+canonical_url: "https://www.home-assistant.io/integrations/whirlpool/"
+source_handle: "web:www-home-assistant-io:305d61b2c114"
+source_section: "integrations-whirlpool"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b3003298822edb816edbdcc2ca4c02a1a10cd97aa122bbc67715bbd2ad119a4e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Whirlpool Appliances - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

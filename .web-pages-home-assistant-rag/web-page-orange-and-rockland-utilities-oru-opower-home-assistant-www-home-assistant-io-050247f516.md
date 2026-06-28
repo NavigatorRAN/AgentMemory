@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/oru_opower"
+final_url: "https://www.home-assistant.io/integrations/oru_opower"
+canonical_url: "https://www.home-assistant.io/integrations/oru_opower/"
+source_handle: "web:www-home-assistant-io:050247f51656"
+source_section: "integrations-oru-opower"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "349501250a6a0052a935c4a76d0b866cdc31af99c90e8885438c44d37dc01bf0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Orange and Rockland Utilities (ORU) Opower - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

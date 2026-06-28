@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/number.mqtt"
+final_url: "https://www.home-assistant.io/integrations/number.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/number.mqtt/"
+source_handle: "web:www-home-assistant-io:54931e9532f2"
+source_section: "integrations-number-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fdbcea354d26779513715ca71844c27bcc2947f4d16e0a7a2693b82e9932ebe6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Number - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

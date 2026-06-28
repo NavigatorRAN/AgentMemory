@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/energie_vanons"
+final_url: "https://www.home-assistant.io/integrations/energie_vanons"
+canonical_url: "https://www.home-assistant.io/integrations/energie_vanons/"
+source_handle: "web:www-home-assistant-io:1e069716b307"
+source_section: "integrations-energie-vanons"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bc596baad3ba2be56fc71429fb390e19940aae15fc84051ec9a00a5b8a680866"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Energie VanOns - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

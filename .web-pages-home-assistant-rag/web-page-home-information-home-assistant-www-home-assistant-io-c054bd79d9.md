@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/basic"
+final_url: "https://www.home-assistant.io/docs/configuration/basic"
+canonical_url: "https://www.home-assistant.io/docs/configuration/basic/"
+source_handle: "web:www-home-assistant-io:c054bd79d959"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e7f1ca2753c77503234c70ea991bfe7b2da2991fbe0a9afbc2e1a9aedf13ed56"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home information - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/scrape"
+final_url: "https://www.home-assistant.io/integrations/scrape"
+canonical_url: "https://www.home-assistant.io/integrations/scrape/"
+source_handle: "web:www-home-assistant-io:8edb470b51f3"
+source_section: "integrations-scrape"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3b95b79efe4ec47fe60c149e7d2a77fe0aad70cd3825115858bd8a26558efe49"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Scrape - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

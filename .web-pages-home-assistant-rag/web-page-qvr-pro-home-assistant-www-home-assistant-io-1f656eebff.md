@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/qvr_pro"
+final_url: "https://www.home-assistant.io/integrations/qvr_pro"
+canonical_url: "https://www.home-assistant.io/integrations/qvr_pro/"
+source_handle: "web:www-home-assistant-io:1f656eebff07"
+source_section: "integrations-qvr-pro"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a9e1070bfe7b9bc7e8a9778eb3b6c6d2475bc9d17cfd5af8c254f4bd5749fa9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # QVR Pro - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

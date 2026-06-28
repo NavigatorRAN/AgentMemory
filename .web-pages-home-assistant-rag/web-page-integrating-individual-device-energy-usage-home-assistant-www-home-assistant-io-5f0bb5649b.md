@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/energy/individual-devices"
+final_url: "https://www.home-assistant.io/docs/energy/individual-devices"
+canonical_url: "https://www.home-assistant.io/docs/energy/individual-devices/"
+source_handle: "web:www-home-assistant-io:5f0bb5649ba5"
+source_section: "docs-energy"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e7d3cc83803238d0010d07ef5dac1f9f3f56a505d3b43b735b475b71ea7f455f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Integrating individual device energy usage - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airtouch4"
+final_url: "https://www.home-assistant.io/integrations/airtouch4"
+canonical_url: "https://www.home-assistant.io/integrations/airtouch4/"
+source_handle: "web:www-home-assistant-io:492dca252112"
+source_section: "integrations-airtouch4"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "db6dbc3ea07da20c28697643192a7b5dca34377332923335dbdd1f4d3743f763"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AirTouch 4 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tile"
+final_url: "https://www.home-assistant.io/integrations/tile"
+canonical_url: "https://www.home-assistant.io/integrations/tile/"
+source_handle: "web:www-home-assistant-io:093611575846"
+source_section: "integrations-tile"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "33793577b76ff9c9552588836a5d27bcade39f7fa69edcc90d7f3c09f98bc46b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tile - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

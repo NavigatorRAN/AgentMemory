@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hddtemp"
+final_url: "https://www.home-assistant.io/integrations/hddtemp"
+canonical_url: "https://www.home-assistant.io/integrations/hddtemp/"
+source_handle: "web:www-home-assistant-io:626d477d1a7d"
+source_section: "integrations-hddtemp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "44643f8f3acff648c23846b9d57b029d2dfbb13b33731f7f7052f03a9aa51276"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # hddtemp - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

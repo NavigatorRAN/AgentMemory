@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensor.xiaomi_aqara"
+final_url: "https://www.home-assistant.io/integrations/sensor.xiaomi_aqara"
+canonical_url: "https://www.home-assistant.io/integrations/sensor.xiaomi_aqara/"
+source_handle: "web:www-home-assistant-io:eaa46cb9233d"
+source_section: "integrations-sensor-xiaomi-aqara"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a575510591779cd0d08dd52e3c60843d5769b888eaa1b93ff9dc2938573e977"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Xiaomi Sensor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

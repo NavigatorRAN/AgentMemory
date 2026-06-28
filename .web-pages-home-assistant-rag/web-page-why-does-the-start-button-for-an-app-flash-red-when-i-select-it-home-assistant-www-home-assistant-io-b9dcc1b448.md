@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/addon_not_starting"
+final_url: "https://www.home-assistant.io/faq/addon_not_starting"
+canonical_url: "https://www.home-assistant.io/faq/addon_not_starting/"
+source_handle: "web:www-home-assistant-io:b9dcc1b448a1"
+source_section: "faq-addon-not-starting"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c09c0e59f2f0165895c771f7d9d4a9e2255bb8915c13c2c9bce7f1b312eb6fd0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Why does the start button for an app flash red when I select it? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

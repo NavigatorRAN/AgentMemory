@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dhcp"
+final_url: "https://www.home-assistant.io/integrations/dhcp"
+canonical_url: "https://www.home-assistant.io/integrations/dhcp/"
+source_handle: "web:www-home-assistant-io:b805b5394038"
+source_section: "integrations-dhcp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "067978c9326c26842547bc39484c80b4c4f5cb7b83eba6ae04727fc614505fa7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # DHCP discovery - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

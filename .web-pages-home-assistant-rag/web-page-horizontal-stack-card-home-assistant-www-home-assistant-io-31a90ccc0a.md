@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/horizontal-stack"
+final_url: "https://www.home-assistant.io/dashboards/horizontal-stack"
+canonical_url: "https://www.home-assistant.io/dashboards/horizontal-stack/"
+source_handle: "web:www-home-assistant-io:31a90ccc0a35"
+source_section: "dashboards-horizontal-stack"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8459e078ca859011004cd06642b5021b0cd37fbbb29da69805f03ba7936f4dd1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Horizontal stack card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

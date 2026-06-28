@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homekit"
+final_url: "https://www.home-assistant.io/integrations/homekit"
+canonical_url: "https://www.home-assistant.io/integrations/homekit/"
+source_handle: "web:www-home-assistant-io:b24ea0a9fcb3"
+source_section: "integrations-homekit"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dce38730685e3e1994fba1ec9e647f97b4fa3ff28a630a60e1ae7812a3ce2510"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # HomeKit Bridge - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zondergas"
+final_url: "https://www.home-assistant.io/integrations/zondergas"
+canonical_url: "https://www.home-assistant.io/integrations/zondergas/"
+source_handle: "web:www-home-assistant-io:8f60e341d660"
+source_section: "integrations-zondergas"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ccc6b1a07433f7e8b4aefcaf89d387cd4eeec70e806b281ad135e3ba04a8bd11"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ZonderGas - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

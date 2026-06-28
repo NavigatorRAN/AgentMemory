@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/button.mqtt"
+final_url: "https://www.home-assistant.io/integrations/button.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/button.mqtt/"
+source_handle: "web:www-home-assistant-io:c1fe37afc02d"
+source_section: "integrations-button-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5074be0149756a99abed8d6c689834b85137735f3d69007764cd39d084ab453b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT button - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

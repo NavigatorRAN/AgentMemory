@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/picnic"
+final_url: "https://www.home-assistant.io/integrations/picnic"
+canonical_url: "https://www.home-assistant.io/integrations/picnic/"
+source_handle: "web:www-home-assistant-io:67c7037f9fb0"
+source_section: "integrations-picnic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6d2184e32611daf740142832550113fa3a2c6242a6ab346a79ee3bea835e505a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Picnic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nextbus"
+final_url: "https://www.home-assistant.io/integrations/nextbus"
+canonical_url: "https://www.home-assistant.io/integrations/nextbus/"
+source_handle: "web:www-home-assistant-io:633ac0e7f901"
+source_section: "integrations-nextbus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c5cf760ef774b1fc72e82b230f133a32dd142d195cd60512f0c933a889081026"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NextBus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

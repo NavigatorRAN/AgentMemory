@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gtfs"
+final_url: "https://www.home-assistant.io/integrations/gtfs"
+canonical_url: "https://www.home-assistant.io/integrations/gtfs/"
+source_handle: "web:www-home-assistant-io:4f344bc681ba"
+source_section: "integrations-gtfs"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "963125ddceef6738995ae1da7c6e6932dbf2c6503d745c901422e6973a271d8f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # General Transit Feed Specification (GTFS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

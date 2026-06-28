@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dlna_dms"
+final_url: "https://www.home-assistant.io/integrations/dlna_dms"
+canonical_url: "https://www.home-assistant.io/integrations/dlna_dms/"
+source_handle: "web:www-home-assistant-io:2450bf0e2cdb"
+source_section: "integrations-dlna-dms"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0c12e0e528784170988b7aa19a83dee84a4a8460da1c6da28c3459549214c2a3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # DLNA Digital Media Server - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

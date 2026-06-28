@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pure_energie"
+final_url: "https://www.home-assistant.io/integrations/pure_energie"
+canonical_url: "https://www.home-assistant.io/integrations/pure_energie/"
+source_handle: "web:www-home-assistant-io:6fb2adab1e2c"
+source_section: "integrations-pure-energie"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c28fdc6f0efd3b725e61108bdb2a13e40d9b1f3848940e071786482b4906a1db"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pure Energie - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

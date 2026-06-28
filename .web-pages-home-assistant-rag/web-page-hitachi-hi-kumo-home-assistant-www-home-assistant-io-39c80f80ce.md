@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hi_kumo"
+final_url: "https://www.home-assistant.io/integrations/hi_kumo"
+canonical_url: "https://www.home-assistant.io/integrations/hi_kumo/"
+source_handle: "web:www-home-assistant-io:39c80f80ceaf"
+source_section: "integrations-hi-kumo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e3736ed97de043e59ceb890772ef439e8f0b752bbace23c830761c410c77fd04"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hitachi Hi Kumo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

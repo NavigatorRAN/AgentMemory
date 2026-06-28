@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bge"
+final_url: "https://www.home-assistant.io/integrations/bge"
+canonical_url: "https://www.home-assistant.io/integrations/bge/"
+source_handle: "web:www-home-assistant-io:931ba77292d1"
+source_section: "integrations-bge"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f08d375700f275d6c2dc86d02b7f1099f81dfe8dd30b836bfed5418937692354"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Baltimore Gas and Electric (BGE) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

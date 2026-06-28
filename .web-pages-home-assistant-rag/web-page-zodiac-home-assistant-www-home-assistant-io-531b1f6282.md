@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zodiac"
+final_url: "https://www.home-assistant.io/integrations/zodiac"
+canonical_url: "https://www.home-assistant.io/integrations/zodiac/"
+source_handle: "web:www-home-assistant-io:531b1f628202"
+source_section: "integrations-zodiac"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0725e78a5d4a88ebe646c1c400d9bda82c0fd4d9ca95161683012a4e6c8e3cb3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Zodiac - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

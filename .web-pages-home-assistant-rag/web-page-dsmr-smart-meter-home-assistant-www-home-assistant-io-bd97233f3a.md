@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dsmr"
+final_url: "https://www.home-assistant.io/integrations/dsmr"
+canonical_url: "https://www.home-assistant.io/integrations/dsmr/"
+source_handle: "web:www-home-assistant-io:bd97233f3a90"
+source_section: "integrations-dsmr"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a22f5bd10ecb3e5303df9d8ad1e00b95603f9a60e3aa8cc06da4ee3bfe1c00e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # DSMR Smart Meter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

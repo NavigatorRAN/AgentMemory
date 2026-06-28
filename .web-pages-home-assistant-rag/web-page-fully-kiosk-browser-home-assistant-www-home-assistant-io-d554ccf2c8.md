@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fully_kiosk"
+final_url: "https://www.home-assistant.io/integrations/fully_kiosk"
+canonical_url: "https://www.home-assistant.io/integrations/fully_kiosk/"
+source_handle: "web:www-home-assistant-io:d554ccf2c886"
+source_section: "integrations-fully-kiosk"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "447c2cbc314227c0937c0328e75838f3dad9a01a18931206c3b9f6cbc3c4a842"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Fully Kiosk Browser - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

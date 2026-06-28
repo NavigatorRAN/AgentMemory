@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nederlandse_spoorwegen"
+final_url: "https://www.home-assistant.io/integrations/nederlandse_spoorwegen"
+canonical_url: "https://www.home-assistant.io/integrations/nederlandse_spoorwegen/"
+source_handle: "web:www-home-assistant-io:d4f2468331f6"
+source_section: "integrations-nederlandse-spoorwegen"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d17f345f661883d8789f2ec3a5c875bf62c756b67fd22e8f5508e1940f1f8491"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nederlandse Spoorwegen (NS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

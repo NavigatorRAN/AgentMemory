@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/apollo_automation"
+final_url: "https://www.home-assistant.io/integrations/apollo_automation"
+canonical_url: "https://www.home-assistant.io/integrations/apollo_automation/"
+source_handle: "web:www-home-assistant-io:19c5a8c5b90a"
+source_section: "integrations-apollo-automation"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bfd90ca7ddd24fbda7890db6a13ddf2e653602ef00f9c12a1454dbc38eb5be2b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Apollo Automation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

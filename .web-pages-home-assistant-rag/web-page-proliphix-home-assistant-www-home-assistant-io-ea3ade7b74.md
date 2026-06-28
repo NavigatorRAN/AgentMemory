@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/proliphix"
+final_url: "https://www.home-assistant.io/integrations/proliphix"
+canonical_url: "https://www.home-assistant.io/integrations/proliphix/"
+source_handle: "web:www-home-assistant-io:ea3ade7b7462"
+source_section: "integrations-proliphix"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "29413d785738aac5288f6873b442e76b4c7558ec2daa8998cad20b68f65536ac"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Proliphix - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

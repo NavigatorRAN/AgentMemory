@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lutron"
+final_url: "https://www.home-assistant.io/integrations/lutron"
+canonical_url: "https://www.home-assistant.io/integrations/lutron/"
+source_handle: "web:www-home-assistant-io:8e8d74357f51"
+source_section: "integrations-lutron"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "35cd1688aacbf204d2b039c0bd7a94aec9f574249520fa24280731b2f1bce376"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Lutron - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

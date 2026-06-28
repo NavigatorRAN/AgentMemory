@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/altruist"
+final_url: "https://www.home-assistant.io/integrations/altruist"
+canonical_url: "https://www.home-assistant.io/integrations/altruist/"
+source_handle: "web:www-home-assistant-io:18035d91d383"
+source_section: "integrations-altruist"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "567700b123335c0f82608ef7c2d1424007770eb6d0d75ff2a625f0265335e2c7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Altruist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/risco"
+final_url: "https://www.home-assistant.io/integrations/risco"
+canonical_url: "https://www.home-assistant.io/integrations/risco/"
+source_handle: "web:www-home-assistant-io:2ba965e05fb9"
+source_section: "integrations-risco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "137850d3fb80fc452d3010f90b0a26881fa53241f2e33c9ffaed7b2c701220b1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Risco - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

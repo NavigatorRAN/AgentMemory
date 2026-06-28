@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/authentication/multi-factor-auth"
+final_url: "https://www.home-assistant.io/docs/authentication/multi-factor-auth"
+canonical_url: "https://www.home-assistant.io/docs/authentication/multi-factor-auth/"
+source_handle: "web:www-home-assistant-io:5fc0345f55ca"
+source_section: "docs-authentication"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a4b16ff529735aae05f9de909a52e36f4eeab3a312bdc07e067c8327e53f6dac"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Multi-factor authentication - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

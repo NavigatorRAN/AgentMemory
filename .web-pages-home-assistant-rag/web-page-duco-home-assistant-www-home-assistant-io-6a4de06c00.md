@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/duco"
+final_url: "https://www.home-assistant.io/integrations/duco"
+canonical_url: "https://www.home-assistant.io/integrations/duco/"
+source_handle: "web:www-home-assistant-io:6a4de06c000c"
+source_section: "integrations-duco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3fa4a767de2619842c6f9e733c1c477d46b4d0fa0a71a3e9eada4bb71d499075"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Duco - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

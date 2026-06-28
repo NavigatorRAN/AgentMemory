@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/luftdaten"
+final_url: "https://www.home-assistant.io/integrations/luftdaten"
+canonical_url: "https://www.home-assistant.io/integrations/luftdaten/"
+source_handle: "web:www-home-assistant-io:ed08b12ff78d"
+source_section: "integrations-luftdaten"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1ba111046994abf6bf473fa8fc147a48f9f0ed55260842d4c17a948d5ea09e80"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sensor.Community - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

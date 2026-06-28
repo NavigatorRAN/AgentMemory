@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/monessen"
+final_url: "https://www.home-assistant.io/integrations/monessen"
+canonical_url: "https://www.home-assistant.io/integrations/monessen/"
+source_handle: "web:www-home-assistant-io:33605770696d"
+source_section: "integrations-monessen"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b967f71f9164b2c77ae5f65b7e32eb36961774cfce391af9dfb4edde0733ae43"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Monessen - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

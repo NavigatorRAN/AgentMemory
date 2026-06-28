@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hunterdouglas_powerview"
+final_url: "https://www.home-assistant.io/integrations/hunterdouglas_powerview"
+canonical_url: "https://www.home-assistant.io/integrations/hunterdouglas_powerview/"
+source_handle: "web:www-home-assistant-io:0a04973a9235"
+source_section: "integrations-hunterdouglas-powerview"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3358c7b38f83cec149bfde9783d48856b081e8bd9e92341d804b095307802b5f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hunter Douglas PowerView - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

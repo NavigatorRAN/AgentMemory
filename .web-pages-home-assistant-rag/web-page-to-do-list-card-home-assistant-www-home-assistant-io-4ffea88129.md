@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/todo-list"
+final_url: "https://www.home-assistant.io/dashboards/todo-list"
+canonical_url: "https://www.home-assistant.io/dashboards/todo-list/"
+source_handle: "web:www-home-assistant-io:4ffea8812902"
+source_section: "dashboards-todo-list"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c004e5e45f76f2f4e41b8554846f22e86dc5142fd503af32ebb224944ea3ad59"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # To-do list card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

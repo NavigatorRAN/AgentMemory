@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/elmax"
+final_url: "https://www.home-assistant.io/integrations/elmax"
+canonical_url: "https://www.home-assistant.io/integrations/elmax/"
+source_handle: "web:www-home-assistant-io:6ba3206917f9"
+source_section: "integrations-elmax"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f0f88e4d47920327f39641e117de4ba55cc5a10a721cb54cfd49cd0c61143191"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Elmax - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

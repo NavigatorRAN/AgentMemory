@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/heicko"
+final_url: "https://www.home-assistant.io/integrations/heicko"
+canonical_url: "https://www.home-assistant.io/integrations/heicko/"
+source_handle: "web:www-home-assistant-io:0e2a8b9f18ef"
+source_section: "integrations-heicko"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f9a1d9ebd9efd0184e55ef7e4a70bba1381a161e3fa737f32e97ed6b5ef9e12c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Heicko - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

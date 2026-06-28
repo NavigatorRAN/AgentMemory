@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/inels"
+final_url: "https://www.home-assistant.io/integrations/inels"
+canonical_url: "https://www.home-assistant.io/integrations/inels/"
+source_handle: "web:www-home-assistant-io:73ba4aa76eaf"
+source_section: "integrations-inels"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "10855e22877b5cd867fc11990c79314eae42265dbeb40e6f2ad32ac8237d7b41"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # iNELS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/http"
+final_url: "https://www.home-assistant.io/integrations/http"
+canonical_url: "https://www.home-assistant.io/integrations/http/"
+source_handle: "web:www-home-assistant-io:5d9bbb14cc4d"
+source_section: "integrations-http"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ad06b15de42e8d2356fc4bc4179b1dce5d6dc9ef6358cf224a3e3fe01706fc02"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # HTTP - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

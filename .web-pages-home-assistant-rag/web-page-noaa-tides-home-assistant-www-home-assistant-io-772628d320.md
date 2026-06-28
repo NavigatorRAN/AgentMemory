@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/noaa_tides"
+final_url: "https://www.home-assistant.io/integrations/noaa_tides"
+canonical_url: "https://www.home-assistant.io/integrations/noaa_tides/"
+source_handle: "web:www-home-assistant-io:772628d320d4"
+source_section: "integrations-noaa-tides"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3dec39f9238d24a0c4c681d679d147474a8857bf9b45be7c78200bc730cba047"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NOAA Tides - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

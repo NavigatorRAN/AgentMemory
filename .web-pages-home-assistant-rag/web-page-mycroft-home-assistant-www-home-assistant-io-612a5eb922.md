@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mycroft"
+final_url: "https://www.home-assistant.io/integrations/mycroft"
+canonical_url: "https://www.home-assistant.io/integrations/mycroft/"
+source_handle: "web:www-home-assistant-io:612a5eb92281"
+source_section: "integrations-mycroft"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "77cb84075fb86674689f6bc0e66cef0f3e43620efb73d49d326b5b54413a7312"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mycroft - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

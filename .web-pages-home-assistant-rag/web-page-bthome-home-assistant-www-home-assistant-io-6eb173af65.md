@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bthome"
+final_url: "https://www.home-assistant.io/integrations/bthome"
+canonical_url: "https://www.home-assistant.io/integrations/bthome/"
+source_handle: "web:www-home-assistant-io:6eb173af6514"
+source_section: "integrations-bthome"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "06e7abbc5cb84e1a83b676549bd0fce0d9b256cd90c7c000aa3d6b1aeabcaae7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BTHome - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

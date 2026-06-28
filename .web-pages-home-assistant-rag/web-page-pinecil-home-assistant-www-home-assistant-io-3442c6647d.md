@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pinecil"
+final_url: "https://www.home-assistant.io/integrations/pinecil"
+canonical_url: "https://www.home-assistant.io/integrations/pinecil/"
+source_handle: "web:www-home-assistant-io:3442c6647d3f"
+source_section: "integrations-pinecil"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2da8b02bddfa8c4171b7ad3187a3138ebba4c43403e36edfbcc45ac6609905b2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pinecil - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fan.mqtt"
+final_url: "https://www.home-assistant.io/integrations/fan.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/fan.mqtt/"
+source_handle: "web:www-home-assistant-io:03f9ee41f224"
+source_section: "integrations-fan-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "55339489ca6500528b97d05927d490b667fdaa2b47ab913f7dd1ce51c02d92fa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Fan - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

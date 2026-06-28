@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airthings_ble"
+final_url: "https://www.home-assistant.io/integrations/airthings_ble"
+canonical_url: "https://www.home-assistant.io/integrations/airthings_ble/"
+source_handle: "web:www-home-assistant-io:bf8505c023e8"
+source_section: "integrations-airthings-ble"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2edb80e4c2630fe289bfda34106538af0f8a7ebd28523b0948eceffc096fd882"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Airthings BLE - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

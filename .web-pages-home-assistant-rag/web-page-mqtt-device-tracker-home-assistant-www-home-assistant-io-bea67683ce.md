@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/device_tracker.mqtt"
+final_url: "https://www.home-assistant.io/integrations/device_tracker.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/device_tracker.mqtt/"
+source_handle: "web:www-home-assistant-io:bea67683ce02"
+source_section: "integrations-device-tracker-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8a15a772da0dd6f414b20ce64e0adc8f5180d13747eba4acc30d46b1771b5c1c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT device tracker - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

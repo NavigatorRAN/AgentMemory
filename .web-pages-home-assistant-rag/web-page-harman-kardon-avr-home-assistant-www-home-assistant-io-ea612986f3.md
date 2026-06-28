@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/harman_kardon_avr"
+final_url: "https://www.home-assistant.io/integrations/harman_kardon_avr"
+canonical_url: "https://www.home-assistant.io/integrations/harman_kardon_avr/"
+source_handle: "web:www-home-assistant-io:ea612986f3eb"
+source_section: "integrations-harman-kardon-avr"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c12b5abdfbd95152290c944dae6a3fb0bffa2404a780081e5909543577a0c1d2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Harman Kardon AVR - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

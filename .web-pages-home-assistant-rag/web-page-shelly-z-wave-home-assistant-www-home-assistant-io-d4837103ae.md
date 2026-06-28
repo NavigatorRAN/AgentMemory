@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/shelly_zwave"
+final_url: "https://www.home-assistant.io/integrations/shelly_zwave"
+canonical_url: "https://www.home-assistant.io/integrations/shelly_zwave/"
+source_handle: "web:www-home-assistant-io:d4837103ae9f"
+source_section: "integrations-shelly-zwave"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "85ab74bc77b29a3939558f864d16c324f23d7b4069a8cadd3f84aa53a5770664"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Shelly Z-Wave - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

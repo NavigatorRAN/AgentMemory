@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iron_os"
+final_url: "https://www.home-assistant.io/integrations/iron_os"
+canonical_url: "https://www.home-assistant.io/integrations/iron_os/"
+source_handle: "web:www-home-assistant-io:4df66868499b"
+source_section: "integrations-iron-os"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c0d21f2f7003248466c6067cb2e50be22b8ffab068f1739285945cf959b94a5a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IronOS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

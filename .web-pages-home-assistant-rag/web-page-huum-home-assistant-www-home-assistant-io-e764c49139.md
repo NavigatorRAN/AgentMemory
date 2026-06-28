@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/huum"
+final_url: "https://www.home-assistant.io/integrations/huum"
+canonical_url: "https://www.home-assistant.io/integrations/huum/"
+source_handle: "web:www-home-assistant-io:e764c491394f"
+source_section: "integrations-huum"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "10ef1ffa2b51572f5b0b72df982d851640c00e1476db45f6156fbabd7973f59b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Huum - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

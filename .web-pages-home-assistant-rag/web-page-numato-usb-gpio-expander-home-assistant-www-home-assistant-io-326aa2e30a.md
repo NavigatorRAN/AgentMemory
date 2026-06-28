@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/numato"
+final_url: "https://www.home-assistant.io/integrations/numato"
+canonical_url: "https://www.home-assistant.io/integrations/numato/"
+source_handle: "web:www-home-assistant-io:326aa2e30a08"
+source_section: "integrations-numato"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3d150810e818018a645ed42c1c4f58c8aa454e6f70a46558b65f3bd570997646"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Numato USB GPIO Expander - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rss_feed_template"
+final_url: "https://www.home-assistant.io/integrations/rss_feed_template"
+canonical_url: "https://www.home-assistant.io/integrations/rss_feed_template/"
+source_handle: "web:www-home-assistant-io:bff3bc20edc9"
+source_section: "integrations-rss-feed-template"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cc28282549e6c62018c861f51ff99d1c47b7ee40d460f2190b714fb7e4d74ef0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RSS feed template - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

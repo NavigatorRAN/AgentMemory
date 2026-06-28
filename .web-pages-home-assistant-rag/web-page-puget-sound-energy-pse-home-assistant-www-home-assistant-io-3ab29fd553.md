@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pse"
+final_url: "https://www.home-assistant.io/integrations/pse"
+canonical_url: "https://www.home-assistant.io/integrations/pse/"
+source_handle: "web:www-home-assistant-io:3ab29fd5530d"
+source_section: "integrations-pse"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "18fcbf47ad0ec996d3d69314b63e078f34eb8c4dce6682693ef3d6079f382b4b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Puget Sound Energy (PSE) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

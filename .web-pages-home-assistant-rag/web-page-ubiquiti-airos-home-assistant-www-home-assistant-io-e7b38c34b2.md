@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airos"
+final_url: "https://www.home-assistant.io/integrations/airos"
+canonical_url: "https://www.home-assistant.io/integrations/airos/"
+source_handle: "web:www-home-assistant-io:e7b38c34b2eb"
+source_section: "integrations-airos"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6a27fce7e9b4df447a8f32f7281dff153ea2598e8cb60aba9e889164df5e3d1d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Ubiquiti airOS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

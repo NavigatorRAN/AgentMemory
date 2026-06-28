@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wemo"
+final_url: "https://www.home-assistant.io/integrations/wemo"
+canonical_url: "https://www.home-assistant.io/integrations/wemo/"
+source_handle: "web:www-home-assistant-io:3cbbc80701db"
+source_section: "integrations-wemo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4bec09a2bbd4d8d2ba36458379b0f3558936ca41cd56f451cfb9fbe464cb9476"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Belkin WeMo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sensereo"
+final_url: "https://www.home-assistant.io/integrations/sensereo"
+canonical_url: "https://www.home-assistant.io/integrations/sensereo/"
+source_handle: "web:www-home-assistant-io:ebdbf17adc7d"
+source_section: "integrations-sensereo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3dde1938405db4ceedff9a736927a0c93f0572b3589668ad1fc3b694a1c87e94"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sensereo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

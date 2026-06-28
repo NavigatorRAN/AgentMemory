@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tcp"
+final_url: "https://www.home-assistant.io/integrations/tcp"
+canonical_url: "https://www.home-assistant.io/integrations/tcp/"
+source_handle: "web:www-home-assistant-io:89af803efce1"
+source_section: "integrations-tcp"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9c7d3a1cfc41cbdc00e3bcfff3379679eee5fb9a168dc64933ded3aa84294659"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # TCP - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

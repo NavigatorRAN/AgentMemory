@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/do-i-need-to-code"
+final_url: "https://www.home-assistant.io/faq/do-i-need-to-code"
+canonical_url: "https://www.home-assistant.io/faq/do-i-need-to-code/"
+source_handle: "web:www-home-assistant-io:49b19bff4278"
+source_section: "faq-do-i-need-to-code"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "353b3d59bce26e3e102e52aa9c6e064540559b209b4f0ac3995d2bac4f636351"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Do I need to know how to code to use Home Assistant? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

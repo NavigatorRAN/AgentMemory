@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/organizing"
+final_url: "https://www.home-assistant.io/docs/organizing"
+canonical_url: "https://www.home-assistant.io/docs/organizing/"
+source_handle: "web:www-home-assistant-io:e581c035b62e"
+source_section: "docs-organizing"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ad09517fc8ce917ea1cf20803f7aee50187f4dca68b27d1f06ba43667671999"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Grouping your assets - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

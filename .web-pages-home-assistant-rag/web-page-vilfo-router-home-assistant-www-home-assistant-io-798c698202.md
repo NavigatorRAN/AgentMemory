@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vilfo"
+final_url: "https://www.home-assistant.io/integrations/vilfo"
+canonical_url: "https://www.home-assistant.io/integrations/vilfo/"
+source_handle: "web:www-home-assistant-io:798c698202b9"
+source_section: "integrations-vilfo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d7bb6105b42c85721ac878b46de5827f0509a0c48c72735a5a7dc257f040338d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Vilfo Router - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

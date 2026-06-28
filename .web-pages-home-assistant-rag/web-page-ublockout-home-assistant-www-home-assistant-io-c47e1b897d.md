@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ublockout"
+final_url: "https://www.home-assistant.io/integrations/ublockout"
+canonical_url: "https://www.home-assistant.io/integrations/ublockout/"
+source_handle: "web:www-home-assistant-io:c47e1b897dc2"
+source_section: "integrations-ublockout"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6ed84373ebb6d5874d9704126724dd8918fcd6152c6d6014d6e4c6e27f4643f5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ublockout - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homeworks"
+final_url: "https://www.home-assistant.io/integrations/homeworks"
+canonical_url: "https://www.home-assistant.io/integrations/homeworks/"
+source_handle: "web:www-home-assistant-io:1b6c62ac340f"
+source_section: "integrations-homeworks"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "287bd65ce6e25ba3e50e3307914a7ded8d19b73a567b33f3f2ce7537ee717df7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Lutron Homeworks - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

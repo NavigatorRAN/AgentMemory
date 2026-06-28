@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mythicbeastsdns"
+final_url: "https://www.home-assistant.io/integrations/mythicbeastsdns"
+canonical_url: "https://www.home-assistant.io/integrations/mythicbeastsdns/"
+source_handle: "web:www-home-assistant-io:f93391a9d716"
+source_section: "integrations-mythicbeastsdns"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "37883c1e7908159908e1936c61e5a83bb4ee74898b2fd91bd690ead2207839c8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mythic Beasts DNS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

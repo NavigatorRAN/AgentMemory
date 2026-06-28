@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/litterrobot"
+final_url: "https://www.home-assistant.io/integrations/litterrobot"
+canonical_url: "https://www.home-assistant.io/integrations/litterrobot/"
+source_handle: "web:www-home-assistant-io:658ba6cba7fa"
+source_section: "integrations-litterrobot"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "50cdb7d3c3e0abc41cb254c0c698479312c80a1a5416d7439acdd504f4fbb58f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Whisker - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

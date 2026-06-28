@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/systemnexa2"
+final_url: "https://www.home-assistant.io/integrations/systemnexa2"
+canonical_url: "https://www.home-assistant.io/integrations/systemnexa2/"
+source_handle: "web:www-home-assistant-io:74c37bc26fa8"
+source_section: "integrations-systemnexa2"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "29eff91b9b4507b7eccffc3e8f001a6d438b3a412401a080c110f2862bae5b01"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # System Nexa 2 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

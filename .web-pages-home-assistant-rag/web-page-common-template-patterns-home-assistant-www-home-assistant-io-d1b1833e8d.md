@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/patterns"
+final_url: "https://www.home-assistant.io/docs/templating/patterns"
+canonical_url: "https://www.home-assistant.io/docs/templating/patterns/"
+source_handle: "web:www-home-assistant-io:d1b1833e8d59"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "89070a3699f86e399eb91c77e9901d83a86d2252ffc0c29778359c638995f7db"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Common template patterns - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

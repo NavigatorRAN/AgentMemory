@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/jewish_calendar"
+final_url: "https://www.home-assistant.io/integrations/jewish_calendar"
+canonical_url: "https://www.home-assistant.io/integrations/jewish_calendar/"
+source_handle: "web:www-home-assistant-io:073efe726b25"
+source_section: "integrations-jewish-calendar"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c5002d1f0a05caa86bdec56dbbee12e13ec8bbe60212b73ac423b684dea2f6e1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Jewish Calendar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

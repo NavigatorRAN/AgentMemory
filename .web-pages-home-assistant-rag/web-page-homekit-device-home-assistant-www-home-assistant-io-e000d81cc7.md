@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homekit_controller"
+final_url: "https://www.home-assistant.io/integrations/homekit_controller"
+canonical_url: "https://www.home-assistant.io/integrations/homekit_controller/"
+source_handle: "web:www-home-assistant-io:e000d81cc7bd"
+source_section: "integrations-homekit-controller"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8d735a26f7cb71f18cdcd95605b1ee96489c78a3c49e49c0b58b10d1b97a9fe7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # HomeKit Device - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

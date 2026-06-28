@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control"
+final_url: "https://www.home-assistant.io/voice_control"
+canonical_url: "https://www.home-assistant.io/voice_control/"
+source_handle: "web:www-home-assistant-io:3c22d566716b"
+source_section: "voice-control"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d8709c3234e231d8c6c8a3c2af96abb0102511132a31ccbdc60fcb522f241040"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Assist - Talk to your smart home with Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

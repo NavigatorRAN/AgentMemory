@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bega"
+final_url: "https://www.home-assistant.io/integrations/bega"
+canonical_url: "https://www.home-assistant.io/integrations/bega/"
+source_handle: "web:www-home-assistant-io:cff91d64091d"
+source_section: "integrations-bega"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "89efa3537896e06754193d3fe5428194ea47756acda129a9ffdb83150c4862e2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BEGA - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

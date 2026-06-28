@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fritzbox_callmonitor"
+final_url: "https://www.home-assistant.io/integrations/fritzbox_callmonitor"
+canonical_url: "https://www.home-assistant.io/integrations/fritzbox_callmonitor/"
+source_handle: "web:www-home-assistant-io:4eed273a9bbe"
+source_section: "integrations-fritzbox-callmonitor"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8e09ec45b54e571b21dbc1a8168caa3f9c43d0a40d7020bb5faa0356fcad6065"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FRITZ!Box Call Monitor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

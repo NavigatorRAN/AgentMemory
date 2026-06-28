@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ambient_network"
+final_url: "https://www.home-assistant.io/integrations/ambient_network"
+canonical_url: "https://www.home-assistant.io/integrations/ambient_network/"
+source_handle: "web:www-home-assistant-io:b4b00f1db26c"
+source_section: "integrations-ambient-network"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cd5535542bc44fa3cff9ccab647e0b4cbb012a03bbe06fc12c6c791c9c929bda"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ambient Weather Network - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

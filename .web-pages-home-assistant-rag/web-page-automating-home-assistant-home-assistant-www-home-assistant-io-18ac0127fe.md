@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation"
+final_url: "https://www.home-assistant.io/docs/automation"
+canonical_url: "https://www.home-assistant.io/docs/automation/"
+source_handle: "web:www-home-assistant-io:18ac0127fede"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "921147296af89c9b8812d029453b6644cbd92d252e528aae4cdbc75d8a8b2bbf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Automating Home Assistant - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

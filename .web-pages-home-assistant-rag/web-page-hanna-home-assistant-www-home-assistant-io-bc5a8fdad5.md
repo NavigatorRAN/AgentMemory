@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hanna"
+final_url: "https://www.home-assistant.io/integrations/hanna"
+canonical_url: "https://www.home-assistant.io/integrations/hanna/"
+source_handle: "web:www-home-assistant-io:bc5a8fdad50b"
+source_section: "integrations-hanna"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "de27bc268aee8dc82aafb06172ced3294a84c5bedb01ba798cdffd46520bb041"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hanna - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

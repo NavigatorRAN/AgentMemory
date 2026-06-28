@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/evohome"
+final_url: "https://www.home-assistant.io/integrations/evohome"
+canonical_url: "https://www.home-assistant.io/integrations/evohome/"
+source_handle: "web:www-home-assistant-io:814bff6b7e0c"
+source_section: "integrations-evohome"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4c4fefeb3201e96c851f92565419e2bd5e1321745ae4f3daaf1697729e52ddcd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Honeywell Total Connect Comfort (Europe) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

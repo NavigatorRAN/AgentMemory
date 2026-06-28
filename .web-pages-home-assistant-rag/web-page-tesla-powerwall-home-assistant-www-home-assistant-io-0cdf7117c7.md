@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/powerwall"
+final_url: "https://www.home-assistant.io/integrations/powerwall"
+canonical_url: "https://www.home-assistant.io/integrations/powerwall/"
+source_handle: "web:www-home-assistant-io:0cdf7117c7fc"
+source_section: "integrations-powerwall"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2237be7ab7b53f4f64bcb3de1ced68f8ca27fa584f72606e2b8c4dd95f9ae64e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tesla Powerwall - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

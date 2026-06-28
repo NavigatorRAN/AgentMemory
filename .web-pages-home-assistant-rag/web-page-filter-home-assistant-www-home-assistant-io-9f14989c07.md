@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/filter"
+final_url: "https://www.home-assistant.io/integrations/filter"
+canonical_url: "https://www.home-assistant.io/integrations/filter/"
+source_handle: "web:www-home-assistant-io:9f14989c0763"
+source_section: "integrations-filter"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "429f131d98bca38605c3156e74c22fea624cbaa055e36f5ef2fd1c5b79511428"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Filter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

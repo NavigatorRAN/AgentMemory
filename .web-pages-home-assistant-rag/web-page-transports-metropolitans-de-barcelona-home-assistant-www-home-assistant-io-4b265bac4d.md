@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tmb"
+final_url: "https://www.home-assistant.io/integrations/tmb"
+canonical_url: "https://www.home-assistant.io/integrations/tmb/"
+source_handle: "web:www-home-assistant-io:4b265bac4daa"
+source_section: "integrations-tmb"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cff3d1d34c43942a6b022e0fb8cc4873d3eb96d530d976e6232fda82ff72dc2d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Transports Metropolitans de Barcelona - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

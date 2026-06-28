@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/motionblinds_matter"
+final_url: "https://www.home-assistant.io/integrations/motionblinds_matter"
+canonical_url: "https://www.home-assistant.io/integrations/motionblinds_matter/"
+source_handle: "web:www-home-assistant-io:5d133dae73cd"
+source_section: "integrations-motionblinds-matter"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "14b8bac84f7d05009659ecd940961dd8e5f441899d24b632645cede77a77fc29"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Motionblinds Matter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

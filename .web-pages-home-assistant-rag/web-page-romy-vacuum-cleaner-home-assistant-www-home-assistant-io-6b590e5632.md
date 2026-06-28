@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/romy"
+final_url: "https://www.home-assistant.io/integrations/romy"
+canonical_url: "https://www.home-assistant.io/integrations/romy/"
+source_handle: "web:www-home-assistant-io:6b590e56322d"
+source_section: "integrations-romy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1556b8b71c5273396de6ee015e62aaa71434bb55497ea33cda340d845f6435e5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ROMY Vacuum Cleaner - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/w800rf32"
+final_url: "https://www.home-assistant.io/integrations/w800rf32"
+canonical_url: "https://www.home-assistant.io/integrations/w800rf32/"
+source_handle: "web:www-home-assistant-io:ab587afa1b17"
+source_section: "integrations-w800rf32"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bd3d9e2828b7940b0e27783e60717db4c018afa637968b4f5d83feb90b49184c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WGL Designs W800RF32 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

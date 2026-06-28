@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/duquesne_light"
+final_url: "https://www.home-assistant.io/integrations/duquesne_light"
+canonical_url: "https://www.home-assistant.io/integrations/duquesne_light/"
+source_handle: "web:www-home-assistant-io:db9931ffb352"
+source_section: "integrations-duquesne-light"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "92310f870869a431579bfbe4df6eef006e22c210303febfd36bd2c11de5bc158"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Duquesne Light - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

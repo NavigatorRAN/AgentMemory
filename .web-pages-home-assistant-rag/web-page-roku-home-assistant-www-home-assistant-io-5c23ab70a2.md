@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/roku"
+final_url: "https://www.home-assistant.io/integrations/roku"
+canonical_url: "https://www.home-assistant.io/integrations/roku/"
+source_handle: "web:www-home-assistant-io:5c23ab70a2db"
+source_section: "integrations-roku"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d142e94a9b649b94f199f424517691244a84ec333e464d7001a0f073a7f4ed1d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Roku - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

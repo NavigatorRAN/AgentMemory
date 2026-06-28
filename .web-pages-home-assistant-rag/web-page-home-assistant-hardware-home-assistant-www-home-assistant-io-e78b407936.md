@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homeassistant_hardware"
+final_url: "https://www.home-assistant.io/integrations/homeassistant_hardware"
+canonical_url: "https://www.home-assistant.io/integrations/homeassistant_hardware/"
+source_handle: "web:www-home-assistant-io:e78b407936b0"
+source_section: "integrations-homeassistant-hardware"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fe6208359796de22b7eb58bd94de64f1873d85cacc47aee80db07f21603fbf43"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Hardware - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

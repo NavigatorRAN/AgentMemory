@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lyric"
+final_url: "https://www.home-assistant.io/integrations/lyric"
+canonical_url: "https://www.home-assistant.io/integrations/lyric/"
+source_handle: "web:www-home-assistant-io:4782662dde37"
+source_section: "integrations-lyric"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "901efafdb5d39d842cf2577969783c4a8d1515ad8f56c91bb9aa079e9d842c44"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Honeywell Lyric - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ness_alarm"
+final_url: "https://www.home-assistant.io/integrations/ness_alarm"
+canonical_url: "https://www.home-assistant.io/integrations/ness_alarm/"
+source_handle: "web:www-home-assistant-io:cf08c21ebb52"
+source_section: "integrations-ness-alarm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d9b923a3e80ac84fc107dac55eb29e07f34bb5fe8d6c7fe4c31850d434c0ccd2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ness Alarm - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

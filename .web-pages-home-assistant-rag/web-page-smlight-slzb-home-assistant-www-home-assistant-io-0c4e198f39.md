@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smlight"
+final_url: "https://www.home-assistant.io/integrations/smlight"
+canonical_url: "https://www.home-assistant.io/integrations/smlight/"
+source_handle: "web:www-home-assistant-io:0c4e198f39bd"
+source_section: "integrations-smlight"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b557f5381f83e1f0357b0e28f1b45ac779d6f2242c8d9547e2fc4ce9ef836814"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # SMLIGHT SLZB - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

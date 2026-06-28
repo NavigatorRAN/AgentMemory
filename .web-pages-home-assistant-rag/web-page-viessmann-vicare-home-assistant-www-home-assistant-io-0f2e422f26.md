@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vicare"
+final_url: "https://www.home-assistant.io/integrations/vicare"
+canonical_url: "https://www.home-assistant.io/integrations/vicare/"
+source_handle: "web:www-home-assistant-io:0f2e422f26c8"
+source_section: "integrations-vicare"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28b529b0f14de262d017bf87cf6bda4343fc40ee0377917b7b6a9f603ba5ad3a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Viessmann ViCare - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

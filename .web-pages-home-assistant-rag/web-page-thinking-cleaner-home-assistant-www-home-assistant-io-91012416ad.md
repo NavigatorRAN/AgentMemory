@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thinkingcleaner"
+final_url: "https://www.home-assistant.io/integrations/thinkingcleaner"
+canonical_url: "https://www.home-assistant.io/integrations/thinkingcleaner/"
+source_handle: "web:www-home-assistant-io:91012416ad39"
+source_section: "integrations-thinkingcleaner"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "30d1f7b99b16e01bfcabd53447948e1e9a0069b6310c2ede3a61bbe105738eec"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Thinking Cleaner - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

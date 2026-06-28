@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ogemray"
+final_url: "https://www.home-assistant.io/integrations/ogemray"
+canonical_url: "https://www.home-assistant.io/integrations/ogemray/"
+source_handle: "web:www-home-assistant-io:f1ca3e7a1ffe"
+source_section: "integrations-ogemray"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0de2c3a9c2b7c3ff2541564d8aca4aa5e3f33486d7d92da93779c2c70cb9ec8c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ogemray - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

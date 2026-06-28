@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/opower"
+final_url: "https://www.home-assistant.io/integrations/opower"
+canonical_url: "https://www.home-assistant.io/integrations/opower/"
+source_handle: "web:www-home-assistant-io:fcdbb76f598b"
+source_section: "integrations-opower"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a2ffa293c6af2fabf299f1e6829d599090ac687707b9447094409e11a0cbf138"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Opower - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/scene/editor"
+final_url: "https://www.home-assistant.io/docs/scene/editor"
+canonical_url: "https://www.home-assistant.io/docs/scene/editor/"
+source_handle: "web:www-home-assistant-io:28d4ca8f322d"
+source_section: "docs-scene"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "aa8375e46ee6629d1b0e6feec8667a4b11602ba63aebf43e1d5657fe2bea1822"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Scenes editor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

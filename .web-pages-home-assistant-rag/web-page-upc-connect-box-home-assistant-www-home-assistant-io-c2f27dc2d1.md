@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/upc_connect"
+final_url: "https://www.home-assistant.io/integrations/upc_connect"
+canonical_url: "https://www.home-assistant.io/integrations/upc_connect/"
+source_handle: "web:www-home-assistant-io:c2f27dc2d186"
+source_section: "integrations-upc-connect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0507ae0670fd247b2e428a9ef5a6aca18b64c93a0c9ffd65333a1a85fc483d9c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # UPC Connect Box - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

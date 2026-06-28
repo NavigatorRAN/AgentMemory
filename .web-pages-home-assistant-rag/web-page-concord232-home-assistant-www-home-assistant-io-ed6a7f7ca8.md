@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/concord232"
+final_url: "https://www.home-assistant.io/integrations/concord232"
+canonical_url: "https://www.home-assistant.io/integrations/concord232/"
+source_handle: "web:www-home-assistant-io:ed6a7f7ca8de"
+source_section: "integrations-concord232"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3e3fffe504c00a126e78bcc38c02a9a93b0aa36a8bb4d556fa841be4c305d97e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Concord232 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

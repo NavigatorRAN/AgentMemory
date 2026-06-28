@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fujitsu_fglair"
+final_url: "https://www.home-assistant.io/integrations/fujitsu_fglair"
+canonical_url: "https://www.home-assistant.io/integrations/fujitsu_fglair/"
+source_handle: "web:www-home-assistant-io:020a3322f66b"
+source_section: "integrations-fujitsu-fglair"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f0522c4bbeac2c940d6eb3ed4e844e38e8c8d6f7c4f5f4a8f598ab4847ccf43b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FGLair - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

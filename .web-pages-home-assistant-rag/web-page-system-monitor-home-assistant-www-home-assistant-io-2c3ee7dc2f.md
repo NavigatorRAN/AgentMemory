@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/systemmonitor"
+final_url: "https://www.home-assistant.io/integrations/systemmonitor"
+canonical_url: "https://www.home-assistant.io/integrations/systemmonitor/"
+source_handle: "web:www-home-assistant-io:2c3ee7dc2f0d"
+source_section: "integrations-systemmonitor"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e055384ccb67b2fb848d11e0690b583fca065fa10b137e8882ddd0f34c51da69"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # System monitor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

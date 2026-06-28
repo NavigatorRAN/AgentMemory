@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nzbget"
+final_url: "https://www.home-assistant.io/integrations/nzbget"
+canonical_url: "https://www.home-assistant.io/integrations/nzbget/"
+source_handle: "web:www-home-assistant-io:2a8e879e160c"
+source_section: "integrations-nzbget"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "842201c01f13477fa99c2cff3801ef6359407f43b37d025962cee0d2ae017214"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NZBGet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

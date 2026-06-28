@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/usgs_earthquakes_feed"
+final_url: "https://www.home-assistant.io/integrations/usgs_earthquakes_feed"
+canonical_url: "https://www.home-assistant.io/integrations/usgs_earthquakes_feed/"
+source_handle: "web:www-home-assistant-io:1c8e280bf4c3"
+source_section: "integrations-usgs-earthquakes-feed"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ed2af9735201d8d83932e7f0515b756059dbbdf36751fe2ed8b3d1fdf6e10927"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # U.S. Geological Survey Earthquake Hazards (USGS) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

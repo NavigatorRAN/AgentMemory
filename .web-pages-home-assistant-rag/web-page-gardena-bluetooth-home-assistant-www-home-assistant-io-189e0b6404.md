@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gardena_bluetooth"
+final_url: "https://www.home-assistant.io/integrations/gardena_bluetooth"
+canonical_url: "https://www.home-assistant.io/integrations/gardena_bluetooth/"
+source_handle: "web:www-home-assistant-io:189e0b640445"
+source_section: "integrations-gardena-bluetooth"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7a8a1ae41e3171c928fb8fc3960e037b4acd9e1f178304ee05089070731546b2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Gardena Bluetooth - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

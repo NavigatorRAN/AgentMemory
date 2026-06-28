@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ialarm"
+final_url: "https://www.home-assistant.io/integrations/ialarm"
+canonical_url: "https://www.home-assistant.io/integrations/ialarm/"
+source_handle: "web:www-home-assistant-io:b2a6eacc5ca7"
+source_section: "integrations-ialarm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2b69a350d27c21c0d3b01fadd1ac68e382364c14a5b46c676f1eb4ef44185b37"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Antifurto365 iAlarm - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

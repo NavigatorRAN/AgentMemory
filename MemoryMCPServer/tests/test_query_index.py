@@ -6,6 +6,23 @@ from memory_mcp import queries
 from memory_mcp.storage import Storage
 
 
+def test_default_index_dir_lives_beside_vault(tmp_path, monkeypatch):
+    monkeypatch.delenv("MEMORY_INDEX_ROOT", raising=False)
+
+    storage = Storage(tmp_path)
+
+    assert storage.index_dir == tmp_path / ".index"
+
+
+def test_configured_index_dir_overrides_default(tmp_path, monkeypatch):
+    index_root = tmp_path / "custom-index"
+    monkeypatch.setenv("MEMORY_INDEX_ROOT", str(index_root))
+
+    storage = Storage(tmp_path / "vault")
+
+    assert storage.index_dir == index_root
+
+
 def test_query_index_rebuilds_and_serves_event_queries(tmp_path):
     storage = Storage(tmp_path)
     storage.record_event(

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aseko_pool_live"
+final_url: "https://www.home-assistant.io/integrations/aseko_pool_live"
+canonical_url: "https://www.home-assistant.io/integrations/aseko_pool_live/"
+source_handle: "web:www-home-assistant-io:c7cdf7c83934"
+source_section: "integrations-aseko-pool-live"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1dd96a552cef7d726b8b6f110f1e1082035e5c5d52945c9f89c4b1706a7e9c36"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aseko Pool Live - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

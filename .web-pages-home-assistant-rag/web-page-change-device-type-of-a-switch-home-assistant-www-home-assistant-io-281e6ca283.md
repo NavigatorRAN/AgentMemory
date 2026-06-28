@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switch_as_x"
+final_url: "https://www.home-assistant.io/integrations/switch_as_x"
+canonical_url: "https://www.home-assistant.io/integrations/switch_as_x/"
+source_handle: "web:www-home-assistant-io:281e6ca283eb"
+source_section: "integrations-switch-as-x"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d186c7d04a9e0d2fdd469dc289aa6d7abf6862911e664e4299a75457509a50b1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Change device type of a switch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/traccar"
+final_url: "https://www.home-assistant.io/integrations/traccar"
+canonical_url: "https://www.home-assistant.io/integrations/traccar/"
+source_handle: "web:www-home-assistant-io:3e6863885407"
+source_section: "integrations-traccar"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9c6c7a5f9c91c2a64206f24821fab88fb8aaf34c9b3e492fd1e0bb1d1cad7913"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Traccar Client - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

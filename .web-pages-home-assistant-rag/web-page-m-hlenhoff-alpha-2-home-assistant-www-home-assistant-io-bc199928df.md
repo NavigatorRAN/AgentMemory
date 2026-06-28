@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/moehlenhoff_alpha2"
+final_url: "https://www.home-assistant.io/integrations/moehlenhoff_alpha2"
+canonical_url: "https://www.home-assistant.io/integrations/moehlenhoff_alpha2/"
+source_handle: "web:www-home-assistant-io:bc199928dfc9"
+source_section: "integrations-moehlenhoff-alpha2"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "35ca84f5fb829b1013054bca84c995709373abc96d144c70fc6e13a7b95545f6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Möhlenhoff Alpha 2 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

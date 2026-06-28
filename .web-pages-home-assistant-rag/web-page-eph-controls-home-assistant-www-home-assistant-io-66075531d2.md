@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ephember"
+final_url: "https://www.home-assistant.io/integrations/ephember"
+canonical_url: "https://www.home-assistant.io/integrations/ephember/"
+source_handle: "web:www-home-assistant-io:66075531d2f7"
+source_section: "integrations-ephember"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "240b493da84cd084a70f745ceb25046af454abdd393c3fdd3661359c5059c8b4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # EPH Controls - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

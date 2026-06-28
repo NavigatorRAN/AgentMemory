@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/worldtidesinfo"
+final_url: "https://www.home-assistant.io/integrations/worldtidesinfo"
+canonical_url: "https://www.home-assistant.io/integrations/worldtidesinfo/"
+source_handle: "web:www-home-assistant-io:ded4a1e55b5a"
+source_section: "integrations-worldtidesinfo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "822435393ce5dabbeef218407cea6bc07eb9a7adac6b3e74bce189d1d43fbc20"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # World Tides - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

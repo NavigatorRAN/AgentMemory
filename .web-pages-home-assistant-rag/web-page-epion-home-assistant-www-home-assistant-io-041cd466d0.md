@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/epion"
+final_url: "https://www.home-assistant.io/integrations/epion"
+canonical_url: "https://www.home-assistant.io/integrations/epion/"
+source_handle: "web:www-home-assistant-io:041cd466d0e6"
+source_section: "integrations-epion"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "519a3b64777767783d38d63ccf3e9454d1bfd78e2a37f26fb4f32a6dfa1dbb2e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Epion - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

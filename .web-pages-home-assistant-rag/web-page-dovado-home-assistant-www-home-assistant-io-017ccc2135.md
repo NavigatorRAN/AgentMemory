@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dovado"
+final_url: "https://www.home-assistant.io/integrations/dovado"
+canonical_url: "https://www.home-assistant.io/integrations/dovado/"
+source_handle: "web:www-home-assistant-io:017ccc2135e4"
+source_section: "integrations-dovado"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2c7b49aebc6c5d3820ca1230d24e100e9a062fc4b986ffdde73119e8b6222c98"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Dovado - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sisyphus"
+final_url: "https://www.home-assistant.io/integrations/sisyphus"
+canonical_url: "https://www.home-assistant.io/integrations/sisyphus/"
+source_handle: "web:www-home-assistant-io:e406074f7ad0"
+source_section: "integrations-sisyphus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c9b9224e6715e61acb951cb8b05af31b2cb49afde32c3d60d2ea47579a08b76e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sisyphus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

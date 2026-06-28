@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/syslog"
+final_url: "https://www.home-assistant.io/integrations/syslog"
+canonical_url: "https://www.home-assistant.io/integrations/syslog/"
+source_handle: "web:www-home-assistant-io:a88afa6b19d1"
+source_section: "integrations-syslog"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "771642b2095a2381510933628b9ce03a9f0a1e330ccc765e95044587e63cfcce"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Syslog - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

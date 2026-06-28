@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pi_hole"
+final_url: "https://www.home-assistant.io/integrations/pi_hole"
+canonical_url: "https://www.home-assistant.io/integrations/pi_hole/"
+source_handle: "web:www-home-assistant-io:6e9b25479f10"
+source_section: "integrations-pi-hole"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bc12a356151f3331785360d5d9f4d92ed816697f898ea98df8f700a453957c50"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pi-hole - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wolflink"
+final_url: "https://www.home-assistant.io/integrations/wolflink"
+canonical_url: "https://www.home-assistant.io/integrations/wolflink/"
+source_handle: "web:www-home-assistant-io:98c1dfc3c913"
+source_section: "integrations-wolflink"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e8ab29625937a125c9269430252b51bcfb4e6c461929fcbd92181b26423b5f17"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Wolf SmartSet Service - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

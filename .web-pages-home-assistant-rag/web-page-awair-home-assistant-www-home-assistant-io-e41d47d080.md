@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/awair"
+final_url: "https://www.home-assistant.io/integrations/awair"
+canonical_url: "https://www.home-assistant.io/integrations/awair/"
+source_handle: "web:www-home-assistant-io:e41d47d080d0"
+source_section: "integrations-awair"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6a8728eeda7112d188b8fded01f571aa92fb92994952fc1b18d2e411880ef45d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Awair - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tank_utility"
+final_url: "https://www.home-assistant.io/integrations/tank_utility"
+canonical_url: "https://www.home-assistant.io/integrations/tank_utility/"
+source_handle: "web:www-home-assistant-io:6ae0120de940"
+source_section: "integrations-tank-utility"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "418ca5b7fda80df52d8d1030c8003d9380fa2df2409b0a7b612330f75f6522a0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tank Utility - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pterodactyl"
+final_url: "https://www.home-assistant.io/integrations/pterodactyl"
+canonical_url: "https://www.home-assistant.io/integrations/pterodactyl/"
+source_handle: "web:www-home-assistant-io:3c8868358c96"
+source_section: "integrations-pterodactyl"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4b51d7eff1235563f2b0265225d359ceb75f7d05e8f2a87cef72b4096461ae11"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pterodactyl - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

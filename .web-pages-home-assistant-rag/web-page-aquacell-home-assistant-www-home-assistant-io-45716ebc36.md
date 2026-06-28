@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aquacell"
+final_url: "https://www.home-assistant.io/integrations/aquacell"
+canonical_url: "https://www.home-assistant.io/integrations/aquacell/"
+source_handle: "web:www-home-assistant-io:45716ebc3622"
+source_section: "integrations-aquacell"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fa2639054acf8be70ebed227e861d8105e8a1b17f197a07223eb74a832e54553"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # AquaCell - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

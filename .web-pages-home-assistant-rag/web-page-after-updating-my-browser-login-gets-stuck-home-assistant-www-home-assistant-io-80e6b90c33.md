@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/after-upgrading"
+final_url: "https://www.home-assistant.io/faq/after-upgrading"
+canonical_url: "https://www.home-assistant.io/faq/after-upgrading/"
+source_handle: "web:www-home-assistant-io:80e6b90c3308"
+source_section: "faq-after-upgrading"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6618f201c5a651c418cc794c27e489be911b4bd0d507df76783416e16523039b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # After updating, my browser login gets stuck - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/energy/solar-panels"
+final_url: "https://www.home-assistant.io/docs/energy/solar-panels"
+canonical_url: "https://www.home-assistant.io/docs/energy/solar-panels/"
+source_handle: "web:www-home-assistant-io:e7808dfd302b"
+source_section: "docs-energy"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a7875b172f5d6a4c8d9294f80c59a9d5be962a22f3986773c77bc5d9d7215ab4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Integrating your solar panels - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/solarlog"
+final_url: "https://www.home-assistant.io/integrations/solarlog"
+canonical_url: "https://www.home-assistant.io/integrations/solarlog/"
+source_handle: "web:www-home-assistant-io:1d3dc74bdd5a"
+source_section: "integrations-solarlog"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c0c3443a821b30c502df568c9a3e35a5f47a5967aaed72e34edd89c1126e6335"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Solar-Log - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

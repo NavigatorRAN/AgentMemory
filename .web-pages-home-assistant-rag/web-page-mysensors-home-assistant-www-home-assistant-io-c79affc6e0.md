@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mysensors"
+final_url: "https://www.home-assistant.io/integrations/mysensors"
+canonical_url: "https://www.home-assistant.io/integrations/mysensors/"
+source_handle: "web:www-home-assistant-io:c79affc6e06c"
+source_section: "integrations-mysensors"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a5f4c8ead784318e741c675c718f6106400ffec51fd2f5b8341bcb12a4124ff4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MySensors - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

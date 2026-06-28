@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nmbs"
+final_url: "https://www.home-assistant.io/integrations/nmbs"
+canonical_url: "https://www.home-assistant.io/integrations/nmbs/"
+source_handle: "web:www-home-assistant-io:b1e319f16b2e"
+source_section: "integrations-nmbs"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "80d46aa842512a857b8573473c7c2a5b886248f58029b322a48f78c7c605bd6d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # NMBS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

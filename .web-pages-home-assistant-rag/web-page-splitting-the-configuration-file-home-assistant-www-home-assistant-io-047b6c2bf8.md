@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/configuration/splitting_configuration"
+final_url: "https://www.home-assistant.io/docs/configuration/splitting_configuration"
+canonical_url: "https://www.home-assistant.io/docs/configuration/splitting_configuration/"
+source_handle: "web:www-home-assistant-io:047b6c2bf8d5"
+source_section: "docs-configuration"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6b2139e0ee5a56cc54dd928fec769e761fb6181f29fa06c352c6f2adeb106c5f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Splitting the configuration file - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

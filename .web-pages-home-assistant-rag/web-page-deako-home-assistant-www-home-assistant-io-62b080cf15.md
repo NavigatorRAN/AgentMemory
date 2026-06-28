@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/deako"
+final_url: "https://www.home-assistant.io/integrations/deako"
+canonical_url: "https://www.home-assistant.io/integrations/deako/"
+source_handle: "web:www-home-assistant-io:62b080cf15f9"
+source_section: "integrations-deako"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3558d3f0944eb47eeb5015c6689dd2b9bfc1dcebcf6dd25299d6227f6a7686de"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Deako - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

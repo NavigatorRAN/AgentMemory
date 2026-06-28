@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/input_select"
+final_url: "https://www.home-assistant.io/integrations/input_select"
+canonical_url: "https://www.home-assistant.io/integrations/input_select/"
+source_handle: "web:www-home-assistant-io:a45d56ea7532"
+source_section: "integrations-input-select"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d8520b7ab0bfc13c6122814635ca9f383107a84660e5f2b1c2a2cdd3d8359682"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Input select - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

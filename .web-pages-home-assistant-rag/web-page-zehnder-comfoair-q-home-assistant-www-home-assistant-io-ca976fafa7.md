@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/comfoconnect"
+final_url: "https://www.home-assistant.io/integrations/comfoconnect"
+canonical_url: "https://www.home-assistant.io/integrations/comfoconnect/"
+source_handle: "web:www-home-assistant-io:ca976fafa7ed"
+source_section: "integrations-comfoconnect"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "95b4615b1f445792cb585de0eb21c12d9e8ce7fd3bb21fe3d158a6b9c09b24cf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Zehnder ComfoAir Q - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

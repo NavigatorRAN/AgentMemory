@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/samsungtv"
+final_url: "https://www.home-assistant.io/integrations/samsungtv"
+canonical_url: "https://www.home-assistant.io/integrations/samsungtv/"
+source_handle: "web:www-home-assistant-io:08a3840ef5de"
+source_section: "integrations-samsungtv"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "283400fdfbefb8c6a498c09b369f7377c63b92008e4ea538f02b96fdea98794f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Samsung Smart TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

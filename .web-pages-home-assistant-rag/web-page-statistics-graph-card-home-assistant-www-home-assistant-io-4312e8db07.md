@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/statistics-graph"
+final_url: "https://www.home-assistant.io/dashboards/statistics-graph"
+canonical_url: "https://www.home-assistant.io/dashboards/statistics-graph/"
+source_handle: "web:www-home-assistant-io:4312e8db0760"
+source_section: "dashboards-statistics-graph"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "22c291cd68e43a315808ce9d407acc6f84a8d933ef38bddcea9279547d620c90"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Statistics graph card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

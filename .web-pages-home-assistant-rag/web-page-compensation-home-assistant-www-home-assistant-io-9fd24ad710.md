@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/compensation"
+final_url: "https://www.home-assistant.io/integrations/compensation"
+canonical_url: "https://www.home-assistant.io/integrations/compensation/"
+source_handle: "web:www-home-assistant-io:9fd24ad7105c"
+source_section: "integrations-compensation"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "18ddbb14a2d6b39d7d5aa19c324c88ccb4b0f8f4e27322d101ef039019385233"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Compensation - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/deconz"
+final_url: "https://www.home-assistant.io/integrations/deconz"
+canonical_url: "https://www.home-assistant.io/integrations/deconz/"
+source_handle: "web:www-home-assistant-io:6f70e2290632"
+source_section: "integrations-deconz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ceccb336b0163aa6d3354f371a956470c80902409ece208f942e546817a499ae"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # deCONZ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

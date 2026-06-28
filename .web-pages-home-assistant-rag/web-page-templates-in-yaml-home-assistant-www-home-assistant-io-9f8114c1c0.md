@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/yaml"
+final_url: "https://www.home-assistant.io/docs/templating/yaml"
+canonical_url: "https://www.home-assistant.io/docs/templating/yaml/"
+source_handle: "web:www-home-assistant-io:9f8114c1c090"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "web-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "229112112370ef0b8a147ba6fbd61bdf4d0f98fa5f3b8048db191687777e103d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "web-docs"
+---
+
 # Templates in YAML - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

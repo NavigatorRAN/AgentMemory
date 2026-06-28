@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bt_smarthub"
+final_url: "https://www.home-assistant.io/integrations/bt_smarthub"
+canonical_url: "https://www.home-assistant.io/integrations/bt_smarthub/"
+source_handle: "web:www-home-assistant-io:4aa2ce89345d"
+source_section: "integrations-bt-smarthub"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2b2a4746a07889370b16825211f15e7ad22caf2ec7e813488e7a07040029756b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BT Smart Hub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

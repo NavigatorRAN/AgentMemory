@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/freedompro"
+final_url: "https://www.home-assistant.io/integrations/freedompro"
+canonical_url: "https://www.home-assistant.io/integrations/freedompro/"
+source_handle: "web:www-home-assistant-io:d070a0d55a06"
+source_section: "integrations-freedompro"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "177326932e5466fee26ac908794b4a08c174586def818eebefd3d3b585b5f401"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Freedompro - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

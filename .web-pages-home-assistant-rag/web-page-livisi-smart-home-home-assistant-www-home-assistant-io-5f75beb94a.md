@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/livisi"
+final_url: "https://www.home-assistant.io/integrations/livisi"
+canonical_url: "https://www.home-assistant.io/integrations/livisi/"
+source_handle: "web:www-home-assistant-io:5f75beb94aa7"
+source_section: "integrations-livisi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b4b19104be56d8b9b178a9289f3f5e6b5e72349a6d0d2d7bc991ad9b3d85e350"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LIVISI Smart Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

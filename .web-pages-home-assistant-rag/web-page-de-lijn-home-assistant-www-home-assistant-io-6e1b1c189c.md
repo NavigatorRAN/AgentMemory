@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/delijn"
+final_url: "https://www.home-assistant.io/integrations/delijn"
+canonical_url: "https://www.home-assistant.io/integrations/delijn/"
+source_handle: "web:www-home-assistant-io:6e1b1c189c7b"
+source_section: "integrations-delijn"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "64df4ff15c01c495c6739ab5801af9d31abbb7581cee4ae9c4c8d5ca49678b1e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # De Lijn - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

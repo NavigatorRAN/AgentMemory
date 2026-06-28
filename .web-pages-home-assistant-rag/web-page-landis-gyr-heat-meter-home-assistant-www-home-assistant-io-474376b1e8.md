@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/landisgyr_heat_meter"
+final_url: "https://www.home-assistant.io/integrations/landisgyr_heat_meter"
+canonical_url: "https://www.home-assistant.io/integrations/landisgyr_heat_meter/"
+source_handle: "web:www-home-assistant-io:474376b1e8f0"
+source_section: "integrations-landisgyr-heat-meter"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5c123ff602a69d8addd64af55d730aafe29c71146f902665215da4dc39622aa6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Landis+Gyr Heat Meter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

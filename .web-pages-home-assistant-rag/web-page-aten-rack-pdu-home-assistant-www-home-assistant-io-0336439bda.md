@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aten_pe"
+final_url: "https://www.home-assistant.io/integrations/aten_pe"
+canonical_url: "https://www.home-assistant.io/integrations/aten_pe/"
+source_handle: "web:www-home-assistant-io:0336439bda8f"
+source_section: "integrations-aten-pe"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "238098a011566f1272356107347d4b4261640e41de1fae06964f0372506a75f6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ATEN Rack PDU - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

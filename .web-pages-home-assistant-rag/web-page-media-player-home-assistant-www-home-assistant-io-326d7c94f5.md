@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/media_player"
+final_url: "https://www.home-assistant.io/integrations/media_player"
+canonical_url: "https://www.home-assistant.io/integrations/media_player/"
+source_handle: "web:www-home-assistant-io:326d7c94f54b"
+source_section: "integrations-media-player"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2cae6cb38110fc83cbfdd3639c63a14b95e40de09e6bb1e0d05ae295444aecb5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Media player - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

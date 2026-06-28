@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/meraki"
+final_url: "https://www.home-assistant.io/integrations/meraki"
+canonical_url: "https://www.home-assistant.io/integrations/meraki/"
+source_handle: "web:www-home-assistant-io:a2f5c16f5536"
+source_section: "integrations-meraki"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "76f037e9a93702b4508f6482caa015796d7a6b0037f6a325a900084056b53bb4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Meraki - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

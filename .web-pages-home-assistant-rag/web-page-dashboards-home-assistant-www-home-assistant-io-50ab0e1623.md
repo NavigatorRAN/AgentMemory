@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards"
+final_url: "https://www.home-assistant.io/dashboards"
+canonical_url: "https://www.home-assistant.io/dashboards/"
+source_handle: "web:www-home-assistant-io:50ab0e16232b"
+source_section: "dashboards"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f5647e83c509944047e82f8a7060b5c792387ce5a541c377a1b7c71d3cafd797"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Dashboards - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

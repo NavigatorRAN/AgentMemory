@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/config"
+final_url: "https://www.home-assistant.io/integrations/config"
+canonical_url: "https://www.home-assistant.io/integrations/config/"
+source_handle: "web:www-home-assistant-io:f4a479fde133"
+source_section: "integrations-config"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6254e72e0abd19347b0f0d434564e0dcf0581f4cbdea1912bec12e036b3db29f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Configuration - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

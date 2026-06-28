@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switch.mqtt"
+final_url: "https://www.home-assistant.io/integrations/switch.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/switch.mqtt/"
+source_handle: "web:www-home-assistant-io:461a628e8023"
+source_section: "integrations-switch-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2851405690495317414f9341655b7ff1c8966cda8afc77e8bf89d0a4bcf8ff4a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Switch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/youless"
+final_url: "https://www.home-assistant.io/integrations/youless"
+canonical_url: "https://www.home-assistant.io/integrations/youless/"
+source_handle: "web:www-home-assistant-io:4f13a1c445ee"
+source_section: "integrations-youless"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5ce254398cd94a143d7fc465fa597c8d9617d5680185a16b19b2126fa6888fc8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # YouLess - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

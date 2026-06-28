@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/watson_tts"
+final_url: "https://www.home-assistant.io/integrations/watson_tts"
+canonical_url: "https://www.home-assistant.io/integrations/watson_tts/"
+source_handle: "web:www-home-assistant-io:fd63ddcd641c"
+source_section: "integrations-watson-tts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7ac996510e31d6b5fccfd7e5c969feb7df4c5e5855fdf8e0dc96bb90abb876bc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IBM Watson TTS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

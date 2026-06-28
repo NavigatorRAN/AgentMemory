@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/camera"
+final_url: "https://www.home-assistant.io/integrations/camera"
+canonical_url: "https://www.home-assistant.io/integrations/camera/"
+source_handle: "web:www-home-assistant-io:0e569c359369"
+source_section: "integrations-camera"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "27dbe1cfde9ea078a4efe2182613639d49effd04bace2d1b2348d5c84126bd42"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Camera - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

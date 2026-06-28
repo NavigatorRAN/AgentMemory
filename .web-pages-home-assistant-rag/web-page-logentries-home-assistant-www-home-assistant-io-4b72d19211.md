@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/logentries"
+final_url: "https://www.home-assistant.io/integrations/logentries"
+canonical_url: "https://www.home-assistant.io/integrations/logentries/"
+source_handle: "web:www-home-assistant-io:4b72d19211ce"
+source_section: "integrations-logentries"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "137ff65d86afc447c43ae14d0a78641dd34c3ac78dafa44d224c1aa464bab818"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Logentries - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

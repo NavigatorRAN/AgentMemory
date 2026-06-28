@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/caldav"
+final_url: "https://www.home-assistant.io/integrations/caldav"
+canonical_url: "https://www.home-assistant.io/integrations/caldav/"
+source_handle: "web:www-home-assistant-io:050459b50309"
+source_section: "integrations-caldav"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "07f138a566b7d2ad3272dccb633277af6c59a22b26cb1591515282ba97ef4a04"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # CalDAV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

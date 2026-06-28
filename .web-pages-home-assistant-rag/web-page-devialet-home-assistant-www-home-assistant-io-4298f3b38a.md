@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/devialet"
+final_url: "https://www.home-assistant.io/integrations/devialet"
+canonical_url: "https://www.home-assistant.io/integrations/devialet/"
+source_handle: "web:www-home-assistant-io:4298f3b38a64"
+source_section: "integrations-devialet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cf390628a7c0f2d3d4c2ef023e40159b86fd8701c2150c9339cf894d4a0860e4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Devialet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

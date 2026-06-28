@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/logger"
+final_url: "https://www.home-assistant.io/integrations/logger"
+canonical_url: "https://www.home-assistant.io/integrations/logger/"
+source_handle: "web:www-home-assistant-io:6424c8d61321"
+source_section: "integrations-logger"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0a9eee670861813eccd1856963cf35b7c91fc2d232ff0d4141e716a33430831f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Logger - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/keba"
+final_url: "https://www.home-assistant.io/integrations/keba"
+canonical_url: "https://www.home-assistant.io/integrations/keba/"
+source_handle: "web:www-home-assistant-io:94fd2eb7c958"
+source_section: "integrations-keba"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "010c6aff16eebfe8501447dd3434d0f384a3426786d1ce7aa6243e9824f2be4f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Keba Charging Station - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

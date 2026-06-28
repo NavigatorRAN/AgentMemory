@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/coolmaster"
+final_url: "https://www.home-assistant.io/integrations/coolmaster"
+canonical_url: "https://www.home-assistant.io/integrations/coolmaster/"
+source_handle: "web:www-home-assistant-io:4619bdd610b3"
+source_section: "integrations-coolmaster"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "beb004b20d84d71ae54ec8a98641a378893c7e47689b2d4d1f5e50938c1a9ad7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # CoolMasterNet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

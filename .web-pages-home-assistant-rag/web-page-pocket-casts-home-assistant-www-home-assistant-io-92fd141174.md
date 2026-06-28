@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pocketcasts"
+final_url: "https://www.home-assistant.io/integrations/pocketcasts"
+canonical_url: "https://www.home-assistant.io/integrations/pocketcasts/"
+source_handle: "web:www-home-assistant-io:92fd14117455"
+source_section: "integrations-pocketcasts"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ebb04d922747e5e9b94661331976879ac9db4b7e4dedcd2a8f5f2295adbdfbca"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pocket Casts - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

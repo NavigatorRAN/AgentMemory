@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nuki"
+final_url: "https://www.home-assistant.io/integrations/nuki"
+canonical_url: "https://www.home-assistant.io/integrations/nuki/"
+source_handle: "web:www-home-assistant-io:a49e23f2e40b"
+source_section: "integrations-nuki"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b971bdaf20110b3644cc778276354500436a05a1dc898ca36c795ff7f67e96b8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nuki Bridge - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

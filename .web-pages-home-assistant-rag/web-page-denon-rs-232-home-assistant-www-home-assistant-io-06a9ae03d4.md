@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/denon_rs232"
+final_url: "https://www.home-assistant.io/integrations/denon_rs232"
+canonical_url: "https://www.home-assistant.io/integrations/denon_rs232/"
+source_handle: "web:www-home-assistant-io:06a9ae03d421"
+source_section: "integrations-denon-rs232"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dc47630d8f8f1df0de36e38de37666655196ec97680db2a7df0c44658063ad7c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Denon RS-232 - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/purpleair"
+final_url: "https://www.home-assistant.io/integrations/purpleair"
+canonical_url: "https://www.home-assistant.io/integrations/purpleair/"
+source_handle: "web:www-home-assistant-io:bf0e88e57503"
+source_section: "integrations-purpleair"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1fab62c74accde325b9f791d332aedcafa39f45c4968440c68606ce140285465"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PurpleAir - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

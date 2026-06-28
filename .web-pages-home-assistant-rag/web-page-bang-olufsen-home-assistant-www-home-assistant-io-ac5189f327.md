@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bang_olufsen"
+final_url: "https://www.home-assistant.io/integrations/bang_olufsen"
+canonical_url: "https://www.home-assistant.io/integrations/bang_olufsen/"
+source_handle: "web:www-home-assistant-io:ac5189f32706"
+source_section: "integrations-bang-olufsen"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4128e2de247223c78ef21d796fa9646f5e3e4443f030f7d3275aa77e0bf7f563"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bang & Olufsen - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

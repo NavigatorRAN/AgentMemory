@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rympro"
+final_url: "https://www.home-assistant.io/integrations/rympro"
+canonical_url: "https://www.home-assistant.io/integrations/rympro/"
+source_handle: "web:www-home-assistant-io:9c31b6c6fe61"
+source_section: "integrations-rympro"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d3819c616e2a0e2eb55046258001987fe6960d982fbd321bcc303e08f447f5ba"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Read Your Meter Pro - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/badges"
+final_url: "https://www.home-assistant.io/dashboards/badges"
+canonical_url: "https://www.home-assistant.io/dashboards/badges/"
+source_handle: "web:www-home-assistant-io:c2ac99ee3859"
+source_section: "dashboards-badges"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "40042f5c87e33654dc31b346c6c237a7e5c5218826623a79835f5b43d744f356"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Badges - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

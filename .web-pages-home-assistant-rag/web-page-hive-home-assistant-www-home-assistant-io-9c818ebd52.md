@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/hive"
+final_url: "https://www.home-assistant.io/integrations/hive"
+canonical_url: "https://www.home-assistant.io/integrations/hive/"
+source_handle: "web:www-home-assistant-io:9c818ebd521b"
+source_section: "integrations-hive"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d965226ee9c81202fdfa7df456cf18fb81573a1d5a4644abeacd3df2337d9143"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Hive - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yeelight"
+final_url: "https://www.home-assistant.io/integrations/yeelight"
+canonical_url: "https://www.home-assistant.io/integrations/yeelight/"
+source_handle: "web:www-home-assistant-io:4ae8cf1768ac"
+source_section: "integrations-yeelight"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0da0d0ee71ee0b4105cba8faa82946eae09febb7a55fdd758f66610f9419f584"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Yeelight - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

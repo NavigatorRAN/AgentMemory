@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/power"
+final_url: "https://www.home-assistant.io/integrations/power"
+canonical_url: "https://www.home-assistant.io/integrations/power/"
+source_handle: "web:www-home-assistant-io:f25af42bd4ba"
+source_section: "integrations-power"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b5ab3fe89a53a3c1cf2b3ec2d1c8f7f25c6bc1a4f08e187f6bd7e87bdb1d9a79"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Power - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

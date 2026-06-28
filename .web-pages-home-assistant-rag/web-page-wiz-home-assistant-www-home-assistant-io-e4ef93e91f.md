@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wiz"
+final_url: "https://www.home-assistant.io/integrations/wiz"
+canonical_url: "https://www.home-assistant.io/integrations/wiz/"
+source_handle: "web:www-home-assistant-io:e4ef93e91fd2"
+source_section: "integrations-wiz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8e28c6224ab181fc088a6b48f494a4db57c2df2cc28c14007834a1bfa9156c32"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # WiZ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

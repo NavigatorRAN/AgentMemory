@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/calendar"
+final_url: "https://www.home-assistant.io/dashboards/calendar"
+canonical_url: "https://www.home-assistant.io/dashboards/calendar/"
+source_handle: "web:www-home-assistant-io:ecf935e3eb47"
+source_section: "dashboards-calendar"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5619277b1df404cabc6893bfadc2cbdf6560e135e24d434edc1c5c85cc7073e4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Calendar card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

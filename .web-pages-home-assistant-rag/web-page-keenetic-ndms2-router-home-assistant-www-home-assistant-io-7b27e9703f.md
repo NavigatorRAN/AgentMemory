@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/keenetic_ndms2"
+final_url: "https://www.home-assistant.io/integrations/keenetic_ndms2"
+canonical_url: "https://www.home-assistant.io/integrations/keenetic_ndms2/"
+source_handle: "web:www-home-assistant-io:7b27e9703fbc"
+source_section: "integrations-keenetic-ndms2"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f9baefda1ee01db07682437d6c2ce33561593fcfc6e8ae525bc40851246e9e1f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Keenetic NDMS2 Router - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

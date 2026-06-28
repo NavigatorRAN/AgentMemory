@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/owntracks"
+final_url: "https://www.home-assistant.io/integrations/owntracks"
+canonical_url: "https://www.home-assistant.io/integrations/owntracks/"
+source_handle: "web:www-home-assistant-io:b679b85e4ef8"
+source_section: "integrations-owntracks"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c46849a46057f223e91ae257797a6a0d4b79faeff370705e4717548ea494ba20"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OwnTracks - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

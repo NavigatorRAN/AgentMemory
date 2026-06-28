@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/fleetgo"
+final_url: "https://www.home-assistant.io/integrations/fleetgo"
+canonical_url: "https://www.home-assistant.io/integrations/fleetgo/"
+source_handle: "web:www-home-assistant-io:b1617570f770"
+source_section: "integrations-fleetgo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "925fa5c2f4c1d13fd34b793652c9d5afccd44215d7d14cb1ddaf82118bd93260"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # FleetGO - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

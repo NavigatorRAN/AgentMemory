@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/color_extractor"
+final_url: "https://www.home-assistant.io/integrations/color_extractor"
+canonical_url: "https://www.home-assistant.io/integrations/color_extractor/"
+source_handle: "web:www-home-assistant-io:01e1f3f2e09e"
+source_section: "integrations-color-extractor"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "185c9d04ac56c99080c400d2e5e66add25707d3cca9e9f2d709bd717f58564c6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # ColorExtractor - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

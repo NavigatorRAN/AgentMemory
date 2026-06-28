@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/voice_remote_expose_devices"
+final_url: "https://www.home-assistant.io/voice_control/voice_remote_expose_devices"
+canonical_url: "https://www.home-assistant.io/voice_control/voice_remote_expose_devices/"
+source_handle: "web:www-home-assistant-io:101964e95e3e"
+source_section: "voice-control-voice-remote-expose-devices"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fe000aa921f6ccf56b0a48055ea03cb19635ef54a60fbf7fe187da8ec4ba75eb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Exposing entities to Assist - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

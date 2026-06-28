@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant"
+final_url: "https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant"
+canonical_url: "https://www.home-assistant.io/voice_control/voice_remote_cloud_assistant/"
+source_handle: "web:www-home-assistant-io:c9e0b11e2427"
+source_section: "voice-control-voice-remote-cloud-assistant"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "64b2c90e4b6508fee2cd60ced7abb1691e101fddd5f9161f08f2855bba002b0f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Set up a voice assistant with Home Assistant Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

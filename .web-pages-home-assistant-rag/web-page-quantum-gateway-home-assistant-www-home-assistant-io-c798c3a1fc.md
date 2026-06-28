@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/quantum_gateway"
+final_url: "https://www.home-assistant.io/integrations/quantum_gateway"
+canonical_url: "https://www.home-assistant.io/integrations/quantum_gateway/"
+source_handle: "web:www-home-assistant-io:c798c3a1fcff"
+source_section: "integrations-quantum-gateway"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d0d849b0c0e2b0a9fea55190e87856d6b43601f6db38fc84cb0a606a409b4a72"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Quantum Gateway - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

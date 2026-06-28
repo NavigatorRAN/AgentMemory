@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/picture-glance"
+final_url: "https://www.home-assistant.io/dashboards/picture-glance"
+canonical_url: "https://www.home-assistant.io/dashboards/picture-glance/"
+source_handle: "web:www-home-assistant-io:fd019d50a018"
+source_section: "dashboards-picture-glance"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2ee4179371978e98067527ae62a347873bfaa5324dac53e521cd5e61a32494aa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Picture glance card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

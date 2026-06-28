@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/canary"
+final_url: "https://www.home-assistant.io/integrations/canary"
+canonical_url: "https://www.home-assistant.io/integrations/canary/"
+source_handle: "web:www-home-assistant-io:c0ee33306373"
+source_section: "integrations-canary"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "543cf5e2ca691340de23cdc156bba2209c42313e9074f2524ef873efa1a7b6d3"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Canary - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

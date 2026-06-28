@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wirelesstag"
+final_url: "https://www.home-assistant.io/integrations/wirelesstag"
+canonical_url: "https://www.home-assistant.io/integrations/wirelesstag/"
+source_handle: "web:www-home-assistant-io:920ce70d0f3b"
+source_section: "integrations-wirelesstag"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "465603c9a0e1c1e025e945ae30899238e3d107b8bf61cfa201283f1f16c83f00"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Wireless Sensor Tags - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

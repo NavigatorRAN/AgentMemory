@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/event"
+final_url: "https://www.home-assistant.io/integrations/event"
+canonical_url: "https://www.home-assistant.io/integrations/event/"
+source_handle: "web:www-home-assistant-io:8d80d497536d"
+source_section: "integrations-event"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ec3d5360de696019d1833eb8480d791031f9efc6375f9fa87994dff24b17d8cc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Event - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

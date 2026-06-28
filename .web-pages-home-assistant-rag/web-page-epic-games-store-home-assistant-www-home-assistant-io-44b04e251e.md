@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/epic_games_store"
+final_url: "https://www.home-assistant.io/integrations/epic_games_store"
+canonical_url: "https://www.home-assistant.io/integrations/epic_games_store/"
+source_handle: "web:www-home-assistant-io:44b04e251ed2"
+source_section: "integrations-epic-games-store"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c118f0c1dbc9691e5475e4d3fd45174897f78981a910992c71246c7d83d39539"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Epic Games Store - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

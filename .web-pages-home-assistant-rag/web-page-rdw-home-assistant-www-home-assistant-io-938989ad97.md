@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rdw"
+final_url: "https://www.home-assistant.io/integrations/rdw"
+canonical_url: "https://www.home-assistant.io/integrations/rdw/"
+source_handle: "web:www-home-assistant-io:938989ad97c9"
+source_section: "integrations-rdw"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0c5ac6e7dcb69e455faaae0d08eb706dee9dd0a2005f72c14926cf1e781b606b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # RDW - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

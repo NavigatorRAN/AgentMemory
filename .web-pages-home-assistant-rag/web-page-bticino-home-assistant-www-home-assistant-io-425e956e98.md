@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bticino"
+final_url: "https://www.home-assistant.io/integrations/bticino"
+canonical_url: "https://www.home-assistant.io/integrations/bticino/"
+source_handle: "web:www-home-assistant-io:425e956e9898"
+source_section: "integrations-bticino"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bcbfeea4f1ad77c705934ac26ceaca6ec5962d9e4c80b42c490b41c3a9f2be1b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BTicino - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

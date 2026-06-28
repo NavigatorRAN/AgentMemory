@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/renson"
+final_url: "https://www.home-assistant.io/integrations/renson"
+canonical_url: "https://www.home-assistant.io/integrations/renson/"
+source_handle: "web:www-home-assistant-io:dc704cf4a43d"
+source_section: "integrations-renson"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "29c991661c522102fd4f3be4f8a3635fd454972bc76a6e8dddcbc15bbed17534"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Renson - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

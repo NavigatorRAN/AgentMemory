@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iometer"
+final_url: "https://www.home-assistant.io/integrations/iometer"
+canonical_url: "https://www.home-assistant.io/integrations/iometer/"
+source_handle: "web:www-home-assistant-io:fe13670ef5df"
+source_section: "integrations-iometer"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "67b204da9773bc69aaf4f4218626111bfcaea902ad3a6ae98efc4eac9d06c542"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IOmeter - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

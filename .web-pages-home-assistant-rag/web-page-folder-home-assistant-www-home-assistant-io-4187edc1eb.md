@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/folder"
+final_url: "https://www.home-assistant.io/integrations/folder"
+canonical_url: "https://www.home-assistant.io/integrations/folder/"
+source_handle: "web:www-home-assistant-io:4187edc1eb95"
+source_section: "integrations-folder"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1e7ac8c80f28721150e0907942b8a7817b3e4d051f82e778a22f41c17ceaf050"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Folder - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

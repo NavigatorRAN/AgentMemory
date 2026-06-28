@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/blebox"
+final_url: "https://www.home-assistant.io/integrations/blebox"
+canonical_url: "https://www.home-assistant.io/integrations/blebox/"
+source_handle: "web:www-home-assistant-io:22a5fc6b8778"
+source_section: "integrations-blebox"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "089ae5d6a215a8bbf6ff5539082b482f993573713aacd3197055ba3fc57c1a31"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # BleBox devices - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

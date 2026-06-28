@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ifttt"
+final_url: "https://www.home-assistant.io/integrations/ifttt"
+canonical_url: "https://www.home-assistant.io/integrations/ifttt/"
+source_handle: "web:www-home-assistant-io:bd3d06009fdf"
+source_section: "integrations-ifttt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "21456fa2229b9f147e249fe7fcb5384646d1533988dbbbce2ce8d3f92516c3f0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IFTTT - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

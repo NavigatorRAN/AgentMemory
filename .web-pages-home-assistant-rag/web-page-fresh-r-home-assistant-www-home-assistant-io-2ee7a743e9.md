@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/freshr"
+final_url: "https://www.home-assistant.io/integrations/freshr"
+canonical_url: "https://www.home-assistant.io/integrations/freshr/"
+source_handle: "web:www-home-assistant-io:2ee7a743e90f"
+source_section: "integrations-freshr"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "bced4f14084e8d0729dbab05c852cfd44d23ca3bccf5b15601bba3fdf51c2f19"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Fresh-r - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

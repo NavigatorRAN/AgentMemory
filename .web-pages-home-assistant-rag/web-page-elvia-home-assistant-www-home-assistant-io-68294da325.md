@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/elvia"
+final_url: "https://www.home-assistant.io/integrations/elvia"
+canonical_url: "https://www.home-assistant.io/integrations/elvia/"
+source_handle: "web:www-home-assistant-io:68294da3251b"
+source_section: "integrations-elvia"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9185f679a4cd1e71169144edba7edc8df8078dfa2441cbcdebf5b9dc910f0db6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Elvia - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

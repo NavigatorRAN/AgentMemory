@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/oru"
+final_url: "https://www.home-assistant.io/integrations/oru"
+canonical_url: "https://www.home-assistant.io/integrations/oru/"
+source_handle: "web:www-home-assistant-io:adebacb3a49f"
+source_section: "integrations-oru"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "25357ff8d2b2806ab0454b7c5917660fa38c9731de79e35e7cda927ed2319412"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Orange and Rockland Utility (ORU) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

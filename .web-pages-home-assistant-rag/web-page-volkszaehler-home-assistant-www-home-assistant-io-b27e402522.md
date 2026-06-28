@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/volkszaehler"
+final_url: "https://www.home-assistant.io/integrations/volkszaehler"
+canonical_url: "https://www.home-assistant.io/integrations/volkszaehler/"
+source_handle: "web:www-home-assistant-io:b27e402522ad"
+source_section: "integrations-volkszaehler"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9f2c67869999d3452aa53a6489c810612e3bfdb4cff05abc93c9a1220ac348ff"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Volkszaehler - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/keyboard_remote"
+final_url: "https://www.home-assistant.io/integrations/keyboard_remote"
+canonical_url: "https://www.home-assistant.io/integrations/keyboard_remote/"
+source_handle: "web:www-home-assistant-io:26858c61e97c"
+source_section: "integrations-keyboard-remote"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3091884e75df4b4b2b078fb9a149664ecae8fa40671fadb53951fc0f9a4e29e7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Keyboard Remote - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

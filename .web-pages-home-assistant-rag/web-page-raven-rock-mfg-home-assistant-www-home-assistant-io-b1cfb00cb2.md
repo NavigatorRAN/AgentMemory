@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/raven_rock_mfg"
+final_url: "https://www.home-assistant.io/integrations/raven_rock_mfg"
+canonical_url: "https://www.home-assistant.io/integrations/raven_rock_mfg/"
+source_handle: "web:www-home-assistant-io:b1cfb00cb201"
+source_section: "integrations-raven-rock-mfg"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c99addd54f9aef630913df926e29df841a1a681afab4b96fddb0516e8108c189"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Raven Rock MFG - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

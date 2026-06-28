@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/flux_led"
+final_url: "https://www.home-assistant.io/integrations/flux_led"
+canonical_url: "https://www.home-assistant.io/integrations/flux_led/"
+source_handle: "web:www-home-assistant-io:b4f686fd89c7"
+source_section: "integrations-flux-led"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "07ea688d2504485ff5c354999e80180ed94896b8ffac5b039e2a63d25d8fd011"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Magic Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pepco"
+final_url: "https://www.home-assistant.io/integrations/pepco"
+canonical_url: "https://www.home-assistant.io/integrations/pepco/"
+source_handle: "web:www-home-assistant-io:6d442ebdb31f"
+source_section: "integrations-pepco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "638d65ce1648f859b667823c3f5c6ceaed372916a2939e51f965aead76638064"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Potomac Electric Power Company (Pepco) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

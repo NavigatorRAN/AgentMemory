@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/tilt_pi"
+final_url: "https://www.home-assistant.io/integrations/tilt_pi"
+canonical_url: "https://www.home-assistant.io/integrations/tilt_pi/"
+source_handle: "web:www-home-assistant-io:1054c2865518"
+source_section: "integrations-tilt-pi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "764a498b3279f7d95dea344a94e94b89a616ec158b1e98f2a93059c9ec7b91f1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Tilt Pi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

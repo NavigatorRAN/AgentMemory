@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/roborock"
+final_url: "https://www.home-assistant.io/integrations/roborock"
+canonical_url: "https://www.home-assistant.io/integrations/roborock/"
+source_handle: "web:www-home-assistant-io:bbc7c876b2e4"
+source_section: "integrations-roborock"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f9126d0e3186d64d21fcba6517c8158f24747ed932c33403d857e583a2cbd978"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Roborock - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

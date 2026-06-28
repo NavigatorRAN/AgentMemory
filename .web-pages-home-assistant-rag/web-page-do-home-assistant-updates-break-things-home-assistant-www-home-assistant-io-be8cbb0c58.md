@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/faq/do-updates-break-things"
+final_url: "https://www.home-assistant.io/faq/do-updates-break-things"
+canonical_url: "https://www.home-assistant.io/faq/do-updates-break-things/"
+source_handle: "web:www-home-assistant-io:be8cbb0c588c"
+source_section: "faq-do-updates-break-things"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fab32f706d86e0e2bb1f74117fe2872327e1993076816849845c0d389eca04ee"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Do Home Assistant updates break things? - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/opensensemap"
+final_url: "https://www.home-assistant.io/integrations/opensensemap"
+canonical_url: "https://www.home-assistant.io/integrations/opensensemap/"
+source_handle: "web:www-home-assistant-io:4f34f29070ed"
+source_section: "integrations-opensensemap"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b7cb1bcf04ee08c369579448ba71ecf233eaa27337c753c763447fceb37b4aa2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # openSenseMap - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

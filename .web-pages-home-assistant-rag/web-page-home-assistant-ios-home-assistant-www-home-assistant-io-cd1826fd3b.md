@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ios"
+final_url: "https://www.home-assistant.io/integrations/ios"
+canonical_url: "https://www.home-assistant.io/integrations/ios/"
+source_handle: "web:www-home-assistant-io:cd1826fd3b6b"
+source_section: "integrations-ios"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f9069b33f618245fed6a08353048ce0ce2b54bf3e2f9716e02beae97a65b60d6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant iOS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

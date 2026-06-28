@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smart_home"
+final_url: "https://www.home-assistant.io/integrations/smart_home"
+canonical_url: "https://www.home-assistant.io/integrations/smart_home/"
+source_handle: "web:www-home-assistant-io:42e282d385f4"
+source_section: "integrations-smart-home"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a3057a48760282a1d1447aef2e44e057389649120a20fc5fc750b1c8ebf599f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Smart Home - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

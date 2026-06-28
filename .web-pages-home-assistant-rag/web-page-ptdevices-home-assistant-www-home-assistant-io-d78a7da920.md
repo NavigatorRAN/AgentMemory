@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ptdevices"
+final_url: "https://www.home-assistant.io/integrations/ptdevices"
+canonical_url: "https://www.home-assistant.io/integrations/ptdevices/"
+source_handle: "web:www-home-assistant-io:d78a7da920f6"
+source_section: "integrations-ptdevices"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "33d78c0938a464047370c78ff3b3eb73868c80438c5965974f0f645bd352ca68"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # PTDevices - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

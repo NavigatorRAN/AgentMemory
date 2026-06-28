@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homematic"
+final_url: "https://www.home-assistant.io/integrations/homematic"
+canonical_url: "https://www.home-assistant.io/integrations/homematic/"
+source_handle: "web:www-home-assistant-io:a9751f8b7093"
+source_section: "integrations-homematic"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "211a277828684e45a46c1ee4ce8e61c013d1577de79646bb84f64c839e941b6d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Homematic - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

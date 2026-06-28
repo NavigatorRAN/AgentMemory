@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/twilio_call"
+final_url: "https://www.home-assistant.io/integrations/twilio_call"
+canonical_url: "https://www.home-assistant.io/integrations/twilio_call/"
+source_handle: "web:www-home-assistant-io:d5ea3000f138"
+source_section: "integrations-twilio-call"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "deadcdfaea5691b1fd53f12ab1fa2df1ebbfaf83de5fde7166c00083e6c12828"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Twilio Call - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

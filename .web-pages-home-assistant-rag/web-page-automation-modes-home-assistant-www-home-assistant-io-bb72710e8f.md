@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/modes"
+final_url: "https://www.home-assistant.io/docs/automation/modes"
+canonical_url: "https://www.home-assistant.io/docs/automation/modes/"
+source_handle: "web:www-home-assistant-io:bb72710e8faa"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4b589d9e3ca5bc1fca0d9abd391f61bdca34d8b65903afd48c95681859967899"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Automation modes - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

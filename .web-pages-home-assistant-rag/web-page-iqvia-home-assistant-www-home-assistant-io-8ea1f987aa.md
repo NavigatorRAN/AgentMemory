@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/iqvia"
+final_url: "https://www.home-assistant.io/integrations/iqvia"
+canonical_url: "https://www.home-assistant.io/integrations/iqvia/"
+source_handle: "web:www-home-assistant-io:8ea1f987aad5"
+source_section: "integrations-iqvia"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "dc6cf0a06fa7d266953c8c52b651f9b2d937087372ab1d69ea71091a4a111844"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IQVIA - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homematicip_cloud"
+final_url: "https://www.home-assistant.io/integrations/homematicip_cloud"
+canonical_url: "https://www.home-assistant.io/integrations/homematicip_cloud/"
+source_handle: "web:www-home-assistant-io:3bb13b663695"
+source_section: "integrations-homematicip-cloud"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "616d3e7d81fd83efe8e2c496476d69b1d731f57e852f39441a09cead229a2f9c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # HomematicIP Cloud - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

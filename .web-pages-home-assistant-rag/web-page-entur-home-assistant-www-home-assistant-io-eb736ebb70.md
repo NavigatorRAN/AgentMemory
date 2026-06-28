@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/entur_public_transport"
+final_url: "https://www.home-assistant.io/integrations/entur_public_transport"
+canonical_url: "https://www.home-assistant.io/integrations/entur_public_transport/"
+source_handle: "web:www-home-assistant-io:eb736ebb70ae"
+source_section: "integrations-entur-public-transport"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b4936973085561f41d41a1b685a76a4af5a5ab58195220db0299b156789a2da2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Entur - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

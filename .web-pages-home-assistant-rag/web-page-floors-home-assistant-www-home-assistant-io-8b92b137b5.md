@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/organizing/floors"
+final_url: "https://www.home-assistant.io/docs/organizing/floors"
+canonical_url: "https://www.home-assistant.io/docs/organizing/floors/"
+source_handle: "web:www-home-assistant-io:8b92b137b58f"
+source_section: "docs-organizing"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5ca32332892c7100010831e666a2c8cbf7b80b54bacb39bc4e761ac69ba0b5bd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Floors - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

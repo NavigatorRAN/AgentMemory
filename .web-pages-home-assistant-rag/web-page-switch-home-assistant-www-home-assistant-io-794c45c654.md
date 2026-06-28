@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switch"
+final_url: "https://www.home-assistant.io/integrations/switch"
+canonical_url: "https://www.home-assistant.io/integrations/switch/"
+source_handle: "web:www-home-assistant-io:794c45c65452"
+source_section: "integrations-switch"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "44eb5b6379ae1b8331ef89980cca96524ea17a5feb61c3c4b97596c4ffeca9f0"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Switch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

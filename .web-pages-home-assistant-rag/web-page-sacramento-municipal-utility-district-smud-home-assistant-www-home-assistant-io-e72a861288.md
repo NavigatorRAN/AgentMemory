@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smud"
+final_url: "https://www.home-assistant.io/integrations/smud"
+canonical_url: "https://www.home-assistant.io/integrations/smud/"
+source_handle: "web:www-home-assistant-io:e72a86128890"
+source_section: "integrations-smud"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "45d78c53e41c5eed23c5e6a1f164d660f8b97e41e73ba37d22fcf303a6d9d7b2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sacramento Municipal Utility District (SMUD) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

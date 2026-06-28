@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/siren.mqtt"
+final_url: "https://www.home-assistant.io/integrations/siren.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/siren.mqtt/"
+source_handle: "web:www-home-assistant-io:898fc72cc787"
+source_section: "integrations-siren-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0e314c5bccb5389d910ed48140dedda2605e89cc535ab773b065567eba51c749"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Siren - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/symfonisk"
+final_url: "https://www.home-assistant.io/integrations/symfonisk"
+canonical_url: "https://www.home-assistant.io/integrations/symfonisk/"
+source_handle: "web:www-home-assistant-io:973b0558cd74"
+source_section: "integrations-symfonisk"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3ba56e06eb79a614a7a7f6c9b627a35fd48f28396000ad07a7ecae4d348bc413"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IKEA SYMFONISK - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

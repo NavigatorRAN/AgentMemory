@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dialogflow"
+final_url: "https://www.home-assistant.io/integrations/dialogflow"
+canonical_url: "https://www.home-assistant.io/integrations/dialogflow/"
+source_handle: "web:www-home-assistant-io:df0845b05f67"
+source_section: "integrations-dialogflow"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0da08fe580212e2115a87bba2dfd75b2a75084c6068d2fbc17f1485b6131d653"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dialogflow - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

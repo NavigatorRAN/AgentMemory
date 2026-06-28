@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/yamaha"
+final_url: "https://www.home-assistant.io/integrations/yamaha"
+canonical_url: "https://www.home-assistant.io/integrations/yamaha/"
+source_handle: "web:www-home-assistant-io:6fd098813446"
+source_section: "integrations-yamaha"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "444bf4e68d0225c36e002bd85b380ef5fb111d68ebc2d76632acbb14d13ce876"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Yamaha Network Receivers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aladdin_connect"
+final_url: "https://www.home-assistant.io/integrations/aladdin_connect"
+canonical_url: "https://www.home-assistant.io/integrations/aladdin_connect/"
+source_handle: "web:www-home-assistant-io:2f7044325089"
+source_section: "integrations-aladdin-connect"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b98a3edba2f937c7d19b2d3dde7d9a9550a6df6f3893817f0971e692c48e8ba2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aladdin Connect - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

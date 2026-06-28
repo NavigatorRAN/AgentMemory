@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/avea"
+final_url: "https://www.home-assistant.io/integrations/avea"
+canonical_url: "https://www.home-assistant.io/integrations/avea/"
+source_handle: "web:www-home-assistant-io:1e5f60d1c447"
+source_section: "integrations-avea"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f9aa31ebcecdf97a7c9268c3b35b0276cc2a0147dbed54faa9ef683bf9b43e43"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Elgato Avea - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

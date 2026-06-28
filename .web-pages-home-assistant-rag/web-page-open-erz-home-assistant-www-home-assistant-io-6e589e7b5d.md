@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openerz"
+final_url: "https://www.home-assistant.io/integrations/openerz"
+canonical_url: "https://www.home-assistant.io/integrations/openerz/"
+source_handle: "web:www-home-assistant-io:6e589e7b5d11"
+source_section: "integrations-openerz"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4b0c4a995ae46a75d6154ed561c4e9f3aa9a59f65a9507c29925a0b790f097a1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Open ERZ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/apache_kafka"
+final_url: "https://www.home-assistant.io/integrations/apache_kafka"
+canonical_url: "https://www.home-assistant.io/integrations/apache_kafka/"
+source_handle: "web:www-home-assistant-io:93a728068da2"
+source_section: "integrations-apache-kafka"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0180b72d9dea12db893ec477794cd1756a13baad720155f2b3d7bc2187e08c64"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Apache Kafka - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

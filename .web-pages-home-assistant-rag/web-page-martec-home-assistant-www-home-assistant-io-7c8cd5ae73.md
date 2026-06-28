@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/martec"
+final_url: "https://www.home-assistant.io/integrations/martec"
+canonical_url: "https://www.home-assistant.io/integrations/martec/"
+source_handle: "web:www-home-assistant-io:7c8cd5ae733a"
+source_section: "integrations-martec"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1271701beea02b6e04464d062e281b86bb72fbcf8068ee2cc9ed80d7b1dfc6ec"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Martec - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

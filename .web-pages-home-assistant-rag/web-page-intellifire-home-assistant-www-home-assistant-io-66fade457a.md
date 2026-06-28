@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/intellifire"
+final_url: "https://www.home-assistant.io/integrations/intellifire"
+canonical_url: "https://www.home-assistant.io/integrations/intellifire/"
+source_handle: "web:www-home-assistant-io:66fade457a2a"
+source_section: "integrations-intellifire"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1ba7b69e8d2158882dec7c5be4c00df5de127122e3977ff5108a69d8cb9e46ba"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IntelliFire - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

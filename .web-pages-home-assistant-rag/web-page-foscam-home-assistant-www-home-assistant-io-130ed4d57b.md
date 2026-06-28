@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/foscam"
+final_url: "https://www.home-assistant.io/integrations/foscam"
+canonical_url: "https://www.home-assistant.io/integrations/foscam/"
+source_handle: "web:www-home-assistant-io:130ed4d57b6b"
+source_section: "integrations-foscam"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "85ab3df4886eed1c1a71c9f47f6b7dc4b725198713e0448058b0bfbbca94fd15"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Foscam - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

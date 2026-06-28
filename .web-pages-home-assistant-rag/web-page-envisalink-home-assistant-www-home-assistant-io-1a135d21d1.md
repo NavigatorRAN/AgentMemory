@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/envisalink"
+final_url: "https://www.home-assistant.io/integrations/envisalink"
+canonical_url: "https://www.home-assistant.io/integrations/envisalink/"
+source_handle: "web:www-home-assistant-io:1a135d21d147"
+source_section: "integrations-envisalink"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "61605ebfa341894d7e96616c7e505e2e31d8849af7c836c1f02978d6d7546bb4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Envisalink - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

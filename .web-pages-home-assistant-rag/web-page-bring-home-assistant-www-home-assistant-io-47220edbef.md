@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bring"
+final_url: "https://www.home-assistant.io/integrations/bring"
+canonical_url: "https://www.home-assistant.io/integrations/bring/"
+source_handle: "web:www-home-assistant-io:47220edbefe4"
+source_section: "integrations-bring"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7f9a6436bf46152170428107e74e49fee2fbbfa6cfe8ef275248da7aae80a699"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Bring! - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

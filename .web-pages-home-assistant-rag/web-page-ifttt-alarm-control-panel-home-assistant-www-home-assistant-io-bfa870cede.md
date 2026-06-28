@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alarm_control_panel.ifttt"
+final_url: "https://www.home-assistant.io/integrations/alarm_control_panel.ifttt"
+canonical_url: "https://www.home-assistant.io/integrations/alarm_control_panel.ifttt/"
+source_handle: "web:www-home-assistant-io:bfa870cede88"
+source_section: "integrations-alarm-control-panel-ifttt"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9897c29d2735854fb31039191eba933f4926380e969f7adef71711a2bd79b7e1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # IFTTT Alarm control panel - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/abode"
+final_url: "https://www.home-assistant.io/integrations/abode"
+canonical_url: "https://www.home-assistant.io/integrations/abode/"
+source_handle: "web:www-home-assistant-io:a1d33cd038c7"
+source_section: "integrations-abode"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d6f8ed714e093ccb9e9715dd0198a53ac958eaf8fac16e06fecd1b913de36d0b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Abode - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

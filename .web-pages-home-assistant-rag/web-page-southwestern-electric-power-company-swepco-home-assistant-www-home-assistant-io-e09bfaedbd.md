@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/swepco"
+final_url: "https://www.home-assistant.io/integrations/swepco"
+canonical_url: "https://www.home-assistant.io/integrations/swepco/"
+source_handle: "web:www-home-assistant-io:e09bfaedbdf7"
+source_section: "integrations-swepco"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4387d64d81ff554c113cf05ab6e376c9e8b9d9e91b60a4085a7aca336a6b796a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Southwestern Electric Power Company (SWEPCO) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/digital_loggers"
+final_url: "https://www.home-assistant.io/integrations/digital_loggers"
+canonical_url: "https://www.home-assistant.io/integrations/digital_loggers/"
+source_handle: "web:www-home-assistant-io:63cbc05b7f11"
+source_section: "integrations-digital-loggers"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "207dbceef3aa170de872fa8036f228c358c1d32d1d4ceaa0dd67859cfb92c078"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Digital Loggers - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

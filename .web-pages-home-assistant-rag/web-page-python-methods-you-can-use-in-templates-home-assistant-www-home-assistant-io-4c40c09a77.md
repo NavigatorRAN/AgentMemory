@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/python-methods"
+final_url: "https://www.home-assistant.io/docs/templating/python-methods"
+canonical_url: "https://www.home-assistant.io/docs/templating/python-methods/"
+source_handle: "web:www-home-assistant-io:4c40c09a7753"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d4cd5738bc2196dc4e559c38581c86d8c1318b3a8d3af128be12f7dd098bd248"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Python methods you can use in templates - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

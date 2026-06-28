@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/errors"
+final_url: "https://www.home-assistant.io/docs/templating/errors"
+canonical_url: "https://www.home-assistant.io/docs/templating/errors/"
+source_handle: "web:www-home-assistant-io:aef7c3dc13b9"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "190b7d405922d8f84b457c5a585693dbe0333536649fe7eda15875471cdf26fd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Template error messages and fixes - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

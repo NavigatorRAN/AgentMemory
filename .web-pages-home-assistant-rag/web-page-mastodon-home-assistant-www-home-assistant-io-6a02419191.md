@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/mastodon"
+final_url: "https://www.home-assistant.io/integrations/mastodon"
+canonical_url: "https://www.home-assistant.io/integrations/mastodon/"
+source_handle: "web:www-home-assistant-io:6a0241919111"
+source_section: "integrations-mastodon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ce80b2b32d86b1ed5b150905d21e945ffc91112d47f83b76b1287da29afc8667"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Mastodon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

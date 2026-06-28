@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/meater"
+final_url: "https://www.home-assistant.io/integrations/meater"
+canonical_url: "https://www.home-assistant.io/integrations/meater/"
+source_handle: "web:www-home-assistant-io:7c2bf97835a0"
+source_section: "integrations-meater"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b34ed34b9952503928769c58f294c6516d30e7bb505e15e81380feb2a59ae42e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Meater - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

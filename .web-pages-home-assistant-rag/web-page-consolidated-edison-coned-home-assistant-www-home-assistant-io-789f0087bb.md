@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/coned"
+final_url: "https://www.home-assistant.io/integrations/coned"
+canonical_url: "https://www.home-assistant.io/integrations/coned/"
+source_handle: "web:www-home-assistant-io:789f0087bb4c"
+source_section: "integrations-coned"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e859181b6a1da8362632265d37e9de8ef958714fdfd9f5784eafba24a8c453cc"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Consolidated Edison (ConEd) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

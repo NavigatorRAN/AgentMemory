@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/portainer"
+final_url: "https://www.home-assistant.io/integrations/portainer"
+canonical_url: "https://www.home-assistant.io/integrations/portainer/"
+source_handle: "web:www-home-assistant-io:68078b8c385c"
+source_section: "integrations-portainer"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3e7edaa042fea478e91da3624ffa212a83d88175f3ea1bb552ca014c5ce60cfe"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Portainer - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

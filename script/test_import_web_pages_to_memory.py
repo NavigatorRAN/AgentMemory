@@ -10,6 +10,8 @@ import unittest
 from import_web_pages_to_memory import (
     ImportState,
     URLInput,
+    audit_import_outputs,
+    build_collection_wiki_markdown,
     build_memory_content,
     build_rag_markdown,
     chunk_profile_for_page,
@@ -21,12 +23,14 @@ from import_web_pages_to_memory import (
     in_allowed_scope,
     load_url_inputs,
     parse_sitemap_urls,
+    parse_markdown_frontmatter,
     rag_metadata_for_page,
     redirect_target,
     resolve_host_with_dns_server,
     should_skip_fetched_page,
     source_handle_for_url,
     safe_rag_filename,
+    upgrade_legacy_import_metadata,
     write_log,
 )
 
@@ -276,6 +280,177 @@ class WebPageImporterTests(unittest.TestCase):
         self.assertIn("Requested URL: https://example.com/source", markdown)
         self.assertIn("Final URL: https://example.com/final", markdown)
         self.assertIn("Detailed implementation note.", markdown)
+
+    def test_markdown_frontmatter_round_trips_simple_metadata(self) -> None:
+        markdown = build_rag_markdown(
+            page=extract_page(
+                requested_url="https://example.com/source",
+                final_url="https://example.com/final",
+                content_type="text/plain",
+                raw=b"Heading\n\nBody",
+                max_text_chars=10_000,
+            ),
+            label="",
+            max_chars=10_000,
+            collection="example-docs",
+            import_run_id="run-1",
+            chunk_profile="web-docs",
+        )
+
+        metadata = parse_markdown_frontmatter(markdown)
+
+        self.assertEqual(metadata["collection"], "example-docs")
+        self.assertEqual(metadata["import_run_id"], "run-1")
+        self.assertEqual(metadata["language"], "en")
+
+    def test_audit_import_outputs_flags_legacy_records_and_frontmatter(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = pathlib.Path(directory)
+            rag_dir = root / "rag"
+            rag_dir.mkdir()
+            (rag_dir / "legacy.md").write_text("# Legacy\n\nNo frontmatter", encoding="utf-8")
+            (rag_dir / "current.md").write_text(
+                build_rag_markdown(
+                    page=extract_page(
+                        requested_url="https://docs.example.com/docs/start",
+                        final_url="https://docs.example.com/docs/start",
+                        content_type="text/plain",
+                        raw=b"Start\n\nConfiguration option reference.",
+                        max_text_chars=10_000,
+                    ),
+                    label="",
+                    max_chars=10_000,
+                    collection="example-docs",
+                    import_run_id="run-1",
+                    chunk_profile="reference-docs",
+                ),
+                encoding="utf-8",
+            )
+            state = ImportState()
+            state.mark_completed("https://legacy.example.com", {"title": "Legacy"})
+            state.mark_completed(
+                "https://docs.example.com/docs/start",
+                {
+                    "title": "Start",
+                    "source_handle": "web:docs-example-com:abc",
+                    "source_section": "docs-start",
+                    "content_hash": "hash",
+                    "chunk_profile": "reference-docs",
+                    "import_run_id": "run-1",
+                    "rag_path": str(rag_dir / "current.md"),
+                },
+            )
+
+            audit = audit_import_outputs(state=state, rag_dir=rag_dir)
+
+        self.assertEqual(audit["state"]["completed"], 2)
+        self.assertEqual(audit["record_metadata"]["complete_records"], 1)
+        self.assertEqual(audit["record_metadata"]["missing_counts"]["source_handle"], 1)
+        self.assertEqual(audit["rag_metadata"]["markdown_count"], 2)
+        self.assertEqual(audit["rag_metadata"]["with_frontmatter"], 1)
+        self.assertEqual(audit["rag_metadata"]["missing_frontmatter"], 1)
+        self.assertEqual(audit["chunk_profiles"]["reference-docs"], 1)
+        self.assertEqual(audit["doc_types"]["reference"], 1)
+
+    def test_collection_wiki_markdown_summarizes_import_and_rag_health(self) -> None:
+        state = ImportState()
+        state.mark_completed(
+            "https://docs.example.com/docs/start",
+            {
+                "title": "Start",
+                "source_handle": "web:docs-example-com:abc",
+                "source_section": "docs-start",
+                "content_hash": "hash",
+                "chunk_profile": "web-docs",
+                "import_run_id": "run-1",
+                "rag_path": "rag/current.md",
+            },
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = pathlib.Path(directory)
+            rag_dir = root / "rag"
+            rag_dir.mkdir()
+            audit = audit_import_outputs(state=state, rag_dir=rag_dir)
+            markdown = build_collection_wiki_markdown(
+                title="Example Documentation Import",
+                collection="example-docs",
+                state_path=root / "state.json",
+                log_path=root / "import.log.jsonl",
+                rag_dir=rag_dir,
+                audit=audit,
+                memory_endpoint="http://memory.example/mcp",
+                rag_stats={"done": 10, "failed": 1},
+            )
+
+        self.assertIn("# Example Documentation Import", markdown)
+        self.assertIn("example-docs has 1 completed pages", markdown)
+        self.assertIn("- Memory MCP endpoint: http://memory.example/mcp", markdown)
+        self.assertIn("## RAG Queue", markdown)
+        self.assertIn("- done: 10", markdown)
+
+    def test_upgrade_legacy_import_metadata_backfills_state_and_frontmatter(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = pathlib.Path(directory)
+            rag_dir = root / "rag"
+            rag_dir.mkdir()
+            rag_path = rag_dir / "legacy.md"
+            rag_path.write_text(
+                "\n".join(
+                    [
+                        "# Legacy Doc",
+                        "",
+                        "Source-backed web page detail staged by AgentMemory bulk web importer.",
+                        "",
+                        "- Requested URL: https://docs.example.com/docs/start",
+                        "- Final URL: https://docs.example.com/docs/start",
+                        "- Canonical URL: https://docs.example.com/docs/start/",
+                        "- Fetched at: 2026-01-01T00:00:00Z",
+                        "- Content type: text/html; charset=UTF-8",
+                        "",
+                        "## Description",
+                        "",
+                        "Helpful setup docs.",
+                        "",
+                        "## Extracted Text",
+                        "",
+                        "Configuration option reference details.",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            state_path = root / "state.json"
+            state = ImportState()
+            state.mark_completed(
+                "https://docs.example.com/docs/start",
+                {
+                    "title": "Legacy Doc",
+                    "final_url": "https://docs.example.com/docs/start",
+                    "canonical_url": "https://docs.example.com/docs/start/",
+                    "rag_path": str(rag_path),
+                    "rag_job_id": 42,
+                    "fetched_at": "2026-01-01T00:00:00Z",
+                },
+            )
+
+            result = upgrade_legacy_import_metadata(
+                state=state,
+                state_path=state_path,
+                rag_dir=rag_dir,
+                collection="example-docs",
+                import_run_id="legacy-backfill",
+            )
+            upgraded = ImportState.load(state_path)
+            markdown = rag_path.read_text(encoding="utf-8")
+            metadata = parse_markdown_frontmatter(markdown)
+
+        self.assertEqual(result["upgraded_records"], 1)
+        self.assertEqual(result["upgraded_markdown"], 1)
+        record = upgraded.records["https://docs.example.com/docs/start"]
+        self.assertEqual(record["import_run_id"], "legacy-backfill")
+        self.assertEqual(record["source_section"], "docs-start")
+        self.assertEqual(metadata["collection"], "example-docs")
+        self.assertEqual(metadata["chunk_profile"], "reference-docs")
+        self.assertIn("# Legacy Doc", markdown)
 
     def test_source_metadata_helpers_are_stable(self) -> None:
         page = extract_page(

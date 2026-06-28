@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/clickatell"
+final_url: "https://www.home-assistant.io/integrations/clickatell"
+canonical_url: "https://www.home-assistant.io/integrations/clickatell/"
+source_handle: "web:www-home-assistant-io:14d4f2d7c83c"
+source_section: "integrations-clickatell"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4a85305b3704cadadf60795757b52ab8829f85db14849a859812b7f9672a46f1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Clickatell - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

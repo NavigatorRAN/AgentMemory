@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gios"
+final_url: "https://www.home-assistant.io/integrations/gios"
+canonical_url: "https://www.home-assistant.io/integrations/gios/"
+source_handle: "web:www-home-assistant-io:5941cd4e7a24"
+source_section: "integrations-gios"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b1c7cc5a6a499bae5ed58cb74048b1232533056141df927b6ae65d7abd17aeed"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GIOŚ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

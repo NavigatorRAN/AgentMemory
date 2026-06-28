@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dublin_bus_transport"
+final_url: "https://www.home-assistant.io/integrations/dublin_bus_transport"
+canonical_url: "https://www.home-assistant.io/integrations/dublin_bus_transport/"
+source_handle: "web:www-home-assistant-io:88e91ae39474"
+source_section: "integrations-dublin-bus-transport"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a32b49656dd72445b78a618e2d7712373696b0b6e6aaab239775b0519a69ea96"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dublin Bus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

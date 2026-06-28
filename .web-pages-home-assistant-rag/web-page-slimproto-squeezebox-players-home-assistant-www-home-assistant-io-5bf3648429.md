@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/slimproto"
+final_url: "https://www.home-assistant.io/integrations/slimproto"
+canonical_url: "https://www.home-assistant.io/integrations/slimproto/"
+source_handle: "web:www-home-assistant-io:5bf3648429cd"
+source_section: "integrations-slimproto"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "16d421e12150e02179388a23947bcf9165a9c90cf7a81f191b6bf81c76660262"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SlimProto (Squeezebox players) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/apcupsd"
+final_url: "https://www.home-assistant.io/integrations/apcupsd"
+canonical_url: "https://www.home-assistant.io/integrations/apcupsd/"
+source_handle: "web:www-home-assistant-io:e1bd1c1406b6"
+source_section: "integrations-apcupsd"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "77e7fc35ef50e44d39f9888b91649f8fd585bb825775f2e536714e82c36ae91b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # APC UPS Daemon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

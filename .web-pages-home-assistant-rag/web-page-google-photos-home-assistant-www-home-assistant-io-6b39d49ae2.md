@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_photos"
+final_url: "https://www.home-assistant.io/integrations/google_photos"
+canonical_url: "https://www.home-assistant.io/integrations/google_photos/"
+source_handle: "web:www-home-assistant-io:6b39d49ae22f"
+source_section: "integrations-google-photos"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fb5624f5c972027d9f96c14e97e0c10444e4dcf8a9a092a6f07479695e934525"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Photos - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

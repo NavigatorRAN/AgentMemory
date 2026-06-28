@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/siemens"
+final_url: "https://www.home-assistant.io/integrations/siemens"
+canonical_url: "https://www.home-assistant.io/integrations/siemens/"
+source_handle: "web:www-home-assistant-io:8e52f9fef1c9"
+source_section: "integrations-siemens"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0b70ecacd2957e51ed87837394b190e6c9082c0a8eea4eac4c089f0277d474bd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Siemens - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

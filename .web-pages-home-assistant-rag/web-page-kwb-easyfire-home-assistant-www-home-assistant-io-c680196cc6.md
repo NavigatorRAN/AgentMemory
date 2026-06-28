@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/kwb"
+final_url: "https://www.home-assistant.io/integrations/kwb"
+canonical_url: "https://www.home-assistant.io/integrations/kwb/"
+source_handle: "web:www-home-assistant-io:c680196cc612"
+source_section: "integrations-kwb"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0aa1ad2bed9a7d08d19275957b59488a2a51bf1ec39b5abdd06dca73e7bd0d39"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # KWB Easyfire - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

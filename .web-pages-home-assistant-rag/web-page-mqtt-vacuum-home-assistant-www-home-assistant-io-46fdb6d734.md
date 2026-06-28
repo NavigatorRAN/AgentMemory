@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vacuum.mqtt"
+final_url: "https://www.home-assistant.io/integrations/vacuum.mqtt"
+canonical_url: "https://www.home-assistant.io/integrations/vacuum.mqtt/"
+source_handle: "web:www-home-assistant-io:46fdb6d73401"
+source_section: "integrations-vacuum-mqtt"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4e0db1b21a952f00545d2f1b877ca68746ab19acdf37c495d3c5468a0cf23e2f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # MQTT Vacuum - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

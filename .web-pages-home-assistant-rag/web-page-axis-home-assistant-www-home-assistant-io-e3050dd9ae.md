@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/axis"
+final_url: "https://www.home-assistant.io/integrations/axis"
+canonical_url: "https://www.home-assistant.io/integrations/axis/"
+source_handle: "web:www-home-assistant-io:e3050dd9ae59"
+source_section: "integrations-axis"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9f7f8de81aea1f2884ab3eb5142b4290813cdc540f8737a4c0172864b09b0b89"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Axis - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rfxtrx"
+final_url: "https://www.home-assistant.io/integrations/rfxtrx"
+canonical_url: "https://www.home-assistant.io/integrations/rfxtrx/"
+source_handle: "web:www-home-assistant-io:76d0aadfc89b"
+source_section: "integrations-rfxtrx"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2f3b5daa3c41fbd441cd65acab3f8cb84adf50d9379eee071ae4c45720a85f1f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # RFXCOM RFXtrx - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

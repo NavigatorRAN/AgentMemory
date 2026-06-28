@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/orvibo"
+final_url: "https://www.home-assistant.io/integrations/orvibo"
+canonical_url: "https://www.home-assistant.io/integrations/orvibo/"
+source_handle: "web:www-home-assistant-io:d3fd404654cf"
+source_section: "integrations-orvibo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "466333078cca55fa3707737085d7d2582ac73cbf27489688fe1b568d43acc649"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Orvibo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

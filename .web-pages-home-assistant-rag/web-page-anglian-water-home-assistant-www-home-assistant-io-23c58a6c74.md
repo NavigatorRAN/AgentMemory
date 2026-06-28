@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/anglian_water"
+final_url: "https://www.home-assistant.io/integrations/anglian_water"
+canonical_url: "https://www.home-assistant.io/integrations/anglian_water/"
+source_handle: "web:www-home-assistant-io:23c58a6c74b1"
+source_section: "integrations-anglian-water"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "201afb765b6187a13e5c76ea0ab391162b038f31e64061f97ea6dccf9a2ea355"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Anglian Water - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

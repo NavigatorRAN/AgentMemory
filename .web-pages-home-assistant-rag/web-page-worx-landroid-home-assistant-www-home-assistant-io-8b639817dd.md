@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/worxlandroid"
+final_url: "https://www.home-assistant.io/integrations/worxlandroid"
+canonical_url: "https://www.home-assistant.io/integrations/worxlandroid/"
+source_handle: "web:www-home-assistant-io:8b639817dd7b"
+source_section: "integrations-worxlandroid"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a4c579b0c5faa27ad1e1b168f5279ef73a1f4be574e83ac91bc02680368f45b8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Worx Landroid - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

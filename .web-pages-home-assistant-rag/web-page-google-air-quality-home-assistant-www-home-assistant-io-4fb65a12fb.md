@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/google_air_quality"
+final_url: "https://www.home-assistant.io/integrations/google_air_quality"
+canonical_url: "https://www.home-assistant.io/integrations/google_air_quality/"
+source_handle: "web:www-home-assistant-io:4fb65a12fb01"
+source_section: "integrations-google-air-quality"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "130e4f53a450bba3b5d108f1e67e147de7834c0408a39c3a87d82077eceafa16"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Google Air Quality - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

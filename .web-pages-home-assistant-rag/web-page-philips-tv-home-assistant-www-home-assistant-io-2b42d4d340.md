@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/philips_js"
+final_url: "https://www.home-assistant.io/integrations/philips_js"
+canonical_url: "https://www.home-assistant.io/integrations/philips_js/"
+source_handle: "web:www-home-assistant-io:2b42d4d340c6"
+source_section: "integrations-philips-js"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "555fe16e4e7baaae02b03eded17e7a7741e476e82965cf024c1aad512fe43c36"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Philips TV - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

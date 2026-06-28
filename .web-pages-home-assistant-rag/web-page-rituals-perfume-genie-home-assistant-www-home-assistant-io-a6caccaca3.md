@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/rituals_perfume_genie"
+final_url: "https://www.home-assistant.io/integrations/rituals_perfume_genie"
+canonical_url: "https://www.home-assistant.io/integrations/rituals_perfume_genie/"
+source_handle: "web:www-home-assistant-io:a6caccaca319"
+source_section: "integrations-rituals-perfume-genie"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3ef5ce252e545a3d0139fafe5bbefd8dd7d7cdc118e577158c23188cec216288"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Rituals Perfume Genie - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

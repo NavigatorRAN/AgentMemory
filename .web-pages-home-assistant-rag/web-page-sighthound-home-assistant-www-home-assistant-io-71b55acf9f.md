@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sighthound"
+final_url: "https://www.home-assistant.io/integrations/sighthound"
+canonical_url: "https://www.home-assistant.io/integrations/sighthound/"
+source_handle: "web:www-home-assistant-io:71b55acf9f7d"
+source_section: "integrations-sighthound"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a14982c63f1d10c8c765808f99c17270031d03e288c2c59ee2346e3805c55834"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Sighthound - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

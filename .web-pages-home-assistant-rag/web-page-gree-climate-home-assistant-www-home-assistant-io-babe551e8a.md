@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/gree"
+final_url: "https://www.home-assistant.io/integrations/gree"
+canonical_url: "https://www.home-assistant.io/integrations/gree/"
+source_handle: "web:www-home-assistant-io:babe551e8ac5"
+source_section: "integrations-gree"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "36711cc35a4063a48b04035c570bcd87aca1f9d7e0fdab07e29116b378d037ae"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Gree Climate - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

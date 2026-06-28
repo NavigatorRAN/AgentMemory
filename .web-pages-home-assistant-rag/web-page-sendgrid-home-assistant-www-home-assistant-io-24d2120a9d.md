@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sendgrid"
+final_url: "https://www.home-assistant.io/integrations/sendgrid"
+canonical_url: "https://www.home-assistant.io/integrations/sendgrid/"
+source_handle: "web:www-home-assistant-io:24d2120a9d6f"
+source_section: "integrations-sendgrid"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4e33caccd08e95106a2391c84641d39bb99204d557f613a32ba01680697703be"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SendGrid - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/thread"
+final_url: "https://www.home-assistant.io/integrations/thread"
+canonical_url: "https://www.home-assistant.io/integrations/thread/"
+source_handle: "web:www-home-assistant-io:4db0e634578a"
+source_section: "integrations-thread"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f98a2f4f7cd8f2c1c8057c9da5d983c099a828f587c9fc477ae369b6976fd07e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Thread - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

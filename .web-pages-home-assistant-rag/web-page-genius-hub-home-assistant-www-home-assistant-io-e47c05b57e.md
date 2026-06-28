@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/geniushub"
+final_url: "https://www.home-assistant.io/integrations/geniushub"
+canonical_url: "https://www.home-assistant.io/integrations/geniushub/"
+source_handle: "web:www-home-assistant-io:e47c05b57e02"
+source_section: "integrations-geniushub"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "742b93ed282e1d2c82f09642ba69a84c63acfd515ee77f8245e282d1fb1b953f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Genius Hub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

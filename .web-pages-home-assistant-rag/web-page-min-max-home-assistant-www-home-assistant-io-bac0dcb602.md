@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/min_max"
+final_url: "https://www.home-assistant.io/integrations/min_max"
+canonical_url: "https://www.home-assistant.io/integrations/min_max/"
+source_handle: "web:www-home-assistant-io:bac0dcb602bb"
+source_section: "integrations-min-max"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "601fa384df31ff4b6718eb6fa5b34e859e89355663f459807b9f2fe7760ffb54"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Min/Max - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

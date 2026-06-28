@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pooldose"
+final_url: "https://www.home-assistant.io/integrations/pooldose"
+canonical_url: "https://www.home-assistant.io/integrations/pooldose/"
+source_handle: "web:www-home-assistant-io:1683f7399187"
+source_section: "integrations-pooldose"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "64dee04607247101e8421a1d0a7f85ae410c38e26f9d1cd625e4363639901079"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SEKO PoolDose - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

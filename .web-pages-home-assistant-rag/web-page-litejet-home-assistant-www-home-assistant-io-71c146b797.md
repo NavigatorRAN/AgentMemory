@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/litejet"
+final_url: "https://www.home-assistant.io/integrations/litejet"
+canonical_url: "https://www.home-assistant.io/integrations/litejet/"
+source_handle: "web:www-home-assistant-io:71c146b797cd"
+source_section: "integrations-litejet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d55515f6376b4f94ca2cd5f11c64b1f21da483c83e3462301d21336d9f56061c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LiteJet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

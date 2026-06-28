@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/pge"
+final_url: "https://www.home-assistant.io/integrations/pge"
+canonical_url: "https://www.home-assistant.io/integrations/pge/"
+source_handle: "web:www-home-assistant-io:5738a4d0b8c0"
+source_section: "integrations-pge"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "345702d7ca79029e7b7de86f6f4be72f475edacd0192733f32c9e6383a59fa78"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Pacific Gas & Electric (PG&E) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

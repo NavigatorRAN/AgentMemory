@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/naming"
+final_url: "https://www.home-assistant.io/dashboards/naming"
+canonical_url: "https://www.home-assistant.io/dashboards/naming/"
+source_handle: "web:www-home-assistant-io:944823f21f04"
+source_section: "dashboards-naming"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ae45ce24a63e079f5ca90a08ee314517d90ca592ed84a9354f2eecc2a9b5bb73"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Card naming - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

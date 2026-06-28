@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/geo_rss_events"
+final_url: "https://www.home-assistant.io/integrations/geo_rss_events"
+canonical_url: "https://www.home-assistant.io/integrations/geo_rss_events/"
+source_handle: "web:www-home-assistant-io:9b50444f7143"
+source_section: "integrations-geo-rss-events"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b08f3721de98821a809fa600eac27976bd0226f3044270e43a1f0d3da21a2d25"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # GeoRSS - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

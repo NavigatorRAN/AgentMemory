@@ -1,0 +1,338 @@
+{
+  "audit": {
+    "chunk_profiles": {
+      "api-docs": 1255,
+      "code-docs": 58,
+      "reference-docs": 392,
+      "web-docs": 17
+    },
+    "collections": {
+      "home-assistant-docs": 1721
+    },
+    "doc_types": {
+      "api-reference": 1255,
+      "code-documentation": 58,
+      "reference": 391,
+      "web-documentation": 17
+    },
+    "import_run_ids": {
+      "home-assistant-docs-legacy-backfill": 1722
+    },
+    "rag_metadata": {
+      "markdown_count": 1721,
+      "missing_counts": {
+        "canonical_url": 0,
+        "chunk_profile": 0,
+        "collection": 0,
+        "content_hash": 0,
+        "doc_type": 0,
+        "final_url": 0,
+        "import_run_id": 0,
+        "language": 0,
+        "source_handle": 0,
+        "source_section": 0,
+        "source_url": 0
+      },
+      "missing_frontmatter": 0,
+      "required_keys": [
+        "source_url",
+        "final_url",
+        "canonical_url",
+        "source_handle",
+        "source_section",
+        "collection",
+        "doc_type",
+        "language",
+        "import_run_id",
+        "content_hash",
+        "chunk_profile"
+      ],
+      "with_frontmatter": 1721
+    },
+    "record_metadata": {
+      "complete_records": 1722,
+      "missing_counts": {
+        "chunk_profile": 0,
+        "content_hash": 0,
+        "import_run_id": 0,
+        "rag_path": 0,
+        "source_handle": 0,
+        "source_section": 0
+      },
+      "required_keys": [
+        "source_handle",
+        "source_section",
+        "content_hash",
+        "chunk_profile",
+        "import_run_id",
+        "rag_path"
+      ]
+    },
+    "samples": {
+      "rag_markdown_missing_frontmatter": [],
+      "records_missing_metadata": []
+    },
+    "state": {
+      "completed": 1722,
+      "discovered": 0,
+      "failed": 0,
+      "records": 1722,
+      "skipped": 0
+    },
+    "top_source_sections": {
+      "common-tasks-container": 1,
+      "common-tasks-general": 1,
+      "common-tasks-os": 1,
+      "dashboards": 1,
+      "dashboards-alarm-panel": 1,
+      "dashboards-area": 1,
+      "dashboards-badges": 1,
+      "dashboards-button": 1,
+      "dashboards-calendar": 1,
+      "dashboards-cards": 1,
+      "docs-authentication": 3,
+      "docs-automation": 12,
+      "docs-blueprint": 4,
+      "docs-configuration": 15,
+      "docs-energy": 9,
+      "docs-organizing": 6,
+      "docs-scene": 2,
+      "docs-scripts": 3,
+      "docs-templating": 16,
+      "docs-tools": 4
+    }
+  },
+  "memory": {
+    "search_events": {
+      "Home Assistant": {
+        "result": [
+          {
+            "agent": "CODEX",
+            "content": "Implemented AgentMemory graph scaling changes after the Home Assistant import pushed the live graph near 5k nodes. The app now requests memory_graph with limit=10,000, caches both the detailed server graph and a grouped overview, and uses MemoryMCPGraphOverviewBuilder to collapse imported web/product documentation pages into collection/section aggregate nodes. Selecting an aggregate expands back to page-level members, while Memory MCP search now requests a query-focused graph directly. Verification: DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift test passed 128 tests, and swift build -c release passed.",
+            "entities": [
+              "agentmemory",
+              "home-assistant-docs",
+              "memory-graph",
+              "memory-graph-overview-builder",
+              "memory-mcp"
+            ],
+            "event_date": "2026-06-28T04:38:47.410730+00:00",
+            "id": "01KW68BQBJ2484PYDBZS3187ST",
+            "path": "events/2026/06/28-zs3187st-implemented-agentmemory-graph-scaling-changes-after-the-home.md",
+            "recorded_at": "2026-06-28T04:38:47.410808+00:00",
+            "tags": [
+              "agentmemory",
+              "graph-overview",
+              "implementation",
+              "memory-graph",
+              "scaling"
+            ]
+          },
+          {
+            "agent": "CODEX",
+            "content": "Checked live Memory MCP capacity after Home Assistant documentation import. Vault at /mnt/aishareddrive/family-agents/memory is 653 MB on a 4.6 TB share with 5,171 event files, 4,792 entity files, and 4 native wiki pages. No storage cap is currently close, but the full memory_graph now returns 4,855 nodes and 18,017 edges; the AgentMemory app asks for limit=5,000, so it is barely under the current graph cap. Server-side full graph generation took about 40 seconds for limits 200, 5,000, and 6,000, indicating the next scaling work should be graph caching/summary metadata/pagination or focused views rather than only raising the limit.",
+            "entities": [
+              "agentmemory",
+              "capacity-planning",
+              "home-assistant-docs",
+              "memory-graph",
+              "memory-mcp"
+            ],
+            "event_date": "2026-06-28T04:28:42.511595+00:00",
+            "id": "01KW67S8MFS550PX2C5ERJ9C5B",
+            "path": "events/2026/06/28-5erj9c5b-checked-live-memory-mcp-capacity-after-home-assistant-docume.md",
+            "recorded_at": "2026-06-28T04:28:42.511729+00:00",
+            "tags": [
+              "agentmemory",
+              "capacity",
+              "home-assistant-docs",
+              "memory-graph",
+              "scaling"
+            ]
+          },
+          {
+            "agent": "CODEX",
+            "content": "Completed the Home Assistant documentation bulk import. Imported 1,722 official English source handles for collection `home-assistant-docs` with 0 failures; the full run added 1,719 new pages after a 3-page smoke import. RAG jobs 3240-4961 were queued across smoke plus full run and the queue drained to done. Native wiki page `home-assistant-docs` was updated with final counts and artifact paths: `.web-pages-home-assistant-state.json`, `.web-pages-home-assistant.log.jsonl`, and `.web-pages-home-assistant-rag/`.",
+            "entities": [
+              "agentmemory",
+              "agentmemory-wiki",
+              "home-assistant-docs",
+              "memory-mcp",
+              "rag",
+              "web-page-import",
+              "wiki-home-assistant-docs"
+            ],
+            "event_date": "2026-06-28T03:36:02.314099+00:00",
+            "id": "01KW64RTGA6MK43QYXZAHY9GSB",
+            "path": "events/2026/06/28-zahy9gsb-completed-the-home-assistant-documentation-bulk-import-impor.md",
+            "recorded_at": "2026-06-28T03:36:02.314173+00:00",
+            "tags": [
+              "agentmemory-wiki",
+              "documentation-import",
+              "home-assistant",
+              "import-summary",
+              "rag-backed",
+              "web-page-import"
+            ]
+          }
+        ]
+      },
+      "home-assistant-docs": {
+        "result": [
+          {
+            "agent": "CODEX",
+            "content": "Completed the Home Assistant documentation bulk import. Imported 1,722 official English source handles for collection `home-assistant-docs` with 0 failures; the full run added 1,719 new pages after a 3-page smoke import. RAG jobs 3240-4961 were queued across smoke plus full run and the queue drained to done. Native wiki page `home-assistant-docs` was updated with final counts and artifact paths: `.web-pages-home-assistant-state.json`, `.web-pages-home-assistant.log.jsonl`, and `.web-pages-home-assistant-rag/`.",
+            "entities": [
+              "agentmemory",
+              "agentmemory-wiki",
+              "home-assistant-docs",
+              "memory-mcp",
+              "rag",
+              "web-page-import",
+              "wiki-home-assistant-docs"
+            ],
+            "event_date": "2026-06-28T03:36:02.314099+00:00",
+            "id": "01KW64RTGA6MK43QYXZAHY9GSB",
+            "path": "events/2026/06/28-zahy9gsb-completed-the-home-assistant-documentation-bulk-import-impor.md",
+            "recorded_at": "2026-06-28T03:36:02.314173+00:00",
+            "tags": [
+              "agentmemory-wiki",
+              "documentation-import",
+              "home-assistant",
+              "import-summary",
+              "rag-backed",
+              "web-page-import"
+            ]
+          },
+          {
+            "agent": "CODEX",
+            "content": "AgentMemory bulk web-page import run finished.\n\nCollection: home-assistant-docs\nTotal inputs: 1722\nSucceeded this run: 1719\nSkipped this run: 3\nFailed this run: 0\nState file: .web-pages-home-assistant-state.json\nLog file: .web-pages-home-assistant.log.jsonl\nRAG staging directory: .web-pages-home-assistant-rag",
+            "entities": [
+              "agentmemory",
+              "home-assistant-docs",
+              "memory-mcp",
+              "web-page-import"
+            ],
+            "event_date": "2026-06-28T03:32:45.464116+00:00",
+            "id": "01KW64JT8RN5G3XJXGW3Q04WSN",
+            "path": "events/2026/06/28-w3q04wsn-agentmemory-bulk-web-page-import-run-finished.md",
+            "recorded_at": "2026-06-28T03:32:45.464165+00:00",
+            "tags": [
+              "agentmemory",
+              "home-assistant-docs",
+              "import-summary",
+              "web-page-import"
+            ]
+          },
+          {
+            "agent": "CODEX",
+            "content": "Created native Memory MCP wiki page `home-assistant-docs` as the durable anchor for the Home Assistant documentation import. The page points agents to the `home-assistant-docs` entity, source URL, local state/log/RAG staging paths, and RAG collection. Smoke import already queued jobs 3240-3242 for the first three official docs pages.",
+            "entities": [
+              "agentmemory",
+              "agentmemory-wiki",
+              "home-assistant-docs",
+              "memory-mcp",
+              "web-page-import",
+              "wiki-home-assistant-docs"
+            ],
+            "event_date": "2026-06-28T02:16:36.460641+00:00",
+            "id": "01KW607CBC095YA9F6VXAA7NJG",
+            "path": "events/2026/06/28-vxaa7njg-created-native-memory-mcp-wiki-page-home-assistant-docs-as-t.md",
+            "recorded_at": "2026-06-28T02:16:36.460695+00:00",
+            "tags": [
+              "agentmemory-wiki",
+              "documentation-import",
+              "home-assistant",
+              "rag-backed",
+              "web-page-import"
+            ]
+          }
+        ]
+      }
+    },
+    "search_wiki": {
+      "Home Assistant": {
+        "result": [
+          {
+            "path": "wiki/home-assistant-docs.md",
+            "rag_collections": [
+              "home-assistant-docs"
+            ],
+            "slug": "home-assistant-docs",
+            "source_urls": [
+              "https://www.home-assistant.io/docs/"
+            ],
+            "summary": "Source-backed import of official English Home Assistant documentation for agent guidance on installation, configuration, automations, dashboards, integrations, scripts, blueprints, and voice assistants.",
+            "tags": [
+              "agentmemory-wiki",
+              "home-assistant",
+              "documentation",
+              "web-page-import",
+              "rag-backed"
+            ],
+            "title": "Home Assistant Documentation",
+            "updated_at": "2026-06-28T03:36:01+00:00"
+          },
+          {
+            "path": "wiki/lan-machines.md",
+            "rag_collections": [],
+            "slug": "lan-machines",
+            "source_urls": [],
+            "summary": "Canonical LAN inventory for agents: machine roles, Proxmox VM map, service locations, SSH login strings, documentation pointers, and update rules.",
+            "tags": [
+              "agentmemory-wiki",
+              "lan-inventory",
+              "homelab",
+              "machines",
+              "ssh",
+              "services"
+            ],
+            "title": "LAN Machines And Services",
+            "updated_at": "2026-06-28T02:06:23+00:00"
+          },
+          {
+            "path": "wiki/lan-machines-full.md",
+            "rag_collections": [],
+            "slug": "lan-machines-full",
+            "source_urls": [],
+            "summary": "",
+            "tags": [],
+            "title": "lan-machines-full",
+            "updated_at": null
+          }
+        ]
+      },
+      "home-assistant-docs": {
+        "result": [
+          {
+            "path": "wiki/home-assistant-docs.md",
+            "rag_collections": [
+              "home-assistant-docs"
+            ],
+            "slug": "home-assistant-docs",
+            "source_urls": [
+              "https://www.home-assistant.io/docs/"
+            ],
+            "summary": "Source-backed import of official English Home Assistant documentation for agent guidance on installation, configuration, automations, dashboards, integrations, scripts, blueprints, and voice assistants.",
+            "tags": [
+              "agentmemory-wiki",
+              "home-assistant",
+              "documentation",
+              "web-page-import",
+              "rag-backed"
+            ],
+            "title": "Home Assistant Documentation",
+            "updated_at": "2026-06-28T03:36:01+00:00"
+          }
+        ]
+      }
+    }
+  },
+  "rag_queue": {
+    "cancelled": 122,
+    "done": 4834,
+    "failed": 2
+  },
+  "record_event": "written",
+  "wiki_output": "docs/home-assistant-import-wiki.md"
+}

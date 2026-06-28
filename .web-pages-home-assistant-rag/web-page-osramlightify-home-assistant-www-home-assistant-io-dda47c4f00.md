@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/osramlightify"
+final_url: "https://www.home-assistant.io/integrations/osramlightify"
+canonical_url: "https://www.home-assistant.io/integrations/osramlightify/"
+source_handle: "web:www-home-assistant-io:dda47c4f00ca"
+source_section: "integrations-osramlightify"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4cf300c7bc716e020ef9794afdd99c3aa3d9c5aec14b3ec36e689c240aaa685a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Osramlightify - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

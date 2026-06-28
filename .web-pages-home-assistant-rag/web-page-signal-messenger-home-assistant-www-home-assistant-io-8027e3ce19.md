@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/signal_messenger"
+final_url: "https://www.home-assistant.io/integrations/signal_messenger"
+canonical_url: "https://www.home-assistant.io/integrations/signal_messenger/"
+source_handle: "web:www-home-assistant-io:8027e3ce1995"
+source_section: "integrations-signal-messenger"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9a6931375e01120626ab6bea21b27da7105d8c745ed2301ca139ab6d877e1fb8"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Signal Messenger - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dnsip"
+final_url: "https://www.home-assistant.io/integrations/dnsip"
+canonical_url: "https://www.home-assistant.io/integrations/dnsip/"
+source_handle: "web:www-home-assistant-io:17cc737107b7"
+source_section: "integrations-dnsip"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "418e7df295d348f3d13aabad24be2fa15ed4e338cbd3706cfee47185b0540e42"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # DNS IP - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

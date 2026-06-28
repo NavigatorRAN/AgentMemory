@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ubus"
+final_url: "https://www.home-assistant.io/integrations/ubus"
+canonical_url: "https://www.home-assistant.io/integrations/ubus/"
+source_handle: "web:www-home-assistant-io:cb08b3d51000"
+source_section: "integrations-ubus"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e2e654a077599e80a8122835fd75db3a48a67ffdc8b7237a8c4285b81e24c1c5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # OpenWrt (ubus) - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

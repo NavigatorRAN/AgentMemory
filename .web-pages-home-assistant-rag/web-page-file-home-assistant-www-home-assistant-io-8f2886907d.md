@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/file"
+final_url: "https://www.home-assistant.io/integrations/file"
+canonical_url: "https://www.home-assistant.io/integrations/file/"
+source_handle: "web:www-home-assistant-io:8f2886907dfe"
+source_section: "integrations-file"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "418cd9d66d54d1c56c71a667295afb1479e6001f4523eabe9ce964c6f0224f16"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # File - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

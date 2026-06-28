@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/application_credentials"
+final_url: "https://www.home-assistant.io/integrations/application_credentials"
+canonical_url: "https://www.home-assistant.io/integrations/application_credentials/"
+source_handle: "web:www-home-assistant-io:058f056b15d1"
+source_section: "integrations-application-credentials"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "b89b500f46c995f288c8719d447caee9f1dc1dae25784be35fb114bc6f83b2d9"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Application credentials - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

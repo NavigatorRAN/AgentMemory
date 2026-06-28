@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sharkiq"
+final_url: "https://www.home-assistant.io/integrations/sharkiq"
+canonical_url: "https://www.home-assistant.io/integrations/sharkiq/"
+source_handle: "web:www-home-assistant-io:60229acc76a5"
+source_section: "integrations-sharkiq"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "014a999a0978115e515908d928c0d41fa7dfaa4cf0aea88a0343f733184e8931"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Shark IQ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

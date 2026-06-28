@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/usb"
+final_url: "https://www.home-assistant.io/integrations/usb"
+canonical_url: "https://www.home-assistant.io/integrations/usb/"
+source_handle: "web:www-home-assistant-io:09a3910b4d5a"
+source_section: "integrations-usb"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "967b7acfa3f3b469c49bf4f886b5ad7e1429370b1a24572f261e8af2c91e126c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # USB Discovery - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/homee"
+final_url: "https://www.home-assistant.io/integrations/homee"
+canonical_url: "https://www.home-assistant.io/integrations/homee/"
+source_handle: "web:www-home-assistant-io:9e0625bfc0a0"
+source_section: "integrations-homee"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2d0959da7162f5221401429366c4110b558d279fcdc6c6d050a4a92b63974152"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Homee - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

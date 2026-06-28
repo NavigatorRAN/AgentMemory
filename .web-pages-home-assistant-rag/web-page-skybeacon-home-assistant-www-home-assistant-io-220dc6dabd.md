@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/skybeacon"
+final_url: "https://www.home-assistant.io/integrations/skybeacon"
+canonical_url: "https://www.home-assistant.io/integrations/skybeacon/"
+source_handle: "web:www-home-assistant-io:220dc6dabd9f"
+source_section: "integrations-skybeacon"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "31c0fc2ed91512dc61f17d667020f27c3e0aea05db814663cf502b42f287c453"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Skybeacon - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

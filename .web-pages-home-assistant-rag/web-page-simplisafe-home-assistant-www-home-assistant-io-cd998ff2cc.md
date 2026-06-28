@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/simplisafe"
+final_url: "https://www.home-assistant.io/integrations/simplisafe"
+canonical_url: "https://www.home-assistant.io/integrations/simplisafe/"
+source_handle: "web:www-home-assistant-io:cd998ff2cc78"
+source_section: "integrations-simplisafe"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f65d7d388a1bdbe43b92402c1cb29d0b41602aad6d5cceeb46c210ed9d31aa47"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SimpliSafe - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

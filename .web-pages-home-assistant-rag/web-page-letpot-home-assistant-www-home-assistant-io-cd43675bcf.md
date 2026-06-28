@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/letpot"
+final_url: "https://www.home-assistant.io/integrations/letpot"
+canonical_url: "https://www.home-assistant.io/integrations/letpot/"
+source_handle: "web:www-home-assistant-io:cd43675bcf88"
+source_section: "integrations-letpot"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4f5c209b2f18c8b78831431ac18df8437d477e489b5e21ccda04f714e3ad506f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # LetPot - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

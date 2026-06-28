@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/onboarding"
+final_url: "https://www.home-assistant.io/integrations/onboarding"
+canonical_url: "https://www.home-assistant.io/integrations/onboarding/"
+source_handle: "web:www-home-assistant-io:8d2435dca01f"
+source_section: "integrations-onboarding"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5ad87244d7b80c4bf0fba14ac3ea86e8b044a165a08f9829f65d58ab0b43c092"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Home Assistant Onboarding - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

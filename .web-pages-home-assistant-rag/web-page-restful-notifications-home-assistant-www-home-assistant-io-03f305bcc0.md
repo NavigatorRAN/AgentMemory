@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/notify.rest"
+final_url: "https://www.home-assistant.io/integrations/notify.rest"
+canonical_url: "https://www.home-assistant.io/integrations/notify.rest/"
+source_handle: "web:www-home-assistant-io:03f305bcc0ba"
+source_section: "integrations-notify-rest"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "55dbeebc5d6ba2ec9004262041dc126c1f8cdd42017c3da7c485b28a7415fb0c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # RESTful Notifications - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

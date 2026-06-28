@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/geonetnz_volcano"
+final_url: "https://www.home-assistant.io/integrations/geonetnz_volcano"
+canonical_url: "https://www.home-assistant.io/integrations/geonetnz_volcano/"
+source_handle: "web:www-home-assistant-io:9ffc7c21c62d"
+source_section: "integrations-geonetnz-volcano"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "299ce97daaddf2b9283f21f5161ab86a2bd20569f3608f51e5be56cec7255da4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # GeoNet NZ Volcano - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

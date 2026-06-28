@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/proximity"
+final_url: "https://www.home-assistant.io/integrations/proximity"
+canonical_url: "https://www.home-assistant.io/integrations/proximity/"
+source_handle: "web:www-home-assistant-io:de8c6c6d71d5"
+source_section: "integrations-proximity"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8dcd27f21931bdef4268750f1c513eded55bd84d2fe133087e13ed86a55909a5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Proximity - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

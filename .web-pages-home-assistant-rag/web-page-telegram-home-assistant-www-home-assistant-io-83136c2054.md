@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/telegram"
+final_url: "https://www.home-assistant.io/integrations/telegram"
+canonical_url: "https://www.home-assistant.io/integrations/telegram/"
+source_handle: "web:www-home-assistant-io:83136c205499"
+source_section: "integrations-telegram"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "78112775e124c0e1ba0838a99fd899001ad69d6beaf312371c181a8010ce37fa"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Telegram - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

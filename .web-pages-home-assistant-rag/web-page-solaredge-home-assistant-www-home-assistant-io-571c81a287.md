@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/solaredge"
+final_url: "https://www.home-assistant.io/integrations/solaredge"
+canonical_url: "https://www.home-assistant.io/integrations/solaredge/"
+source_handle: "web:www-home-assistant-io:571c81a287ca"
+source_section: "integrations-solaredge"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "325081c19d3e3998cd03aaced6312a45bb7357b6e239c1c54b55584bcfde272a"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SolarEdge - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

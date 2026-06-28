@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ismartwindow"
+final_url: "https://www.home-assistant.io/integrations/ismartwindow"
+canonical_url: "https://www.home-assistant.io/integrations/ismartwindow/"
+source_handle: "web:www-home-assistant-io:7436d343acfa"
+source_section: "integrations-ismartwindow"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5b03ce4918dabbc4af706e9e15d20b9275ea379e78fae05cd2e8ad36a7e13641"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # iSmartWindow - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

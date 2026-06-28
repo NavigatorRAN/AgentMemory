@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/advantage_air"
+final_url: "https://www.home-assistant.io/integrations/advantage_air"
+canonical_url: "https://www.home-assistant.io/integrations/advantage_air/"
+source_handle: "web:www-home-assistant-io:817dc8a51775"
+source_section: "integrations-advantage-air"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "2a83014f2da63edfdd285543b9b235d1ec87810c53da52e38e54d190772c8899"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Advantage Air - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

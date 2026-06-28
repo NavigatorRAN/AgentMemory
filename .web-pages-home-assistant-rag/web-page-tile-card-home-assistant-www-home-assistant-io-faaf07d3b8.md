@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/tile"
+final_url: "https://www.home-assistant.io/dashboards/tile"
+canonical_url: "https://www.home-assistant.io/dashboards/tile/"
+source_handle: "web:www-home-assistant-io:faaf07d3b817"
+source_section: "dashboards-tile"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ec909b8f7965ada090e11a4caac1fbd80db20c5bd1c9ffa0148597695abed831"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Tile card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

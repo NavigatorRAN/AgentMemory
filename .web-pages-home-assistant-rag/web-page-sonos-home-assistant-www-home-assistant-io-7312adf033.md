@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/sonos"
+final_url: "https://www.home-assistant.io/integrations/sonos"
+canonical_url: "https://www.home-assistant.io/integrations/sonos/"
+source_handle: "web:www-home-assistant-io:7312adf0332f"
+source_section: "integrations-sonos"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "707f6f32599dd2ae766d6a0f74a57c5e3b13017edb5730e24eb9107ef552fed5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Sonos - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

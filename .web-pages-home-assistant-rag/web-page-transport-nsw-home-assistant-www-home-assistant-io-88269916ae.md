@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/transport_nsw"
+final_url: "https://www.home-assistant.io/integrations/transport_nsw"
+canonical_url: "https://www.home-assistant.io/integrations/transport_nsw/"
+source_handle: "web:www-home-assistant-io:88269916aecb"
+source_section: "integrations-transport-nsw"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "a7a0d849cd793a9b4e132fc6f6506e982482cb4b5db628992e1c640cf098f39b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Transport NSW - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

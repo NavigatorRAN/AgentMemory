@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bswitch"
+final_url: "https://www.home-assistant.io/integrations/bswitch"
+canonical_url: "https://www.home-assistant.io/integrations/bswitch/"
+source_handle: "web:www-home-assistant-io:df5665b6127d"
+source_section: "integrations-bswitch"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "580badecd63f3a03f54f7995590d6e9ad282687272e2c8c5f8e3c70aad1bd779"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BSwitch - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lg_thinq"
+final_url: "https://www.home-assistant.io/integrations/lg_thinq"
+canonical_url: "https://www.home-assistant.io/integrations/lg_thinq/"
+source_handle: "web:www-home-assistant-io:fbfd0f1de5a4"
+source_section: "integrations-lg-thinq"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8bc0fbb04e83f6841231b0f699abb6fe3f7c808389b9b4aeef7491a4e1b49129"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # LG ThinQ - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

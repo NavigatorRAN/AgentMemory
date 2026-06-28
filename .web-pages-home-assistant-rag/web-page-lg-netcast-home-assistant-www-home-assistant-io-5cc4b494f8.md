@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lg_netcast"
+final_url: "https://www.home-assistant.io/integrations/lg_netcast"
+canonical_url: "https://www.home-assistant.io/integrations/lg_netcast/"
+source_handle: "web:www-home-assistant-io:5cc4b494f869"
+source_section: "integrations-lg-netcast"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e0096a908f0973336e6772667a2fbdbe203e444ae23620c87f7583b271e02441"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # LG Netcast - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

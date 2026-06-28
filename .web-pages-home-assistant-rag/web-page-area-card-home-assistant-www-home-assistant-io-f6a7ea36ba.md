@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/area"
+final_url: "https://www.home-assistant.io/dashboards/area"
+canonical_url: "https://www.home-assistant.io/dashboards/area/"
+source_handle: "web:www-home-assistant-io:f6a7ea36badc"
+source_section: "dashboards-area"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d6af64db2d0309e5299fd8c3c1a251cd257cba1109bd04c76aaaff11af255665"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Area card - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

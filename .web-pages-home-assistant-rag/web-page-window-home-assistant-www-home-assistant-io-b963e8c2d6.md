@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/window"
+final_url: "https://www.home-assistant.io/integrations/window"
+canonical_url: "https://www.home-assistant.io/integrations/window/"
+source_handle: "web:www-home-assistant-io:b963e8c2d63c"
+source_section: "integrations-window"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ee20f3e90a905c2a5198d108201aa306ba59bdb2e1d188aa52362d33a7c1e96d"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Window - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/recovery_mode"
+final_url: "https://www.home-assistant.io/integrations/recovery_mode"
+canonical_url: "https://www.home-assistant.io/integrations/recovery_mode/"
+source_handle: "web:www-home-assistant-io:c254e278328a"
+source_section: "integrations-recovery-mode"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "28b27fbebd38c1cf8f90e52b0af6adfb1d014993034a44dfda730974766c1b31"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Recovery mode - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

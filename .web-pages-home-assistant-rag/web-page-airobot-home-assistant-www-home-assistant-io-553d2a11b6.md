@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airobot"
+final_url: "https://www.home-assistant.io/integrations/airobot"
+canonical_url: "https://www.home-assistant.io/integrations/airobot/"
+source_handle: "web:www-home-assistant-io:553d2a11b6fc"
+source_section: "integrations-airobot"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "cb69a32e7af341496342005281ed03251fb2b95ef54e23910d58d1a5ac0176c5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Airobot - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

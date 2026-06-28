@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/nibe_heatpump"
+final_url: "https://www.home-assistant.io/integrations/nibe_heatpump"
+canonical_url: "https://www.home-assistant.io/integrations/nibe_heatpump/"
+source_handle: "web:www-home-assistant-io:18d1fb06c376"
+source_section: "integrations-nibe-heatpump"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "d451ca7f8565a32df7964875608eead6f706c08e4c680c5091c283772373a745"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Nibe Heat Pump - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

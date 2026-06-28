@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/alexa.smart_home"
+final_url: "https://www.home-assistant.io/integrations/alexa.smart_home"
+canonical_url: "https://www.home-assistant.io/integrations/alexa.smart_home/"
+source_handle: "web:www-home-assistant-io:6de139b33f10"
+source_section: "integrations-alexa-smart-home"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7a56f21d03d6a54ade635b9c5c4a19d923af7131c76cb9629c0cf3382924422b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Amazon Alexa Smart Home Skill - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

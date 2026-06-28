@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/switchbee"
+final_url: "https://www.home-assistant.io/integrations/switchbee"
+canonical_url: "https://www.home-assistant.io/integrations/switchbee/"
+source_handle: "web:www-home-assistant-io:fef12ab20647"
+source_section: "integrations-switchbee"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0cc22f958ccff2f6e8b583e2c0d1ea581c3a7ba649b69e657e16c791c6d67662"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SwitchBee - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

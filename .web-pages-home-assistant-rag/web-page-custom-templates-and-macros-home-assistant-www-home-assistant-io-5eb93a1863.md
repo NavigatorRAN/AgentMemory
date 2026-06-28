@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/templating/custom-templates"
+final_url: "https://www.home-assistant.io/docs/templating/custom-templates"
+canonical_url: "https://www.home-assistant.io/docs/templating/custom-templates/"
+source_handle: "web:www-home-assistant-io:5eb93a1863fb"
+source_section: "docs-templating"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f397b18bec0967b91d89c2fdda20a9f290cdf234fe64f6acf75e9b7eddbd55ce"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Custom templates and macros - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

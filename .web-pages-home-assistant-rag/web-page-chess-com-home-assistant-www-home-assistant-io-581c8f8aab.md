@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/chess_com"
+final_url: "https://www.home-assistant.io/integrations/chess_com"
+canonical_url: "https://www.home-assistant.io/integrations/chess_com/"
+source_handle: "web:www-home-assistant-io:581c8f8aab7f"
+source_section: "integrations-chess-com"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5cf746abf1b6cc4aee730870968208e1a6cd89d51b736a6182748c99786bcd04"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Chess.com - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

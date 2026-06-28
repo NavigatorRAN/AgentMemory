@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/bluemaestro"
+final_url: "https://www.home-assistant.io/integrations/bluemaestro"
+canonical_url: "https://www.home-assistant.io/integrations/bluemaestro/"
+source_handle: "web:www-home-assistant-io:9412748b3208"
+source_section: "integrations-bluemaestro"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "8100dcbd894d6d86d1ca303f827cf58268bd7f8e3103b158cf9ac26596716e21"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # BlueMaestro - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

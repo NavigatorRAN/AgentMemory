@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/docs/automation/basics"
+final_url: "https://www.home-assistant.io/docs/automation/basics"
+canonical_url: "https://www.home-assistant.io/docs/automation/basics/"
+source_handle: "web:www-home-assistant-io:bb20cfb1de1a"
+source_section: "docs-automation"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "defb9f94f527b7a68b86cc9d4899f13f5c02bcf53c638c672e884dec6f9fbaaf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Understanding automations - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

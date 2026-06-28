@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/twitter"
+final_url: "https://www.home-assistant.io/integrations/twitter"
+canonical_url: "https://www.home-assistant.io/integrations/twitter/"
+source_handle: "web:www-home-assistant-io:c71cdcc3730a"
+source_section: "integrations-twitter"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "95f73331b039c9479a2acd4ff4b959efe31471df9ae16f4c05d3ba613db9d208"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # X - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

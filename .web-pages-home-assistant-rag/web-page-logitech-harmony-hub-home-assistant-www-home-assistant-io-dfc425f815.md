@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/harmony"
+final_url: "https://www.home-assistant.io/integrations/harmony"
+canonical_url: "https://www.home-assistant.io/integrations/harmony/"
+source_handle: "web:www-home-assistant-io:dfc425f815fd"
+source_section: "integrations-harmony"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "52c7f5cd3cbe4d4fe438a971eca57b7523e458c3339e73939bb6dd8ac8150ccf"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Logitech Harmony Hub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

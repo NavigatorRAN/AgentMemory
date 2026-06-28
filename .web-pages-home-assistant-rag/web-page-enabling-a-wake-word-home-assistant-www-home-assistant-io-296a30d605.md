@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/voice_control/install_wake_word_add_on"
+final_url: "https://www.home-assistant.io/voice_control/install_wake_word_add_on"
+canonical_url: "https://www.home-assistant.io/voice_control/install_wake_word_add_on/"
+source_handle: "web:www-home-assistant-io:296a30d60540"
+source_section: "voice-control-install-wake-word-add-on"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "9d6eecb122199f2b505fb48bfab73d2513c3e49e0037183964e70301178dc9c5"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Enabling a wake word - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

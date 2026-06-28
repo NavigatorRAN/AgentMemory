@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/vermont_castings"
+final_url: "https://www.home-assistant.io/integrations/vermont_castings"
+canonical_url: "https://www.home-assistant.io/integrations/vermont_castings/"
+source_handle: "web:www-home-assistant-io:dae0e8aa74f7"
+source_section: "integrations-vermont-castings"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7950dc63f57d5d8e12bc3f631f8c202e0e0d554cc0b7f59cc45ce4d567e706d6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Vermont Castings - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

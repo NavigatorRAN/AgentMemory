@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/unifi"
+final_url: "https://www.home-assistant.io/integrations/unifi"
+canonical_url: "https://www.home-assistant.io/integrations/unifi/"
+source_handle: "web:www-home-assistant-io:45554323b76e"
+source_section: "integrations-unifi"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "66e3ded9af6b99ebcbed8b7be58238e3abaca0125d32eae518d753929d121e91"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # UniFi Network - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

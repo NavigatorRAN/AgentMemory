@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/arris_tg2492lg"
+final_url: "https://www.home-assistant.io/integrations/arris_tg2492lg"
+canonical_url: "https://www.home-assistant.io/integrations/arris_tg2492lg/"
+source_handle: "web:www-home-assistant-io:6727a838267a"
+source_section: "integrations-arris-tg2492lg"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "577d9ab467df31735dee24b91d6e1cd380b3b18f2be3557901e93cebdb402675"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Arris TG2492LG - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

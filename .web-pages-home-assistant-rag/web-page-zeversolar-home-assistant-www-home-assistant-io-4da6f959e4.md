@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/zeversolar"
+final_url: "https://www.home-assistant.io/integrations/zeversolar"
+canonical_url: "https://www.home-assistant.io/integrations/zeversolar/"
+source_handle: "web:www-home-assistant-io:4da6f959e417"
+source_section: "integrations-zeversolar"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "74ca6ea9c079cde0f386f22a0d599d80b897f5ca640c73d5216e2bff4314246e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Zeversolar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

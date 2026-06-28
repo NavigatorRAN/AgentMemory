@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/stream"
+final_url: "https://www.home-assistant.io/integrations/stream"
+canonical_url: "https://www.home-assistant.io/integrations/stream/"
+source_handle: "web:www-home-assistant-io:a6cdaffffa48"
+source_section: "integrations-stream"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "598929b207443f963320142d1a14ad248277e3265ea5130ffabea6e73a17b517"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Stream - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/remote_calendar"
+final_url: "https://www.home-assistant.io/integrations/remote_calendar"
+canonical_url: "https://www.home-assistant.io/integrations/remote_calendar/"
+source_handle: "web:www-home-assistant-io:1d6b2abfc499"
+source_section: "integrations-remote-calendar"
+collection: "home-assistant-docs"
+doc_type: "code-documentation"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "c2ee473369686c2d5181ba55755ecab758cfdae16fda0079be56e51fa00d074b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "code-docs"
+---
+
 # Remote Calendar - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

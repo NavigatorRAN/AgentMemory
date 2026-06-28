@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dexcom"
+final_url: "https://www.home-assistant.io/integrations/dexcom"
+canonical_url: "https://www.home-assistant.io/integrations/dexcom/"
+source_handle: "web:www-home-assistant-io:9ed0bda2ed17"
+source_section: "integrations-dexcom"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4a7877d89c4e1cf8bdd26b96f0070d7d72b7fd9a1c5cd700960aa512c07bc370"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dexcom - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/ripple"
+final_url: "https://www.home-assistant.io/integrations/ripple"
+canonical_url: "https://www.home-assistant.io/integrations/ripple/"
+source_handle: "web:www-home-assistant-io:ec24838cef07"
+source_section: "integrations-ripple"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "fad8ee27360e8cced192f9ff38fd81ba9ed90f2bf0932a3716fa508b064e75c2"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Ripple - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

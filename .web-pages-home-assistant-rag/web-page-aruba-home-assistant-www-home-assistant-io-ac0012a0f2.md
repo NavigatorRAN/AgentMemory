@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aruba"
+final_url: "https://www.home-assistant.io/integrations/aruba"
+canonical_url: "https://www.home-assistant.io/integrations/aruba/"
+source_handle: "web:www-home-assistant-io:ac0012a0f227"
+source_section: "integrations-aruba"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "1b739c85b041d507de5461aac1b37ed20a481dd9ff91baeefe4d8c66fdbc4b07"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aruba - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

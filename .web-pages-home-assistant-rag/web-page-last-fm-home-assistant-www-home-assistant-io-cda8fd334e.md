@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/lastfm"
+final_url: "https://www.home-assistant.io/integrations/lastfm"
+canonical_url: "https://www.home-assistant.io/integrations/lastfm/"
+source_handle: "web:www-home-assistant-io:cda8fd334e37"
+source_section: "integrations-lastfm"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ee815449afcaf7494454d7fcd31521282ffcfc219eabd7344b48e510f78b8dbd"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Last.fm - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

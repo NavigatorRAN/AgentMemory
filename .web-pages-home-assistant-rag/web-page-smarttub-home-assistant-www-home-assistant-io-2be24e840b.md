@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/smarttub"
+final_url: "https://www.home-assistant.io/integrations/smarttub"
+canonical_url: "https://www.home-assistant.io/integrations/smarttub/"
+source_handle: "web:www-home-assistant-io:2be24e840b62"
+source_section: "integrations-smarttub"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "49509e9db547dddd07ebf5506fd1eeb40d5ea26df763226c90329b6b4ac2bbe4"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # SmartTub - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

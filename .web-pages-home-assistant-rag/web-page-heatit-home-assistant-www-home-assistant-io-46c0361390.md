@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/heatit"
+final_url: "https://www.home-assistant.io/integrations/heatit"
+canonical_url: "https://www.home-assistant.io/integrations/heatit/"
+source_handle: "web:www-home-assistant-io:46c036139006"
+source_section: "integrations-heatit"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "0c57b7f085aa0180973a13384ca3a18790cff3dde216bfd9faeda5233ca49c45"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Heatit - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

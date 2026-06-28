@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/wiffi"
+final_url: "https://www.home-assistant.io/integrations/wiffi"
+canonical_url: "https://www.home-assistant.io/integrations/wiffi/"
+source_handle: "web:www-home-assistant-io:f24e07913199"
+source_section: "integrations-wiffi"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "5bbbda4753dfa9d7212d3d9651dbfe72bb77eec5dbef063e8c2ccd605e702209"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Wiffi - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

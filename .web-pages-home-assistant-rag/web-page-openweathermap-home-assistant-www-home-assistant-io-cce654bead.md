@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/openweathermap"
+final_url: "https://www.home-assistant.io/integrations/openweathermap"
+canonical_url: "https://www.home-assistant.io/integrations/openweathermap/"
+source_handle: "web:www-home-assistant-io:cce654bead21"
+source_section: "integrations-openweathermap"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "ad426c66e83296ad9c6b6abf9a131e5338de45ab2b2a3a51796a2d62ba2fd18f"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # OpenWeatherMap - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

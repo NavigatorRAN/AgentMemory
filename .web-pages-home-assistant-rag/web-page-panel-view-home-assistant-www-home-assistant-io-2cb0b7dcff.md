@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/dashboards/panel"
+final_url: "https://www.home-assistant.io/dashboards/panel"
+canonical_url: "https://www.home-assistant.io/dashboards/panel/"
+source_handle: "web:www-home-assistant-io:2cb0b7dcff22"
+source_section: "dashboards-panel"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "57f9acd452841b0b425f1fda65c56aa34fd4b10df0cb687aca4b8d49ddf9b370"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Panel view - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

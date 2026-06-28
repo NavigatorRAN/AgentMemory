@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/victron_gx"
+final_url: "https://www.home-assistant.io/integrations/victron_gx"
+canonical_url: "https://www.home-assistant.io/integrations/victron_gx/"
+source_handle: "web:www-home-assistant-io:120952bc7383"
+source_section: "integrations-victron-gx"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "f136886b5a49f7a42038fcee72f0f0719653c9db51f9af463d7c60c245df6afb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Victron GX - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

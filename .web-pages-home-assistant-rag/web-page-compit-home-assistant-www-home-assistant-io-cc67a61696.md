@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/compit"
+final_url: "https://www.home-assistant.io/integrations/compit"
+canonical_url: "https://www.home-assistant.io/integrations/compit/"
+source_handle: "web:www-home-assistant-io:cc67a61696c4"
+source_section: "integrations-compit"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "7b3c73c6a1f55cf9029c95433db4d40441f941915f761d17ac171ecb04449e6b"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Compit - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

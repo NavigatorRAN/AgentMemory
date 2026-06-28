@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/aranet"
+final_url: "https://www.home-assistant.io/integrations/aranet"
+canonical_url: "https://www.home-assistant.io/integrations/aranet/"
+source_handle: "web:www-home-assistant-io:5f46decfb75a"
+source_section: "integrations-aranet"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3800c987c117dbef48532b5e3e3e00148b0227ebc40deaf62bfcef0198f856bb"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Aranet - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

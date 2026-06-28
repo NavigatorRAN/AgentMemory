@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/shodan"
+final_url: "https://www.home-assistant.io/integrations/shodan"
+canonical_url: "https://www.home-assistant.io/integrations/shodan/"
+source_handle: "web:www-home-assistant-io:867a38e293f1"
+source_section: "integrations-shodan"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "96b0288d9556b5f43a81ed8ddd867f626aadc683fcb59ce3f54053b80b2a207e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Shodan - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

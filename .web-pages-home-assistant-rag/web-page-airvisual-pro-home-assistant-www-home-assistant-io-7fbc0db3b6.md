@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/airvisual_pro"
+final_url: "https://www.home-assistant.io/integrations/airvisual_pro"
+canonical_url: "https://www.home-assistant.io/integrations/airvisual_pro/"
+source_handle: "web:www-home-assistant-io:7fbc0db3b682"
+source_section: "integrations-airvisual-pro"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "08c47be35278145b193627913818c40f5fa3bbc8e2d8573033e0d3e9ffd692d6"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # AirVisual Pro - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

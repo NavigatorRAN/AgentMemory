@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/uhoo"
+final_url: "https://www.home-assistant.io/integrations/uhoo"
+canonical_url: "https://www.home-assistant.io/integrations/uhoo/"
+source_handle: "web:www-home-assistant-io:d5b8c2db24b0"
+source_section: "integrations-uhoo"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "e1059a58bf86d563bc844c0de1a2d0a25b9dd32dafb71c0907a37d12c5bd7a68"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # uHoo - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

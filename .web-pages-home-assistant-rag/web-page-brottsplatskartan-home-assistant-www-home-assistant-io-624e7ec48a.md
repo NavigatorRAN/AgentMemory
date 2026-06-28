@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/brottsplatskartan"
+final_url: "https://www.home-assistant.io/integrations/brottsplatskartan"
+canonical_url: "https://www.home-assistant.io/integrations/brottsplatskartan/"
+source_handle: "web:www-home-assistant-io:624e7ec48a0c"
+source_section: "integrations-brottsplatskartan"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "05f4cfc2764236b7225178a880648c0f8f5fa7b78bb718b7b57411c6aab9a626"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Brottsplatskartan - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

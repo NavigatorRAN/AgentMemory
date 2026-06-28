@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/easyenergy"
+final_url: "https://www.home-assistant.io/integrations/easyenergy"
+canonical_url: "https://www.home-assistant.io/integrations/easyenergy/"
+source_handle: "web:www-home-assistant-io:1e160572db9a"
+source_section: "integrations-easyenergy"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "4b5c29e26edeb7b1a13c93c3ac3a074fec953eb7795ee5799955413ec21c5ab7"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # easyEnergy - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

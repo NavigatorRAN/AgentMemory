@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/marantz_infrared"
+final_url: "https://www.home-assistant.io/integrations/marantz_infrared"
+canonical_url: "https://www.home-assistant.io/integrations/marantz_infrared/"
+source_handle: "web:www-home-assistant-io:3f01bcd47a9c"
+source_section: "integrations-marantz-infrared"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "575049d84f4d5ce0ab74f2ab008d2c608732618644bcd27da28798dad0e18fa1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Marantz Infrared - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

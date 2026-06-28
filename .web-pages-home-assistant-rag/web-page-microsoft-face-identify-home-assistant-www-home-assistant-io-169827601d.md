@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/microsoft_face_identify"
+final_url: "https://www.home-assistant.io/integrations/microsoft_face_identify"
+canonical_url: "https://www.home-assistant.io/integrations/microsoft_face_identify/"
+source_handle: "web:www-home-assistant-io:169827601d63"
+source_section: "integrations-microsoft-face-identify"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3dab28d27682772dd9a5ab3b14cdc17c51471c635f0311928d4aeb99ac1a69d1"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Microsoft Face Identify - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

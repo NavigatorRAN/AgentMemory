@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/husqvarna_automower"
+final_url: "https://www.home-assistant.io/integrations/husqvarna_automower"
+canonical_url: "https://www.home-assistant.io/integrations/husqvarna_automower/"
+source_handle: "web:www-home-assistant-io:048f9ff095a7"
+source_section: "integrations-husqvarna-automower"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "856a51a8812cf7dfc289d2e51e8d58af6889f1a10b196d08f859231ef19e2130"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Husqvarna Automower - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

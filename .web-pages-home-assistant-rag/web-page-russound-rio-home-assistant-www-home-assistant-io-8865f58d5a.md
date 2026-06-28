@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/russound_rio"
+final_url: "https://www.home-assistant.io/integrations/russound_rio"
+canonical_url: "https://www.home-assistant.io/integrations/russound_rio/"
+source_handle: "web:www-home-assistant-io:8865f58d5a0f"
+source_section: "integrations-russound-rio"
+collection: "home-assistant-docs"
+doc_type: "reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "111c4821dadc9ebff9858beeca6d82a1c739aa85bdb2655d9ffb252ace99cb2e"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "reference-docs"
+---
+
 # Russound RIO - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

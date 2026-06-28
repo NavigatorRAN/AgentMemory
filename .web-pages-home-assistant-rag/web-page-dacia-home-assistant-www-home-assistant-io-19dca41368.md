@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/dacia"
+final_url: "https://www.home-assistant.io/integrations/dacia"
+canonical_url: "https://www.home-assistant.io/integrations/dacia/"
+source_handle: "web:www-home-assistant-io:19dca413683e"
+source_section: "integrations-dacia"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "3cef97f365d25f74e57de77f188240fd88c6cdcfd51b67c474fcf672aa930645"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Dacia - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

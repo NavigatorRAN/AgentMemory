@@ -1,3 +1,19 @@
+---
+source_url: "https://www.home-assistant.io/integrations/velbus"
+final_url: "https://www.home-assistant.io/integrations/velbus"
+canonical_url: "https://www.home-assistant.io/integrations/velbus/"
+source_handle: "web:www-home-assistant-io:817db3f5c447"
+source_section: "integrations-velbus"
+collection: "home-assistant-docs"
+doc_type: "api-reference"
+language: "en"
+import_run_id: "home-assistant-docs-legacy-backfill"
+content_hash: "6b2521a8e66474c55717e05e32dfe40a369ddab47e02476c0aac0ad6d6763e3c"
+memory_event_id: ""
+wiki_slug: ""
+chunk_profile: "api-docs"
+---
+
 # Velbus - Home Assistant
 
 Source-backed web page detail staged by AgentMemory bulk web importer.

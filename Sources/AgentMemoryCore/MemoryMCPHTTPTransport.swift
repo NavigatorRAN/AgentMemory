@@ -533,11 +533,13 @@ private struct SearchWikiStructuredContent: Decodable {
 private struct MemoryGraphStructuredContent: Decodable {
     var nodes: [ServerMemoryGraphNode]
     var edges: [ServerMemoryGraphEdge]
+    var summary: MemoryMCPGraphSummary?
 
     var graph: MemoryMCPGraph {
         MemoryMCPGraph(
             nodes: nodes.map(\.graphNode).sorted { $0.id < $1.id },
-            edges: edges.map(\.graphEdge).sorted { $0.id < $1.id }
+            edges: edges.map(\.graphEdge).sorted { $0.id < $1.id },
+            summary: summary
         )
     }
 }

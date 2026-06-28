@@ -12,16 +12,20 @@ from import_web_pages_to_memory import (
     URLInput,
     build_memory_content,
     build_rag_markdown,
+    chunk_profile_for_page,
     discover_documentation_urls,
+    documentation_score_for_url,
     enqueue_rag_markdown,
     extract_page,
     extract_links,
     in_allowed_scope,
     load_url_inputs,
     parse_sitemap_urls,
+    rag_metadata_for_page,
     redirect_target,
     resolve_host_with_dns_server,
     should_skip_fetched_page,
+    source_handle_for_url,
     safe_rag_filename,
     write_log,
 )
@@ -165,8 +169,8 @@ class WebPageImporterTests(unittest.TestCase):
 
         self.assertEqual([entry.url for entry in entries], [
             "https://docs.example.com/docs/index",
-            "https://docs.example.com/docs/config",
             "https://docs.example.com/docs/install",
+            "https://docs.example.com/docs/config",
         ])
         self.assertEqual(entries[0].label, "Example Docs")
         self.assertEqual(entries[1].label, "")
@@ -217,9 +221,12 @@ class WebPageImporterTests(unittest.TestCase):
         self.assertIn("Web page import record", content)
         self.assertIn("Requested URL: https://example.com/source", content)
         self.assertIn("Final URL: https://example.com/final", content)
+        self.assertIn("Source handle: web:example-com:", content)
+        self.assertIn("Document type: web-documentation", content)
+        self.assertIn("Language: en", content)
         self.assertIn("RAG detail path: .web-pages-rag-staging/example.md", content)
         self.assertIn("RAG job ID: 42", content)
-        self.assertLess(len(content), 1500)
+        self.assertLess(len(content), 1900)
 
     def test_should_skip_fetched_page_rejects_github_wiki_create_page(self) -> None:
         page = extract_page(
@@ -252,12 +259,48 @@ class WebPageImporterTests(unittest.TestCase):
             max_text_chars=10_000,
         )
 
-        markdown = build_rag_markdown(page=page, label="", max_chars=10_000)
+        markdown = build_rag_markdown(
+            page=page,
+            label="",
+            max_chars=10_000,
+            collection="product-documentation-example",
+            import_run_id="run-1",
+            chunk_profile="reference-docs",
+        )
 
+        self.assertTrue(markdown.startswith("---\n"))
         self.assertIn("# Heading", markdown)
+        self.assertIn('collection: "product-documentation-example"', markdown)
+        self.assertIn('import_run_id: "run-1"', markdown)
+        self.assertIn('chunk_profile: "reference-docs"', markdown)
         self.assertIn("Requested URL: https://example.com/source", markdown)
         self.assertIn("Final URL: https://example.com/final", markdown)
         self.assertIn("Detailed implementation note.", markdown)
+
+    def test_source_metadata_helpers_are_stable(self) -> None:
+        page = extract_page(
+            requested_url="https://docs.example.com/docs/api/config",
+            final_url="https://docs.example.com/docs/api/config",
+            content_type="text/plain",
+            raw=b"API endpoint request response parameter.",
+            max_text_chars=10_000,
+        )
+
+        self.assertTrue(source_handle_for_url(page.final_url).startswith("web:docs-example-com:"))
+        self.assertGreater(
+            documentation_score_for_url("https://docs.example.com/docs/install"),
+            documentation_score_for_url("https://docs.example.com/blog/release"),
+        )
+        self.assertEqual(chunk_profile_for_page(page, "auto"), "api-docs")
+        metadata = rag_metadata_for_page(
+            page=page,
+            collection="product-documentation-example",
+            import_run_id="run-1",
+            chunk_profile="api-docs",
+        )
+        self.assertEqual(metadata["source_section"], "docs-api")
+        self.assertEqual(metadata["doc_type"], "api-reference")
+        self.assertEqual(metadata["language"], "en")
 
     def test_state_and_log_are_incremental_json_files(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

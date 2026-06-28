@@ -4,3 +4,8 @@ dist/
 .DS_Store
 .apple-docs-memory-import*.json
 .apple-docs-rag-deep-import*.json
+MemoryMCPServer/.venv/
+MemoryMCPServer/.pytest_cache/
+MemoryMCPServer/src/*.egg-info/
+__pycache__/
+*.pyc

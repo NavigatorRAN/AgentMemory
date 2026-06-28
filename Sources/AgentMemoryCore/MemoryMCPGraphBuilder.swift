@@ -3,10 +3,58 @@ import Foundation
 public struct MemoryMCPGraph: Equatable, Sendable {
     public var nodes: [MemoryMCPGraphNode]
     public var edges: [MemoryMCPGraphEdge]
+    public var summary: MemoryMCPGraphSummary?
 
-    public init(nodes: [MemoryMCPGraphNode], edges: [MemoryMCPGraphEdge]) {
+    public init(nodes: [MemoryMCPGraphNode], edges: [MemoryMCPGraphEdge], summary: MemoryMCPGraphSummary? = nil) {
         self.nodes = nodes
         self.edges = edges
+        self.summary = summary
+    }
+}
+
+public struct MemoryMCPGraphSummary: Codable, Equatable, Sendable {
+    public var nodeCount: Int
+    public var edgeCount: Int
+    public var returnedNodeCount: Int?
+    public var returnedEdgeCount: Int?
+    public var totalNodeCount: Int?
+    public var totalEdgeCount: Int?
+    public var truncated: Bool?
+    public var cacheGeneratedAt: String?
+    public var query: String?
+
+    public init(
+        nodeCount: Int,
+        edgeCount: Int,
+        returnedNodeCount: Int? = nil,
+        returnedEdgeCount: Int? = nil,
+        totalNodeCount: Int? = nil,
+        totalEdgeCount: Int? = nil,
+        truncated: Bool? = nil,
+        cacheGeneratedAt: String? = nil,
+        query: String? = nil
+    ) {
+        self.nodeCount = nodeCount
+        self.edgeCount = edgeCount
+        self.returnedNodeCount = returnedNodeCount
+        self.returnedEdgeCount = returnedEdgeCount
+        self.totalNodeCount = totalNodeCount
+        self.totalEdgeCount = totalEdgeCount
+        self.truncated = truncated
+        self.cacheGeneratedAt = cacheGeneratedAt
+        self.query = query
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case nodeCount = "node_count"
+        case edgeCount = "edge_count"
+        case returnedNodeCount = "returned_node_count"
+        case returnedEdgeCount = "returned_edge_count"
+        case totalNodeCount = "total_node_count"
+        case totalEdgeCount = "total_edge_count"
+        case truncated
+        case cacheGeneratedAt = "cache_generated_at"
+        case query
     }
 }
 

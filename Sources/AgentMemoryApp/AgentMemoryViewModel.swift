@@ -1199,7 +1199,10 @@ final class AgentMemoryViewModel {
                 memoryEntityResults = []
                 selectedMemoryGraphNodeID = nil
                 let overview = memoryServerGraphOverview ?? graph
-                statusMessage = "Loaded Memory MCP graph overview with \(overview.nodes.count) grouped nodes from \(graph.nodes.count) detailed nodes."
+                let returnedNodes = graph.summary?.returnedNodeCount ?? graph.nodes.count
+                let totalNodes = graph.summary?.totalNodeCount ?? graph.nodes.count
+                let truncated = graph.summary?.truncated == true ? " (truncated)" : ""
+                statusMessage = "Loaded Memory MCP graph overview with \(overview.nodes.count) grouped nodes from \(returnedNodes) returned / \(totalNodes) total detailed nodes\(truncated)."
             } catch {
                 memorySearchResults = []
                 memoryEntityDetail = nil

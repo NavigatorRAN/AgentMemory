@@ -430,7 +430,7 @@ final class MemoryMCPHTTPTransportTests: XCTestCase {
                 return (
                     HTTPURLResponse(url: endpoint, statusCode: 200, httpVersion: nil, headerFields: ["mcp-session-id": "session-8"])!,
                     Data("""
-                    {"jsonrpc":"2.0","id":3,"result":{"structuredContent":{"nodes":[{"id":"entity:agentmemory","label":"agentmemory","kind":"entity","entity":"agentmemory","event_count":50,"type":"project"},{"id":"wiki:overview","label":"Overview","kind":"wiki"}],"edges":[{"source":"entity:agentmemory","target":"wiki:overview","relation":"documents","weight":1}],"summary":{"node_count":2,"edge_count":1,"query":null}}}}
+                    {"jsonrpc":"2.0","id":3,"result":{"structuredContent":{"nodes":[{"id":"entity:agentmemory","label":"agentmemory","kind":"entity","entity":"agentmemory","event_count":50,"type":"project"},{"id":"wiki:overview","label":"Overview","kind":"wiki"}],"edges":[{"source":"entity:agentmemory","target":"wiki:overview","relation":"documents","weight":1}],"summary":{"node_count":2,"edge_count":1,"returned_node_count":2,"returned_edge_count":1,"total_node_count":200,"total_edge_count":400,"truncated":true,"cache_generated_at":"1782623000.0","query":null}}}}
                     """.utf8)
                 )
             default:
@@ -448,6 +448,20 @@ final class MemoryMCPHTTPTransportTests: XCTestCase {
         XCTAssertEqual(graph.edges, [
             MemoryMCPGraphEdge(id: "edge:entity:agentmemory:wiki:overview:documents", sourceID: "entity:agentmemory", targetID: "wiki:overview", label: "documents")
         ])
+        XCTAssertEqual(
+            graph.summary,
+            MemoryMCPGraphSummary(
+                nodeCount: 2,
+                edgeCount: 1,
+                returnedNodeCount: 2,
+                returnedEdgeCount: 1,
+                totalNodeCount: 200,
+                totalEdgeCount: 400,
+                truncated: true,
+                cacheGeneratedAt: "1782623000.0",
+                query: nil
+            )
+        )
     }
 
     func testTransportThrowsForNonSuccessStatus() async {

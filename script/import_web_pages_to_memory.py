@@ -173,11 +173,13 @@ class ImportState:
     def __init__(
         self,
         *,
+        discovered: dict[str, dict[str, Any]] | None = None,
         completed: set[str] | None = None,
         failed: dict[str, str] | None = None,
         skipped: dict[str, str] | None = None,
         records: dict[str, dict[str, Any]] | None = None,
     ) -> None:
+        self.discovered = discovered or {}
         self.completed = completed or set()
         self.failed = failed or {}
         self.skipped = skipped or {}
@@ -189,6 +191,7 @@ class ImportState:
             return cls()
         data = json.loads(path.read_text(encoding="utf-8"))
         return cls(
+            discovered=dict(data.get("discovered", {})),
             completed=set(data.get("completed", [])),
             failed=dict(data.get("failed", {})),
             skipped=dict(data.get("skipped", {})),
@@ -200,6 +203,7 @@ class ImportState:
         path.write_text(
             json.dumps(
                 {
+                    "discovered": self.discovered,
                     "completed": sorted(self.completed),
                     "failed": self.failed,
                     "skipped": self.skipped,
@@ -213,6 +217,9 @@ class ImportState:
 
     def is_completed(self, url: str) -> bool:
         return url in self.completed
+
+    def mark_discovered(self, url: str, record: dict[str, Any]) -> None:
+        self.discovered[url] = record
 
     def mark_completed(self, url: str, record: dict[str, Any]) -> None:
         self.completed.add(url)
@@ -439,6 +446,113 @@ def parse_sitemap_urls(raw: bytes) -> list[str]:
     return urls
 
 
+def documentation_score_for_url(url: str) -> int:
+    parsed = urllib.parse.urlparse(url)
+    haystack = f"{parsed.netloc}{parsed.path}".lower()
+    score = 0
+    for token, weight in {
+        "docs": 6,
+        "documentation": 6,
+        "developer": 5,
+        "guide": 4,
+        "reference": 4,
+        "api": 4,
+        "manual": 3,
+        "integration": 3,
+        "install": 2,
+        "configure": 2,
+        "setup": 2,
+        "tutorial": 2,
+        "examples": 1,
+    }.items():
+        if token in haystack:
+            score += weight
+    for token in ("blog", "community", "news", "pricing", "careers", "sponsor"):
+        if token in haystack:
+            score -= 8
+    path_depth = len([segment for segment in parsed.path.split("/") if segment])
+    return score + min(path_depth, 4)
+
+
+def source_handle_for_url(url: str) -> str:
+    normalized = normalize_url(url) or url
+    parsed = urllib.parse.urlparse(normalized)
+    digest = hashlib.sha1(normalized.encode("utf-8")).hexdigest()[:12]
+    return f"web:{slug(parsed.netloc)}:{digest}"
+
+
+def source_section_for_url(url: str) -> str:
+    parsed = urllib.parse.urlparse(url)
+    parts = [part for part in parsed.path.split("/") if part]
+    if not parts:
+        return slug(parsed.netloc)
+    if len(parts) == 1:
+        return slug(parts[0])
+    return slug("-".join(parts[:2]))
+
+
+def content_hash_for_page(page: WebPage) -> str:
+    return hashlib.sha256(page.text.encode("utf-8")).hexdigest()
+
+
+def doc_type_for_profile(chunk_profile: str) -> str:
+    return {
+        "api-docs": "api-reference",
+        "code-docs": "code-documentation",
+        "reference-docs": "reference",
+        "web-docs": "web-documentation",
+    }.get(chunk_profile, "web-documentation")
+
+
+def chunk_profile_for_page(page: WebPage, requested_profile: str) -> str:
+    if requested_profile != "auto":
+        return requested_profile
+    text = f"{page.final_url}\n{page.title}\n{page.text[:4000]}".lower()
+    if any(token in text for token in (" api ", "/api", "endpoint", "parameter", "request", "response")):
+        return "api-docs"
+    if any(token in text for token in ("```", "class ", "func ", "def ", "import ", "package ")):
+        return "code-docs"
+    if any(token in text for token in ("reference", "configuration", "option", "setting")):
+        return "reference-docs"
+    return "web-docs"
+
+
+def rag_metadata_for_page(
+    *,
+    page: WebPage,
+    collection: str,
+    import_run_id: str,
+    chunk_profile: str,
+    memory_event_id: str = "",
+    wiki_slug: str = "",
+) -> dict[str, str]:
+    final_or_canonical = page.canonical_url or page.final_url
+    return {
+        "source_url": page.requested_url,
+        "final_url": page.final_url,
+        "canonical_url": page.canonical_url,
+        "source_handle": source_handle_for_url(final_or_canonical),
+        "source_section": source_section_for_url(final_or_canonical),
+        "collection": collection,
+        "doc_type": doc_type_for_profile(chunk_profile),
+        "language": "en",
+        "import_run_id": import_run_id,
+        "content_hash": content_hash_for_page(page),
+        "memory_event_id": memory_event_id,
+        "wiki_slug": wiki_slug,
+        "chunk_profile": chunk_profile,
+    }
+
+
+def markdown_frontmatter(metadata: dict[str, str]) -> str:
+    lines = ["---"]
+    for key, value in metadata.items():
+        escaped = str(value or "").replace('"', '\\"')
+        lines.append(f'{key}: "{escaped}"')
+    lines.append("---")
+    return "\n".join(lines)
+
+
 def sitemap_candidates(seed_url: str) -> list[str]:
     parsed = urllib.parse.urlparse(seed_url)
     origin = urllib.parse.urlunparse((parsed.scheme, parsed.netloc, "", "", "", ""))
@@ -566,6 +680,10 @@ def discover_documentation_urls(
                 for link in extract_links(final_url, raw, content_type)
                 if in_allowed_scope(link, seed_url, allowed_prefixes) and link not in seed_seen
             )
+            links = sorted(
+                links,
+                key=lambda link: (-documentation_score_for_url(link), link),
+            )
             queue.extend((link, depth + 1) for link in links)
             if delay:
                 time.sleep(delay)
@@ -678,12 +796,30 @@ def should_skip_fetched_page(page: WebPage) -> str:
     return ""
 
 
-def build_memory_content(*, page: WebPage, label: str, rag_path: str, rag_job_id: int | None, max_summary_chars: int) -> str:
+def build_memory_content(
+    *,
+    page: WebPage,
+    label: str,
+    rag_path: str,
+    rag_job_id: int | None,
+    max_summary_chars: int,
+    collection: str = "web-page-import",
+    import_run_id: str = "",
+    chunk_profile: str = "web-docs",
+    source_handle: str = "",
+    content_hash: str = "",
+) -> str:
     title = label or page.title
+    final_or_canonical = page.canonical_url or page.final_url
+    source_handle = source_handle or source_handle_for_url(final_or_canonical)
+    content_hash = content_hash or content_hash_for_page(page)
     lines = [
         "Web page import record",
         "",
         f"Title: {title}",
+        f"Collection: {collection}",
+        f"Import run ID: {import_run_id}" if import_run_id else "Import run ID: not recorded",
+        f"Source handle: {source_handle}",
         f"Requested URL: {page.requested_url}",
         f"Final URL: {page.final_url}",
     ]
@@ -693,6 +829,11 @@ def build_memory_content(*, page: WebPage, label: str, rag_path: str, rag_job_id
         [
             f"Fetched at: {page.fetched_at}",
             f"Content type: {page.content_type}",
+            f"Source section: {source_section_for_url(final_or_canonical)}",
+            f"Document type: {doc_type_for_profile(chunk_profile)}",
+            f"Language: en",
+            f"Content hash: {content_hash}",
+            f"Chunk profile: {chunk_profile}",
             f"RAG detail path: {rag_path}",
             f"RAG job ID: {rag_job_id}" if rag_job_id is not None else "RAG job ID: not enqueued",
             "",
@@ -703,12 +844,32 @@ def build_memory_content(*, page: WebPage, label: str, rag_path: str, rag_job_id
     return "\n".join(lines)
 
 
-def build_rag_markdown(*, page: WebPage, label: str, max_chars: int) -> str:
+def build_rag_markdown(
+    *,
+    page: WebPage,
+    label: str,
+    max_chars: int,
+    collection: str = "web-page-import",
+    import_run_id: str = "",
+    chunk_profile: str = "web-docs",
+    memory_event_id: str = "",
+    wiki_slug: str = "",
+) -> str:
     title = label or page.title
     body = page.text[:max_chars].rstrip()
     if len(page.text) > max_chars:
         body += "\n..."
+    metadata = rag_metadata_for_page(
+        page=page,
+        collection=collection,
+        import_run_id=import_run_id,
+        chunk_profile=chunk_profile,
+        memory_event_id=memory_event_id,
+        wiki_slug=wiki_slug,
+    )
     lines = [
+        markdown_frontmatter(metadata),
+        "",
         f"# {title}",
         "",
         "Source-backed web page detail staged by AgentMemory bulk web importer.",
@@ -722,6 +883,13 @@ def build_rag_markdown(*, page: WebPage, label: str, max_chars: int) -> str:
         [
             f"- Fetched at: {page.fetched_at}",
             f"- Content type: {page.content_type}",
+            f"- Source handle: {metadata['source_handle']}",
+            f"- Source section: {metadata['source_section']}",
+            f"- Document type: {metadata['doc_type']}",
+            f"- Language: {metadata['language']}",
+            f"- Import run ID: {metadata['import_run_id']}",
+            f"- Content hash: {metadata['content_hash']}",
+            f"- Chunk profile: {metadata['chunk_profile']}",
             "",
         ]
     )
@@ -748,11 +916,30 @@ def safe_rag_filename(title: str, final_url: str, *, max_length: int = 180) -> s
     return f"web-page-{title_slug[:budget].rstrip('-')}{suffix}"
 
 
-def write_rag_markdown(directory: pathlib.Path, page: WebPage, label: str, *, max_chars: int) -> pathlib.Path:
+def write_rag_markdown(
+    directory: pathlib.Path,
+    page: WebPage,
+    label: str,
+    *,
+    max_chars: int,
+    collection: str,
+    import_run_id: str,
+    chunk_profile: str,
+) -> pathlib.Path:
     directory.mkdir(parents=True, exist_ok=True)
     filename = safe_rag_filename(label or page.title, page.final_url)
     path = directory / filename
-    path.write_text(build_rag_markdown(page=page, label=label, max_chars=max_chars), encoding="utf-8")
+    path.write_text(
+        build_rag_markdown(
+            page=page,
+            label=label,
+            max_chars=max_chars,
+            collection=collection,
+            import_run_id=import_run_id,
+            chunk_profile=chunk_profile,
+        ),
+        encoding="utf-8",
+    )
     return path
 
 
@@ -768,19 +955,27 @@ def record_page(
     rag_path: str,
     rag_job_id: int | None,
     collection: str,
+    import_run_id: str,
+    chunk_profile: str,
 ) -> None:
+    final_or_canonical = page.canonical_url or page.final_url
     content = build_memory_content(
         page=page,
         label=label,
         rag_path=rag_path,
         rag_job_id=rag_job_id,
         max_summary_chars=1800,
+        collection=collection,
+        import_run_id=import_run_id,
+        chunk_profile=chunk_profile,
+        source_handle=source_handle_for_url(final_or_canonical),
+        content_hash=content_hash_for_page(page),
     )
     page_slug = slug(label or page.title)
     client.record_event(
         content=content,
-        entities=stable_unique(["agentmemory", "memory-mcp", "web-page-import", f"web-page-{page_slug}", collection]),
-        tags=stable_unique(["agentmemory", "web-page-import", "source-backed", "rag-staged", page_slug, slug(collection)]),
+        entities=stable_unique(["agentmemory", "memory-mcp", "web-page-import", f"web-page-{page_slug}", collection, source_handle_for_url(final_or_canonical)]),
+        tags=stable_unique(["agentmemory", "web-page-import", "source-backed", "rag-staged", page_slug, slug(collection), chunk_profile, import_run_id]),
     )
 
 
@@ -795,12 +990,14 @@ def record_run_summary(
     log_path: pathlib.Path,
     rag_dir: pathlib.Path,
     collection: str,
+    import_run_id: str,
 ) -> None:
     content = "\n".join(
         [
             "AgentMemory bulk web-page import run finished.",
             "",
             f"Collection: {collection}",
+            f"Import run ID: {import_run_id}",
             f"Total inputs: {total}",
             f"Succeeded this run: {completed}",
             f"Skipped this run: {skipped}",
@@ -813,7 +1010,7 @@ def record_run_summary(
     client.record_event(
         content=content,
         entities=stable_unique(["agentmemory", "memory-mcp", "web-page-import", collection]),
-        tags=stable_unique(["agentmemory", "web-page-import", "import-summary", slug(collection)]),
+        tags=stable_unique(["agentmemory", "web-page-import", "import-summary", slug(collection), import_run_id]),
     )
 
 
@@ -825,6 +1022,7 @@ def run(args: argparse.Namespace) -> int:
     rag_dir = pathlib.Path(args.rag_dir)
     state = ImportState.load(state_path)
     entries = load_url_inputs(args.url, pathlib.Path(args.url_file) if args.url_file else None)
+    import_run_id = args.import_run_id or f"web-import-{utc_now().replace(':', '').replace('-', '')}"
     if args.crawl and entries:
         print(
             f"Discovering documentation pages from {len(entries)} seed(s) "
@@ -841,6 +1039,17 @@ def run(args: argparse.Namespace) -> int:
             delay=args.crawl_delay,
         )
         print(f"Discovered pages: {len(entries)}")
+        for entry in entries:
+            state.mark_discovered(
+                entry.url,
+                {
+                    "label": entry.label,
+                    "documentation_score": documentation_score_for_url(entry.url),
+                    "source_section": source_section_for_url(entry.url),
+                },
+            )
+        if not args.dry_run:
+            state.save(state_path)
     if args.limit:
         entries = entries[: args.limit]
     if not entries:
@@ -904,9 +1113,18 @@ def run(args: argparse.Namespace) -> int:
                 write_log(log_path, "skipped", url, fetched_skip_reason, title=page.title)
                 skipped_this_run += 1
                 continue
-            rag_path = write_rag_markdown(rag_dir, page, label, max_chars=args.rag_max_chars)
+            chunk_profile = chunk_profile_for_page(page, args.chunk_profile)
+            rag_path = write_rag_markdown(
+                rag_dir,
+                page,
+                label,
+                max_chars=args.rag_max_chars,
+                collection=args.collection,
+                import_run_id=import_run_id,
+                chunk_profile=chunk_profile,
+            )
             page_slug = slug(label or page.title)
-            rag_tags = stable_unique(["web-page-import", slug(args.collection), page_slug])
+            rag_tags = stable_unique(["web-page-import", slug(args.collection), page_slug, chunk_profile, import_run_id])
             rag_job_id = None
             print(f"[{index}/{len(entries)}] {'dry-run ' if args.dry_run else ''}record {label or page.title}")
             if rag_client:
@@ -921,6 +1139,8 @@ def run(args: argparse.Namespace) -> int:
                     rag_path=str(rag_path),
                     rag_job_id=rag_job_id,
                     collection=args.collection,
+                    import_run_id=import_run_id,
+                    chunk_profile=chunk_profile,
                 )
                 state.mark_completed(
                     url,
@@ -928,6 +1148,11 @@ def run(args: argparse.Namespace) -> int:
                         "title": label or page.title,
                         "final_url": page.final_url,
                         "canonical_url": page.canonical_url,
+                        "source_handle": source_handle_for_url(page.canonical_url or page.final_url),
+                        "source_section": source_section_for_url(page.canonical_url or page.final_url),
+                        "content_hash": content_hash_for_page(page),
+                        "chunk_profile": chunk_profile,
+                        "import_run_id": import_run_id,
                         "rag_path": str(rag_path),
                         "rag_job_id": rag_job_id,
                         "fetched_at": page.fetched_at,
@@ -942,6 +1167,9 @@ def run(args: argparse.Namespace) -> int:
                 title=label or page.title,
                 rag_path=str(rag_path),
                 rag_job_id=rag_job_id,
+                source_handle=source_handle_for_url(page.canonical_url or page.final_url),
+                chunk_profile=chunk_profile,
+                import_run_id=import_run_id,
             )
             completed_this_run += 1
             time.sleep(args.delay)
@@ -966,6 +1194,7 @@ def run(args: argparse.Namespace) -> int:
             log_path=log_path,
             rag_dir=rag_dir,
             collection=args.collection,
+            import_run_id=import_run_id,
         )
 
     print(f"Succeeded this run: {completed_this_run}")
@@ -986,6 +1215,7 @@ def main() -> int:
     parser.add_argument("--url-file", default="", help="Text file with one URL per line. Optional label format: Label | URL")
     parser.add_argument("--endpoint", default="http://192.168.1.26:8006/mcp")
     parser.add_argument("--collection", default="web-page-import")
+    parser.add_argument("--import-run-id", default="", help="Stable run identifier recorded in Memory MCP and RAG metadata.")
     parser.add_argument("--state", default=DEFAULT_STATE)
     parser.add_argument("--log", default=DEFAULT_LOG)
     parser.add_argument("--rag-dir", default=DEFAULT_RAG_DIR)
@@ -1004,6 +1234,12 @@ def main() -> int:
     parser.add_argument("--max-download-bytes", type=int, default=2_000_000)
     parser.add_argument("--dns-server", default="", help="Optional DNS server for importer-local fallback resolution, e.g. 1.1.1.1.")
     parser.add_argument("--rag-max-chars", type=int, default=80_000)
+    parser.add_argument(
+        "--chunk-profile",
+        default="auto",
+        choices=["auto", "web-docs", "api-docs", "code-docs", "reference-docs"],
+        help="RAG staging profile. 'auto' selects a conservative profile from URL and page text.",
+    )
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--no-run-summary", action="store_true")
     parser.add_argument("--enqueue-rag", action="store_true")

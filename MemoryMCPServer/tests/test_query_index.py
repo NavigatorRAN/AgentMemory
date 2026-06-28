@@ -1,17 +1,27 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 import frontmatter
 
 from memory_mcp import queries
 from memory_mcp.storage import Storage
 
 
-def test_default_index_dir_lives_beside_vault(tmp_path, monkeypatch):
+def test_default_index_dir_lives_beside_local_vault(tmp_path, monkeypatch):
     monkeypatch.delenv("MEMORY_INDEX_ROOT", raising=False)
 
     storage = Storage(tmp_path)
 
     assert storage.index_dir == tmp_path / ".index"
+
+
+def test_default_index_dir_for_mounted_vault_is_local_cwd(tmp_path, monkeypatch):
+    monkeypatch.delenv("MEMORY_INDEX_ROOT", raising=False)
+    monkeypatch.chdir(tmp_path)
+    storage = object.__new__(Storage)
+
+    assert storage._default_index_dir(Path("/mnt/aishareddrive/family-agents/memory")) == tmp_path / ".index"
 
 
 def test_configured_index_dir_overrides_default(tmp_path, monkeypatch):

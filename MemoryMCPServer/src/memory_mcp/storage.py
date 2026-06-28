@@ -95,6 +95,9 @@ class Storage:
         configured = os.environ.get("MEMORY_INDEX_ROOT")
         if configured:
             return Path(configured)
+        root_text = str(root)
+        if root_text.startswith(("/mnt/", "/Volumes/")):
+            return Path.cwd() / ".index"
         return root / ".index"
 
     # --- event writes -----------------------------------------------------

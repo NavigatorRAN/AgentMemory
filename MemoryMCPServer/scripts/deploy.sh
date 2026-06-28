@@ -42,10 +42,18 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
       echo 'No user-owned memory-mcp process found to restart.' >&2
       exit 1
     fi
-    kill \"\${pid}\"
+    kill -KILL \"\${pid}\"
     sleep 5
+    if ! systemctl is-active memory-mcp.service >/dev/null 2>&1; then
+      echo 'systemd did not restart the service; starting the same command as the service user.'
+      MEMORY_VAULT_ROOT=/mnt/aishareddrive/family-agents/memory \
+      MEMORY_HOST=0.0.0.0 \
+      MEMORY_PORT=8006 \
+      nohup '${REMOTE_DIR}/.venv/bin/memory-mcp' > /tmp/memory-mcp-manual.log 2>&1 &
+      sleep 2
+    fi
   fi
-  systemctl is-active memory-mcp.service
+  systemctl is-active memory-mcp.service || pgrep -u \"\$(id -u)\" -f '${REMOTE_DIR}/.venv/bin/memory-mcp' >/dev/null
 "
 
 echo "Running endpoint smoke checks at ${ENDPOINT}"

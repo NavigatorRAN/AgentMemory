@@ -272,7 +272,9 @@ preserves the revision's origin node and historical timestamp, quotes
 event/revision/node/timestamp citation. Unresolved conflicts, tombstones, empty
 content, and content above the per-result bound are omitted. The tool performs
 no memory mutation; its fixed policy marks retrieved text as untrusted evidence
-with no instruction effect.
+with no instruction effect. Revision cursor lookup remains bounded and validates
+the journal sequence; if a current head cannot be proven within those bounds,
+the request fails explicitly instead of silently omitting evidence.
 
 Missing or invalid bearers return a redacted HTTP `401`; a valid bearer without
 the required capability returns `403`. The check runs on every Streamable HTTP
@@ -330,8 +332,8 @@ back both canonical files and journal state.
 ## Buzz server attestation
 
 Buzz can prove that it reached the configured Memory MCP process before
-admitting the service. Configure a dedicated secret containing at least 32
-bytes; do not reuse a replication bearer or expose this value in logs:
+admitting the service. Configure a dedicated secret containing 32-1024 bytes
+and no ASCII control characters; do not expose this value in logs:
 
 ```bash
 export MEMORY_ATTESTATION_SECRET='replace-with-an-independent-32-byte-or-longer-secret'
@@ -349,7 +351,10 @@ The route is streaming-body bounded to 256 bytes and rate limited per caller.
 If `MEMORY_ATTESTATION_SECRET` is unset, it fails closed with
 `503 attestation_unavailable`; no compatibility secret is generated. Treat the
 secret as deployment-only material and inject it through the service
-environment or secret manager.
+environment or secret manager. Startup also fails if its fixed-length digest
+matches any bearer loaded from `MEMORY_REPLICATION_TOKENS` or the read,
+replicate, or admin compatibility variables, so attestation and caller
+authorization cannot share a credential.
 
 ## Configuration
 
@@ -361,7 +366,7 @@ environment or secret manager.
 | `MEMORY_NODE_ID` | generated once | Stable `node:<id>` identity |
 | `MEMORY_MCP_REQUIRE_AUTH` | `false` | Opt in to bearer authentication for FastMCP `/mcp` |
 | `MEMORY_MCP_MAX_REQUEST_BYTES` | `262144` | Authenticated MCP request-body limit; hard max 2097152 |
-| `MEMORY_ATTESTATION_SECRET` | unset | Dedicated Buzz admission HMAC secret; 32-1024 bytes |
+| `MEMORY_ATTESTATION_SECRET` | unset | Dedicated Buzz admission HMAC secret; 32-1024 bytes, no ASCII controls, distinct from every bearer |
 | `MEMORY_ATTESTATION_RATE_LIMIT` | `30` | Attestation requests per caller/minute |
 | `MEMORY_REPLICATION_READ_TOKEN` | unset | Read capability bearer |
 | `MEMORY_REPLICATION_REPLICATE_TOKEN` | unset | Replicate capability bearer |

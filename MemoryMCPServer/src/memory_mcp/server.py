@@ -55,6 +55,17 @@ TOMBSTONE_RETENTION_DAYS = int(
     os.environ.get("MEMORY_TOMBSTONE_RETENTION_DAYS", "90")
 )
 
+replication_authorizer = TokenAuthorizer.from_environment()
+if (
+    ATTESTATION_SECRET is not None
+    and replication_authorizer.contains_token_digest(
+        ATTESTATION_SECRET.sha256_digest()
+    )
+):
+    raise ValueError(
+        "MEMORY_ATTESTATION_SECRET must be independent of all bearer tokens"
+    )
+
 storage = Storage(
     VAULT_ROOT,
     node_id=NODE_ID,
@@ -62,7 +73,6 @@ storage = Storage(
     max_replication_bytes=MAX_REPLICATION_BYTES,
     tombstone_retention_days=TOMBSTONE_RETENTION_DAYS,
 )
-replication_authorizer = TokenAuthorizer.from_environment()
 mcp_security = build_fastmcp_security(
     replication_authorizer,
     require_auth=MCP_REQUIRE_AUTH,

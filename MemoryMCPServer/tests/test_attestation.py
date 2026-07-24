@@ -74,6 +74,21 @@ def test_secret_is_explicit_bounded_and_wrong_secret_cannot_match_golden(
     assert wrong.mac("memory", "node:golden", GOLDEN_NONCE) != GOLDEN_MAC
 
 
+@pytest.mark.parametrize("control", [0x00, 0x01, 0x09, 0x0A, 0x1F, 0x7F])
+def test_attestation_secret_rejects_every_ascii_control_character(
+    control: int,
+) -> None:
+    with pytest.raises(ValueError, match="ASCII control"):
+        AttestationSecret(b"x" * 16 + bytes([control]) + b"x" * 16)
+
+
+@pytest.mark.parametrize("boundary", [0x20, 0x7E])
+def test_attestation_secret_accepts_printable_ascii_boundaries(boundary: int) -> None:
+    secret = AttestationSecret(bytes([boundary]) + b"x" * 31)
+
+    assert "REDACTED" in repr(secret)
+
+
 def test_unset_secret_fails_closed_without_requiring_bearer() -> None:
     with _client(secret=None) as client:
         response = client.post(
@@ -199,3 +214,43 @@ def test_real_memory_server_exposes_attestation_with_stable_node_identity(
     assert response.status_code == 200
     assert response.json()["identity"] == "node:real-route"
     assert set(response.json()) == {"service", "identity", "nonce", "mac"}
+
+
+@pytest.mark.parametrize(
+    ("variable", "value"),
+    [
+        (
+            "MEMORY_REPLICATION_TOKENS",
+            json.dumps({GOLDEN_SECRET: ["read"]}),
+        ),
+        ("MEMORY_REPLICATION_READ_TOKEN", GOLDEN_SECRET),
+        ("MEMORY_REPLICATION_REPLICATE_TOKEN", GOLDEN_SECRET),
+        ("MEMORY_REPLICATION_ADMIN_TOKEN", GOLDEN_SECRET),
+    ],
+)
+def test_real_memory_server_rejects_attestation_secret_reused_as_any_bearer(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path,
+    variable: str,
+    value: str,
+) -> None:
+    monkeypatch.setenv("MEMORY_VAULT_ROOT", str(tmp_path / "vault"))
+    monkeypatch.setenv("MEMORY_ATTESTATION_SECRET", GOLDEN_SECRET)
+    for token_variable in (
+        "MEMORY_REPLICATION_TOKENS",
+        "MEMORY_REPLICATION_READ_TOKEN",
+        "MEMORY_REPLICATION_REPLICATE_TOKEN",
+        "MEMORY_REPLICATION_ADMIN_TOKEN",
+    ):
+        monkeypatch.delenv(token_variable, raising=False)
+    monkeypatch.setenv(variable, value)
+    previous = sys.modules.pop("memory_mcp.server", None)
+    try:
+        with pytest.raises(ValueError, match="independent") as failure:
+            importlib.import_module("memory_mcp.server")
+    finally:
+        sys.modules.pop("memory_mcp.server", None)
+        if previous is not None:
+            sys.modules["memory_mcp.server"] = previous
+
+    assert GOLDEN_SECRET not in str(failure.value)

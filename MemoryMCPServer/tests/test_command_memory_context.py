@@ -6,11 +6,13 @@ from pathlib import Path
 import frontmatter
 import pytest
 
+import memory_mcp.command_context as command_context_module
 from memory_mcp.command_context import (
     MAX_COMMAND_CONTEXT_CANDIDATES,
     MAX_COMMAND_CONTEXT_CONTENT_BYTES,
     MAX_COMMAND_CONTEXT_RESPONSE_BYTES,
     MAX_COMMAND_CONTEXT_SCANNED_EVENTS,
+    _bounded_revision_sequences,
     _candidate_event_ids,
     command_memory_context,
 )
@@ -332,6 +334,82 @@ def test_candidate_selection_bounds_full_scan_and_incremental_storage() -> None:
     assert storage.yielded == MAX_COMMAND_CONTEXT_SCANNED_EVENTS
     assert len(selected) == MAX_COMMAND_CONTEXT_CANDIDATES
     assert len(set(selected)) == len(selected)
+
+
+def test_command_memory_context_resolves_current_head_after_100k_entries(
+    tmp_path,
+) -> None:
+    storage = Storage(tmp_path / "vault", node_id="node:mac-command")
+    recorded = _record(storage, "Evidence beyond the old journal scan boundary.")
+    target_revision_id = storage.revision_journal._heads()[
+        f"event:{recorded['id']}"
+    ][0]
+    with storage.revision_journal.journal_path.open("w", encoding="utf-8") as handle:
+        for sequence in range(1, 100_001):
+            handle.write(
+                f'{{"revision_id":"sha256:{sequence:064x}",'
+                f'"sequence":{sequence}}}\n'
+            )
+        handle.write(
+            f'{{"revision_id":"{target_revision_id}","sequence":100001}}\n'
+        )
+
+    result = command_memory_context(
+        storage,
+        entity="memory-mcp",
+        query=None,
+        since=None,
+        until=None,
+        limit=1,
+    )
+
+    assert result["total"] == 1
+    assert result["results"][0]["revision"]["eventId"] == target_revision_id
+    assert result["results"][0]["revision"]["cursor"] == "100001"
+
+
+def test_revision_sequence_lookup_fails_when_current_head_is_not_in_journal(
+    tmp_path,
+) -> None:
+    storage = Storage(tmp_path / "vault", node_id="node:mac-command")
+    storage.revision_journal.journal_path.write_text(
+        '{"revision_id":"sha256:' + ("1" * 64) + '","sequence":1}\n',
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError, match="current head revision is missing"):
+        _bounded_revision_sequences(
+            storage.revision_journal,
+            {"sha256:" + ("2" * 64)},
+        )
+
+
+def test_revision_sequence_lookup_fails_explicitly_at_scan_bound(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path,
+) -> None:
+    storage = Storage(tmp_path / "vault", node_id="node:mac-command")
+    storage.revision_journal.journal_path.write_text(
+        "\n".join(
+            [
+                '{"revision_id":"sha256:' + ("1" * 64) + '","sequence":1}',
+                '{"revision_id":"sha256:' + ("2" * 64) + '","sequence":2}',
+            ]
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(
+        command_context_module,
+        "MAX_COMMAND_CONTEXT_SCANNED_REVISIONS",
+        1,
+    )
+
+    with pytest.raises(ValueError, match="evidence scan bound"):
+        _bounded_revision_sequences(
+            storage.revision_journal,
+            {"sha256:" + ("2" * 64)},
+        )
 
 
 @pytest.mark.parametrize(

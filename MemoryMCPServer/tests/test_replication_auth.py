@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import hmac
 import warnings
 
@@ -68,6 +69,24 @@ def test_bearer_auth_uses_constant_time_verification_and_separate_capabilities(m
             assert str(error) == "unauthorized"
         else:
             raise AssertionError("read token crossed a capability boundary")
+
+
+def test_token_digest_comparison_checks_every_bearer_in_constant_time(monkeypatch):
+    calls = []
+    real_compare = hmac.compare_digest
+
+    def observed(left, right):
+        calls.append((left, right))
+        return real_compare(left, right)
+
+    monkeypatch.setattr("memory_mcp.auth.hmac.compare_digest", observed)
+    authorizer = _authorizer()
+
+    assert authorizer.contains_token_digest(
+        hashlib.sha256(b"replicate-token-123456").digest()
+    )
+    assert len(calls) == 3
+    assert all(len(left) == len(right) == 32 for left, right in calls)
 
 
 def test_replication_http_endpoints_require_auth_and_redact_failures(tmp_path):

@@ -18,7 +18,8 @@ from .storage import Storage, normalize_entity
 MAX_COMMAND_CONTEXT_RESULTS: Final = 20
 MAX_COMMAND_CONTEXT_CANDIDATES: Final = 200
 MAX_COMMAND_CONTEXT_SCANNED_EVENTS: Final = 10_000
-MAX_COMMAND_CONTEXT_SCANNED_REVISIONS: Final = 100_000
+MAX_COMMAND_CONTEXT_SCANNED_REVISIONS: Final = 1_000_000
+MAX_COMMAND_CONTEXT_JOURNAL_BYTES: Final = 128 * 1024 * 1024
 MAX_COMMAND_CONTEXT_CONTENT_BYTES: Final = 64 * 1024
 MAX_COMMAND_CONTEXT_RESPONSE_BYTES: Final = 512 * 1024
 MAX_COMMAND_CONTEXT_HEADS_BYTES: Final = 4 * 1024 * 1024
@@ -255,10 +256,18 @@ def _bounded_revision_sequences(
         return {}
     sequences: dict[str, int] = {}
     expected_sequence = 1
+    scanned_bytes = 0
     with journal.journal_path.open("r", encoding="utf-8") as handle:
-        for line in islice(handle, MAX_COMMAND_CONTEXT_SCANNED_REVISIONS):
-            if len(line.encode("utf-8")) > MAX_COMMAND_CONTEXT_JOURNAL_LINE_BYTES:
+        for scanned_revisions, line in enumerate(handle, start=1):
+            line_bytes = len(line.encode("utf-8"))
+            if line_bytes > MAX_COMMAND_CONTEXT_JOURNAL_LINE_BYTES:
                 raise ValueError("revision journal line exceeds evidence bound")
+            scanned_bytes += line_bytes
+            if (
+                scanned_revisions > MAX_COMMAND_CONTEXT_SCANNED_REVISIONS
+                or scanned_bytes > MAX_COMMAND_CONTEXT_JOURNAL_BYTES
+            ):
+                raise ValueError("revision journal exceeds evidence scan bound")
             try:
                 item = json.loads(line)
                 sequence = int(item["sequence"])
@@ -272,8 +281,8 @@ def _bounded_revision_sequences(
             if revision_id in revision_ids:
                 sequences[revision_id] = sequence
                 if len(sequences) == len(revision_ids):
-                    break
-    return sequences
+                    return sequences
+    raise ValueError("current head revision is missing from revision journal")
 
 
 def _matches_payload(

@@ -30,9 +30,12 @@ class AttestationSecret:
         encoded = value.encode("utf-8") if isinstance(value, str) else bytes(value)
         if (
             not 32 <= len(encoded) <= MAX_ATTESTATION_SECRET_BYTES
-            or b"\x00" in encoded
+            or any(byte < 0x20 or byte == 0x7F for byte in encoded)
         ):
-            raise ValueError("attestation secret must contain 32-1024 bytes")
+            raise ValueError(
+                "attestation secret must contain 32-1024 bytes "
+                "without ASCII control characters"
+            )
         object.__setattr__(self, "_value", encoded)
 
     @classmethod
@@ -44,10 +47,16 @@ class AttestationSecret:
         try:
             return cls(value)
         except ValueError as error:
-            raise ValueError(f"{name} must contain 32-1024 bytes") from error
+            raise ValueError(
+                f"{name} must contain 32-1024 bytes without ASCII control characters"
+            ) from error
 
     def __repr__(self) -> str:
         return "AttestationSecret([REDACTED])"
+
+    def sha256_digest(self) -> bytes:
+        """Return a fixed-length digest for credential-separation checks."""
+        return hashlib.sha256(self._value).digest()
 
     def mac(self, service: str, identity: str, nonce: str) -> str:
         """Return the v1 HMAC over the exact NUL-delimited transcript."""

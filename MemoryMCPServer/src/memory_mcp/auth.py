@@ -113,6 +113,16 @@ class TokenAuthorizer:
         """Authenticate a raw token received from FastMCP's bearer backend."""
         return self.authenticate(f"Bearer {token}")
 
+    def contains_token_digest(self, candidate_digest: bytes) -> bool:
+        """Check a fixed-length credential digest against every configured bearer."""
+        if not isinstance(candidate_digest, bytes) or len(candidate_digest) != 32:
+            raise ValueError("credential digest must contain 32 bytes")
+        matched = False
+        for expected, _ in self._tokens:
+            equal = hmac.compare_digest(candidate_digest, expected)
+            matched = matched or equal
+        return matched
+
     def require(self, authorization: str | None, capability: str) -> dict[str, str]:
         if capability not in {"read", "replicate", "admin"}:
             raise ValueError("unknown capability")

@@ -15,6 +15,11 @@ from fastmcp import FastMCP
 
 from .storage import Storage
 from .auth import RequestGuard, TokenAuthorizer
+from .attestation import (
+    AttestationSecret,
+    MAX_ATTESTATION_BODY_BYTES,
+    install_attestation_route,
+)
 from .mcp_auth import build_fastmcp_security, memory_mcp_auth_required
 from .replication import install_replication_routes
 from . import queries
@@ -38,6 +43,12 @@ MAX_REPLICATION_BYTES = int(
 MCP_REQUIRE_AUTH = memory_mcp_auth_required()
 MCP_MAX_REQUEST_BYTES = int(
     os.environ.get("MEMORY_MCP_MAX_REQUEST_BYTES", str(256 * 1024))
+)
+ATTESTATION_SECRET = AttestationSecret.from_environment(
+    "MEMORY_ATTESTATION_SECRET"
+)
+ATTESTATION_RATE_LIMIT = int(
+    os.environ.get("MEMORY_ATTESTATION_RATE_LIMIT", "30")
 )
 TOMBSTONE_RETENTION_DAYS = int(
     os.environ.get("MEMORY_TOMBSTONE_RETENTION_DAYS", "90")
@@ -77,6 +88,17 @@ install_replication_routes(
     RequestGuard(
         max_body_bytes=MAX_REPLICATION_BYTES,
         max_requests=int(os.environ.get("MEMORY_REPLICATION_RATE_LIMIT", "120")),
+        window_seconds=60,
+    ),
+)
+install_attestation_route(
+    mcp,
+    service="memory",
+    identity_provider=lambda: storage.revision_journal.node_id,
+    secret=ATTESTATION_SECRET,
+    guard=RequestGuard(
+        max_body_bytes=MAX_ATTESTATION_BODY_BYTES,
+        max_requests=ATTESTATION_RATE_LIMIT,
         window_seconds=60,
     ),
 )

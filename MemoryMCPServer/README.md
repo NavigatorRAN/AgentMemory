@@ -293,6 +293,30 @@ Restoring changed event/entity Markdown appends a descendant revision whose
 object exactly matches the restored bytes; a failed multi-file restore rolls
 back both canonical files and journal state.
 
+## Buzz server attestation
+
+Buzz can prove that it reached the configured Memory MCP process before
+admitting the service. Configure a dedicated secret containing at least 32
+bytes; do not reuse a replication bearer or expose this value in logs:
+
+```bash
+export MEMORY_ATTESTATION_SECRET='replace-with-an-independent-32-byte-or-longer-secret'
+```
+
+`POST /attestation` accepts exactly
+`{"nonce":"<64-lowercase-hex>"}` with `Content-Type: application/json`. It
+returns the `memory` service name, the stable replication `node_id`, the same
+nonce, and a `sha256:` HMAC over the v1 NUL-delimited Buzz transcript. The
+route deliberately does not require an MCP or replication bearer: knowledge
+of the secret is verified by Buzz from the returned MAC, while a fresh nonce
+prevents a captured response from authenticating another admission.
+
+The route is streaming-body bounded to 256 bytes and rate limited per caller.
+If `MEMORY_ATTESTATION_SECRET` is unset, it fails closed with
+`503 attestation_unavailable`; no compatibility secret is generated. Treat the
+secret as deployment-only material and inject it through the service
+environment or secret manager.
+
 ## Configuration
 
 | Env var | Default | Purpose |
@@ -303,6 +327,8 @@ back both canonical files and journal state.
 | `MEMORY_NODE_ID` | generated once | Stable `node:<id>` identity |
 | `MEMORY_MCP_REQUIRE_AUTH` | `false` | Opt in to bearer authentication for FastMCP `/mcp` |
 | `MEMORY_MCP_MAX_REQUEST_BYTES` | `262144` | Authenticated MCP request-body limit; hard max 2097152 |
+| `MEMORY_ATTESTATION_SECRET` | unset | Dedicated Buzz admission HMAC secret; 32-1024 bytes |
+| `MEMORY_ATTESTATION_RATE_LIMIT` | `30` | Attestation requests per caller/minute |
 | `MEMORY_REPLICATION_READ_TOKEN` | unset | Read capability bearer |
 | `MEMORY_REPLICATION_REPLICATE_TOKEN` | unset | Replicate capability bearer |
 | `MEMORY_REPLICATION_ADMIN_TOKEN` | unset | Admin capability bearer |

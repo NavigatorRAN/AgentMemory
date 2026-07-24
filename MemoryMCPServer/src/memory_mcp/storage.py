@@ -5,6 +5,7 @@ import fcntl
 import json
 import os
 import re
+import tempfile
 import threading
 from contextlib import contextmanager
 from datetime import datetime, timezone
@@ -16,6 +17,7 @@ from ulid import ULID
 
 from .dates import now_iso, parse_when
 from .index import QueryIndex
+from .replication import RevisionJournal
 
 
 # ---------------------------------------------------------------------------
@@ -77,7 +79,15 @@ class Storage:
         <root>/.index/entities.json
     """
 
-    def __init__(self, root: str | Path):
+    def __init__(
+        self,
+        root: str | Path,
+        *,
+        node_id: str | None = None,
+        max_replication_items: int = 200,
+        max_replication_bytes: int = 2 * 1024 * 1024,
+        tombstone_retention_days: int = 90,
+    ):
         self.root = Path(root)
         self.events_dir = self.root / "events"
         self.entities_dir = self.root / "entities"
@@ -90,6 +100,14 @@ class Storage:
 
         for d in (self.events_dir, self.entities_dir, self.wiki_dir, self.index_dir):
             d.mkdir(parents=True, exist_ok=True)
+        self.revision_journal = RevisionJournal(
+            self.root,
+            storage=self,
+            node_id=node_id,
+            max_items=max_replication_items,
+            max_envelope_bytes=max_replication_bytes,
+            tombstone_retention_days=tombstone_retention_days,
+        )
 
     def _default_index_dir(self, root: Path) -> Path:
         configured = os.environ.get("MEMORY_INDEX_ROOT")
@@ -147,26 +165,27 @@ class Storage:
             agent=agent,
         )
         path.parent.mkdir(parents=True, exist_ok=True)
+        rendered = frontmatter.dumps(post)
         with _locked(path):
-            path.write_text(frontmatter.dumps(post), encoding="utf-8")
+            self._atomic_write_text(path, rendered)
 
         # Ensure entity stubs exist so list_entities sees them.
         for ent in normalized:
             self._ensure_entity_stub(ent)
 
         self._invalidate_index()
-        self._index_event_record(
-            {
-                "id": ulid,
-                "event_date": when.isoformat(),
-                "recorded_at": post.metadata.get("recorded_at"),
-                "entities": normalized,
-                "tags": tags,
-                "agent": agent,
-                "content": content,
-                "path": str(rel),
-            }
-        )
+        event = {
+            "id": ulid,
+            "event_date": when.isoformat(),
+            "recorded_at": post.metadata.get("recorded_at"),
+            "entities": normalized,
+            "tags": tags,
+            "agent": agent,
+            "content": content,
+            "path": str(rel),
+        }
+        self._index_event_record(event)
+        self.revision_journal.capture_event(event, rendered)
         return {
             "id": ulid,
             "path": str(rel),
@@ -230,6 +249,7 @@ class Storage:
 
         normalized = normalize_entity(name)
         path = self.entities_dir / f"{normalized}.md"
+        self.revision_journal.ensure_entity_writable(normalized)
 
         # An entity is "really" existing only if it has non-empty body content.
         # Auto-stubs (created by record_event) have empty bodies and should
@@ -288,10 +308,13 @@ class Storage:
                 else:  # replace, create, or append-to-empty
                     post.content = content
 
-            path.write_text(frontmatter.dumps(post), encoding="utf-8")
+            self._atomic_write_text(path, frontmatter.dumps(post))
 
         self._invalidate_index()
         self._index_entity_path(path)
+        stored = self.read_entity(normalized, include_conflicts=True)
+        if stored is not None:
+            self.revision_journal.capture_entity(stored)
         return {
             "name": normalized,
             "path": str(path.relative_to(self.root)),
@@ -301,19 +324,38 @@ class Storage:
 
     # --- reads ------------------------------------------------------------
 
-    def read_entity(self, name: str) -> dict[str, Any] | None:
+    def read_entity(
+        self,
+        name: str,
+        *,
+        include_conflicts: bool = False,
+    ) -> dict[str, Any] | None:
         normalized = normalize_entity(name)
         path = self.entities_dir / f"{normalized}.md"
         if not path.exists():
             return None
         post = frontmatter.load(path)
-        return {
+        result = {
             "name": normalized,
             "display_name": post.metadata.get("display_name", normalized),
             "frontmatter": dict(post.metadata),
             "content": post.content,
             "path": str(path.relative_to(self.root)),
+        }
+        conflict = self.revision_journal.conflict_for("entity", normalized)
+        if conflict and not include_conflicts:
+            fields = list(conflict.get("conflicted_fields") or [])
+            for field in fields:
+                if field == "content":
+                    result.pop("content", None)
+                elif field.startswith("metadata."):
+                    result["frontmatter"].pop(field.removeprefix("metadata."), None)
+            result["conflicted_fields"] = fields
+            result["conflict"] = {
+                "revision_ids": list(conflict.get("revision_ids") or []),
+                "detected_at": conflict.get("detected_at"),
             }
+        return result
 
     def iter_entities(self) -> Iterator[dict[str, Any]]:
         for ent_path in self.entities_dir.glob("*.md"):
@@ -402,11 +444,35 @@ class Storage:
                 page["native"] = False
                 event_pages.append(page)
                 seen_slugs.add(page["slug"])
-        return self.query_index.rebuild(
+        result = self.query_index.rebuild(
             events=events,
             entities=list(self.iter_entities()),
             wiki_pages=[*wiki_pages, *event_pages],
         )
+        self.revision_journal.project_into_index(self.query_index)
+        result["memory_revisions"] = self.revision_journal.revision_count
+        return result
+
+    @staticmethod
+    def _atomic_write_text(path: Path, value: str) -> None:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        descriptor, temporary = tempfile.mkstemp(prefix=f".{path.name}.", dir=path.parent)
+        try:
+            with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
+                handle.write(value)
+                handle.flush()
+                os.fsync(handle.fileno())
+            os.replace(temporary, path)
+        except Exception:
+            try:
+                os.close(descriptor)
+            except OSError:
+                pass
+            try:
+                os.unlink(temporary)
+            except OSError:
+                pass
+            raise
 
     def _index_event_record(self, event: dict[str, Any]) -> None:
         try:

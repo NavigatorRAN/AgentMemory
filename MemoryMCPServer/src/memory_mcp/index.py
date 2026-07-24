@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any
 
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 
 class QueryIndexError(RuntimeError):
@@ -155,6 +155,41 @@ class QueryIndex:
                 ON graph_edges(source);
             CREATE INDEX IF NOT EXISTS idx_graph_edges_target
                 ON graph_edges(target);
+            CREATE TABLE IF NOT EXISTS memory_objects (
+                object_id TEXT PRIMARY KEY,
+                kind TEXT NOT NULL,
+                payload_json TEXT NOT NULL
+            );
+            CREATE TABLE IF NOT EXISTS memory_revisions (
+                revision_id TEXT PRIMARY KEY,
+                sequence INTEGER NOT NULL UNIQUE,
+                node_id TEXT NOT NULL,
+                subject_type TEXT NOT NULL,
+                subject_id TEXT NOT NULL,
+                object_id TEXT NOT NULL,
+                parent_ids_json TEXT NOT NULL,
+                created_at TEXT NOT NULL
+            );
+            CREATE INDEX IF NOT EXISTS idx_memory_revisions_subject
+                ON memory_revisions(subject_type, subject_id, sequence);
+            CREATE TABLE IF NOT EXISTS replication_conflicts (
+                subject_type TEXT NOT NULL,
+                subject_id TEXT NOT NULL,
+                conflict_json TEXT NOT NULL,
+                PRIMARY KEY (subject_type, subject_id)
+            );
+            CREATE TABLE IF NOT EXISTS replication_cursors (
+                peer_node_id TEXT PRIMARY KEY,
+                cursor INTEGER NOT NULL
+            );
+            CREATE TABLE IF NOT EXISTS memory_tombstones (
+                revision_id TEXT PRIMARY KEY,
+                target_type TEXT NOT NULL,
+                target_id TEXT NOT NULL,
+                deleted_at TEXT NOT NULL,
+                retain_until TEXT NOT NULL,
+                prior_object_id TEXT
+            );
             """
         )
         conn.execute(
@@ -246,6 +281,101 @@ class QueryIndex:
                 "graph_edges": graph["edges"],
                 "db_path": str(self.db_path),
             }
+
+    def rebuild_replication_projection(
+        self,
+        *,
+        objects: Iterable[dict[str, Any]],
+        revisions: Iterable[dict[str, Any]],
+        conflicts: Iterable[dict[str, Any]],
+        cursors: Iterable[dict[str, Any]],
+        tombstones: Iterable[dict[str, Any]],
+    ) -> None:
+        """Rebuild replication tables from the canonical filesystem journal."""
+        with self.connect() as conn:
+            conn.executescript(
+                """
+                DELETE FROM memory_tombstones;
+                DELETE FROM replication_cursors;
+                DELETE FROM replication_conflicts;
+                DELETE FROM memory_revisions;
+                DELETE FROM memory_objects;
+                """
+            )
+            for value in objects:
+                conn.execute(
+                    """
+                    INSERT INTO memory_objects(object_id, kind, payload_json)
+                    VALUES (?, ?, ?)
+                    """,
+                    (
+                        value["object_id"],
+                        value["kind"],
+                        json.dumps(value.get("payload") or {}, sort_keys=True),
+                    ),
+                )
+            for value in revisions:
+                conn.execute(
+                    """
+                    INSERT INTO memory_revisions(
+                        revision_id, sequence, node_id, subject_type, subject_id,
+                        object_id, parent_ids_json, created_at
+                    )
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        value["revision_id"],
+                        int(value["sequence"]),
+                        value["node_id"],
+                        value["subject_type"],
+                        value["subject_id"],
+                        value["object_id"],
+                        json.dumps(value.get("parent_ids") or [], sort_keys=True),
+                        value["created_at"],
+                    ),
+                )
+            for value in conflicts:
+                conn.execute(
+                    """
+                    INSERT INTO replication_conflicts(
+                        subject_type, subject_id, conflict_json
+                    )
+                    VALUES (?, ?, ?)
+                    """,
+                    (
+                        value["subject_type"],
+                        value["subject_id"],
+                        json.dumps(value, sort_keys=True),
+                    ),
+                )
+            for value in cursors:
+                conn.execute(
+                    "INSERT INTO replication_cursors(peer_node_id, cursor) VALUES (?, ?)",
+                    (value["peer_node_id"], int(value["cursor"])),
+                )
+            for value in tombstones:
+                conn.execute(
+                    """
+                    INSERT INTO memory_tombstones(
+                        revision_id, target_type, target_id, deleted_at,
+                        retain_until, prior_object_id
+                    )
+                    VALUES (?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        value["revision_id"],
+                        value["target_type"],
+                        value["target_id"],
+                        value["deleted_at"],
+                        value["retain_until"],
+                        value.get("prior_object_id"),
+                    ),
+                )
+            conn.execute(
+                "INSERT OR REPLACE INTO meta(key, value) VALUES('replication_rebuilt_at', ?)",
+                (str(time.time()),),
+            )
+            conn.commit()
 
     def index_event(
         self,

@@ -34,6 +34,7 @@ Spock ───┘                              │
                          events/YYYY/MM/<ulid>-<slug>.md
                          entities/<name>.md
                          wiki/<slug>.md
+                         .replication/objects + revisions + journal
                          .index/entities.json
 ```
 
@@ -52,6 +53,10 @@ Spock ───┘                              │
 | `search_wiki` | Search synthesized wiki pages and AgentMemory wiki refresh records. |
 | `get_wiki_page` | Read a compiled wiki page by slug. |
 | `memory_graph` | Return a lightweight graph of entities, wiki pages, and relationships. |
+| `replication_readiness` / `replication_manifest` | Authenticated replication health and manifest. |
+| `replication_conflicts` / `replication_resolve_conflict` | Inspect and explicitly resolve divergence. |
+| `replication_create_tombstone` | Create a retained replicated deletion. |
+| `replication_create_backup` / `replication_restore_backup` | Server-owned bounded recovery. |
 
 Use `search_wiki` before broad event search when an agent needs compiled,
 durable knowledge such as a codebase map, framework briefing, or project wiki
@@ -193,6 +198,30 @@ mcp_servers:
     url: http://web-01:8006/mcp
 ```
 
+## Revision-aware replication
+
+New events and entity writes also create immutable content-addressed objects
+and canonical `MemoryRevision` records under `.replication/`. Markdown remains
+the readable authority and SQLite remains a rebuildable projection. Events
+merge automatically and duplicate delivery is idempotent. Entity revisions
+name their parents: descendants advance, while divergent branches create a
+visible conflict without last-write-wins. Existing unattended entity reads
+remove conflicted content/metadata fields until an explicit resolution joins
+every branch parent.
+
+Replication HTTP routes are bounded and always require an application bearer
+token, even while legacy MCP access remains compatible:
+
+| Route | Capability |
+|---|---|
+| `GET /replication/readiness`, `/replication/manifest`, `/replication/conflicts` | `read` |
+| `POST /replication/export`, `/replication/import`, `/replication/ack` | `replicate` |
+| `POST /replication/conflicts/resolve`, `/replication/tombstones`, `/replication/backups`, `/replication/restore` | `admin` |
+
+No replication route accepts a caller-supplied filesystem path. Backup and
+restore use opaque server-owned IDs. Authentication and validation errors are
+redacted.
+
 ## Configuration
 
 | Env var | Default | Purpose |
@@ -200,6 +229,15 @@ mcp_servers:
 | `MEMORY_VAULT_ROOT` | `/mnt/aishareddrive/family-agents/memory` | Where to read/write |
 | `MEMORY_HOST` | `0.0.0.0` | Bind address |
 | `MEMORY_PORT` | `8006` | Bind port |
+| `MEMORY_NODE_ID` | generated once | Stable `node:<id>` identity |
+| `MEMORY_REPLICATION_READ_TOKEN` | unset | Read capability bearer |
+| `MEMORY_REPLICATION_REPLICATE_TOKEN` | unset | Replicate capability bearer |
+| `MEMORY_REPLICATION_ADMIN_TOKEN` | unset | Admin capability bearer |
+| `MEMORY_REPLICATION_TOKENS` | unset | JSON token-to-capability mapping |
+| `MEMORY_REPLICATION_MAX_ITEMS` | `200` | Maximum revisions per page |
+| `MEMORY_REPLICATION_MAX_BYTES` | `2097152` | Maximum request/envelope bytes |
+| `MEMORY_REPLICATION_RATE_LIMIT` | `120` | Requests per caller/route/minute |
+| `MEMORY_TOMBSTONE_RETENTION_DAYS` | `90` | Tombstone retention evidence |
 
 ## Development
 
@@ -228,9 +266,10 @@ not source of truth. If the database is stale or corrupt, delete/rebuild it
 with `memory-mcp-index`; the markdown vault remains authoritative. Keep this
 cache on local disk, not the shared vault mount.
 
-**Auth is currently off.** Same posture as rag-retrieval — home-network
-trusted. To add auth, the easiest path is bearer tokens via FastMCP's auth
-hooks, with LiteLLM injecting the token from a virtual key.
+**Replication auth is mandatory.** The original memory MCP tools retain the
+deployment's temporary compatibility posture. Every replication HTTP route and
+replication administration MCP tool requires an explicit capability token;
+network location never grants replication authority.
 
 **Pauline's `2nd-brain` skill overlap.** This service supersedes the durable
 storage half of `2nd-brain`. Recommended migration path: rewrite the skill

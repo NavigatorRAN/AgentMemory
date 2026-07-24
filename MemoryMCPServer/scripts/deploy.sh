@@ -6,8 +6,19 @@ SSH_KEY="${MEMORY_MCP_SSH_KEY:-$HOME/.ssh/id_rsa_hermes}"
 REMOTE_DIR="${MEMORY_MCP_REMOTE_DIR:-/opt/memory-mcp}"
 ENDPOINT="${MEMORY_MCP_ENDPOINT:-http://192.168.1.26:8006/mcp}"
 REMOTE_INDEX_DIR="${MEMORY_MCP_REMOTE_INDEX_DIR:-${REMOTE_DIR}/.index}"
+REMOTE_WHEELHOUSE="${MEMORY_MCP_REMOTE_WHEELHOUSE:-${REMOTE_DIR}/wheelhouse}"
+ALLOW_DEPENDENCY_UPGRADE="${MEMORY_MCP_ALLOW_DEPENDENCY_UPGRADE:-false}"
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 REMOTE_STAGE="/tmp/memory-mcp-deploy-${STAMP}"
+
+if [[ ! "${REMOTE_WHEELHOUSE}" =~ ^/[A-Za-z0-9._/-]+$ ]]; then
+  echo "MEMORY_MCP_REMOTE_WHEELHOUSE must be an absolute path with safe characters." >&2
+  exit 2
+fi
+if [[ "${ALLOW_DEPENDENCY_UPGRADE}" != "true" && "${ALLOW_DEPENDENCY_UPGRADE}" != "false" ]]; then
+  echo "MEMORY_MCP_ALLOW_DEPENDENCY_UPGRADE must be true or false." >&2
+  exit 2
+fi
 
 cd "$(dirname "$0")/.."
 
@@ -25,15 +36,15 @@ ssh -i "${SSH_KEY}" -o BatchMode=yes "${SERVER}" "set -euo pipefail
   if [ -d '${REMOTE_DIR}' ]; then
     tar -C \"\$(dirname '${REMOTE_DIR}')\" -czf '/tmp/memory-mcp-backup-${STAMP}.tgz' \"\$(basename '${REMOTE_DIR}')\"
   fi
-  rsync -a --delete --exclude '.venv' '${REMOTE_STAGE}/' '${REMOTE_DIR}/'
+  rsync -a --delete --exclude '.venv' --exclude 'wheelhouse' '${REMOTE_STAGE}/' '${REMOTE_DIR}/'
   cd '${REMOTE_DIR}'
   mkdir -p '${REMOTE_INDEX_DIR}'
-  python3 -m venv .venv
-  if .venv/bin/python -c 'import memory_mcp.index_cli' >/dev/null 2>&1; then
-    echo 'Existing venv imports staged source; skipping package reinstall.'
-  else
-    .venv/bin/pip install --no-index --no-build-isolation --no-deps -e .
+  if [ ! -x .venv/bin/python ]; then
+    python3 -m venv .venv
   fi
+  MEMORY_MCP_DEPENDENCY_WHEELHOUSE='${REMOTE_WHEELHOUSE}' \
+  MEMORY_MCP_ALLOW_DEPENDENCY_UPGRADE='${ALLOW_DEPENDENCY_UPGRADE}' \
+    bash scripts/ensure_dependencies.sh '${REMOTE_DIR}'
   export MEMORY_INDEX_ROOT='${REMOTE_INDEX_DIR}'
   .venv/bin/python -m memory_mcp.index_cli --status
   if sudo -n true 2>/dev/null; then

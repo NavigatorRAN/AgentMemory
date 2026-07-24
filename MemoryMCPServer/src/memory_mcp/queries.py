@@ -335,10 +335,18 @@ def list_entities(
 ) -> list[dict[str, Any]]:
     try:
         storage.ensure_query_index()
-        return storage.query_index.list_entities(
+        rows = storage.query_index.list_entities(
             prefix=normalize_entity(prefix) if prefix else None,
             type_filter=type_filter,
         )
+        for item in rows:
+            conflict = storage.revision_journal.conflict_for("entity", item["name"])
+            fields = set((conflict or {}).get("conflicted_fields") or [])
+            if "metadata.display_name" in fields:
+                item.pop("display_name", None)
+            if "metadata.type" in fields:
+                item.pop("type", None)
+        return rows
     except Exception as error:
         metrics.record_index_fallback("list_entities", error)
 

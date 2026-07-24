@@ -34,6 +34,7 @@ Spock ───┘                              │
                          events/YYYY/MM/<ulid>-<slug>.md
                          entities/<name>.md
                          wiki/<slug>.md
+                         .replication/objects + revisions + journal
                          .index/entities.json
 ```
 
@@ -41,6 +42,7 @@ Spock ───┘                              │
 
 | Tool | Purpose |
 |---|---|
+| `command_memory_context` | Return bounded current-head evidence with exact Buzz revision/envelope citations. |
 | `record_event` | Log something that happened. Tag with entities. |
 | `recall_for_entity` | "What's the last N events involving X?" — primary recall. |
 | `search_events` | Plain-text search across event content. |
@@ -146,9 +148,32 @@ curl -s http://localhost:8006/mcp -X POST \
   -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"smoke","version":"0.1"}}}'
 ```
 
+When MCP authentication is enabled, add
+`-H "Authorization: Bearer ${MEMORY_MCP_READ_BEARER}"` to every Streamable
+HTTP request, including requests that carry an `Mcp-Session-Id`.
+
 This repository also includes `scripts/deploy.sh`, which stages the tracked
 package, backs up `/opt/memory-mcp`, installs the package, restarts
-`memory-mcp.service`, and runs `scripts/smoke_check.py`.
+`memory-mcp.service`, and runs `scripts/smoke_check.py`. Before any restart it
+checks the installed FastMCP version, required authentication imports and API
+methods, and that the editable `memory_mcp` package resolves to the newly
+staged source. A supported environment is left unchanged.
+
+Dependency repair is offline and operator-gated. For a new host or an
+unsupported/missing FastMCP, stage a complete reviewed wheelhouse on the remote
+host (default `/opt/memory-mcp/wheelhouse`) and run:
+
+```bash
+MEMORY_MCP_ALLOW_DEPENDENCY_UPGRADE=true \
+MEMORY_MCP_REMOTE_WHEELHOUSE=/protected/memory-mcp-wheelhouse \
+./scripts/deploy.sh
+```
+
+The repair command uses the staged `pyproject.toml`, `--no-index`, and only the
+explicit wheelhouse. It reinstalls and then reruns the dependency preflight.
+Without the explicit approval and wheelhouse, deployment stops before service
+restart while retaining the timestamped `/tmp/memory-mcp-backup-*.tgz`. Do not
+enable repair against an unreviewed or incomplete wheelhouse.
 
 ## LiteLLM integration
 
@@ -193,6 +218,144 @@ mcp_servers:
     url: http://web-01:8006/mcp
 ```
 
+## MCP bearer authentication
+
+The FastMCP `/mcp` surface retains its legacy unauthenticated behavior unless
+`MEMORY_MCP_REQUIRE_AUTH=true` is set. This is an explicit compatibility
+switch: unset, empty, `0`, `false`, `no`, and `off` all leave authentication
+disabled. Any other unrecognized value stops startup rather than silently
+choosing a security mode.
+
+When enabled, `/mcp` reuses the capability sets loaded by `TokenAuthorizer`
+from `MEMORY_REPLICATION_TOKENS` and the three compatibility token variables.
+Prefer the combined JSON mapping so each credential has an explicit, auditable
+capability set:
+
+```bash
+export MEMORY_MCP_REQUIRE_AUTH=true
+export MEMORY_REPLICATION_TOKENS='{
+  "replace-with-random-read-token": ["read"],
+  "replace-with-random-read-admin-token": ["read", "admin"],
+  "replace-with-random-replication-token": ["replicate"]
+}'
+```
+
+Tokens must be 16-256 printable ASCII characters without whitespace. Generate
+independent random values and load them through the service environment or
+secret manager; do not put live values in source control, command histories,
+URLs, or application logs.
+
+The MCP capability policy is closed and tool-name based:
+
+| MCP operation | Required capability |
+|---|---|
+| `initialize`, `ping`, notifications, `tools/list`, and other MCP control operations | `read` |
+| `command_memory_context`, `recall_for_entity`, `search_events`, `timeline`, `get_entity`, `list_entities`, `search_wiki`, `get_wiki_page`, `memory_graph`, `memory_metrics` | `read` |
+| `record_event`, `upsert_entity`, `link_entities` | `read` and `admin` |
+
+`replicate` alone never authorizes an MCP operation. A credential intended to
+write through MCP needs both `read` and `admin`: `read` establishes and
+operates the Streamable HTTP session, while `admin` authorizes the exact write
+tool. Unknown tool names fail closed before FastMCP dispatch. Replication
+conflict resolution, tombstones, backup, and restore remain HTTP-only and keep
+their existing `admin` requirement.
+
+### Buzz Command evidence
+
+`command_memory_context` accepts a bounded entity recall filter, a bounded
+plain-text event search, or both as an intersection. It returns the exact
+`memory-evidence-v1` wrapper admitted by Buzz Command: a fresh local
+`serving_node_id`/`retrieved_at` wrapper around current immutable event heads.
+Each result contains the full Buzz memory revision and replication envelope,
+preserves the revision's origin node and historical timestamp, quotes
+`revision.content.content` exactly, and provides an exact
+event/revision/node/timestamp citation. Unresolved conflicts, tombstones, empty
+content, and content above the per-result bound are omitted. The tool performs
+no memory mutation; its fixed policy marks retrieved text as untrusted evidence
+with no instruction effect. Revision cursor lookup remains bounded and validates
+the journal sequence; if a current head cannot be proven within those bounds,
+the request fails explicitly instead of silently omitting evidence.
+
+Missing or invalid bearers return a redacted HTTP `401`; a valid bearer without
+the required capability returns `403`. The check runs on every Streamable HTTP
+request, not only `initialize`, and FastMCP additionally binds an initialized
+session to its credential.
+
+Authenticated MCP requests are bounded before dispatch. The default maximum
+body is 262144 bytes, configurable with `MEMORY_MCP_MAX_REQUEST_BYTES` and
+hard-capped at 2097152 bytes. JSON-RPC bodies must be a single object with
+standard top-level keys, no duplicate keys or non-finite numbers, at most 64
+levels, and at most 10000 JSON nodes. Declared and streamed body overruns
+return `413`; malformed or out-of-bounds JSON returns a redacted `400`. The
+middleware does not log bearer values or request bodies, and authenticated
+FastMCP tool-call diagnostics redact arguments and validation details.
+
+## Revision-aware replication
+
+New events and entity writes also create immutable content-addressed objects
+and canonical `MemoryRevision` records under `.replication/`. Markdown remains
+the readable authority and SQLite remains a rebuildable projection. Events
+merge automatically and duplicate delivery is idempotent. Entity revisions
+name their parents: descendants advance, while divergent branches create a
+visible conflict without last-write-wins. Existing unattended entity reads
+remove conflicted content/metadata fields until an explicit resolution joins
+every branch parent.
+
+Every export page includes a `contracts` array containing the exact closed Buzz
+Command Console v1 `ReplicationEnvelope` shape. Task 4 and Task 6 consumers
+must consume that array; `revisions` and `objects` are the internal
+storage/transport representation. The adapter uses `OFFICIAL` classification by
+default. `hashes.content` is the immutable object digest,
+`hashes.revision`/`hashes.payload` identify the canonical internal revision,
+and `hashes.envelope` covers the canonical envelope basis before that digest is
+inserted. Adapter representability uses the same bounded-JSON budget as Buzz:
+maximum depth 64 and 10,000 total JSON nodes, in addition to the canonical byte
+limit.
+
+Replication administration is HTTP-only. Routes are streaming-body bounded,
+rate limited, and always require an application bearer token:
+
+| Route | Capability |
+|---|---|
+| `GET /replication/readiness`, `/replication/manifest`, `/replication/conflicts` | `read` |
+| `POST /replication/export`, `/replication/import`, `/replication/ack` | `replicate` |
+| `POST /replication/conflicts/resolve`, `/replication/tombstones`, `/replication/backups`, `/replication/restore` | `admin` |
+
+No replication route accepts a caller-supplied filesystem path. Backup and
+restore use opaque server-owned IDs. Authentication and validation errors are
+redacted. Conflict listing accepts bounded `cursor` and `limit` query
+parameters and returns `next_cursor` plus `has_more`.
+Restoring changed event/entity Markdown appends a descendant revision whose
+object exactly matches the restored bytes; a failed multi-file restore rolls
+back both canonical files and journal state.
+
+## Buzz server attestation
+
+Buzz can prove that it reached the configured Memory MCP process before
+admitting the service. Configure a dedicated secret containing 32-1024 bytes
+and no ASCII control characters; do not expose this value in logs:
+
+```bash
+export MEMORY_ATTESTATION_SECRET='replace-with-an-independent-32-byte-or-longer-secret'
+```
+
+`POST /attestation` accepts exactly
+`{"nonce":"<64-lowercase-hex>"}` with `Content-Type: application/json`. It
+returns the `memory` service name, the stable replication `node_id`, the same
+nonce, and a `sha256:` HMAC over the v1 NUL-delimited Buzz transcript. The
+route deliberately does not require an MCP or replication bearer: knowledge
+of the secret is verified by Buzz from the returned MAC, while a fresh nonce
+prevents a captured response from authenticating another admission.
+
+The route is streaming-body bounded to 256 bytes and rate limited per caller.
+If `MEMORY_ATTESTATION_SECRET` is unset, it fails closed with
+`503 attestation_unavailable`; no compatibility secret is generated. Treat the
+secret as deployment-only material and inject it through the service
+environment or secret manager. Startup also fails if its fixed-length digest
+matches any bearer loaded from `MEMORY_REPLICATION_TOKENS` or the read,
+replicate, or admin compatibility variables, so attestation and caller
+authorization cannot share a credential.
+
 ## Configuration
 
 | Env var | Default | Purpose |
@@ -200,8 +363,26 @@ mcp_servers:
 | `MEMORY_VAULT_ROOT` | `/mnt/aishareddrive/family-agents/memory` | Where to read/write |
 | `MEMORY_HOST` | `0.0.0.0` | Bind address |
 | `MEMORY_PORT` | `8006` | Bind port |
+| `MEMORY_NODE_ID` | generated once | Stable `node:<id>` identity |
+| `MEMORY_MCP_REQUIRE_AUTH` | `false` | Opt in to bearer authentication for FastMCP `/mcp` |
+| `MEMORY_MCP_MAX_REQUEST_BYTES` | `262144` | Authenticated MCP request-body limit; hard max 2097152 |
+| `MEMORY_ATTESTATION_SECRET` | unset | Dedicated Buzz admission HMAC secret; 32-1024 bytes, no ASCII controls, distinct from every bearer |
+| `MEMORY_ATTESTATION_RATE_LIMIT` | `30` | Attestation requests per caller/minute |
+| `MEMORY_REPLICATION_READ_TOKEN` | unset | Read capability bearer |
+| `MEMORY_REPLICATION_REPLICATE_TOKEN` | unset | Replicate capability bearer |
+| `MEMORY_REPLICATION_ADMIN_TOKEN` | unset | Admin capability bearer |
+| `MEMORY_REPLICATION_TOKENS` | unset | JSON token-to-capability mapping |
+| `MEMORY_REPLICATION_MAX_ITEMS` | `200` | Maximum revisions per page |
+| `MEMORY_REPLICATION_MAX_BYTES` | `2097152` | Maximum request/envelope bytes |
+| `MEMORY_REPLICATION_RATE_LIMIT` | `120` | Requests per caller/route/minute |
+| `MEMORY_TOMBSTONE_RETENTION_DAYS` | `90` | Tombstone retention evidence |
 
 ## Development
+
+Memory MCP supports FastMCP `>=3.2.4,<4`. Version 3.2.4 is the tested minimum
+for the Streamable HTTP custom routes, bearer verifier, middleware, session,
+and redaction APIs used here; the upper bound prevents an unreviewed FastMCP
+major release from changing those security boundaries.
 
 ```bash
 pip install -e ".[dev]"
@@ -228,9 +409,10 @@ not source of truth. If the database is stale or corrupt, delete/rebuild it
 with `memory-mcp-index`; the markdown vault remains authoritative. Keep this
 cache on local disk, not the shared vault mount.
 
-**Auth is currently off.** Same posture as rag-retrieval — home-network
-trusted. To add auth, the easiest path is bearer tokens via FastMCP's auth
-hooks, with LiteLLM injecting the token from a virtual key.
+**Replication auth is mandatory.** The original memory MCP tools retain the
+deployment's temporary compatibility posture, but replication has no MCP tool
+surface. Every replication HTTP route requires an explicit capability token;
+network location never grants replication authority.
 
 **Pauline's `2nd-brain` skill overlap.** This service supersedes the durable
 storage half of `2nd-brain`. Recommended migration path: rewrite the skill

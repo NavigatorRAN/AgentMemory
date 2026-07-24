@@ -18,6 +18,7 @@ from ulid import ULID
 
 from .dates import now_iso, parse_when
 from .auth import AuthenticationError, RequestGuard, RequestLimitError, TokenAuthorizer
+from .contracts import to_buzz_memory_revision, to_buzz_replication_envelope
 from .revisions import (
     ImmutableObject,
     MemoryRevision,
@@ -66,6 +67,7 @@ class RevisionJournal:
         self.heads_path = self.replication_dir / "heads.json"
         self.conflicts_path = self.replication_dir / "conflicts.json"
         self.acks_path = self.replication_dir / "acknowledgements.json"
+        self.backfill_path = self.replication_dir / "backfill.json"
         self.lock_path = self.replication_dir / "journal.lock"
         self.max_items = max(1, min(int(max_items), MAX_PAGE_ITEMS))
         self.max_envelope_bytes = max(1024, min(int(max_envelope_bytes), MAX_ENVELOPE_BYTES))
@@ -139,7 +141,13 @@ class RevisionJournal:
             raise ValueError("stored revision hash mismatch")
         return value
 
-    def capture_event(self, event: dict[str, Any], markdown: str) -> MemoryRevision:
+    def capture_event(
+        self,
+        event: dict[str, Any],
+        markdown: str,
+        *,
+        created_at: str | None = None,
+    ) -> MemoryRevision:
         value = ImmutableObject.create(
             kind="event",
             payload={
@@ -153,6 +161,14 @@ class RevisionJournal:
                 "markdown": markdown,
             },
         )
+        if created_at is not None:
+            existing = self._find_revision_for_object(
+                "event",
+                str(event["id"]),
+                value.object_id,
+            )
+            if existing is not None:
+                return existing
         parents = self._heads().get(self._subject_key("event", str(event["id"])), [])
         revision = MemoryRevision.create(
             node_id=self.node_id,
@@ -160,7 +176,7 @@ class RevisionJournal:
             subject_id=str(event["id"]),
             object_id=value.object_id,
             parent_ids=parents,
-            created_at=now_iso(),
+            created_at=created_at or now_iso(),
         )
         self.accept_revision(revision, value, materialize=False)
         return revision
@@ -170,7 +186,12 @@ class RevisionJournal:
         if key in self._load_json(self.conflicts_path):
             raise ConflictError("entity has unresolved replication conflict")
 
-    def capture_entity(self, entity: dict[str, Any]) -> MemoryRevision:
+    def capture_entity(
+        self,
+        entity: dict[str, Any],
+        *,
+        created_at: str | None = None,
+    ) -> MemoryRevision:
         name = self._normalize_entity(str(entity["name"]))
         self.ensure_entity_writable(name)
         value = ImmutableObject.create(
@@ -181,6 +202,10 @@ class RevisionJournal:
                 "frontmatter": dict(entity.get("frontmatter") or {}),
             },
         )
+        if created_at is not None:
+            existing = self._find_revision_for_object("entity", name, value.object_id)
+            if existing is not None:
+                return existing
         parents = self._heads().get(self._subject_key("entity", name), [])
         revision = MemoryRevision.create(
             node_id=self.node_id,
@@ -188,10 +213,73 @@ class RevisionJournal:
             subject_id=name,
             object_id=value.object_id,
             parent_ids=parents,
-            created_at=now_iso(),
+            created_at=created_at or now_iso(),
         )
         self.accept_revision(revision, value, materialize=False)
         return revision
+
+    def backfill_existing(self) -> dict[str, Any]:
+        """Journal legacy Markdown exactly once without rewriting canonical files."""
+        if self.backfill_path.exists():
+            return self._load_json(self.backfill_path)
+
+        events = entities = 0
+        for path in sorted((self.root / "events").rglob("*.md")):
+            if path.is_symlink():
+                raise ValueError("legacy event path is a symlink")
+            markdown = path.read_text(encoding="utf-8")
+            try:
+                post = frontmatter.loads(markdown)
+                event_id = str(post.metadata["id"])
+                event_date = self._iso_text(post.metadata["event_date"])
+                recorded_at = self._iso_text(
+                    post.metadata.get("recorded_at") or post.metadata["event_date"]
+                )
+            except (KeyError, TypeError, ValueError) as error:
+                raise ValueError(f"legacy event is invalid: {path.name}") from error
+            event = {
+                "id": event_id,
+                "event_date": event_date,
+                "recorded_at": recorded_at,
+                "entities": list(post.metadata.get("entities") or []),
+                "tags": list(post.metadata.get("tags") or []),
+                "agent": post.metadata.get("agent"),
+                "content": post.content,
+            }
+            self.capture_event(event, markdown, created_at=recorded_at)
+            events += 1
+
+        for path in sorted((self.root / "entities").glob("*.md")):
+            if path.is_symlink():
+                raise ValueError("legacy entity path is a symlink")
+            try:
+                post = frontmatter.load(path)
+                name = self._normalize_entity(
+                    str(post.metadata.get("entity") or path.stem)
+                )
+                frontmatter_value = self._canonical_value(dict(post.metadata))
+                first_seen = self._iso_text(
+                    post.metadata.get("first_seen") or "1970-01-01T00:00:00+00:00"
+                )
+            except (TypeError, ValueError) as error:
+                raise ValueError(f"legacy entity is invalid: {path.name}") from error
+            self.capture_entity(
+                {
+                    "name": name,
+                    "content": post.content,
+                    "frontmatter": frontmatter_value,
+                },
+                created_at=first_seen,
+            )
+            entities += 1
+
+        marker = {
+            "schema_version": 1,
+            "event_count": events,
+            "entity_count": entities,
+        }
+        self._write_json(self.backfill_path, marker)
+        return marker
 
     def accept_revision(
         self,
@@ -235,16 +323,30 @@ class RevisionJournal:
         if cursor < 0:
             raise ValueError("cursor must not be negative")
         bounded_limit = max(1, min(int(limit), self.max_items))
-        entries = [item for item in self._journal_entries() if item["sequence"] > cursor]
+        entries = [
+            item
+            for item in self._journal_entries()
+            if item["sequence"] > cursor
+            and self.get_revision(item["revision_id"]).node_id == self.node_id
+        ]
         selected: list[dict[str, Any]] = []
         objects: dict[str, dict[str, Any]] = {}
+        contracts: list[dict[str, Any]] = []
         for entry in entries[:bounded_limit]:
             revision = self.get_revision(entry["revision_id"])
             item = revision.to_dict()
             item["sequence"] = entry["sequence"]
             value = self.get_object(revision.object_id)
+            contract = to_buzz_replication_envelope(
+                to_buzz_memory_revision(
+                    revision,
+                    value,
+                    cursor=entry["sequence"],
+                )
+            )
             candidate_objects = {**objects, revision.object_id: value.to_dict()}
             candidate_revisions = [*selected, item]
+            candidate_contracts = [*contracts, contract]
             candidate = {
                 "schema_version": 1,
                 "source_node_id": self.node_id,
@@ -253,6 +355,7 @@ class RevisionJournal:
                 "has_more": len(entries) > len(candidate_revisions),
                 "revisions": candidate_revisions,
                 "objects": candidate_objects,
+                "contracts": candidate_contracts,
             }
             if len(canonical_json_bytes(candidate)) > self.max_envelope_bytes:
                 if not selected:
@@ -260,6 +363,7 @@ class RevisionJournal:
                 break
             selected = candidate_revisions
             objects = candidate_objects
+            contracts = candidate_contracts
         to_cursor = selected[-1]["sequence"] if selected else cursor
         envelope = {
             "schema_version": 1,
@@ -269,6 +373,7 @@ class RevisionJournal:
             "has_more": any(item["sequence"] > to_cursor for item in entries),
             "revisions": selected,
             "objects": objects,
+            "contracts": contracts,
         }
         envelope["envelope_id"] = sha256_id(canonical_json_bytes(envelope))
         return envelope
@@ -297,20 +402,48 @@ class RevisionJournal:
         from_cursor = int(envelope.get("from_cursor") or 0)
         to_cursor = int(envelope.get("to_cursor") or 0)
         if sequences and (
-            sequences[0] != from_cursor + 1
-            or sequences != list(range(sequences[0], sequences[0] + len(sequences)))
+            sequences[0] <= from_cursor
             or sequences[-1] != to_cursor
         ):
             raise ValueError("replication cursor range is invalid")
         if not sequences and from_cursor != to_cursor:
             raise ValueError("empty replication cursor range is invalid")
-        accepted = duplicates = conflicts = 0
+        prepared: list[tuple[MemoryRevision, ImmutableObject]] = []
+        available_parents: dict[str, MemoryRevision] = {}
+        for path in self.revisions_dir.rglob("*.json"):
+            revision_id = f"sha256:{path.stem}"
+            available_parents[revision_id] = self.get_revision(revision_id)
         for item in revisions:
             revision = MemoryRevision.from_dict(item)
+            if revision.node_id != source_node_id:
+                raise ValueError("revision node does not match envelope source")
             object_data = objects.get(revision.object_id)
             if not isinstance(object_data, dict):
                 raise ValueError("replication object is missing")
             value = ImmutableObject.from_dict(object_data)
+            self._validate_revision_object(revision, value)
+            for parent_id in revision.parent_ids:
+                parent = available_parents.get(parent_id)
+                if parent is None:
+                    raise ValueError("revision parent is missing or out of order")
+                if (
+                    parent.subject_type != revision.subject_type
+                    or parent.subject_id != revision.subject_id
+                ):
+                    raise ValueError("revision parent belongs to a different subject")
+            if value.kind == "tombstone" and revision.parent_ids:
+                parent_objects = {
+                    available_parents[parent_id].object_id
+                    for parent_id in revision.parent_ids
+                }
+                if value.payload.get("prior_object_id") not in parent_objects:
+                    raise ValueError("tombstone prior object does not match its parents")
+            self._validate_materialization(revision, value)
+            available_parents[revision.revision_id] = revision
+            prepared.append((revision, value))
+
+        accepted = duplicates = conflicts = 0
+        for revision, value in prepared:
             result = self.accept_revision(revision, value)
             if result["status"] == "duplicate":
                 duplicates += 1
@@ -325,6 +458,94 @@ class RevisionJournal:
             "conflicts": conflicts,
             "cursor": int(envelope.get("to_cursor") or 0),
         }
+
+    def _validate_revision_object(
+        self,
+        revision: MemoryRevision,
+        value: ImmutableObject,
+    ) -> None:
+        """Validate subject/object identity before an import can persist bytes."""
+        if value.kind == "tombstone":
+            target_type = str(value.payload.get("target_type") or "")
+            target_id = str(value.payload.get("target_id") or "")
+            if (
+                target_type != revision.subject_type
+                or self._normalize_subject(target_type, target_id) != revision.subject_id
+            ):
+                raise ValueError("tombstone target does not match revision subject")
+            try:
+                parse_when(str(value.payload["deleted_at"]))
+                parse_when(str(value.payload["retain_until"]))
+                self._validate_digest(str(value.payload["prior_object_id"]))
+            except (KeyError, TypeError, ValueError) as error:
+                raise ValueError("tombstone metadata is invalid") from error
+            return
+
+        if revision.subject_type == "event":
+            if value.kind != "event":
+                raise ValueError("event revision requires an event object")
+            if str(value.payload.get("id") or "") != revision.subject_id:
+                raise ValueError("event object identity does not match revision subject")
+            try:
+                ULID.from_str(revision.subject_id)
+                parse_when(str(value.payload["event_date"]))
+            except (KeyError, TypeError, ValueError) as error:
+                raise ValueError("event object metadata is invalid") from error
+            if not isinstance(value.payload.get("markdown"), str):
+                raise ValueError("event object markdown is invalid")
+            return
+
+        if revision.subject_type != "entity":
+            raise ValueError("unsupported replication subject")
+        if value.kind == "entity":
+            if self._normalize_entity(str(value.payload.get("name") or "")) != revision.subject_id:
+                raise ValueError("entity object identity does not match revision subject")
+            frontmatter_value = value.payload.get("frontmatter")
+            if not isinstance(frontmatter_value, dict):
+                raise ValueError("entity object frontmatter is invalid")
+            declared = frontmatter_value.get("entity")
+            if declared is not None and self._normalize_entity(str(declared)) != revision.subject_id:
+                raise ValueError("entity frontmatter identity does not match revision subject")
+            if not isinstance(value.payload.get("content"), str):
+                raise ValueError("entity object content is invalid")
+            return
+        raise ValueError("entity revision object kind is invalid")
+
+    def _validate_materialization(
+        self,
+        revision: MemoryRevision,
+        value: ImmutableObject,
+    ) -> None:
+        """Preflight every canonical write/delete before journal mutation."""
+        if value.kind == "event":
+            try:
+                post = frontmatter.loads(str(value.payload["markdown"]))
+            except Exception as error:
+                raise ValueError("event materialization markdown is invalid") from error
+            if (
+                str(post.metadata.get("id") or "") != revision.subject_id
+                or str(post.metadata.get("event_date") or "")
+                != str(value.payload.get("event_date") or "")
+                or post.content != str(value.payload.get("content") or "")
+                or list(post.metadata.get("entities") or [])
+                != list(value.payload.get("entities") or [])
+                or list(post.metadata.get("tags") or [])
+                != list(value.payload.get("tags") or [])
+                or post.metadata.get("agent") != value.payload.get("agent")
+            ):
+                raise ValueError("event materialization does not match object payload")
+            path = self._event_path(value.payload)
+            if (
+                path.exists()
+                and path.read_text(encoding="utf-8") != str(value.payload["markdown"])
+            ):
+                raise ValueError("event materialization collides with canonical file")
+        elif value.kind == "entity":
+            path = self.root / "entities" / f"{revision.subject_id}.md"
+            if path.is_symlink():
+                raise ValueError("entity materialization target is a symlink")
+        elif value.kind == "tombstone":
+            self._validate_revision_object(revision, value)
 
     def acknowledge(self, peer_node_id: str, cursor: int) -> dict[str, Any]:
         if not peer_node_id.startswith("node:") or len(peer_node_id) > 132:
@@ -345,6 +566,20 @@ class RevisionJournal:
     def list_conflicts(self) -> list[dict[str, Any]]:
         conflicts = list(self._load_json(self.conflicts_path).values())
         return sorted(conflicts, key=lambda item: (item["subject_type"], item["subject_id"]))
+
+    def conflict_page(self, *, cursor: int = 0, limit: int = 50) -> dict[str, Any]:
+        if cursor < 0:
+            raise ValueError("cursor must not be negative")
+        bounded_limit = max(1, min(int(limit), self.max_items))
+        conflicts = self.list_conflicts()
+        selected = conflicts[cursor:cursor + bounded_limit]
+        next_offset = cursor + len(selected)
+        has_more = next_offset < len(conflicts)
+        return {
+            "conflicts": selected,
+            "next_cursor": str(next_offset) if has_more else None,
+            "has_more": has_more,
+        }
 
     def conflict_for(self, subject_type: str, subject_id: str) -> dict[str, Any] | None:
         return self._load_json(self.conflicts_path).get(
@@ -385,7 +620,14 @@ class RevisionJournal:
         heads = self._heads().get(key, [])
         if not heads:
             raise ValueError("subject not found")
-        current = self.get_object(self.get_revision(heads[-1]).object_id)
+        current_revision = self.get_revision(heads[-1])
+        current = self.get_object(current_revision.object_id)
+        if current.kind == "tombstone":
+            return {
+                "revision_id": current_revision.revision_id,
+                "deleted_at": str(current.payload["deleted_at"]),
+                "retain_until": str(current.payload["retain_until"]),
+            }
         deleted_at = datetime.now(timezone.utc)
         retain_until = deleted_at + timedelta(days=self.tombstone_retention_days)
         value = ImmutableObject.create(
@@ -627,6 +869,10 @@ class RevisionJournal:
         conflicts = self._load_json(self.conflicts_path)
         conflicts[self._subject_key(subject_type, subject_id)] = conflict
         self._write_json(self.conflicts_path, conflicts)
+        if self.storage is not None and subject_type == "entity":
+            self.storage._index_entity_path(
+                self.root / "entities" / f"{self._normalize_entity(subject_id)}.md"
+            )
 
     def _clear_conflict(self, key: str) -> None:
         conflicts = self._load_json(self.conflicts_path)
@@ -743,6 +989,23 @@ class RevisionJournal:
             pending.extend(revision.parent_ids)
         return False
 
+    def _find_revision_for_object(
+        self,
+        subject_type: str,
+        subject_id: str,
+        object_id: str,
+    ) -> MemoryRevision | None:
+        normalized = self._normalize_subject(subject_type, subject_id)
+        for entry in self._journal_entries():
+            revision = self.get_revision(entry["revision_id"])
+            if (
+                revision.subject_type == subject_type
+                and revision.subject_id == normalized
+                and revision.object_id == object_id
+            ):
+                return revision
+        return None
+
     def _heads(self) -> dict[str, list[str]]:
         return {
             str(key): list(value)
@@ -817,6 +1080,24 @@ class RevisionJournal:
     def _slugify(value: str) -> str:
         slug = _NORM_RE.sub("-", value.lower()).strip("-")
         return slug[:60] if slug else "event"
+
+    @classmethod
+    def _canonical_value(cls, value: Any) -> Any:
+        if isinstance(value, datetime):
+            return value.isoformat()
+        if isinstance(value, dict):
+            return {str(key): cls._canonical_value(item) for key, item in value.items()}
+        if isinstance(value, list):
+            return [cls._canonical_value(item) for item in value]
+        if isinstance(value, tuple):
+            return [cls._canonical_value(item) for item in value]
+        return value
+
+    @staticmethod
+    def _iso_text(value: Any) -> str:
+        if isinstance(value, datetime):
+            return value.isoformat()
+        return str(value)
 
     def _safe_vault_path(self, relative: str) -> Path:
         path = Path(relative)
@@ -979,7 +1260,15 @@ def install_replication_routes(
         denied = authorize(request, "read")
         if denied:
             return denied
-        return JSONResponse({"conflicts": storage.revision_journal.list_conflicts()})
+        try:
+            return JSONResponse(
+                storage.revision_journal.conflict_page(
+                    cursor=int(request.query_params.get("cursor", "0")),
+                    limit=int(request.query_params.get("limit", "50")),
+                )
+            )
+        except (TypeError, ValueError):
+            return invalid()
 
     @mcp.custom_route("/replication/conflicts/resolve", methods=["POST"])
     async def replication_resolve(request: Request) -> JSONResponse:

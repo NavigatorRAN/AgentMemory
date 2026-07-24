@@ -108,6 +108,7 @@ class Storage:
             max_envelope_bytes=max_replication_bytes,
             tombstone_retention_days=tombstone_retention_days,
         )
+        self.revision_journal.backfill_existing()
 
     def _default_index_dir(self, root: Path) -> Path:
         configured = os.environ.get("MEMORY_INDEX_ROOT")
@@ -335,7 +336,7 @@ class Storage:
         if not path.exists():
             return None
         post = frontmatter.load(path)
-        result = {
+        result: dict[str, Any] = {
             "name": normalized,
             "display_name": post.metadata.get("display_name", normalized),
             "frontmatter": dict(post.metadata),
@@ -349,7 +350,10 @@ class Storage:
                 if field == "content":
                     result.pop("content", None)
                 elif field.startswith("metadata."):
-                    result["frontmatter"].pop(field.removeprefix("metadata."), None)
+                    metadata_key = field.removeprefix("metadata.")
+                    result["frontmatter"].pop(metadata_key, None)
+                    if metadata_key in {"display_name", "type"}:
+                        result.pop(metadata_key, None)
             result["conflicted_fields"] = fields
             result["conflict"] = {
                 "revision_ids": list(conflict.get("revision_ids") or []),
@@ -364,13 +368,23 @@ class Storage:
             except Exception:
                 continue
             name = ent_path.stem
-            yield {
+            result: dict[str, Any] = {
                 "name": name,
                 "display_name": post.metadata.get("display_name", name),
                 "type": post.metadata.get("type", "unknown"),
                 "content": post.content,
                 "path": str(ent_path.relative_to(self.root)),
             }
+            conflict = self.revision_journal.conflict_for("entity", name)
+            if conflict:
+                for field in conflict.get("conflicted_fields") or []:
+                    if field == "content":
+                        result.pop("content", None)
+                    elif field == "metadata.display_name":
+                        result.pop("display_name", None)
+                    elif field == "metadata.type":
+                        result.pop("type", None)
+            yield result
 
     def iter_events(self) -> Iterator[dict[str, Any]]:
         """Stream all events as parsed dicts. Used by query layer.
@@ -444,9 +458,19 @@ class Storage:
                 page["native"] = False
                 event_pages.append(page)
                 seen_slugs.add(page["slug"])
+        indexed_entities = []
+        for entity in self.iter_entities():
+            indexed_entities.append(
+                {
+                    **entity,
+                    "display_name": entity.get("display_name", ""),
+                    "type": entity.get("type", ""),
+                    "content": entity.get("content", ""),
+                }
+            )
         result = self.query_index.rebuild(
             events=events,
-            entities=list(self.iter_entities()),
+            entities=indexed_entities,
             wiki_pages=[*wiki_pages, *event_pages],
         )
         self.revision_journal.project_into_index(self.query_index)
@@ -489,14 +513,16 @@ class Storage:
 
     def _index_entity_path(self, path: Path) -> None:
         try:
-            post = frontmatter.load(path)
             name = path.stem
+            projected = self.read_entity(name)
+            if projected is None:
+                return
             self.query_index.index_entity(
                 {
                     "name": name,
-                    "display_name": post.metadata.get("display_name", name),
-                    "type": post.metadata.get("type", "unknown"),
-                    "content": post.content,
+                    "display_name": projected.get("display_name", ""),
+                    "type": projected.get("frontmatter", {}).get("type", ""),
+                    "content": projected.get("content", ""),
                     "path": str(path.relative_to(self.root)),
                 }
             )
@@ -535,17 +561,21 @@ class Storage:
             # Seed from entity files (so empty entities show up).
             for ent_path in self.entities_dir.glob("*.md"):
                 try:
-                    post = frontmatter.load(ent_path)
+                    projected = self.read_entity(ent_path.stem)
                 except Exception:
                     continue
                 name = ent_path.stem
                 index[name] = {
                     "name": name,
-                    "display_name": post.metadata.get("display_name", name),
-                    "type": post.metadata.get("type", "unknown"),
                     "event_count": 0,
                     "last_event_date": None,
                 }
+                if projected is not None:
+                    if "display_name" in projected:
+                        index[name]["display_name"] = projected["display_name"]
+                    projected_type = projected.get("frontmatter", {}).get("type")
+                    if projected_type is not None:
+                        index[name]["type"] = projected_type
 
             # Tally events.
             for ev in self.iter_events():

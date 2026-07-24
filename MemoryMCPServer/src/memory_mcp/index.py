@@ -467,8 +467,12 @@ class QueryIndex:
                 """,
                 (
                     name,
-                    str(entity.get("display_name") or name),
-                    str(entity.get("type") or "unknown"),
+                    str(
+                        entity["display_name"]
+                        if "display_name" in entity
+                        else name
+                    ),
+                    str(entity["type"] if "type" in entity else "unknown"),
                     str(entity.get("content") or ""),
                     str(entity.get("path") or ""),
                 ),
@@ -769,22 +773,36 @@ class QueryIndex:
             clauses: list[str] = []
             params: list[Any] = []
             if prefix:
-                clauses.append("name LIKE ?")
+                clauses.append("e.name LIKE ?")
                 params.append(f"{prefix}%")
-            if type_filter:
-                clauses.append("type = ?")
-                params.append(type_filter)
             where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
             rows = conn.execute(
                 f"""
-                SELECT name, display_name, type, event_count, last_event_date
-                FROM entities
+                SELECT e.name, e.display_name, e.type, e.event_count,
+                       e.last_event_date, c.conflict_json
+                FROM entities e
+                LEFT JOIN replication_conflicts c
+                  ON c.subject_type = 'entity' AND c.subject_id = e.name
                 {where}
-                ORDER BY event_count DESC, name ASC
+                ORDER BY e.event_count DESC, e.name ASC
                 """,
                 params,
             ).fetchall()
-            return [dict(row) for row in rows]
+            results: list[dict[str, Any]] = []
+            for row in rows:
+                item = dict(row)
+                conflict_json = item.pop("conflict_json", None)
+                if conflict_json:
+                    conflict = json.loads(conflict_json)
+                    fields = set(conflict.get("conflicted_fields") or [])
+                    if "metadata.display_name" in fields:
+                        item.pop("display_name", None)
+                    if "metadata.type" in fields:
+                        item.pop("type", None)
+                if type_filter and item.get("type") != type_filter:
+                    continue
+                results.append(item)
+            return results
 
     def search_wiki(self, *, query: str, limit: int) -> list[dict[str, Any]]:
         needle = query.lower().strip()

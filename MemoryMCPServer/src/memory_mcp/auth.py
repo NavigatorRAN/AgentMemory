@@ -1,6 +1,7 @@
 """Capability authentication and request bounds for replication APIs."""
 from __future__ import annotations
 
+import hashlib
 import hmac
 import json
 import os
@@ -39,7 +40,9 @@ class TokenAuthorizer:
             capability_set = frozenset(str(item) for item in capabilities)
             if not capability_set or not capability_set <= {"read", "replicate", "admin"}:
                 raise ValueError("replication token capabilities are invalid")
-            prepared.append((token.encode("utf-8"), capability_set))
+            prepared.append(
+                (hashlib.sha256(token.encode("utf-8")).digest(), capability_set)
+            )
         self._tokens = tuple(prepared)
 
     @classmethod
@@ -71,12 +74,12 @@ class TokenAuthorizer:
     def require(self, authorization: str | None, capability: str) -> dict[str, str]:
         if capability not in {"read", "replicate", "admin"}:
             raise ValueError("unknown capability")
-        presented = b""
+        presented = hashlib.sha256(b"").digest()
         header_valid = False
         if isinstance(authorization, str) and authorization.startswith("Bearer "):
             candidate = authorization[7:]
             if candidate and len(candidate) <= 256 and "\x00" not in candidate:
-                presented = candidate.encode("utf-8")
+                presented = hashlib.sha256(candidate.encode("utf-8")).digest()
                 header_valid = True
 
         matched_capabilities: frozenset[str] = frozenset()
@@ -132,15 +135,17 @@ class RequestGuard:
                     raise RequestLimitError("payload_too_large", 413)
             except ValueError as error:
                 raise RequestLimitError("invalid_request", 400) from error
-        body = await request.body()
-        if len(body) > self.max_body_bytes:
-            raise RequestLimitError("payload_too_large", 413)
+        body = bytearray()
+        async for chunk in request.stream():
+            if len(body) + len(chunk) > self.max_body_bytes:
+                raise RequestLimitError("payload_too_large", 413)
+            body.extend(chunk)
         if not body:
             value: Any = {}
         else:
             try:
-                value = json.loads(body)
-            except json.JSONDecodeError as error:
+                value = json.loads(bytes(body))
+            except (UnicodeDecodeError, json.JSONDecodeError) as error:
                 raise RequestLimitError("invalid_request", 400) from error
         if not isinstance(value, dict) or not set(value).issubset(allowed_keys):
             raise RequestLimitError("invalid_request", 400)

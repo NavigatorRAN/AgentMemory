@@ -1,0 +1,68 @@
+{
+  "memoryRevision": {
+    "kind": "memory-revision",
+    "version": 1,
+    "classification": "OFFICIAL",
+    "entityId": "hmas-supply",
+    "eventId": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "parentRevisionIds": [
+      "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "nodeId": "node:command-node-1",
+    "timestamp": "2026-07-24T04:30:00+00:00",
+    "hashes": {
+      "content": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "revision": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "tombstone": false,
+    "cursor": "2",
+    "content": {
+      "status": "available",
+      "notes": [
+        "local only"
+      ]
+    }
+  },
+  "replicationEnvelope": {
+    "kind": "replication-envelope",
+    "version": 1,
+    "classification": "OFFICIAL",
+    "entityId": "hmas-supply",
+    "eventId": "replication-envelope-2",
+    "parentRevisionIds": [
+      "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    ],
+    "nodeId": "node:command-node-1",
+    "timestamp": "2026-07-24T04:30:00+00:00",
+    "hashes": {
+      "payload": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "envelope": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "tombstone": false,
+    "cursor": "2",
+    "payload": {
+      "kind": "memory-revision",
+      "version": 1,
+      "classification": "OFFICIAL",
+      "entityId": "hmas-supply",
+      "eventId": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "parentRevisionIds": [
+        "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      ],
+      "nodeId": "node:command-node-1",
+      "timestamp": "2026-07-24T04:30:00+00:00",
+      "hashes": {
+        "content": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "revision": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "tombstone": false,
+      "cursor": "2",
+      "content": {
+        "status": "available",
+        "notes": [
+          "local only"
+        ]
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ from typing import Any
 from fastmcp import FastMCP
 
 from .storage import Storage
-from .auth import AuthenticationError, RequestGuard, TokenAuthorizer
+from .auth import RequestGuard, TokenAuthorizer
 from .replication import install_replication_routes
 from . import queries
 from . import metrics
@@ -70,14 +70,6 @@ install_replication_routes(
         window_seconds=60,
     ),
 )
-
-
-def _authorize_tool(bearer_token: str, capability: str) -> None:
-    try:
-        replication_authorizer.require(f"Bearer {bearer_token}", capability)
-    except AuthenticationError as error:
-        raise ValueError("unauthorized") from error
-
 
 # ---------------------------------------------------------------------------
 # Tools
@@ -400,71 +392,6 @@ def memory_metrics() -> dict[str, Any]:
         index_status["error"] = str(error)[:500]
     snapshot["index"] = index_status
     return snapshot
-
-
-@mcp.tool()
-def replication_readiness(bearer_token: str) -> dict[str, Any]:
-    """Return authenticated replication readiness and bounded service limits."""
-    _authorize_tool(bearer_token, "read")
-    return storage.revision_journal.readiness()
-
-
-@mcp.tool()
-def replication_manifest(bearer_token: str) -> dict[str, Any]:
-    """Return the authenticated content-addressed journal manifest."""
-    _authorize_tool(bearer_token, "read")
-    return storage.revision_journal.manifest()
-
-
-@mcp.tool()
-def replication_conflicts(bearer_token: str) -> list[dict[str, Any]]:
-    """List authenticated stable-entity conflicts and branch provenance."""
-    _authorize_tool(bearer_token, "read")
-    return storage.revision_journal.list_conflicts()
-
-
-@mcp.tool()
-def replication_resolve_conflict(
-    bearer_token: str,
-    subject_type: str,
-    subject_id: str,
-    chosen_revision_id: str,
-) -> dict[str, Any]:
-    """Resolve a conflict explicitly by joining every branch parent."""
-    _authorize_tool(bearer_token, "admin")
-    return storage.revision_journal.resolve_conflict(
-        subject_type=subject_type,
-        subject_id=subject_id,
-        chosen_revision_id=chosen_revision_id,
-    )
-
-
-@mcp.tool()
-def replication_create_tombstone(
-    bearer_token: str,
-    subject_type: str,
-    subject_id: str,
-) -> dict[str, Any]:
-    """Create a retained replicated tombstone for an event or entity."""
-    _authorize_tool(bearer_token, "admin")
-    return storage.revision_journal.tombstone(subject_type, subject_id)
-
-
-@mcp.tool()
-def replication_create_backup(bearer_token: str) -> dict[str, Any]:
-    """Create a bounded server-owned backup; callers cannot choose a path."""
-    _authorize_tool(bearer_token, "admin")
-    return storage.revision_journal.create_backup()
-
-
-@mcp.tool()
-def replication_restore_backup(
-    bearer_token: str,
-    backup_id: str,
-) -> dict[str, Any]:
-    """Restore a server-owned backup by opaque ID."""
-    _authorize_tool(bearer_token, "admin")
-    return storage.revision_journal.restore_backup(backup_id)
 
 
 # ---------------------------------------------------------------------------

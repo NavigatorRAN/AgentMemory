@@ -58,6 +58,8 @@ def test_bearer_auth_uses_constant_time_verification_and_separate_capabilities(m
 
     assert authorizer.require("Bearer read-token-123456", "read")["capability"] == "read"
     assert len(calls) == 3
+    assert all(len(left) == len(right) == 32 for left, right in calls)
+    assert "read-token-123456" not in repr(authorizer._tokens)
 
     for capability in ("replicate", "admin"):
         try:
@@ -160,9 +162,55 @@ def test_body_and_rate_limits_fail_closed(tmp_path):
             headers={"Authorization": "Bearer replicate-token-123456"},
             content=b'{"cursor":0,"limit":10,"padding":"' + b"x" * 128 + b'"}',
         )
+        chunked = client.post(
+            "/replication/export",
+            headers={"Authorization": "Bearer replicate-token-123456"},
+            content=iter([b'{"cursor":0,"padding":"', b"x" * 128, b'"}']),
+        )
 
     assert first.status_code == 200
     assert limited.status_code == 429
     assert limited.json() == {"error": "rate_limited"}
     assert oversized.status_code == 413
     assert oversized.json() == {"error": "payload_too_large"}
+    assert chunked.status_code == 413
+    assert chunked.json() == {"error": "payload_too_large"}
+
+
+def test_conflicts_endpoint_is_cursor_paginated(tmp_path):
+    storage = Storage(tmp_path / "vault", node_id="node:mac")
+    conflicts = {
+        f"entity:entity-{index}": {
+            "subject_type": "entity",
+            "subject_id": f"entity-{index}",
+            "revision_ids": [],
+            "branches": [],
+            "conflicted_fields": ["content"],
+            "detected_at": "2026-07-24T10:00:00+00:00",
+        }
+        for index in range(3)
+    }
+    storage.revision_journal._write_json(
+        storage.revision_journal.conflicts_path,
+        conflicts,
+    )
+
+    with _client(storage) as client:
+        first = client.get(
+            "/replication/conflicts?cursor=0&limit=2",
+            headers={"Authorization": "Bearer read-token-123456"},
+        )
+        second = client.get(
+            f"/replication/conflicts?cursor={first.json()['next_cursor']}&limit=2",
+            headers={"Authorization": "Bearer read-token-123456"},
+        )
+
+    assert [item["subject_id"] for item in first.json()["conflicts"]] == [
+        "entity-0",
+        "entity-1",
+    ]
+    assert first.json()["has_more"] is True
+    assert first.json()["next_cursor"] == "2"
+    assert [item["subject_id"] for item in second.json()["conflicts"]] == ["entity-2"]
+    assert second.json()["has_more"] is False
+    assert second.json()["next_cursor"] is None

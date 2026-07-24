@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pytest
 
@@ -9,6 +10,14 @@ from memory_mcp.revisions import (
     MemoryRevision,
     NodeIdentity,
     canonical_json_bytes,
+)
+from memory_mcp.contracts import (
+    BUZZ_MEMORY_REVISION_KEYS,
+    BUZZ_REPLICATION_ENVELOPE_KEYS,
+    to_buzz_memory_revision,
+    to_buzz_replication_envelope,
+    validate_buzz_memory_revision,
+    validate_buzz_replication_envelope,
 )
 
 
@@ -90,3 +99,85 @@ def test_node_identity_is_stable_and_operator_value_must_match(tmp_path):
 
     with pytest.raises(ValueError, match="does not match"):
         NodeIdentity.load_or_create(tmp_path, configured_node_id="node:other")
+
+
+def test_buzz_cross_repo_contract_fixture_has_exact_v1_wire_keys_and_official_default():
+    fixture_path = Path(__file__).parent / "fixtures" / "buzz_memory_contract_v1.json"
+    fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
+
+    assert set(fixture["memoryRevision"]) == BUZZ_MEMORY_REVISION_KEYS
+    assert set(fixture["replicationEnvelope"]) == BUZZ_REPLICATION_ENVELOPE_KEYS
+    assert validate_buzz_memory_revision(fixture["memoryRevision"])
+    assert validate_buzz_replication_envelope(fixture["replicationEnvelope"])
+    assert fixture["memoryRevision"]["classification"] == "OFFICIAL"
+    assert fixture["replicationEnvelope"]["classification"] == "OFFICIAL"
+
+
+def test_internal_revision_adapts_to_exact_buzz_contract_with_exact_hash_lineage():
+    value = ImmutableObject.create(
+        kind="entity",
+        payload={
+            "name": "hmas-supply",
+            "content": "Available",
+            "frontmatter": {"type": "ship"},
+        },
+    )
+    parent = "sha256:" + "a" * 64
+    revision = MemoryRevision.create(
+        node_id="node:command-node-1",
+        subject_type="entity",
+        subject_id="hmas-supply",
+        object_id=value.object_id,
+        parent_ids=[parent],
+        created_at="2026-07-24T04:30:00+00:00",
+    )
+
+    wire_revision = to_buzz_memory_revision(revision, value, cursor=2)
+    envelope = to_buzz_replication_envelope(wire_revision)
+
+    assert set(wire_revision) == BUZZ_MEMORY_REVISION_KEYS
+    assert wire_revision["classification"] == "OFFICIAL"
+    assert wire_revision["entityId"] == "hmas-supply"
+    assert wire_revision["eventId"] == revision.revision_id
+    assert wire_revision["parentRevisionIds"] == [parent]
+    assert wire_revision["hashes"] == {
+        "content": value.object_id,
+        "revision": revision.revision_id,
+    }
+    assert wire_revision["cursor"] == "2"
+    assert wire_revision["content"] == value.payload
+    assert validate_buzz_memory_revision(wire_revision)
+
+    assert set(envelope) == BUZZ_REPLICATION_ENVELOPE_KEYS
+    assert envelope["payload"] == wire_revision
+    assert envelope["parentRevisionIds"] == [revision.revision_id]
+    assert envelope["hashes"]["payload"] == revision.revision_id
+    assert envelope["classification"] == "OFFICIAL"
+    assert validate_buzz_replication_envelope(envelope)
+
+
+def test_buzz_tombstone_adapter_has_null_content_and_matching_metadata():
+    value = ImmutableObject.create(
+        kind="tombstone",
+        payload={
+            "target_type": "entity",
+            "target_id": "hmas-supply",
+            "deleted_at": "2026-07-24T04:30:00+00:00",
+            "retain_until": "2026-10-22T04:30:00+00:00",
+            "prior_object_id": "sha256:" + "a" * 64,
+        },
+    )
+    revision = MemoryRevision.create(
+        node_id="node:command-node-1",
+        subject_type="entity",
+        subject_id="hmas-supply",
+        object_id=value.object_id,
+        parent_ids=["sha256:" + "b" * 64],
+        created_at="2026-07-24T04:30:00+00:00",
+    )
+
+    adapted = to_buzz_memory_revision(revision, value, cursor=3)
+
+    assert adapted["tombstone"] is True
+    assert adapted["content"] is None
+    assert validate_buzz_memory_revision(adapted)

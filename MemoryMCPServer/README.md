@@ -53,10 +53,6 @@ Spock ───┘                              │
 | `search_wiki` | Search synthesized wiki pages and AgentMemory wiki refresh records. |
 | `get_wiki_page` | Read a compiled wiki page by slug. |
 | `memory_graph` | Return a lightweight graph of entities, wiki pages, and relationships. |
-| `replication_readiness` / `replication_manifest` | Authenticated replication health and manifest. |
-| `replication_conflicts` / `replication_resolve_conflict` | Inspect and explicitly resolve divergence. |
-| `replication_create_tombstone` | Create a retained replicated deletion. |
-| `replication_create_backup` / `replication_restore_backup` | Server-owned bounded recovery. |
 
 Use `search_wiki` before broad event search when an agent needs compiled,
 durable knowledge such as a codebase map, framework briefing, or project wiki
@@ -209,8 +205,17 @@ visible conflict without last-write-wins. Existing unattended entity reads
 remove conflicted content/metadata fields until an explicit resolution joins
 every branch parent.
 
-Replication HTTP routes are bounded and always require an application bearer
-token, even while legacy MCP access remains compatible:
+Every export page includes a `contracts` array containing the exact closed Buzz
+Command Console v1 `ReplicationEnvelope` shape. Task 4 and Task 6 consumers
+must consume that array; `revisions` and `objects` are the internal
+storage/transport representation. The adapter uses `OFFICIAL` classification by
+default. `hashes.content` is the immutable object digest,
+`hashes.revision`/`hashes.payload` identify the canonical internal revision,
+and `hashes.envelope` covers the canonical envelope basis before that digest is
+inserted.
+
+Replication administration is HTTP-only. Routes are streaming-body bounded,
+rate limited, and always require an application bearer token:
 
 | Route | Capability |
 |---|---|
@@ -220,7 +225,8 @@ token, even while legacy MCP access remains compatible:
 
 No replication route accepts a caller-supplied filesystem path. Backup and
 restore use opaque server-owned IDs. Authentication and validation errors are
-redacted.
+redacted. Conflict listing accepts bounded `cursor` and `limit` query
+parameters and returns `next_cursor` plus `has_more`.
 
 ## Configuration
 
@@ -267,8 +273,8 @@ with `memory-mcp-index`; the markdown vault remains authoritative. Keep this
 cache on local disk, not the shared vault mount.
 
 **Replication auth is mandatory.** The original memory MCP tools retain the
-deployment's temporary compatibility posture. Every replication HTTP route and
-replication administration MCP tool requires an explicit capability token;
+deployment's temporary compatibility posture, but replication has no MCP tool
+surface. Every replication HTTP route requires an explicit capability token;
 network location never grants replication authority.
 
 **Pauline's `2nd-brain` skill overlap.** This service supersedes the durable

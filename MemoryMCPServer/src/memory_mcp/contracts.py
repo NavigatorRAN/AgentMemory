@@ -7,6 +7,7 @@ shape accepted by Buzz's ``parseMemoryRevision`` and
 """
 from __future__ import annotations
 
+import math
 from datetime import datetime
 from typing import Any
 
@@ -47,6 +48,8 @@ BUZZ_REPLICATION_ENVELOPE_KEYS = frozenset(
 )
 _HASH_KEYS = frozenset({"content", "revision"})
 _ENVELOPE_HASH_KEYS = frozenset({"payload", "envelope"})
+MAX_BUZZ_JSON_DEPTH = 64
+MAX_BUZZ_JSON_NODES = 10_000
 
 
 def to_buzz_memory_revision(
@@ -140,11 +143,7 @@ def validate_buzz_memory_revision(value: Any) -> bool:
         or not _hash(hashes.get("revision"))
     ):
         return False
-    try:
-        canonical_json_bytes(value.get("content"))
-    except ValueError:
-        return False
-    return True
+    return _is_bounded_json(value.get("content"))
 
 
 def validate_buzz_replication_envelope(value: Any) -> bool:
@@ -207,3 +206,55 @@ def _rfc3339(value: Any) -> bool:
     except ValueError:
         return False
     return parsed.tzinfo is not None
+
+
+def _is_bounded_json(root: Any) -> bool:
+    """Mirror Buzz ``cloneBoundedJson`` depth and node accounting exactly."""
+    def primitive(value: Any) -> bool:
+        if value is None or isinstance(value, (str, bool)):
+            return True
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            try:
+                return math.isfinite(value)
+            except OverflowError:
+                return False
+        return False
+
+    if primitive(root):
+        try:
+            canonical_json_bytes(root)
+        except ValueError:
+            return False
+        return True
+    if not isinstance(root, (list, dict)):
+        return False
+
+    seen = {id(root)}
+    stack: list[tuple[list[Any] | dict[str, Any], int]] = [(root, 0)]
+    nodes = 1
+    while stack:
+        value, depth = stack.pop()
+        if isinstance(value, list):
+            items = value
+        else:
+            if any(not isinstance(key, str) for key in value):
+                return False
+            items = list(value.values())
+        if nodes + len(items) > MAX_BUZZ_JSON_NODES:
+            return False
+        nodes += len(items)
+        for item in items:
+            child_depth = depth + 1
+            if child_depth > MAX_BUZZ_JSON_DEPTH:
+                return False
+            if primitive(item):
+                continue
+            if not isinstance(item, (list, dict)) or id(item) in seen:
+                return False
+            seen.add(id(item))
+            stack.append((item, child_depth))
+    try:
+        canonical_json_bytes(root)
+    except ValueError:
+        return False
+    return True

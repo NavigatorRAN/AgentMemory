@@ -181,3 +181,41 @@ def test_buzz_tombstone_adapter_has_null_content_and_matching_metadata():
     assert adapted["tombstone"] is True
     assert adapted["content"] is None
     assert validate_buzz_memory_revision(adapted)
+
+
+def test_buzz_bounded_json_depth_matches_typescript_64_65_boundary():
+    fixture_path = Path(__file__).parent / "fixtures" / "buzz_memory_contract_v1.json"
+    base = json.loads(fixture_path.read_text(encoding="utf-8"))["memoryRevision"]
+
+    boundary: object = "leaf"
+    for _ in range(64):
+        boundary = [boundary]
+    over_boundary = [boundary]
+
+    assert validate_buzz_memory_revision({**base, "content": boundary})
+    assert not validate_buzz_memory_revision({**base, "content": over_boundary})
+    value = ImmutableObject.create(kind="entity", payload={"nested": over_boundary})
+    revision = MemoryRevision.create(
+        node_id="node:command-node-1",
+        subject_type="entity",
+        subject_id="hmas-supply",
+        object_id=value.object_id,
+        parent_ids=[],
+        created_at="2026-07-24T04:30:00+00:00",
+    )
+    with pytest.raises(ValueError, match="represented"):
+        to_buzz_memory_revision(revision, value, cursor=1)
+
+
+def test_buzz_bounded_json_nodes_match_typescript_10000_10001_boundary():
+    fixture_path = Path(__file__).parent / "fixtures" / "buzz_memory_contract_v1.json"
+    base = json.loads(fixture_path.read_text(encoding="utf-8"))["memoryRevision"]
+
+    boundary = [0] * 9_999
+    over_boundary = [0] * 10_000
+
+    assert validate_buzz_memory_revision({**base, "content": boundary})
+    assert not validate_buzz_memory_revision({**base, "content": over_boundary})
+    assert not validate_buzz_memory_revision(
+        {**base, "content": "x" * (4 * 1024 * 1024)}
+    )

@@ -288,36 +288,50 @@ class RevisionJournal:
         *,
         materialize: bool = True,
     ) -> dict[str, Any]:
+        with self._locked():
+            return self._accept_revision_locked(
+                revision,
+                value,
+                materialize=materialize,
+            )
+
+    def _accept_revision_locked(
+        self,
+        revision: MemoryRevision,
+        value: ImmutableObject,
+        *,
+        materialize: bool,
+    ) -> dict[str, Any]:
+        """Accept and verify a revision while the journal lock is already held."""
         if not revision.verify():
             raise ValueError("revision hash mismatch")
         if value.object_id != revision.object_id:
             raise ValueError("revision object hash mismatch")
-        with self._locked():
-            existing = self.revision_path(revision.revision_id)
-            if existing.exists():
-                stored = self.get_revision(revision.revision_id)
-                if stored != revision:
-                    raise ValueError("revision collision")
-                return {"status": "duplicate", "revision_id": revision.revision_id}
-            missing = [
-                parent_id
-                for parent_id in revision.parent_ids
-                if not self.revision_path(parent_id).exists()
-            ]
-            if missing:
-                raise ValueError("revision parent is missing")
-            self.store_object(value)
-            self._atomic_write(
-                self.revision_path(revision.revision_id),
-                canonical_json_bytes(revision.to_dict()),
-            )
-            sequence = self._append_journal(revision.revision_id)
-            outcome = self._merge_heads(revision, value, materialize=materialize)
-            return {
-                "status": outcome,
-                "revision_id": revision.revision_id,
-                "sequence": sequence,
-            }
+        existing = self.revision_path(revision.revision_id)
+        if existing.exists():
+            stored = self.get_revision(revision.revision_id)
+            if stored != revision:
+                raise ValueError("revision collision")
+            return {"status": "duplicate", "revision_id": revision.revision_id}
+        missing = [
+            parent_id
+            for parent_id in revision.parent_ids
+            if not self.revision_path(parent_id).exists()
+        ]
+        if missing:
+            raise ValueError("revision parent is missing")
+        self.store_object(value)
+        self._atomic_write(
+            self.revision_path(revision.revision_id),
+            canonical_json_bytes(revision.to_dict()),
+        )
+        sequence = self._append_journal(revision.revision_id)
+        outcome = self._merge_heads(revision, value, materialize=materialize)
+        return {
+            "status": outcome,
+            "revision_id": revision.revision_id,
+            "sequence": sequence,
+        }
 
     def export_envelope(self, *, cursor: int = 0, limit: int = 50) -> dict[str, Any]:
         if cursor < 0:
@@ -535,9 +549,17 @@ class RevisionJournal:
             ):
                 raise ValueError("event materialization does not match object payload")
             path = self._event_path(value.payload)
+            current_heads = self._heads().get(
+                self._subject_key("event", revision.subject_id),
+                [],
+            )
             if (
                 path.exists()
                 and path.read_text(encoding="utf-8") != str(value.payload["markdown"])
+                and (
+                    not current_heads
+                    or not set(current_heads).issubset(set(revision.parent_ids))
+                )
             ):
                 raise ValueError("event materialization collides with canonical file")
         elif value.kind == "entity":
@@ -693,44 +715,127 @@ class RevisionJournal:
         path = self.backups_dir / f"{backup_id}.json"
         if not path.exists():
             raise ValueError("backup not found")
-        manifest = self._load_json(path)
-        digest = manifest.pop("digest", None)
+        stored_manifest = self._load_json(path)
+        digest = stored_manifest.get("digest")
+        manifest = dict(stored_manifest)
+        manifest.pop("digest", None)
         if digest != sha256_id(canonical_json_bytes(manifest)):
             raise ValueError("backup digest mismatch")
-        restored = 0
-        restored_missing: list[tuple[Path, bytes]] = []
+        prepared: list[
+            tuple[Path, bytes, tuple[str, str, ImmutableObject] | None]
+        ] = []
+        total = 0
         for relative, encoded in dict(manifest.get("files") or {}).items():
             target = self._safe_vault_path(relative)
             data = base64.b64decode(encoded, validate=True)
-            was_missing = not target.exists()
-            self._atomic_write(target, data)
-            if was_missing:
-                restored_missing.append((target, data))
-            restored += 1
+            total += len(data)
+            if len(prepared) >= MAX_BACKUP_FILES or total > MAX_BACKUP_BYTES:
+                raise ValueError("backup exceeds configured bound")
+            revision_value: tuple[str, str, ImmutableObject] | None = None
+            if target.parent == self.root / "entities":
+                post = frontmatter.loads(data.decode("utf-8"))
+                subject_id = self._normalize_entity(target.stem)
+                declared = post.metadata.get("entity")
+                if (
+                    declared is not None
+                    and self._normalize_entity(str(declared)) != subject_id
+                ):
+                    raise ValueError("backup entity identity does not match path")
+                value = ImmutableObject.create(
+                    kind="entity",
+                    payload={
+                        "name": subject_id,
+                        "content": post.content,
+                        "frontmatter": self._canonical_value(dict(post.metadata)),
+                    },
+                )
+                revision_value = ("entity", subject_id, value)
+            elif (self.root / "events") in target.parents:
+                post = frontmatter.loads(data.decode("utf-8"))
+                subject_id = str(post.metadata["id"])
+                value = ImmutableObject.create(
+                    kind="event",
+                    payload={
+                        "id": subject_id,
+                        "event_date": self._iso_text(post.metadata["event_date"]),
+                        "recorded_at": self._iso_text(
+                            post.metadata.get("recorded_at")
+                            or post.metadata["event_date"]
+                        ),
+                        "entities": self._canonical_value(
+                            list(post.metadata.get("entities") or [])
+                        ),
+                        "tags": self._canonical_value(
+                            list(post.metadata.get("tags") or [])
+                        ),
+                        "agent": self._canonical_value(post.metadata.get("agent")),
+                        "content": post.content,
+                        "markdown": data.decode("utf-8"),
+                    },
+                )
+                if self._event_path(value.payload) != target:
+                    raise ValueError("backup event identity does not match path")
+                revision_value = ("event", subject_id, value)
+            prepared.append((target, data, revision_value))
+
+        state_paths = (self.journal_path, self.heads_path, self.conflicts_path)
+        with self._locked():
+            canonical_before = {
+                target: target.read_bytes() if target.exists() else None
+                for target, _, _ in prepared
+            }
+            state_before = {state: state.read_bytes() for state in state_paths}
+            objects_before = set(self.objects_dir.rglob("*.json"))
+            revisions_before = set(self.revisions_dir.rglob("*.json"))
+            try:
+                for target, data, _ in prepared:
+                    self._atomic_write(target, data, mode=0o644)
+                for target, data, revision_value in prepared:
+                    if revision_value is None or canonical_before[target] == data:
+                        continue
+                    subject_type, subject_id, value = revision_value
+                    parents = self._heads().get(
+                        self._subject_key(subject_type, subject_id),
+                        [],
+                    )
+                    revision = MemoryRevision.create(
+                        node_id=self.node_id,
+                        subject_type=subject_type,
+                        subject_id=subject_id,
+                        object_id=value.object_id,
+                        parent_ids=parents,
+                        created_at=now_iso(),
+                    )
+                    self._validate_revision_object(revision, value)
+                    self._accept_revision_locked(
+                        revision,
+                        value,
+                        materialize=False,
+                    )
+            except Exception:
+                try:
+                    for target, prior in canonical_before.items():
+                        if prior is None:
+                            target.unlink(missing_ok=True)
+                        else:
+                            self._atomic_write(target, prior, mode=0o644)
+                    for state, prior in state_before.items():
+                        self._atomic_write(state, prior)
+                    for created in set(self.objects_dir.rglob("*.json")) - objects_before:
+                        created.unlink()
+                    for created in set(self.revisions_dir.rglob("*.json")) - revisions_before:
+                        created.unlink()
+                except Exception as rollback_error:
+                    raise RuntimeError("backup restore rollback failed") from rollback_error
+                raise
+
         if self.storage is not None:
             self.storage._invalidate_index()
-            for target, data in restored_missing:
-                if target.parent == self.root / "entities":
-                    entity = self.storage.read_entity(
-                        target.stem,
-                        include_conflicts=True,
-                    )
-                    if entity is not None:
-                        self.capture_entity(entity)
-                elif (self.root / "events") in target.parents:
-                    post = frontmatter.loads(data.decode("utf-8"))
-                    event = {
-                        "id": str(post.metadata["id"]),
-                        "event_date": str(post.metadata["event_date"]),
-                        "recorded_at": str(post.metadata.get("recorded_at") or ""),
-                        "entities": list(post.metadata.get("entities") or []),
-                        "tags": list(post.metadata.get("tags") or []),
-                        "agent": post.metadata.get("agent"),
-                        "content": post.content,
-                    }
-                    self.capture_event(event, data.decode("utf-8"))
-            self.storage.rebuild_query_index()
-        return {"backup_id": backup_id, "restored_files": restored}
+            try:
+                self.storage.rebuild_query_index()
+            except Exception:
+                pass
+        return {"backup_id": backup_id, "restored_files": len(prepared)}
 
     def readiness(self) -> dict[str, Any]:
         return {
@@ -922,9 +1027,8 @@ class RevisionJournal:
     def _materialize_event(self, value: ImmutableObject) -> None:
         path = self._event_path(value.payload)
         if path.exists():
-            if path.read_text(encoding="utf-8") != str(value.payload["markdown"]):
-                raise ConflictError("event ID already exists with different content")
-            return
+            if path.read_text(encoding="utf-8") == str(value.payload["markdown"]):
+                return
         self._atomic_write(path, str(value.payload["markdown"]).encode("utf-8"), mode=0o644)
         for entity in value.payload.get("entities") or []:
             if self.storage is not None:

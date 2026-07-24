@@ -498,6 +498,135 @@ def test_tombstone_is_replicated_idempotent_retained_and_restorable_from_backup(
     assert source.read_entity("memory-mcp")["content"] == "Recover me"
 
 
+def test_backup_restore_captures_descendant_revision_matching_restored_markdown(tmp_path):
+    storage = Storage(tmp_path / "vault", node_id="node:mac")
+    storage.upsert_entity(
+        "Memory MCP",
+        "Version one",
+        {"type": "service", "owner": "v1"},
+        "create",
+    )
+    backup = storage.revision_journal.create_backup()
+    storage.upsert_entity(
+        "Memory MCP",
+        "Version two",
+        {"type": "service", "owner": "v2"},
+        "replace",
+    )
+    version_two_head = storage.revision_journal._heads()["entity:memory-mcp"][0]
+
+    storage.revision_journal.restore_backup(backup["backup_id"])
+
+    restored = storage.read_entity("memory-mcp")
+    restored_head = storage.revision_journal._heads()["entity:memory-mcp"]
+    restored_revision = storage.revision_journal.get_revision(restored_head[0])
+    restored_object = storage.revision_journal.get_object(restored_revision.object_id)
+    assert restored["content"] == "Version one"
+    assert restored["frontmatter"]["owner"] == "v1"
+    assert restored_head == [restored_revision.revision_id]
+    assert restored_revision.parent_ids == (version_two_head,)
+    assert restored_object.kind == "entity"
+    assert restored_object.payload["content"] == "Version one"
+    assert restored_object.payload["frontmatter"]["owner"] == "v1"
+    assert storage.revision_journal.list_conflicts() == []
+    restored_count = storage.revision_journal.revision_count
+    storage.revision_journal.restore_backup(backup["backup_id"])
+    assert storage.revision_journal.revision_count == restored_count
+
+
+def test_backup_restore_captures_changed_existing_event_as_descendant(tmp_path):
+    storage = Storage(tmp_path / "vault", node_id="node:mac")
+    recorded = storage.record_event(
+        content="Stable title\nVersion one",
+        entities=["Memory MCP"],
+        event_date="2026-07-24T10:00:00+00:00",
+        tags=["backup"],
+        agent="CODEX",
+    )
+    backup = storage.revision_journal.create_backup()
+    event_path = storage.events_dir / recorded["path"]
+    version_two_post = frontmatter.load(event_path)
+    version_two_post.content = "Stable title\nVersion two"
+    version_two_markdown = frontmatter.dumps(version_two_post)
+    storage._atomic_write_text(event_path, version_two_markdown)
+    storage.revision_journal.capture_event(
+        {
+            "id": recorded["id"],
+            "event_date": str(version_two_post.metadata["event_date"]),
+            "recorded_at": str(version_two_post.metadata["recorded_at"]),
+            "entities": list(version_two_post.metadata["entities"]),
+            "tags": list(version_two_post.metadata["tags"]),
+            "agent": version_two_post.metadata["agent"],
+            "content": version_two_post.content,
+        },
+        version_two_markdown,
+    )
+    version_two_head = storage.revision_journal._heads()[
+        f"event:{recorded['id']}"
+    ][0]
+
+    storage.revision_journal.restore_backup(backup["backup_id"])
+
+    restored_head = storage.revision_journal._heads()[f"event:{recorded['id']}"]
+    restored_revision = storage.revision_journal.get_revision(restored_head[0])
+    restored_object = storage.revision_journal.get_object(restored_revision.object_id)
+    assert next(storage.iter_events())["content"] == "Stable title\nVersion one"
+    assert restored_revision.parent_ids == (version_two_head,)
+    assert restored_object.payload["content"] == "Stable title\nVersion one"
+    assert restored_object.payload["markdown"] == event_path.read_text(encoding="utf-8")
+
+    target = Storage(tmp_path / "target", node_id="node:target")
+    result = target.revision_journal.import_envelope(
+        storage.revision_journal.export_envelope(cursor=0, limit=10)
+    )
+    assert result["conflicts"] == 0
+    assert next(target.iter_events())["content"] == "Stable title\nVersion one"
+
+
+def test_backup_restore_rolls_back_markdown_and_journal_atomically_on_capture_failure(
+    tmp_path,
+    monkeypatch,
+):
+    storage = Storage(tmp_path / "vault", node_id="node:mac")
+    for name in ("Alpha", "Bravo"):
+        storage.upsert_entity(name, f"{name} v1", {"owner": "v1"}, "create")
+    backup = storage.revision_journal.create_backup()
+    for name in ("Alpha", "Bravo"):
+        storage.upsert_entity(name, f"{name} v2", {"owner": "v2"}, "replace")
+
+    before = _journal_state(storage)
+    before_markdown = {
+        path: path.read_bytes()
+        for path in sorted(storage.entities_dir.glob("*.md"))
+    }
+    real_accept = storage.revision_journal._accept_revision_locked
+    calls = 0
+
+    def fail_second_capture(revision, value, *, materialize):
+        nonlocal calls
+        calls += 1
+        if calls == 2:
+            raise OSError("injected restore capture failure")
+        return real_accept(revision, value, materialize=materialize)
+
+    monkeypatch.setattr(
+        storage.revision_journal,
+        "_accept_revision_locked",
+        fail_second_capture,
+    )
+
+    with pytest.raises(OSError, match="injected"):
+        storage.revision_journal.restore_backup(backup["backup_id"])
+
+    assert _journal_state(storage) == before
+    assert {
+        path: path.read_bytes()
+        for path in sorted(storage.entities_dir.glob("*.md"))
+    } == before_markdown
+    assert storage.read_entity("alpha")["content"] == "Alpha v2"
+    assert storage.read_entity("bravo")["content"] == "Bravo v2"
+
+
 def test_repeated_tombstone_call_returns_existing_revision_without_new_journal_entry(tmp_path):
     storage = Storage(tmp_path / "vault", node_id="node:mac")
     storage.upsert_entity("Memory MCP", "Delete once", {}, "create")

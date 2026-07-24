@@ -212,7 +212,9 @@ storage/transport representation. The adapter uses `OFFICIAL` classification by
 default. `hashes.content` is the immutable object digest,
 `hashes.revision`/`hashes.payload` identify the canonical internal revision,
 and `hashes.envelope` covers the canonical envelope basis before that digest is
-inserted.
+inserted. Adapter representability uses the same bounded-JSON budget as Buzz:
+maximum depth 64 and 10,000 total JSON nodes, in addition to the canonical byte
+limit.
 
 Replication administration is HTTP-only. Routes are streaming-body bounded,
 rate limited, and always require an application bearer token:
@@ -227,6 +229,9 @@ No replication route accepts a caller-supplied filesystem path. Backup and
 restore use opaque server-owned IDs. Authentication and validation errors are
 redacted. Conflict listing accepts bounded `cursor` and `limit` query
 parameters and returns `next_cursor` plus `has_more`.
+Restoring changed event/entity Markdown appends a descendant revision whose
+object exactly matches the restored bytes; a failed multi-file restore rolls
+back both canonical files and journal state.
 
 ## Configuration
 

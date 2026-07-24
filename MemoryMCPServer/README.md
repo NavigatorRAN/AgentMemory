@@ -340,6 +340,11 @@ environment or secret manager.
 
 ## Development
 
+Memory MCP supports FastMCP `>=3.2.4,<4`. Version 3.2.4 is the tested minimum
+for the Streamable HTTP custom routes, bearer verifier, middleware, session,
+and redaction APIs used here; the upper bound prevents an unreviewed FastMCP
+major release from changing those security boundaries.
+
 ```bash
 pip install -e ".[dev]"
 pytest

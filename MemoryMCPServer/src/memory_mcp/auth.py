@@ -35,7 +35,16 @@ class TokenAuthorizer:
     def __init__(self, tokens: dict[str, set[str] | list[str] | tuple[str, ...]]):
         prepared: list[tuple[bytes, frozenset[str]]] = []
         for token, capabilities in tokens.items():
-            if not isinstance(token, str) or not 16 <= len(token) <= 256:
+            if (
+                not isinstance(token, str)
+                or not 16 <= len(token) <= 256
+                or any(
+                    not character.isascii()
+                    or not character.isprintable()
+                    or character.isspace()
+                    for character in token
+                )
+            ):
                 raise ValueError("replication tokens must be 16-256 characters")
             capability_set = frozenset(str(item) for item in capabilities)
             if not capability_set or not capability_set <= {"read", "replicate", "admin"}:
@@ -71,14 +80,21 @@ class TokenAuthorizer:
                 tokens.setdefault(token, set()).add(capability)
         return cls(tokens)
 
-    def require(self, authorization: str | None, capability: str) -> dict[str, str]:
-        if capability not in {"read", "replicate", "admin"}:
-            raise ValueError("unknown capability")
+    def authenticate(self, authorization: str | None) -> frozenset[str]:
+        """Authenticate a bearer without disclosing which check failed."""
         presented = hashlib.sha256(b"").digest()
         header_valid = False
         if isinstance(authorization, str) and authorization.startswith("Bearer "):
             candidate = authorization[7:]
-            if candidate and len(candidate) <= 256 and "\x00" not in candidate:
+            if (
+                16 <= len(candidate) <= 256
+                and not any(
+                    not character.isascii()
+                    or not character.isprintable()
+                    or character.isspace()
+                    for character in candidate
+                )
+            ):
                 presented = hashlib.sha256(candidate.encode("utf-8")).digest()
                 header_valid = True
 
@@ -91,6 +107,16 @@ class TokenAuthorizer:
                 matched_capabilities = capabilities
         if not header_valid or not matched:
             raise AuthenticationError()
+        return matched_capabilities
+
+    def authenticate_token(self, token: str) -> frozenset[str]:
+        """Authenticate a raw token received from FastMCP's bearer backend."""
+        return self.authenticate(f"Bearer {token}")
+
+    def require(self, authorization: str | None, capability: str) -> dict[str, str]:
+        if capability not in {"read", "replicate", "admin"}:
+            raise ValueError("unknown capability")
+        matched_capabilities = self.authenticate(authorization)
         if capability not in matched_capabilities:
             raise AuthenticationError(forbidden=True)
         return {"capability": capability}

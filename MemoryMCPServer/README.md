@@ -147,6 +147,10 @@ curl -s http://localhost:8006/mcp -X POST \
   -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"smoke","version":"0.1"}}}'
 ```
 
+When MCP authentication is enabled, add
+`-H "Authorization: Bearer ${MEMORY_MCP_READ_BEARER}"` to every Streamable
+HTTP request, including requests that carry an `Mcp-Session-Id`.
+
 This repository also includes `scripts/deploy.sh`, which stages the tracked
 package, backs up `/opt/memory-mcp`, installs the package, restarts
 `memory-mcp.service`, and runs `scripts/smoke_check.py`.
@@ -193,6 +197,62 @@ mcp_servers:
     type: http
     url: http://web-01:8006/mcp
 ```
+
+## MCP bearer authentication
+
+The FastMCP `/mcp` surface retains its legacy unauthenticated behavior unless
+`MEMORY_MCP_REQUIRE_AUTH=true` is set. This is an explicit compatibility
+switch: unset, empty, `0`, `false`, `no`, and `off` all leave authentication
+disabled. Any other unrecognized value stops startup rather than silently
+choosing a security mode.
+
+When enabled, `/mcp` reuses the capability sets loaded by `TokenAuthorizer`
+from `MEMORY_REPLICATION_TOKENS` and the three compatibility token variables.
+Prefer the combined JSON mapping so each credential has an explicit, auditable
+capability set:
+
+```bash
+export MEMORY_MCP_REQUIRE_AUTH=true
+export MEMORY_REPLICATION_TOKENS='{
+  "replace-with-random-read-token": ["read"],
+  "replace-with-random-read-admin-token": ["read", "admin"],
+  "replace-with-random-replication-token": ["replicate"]
+}'
+```
+
+Tokens must be 16-256 printable ASCII characters without whitespace. Generate
+independent random values and load them through the service environment or
+secret manager; do not put live values in source control, command histories,
+URLs, or application logs.
+
+The MCP capability policy is closed and tool-name based:
+
+| MCP operation | Required capability |
+|---|---|
+| `initialize`, `ping`, notifications, `tools/list`, and other MCP control operations | `read` |
+| `recall_for_entity`, `search_events`, `timeline`, `get_entity`, `list_entities`, `search_wiki`, `get_wiki_page`, `memory_graph`, `memory_metrics` | `read` |
+| `record_event`, `upsert_entity`, `link_entities` | `admin` |
+
+`replicate` alone never authorizes an MCP operation. A credential intended to
+write through MCP needs both `read` and `admin`: `read` establishes and
+operates the Streamable HTTP session, while `admin` authorizes the exact write
+tool. Unknown tool names fail closed before FastMCP dispatch. Replication
+conflict resolution, tombstones, backup, and restore remain HTTP-only and keep
+their existing `admin` requirement.
+
+Missing or invalid bearers return a redacted HTTP `401`; a valid bearer without
+the required capability returns `403`. The check runs on every Streamable HTTP
+request, not only `initialize`, and FastMCP additionally binds an initialized
+session to its credential.
+
+Authenticated MCP requests are bounded before dispatch. The default maximum
+body is 262144 bytes, configurable with `MEMORY_MCP_MAX_REQUEST_BYTES` and
+hard-capped at 2097152 bytes. JSON-RPC bodies must be a single object with
+standard top-level keys, no duplicate keys or non-finite numbers, at most 64
+levels, and at most 10000 JSON nodes. Declared and streamed body overruns
+return `413`; malformed or out-of-bounds JSON returns a redacted `400`. The
+middleware does not log bearer values or request bodies, and authenticated
+FastMCP tool-call diagnostics redact arguments and validation details.
 
 ## Revision-aware replication
 
@@ -241,6 +301,8 @@ back both canonical files and journal state.
 | `MEMORY_HOST` | `0.0.0.0` | Bind address |
 | `MEMORY_PORT` | `8006` | Bind port |
 | `MEMORY_NODE_ID` | generated once | Stable `node:<id>` identity |
+| `MEMORY_MCP_REQUIRE_AUTH` | `false` | Opt in to bearer authentication for FastMCP `/mcp` |
+| `MEMORY_MCP_MAX_REQUEST_BYTES` | `262144` | Authenticated MCP request-body limit; hard max 2097152 |
 | `MEMORY_REPLICATION_READ_TOKEN` | unset | Read capability bearer |
 | `MEMORY_REPLICATION_REPLICATE_TOKEN` | unset | Replicate capability bearer |
 | `MEMORY_REPLICATION_ADMIN_TOKEN` | unset | Admin capability bearer |

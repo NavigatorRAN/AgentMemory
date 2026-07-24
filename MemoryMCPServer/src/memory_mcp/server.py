@@ -15,6 +15,7 @@ from fastmcp import FastMCP
 
 from .storage import Storage
 from .auth import RequestGuard, TokenAuthorizer
+from .mcp_auth import build_fastmcp_security, memory_mcp_auth_required
 from .replication import install_replication_routes
 from . import queries
 from . import metrics
@@ -34,6 +35,10 @@ MAX_REPLICATION_ITEMS = int(os.environ.get("MEMORY_REPLICATION_MAX_ITEMS", "200"
 MAX_REPLICATION_BYTES = int(
     os.environ.get("MEMORY_REPLICATION_MAX_BYTES", str(2 * 1024 * 1024))
 )
+MCP_REQUIRE_AUTH = memory_mcp_auth_required()
+MCP_MAX_REQUEST_BYTES = int(
+    os.environ.get("MEMORY_MCP_MAX_REQUEST_BYTES", str(256 * 1024))
+)
 TOMBSTONE_RETENTION_DAYS = int(
     os.environ.get("MEMORY_TOMBSTONE_RETENTION_DAYS", "90")
 )
@@ -46,6 +51,11 @@ storage = Storage(
     tombstone_retention_days=TOMBSTONE_RETENTION_DAYS,
 )
 replication_authorizer = TokenAuthorizer.from_environment()
+mcp_security = build_fastmcp_security(
+    replication_authorizer,
+    require_auth=MCP_REQUIRE_AUTH,
+    max_body_bytes=MCP_MAX_REQUEST_BYTES,
+)
 
 
 def _prewarm_query_index() -> None:
@@ -59,7 +69,7 @@ threading.Thread(target=_prewarm_query_index, name="memory-mcp-index-prewarm", d
 
 # FastMCP 3.x: json_response and transport_security are passed to run()/run_http_async,
 # not the constructor. Setting them as env-style kwargs at run time below.
-mcp = FastMCP("memory")
+mcp = FastMCP("memory", auth=mcp_security.auth)
 install_replication_routes(
     mcp,
     storage,
@@ -401,12 +411,9 @@ def memory_metrics() -> dict[str, Any]:
 def main() -> None:
     """Run the server over streamable HTTP.
 
-    FastMCP 3.x dropped the `transport_security` kwarg from run(). The
-    default behaviour is permissive enough for a home-network deployment
-    (no DNS rebinding middleware applied unless you add it explicitly via
-    http_app() + middleware). If you ever want strict allowlisting, switch
-    to mcp.http_app() and wrap with TransportSecurityMiddleware before
-    serving with uvicorn directly.
+    ``mcp_security`` supplies the opt-in bearer provider and bounded
+    capability middleware. FastMCP's host/origin protection remains a separate
+    deployment concern; the compatibility default does not add an allowlist.
 
     json_response=True keeps responses as JSON (not SSE chunks), which
     is what the LiteLLM MCP gateway expects.
@@ -416,6 +423,7 @@ def main() -> None:
         host=HOST,
         port=PORT,
         json_response=True,
+        middleware=mcp_security.http_middleware,
     )
 
 

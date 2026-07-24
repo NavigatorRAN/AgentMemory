@@ -250,7 +250,7 @@ The MCP capability policy is closed and tool-name based:
 |---|---|
 | `initialize`, `ping`, notifications, `tools/list`, and other MCP control operations | `read` |
 | `recall_for_entity`, `search_events`, `timeline`, `get_entity`, `list_entities`, `search_wiki`, `get_wiki_page`, `memory_graph`, `memory_metrics` | `read` |
-| `record_event`, `upsert_entity`, `link_entities` | `admin` |
+| `record_event`, `upsert_entity`, `link_entities` | `read` and `admin` |
 
 `replicate` alone never authorizes an MCP operation. A credential intended to
 write through MCP needs both `read` and `admin`: `read` establishes and

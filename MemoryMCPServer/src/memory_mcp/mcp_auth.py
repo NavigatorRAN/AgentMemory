@@ -341,6 +341,7 @@ class MemoryMcpHttpMiddleware:
 
         if (
             required_capability is None
+            or "read" not in capabilities
             or required_capability not in capabilities
         ):
             await self._error(

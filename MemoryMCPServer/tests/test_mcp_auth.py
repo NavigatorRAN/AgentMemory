@@ -221,7 +221,7 @@ def test_read_token_initializes_lists_pings_reads_and_protects_session_requests(
         ),
     ],
 )
-def test_read_token_cannot_write_but_read_admin_can(
+def test_write_tools_require_read_and_admin_on_every_session_request(
     name: str,
     arguments: dict[str, Any],
 ) -> None:
@@ -231,11 +231,19 @@ def test_read_token_cannot_write_but_read_admin_can(
         assert initialized.status_code == 200
         assert session_id is not None
 
-        denied = _call(
+        admin_only = _call(
+            client,
+            token="admin-token-123456",
+            session_id=session_id,
+            request_id=2,
+            name=name,
+            arguments=arguments,
+        )
+        read_only = _call(
             client,
             token="read-token-123456",
             session_id=session_id,
-            request_id=2,
+            request_id=3,
             name=name,
             arguments=arguments,
         )
@@ -243,13 +251,15 @@ def test_read_token_cannot_write_but_read_admin_can(
             client,
             token="read-admin-token-123456",
             session_id=session_id,
-            request_id=3,
+            request_id=4,
             name=name,
             arguments=arguments,
         )
 
-    assert denied.status_code == 403
-    assert denied.json() == {"error": "forbidden"}
+    assert admin_only.status_code == 403
+    assert admin_only.json() == {"error": "forbidden"}
+    assert read_only.status_code == 403
+    assert read_only.json() == {"error": "forbidden"}
     assert accepted.status_code == 200
     assert writes == [name]
 

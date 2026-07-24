@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from datetime import datetime
 from pathlib import Path
 
@@ -10,6 +11,7 @@ import memory_mcp.command_context as command_context_module
 from memory_mcp.command_context import (
     MAX_COMMAND_CONTEXT_CANDIDATES,
     MAX_COMMAND_CONTEXT_CONTENT_BYTES,
+    MAX_COMMAND_CONTEXT_HEADS_BYTES,
     MAX_COMMAND_CONTEXT_RESPONSE_BYTES,
     MAX_COMMAND_CONTEXT_SCANNED_EVENTS,
     _bounded_revision_sequences,
@@ -164,6 +166,35 @@ def test_command_memory_context_returns_exact_verified_read_only_evidence(
         "timestamp": revision["timestamp"],
     }
     assert _canonical_files(storage) == before
+
+
+def test_command_memory_context_fails_explicitly_when_heads_exceed_bound(
+    tmp_path,
+) -> None:
+    storage = Storage(tmp_path / "vault", node_id="node:mac-command")
+    recorded = _record(storage, "Valid evidence behind oversized heads state.")
+    revision_id = storage.revision_journal._heads()[f"event:{recorded['id']}"][0]
+    heads = storage.revision_journal._heads()
+    for index in range(50_000):
+        heads[f"event:padding-{index:05d}"] = [revision_id]
+    storage.revision_journal.heads_path.write_text(
+        json.dumps(heads, separators=(",", ":"), sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    assert (
+        storage.revision_journal.heads_path.stat().st_size
+        > MAX_COMMAND_CONTEXT_HEADS_BYTES
+    )
+
+    with pytest.raises(ValueError, match="heads state exceeds evidence bound"):
+        command_memory_context(
+            storage,
+            entity="memory-mcp",
+            query=None,
+            since=None,
+            until=None,
+            limit=1,
+        )
 
 
 def test_command_memory_context_preserves_imported_origin_and_old_timestamp(

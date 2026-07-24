@@ -64,11 +64,7 @@ def command_memory_context(
 
     with journal._locked():
         if journal.heads_path.stat().st_size > MAX_COMMAND_CONTEXT_HEADS_BYTES:
-            return _wrapper(
-                serving_node_id=journal.node_id,
-                retrieved_at=retrieved_at,
-                results=[],
-            )
+            raise ValueError("revision heads state exceeds evidence bound")
         heads = journal._heads()
         head_by_event = {
             event_id: revision_ids[0]

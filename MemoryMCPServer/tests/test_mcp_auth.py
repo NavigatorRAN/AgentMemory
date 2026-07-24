@@ -43,6 +43,7 @@ EXPECTED_TOOL_CAPABILITIES = {
     "record_event": "admin",
     "recall_for_entity": "read",
     "search_events": "read",
+    "command_memory_context": "read",
     "timeline": "read",
     "get_entity": "read",
     "upsert_entity": "admin",
@@ -468,6 +469,14 @@ def test_server_module_wires_opt_in_auth_to_real_memory_fastmcp(
                 name="memory_metrics",
                 arguments={},
             )
+            context = _call(
+                client,
+                token="read-token-123456",
+                session_id=session_id,
+                request_id=4,
+                name="command_memory_context",
+                arguments={"query": "no matching event"},
+            )
 
         assert missing.status_code == 401
         assert authenticated.status_code == 200
@@ -479,6 +488,21 @@ def test_server_module_wires_opt_in_auth_to_real_memory_fastmcp(
         } == set(EXPECTED_TOOL_CAPABILITIES)
         assert status.status_code == 200
         assert status.json()["result"]["isError"] is False
+        assert context.status_code == 200
+        assert context.json()["result"]["structuredContent"] == {
+            "schema": "memory-evidence-v1",
+            "tool_policy": {
+                "mode": "read_only",
+                "retrieved_content": "untrusted_evidence",
+                "instruction_effect": "none",
+            },
+            "serving_node_id": server.storage.revision_journal.node_id,
+            "retrieved_at": context.json()["result"]["structuredContent"][
+                "retrieved_at"
+            ],
+            "total": 0,
+            "results": [],
+        }
     finally:
         sys.modules.pop("memory_mcp.server", None)
         if previous is not None:

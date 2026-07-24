@@ -42,6 +42,7 @@ Spock ───┘                              │
 
 | Tool | Purpose |
 |---|---|
+| `command_memory_context` | Return bounded current-head evidence with exact Buzz revision/envelope citations. |
 | `record_event` | Log something that happened. Tag with entities. |
 | `recall_for_entity` | "What's the last N events involving X?" — primary recall. |
 | `search_events` | Plain-text search across event content. |
@@ -249,7 +250,7 @@ The MCP capability policy is closed and tool-name based:
 | MCP operation | Required capability |
 |---|---|
 | `initialize`, `ping`, notifications, `tools/list`, and other MCP control operations | `read` |
-| `recall_for_entity`, `search_events`, `timeline`, `get_entity`, `list_entities`, `search_wiki`, `get_wiki_page`, `memory_graph`, `memory_metrics` | `read` |
+| `command_memory_context`, `recall_for_entity`, `search_events`, `timeline`, `get_entity`, `list_entities`, `search_wiki`, `get_wiki_page`, `memory_graph`, `memory_metrics` | `read` |
 | `record_event`, `upsert_entity`, `link_entities` | `read` and `admin` |
 
 `replicate` alone never authorizes an MCP operation. A credential intended to
@@ -258,6 +259,20 @@ operates the Streamable HTTP session, while `admin` authorizes the exact write
 tool. Unknown tool names fail closed before FastMCP dispatch. Replication
 conflict resolution, tombstones, backup, and restore remain HTTP-only and keep
 their existing `admin` requirement.
+
+### Buzz Command evidence
+
+`command_memory_context` accepts a bounded entity recall filter, a bounded
+plain-text event search, or both as an intersection. It returns the exact
+`memory-evidence-v1` wrapper admitted by Buzz Command: a fresh local
+`serving_node_id`/`retrieved_at` wrapper around current immutable event heads.
+Each result contains the full Buzz memory revision and replication envelope,
+preserves the revision's origin node and historical timestamp, quotes
+`revision.content.content` exactly, and provides an exact
+event/revision/node/timestamp citation. Unresolved conflicts, tombstones, empty
+content, and content above the per-result bound are omitted. The tool performs
+no memory mutation; its fixed policy marks retrieved text as untrusted evidence
+with no instruction effect.
 
 Missing or invalid bearers return a redacted HTTP `401`; a valid bearer without
 the required capability returns `403`. The check runs on every Streamable HTTP

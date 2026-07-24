@@ -26,6 +26,7 @@ MCP_TOOL_CAPABILITIES: Final = MappingProxyType(
         "record_event": "admin",
         "recall_for_entity": "read",
         "search_events": "read",
+        "command_memory_context": "read",
         "timeline": "read",
         "get_entity": "read",
         "upsert_entity": "admin",

@@ -153,7 +153,26 @@ HTTP request, including requests that carry an `Mcp-Session-Id`.
 
 This repository also includes `scripts/deploy.sh`, which stages the tracked
 package, backs up `/opt/memory-mcp`, installs the package, restarts
-`memory-mcp.service`, and runs `scripts/smoke_check.py`.
+`memory-mcp.service`, and runs `scripts/smoke_check.py`. Before any restart it
+checks the installed FastMCP version, required authentication imports and API
+methods, and that the editable `memory_mcp` package resolves to the newly
+staged source. A supported environment is left unchanged.
+
+Dependency repair is offline and operator-gated. For a new host or an
+unsupported/missing FastMCP, stage a complete reviewed wheelhouse on the remote
+host (default `/opt/memory-mcp/wheelhouse`) and run:
+
+```bash
+MEMORY_MCP_ALLOW_DEPENDENCY_UPGRADE=true \
+MEMORY_MCP_REMOTE_WHEELHOUSE=/protected/memory-mcp-wheelhouse \
+./scripts/deploy.sh
+```
+
+The repair command uses the staged `pyproject.toml`, `--no-index`, and only the
+explicit wheelhouse. It reinstalls and then reruns the dependency preflight.
+Without the explicit approval and wheelhouse, deployment stops before service
+restart while retaining the timestamped `/tmp/memory-mcp-backup-*.tgz`. Do not
+enable repair against an unreviewed or incomplete wheelhouse.
 
 ## LiteLLM integration
 

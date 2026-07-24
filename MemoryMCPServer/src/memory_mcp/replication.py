@@ -371,7 +371,7 @@ class RevisionJournal:
                 "objects": candidate_objects,
                 "contracts": candidate_contracts,
             }
-            if len(canonical_json_bytes(candidate)) > self.max_envelope_bytes:
+            if self._import_request_size(candidate) > self.max_envelope_bytes:
                 if not selected:
                     raise ValueError("replication object exceeds envelope bound")
                 break
@@ -389,8 +389,18 @@ class RevisionJournal:
             "objects": objects,
             "contracts": contracts,
         }
-        envelope["envelope_id"] = sha256_id(canonical_json_bytes(envelope))
-        return envelope
+        return self._seal_envelope(envelope)
+
+    @staticmethod
+    def _seal_envelope(envelope: dict[str, Any]) -> dict[str, Any]:
+        sealed = dict(envelope)
+        sealed["envelope_id"] = sha256_id(canonical_json_bytes(envelope))
+        return sealed
+
+    @classmethod
+    def _import_request_size(cls, envelope: dict[str, Any]) -> int:
+        """Measure the exact compact JSON body accepted by the import route."""
+        return len(canonical_json_bytes({"envelope": cls._seal_envelope(envelope)}))
 
     def import_envelope(self, envelope: dict[str, Any]) -> dict[str, Any]:
         encoded = canonical_json_bytes(envelope)

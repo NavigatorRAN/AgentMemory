@@ -1,11 +1,22 @@
 from __future__ import annotations
 
 import json
+import warnings
 
+from fastmcp import FastMCP
 import httpx
 import pytest
 
+warnings.filterwarnings(
+    "ignore",
+    message="Using `httpx` with `starlette.testclient` is deprecated",
+)
+from starlette.testclient import TestClient
+
+from memory_mcp.auth import RequestGuard, TokenAuthorizer
 from memory_mcp.replicate_cli import main
+from memory_mcp.replication import install_replication_routes
+from memory_mcp.revisions import canonical_json_bytes
 from memory_mcp.storage import Storage
 
 
@@ -76,6 +87,53 @@ class ReplicationNetwork:
 
     def client(self) -> httpx.Client:
         return httpx.Client(transport=httpx.MockTransport(self.handler))
+
+
+class InstalledRouteTransport(httpx.BaseTransport):
+    """Route HTTPX requests through actual installed FastMCP route apps."""
+
+    def __init__(self, clients: dict[str, TestClient]):
+        self.clients = clients
+        self.import_body_sizes: list[int] = []
+
+    def handle_request(self, request: httpx.Request) -> httpx.Response:
+        body = request.read()
+        if request.url.path == "/replication/import":
+            self.import_body_sizes.append(len(body))
+        response = self.clients[request.url.netloc.decode()].request(
+            request.method,
+            request.url.raw_path.decode(),
+            headers=dict(request.headers),
+            content=body,
+        )
+        return httpx.Response(
+            response.status_code,
+            headers=response.headers,
+            content=response.content,
+            request=request,
+        )
+
+
+def _installed_client(
+    storage: Storage,
+    *,
+    read_token: str,
+    replicate_token: str,
+    max_body_bytes: int,
+) -> TestClient:
+    mcp = FastMCP("replicate-cli-route-test")
+    install_replication_routes(
+        mcp,
+        storage,
+        TokenAuthorizer(
+            {
+                read_token: {"read"},
+                replicate_token: {"replicate"},
+            }
+        ),
+        RequestGuard(max_body_bytes=max_body_bytes),
+    )
+    return TestClient(mcp.http_app(json_response=True))
 
 
 def _run(
@@ -309,3 +367,60 @@ def test_authentication_failure_and_server_body_are_redacted(tmp_path, capsys):
     }
     assert "wrong-super-secret" not in captured.err
     assert "unauthorized:" not in captured.err
+
+
+def test_entry_point_exports_only_pages_that_fit_the_installed_import_route(
+    tmp_path,
+    capsys,
+):
+    local = Storage(tmp_path / "local", node_id="node:local")
+    remote = Storage(tmp_path / "remote", node_id="node:remote")
+    for index in range(4):
+        _record(remote, f"Boundary event {index}: " + "x" * 200)
+
+    unbounded = remote.revision_journal.export_envelope(cursor=0, limit=50)
+    request_limit = len(canonical_json_bytes(unbounded))
+    assert 1024 < request_limit < 2 * 1024 * 1024
+    local.revision_journal.max_envelope_bytes = request_limit
+    remote.revision_journal.max_envelope_bytes = request_limit
+
+    with (
+        _installed_client(
+            local,
+            read_token=TOKENS["MEMORY_LOCAL_READ_TOKEN"],
+            replicate_token=TOKENS["MEMORY_LOCAL_REPLICATE_TOKEN"],
+            max_body_bytes=request_limit,
+        ) as local_client,
+        _installed_client(
+            remote,
+            read_token=TOKENS["MEMORY_REMOTE_READ_TOKEN"],
+            replicate_token=TOKENS["MEMORY_REMOTE_REPLICATE_TOKEN"],
+            max_body_bytes=request_limit,
+        ) as remote_client,
+    ):
+        transport = InstalledRouteTransport(
+            {
+                "127.0.0.1:18006": local_client,
+                "[::1]:28006": remote_client,
+            }
+        )
+        with httpx.Client(transport=transport) as client:
+            exit_code = main(
+                [
+                    "pull",
+                    "--local-url",
+                    LOCAL_URL,
+                    "--remote-url",
+                    REMOTE_URL,
+                ],
+                environ=TOKENS,
+                client=client,
+            )
+
+    captured = capsys.readouterr()
+    assert exit_code == 0, captured.err
+    payload = json.loads(captured.out)
+    assert payload["accepted"] == 4
+    assert payload["pages"] >= 2
+    assert transport.import_body_sizes
+    assert max(transport.import_body_sizes) <= request_limit

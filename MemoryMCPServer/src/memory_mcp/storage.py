@@ -502,6 +502,9 @@ class Storage:
                 "entities": post.metadata.get("entities", []),
                 "tags": post.metadata.get("tags", []),
                 "agent": post.metadata.get("agent"),
+                "source_event_id": post.metadata.get("source_event_id"),
+                "projection_event_type": post.metadata.get("projection_event_type"),
+                "projection_metadata": post.metadata.get("projection_metadata"),
                 "content": post.content,
                 "path": str(path.relative_to(self.root)),
             }

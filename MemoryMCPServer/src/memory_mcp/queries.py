@@ -252,6 +252,187 @@ def search_events(
     return matches[:limit]
 
 
+def _projected_memory_record(event: dict[str, Any]) -> dict[str, Any] | None:
+    metadata = event.get("projection_metadata")
+    if not isinstance(metadata, dict):
+        return None
+
+    source_event_id = metadata.get("source_event_id") or event.get("source_event_id")
+    source_created_at = metadata.get("source_created_at") or event.get("event_date")
+    required_strings = {
+        "memory_key": metadata.get("memory_key"),
+        "status": metadata.get("status"),
+        "scope": metadata.get("scope"),
+        "owner_id": metadata.get("owner_id"),
+        "source_event_id": source_event_id,
+        "source_created_at": source_created_at,
+    }
+    if any(not isinstance(value, str) or not value for value in required_strings.values()):
+        return None
+    supersedes = metadata.get("supersedes", [])
+    if not isinstance(supersedes, list) or any(
+        not isinstance(value, str) or not value for value in supersedes
+    ):
+        return None
+    if required_strings["scope"] not in {"command-team-shared", "specialist-private"}:
+        return None
+    try:
+        parse_when(required_strings["source_created_at"])
+    except ValueError:
+        return None
+
+    return {
+        **event,
+        **metadata,
+        **required_strings,
+        "supersedes": supersedes,
+    }
+
+
+def _memory_visible(
+    record: dict[str, Any],
+    owner_id: str,
+    team_id: str | None,
+    specialist_id: str | None,
+) -> bool:
+    if record["owner_id"] != owner_id:
+        return False
+    if record["scope"] == "command-team-shared":
+        return bool(team_id) and record.get("team_id") == team_id
+    return bool(specialist_id) and record.get("specialist_id") == specialist_id
+
+
+def _has_supersession_cycle(records: list[dict[str, Any]]) -> bool:
+    identifiers = {record["source_event_id"] for record in records}
+    edges = {
+        record["source_event_id"]: [
+            target for target in record["supersedes"] if target in identifiers
+        ]
+        for record in records
+    }
+    visiting: set[str] = set()
+    visited: set[str] = set()
+
+    def visit(identifier: str) -> bool:
+        if identifier in visiting:
+            return True
+        if identifier in visited:
+            return False
+        visiting.add(identifier)
+        if any(visit(target) for target in edges[identifier]):
+            return True
+        visiting.remove(identifier)
+        visited.add(identifier)
+        return False
+
+    return any(visit(identifier) for identifier in edges)
+
+
+def recall_active_memory(
+    storage: Storage,
+    query: str,
+    owner_id: str,
+    team_id: str | None,
+    specialist_id: str | None,
+    limit: int,
+    as_of: str | None,
+) -> dict[str, list[dict[str, Any]]]:
+    """Return visible active memory leaves while retaining journal history."""
+    cutoff = parse_when(as_of) if as_of else None
+    all_records: list[dict[str, Any]] = []
+    diagnostics: list[dict[str, Any]] = []
+    for event in storage.iter_events():
+        if event.get("projection_event_type") != "command_experience":
+            continue
+        record = _projected_memory_record(event)
+        if record is None:
+            diagnostics.append(
+                {
+                    "code": "invalid_projection_metadata",
+                    "event_id": event.get("id"),
+                }
+            )
+            continue
+        if cutoff and parse_when(record["source_created_at"]) > cutoff:
+            continue
+        all_records.append(record)
+
+    all_by_id = {record["source_event_id"]: record for record in all_records}
+    visible = [
+        record
+        for record in all_records
+        if _memory_visible(record, owner_id, team_id, specialist_id)
+    ]
+    visible_ids = {record["source_event_id"] for record in visible}
+    by_key: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for record in visible:
+        by_key[record["memory_key"]].append(record)
+
+    records: list[dict[str, Any]] = []
+    needle = query.strip().lower()
+    for memory_key, lineage in by_key.items():
+        bad_reference = next(
+            (
+                target
+                for record in lineage
+                for target in record["supersedes"]
+                if target not in visible_ids
+            ),
+            None,
+        )
+        if bad_reference is not None:
+            diagnostics.append(
+                {
+                    "code": "invisible_supersession_reference",
+                    "memory_key": memory_key,
+                    "source_event_id": bad_reference,
+                    "reference_exists": bad_reference in all_by_id,
+                }
+            )
+            continue
+        if _has_supersession_cycle(lineage):
+            diagnostics.append(
+                {"code": "supersession_cycle", "memory_key": memory_key}
+            )
+            continue
+
+        superseded = {
+            target for record in lineage for target in record["supersedes"]
+        }
+        for record in lineage:
+            if record["status"] != "active":
+                continue
+            if record["source_event_id"] in superseded:
+                continue
+            haystack = f"{record['memory_key']}\n{record.get('content', '')}".lower()
+            if needle and needle not in haystack:
+                continue
+            records.append(record)
+
+    records.sort(key=lambda record: record["source_created_at"], reverse=True)
+    return {"records": records[: max(0, limit)], "diagnostics": diagnostics}
+
+
+def recall_memory_history(
+    storage: Storage,
+    memory_key: str,
+    owner_id: str,
+    limit: int,
+) -> list[dict[str, Any]]:
+    """Return a memory lineage without hiding inactive or superseded records."""
+    records = []
+    for event in storage.iter_events():
+        if event.get("projection_event_type") != "command_experience":
+            continue
+        record = _projected_memory_record(event)
+        if record is None:
+            continue
+        if record["memory_key"] == memory_key and record["owner_id"] == owner_id:
+            records.append(record)
+    records.sort(key=lambda record: record["source_created_at"], reverse=True)
+    return records[: max(0, limit)]
+
+
 def timeline(
     storage: Storage,
     entity: str,

@@ -182,6 +182,48 @@ def search_events(
 
 
 @mcp.tool()
+def recall_active_memory(
+    query: str,
+    owner_id: str,
+    team_id: str | None = None,
+    specialist_id: str | None = None,
+    limit: int = 10,
+    as_of: str | None = None,
+) -> dict[str, list[dict[str, Any]]]:
+    """Recall the visible active memory view for one owner and team role.
+
+    Superseded and inactive records remain in history. Invalid supersession
+    lineages fail closed and are reported in ``diagnostics``.
+    """
+    with metrics.measure_tool("recall_active_memory"):
+        return queries.recall_active_memory(
+            storage,
+            query=query,
+            owner_id=owner_id,
+            team_id=team_id,
+            specialist_id=specialist_id,
+            limit=limit,
+            as_of=as_of,
+        )
+
+
+@mcp.tool()
+def recall_memory_history(
+    memory_key: str,
+    owner_id: str,
+    limit: int = 20,
+) -> list[dict[str, Any]]:
+    """Return the ordered append-only lineage for one owner memory key."""
+    with metrics.measure_tool("recall_memory_history"):
+        return queries.recall_memory_history(
+            storage,
+            memory_key=memory_key,
+            owner_id=owner_id,
+            limit=limit,
+        )
+
+
+@mcp.tool()
 def timeline(
     entity: str,
     since: str | None = None,

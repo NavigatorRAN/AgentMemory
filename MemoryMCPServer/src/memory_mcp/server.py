@@ -89,6 +89,32 @@ def record_event(
 
 
 @mcp.tool()
+def record_projected_event(
+    source_event_id: str,
+    timestamp: str,
+    agent: str | None,
+    event_type: str,
+    content: str,
+    metadata: dict[str, Any],
+) -> dict[str, Any]:
+    """Idempotently project an immutable event from Buzz into Memory MCP.
+
+    The signed Buzz event ID is the stable idempotency key. An identical
+    retry returns the original Memory event; a different payload using the
+    same identifier is rejected rather than silently replacing history.
+    """
+    with metrics.measure_tool("record_projected_event"):
+        return storage.record_projected_event(
+            source_event_id=source_event_id,
+            timestamp=timestamp,
+            agent=agent,
+            event_type=event_type,
+            content=content,
+            metadata=metadata,
+        )
+
+
+@mcp.tool()
 def recall_for_entity(
     entity: str,
     since: str | None = None,

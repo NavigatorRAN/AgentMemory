@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import fcntl
+import hashlib
 import json
 import os
 import re
@@ -86,10 +87,13 @@ class Storage:
         self._index_lock = threading.Lock()
         self._index_cache: dict[str, Any] | None = None
         self._index_cache_mtime: float = 0.0
+        self._projection_lock = threading.Lock()
+        self._projected_events: dict[str, dict[str, str]] = {}
         self.query_index = QueryIndex(self.index_dir)
 
         for d in (self.events_dir, self.entities_dir, self.wiki_dir, self.index_dir):
             d.mkdir(parents=True, exist_ok=True)
+        self._rebuild_projected_event_index()
 
     def _default_index_dir(self, root: Path) -> Path:
         configured = os.environ.get("MEMORY_INDEX_ROOT")
@@ -114,6 +118,159 @@ class Storage:
         return parent.exists() and os.access(parent, os.W_OK | os.X_OK)
 
     # --- event writes -----------------------------------------------------
+
+    def _projected_event_index_path(self) -> Path:
+        return self.index_dir / "projected-events.json"
+
+    def _persist_projected_event_index(self) -> None:
+        path = self._projected_event_index_path()
+        temporary = path.with_suffix(".tmp")
+        temporary.write_text(
+            json.dumps(self._projected_events, indent=2, sort_keys=True),
+            encoding="utf-8",
+        )
+        os.replace(temporary, path)
+
+    def _rebuild_projected_event_index(self) -> None:
+        projected: dict[str, dict[str, str]] = {}
+        for path in self.events_dir.rglob("*.md"):
+            try:
+                post = frontmatter.load(path)
+            except Exception:
+                continue
+            source_event_id = post.metadata.get("source_event_id")
+            payload_hash = post.metadata.get("projection_payload_hash")
+            event_id = post.metadata.get("id")
+            if not all(isinstance(value, str) and value for value in (
+                source_event_id,
+                payload_hash,
+                event_id,
+            )):
+                continue
+            existing = projected.get(source_event_id)
+            candidate = {"event_id": event_id, "payload_hash": payload_hash}
+            if existing is not None and existing != candidate:
+                raise ValueError(
+                    f"conflicting stored projections for source_event_id {source_event_id!r}"
+                )
+            projected[source_event_id] = candidate
+        self._projected_events = projected
+        self._persist_projected_event_index()
+
+    def record_projected_event(
+        self,
+        source_event_id: str,
+        timestamp: str,
+        agent: str | None,
+        event_type: str,
+        content: str,
+        metadata: dict[str, Any],
+    ) -> dict[str, Any]:
+        """Project an immutable external event into the markdown vault once.
+
+        The external event identifier is the idempotency key. Replaying an
+        identical payload returns the original event; replaying different
+        content under that identifier is rejected rather than overwritten.
+        """
+        if not isinstance(source_event_id, str) or not source_event_id.strip():
+            raise ValueError("source_event_id must be a non-empty stable identifier")
+        source_event_id = source_event_id.strip()
+        if len(source_event_id) > 1024:
+            raise ValueError("source_event_id must be at most 1024 characters")
+        if not isinstance(metadata, dict):
+            raise ValueError("metadata must be an object")
+
+        canonical_payload = {
+            "agent": agent,
+            "content": content,
+            "event_type": event_type,
+            "metadata": metadata,
+            "source_event_id": source_event_id,
+            "timestamp": timestamp,
+        }
+        try:
+            canonical = json.dumps(
+                canonical_payload,
+                ensure_ascii=False,
+                allow_nan=False,
+                separators=(",", ":"),
+                sort_keys=True,
+            ).encode("utf-8")
+        except (TypeError, ValueError) as error:
+            raise ValueError("projection payload must be canonical JSON") from error
+        payload_hash = hashlib.sha256(canonical).hexdigest()
+
+        lock_path = self.index_dir / "projected-events.lock"
+        with self._projection_lock, _locked(lock_path):
+            # Another process may have written while this process was alive.
+            self._rebuild_projected_event_index()
+            existing = self._projected_events.get(source_event_id)
+            if existing is not None:
+                if existing["payload_hash"] != payload_hash:
+                    raise ValueError(
+                        f"conflicting projection for source_event_id {source_event_id!r}"
+                    )
+                return {
+                    "event_id": existing["event_id"],
+                    "created": False,
+                    "payload_hash": payload_hash,
+                }
+
+            when = parse_when(timestamp)
+            ulid = str(ULID())
+            slug = slugify_title(content.strip().split("\n", 1)[0])
+            rel = Path(
+                f"{when.year:04d}/{when.month:02d}/"
+                f"{when.day:02d}-{ulid[-8:].lower()}-{slug}.md"
+            )
+            path = self.events_dir / rel
+            entities_value = metadata.get("entities", [])
+            entities = (
+                [normalize_entity(value) for value in entities_value if isinstance(value, str) and value.strip()]
+                if isinstance(entities_value, list)
+                else []
+            )
+            post = frontmatter.Post(
+                content,
+                id=ulid,
+                event_date=when.isoformat(),
+                recorded_at=now_iso(),
+                entities=entities,
+                tags=["projected", event_type],
+                agent=agent,
+                source_event_id=source_event_id,
+                projection_payload_hash=payload_hash,
+                projection_event_type=event_type,
+                projection_metadata=metadata,
+            )
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(frontmatter.dumps(post), encoding="utf-8")
+
+            for entity in entities:
+                self._ensure_entity_stub(entity)
+            self._invalidate_index()
+            self._index_event_record(
+                {
+                    "id": ulid,
+                    "event_date": when.isoformat(),
+                    "recorded_at": post.metadata.get("recorded_at"),
+                    "entities": entities,
+                    "tags": ["projected", event_type],
+                    "agent": agent,
+                    "content": content,
+                    "path": str(rel),
+                }
+            )
+            self._projected_events[source_event_id] = {
+                "event_id": ulid,
+                "payload_hash": payload_hash,
+            }
+            self._persist_projected_event_index()
+            return {
+                "event_id": ulid,
+                "created": True,
+                "payload_hash": payload_hash,
+            }
 
     def record_event(
         self,
@@ -345,6 +502,9 @@ class Storage:
                 "entities": post.metadata.get("entities", []),
                 "tags": post.metadata.get("tags", []),
                 "agent": post.metadata.get("agent"),
+                "source_event_id": post.metadata.get("source_event_id"),
+                "projection_event_type": post.metadata.get("projection_event_type"),
+                "projection_metadata": post.metadata.get("projection_metadata"),
                 "content": post.content,
                 "path": str(path.relative_to(self.root)),
             }

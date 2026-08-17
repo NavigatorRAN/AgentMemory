@@ -89,6 +89,32 @@ def record_event(
 
 
 @mcp.tool()
+def record_projected_event(
+    source_event_id: str,
+    timestamp: str,
+    agent: str | None,
+    event_type: str,
+    content: str,
+    metadata: dict[str, Any],
+) -> dict[str, Any]:
+    """Idempotently project an immutable event from Buzz into Memory MCP.
+
+    The signed Buzz event ID is the stable idempotency key. An identical
+    retry returns the original Memory event; a different payload using the
+    same identifier is rejected rather than silently replacing history.
+    """
+    with metrics.measure_tool("record_projected_event"):
+        return storage.record_projected_event(
+            source_event_id=source_event_id,
+            timestamp=timestamp,
+            agent=agent,
+            event_type=event_type,
+            content=content,
+            metadata=metadata,
+        )
+
+
+@mcp.tool()
 def recall_for_entity(
     entity: str,
     since: str | None = None,
@@ -151,6 +177,48 @@ def search_events(
             query=query,
             entities=entities,
             since=since,
+            limit=limit,
+        )
+
+
+@mcp.tool()
+def recall_active_memory(
+    query: str,
+    owner_id: str,
+    team_id: str | None = None,
+    specialist_id: str | None = None,
+    limit: int = 10,
+    as_of: str | None = None,
+) -> dict[str, list[dict[str, Any]]]:
+    """Recall the visible active memory view for one owner and team role.
+
+    Superseded and inactive records remain in history. Invalid supersession
+    lineages fail closed and are reported in ``diagnostics``.
+    """
+    with metrics.measure_tool("recall_active_memory"):
+        return queries.recall_active_memory(
+            storage,
+            query=query,
+            owner_id=owner_id,
+            team_id=team_id,
+            specialist_id=specialist_id,
+            limit=limit,
+            as_of=as_of,
+        )
+
+
+@mcp.tool()
+def recall_memory_history(
+    memory_key: str,
+    owner_id: str,
+    limit: int = 20,
+) -> list[dict[str, Any]]:
+    """Return the ordered append-only lineage for one owner memory key."""
+    with metrics.measure_tool("recall_memory_history"):
+        return queries.recall_memory_history(
+            storage,
+            memory_key=memory_key,
+            owner_id=owner_id,
             limit=limit,
         )
 
